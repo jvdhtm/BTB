@@ -1,0 +1,95 @@
+//colors
+$color_gray_nurse_approx: #eaeaea;
+$alabaster: #fafafa;
+$white: #fff;
+$color_guardsman_red_approx: #c00;
+$color_alabaster_approx: #f9f9f9;
+$color_tapa_approx: #777777;
+$color_gallery_approx: #eeeeee;
+
+//urls
+$url_0: url(/images/icons/search-result-arrow.png);
+$url_1: url(../images/item-grid.png);
+
+.search-item-btn-cart {
+	text-align: center;
+	padding-top: 11px;
+	padding-left: 20px;
+}
+.search-result--img {
+	width: 70%;
+	margin: auto;
+}
+.search-item-pricing-group {
+	margin-top: 34px;
+}
+.search-item-pricing-group-btn {
+	margin-top: 20px;
+}
+.search-item-btn-text--inside {
+	margin-top: 5px;
+	padding-left: 0;
+}
+.search-input {
+	width: 100% !important;
+	padding: 21px !important;
+}
+.items-list-variations {
+	background: $alabaster;
+	padding: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.search-inc-result-arrow {
+	background: $url_0 no-repeat 50% 50%;
+	display: block;
+	width: 30px;
+	height: 25px;
+	position: absolute;
+	left: 50%;
+	top: -20px;
+}
+.search-inc-result-items {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	border-left: 1px solid $color_gray_nurse_approx;
+	border-right: 1px solid $color_gray_nurse_approx;
+}
+.search-btn-inc {
+	//Instead of the line below you could use @include border-top-left-radius($radius)
+	border-top-left-radius: 0 !important;
+	//Instead of the line below you could use @include border-bottom-left-radius($radius)
+	border-bottom-left-radius: 0 !important;
+	width: 100%;
+	padding: 11px !important;
+}
+.search-inc-tab--container {
+	border-bottom: 1px solid $color_gray_nurse_approx;
+	background: $white;
+}
+.search-inc-tab {
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: -1px;
+	&.active {
+		font-weight: 700;
+		cursor: default;
+		color: $color_guardsman_red_approx;
+		background: $color_alabaster_approx;
+		border-top: 1px solid $color_gray_nurse_approx;
+		border-left: 1px solid $color_gray_nurse_approx;
+		border-right: 1px solid $color_gray_nurse_approx;
+	}
+}
+@media(max-width: 768px) {
+	.search-inc-tab {
+		border-bottom: 1px solid $color_gray_nurse_approx;
+	}
+}
+.search-item-btn-text {
+	height: 50px;
+	border-left: thin solid $white;
+}
+.quantity {
+	width: 100%;
+}

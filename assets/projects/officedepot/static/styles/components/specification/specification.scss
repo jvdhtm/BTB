@@ -1,0 +1,25 @@
+.specification-block{
+        background: #FFF;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid 0.5px #d4d0ca;
+
+    ul:nth-child(even){
+        background-color: #f9f9f9;
+    }
+    ul{
+        padding: 10px;
+     li:first-child{
+                color: #000;
+                font-weight: 700;
+                width: 25%;
+            }
+    }
+}
+
+@media screen and (max-width: 414px){
+     li:first-child{
+                width: 100% !important;
+            }
+}

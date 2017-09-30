@@ -1,0 +1,30 @@
+.select-address
+{
+	max-height: 200px;
+	overflow:hidden;
+    overflow-y: auto;
+	background:$gray-light;
+	
+	li{
+		padding :10px;
+		
+		&:hover
+		{
+			background:$gray-dark;
+		}
+		&.selected
+		{
+			background:$gray-dark;
+		}
+	}
+}
+
+.form-newaddress
+{
+	padding :10px;
+	.each-box
+	{
+	
+		padding :10px;
+	}
+}

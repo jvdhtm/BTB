@@ -1,0 +1,52 @@
+
+nav{
+
+  .navigation {
+      @include media('>=tablet') {
+        margin-left: 70px;
+        font-size: 20px;
+
+      }
+  }
+  .navbar-toggle
+  {
+        background-color: $greyLight;
+        .icon-bar
+        {
+            background-color: $white;
+        }
+  }
+  .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: transparent;
+    border-color: #337ab7;
+  }
+  .top-bar{
+      margin-top: 15px;
+  }
+  .top-bar a {
+    color: $fontColor;
+    font-size: 15px;
+    padding: 4px 5px;
+    display: inline-block;
+    position: relative;
+
+    .badge {
+        position: absolute;
+        border-radius: 25%;
+        left: 0;
+        background-color: $eyeRed;
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+        top: 0;
+        padding: 2px 0;
+    }
+  }
+  .top-bar a:after {
+    content: " | ";
+  }
+  .top-bar a:last-child:after {
+    content: "";
+  }
+
+}

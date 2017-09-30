@@ -1,0 +1,24 @@
+.scroll-top{
+	display:none;
+    font-size: 23px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    color: white;
+    background: $red;
+    width: 45px;
+    height: 45px;
+    padding-top: 7px;
+    border-radius: 50%;
+    text-align: center;
+	cursor: pointer;
+
+}
+@media only screen and (max-width : 767px) {
+	.scroll-top {
+		font-size: 18px;
+		width: 38px;
+		height: 38px;
+	}
+}

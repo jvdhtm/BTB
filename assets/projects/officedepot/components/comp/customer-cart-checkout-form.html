@@ -1,0 +1,82 @@
+<div class="row">
+	<div class="cart-title padding-xs-5 padding-sm-0 ">
+		<div class="clearfix">
+			<div class="col-md-6 col-xs-6 text-left no-padding">
+				<h1>Kundvagn</h1>
+				<span>358,61 kr kvar till fri frakt</span>
+			</div>
+			<div class="col-md-6 col-xs-6 text-right no-padding" style="margin-top: 24px;">
+				<button class="btn btn-buy">Till kassan</button>
+			</div>
+		</div>
+	</div>
+	<div class="customer-cart clearfix">
+		<compontent src="/Components/comp/checkout-items-list-cart.html"></compontent>
+		<div class="col-md-8 col-sm-6">
+			<div class="company-code" >
+				<div class="p-n-s">
+					<div class="print-inline" onclick="window.print();">
+						<span><i class="fa fa-print" aria-hidden="true"></i>Skriv ut</span>
+					</div>
+					<div class="print-inline" id="show-company-code--js">
+						<span><i class="fa fa-plus" aria-hidden="true"></i>Lägg till i favoritlista</span>
+					</div>
+				</div>
+				<h5><a href="#">Jag har en rabattkod</a></h5>
+				<div class="form-area" id="company-code--js" style="display:none;">
+					<p>Ange eventuell kampanjkod (max en kod/beställning).</p>
+					<form action="">
+						<div class="form-group">
+							<input type="text" class="form-control">
+						</div>
+						<a class="btn btn-default">Aktivera</a>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+			<div class="checkout-completion">
+				<table id="shopping-cart" class="checkout-table table table-responsive">
+					<tbody id="shopping-list" class="">
+						<tr>
+							<td class="name">Summa (2st):</td>
+							<td class="sub-total">79,00 kr</td>
+						</tr>
+						<tr>
+							<td class="name">Frakt:</td>
+							<td class="sub-total">79,00 kr</td>
+						</tr>
+						<tr>
+							<td class="name">Tilläggstjänster:</td>
+							<td class="sub-total">0,00 kr</td>
+						</tr>
+						<tr>
+							<td class="name">Totalt exkl.moms:</td>
+							<td class="sub-total">100,00 kr</td>
+						</tr>
+						<tr>
+							<td class="name">Moms:</td>
+							<td class="sub-total">10,00 kr</td>
+							<tr class="spacer"></tr>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td class="name"><b>Totalt inkl. moms:</b></td>
+							<td class="sub-total" id="total"><b>210,00 kr</b></td>
+						</tr>
+					</tfoot>
+				</table>
+				<a class="btn btn-buy" style="float: right;" href="#" title="">Till kassan</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$('#show-company-code--js').click(function () {
+		$('#company-code--js').show();
+
+	});
+
+</script>

@@ -1,0 +1,131 @@
+.form-area
+{
+	background: $gray-light;
+    padding: 15px;
+	
+}
+.items-list-cart
+{
+	background:  $gray-light;
+	padding: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+
+
+
+.items-wraper
+{
+	padding: 10px;
+	background: #fff;
+}
+
+
+
+
+/*prodocut details*/
+.product-details--image
+{
+	width:100%;
+}
+/*search result  details*/
+.search-result--item {
+	
+border-bottom: 1px solid #eaeaea;
+background: #f9f9f9;
+padding: 10px;
+font-size: 12px;
+
+}
+
+.search-inc-result {
+    position: relative;
+    z-index: 99;
+    background: #fff;
+    margin-top: 10px;
+    border: 1px solid #d6d6d6;
+    -webkit-box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+.content-section {
+    margin-bottom: 20px;
+}
+
+.brand-list-area  {
+    height: 500px;
+    overflow-y: auto;
+}
+.list-widget-box {
+	max-height: 400px;
+	overflow-y: auto;
+	min-height: 400px;
+	background: #fff;
+	border: 1px solid #eaeaea;
+}
+
+.chooseBrand-area {
+    background: #f9f9f9;
+    padding-top: 10px;
+}
+
+.chooseBrand-area h3
+{
+	background: none repeat scroll 0 0 #c00;
+	color: #FFF;
+	margin: 0 0 10px 0;
+	padding: 6px 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 0px;
+}
+.chooseBrand-area ul li {
+    line-height: 20px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+.chooseBrand-arrow {
+    font-size: 40px;
+    min-height: 470px;
+}
+
+.chooseBrand-arrow .fa-arrow-right
+{
+	position: absolute;
+	display: block;
+	width: 40px;
+	margin-top: -20px;
+	height: 40px;
+	top: 50%;
+	left: 50%;
+	margin-left: -20px;
+}
+
+.choose-brand-box {
+    padding-left: 20px !important;
+	padding-right: 0px !important;
+}
+
+.choose-model-box {
+    padding-right: 20px !important;
+	padding-left: 0px !important;
+}
+
+@media (max-width: 768px) {
+	.chooseBrand-arrow {
+	display:none;
+	}
+	.choose-brand-box {
+		padding: 0px !important;
+	}
+	.choose-model-box {
+		padding: 0px !important;
+	}
+
+}

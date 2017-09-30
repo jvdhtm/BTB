@@ -1,0 +1,39 @@
+<div class="section">	
+    <div class="product-items">
+		    <compontent src="/components/comp/products-4inRow.html"></compontent>
+			<compontent src="/components/comp/products-4inRow.html"></compontent>
+			<compontent src="/components/comp/products-4inRow.html"></compontent>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function () {
+		$('#list').click(function (event) {
+			event.preventDefault();
+			$('.thumbnail-inner').addClass('col-sm-2');
+			$('.group-box').addClass('col-sm-5');
+			$('.text-box').addClass('col-sm-5');
+			$('.product').addClass('product-list');
+			$('.box-item-price').css("margin-top", "20px");
+			$('.box-item-heading').css("margin-top", "20px");
+			$('.grid-view--js').removeClass('active');
+			$(this).addClass("active");
+
+		});
+
+		$('#grid').click(function (event) {
+			event.preventDefault();
+			$('.thumbnail-inner').removeClass('col-sm-2');
+			$('.group-box').removeClass('col-sm-5');
+			$('.text-box').removeClass('col-sm-5');
+			$('.product').removeClass('product-list');
+			$('.box-item-price').css("margin-top", "0px");
+			$('.box-item-heading').css("margin-top", "0px");
+			
+			$('.grid-view--js').removeClass('active');
+			$(this).addClass("active");
+
+		});
+	});
+
+</script>

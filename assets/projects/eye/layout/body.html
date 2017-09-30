@@ -1,0 +1,23 @@
+
+
+<compontent au="session('id')" src="/component/first-register/register.html">
+</compontent>
+
+
+<eye class="site-whole" id="eye--js" scope="{{project}}"  trailing="{{trailing}}">
+
+
+	<compontent au="eye && !eye.projects['{{trailing}}']" src="/layout/head"   scope="{{url[3]}}" trailing="{{trailing}}" >
+	</compontent>
+
+	<compontent au="eye && !eye.projects['{{trailing}}']" src="/layout/body" scope="{{url[3]}}" trailing="{{trailing}}" >
+	</compontent>
+
+
+	<compontent au="eye && eye.projects['{{trailing}}']" src="/cached/projects{{trailing}}"  scope="{{project}}">
+	</compontent>
+
+	<compontent au="eye" src="/Components/floating-select-box/floating-select-box" scope="{{project}}"></compontent>
+</eye>
+
+<compontent au="eye" src="/components/eye/eye" scope="{{project}}"></compontent>

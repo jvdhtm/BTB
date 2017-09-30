@@ -1,0 +1,11 @@
+{
+  "sort":5,
+  "fullName":{"type": "String"},
+  "description": {"type": "Schema.Types.ObjectId","ref":"description"},
+  "type":{"type": "String"},
+  "image":{"type": "Image"},
+  "discount":{"type": "Number"},
+  "price":{"type": "Schema.Types.ObjectId","ref":"prices"},
+  "geo-lat" : {"type": "String"},
+  "geo-lon" : {"type": "String"}
+}

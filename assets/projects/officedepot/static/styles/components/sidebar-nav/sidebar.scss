@@ -1,0 +1,44 @@
+
+
+.sidebarNava {
+    padding-bottom: 5px;
+    
+	ul {
+		padding: 0 5px 5px;
+		li {
+			list-style: none;
+			ul {
+				background: none;
+				list-style: none;
+			}
+			a {
+				padding: 3px 0;
+				color: #444444;
+				display: block;
+				&:hover {
+					color: #000000;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	a {
+		&.active {
+			color: $gray-text;
+			padding: 0;
+			font-weight: 700;
+		}
+		&.defaultNavaHead {
+			font-size: 14px;
+			color: #000000;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+		}
+	}
+}
+.sidebar-box h3 {
+	font-size: 14px;
+	color: $gray-text;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}

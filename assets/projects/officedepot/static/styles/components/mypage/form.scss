@@ -1,0 +1,33 @@
+.user-edit
+{
+	@media (min-width: 768px)
+	{
+		border-right: thin solid $gray;
+		padding-right: 15px;
+	}
+    
+	form
+	{
+		margin-top:10px;
+		margin-bottom:10px;
+		
+	}
+}
+
+.users-detail-list
+{
+	background: $gray-light;
+    padding: 15px;
+	margin-bottom: 10px;
+}
+
+.user-address
+{
+	form
+	{
+		margin-top:10px;
+		margin-bottom:10px;
+		
+	}
+	
+}

@@ -1,0 +1,5 @@
+{
+  "sort":2,
+  "lang":{"type": "String"},
+  "text": {"type": "String"},
+}

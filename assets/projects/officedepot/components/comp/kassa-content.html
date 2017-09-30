@@ -1,0 +1,204 @@
+<h1>Kassa</h1>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="checkout">
+            <div class="checkout-inner">
+                <h4>Betalningsalternativ</h4>
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="checkout-type change-type-payment--js active" data-target="send-invoice">
+                            <div class="checkout-type--inner">
+                                <div class="checkout-type--img">
+                                    <img src="images/faktura.svg" />
+                                </div>
+                                <div class="checkout-type--bottom">
+                                    <p>Faktura</p>
+                                    <a href="#">Läs mer</a>
+									</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="checkout-type change-type-payment--js" data-target="pay-invoice" >
+                            <div class="checkout-type--inner">
+                                <div class="checkout-type--img">
+                                    <img class="one" src="images/visa80x60.jpg" />
+                                    <img class="two" src="images/mc80x60.jpg" />
+                                </div>
+                                <div class="checkout-type--bottom">
+                                    <p>Kontokort</p>
+                                    <a href="#">Läs mer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<compontent src="/components/comp/kassa-update-email.html"></compontent>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="checkout">
+            <div class="checkout-inner">
+                <h4>Fraktalternativ</h4>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="checkout-Shipping">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" value="1" id="custom-checkboxInput" name="" />
+                                <label for="custom-checkboxInput"></label>
+                                <div class="checkout-shipping--text">
+                                    <p><b>Senarelägg leverans</b> (0 kr)</p>
+                                    <p>Ja, jag vill välja leveransdatum <a>Läs mer</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <hr style="width: 100%; color:#c1c1c1; height: 1px; background-color:#c1c1c1;" />
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="checkout-Shipping">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" value="1" id="custom-checkboxInput2" name="" />
+                                <label for="custom-checkboxInput2"></label>
+                                <div class="checkout-shipping--text">
+                                    <p><b>Telefonavisering</b> (50 kr)</p>
+                                    <p>Ja, jag önskar att chauffören kontaktar mig innan leverans <a>Läs mer</a></p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="input-fix" style="height: 50px;">
+                                            <input class="shipping-input" type="tel" placeholder="Telefonnummer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="checkout">
+            <div class="checkout-inner">
+                <h4>Adress- och personuppgifter</h4>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="checkout-inforamtion">
+                            <b>Leveransadress</b>
+                            <ul>
+                                <li>
+                                    Rad1
+                                </li>
+                                <li>
+                                    Rad2
+                                </li>
+                                <li>
+                                    Rad3
+                                </li>
+                                <li>
+                                    111 11 Stockholm
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#deliveryAddressModal">Ange annan adress</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="checkout-inforamtion">
+                            <b>Fakturaadress</b>
+                            <ul>
+                                <li>
+                                    Rad1
+                                </li>
+                                <li>
+                                    Rad2
+                                </li>
+                                <li>
+                                    Rad3
+                                </li>
+                                <li>
+                                    111 11 Stockholm
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="checkout">
+            <div class="checkout-inner">
+                <h4>Försäljningsvillkor</h4>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="checkout-conditions">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" value="1" id="custom-checkboxInput3" name="" />
+                                <label for="custom-checkboxInput3"></label>
+                                <div class="checkout-conditions--text">
+                                    <p>Jag accepterar Office Depots försäljningsvillkor <a>Läs mer</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 no-padding">
+                            <div class="checkout-completion">
+                                <table id="shopping-cart" class="checkout-table table table-responsive">
+                                    <tbody id="shopping-list" class="">
+                                        <tr>
+                                            <td class="name">Summa</td>
+                                            <td class="sub-total">79,00 kr</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">Totalt exkl.moms:</td>
+                                            <td class="sub-total">100,00 kr</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="name">moms:</td>
+                                            <td class="sub-total">10,00 kr</td>
+                                            <tr class="spacer"></tr>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td class="name"><b>Totalt inkl. moms:</b></td>
+                                            <td class="sub-total" id="total"><b>210,00 kr</b></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <button class="btn btn-buy">Slutför beställning</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<script>
+	
+
+	$('.change-type-payment--js').click(function(){
+		$('.change-type-payment--js').removeClass('active');
+		$(this).addClass('active');
+		$('.invoice-box--js').hide();
+		var datatarget = $(this).attr('data-target');
+		$(this).parents('.container').find('[data-depend="'+datatarget+'"]').show();
+	
+	});
+	
+</script>

@@ -1,0 +1,52 @@
+//colors
+$white: #ffffff;
+$black_25: rgba(0, 0, 0, 0.25);
+$ribbon_orange: #f36e24;
+
+//urls
+$url_0: url(/images/blad50.png);
+
+//@extend-elements
+//.ribbon, .miljoribbon
+%ribbon {
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 11px;
+	z-index: 1;
+	color: $white;
+	text-align: center;
+	line-height: 50px;
+	text-shadow: 0 1px 1px $black_25;
+	zoom: 1;
+	filter: none;
+	background-color: $ribbon_orange;
+	border-radius: 50%;
+}
+
+
+.ribbon {
+	@extend %ribbon;
+	&.curr-campaign {
+		line-height: 10px;
+		padding-top: 15px;
+		word-spacing: 20px;
+	}
+}
+.miljoribbon {
+	@extend %ribbon;
+}
+.thumbnail .ribbon {
+	position: absolute;
+	top: 10px;
+	left: 25px;
+	text-transform: uppercase;
+}
+.product-items .miljoribbon {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: $url_0 no-repeat;
+	line-height: 15px;
+	padding-top: 15px;
+}

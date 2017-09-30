@@ -1,0 +1,67 @@
+        <div id="loggedOut">
+
+            <script type="text/javascript">
+                    function checkEnter(e) {
+                        var characterCode;
+
+                        if (e && e.which) {
+                            e = e;
+                            characterCode = e.which;
+                        }
+                        else {
+                            e = event;
+                            characterCode = e.keyCode;
+                        }
+
+                        if (characterCode == 13) {
+                            if (jQuery('#loginForm').length != 0) {
+                                document.loginform.submit();
+                            } else {
+                                document.loggedoutloginform.submit();
+                            }
+                            return false;
+                        }
+                        else {
+                            return true;
+                        }
+
+                    }
+
+            </script>
+
+
+
+            <div id="loginbox" style="background-color:#ffffff; width:300px; height:300px; z-index:11000; display:none; position:fixed; padding:30px; margin-left:255px;">
+                <div class="loginWrapper" style="display:inherit; width:300px;">
+                    <a href="javascript:hideLoggedOutInfoBox();"><img src="../images/close.gif" width="21" height="21" alt="Stäng" border="0" style="float:right;"></a>
+                    <h2>Du har loggats ut</h2>
+                    Du har loggats ut från ditt konto på grund av inaktivitet. Logga in för att fortsätta handla.
+
+                    <br><br>
+
+
+                    <form method="post" action="../control/checkLogin/viewproduct" name="loggedoutloginform" id="loggedoutloginform">
+                        <input type="hidden" name="targetRequestUri" value="void?/opt/sigma/servers/ofbiz-release4.0/applications../webapp../papper--block-c2334/kopieringspapper-c2345/a4-c3431/papper-office-depot-everyday-a4-P1049801">
+                        <label><strong>Användarnamn:</strong></label>
+                        <br>
+                        <input type="text" class="inputBoxStandard" name="USERNAME" value="" style="width:250px;">
+                        <br>
+                        <br>
+                        <label><strong>Lösenord: </strong></label>
+                        <br>
+                        <input type="password" class="inputBoxStandard" name="PASSWORD" onkeypress="javascript:checkEnter(event);" style="width:250px;">
+
+                        <br>
+                        <br>
+
+                        <div style="padding:4px 0; float:left">
+                            <input type="button" onclick="hideLoggedOutInfoBox();document.loggedoutloginform.submit();" value="Logga in">
+
+                        </div>
+                        <div class="clearBoth"></div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        

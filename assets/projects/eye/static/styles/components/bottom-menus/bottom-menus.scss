@@ -1,0 +1,82 @@
+eye{
+	&.eye-logo {
+		display: block;
+		width: 20%;
+		float: left;
+		margin-top: 4px;
+		padding: 2px;
+		width: 40px;
+		margin-left: 6px;
+		img
+		{
+			width:100%;
+		}
+
+	}
+
+	&.code-editor
+	{
+	    position: fixed;
+		width: 100%;
+		-webkit-transition: bottom 500ms;
+		transition: bottom 500ms;
+		background: $formBgcolor;
+		color: $fontColor;
+		z-index: ( $maxZindex - 1);
+		box-shadow: 0px -3px 20px 2px $grey;
+
+		.code-editor-codes
+		{
+			max-height:calc(100vh - 100px);
+			overflow-y:auto;
+			overflow-x:hidden;
+		}
+
+
+	}
+	.menu-btn-editor
+	{
+	    font-size: 15px;
+		padding:12px;
+		background:$color3;
+	}
+	.menu-btn-editor:hover {
+			background: $color2;
+	}
+	.menu-btn {
+		font-size: 25px;
+		padding: 10px;
+			display: inline-block;
+
+	}
+	.menu-btn:hover {
+    opacity: 0.5;
+	}
+
+	.bottom-menu-options {
+    display: block;
+		position: absolute;
+    bottom: 50px;
+    display: block;
+    background: $formBgcolor;
+		.menu-btn {
+			display: block;
+		}
+	}
+
+	#publish {
+		background: $color5;
+	}
+
+	.fa.fa-floppy-o {
+		color: $color1;
+	}
+
+		.eye-variation
+	{
+		display: block;
+		width: 80%;
+		float: left;
+
+	}
+}

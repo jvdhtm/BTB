@@ -1,0 +1,34 @@
+.box-blue {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #badaed;
+	font-size: 12px;
+	padding: 10px;
+}
+
+
+.price-row {
+    background: #fff;
+    padding: 5px;
+}
+.price-row--price {
+    color: #c00;
+}
+.box-blue--tag {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #000;
+}
+.box-blue--amount
+{
+	width:20%;
+}
+
+.box-blue--line
+{
+	padding-top:5px;
+	padding-bottom:5px;
+}

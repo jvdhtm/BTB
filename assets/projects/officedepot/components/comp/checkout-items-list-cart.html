@@ -1,0 +1,104 @@
+<div class="col-sm-12 customer-cart-list no-padding">
+	<table id="cart" class="table table-hover table-condensed">
+		<thead>
+			<tr>
+				<th style="width:27%">Produkt</th>
+				<th class="tablet--mark" style="width:18%">Egen märkning</th>
+				<th style="width:13%">Lager status</th>
+				<th class="tablet--price text-sm-right  text-xs-left"style="width:12%;">Pris</th>
+				<th style="width:10%" class="text-sm-right  text-xs-left">Antal</th>
+				<th style="width:15%" class="text-sm-right  text-xs-left">Summa</th>
+				<th style="width:5%"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="productItemBox productItemBox--js">
+				<td data-th="">
+					<div class="clearfix">
+						<div class="col-sm-4 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive" /></div>
+						<div class="col-sm-8 cart-item--title no-padding">
+							<h2 class="nomargin"><a>Papper Data copy Everyday Printing A4</a></h2>
+							<p>Artikelnummer: 1833513</p>
+						</div>
+					</div>
+				</td>
+				<td data-th="Egen märkning" class="mssg--js">
+					<div class="edit" style="display: none">
+						<input class="inputValue--js" type="text" name="comment" value="">
+						<a class="save-mssg--js">Spara</a>
+					</div>
+					<div class="show">
+						<span class="spanValue--js" style="margin-right: 10px">test text</span>
+						<a  class="change-mssg--js" style="font-size: 12px">Ändra</a>
+					</div>
+				</td>
+				<td data-th="Lager status">
+					<i class="fa fa-square" style="color: green;" aria-hidden="true"></i>100st +
+				</td>
+				<td data-th="Pris" class="text-sm-right  text-xs-left mobileFix--td">
+					<h2>39,20 kr/pkt</h2>
+					<p>136,00 kr/pkt
+						<p>
+				</td>
+				<td data-th="Antal" class="text-sm-right  text-xs-left mobileFix--td align-center--td">
+					<input type="number" class="form-control amount--js text-center" value="1">
+				</td>
+				<td data-th="Summa" class="text-sm-right  text-xs-left mobileFix--td full-width;">
+					<h2>39,20 kr/pkt</h2>
+				</td>
+				<td class="actions text-xs-center text-sm-right" data-th="">
+					<i class="fa fa-trash fa-2x remove--js" aria-hidden="true"></i>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<script type="text/javascript">
+	
+	
+$('body').on('click','.save-mssg--js',function ()
+{
+	var text = $(this).parents('.mssg--js').find('.inputValue--js').val();
+	$(this).parents('.mssg--js').find('.spanValue--js').text(text);
+	$(this).parents('.mssg--js').find('.show').show();
+	$(this).parent().hide();
+	 updateCart();
+});
+
+$('body').on('blur','.amount--js',function ()
+{
+	 updateCart();
+});
+
+$('body').on('click','.change-mssg--js',function ()
+{
+
+	$(this).parents('.mssg--js').find('.edit').show();
+	$(this).parent().hide();
+	 updateCart();
+
+});
+
+function updateCart()
+{
+	//TODO
+	if($('.productItemBox--js').length == 0)
+	{
+		
+		//TODO
+	}
+	
+}
+
+
+$('body').on('click','.remove--js',function ()
+{
+	$(this).parents('.productItemBox--js').fadeOut(300, function() { $(this).remove(); updateCart();});
+	 
+});
+
+
+
+</script>

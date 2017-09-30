@@ -1,0 +1,23 @@
+.forgot-pwd{
+    display: none;
+}
+
+.login-modal{
+    display: block;
+}
+
+.registration-modal{
+    display: none;
+}
+
+.registration-content--js{
+    display: none;
+}
+
+.registration-content--js.active{
+    display: block;
+}
+
+.registration-modal label.requierd::after{
+    content: "*";
+}

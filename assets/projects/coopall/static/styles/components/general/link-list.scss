@@ -1,0 +1,16 @@
+
+.link-list
+{
+  ul {
+      list-style: none;
+      padding: 0px;
+      li
+      {
+        a{
+          padding: 10px;
+          color:$fontColor;
+          display:block;
+        }
+      }
+  }
+}

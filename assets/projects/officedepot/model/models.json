@@ -1,0 +1,46 @@
+{
+	"permissions":{
+		"type":{"type": "String"},
+		"path":{"type":"String"}
+	}
+	"roles":{
+		"title":{"type": "String"},
+		"description":{"type": "String"},
+		"permissions":{"type": "ObjectId","ref":"permissions"}
+	},
+	"orders":{
+		"id":{"type": "number"},
+		"products":{"type": "ObjectId","ref":"products"}
+	},
+	"posts":{
+		"type":{"type": "number"},
+		"contents":{"type": "String"}
+	},
+	"individuals":{
+		"fullName":{"type": "String"},
+		"age": {"type": "Number"},
+		"email" : {"type": "String",validate:"validateEmail"},
+		"phone" : {"type": "Number"},
+		"description":{"type": "String"},
+		"geo-lat" : {"type": "String"},
+		"geo-lon" : {"type": "String"},
+		"rates" : {"type": "Number"},
+		"roles" : {"type": "ObjectId","ref":"roles"},
+		"posts" : {"type": "ObjectId","ref":"posts"},
+		"orders":{"type": "ObjectId","ref":"orders"}
+	},
+	"products":{
+		"fullName":{"type": "String"},
+		"description":{"type": "String"},
+		"type":{"type": "String"},
+		"geo-lat" : {"type": "String"},
+		"geo-lon" : {"type": "String"}
+	},
+	"categories":{
+		"title":{"type": "String"},
+		"products": {"type": "ObjectId","ref":"products"}
+	}
+	
+	
+	
+}

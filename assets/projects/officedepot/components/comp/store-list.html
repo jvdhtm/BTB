@@ -1,0 +1,75 @@
+
+
+
+<div id="storeList">
+
+        <div class="textBoxContainer darkerTextBox zipbox">
+            <div class="textBox">
+                <h3>Din adress</h3>
+                <p> <input name="StreetAddress" type="text" value="Gatunamn" id="StreetAddress" class="gatunamn input-field form-control"> </p>
+                <p> <input name="PostalCode" type="text" value="Postnr" id="PostalCode" class="postnr input-field form-control">     </p>
+
+                <p> <input type="submit" name="BtnSubmit" value="Sök" id="BtnSubmit" class="addLocation redBtn btn btn-danger" onclick="javascript:addAddress();">  </p>
+                <p class="gmapsMessage"></p>
+            </div>
+
+        <div class="mylocationLegend gmapsSuccess hide">
+            <img src="/ecommerce/images/myposition.png" alt="" width="16" height="16"> = Du är här
+        </div>
+    </div>
+
+
+
+        <div id="butikListStores">
+            <ul class="stores">
+                    <li id="FALUN" name="butik"><a href="/butik-picked.html" onclick="Javascript:changeButik('FALUN');">Falun</a></li>
+                    <li id="GOTHO" name="butik" class=""><a onclick="Javascript:changeButik('GOTHO');">Göteborg - Högsbo</a></li>
+                    <li id="MOLND" name="butik" class=""><a onclick="Javascript:changeButik('MOLND');">Göteborg - Mölndal</a></li>
+                    <li id="GOTRI" name="butik" class=""><a onclick="Javascript:changeButik('GOTRI');">Göteborg - Ringön</a></li>
+                    <li id="HELSI" name="butik" class=""><a onclick="Javascript:changeButik('HELSI');">Helsingborg</a></li>
+                    <li id="HUDIK" name="butik" class=""><a onclick="Javascript:changeButik('HUDIK');">Hudiksvall</a></li>
+                    <li id="JONKO" name="butik" class=""><a onclick="Javascript:changeButik('JONKO');">Jönköping</a></li>
+                    <li id="KARL2" name="butik"><a onclick="Javascript:changeButik('KARL2');">Karlstad - Örsholmen</a></li>
+                    <li id="KRIST" name="butik"><a onclick="Javascript:changeButik('KRIST');">Kristinehamn</a></li>
+                    <li id="LANDS" name="butik"><a onclick="Javascript:changeButik('LANDS');">Landskrona</a></li>
+                    <li id="LINKO" name="butik"><a onclick="Javascript:changeButik('LINKO');">Linköping</a></li>
+                    <li id="LUND" name="butik"><a onclick="Javascript:changeButik('LUND');">Lund</a></li>
+                    <li id="MALM2" name="butik"><a onclick="Javascript:changeButik('MALM2');">Malmö - City</a></li>
+                    <li id="MALM1" name="butik"><a onclick="Javascript:changeButik('MALM1');">Malmö - Fosie</a></li>
+                    <li id="malm3" name="butik"><a onclick="Javascript:changeButik('malm3');">Malmö - Hamnen</a></li>
+                    <li id="NORRT" name="butik"><a onclick="Javascript:changeButik('NORRT');">Norrtälje</a></li>
+                    <li id="haggv" name="butik"><a onclick="Javascript:changeButik('haggv');">Sollentuna - Häggvik</a></li>
+                    <li id="STENU" name="butik"><a onclick="Javascript:changeButik('STENU');">Stenungsund</a></li>
+                    <li id="stbon" name="butik"><a onclick="Javascript:changeButik('stbon');">Stockholm - Bondegatan</a></li>
+                    <li id="BROMM" name="butik"><a onclick="Javascript:changeButik('BROMM');">Stockholm - Bromma</a></li>
+                    <li id="globe" name="butik"><a onclick="Javascript:changeButik('globe');">Stockholm - Globen</a></li>
+                    <li id="stgre" name="butik"><a onclick="Javascript:changeButik('stgre');">Stockholm - Grevgatan</a></li>
+                    <li id="HAMMA" name="butik"><a onclick="Javascript:changeButik('HAMMA');">Stockholm - Hammarby Sjöstad</a></li>
+                    <li id="hanin" name="butik"><a onclick="Javascript:changeButik('hanin');">Stockholm - Haninge</a></li>
+                    <li id="KUNG1" name="butik"><a onclick="Javascript:changeButik('KUNG1');">Stockholm - Hantverkargatan</a></li>
+                    <li id="SSODE" name="butik"><a onclick="Javascript:changeButik('SSODE');">Stockholm - Hornsgatan</a></li>
+                    <li id="OSTER" name="butik"><a onclick="Javascript:changeButik('OSTER');">Stockholm - Humlegårdsgatan</a></li>
+                    <li id="HOTOR" name="butik"><a onclick="Javascript:changeButik('HOTOR');">Stockholm - Hötorget</a></li>
+                    <li id="stnor" name="butik"><a onclick="Javascript:changeButik('stnor');">Stockholm - Norra Bantorget</a></li>
+                    <li id="KUNG2" name="butik"><a onclick="Javascript:changeButik('KUNG2');">Stockholm - S:t Eriksgatan</a></li>
+                    <li id="SKARH" name="butik"><a onclick="Javascript:changeButik('SKARH');">Stockholm - Skärholmen</a></li>
+                    <li id="HJORT" name="butik"><a onclick="Javascript:changeButik('HJORT');">Stockholm - Storängsbotten</a></li>
+                    <li id="stsur" name="butik"><a onclick="Javascript:changeButik('stsur');">Stockholm - Surbrunnsgatan</a></li>
+                    <li id="SVEAV" name="butik"><a onclick="Javascript:changeButik('SVEAV');">Stockholm - Sveavägen 73</a></li>
+                    <li id="ARSTA" name="butik"><a onclick="Javascript:changeButik('ARSTA');">Stockholm - Årsta</a></li>
+                    <li id="TYRES" name="butik"><a onclick="Javascript:changeButik('TYRES');">Tyresö</a></li>
+                    <li id="taarn" name="butik"><a onclick="Javascript:changeButik('taarn');">Täby - Arninge</a></li>
+                    <li id="taenh" name="butik"><a onclick="Javascript:changeButik('taenh');">Täby - Enhagsvägen</a></li>
+                    <li id="UDDEV" name="butik"><a onclick="Javascript:changeButik('UDDEV');">Uddevalla</a></li>
+                    <li id="UMEA" name="butik"><a onclick="Javascript:changeButik('UMEA');">Umeå</a></li>
+                    <li id="UPPBO" name="butik"><a onclick="Javascript:changeButik('UPPBO');">Uppsala - Bolandsgatan</a></li>
+                    <li id="updan" name="butik"><a onclick="Javascript:changeButik('updan');">Uppsala - Danmarksgatan</a></li>
+                    <li id="UPPCI" name="butik"><a onclick="Javascript:changeButik('UPPCI');">Uppsala - Vaksalagatan</a></li>
+                    <li id="VASTE" name="butik"><a onclick="Javascript:changeButik('VASTE');">Västerås</a></li>
+                    <li id="ANGEL" name="butik"><a onclick="Javascript:changeButik('ANGEL');">Ängelholm</a></li>
+                    <li id="OREBR" name="butik"><a onclick="Javascript:changeButik('OREBR');">Örebro</a></li>
+            </ul>
+        </div>
+
+
+    </div>

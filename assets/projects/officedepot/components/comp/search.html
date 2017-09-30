@@ -1,0 +1,16 @@
+<div id="mainSearch" class="search corners-six cf">
+	<form name="headersearchform" method="get" action="../control/keywordsearch">
+		<input id="mainSearchField" type="text" onfocus="if (this.value == 'Vad behöver du till kontoret?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Vad behöver du till kontoret?';}"
+			onclick="if (this.value == 'Vad behöver du till kontoret?') {this.value = '';}" value="Vad behöver du till kontoret?"
+			maxlength="50" name="SEARCH_STRING" autocomplete="off" class="ac_input">
+
+			<input type="submit" id="mainSearchBtn" value="Sök">
+
+			<input type="hidden" name="SEARCH_OPERATOR" value="AND">
+	</form>
+	<script language="javascript" type="text/javascript">
+					 $('#headersearchform').submit(function () {
+						 $('input', this).attr('disabled', 'disabled');
+					 });
+	</script>
+</div>

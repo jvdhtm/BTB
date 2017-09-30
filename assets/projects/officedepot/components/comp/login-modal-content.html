@@ -1,0 +1,50 @@
+<div class="modal-content login-modal login-modal--js">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel">Logga in</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Användarnamn</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Användarnamn">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Lösenord</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Lösenord">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Kom ihåg mig</label>
+        </div>
+        <a id="forgot-pwd">Har du glömt ditt användarnamn eller lösenord?</a>
+    </div>
+    <div class="modal-footer">
+        <button id="modal-registration" style="float: left;" type="button" class="btn btn-success">Skapa konto</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
+        <button id="login" type="button" class="btn btn-primary">Logga in</button>
+    </div>
+</div>
+
+
+<script>
+	$(document).ready(function () {
+		$('#forgot-pwd').click(function (event) {
+			event.preventDefault();
+			$('.login-modal--js').css('display', 'none');
+            $('.forgot-pwd--js').css('display', 'block');
+           
+
+		});
+
+        $('#modal-registration').click(function (event) {
+			event.preventDefault();
+			$('.login-modal--js').css('display', 'none');
+            $('.registration-modal--js').css('display', 'block');
+           
+
+		});
+
+          $('#login').click(function (event) {
+			window.location.href = "/editaccount.html";		
+		});
+	});
+</script>

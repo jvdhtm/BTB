@@ -1,0 +1,6 @@
+<routes scope="{{project}}" id="whole"  trailing={{trailing}}>
+[
+  {path:'/admin/', render:'/components/layouts/admin', au:"individual.role.title == 'admin'"},
+  {path:'/.*', render:'/components/layouts/index'}
+]
+</routes>

@@ -1,0 +1,508 @@
+.no-padding {
+	padding: 0;
+}
+header {
+	overflow: visible;
+}
+.top-container {
+	padding-top: 0;
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+.navbar-nav  .dropdown-menu > li > a {
+    line-height: 30px;
+    color: #cc0001;
+}
+
+.od-navbar {
+	position: relative;
+	color: #000;
+	background-color: #fff;
+	padding: 2px 10px;
+	.button {
+		position: relative;
+		display: inline-block;
+		font-size: 0.9em;
+		line-height: normal;
+		text-align: center;
+		margin-right: 10px;
+		.glyphicon {
+			font-size: 1.4em;
+		}
+		a {
+			display: block;
+			color: #000;
+			background-color: #fff;
+			width: 100%;
+			height: 100%;
+			padding-top: 7px;
+		}
+		.badge {
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 50%;
+			position: absolute;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 25%;
+			width: 1.8em;
+			height: 1.8em;
+		}
+		&.user .badge {
+			top: 8px;
+			left: 55%;
+			background-color: green;
+			width: 1.6em;
+			height: 1.6em;
+			> i {
+				position: absolute;
+				left: 2px;
+				top: 4px;
+			}
+		}
+	}
+	#cart-button {
+		position: relative;
+		display: inline-block;
+		font-size: 0.9em;
+		line-height: normal;
+		text-align: center;
+		margin-right: 10px;
+		.glyphicon {
+			font-size: 1.4em;
+		}
+		a {
+			display: block;
+			color: #000;
+			background-color: #fff;
+			width: 100%;
+			height: 100%;
+			padding-top: 7px;
+			margin-bottom: 0px;
+		}
+		.badge {
+			position: absolute;
+			border-radius: 25%;
+			left: 0;
+			background-color: $red;
+			width: 20px;
+			height: 20px;
+			font-size: 14px;
+			top: 0;
+			padding: 2px 0;
+
+			span{
+				color: #FFF;
+    			font-weight: 700;
+			}
+		}
+		&.user .badge {
+			top: 8px;
+			left: 55%;
+			background-color: green;
+			width: 1.6em;
+			height: 1.6em;
+			> i {
+				position: absolute;
+				left: 2px;
+				top: 4px;
+			}
+		}
+		img{
+			height: 39px;
+			width: 46px;
+			margin-bottom: 12px;
+		}
+	}
+	.logo {
+		display: block;
+		margin-bottom: 35px;
+		padding-top: 3px;
+		a {
+			display: inline-block;
+		}
+		img.hidden-xs {
+			margin-top: 4px;
+			margin-right: 13px;
+		}
+	}
+	.hamburger {
+		margin-right: 3px;
+		width: 30px;
+		position: absolute;
+		top: 2.6em;
+		a {
+			padding-top: 4px;
+		}
+	}
+	.button-group {
+		top: 3.2em;
+		right: 1.9em;
+		margin-left: 16px;
+		position: absolute;
+		top: 3.7em;
+		right: 0.9em;
+	}
+	.search {
+		width: 60%;
+		float: none;
+		width: auto;
+		padding-bottom: 2px;
+	}
+	.information {
+		float: left;
+		float: right;
+		display: none;
+		font-size: xx-small;
+		margin-right: 20px;
+		margin-left: 40px;
+		> div {
+			display: table-cell;
+			vertical-align: middle;
+			&.img {
+				width: 30px;
+			}
+			&.txt {
+				white-space: pre;
+			}
+		}
+		a {
+			color: #fff;
+		}
+	}
+	.form-control-feedback {
+		color: #000;
+	}
+	.cart .badge {
+		top: 0;
+		top: 2px;
+		padding: 4px 0;
+	}
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 2px;
+    background-color: #858584;
+    display: block;
+    margin: 7px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  -webkit-transform: translateY(5px) rotate(45deg);
+  -ms-transform: translateY(5px) rotate(45deg);
+  -o-transform: translateY(5px) rotate(45deg);
+  transform: translateY(5px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+@media(min-width: 620px) {
+	.od-navbar .information {
+		display: block;
+		margin-top: 2px;
+		display: none;
+		margin-top: 2px;
+	}
+}
+@media(max-width: 767px) {
+	.od-navbar .logo {
+		margin-top: 2px;
+		margin-top: 2px;
+		text-align: center;
+	}
+}
+@media(min-width: 768px) {
+	.od-navbar {
+		.button {
+			line-height: 20px;
+			a {
+				padding-top: 15px;
+			}
+		}
+		#cartBtn {
+			line-height: 20px;
+			a {
+				padding-top: 15px;
+			}
+		}
+		.logo {
+			float: left;
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-right: 22px;
+			padding-top: 0;
+		}
+		.hamburger {
+			display: none;
+		}
+		.button-group {
+			position: relative;
+			top: auto;
+			float: right;
+			right: auto;
+			margin-top: 7px;
+		}
+		.search {
+			margin-top: 30px;
+		}
+		.information {
+			display: none;
+		}
+	}
+}
+@media(min-width: 920px) {
+	.od-navbar .information {
+		display: block;
+		margin-top: 19px;
+		margin-right: 20px;
+	}
+}
+
+@media(min-width: 992px) {
+	.od-navbar .information {
+		margin-right: 100px;
+	}
+}
+.od-cart-right {
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 600;
+    color: #858584;
+}
+.information {
+	h5 {
+		margin: 0;
+		font-size: 12px;
+		font-weight: 700;
+	}
+	i {
+		color: #00d000;
+		margin: 2px;
+	}
+}
+.button-group .fa-shopping-cart {
+	color: #949494;
+}
+
+.search input{
+	border-radius: 0px;
+}
+
+
+
+//navigation
+
+.navigation-fullwidth{
+	background-color: $red;
+}
+
+@media screen and (max-width: 766px){
+	.navigation-fullwidth{
+		background-color: transparent;
+	}
+}
+
+.navbar-collapse{
+	border-top: 0px;
+}
+
+.navigation {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #f00;
+}
+
+.navbar-nav > li > a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #f00;
+    border-color: #337ab7;
+}
+
+.nav-list{
+	float: none;
+	margin: 0 -15px;
+}
+
+.mobile-login{
+	background-color: #EDEDED;
+	margin: 0 -15px;
+	padding: 20px;
+	text-align: center;
+
+	a{
+		color:#000;
+		font-size: 16px;
+	}
+}
+
+.nav-list li:first-child {
+    border-left: thin solid #fff;
+}
+.nav-links.active {
+    background: #7b3232;
+}
+.nav-links {
+    border-right: thin solid #fff;
+    width: 25%;
+    float: left;
+	background-color: $red;
+}
+
+.nav-links a {
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-weight: 600;
+}
+
+@media(min-width: 768px) {
+	.nav-links a{
+		text-align: center;
+	}
+}
+
+.nav-links:hover {
+    background: #f00;
+}
+
+.navigation .nav-list{
+	margin-bottom: 0px;
+}
+
+.navbar-nav .open .dropdown-menu {
+    background-color: #FFF;
+}
+
+/*.dropdown-menu li{
+	text-align: center;
+}*/
+
+.navbar-nav .open .dropdown-menu > li > a {
+    line-height: 30px;
+	color: #cc0001;
+}
+
+.dropdown-menu{
+	border-radius: 0px;
+}
+
+@media(max-width: 414px){
+	.nav-links{
+		width: 100%;
+		border-right: none;
+		border-left: none;
+		border-bottom: 4px solid #FFF;
+
+		&:first-child{
+			border-left: none !important;
+		}
+	}
+
+	#od-navbar{
+		margin-right: 0px;
+    	margin-left: 0px;
+	}
+}
+
+
+//top-bar
+
+.top-bar a{
+	color:#000;
+    font-size: 13px;
+	padding: 0 2px;
+
+	&:after{
+		content: " | ";
+	}
+	&:last-child:after{
+		content: "";
+	}
+}
+
+
+//dropdown-submenu
+.dropdown-submenu {
+   
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    margin-left: -1px;
+	height: 100%;
+	min-width: 600px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 10px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: $red;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+@media screen and (max-width: 414px){
+	.dropdown-submenu>a:after {
+    display: none;
+    content: " ";
+}
+}

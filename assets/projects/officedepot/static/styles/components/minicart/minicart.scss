@@ -1,0 +1,64 @@
+.minicart {
+	position: absolute;
+    top: 70px;
+    right: 0px;
+    margin-left: -275px;
+    width: 550px;
+    z-index: 3;
+    box-shadow: 0 1px 10px $gray-darker;
+    background: $white;
+	display:none;
+	.minicart-items-img
+	{
+		img
+		{
+			width:100%;
+		}
+	}
+	.minicart-items {
+		padding: 5px;
+		border-bottom: thin solid $gray;
+	}
+	.minicart-items-total,.minicart-items-details
+	{
+	   line-height: 1.9em
+	}
+	.minicart-items-total
+	{
+		padding: 5px;
+		border-bottom: thin solid $gray;
+		font-weight:bold;
+	}
+	.minicart-items-name 
+	{
+		margin-top:20px;
+	}
+	.minicart-btn-group
+	{
+		padding: 5px 5px 0px 5px;
+		border-bottom: thin solid $gray;
+		.btn
+		{
+			display:inline-block;
+			color: $white;
+		}
+	}
+	.minicart-items-amount
+	{
+		margin-top:20px;
+	}
+	.minicart-items-details
+	{
+		margin-top:15px;
+		.price
+		{
+			color:$red;
+			
+		}
+		.total-price
+		{
+			color:$gray-dark;
+			font-weight:bold;
+		}
+	}
+}

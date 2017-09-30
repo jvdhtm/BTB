@@ -1,0 +1,60 @@
+
+<eye class="bottom-menu">
+	<eye>
+		<eye class="eye-variation">
+			<eye class="bottom-menu text-left">
+
+				<eye class="menu-btn" title="<%menu%>">
+					<eye class="fa fa-eye" aria-hidden="true"></eye>
+				</eye>
+				<eye class="menu-btn" title="<%code%>">
+						<eye class="fa fa-code" aria-hidden="true"></eye>
+				</eye>
+				<eye class="menu-btn active" title="<%select%>">
+					<eye class="fa fa-mouse-pointer" aria-hidden="true"></eye>
+				</eye>
+				<eye class="bottom-menu-options">
+					<eye class="menu-btn" title="<%route%>">
+							<eye class="fa fa-link" aria-hidden="true"></eye>
+					</eye>
+
+					<eye class="menu-btn" title="<%duplicatepage%>">
+						<eye class="fa fa-files-o" aria-hidden="true"></eye>
+					</eye>
+
+
+					<eye class="menu-btn" title="<%pagetemplate%>">
+						<eye class="fa fa-columns" aria-hidden="true"></eye>
+					</eye>
+
+					<eye class="menu-btn" title="<%logout%>">
+						<eye class="fa fa-power-off" aria-hidden="true"></eye>
+					</eye>
+
+					<eye class="menu-btn" title="<%logout%>">
+						<i class="fa fa-tree" aria-hidden="true"></i>
+					</eye>
+
+
+				</eye>
+			</eye>
+		</eye>
+	</eye>
+	<eye class="bottom-menu-options">
+
+	</eye>
+</eye>
+
+
+
+<script>
+	$('.menu-btn').click(function(){
+		$(this).parents('.bottom-menu').find('.bottom-menu-options').toggleClass('active');
+	});
+
+	$('.wrapper-whole').click(function(e){
+		$('.bottom-menu-options').removeClass('active');
+
+	});
+
+</script>

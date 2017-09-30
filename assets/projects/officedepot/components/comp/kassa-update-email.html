@@ -1,0 +1,80 @@
+
+
+
+
+
+<div class="row invoice-box--js" data-depend="send-invoice">
+    <div class="col-sm-12">
+        <div class="checkout">
+            <div class="checkout-inner">
+                <h4>Fakturatyp</h4>
+                <div class="row" id="saved-email-invoice-box--js">
+                    <div class="col-sm-12">
+                        <div class="checkout-invoice">
+                            <p id="">PDF faktura via e-post: se-commerce@officedepot.se <a>Läs mer</a></p>
+							
+							
+							
+							
+							
+                            <button class="btn btn-primary" id="change-email-invoice--js">Ändra</button>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="row" style="display:none;"id="change-email-invoice-box--js">
+					<div class="checkout-invoice">
+						<div class="error" style="display: none"></div>
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-12 each-box">
+									<label>
+									PDF-faktura via e-post:
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-6 each-box">
+									<input id="Invoice_Email" value="" class="form-control" type="text" maxlength="40">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-12 each-box">
+									<label>
+									Verifiera e-post för PDF-faktura:
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-6  each-box">
+									<input id="invoiceEmail2" value="" class="form-control" type="text" maxlength="40">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+									<div class="col-xs-12 Invoice-email-btn-group">
+											<button class="btn btn-primary" id="save-email-invoice--js">Spara uppgifterna</button>
+									</div>
+							</div>
+						</div>
+						</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+	$('#change-email-invoice--js').click(function(){
+	
+		$('#change-email-invoice-box--js').show();
+		$('#saved-email-invoice-box--js').hide();
+	
+	});
+	
+	$('#save-email-invoice--js').click(function(){
+	
+	$('#change-email-invoice-box--js').hide();
+		$('#saved-email-invoice-box--js').show();
+	
+	});
+</script>

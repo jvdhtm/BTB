@@ -1,0 +1,257 @@
+.checkout{
+    background-color: #f9f9f9;
+    border: 1px solid #dcdcdc;
+    margin-top: 20px;
+
+    h4{
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .checkout-inner{
+        padding: 7px 15px 26px 15px;
+    }
+
+    @media (min-width: 1200px){
+    .col-lg-3 {
+    width: 28%;
+        }
+    }
+@media screen and (max-width: 414px){
+    .checkout-type{
+        padding-bottom: 10px;
+    }
+    .shipping-input{
+        margin-left: 0px !important;
+    }
+}
+
+    .checkout-type--inner{
+        border: 2px solid #dcdcdc;
+        background-color: #FFF;
+
+        &:hover{
+            border: 2px solid $red;
+        }
+    }
+
+    .checkout-type--img{
+        padding: 25px 0;
+        text-align: center;
+        img{
+            width: 52px;
+            height: 60px;
+        }
+    }
+
+    .checkout-type--bottom{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+.checkout-type.change-type-payment--js.active
+{
+	.checkout-type--inner{
+	    border: 2px solid $red;
+	}
+}
+	
+    .checkout-shipping--text {
+        display: inline-block;
+    }
+
+    .checkout-conditions--text {
+        display: inline-block;
+        position: absolute;
+        margin-top: 5px;
+    }
+
+    .shipping-input{
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+
+    .shipping-input {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 1px solid #b7b7b7;
+    border-top-width: 2px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(252, 252, 252, 0);
+     font-weight: 700;
+}
+
+.shipping-input:hover {
+  border: 2px solid #b7b7b7;
+  color: inherit;
+}
+
+.shipping-input:focus {
+  color: rgba(0,0,0,1);
+  outline: none;
+  font-weight: 700;
+  border: 2px solid #b7b7b7;
+  color: inherit;
+  background-color: #FFF;
+}
+
+.checkout-invoice {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Invoice-email-btn-group {
+    margin-top: 10px;
+}
+
+.shipping-input::-webkit-input-placeholder {
+	color: #a9a195;
+}
+.shipping-input {
+	&:-moz-placeholder {
+		color: #a9a195;
+		opacity: 1;
+	}
+	&:-ms-input-placeholder {
+		color: #a9a195;
+	}
+}
+.shipping-input::-moz-placeholder {
+	color: #a9a195;
+	opacity: 1;
+}
+.shipping-input::-ms-input-placeholder {
+	color: #a9a195;
+}
+
+    .checkout-inforamtion ul{
+        margin-top: 7px;
+
+        li{
+            line-height: 24px;
+        }
+    }
+
+    .btn-buy{
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .one, .two {display: inline;}
+}
+
+
+
+.custom-checkbox {
+	input[type="checkbox"] {
+		position: absolute;
+		left: -999em;
+		+ label {
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+            padding-bottom: 5px;
+		}
+		+ label::before {
+			content: "";
+			display: inline-block;
+			vertical-align: -25%;
+			height: 30px;
+			width: 30px;
+			background-color: transparent;
+			border: 1px solid rgb(166, 166, 166);
+			border-radius: 4px;
+			margin-right: 0.5em;
+		}
+		&:checked + label::after {
+			content: '';
+			position: absolute;
+			width: 2.2ex;
+			height: 1.4ex;
+			background: transparent;
+			top: 7px;
+			left: 7px;
+			border: 2px solid  green;
+			border-top: none;
+			border-right: none;
+			transform: rotate(-45deg);
+		}
+	}
+	input[type="radio"] {
+		position: absolute;
+		left: -999em;
+	}
+}
+.custom-checkboxinput[type="checkbox"] {
+	line-height: 2.1ex;
+}
+
+//table
+
+@media screen and (max-width: 767px){
+    .table-responsive {
+        border: none !important;
+    }
+}
+
+.checkout-table {
+	margin-top: 20px;
+    margin-bottom: 0px;
+	width: 100%;
+	tbody {
+		tr {
+			height: 20px;
+			&:last-child {
+				border-bottom: none;
+			}
+			td:last-child {
+				float: right;
+			}
+            td {
+            border-top: none;
+            padding: 0px;
+            }
+		}
+		td.name {
+			width: 200px;
+			cursor: pointer;
+			line-height: 25px;
+		}
+	}
+	tfoot {
+		tr {
+			border-top: 1px solid #000;
+
+            td{
+                padding: 0px;
+            }
+		}
+		td.name {
+			width: 200px;
+			cursor: pointer;
+            border-top: 1px solid #000;
+            padding-top: 10px;
+		}
+	}
+	#total {
+		text-align: right;
+		height: 50px;
+		border-top: 1px solid #000;
+		color: #000;
+        padding-top: 10px;
+	}
+}
+
+.items-item{
+    .show{
+        margin: 10px 0;
+    }
+    .edit{
+        margin: 10px 0;
+    }
+}

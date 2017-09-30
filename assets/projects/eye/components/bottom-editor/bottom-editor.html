@@ -1,0 +1,71 @@
+
+
+	<eye class="footer-fixed">
+		<eye class="row">
+
+
+		<eye class="col-xs-6">
+				<compontent src="/Components/bottom-menus/bottom-menus.html"></compontent>
+		</eye>
+		<eye class="col-xs-6">
+
+				<eye class="text-right col-sm-11 nopadding border-left">
+					<eye class="project-menu-con" id="project-save">
+						<eye class="menu-btn">
+							<eye class="fa fa-floppy-o"></eye>
+						</eye>
+						<eye class="menu-btn">
+							<eye class="fa fa-wrench" aria-hidden="true"></eye>
+						</eye>
+					</eye>
+				</eye>
+				<eye class="text-right col-sm-1 nopadding border-left" >
+					<eye class="menu-btn" id="publish">
+						Publish
+					</eye>
+				</eye>
+		</eye>
+		</eye>
+	</eye>
+
+	<eye class="code-editor " id="code-editor--js" style="bottom:-50px;">
+			<eye class="code-editor-codes"  >
+				<compontent src="/Components/code-editor/code-editor.html"></compontent>
+			</eye>
+	</eye>
+
+	<script>
+
+	eye.docReady(function(){
+
+
+
+
+		$('body').on('click','.show-editor--js',function(e) {
+				$(this).removeClass('show-editor--js').addClass('hide-editor--js');
+
+				$('#code-editor--js').css('bottom','50px')
+
+		});
+
+
+		$('body').on('click','.hide-editor--js',function(e) {
+				$(this).removeClass('hide-editor--js').addClass('show-editor--js')
+				$('#code-editor--js').css('bottom','-50px')
+		});
+
+
+
+
+
+		$( window ).resize(function() {
+
+			$('.hide-editor--js').removeClass('hide-editor--js').addClass('show-editor--js')
+			$('#code-editor--js').css('bottom','-50px')
+
+		});
+
+
+	});
+
+	</script>

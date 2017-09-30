@@ -1,0 +1,59 @@
+.btn-green {
+	color: #ffffff !important;
+	font-size: 14px;
+	background: $green;
+	text-decoration: none;
+	border-radius:0px;
+	&:hover {
+		background-color: #5e9441;
+		text-decoration: none;
+	}
+}
+
+.btn-spec {
+    border-radius: 1px ;
+    background-color: rgba(237, 237, 237, 0.3) ;
+    border: solid 0.5px rgba(169, 161, 149, 0.5) ;
+    color: #9c9494 ;
+    margin-top: 20px ;
+    padding: 10px 12px ;
+}
+
+
+.thumbnail .btn-buy {
+    width: 100%;
+}
+.btn-buy {
+	border-radius: 4px;
+	font-family: Arial;
+	color: #ffffff !important;
+	background: $green;
+	text-decoration: none;
+	border-radius: 0px;
+	&:hover {
+		background: $green-dark;
+		text-decoration: none;
+	}
+}
+
+.btn-red {
+	border-radius: 4px;
+	font-family: Arial;
+	color: #ffffff !important;
+	background: $red;
+	text-decoration: none;
+	&:hover {
+		background: $red-dark;
+		text-decoration: none;
+	}
+}
+
+.btn-search{
+	background-color: $blue;
+	padding-left: 20px;
+    padding-right: 20px;
+
+	&:hover{
+		background-color: $blue-light;
+	}
+}

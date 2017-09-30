@@ -1,0 +1,39 @@
+<div class="section">
+	<compontent src="/components/comp/filters.html"></compontent>
+	</div>
+	
+    <div class="product-items">
+		<compontent src="/components/comp/search-result3.html"></compontent>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function () {
+		$('#list').click(function (event) {
+			event.preventDefault();
+			$('.thumbnail-inner').addClass('col-sm-3');
+			$('.group-box').addClass('col-sm-4');
+			$('.text-box').addClass('col-sm-5');
+			$('.product-small').addClass('product-list');
+			$('.box-item-price').css("margin-top", "20px");
+			$('.box-item-heading').css("margin-top", "20px");
+			$('.grid-view--js').removeClass('active');
+			$(this).addClass("active");
+
+		});
+
+		$('#grid').click(function (event) {
+			event.preventDefault();
+			$('.thumbnail-inner').removeClass('col-sm-3');
+			$('.group-box').removeClass('col-sm-4');
+			$('.text-box').removeClass('col-sm-5');
+			$('.product-small').removeClass('product-list');
+			$('.box-item-price').css("margin-top", "0px");
+			$('.box-item-heading').css("margin-top", "0px");
+			$('.grid-view--js').removeClass('active');
+			$(this).addClass("active");
+
+		});
+	});
+
+</script>

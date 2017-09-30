@@ -1,0 +1,6 @@
+{
+  "sort":4,
+  "currency":{"type": "String"},
+  "amount": {"type": "number"},
+  "uom": {"type": "String"},
+}

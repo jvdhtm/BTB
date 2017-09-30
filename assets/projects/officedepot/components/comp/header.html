@@ -1,0 +1,86 @@
+<header class="top-container">
+	<div class="container od-navbar clearfix">
+		<compontent src="/components/comp/top-bar.html"></compontent>
+		<div class="logo">
+			<a href="/">
+				<img alt="officedepot.se" class="hidden-xs hidden-sm" src="/images/od_logo.png">
+				<img alt="officedepot.se" class="visible-xs visible-sm" src="/images/od_logo.png">
+			</a>
+		</div>
+		<div id="hamburger-1" class="button hamburger" data-toggle="collapse" data-target="#od-navbar">
+			<div class="hamburger">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
+		</div>
+
+		<div id="show-minicart" class="button-group">
+			<div id="cart-button">
+				<span>
+				<a href="/customer-cart.html">
+					<img src="images/kundvagn.svg">
+						<div class="badge text-center ng-hide">
+							<span>4</span>
+
+			</div>
+			</img>
+			</a>
+			</span>
+		</div>
+		<div class="button hidden-xs">
+			<a href="/customer-cart.html">
+
+				<div class="text-center">
+
+				</div>
+				<div class="text-nowrap od-cart-right">
+					Till kassan <span class="arrow-down"></span>
+				</div>
+				<div>128,00 kr Exkl.moms.</div>
+			</a>
+		</div>
+		<compontent src="/components/comp/minicart.html"></compontent>
+
+	</div>
+	<div class="information">
+		<ul>
+			<li>
+				<h5><i class="fa fa-check" aria-hidden="true"></i>Personlig service</h1>
+			</li>
+			<li>
+				<h5><i class="fa fa-check" aria-hidden="true"></i>Snabb leverans</h1>
+			</li>
+			<li>
+				<h5><i class="fa fa-check" aria-hidden="true"></i>Kvalitetsprodukter</h1>
+			</li>
+		</ul>
+	</div>
+	<div class="search">
+		<form class="center-block" action="/search.html" role="search">
+			<div class="input-group">
+				<input autocomplete="off" class="form-control" name="q" placeholder="Vad behöver du till kontoret?" type="search">
+				<span class="input-group-btn">
+						<button class="btn-search btn btn-primary" style="height:34px;" type="submit">Sök</button>
+					</span>
+			</div>
+		</form>
+	</div>
+	</div>
+
+	<compontent src="/components/comp/navigation.html"></compontent>
+
+	<div class="container white">
+		<compontent src="/components/comp/breadcrum.html"></compontent>
+	</div>
+
+</header>
+
+<script>
+	$(document).ready(function () {
+		$(".hamburger").click(function () {
+			$(this).toggleClass("is-active");
+		});
+	});
+
+</script>

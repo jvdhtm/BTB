@@ -1,0 +1,30 @@
+@import '_bootstrap.scss'; //bootstrap
+@import 'primary-variables'; //primary-variables variables 
+@import 'custom'; //custom styles that overides bootstrap
+@import 'components/products/product'; //products
+@import 'components/content/content'; //content
+@import 'components/products/filter'; //filter
+@import 'components/products/product-blue-box'; //product-blue-box
+@import 'components/products/choose-brand'; //choose-brand
+@import 'components/products/search-result-list'; //search result list
+@import 'components/products/product-details'; //products-details
+@import 'components/ribbons/ribbons'; //ribbons
+@import 'components/catagories/catagories'; //catagories
+@import 'components/map/map'; //map
+@import 'components/buttons/buttons'; //buttons
+@import 'components/mypage/form'; //form
+@import 'components/mypage/order-history'; //order history
+@import 'components/header/header'; //header
+@import 'components/footer/footer'; //footer
+@import 'components/richtext/richtext'; //richtext
+@import 'components/breadcrumbs/breadcrumbs'; //breadcrumbs
+@import 'components/minicart/minicart'; //minicart
+@import 'components/modal/login-modal'; //modal
+@import 'components/modal/delivery-address'; //modal
+@import 'components/customer-cart/customer-cart'; //Customer-cart
+@import 'components/checkout/checkout-form.scss'; //checkout form 
+@import 'components/checkout/checkout-content'; //checkout content 
+@import 'components/search/suggestions'; //suggestions 
+@import 'components/specification/specification'; //specification 
+@import 'components/scroll-top/scroll-top'; //scroll-top 
+@import 'components/carousel/carousel'; //Custom carousel style

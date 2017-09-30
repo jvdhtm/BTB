@@ -1,0 +1,34 @@
+.breadcrums {
+	margin-top: 6px;
+	font-size: 11px;
+	line-height: 19px;
+	margin-bottom: 10px;
+	.breadcrums-nava {
+		float: left;
+	}
+	.prev-page {
+		float: right;
+		width: 70px;
+		span {
+			float: right;
+		}
+	}
+}
+.arrow-round {
+	float: left;
+	display: block;
+	margin: 3px 5px 0;
+	text-align: center;
+	width: 14px;
+	height: 14px;
+	line-height: 12px;
+	font-size: 16px;
+	border-radius: 20px;
+}
+a.breadcrumstext {
+	float: left;
+	color: #858584;
+	&:hover{
+		color: $red;
+	}
+}

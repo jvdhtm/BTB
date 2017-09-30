@@ -1,0 +1,5 @@
+{
+  "sort":6,
+  "id":{"type": "number"},
+  "products":{"type": "Schema.Types.ObjectId","ref":"products"}
+}

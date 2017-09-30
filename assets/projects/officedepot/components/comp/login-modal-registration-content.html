@@ -1,0 +1,64 @@
+<div id="registrationModal" class="modal-content registration-modal registration-modal--js">
+    <div class="modal-header">
+        <button type="button" class="close modal-close--js" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel">Registrera konto</h4>
+    </div>
+    <div class="modal-header">
+        <div class="radio">
+            <label><input class="select-reg-type--js" type="radio" rel="company"  checked name="customer-type">Företag</label>
+            <label><input class="select-reg-type--js" type="radio" rel="private" name="customer-type">Privatperson</label>
+            <label><input class="select-reg-type--js" type="radio" rel="public" name="customer-type">Offentlig förvaltning</label>
+        </div>
+    </div>
+    <div class="modal-body">
+        <compontent src="/components/comp/login-modal-registration-content-private.html"></compontent>
+        <compontent src="/components/comp/login-modal-registration-content-company.html"></compontent>
+        <compontent src="/components/comp/login-modal-registration-content-public.html"></compontent>
+    </div>
+    <div class="modal-footer">
+        <button style="float: left;" type="button" class="btn btn-default modal-close--js" data-dismiss="modal">Stäng</button>
+        <button id="back-login" type="button" class="btn btn-default">Tillbaka</button>
+        <button id="create" type="button" class="btn btn-success">Skapa konto</button>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#back-login').click(function (event) {
+            event.preventDefault();
+            $('.registration-modal--js').css('display', 'none');
+            $('.login-modal--js').css('display', 'block');
+        });
+
+        $(".modal-close--js").click(function (event){
+            $(".registration-content--js").removeClass("active");
+            $("#company").addClass("active"); 
+
+            $(".select-reg-type--js").removeProp("checked");
+            
+            $("[rel='company']").prop("checked", "true");
+
+
+
+
+            $("#back-login").click(); 
+               
+        });
+
+        $(".select-reg-type--js").change(function () {
+        var id = $(this).attr("rel");
+
+        $("#create").css("display", "inline-block");
+
+        if(id == "public"){
+
+            $("#create").css("display", "none");
+        }
+
+        $(".registration-content--js").removeClass("active");
+        $("#" + id).addClass("active");       
+        });
+    });
+
+</script>

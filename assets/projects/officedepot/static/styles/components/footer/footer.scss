@@ -1,0 +1,35 @@
+.footerLinks {
+	min-height: 270px !important;
+}
+.cycube-container {
+	font-size: 12px;
+}
+.footer {
+	a {
+		color: $red;
+        line-height: 30px;
+		font-size: 12px;
+
+		&:hover{
+			text-decoration: underline !important;
+		}
+	}
+	h2 {
+		padding: 0;
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+
+    li{
+        list-style: none;
+    }
+}
+.gray
+{
+	background:$gray ;
+}
+.copyright 
+{ 
+	background: url(/images/media/copyright-bg.png) left bottom repeat-x;
+    height: 35px; line-height: 35px; color: #FFFFFF; text-align: center;
+}

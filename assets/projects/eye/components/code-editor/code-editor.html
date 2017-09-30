@@ -1,0 +1,35 @@
+<eye class="row">
+	<eye class="col-md-2">
+		<eye class="file-menu" >
+			<eye id="file-tree">
+
+			</eye>
+		</eye>
+	</eye>
+	<eye class="col-md-10">
+		<eye>
+		</eye>
+	</eye>
+</eye>
+
+<script>
+eye.docReady(function(){
+
+	$('#file-tree').jstree({ 'core' : {
+	    'data' : [
+	       'Simple root node',
+	       {
+	         'text' : 'Root node 2',
+	         'state' : {
+	           'opened' : true,
+	           'selected' : true
+	         },
+	         'children' : [
+	           { 'text' : 'Child 1' },
+	           'Child 2'
+	         ]
+	      }
+	    ]
+	} });
+});
+</script>

@@ -1,0 +1,67 @@
+
+
+.u-vmenu ul ul{
+	display: none;
+}
+
+.u-vmenu ul li a {
+	color: $gray-darker;
+	line-height: 40px;
+	display: block;
+}
+
+
+
+
+.u-vmenu i{
+	float: right;
+	line-height: 40px;
+	font-size: 25px;
+}
+
+.u-vmenu ul li a:hover
+{
+	color:$red;
+}
+
+.u-vmenu > ul > li > a {
+	padding-left: 5px;
+}
+.u-vmenu > ul > li > ul > li > a {
+	padding-left: 20px;
+}
+.u-vmenu > ul > li > ul > li > ul > li > a {
+	padding-left: 20px;
+}
+.u-vmenu > ul > li > ul > li > ul > li > ul > li > a {
+	padding-left: 30px;
+}
+
+.u-vmenu > ul > li > ul  li > ul > li > ul > li > ul > li >  a {
+	padding-left: 40px;
+}
+.u-vmenu ul li a[data-option='on']{
+	color:$red;
+}
+.u-vmenu ul li a[data-option='off'] {
+
+}
+
+.category-items a{
+	color: #000;
+	font-weight: 700;
+}
+
+li.category-item-img {
+    margin-bottom: 20px;
+}
+.category-items{
+	@include make-row();
+
+	.category {
+    @include make-xs-column(6);
+	@include make-sm-column(4);
+    @include make-md-column(3);
+	@include make-lg-column(2);
+	}
+}

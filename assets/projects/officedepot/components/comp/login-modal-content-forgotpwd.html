@@ -1,0 +1,30 @@
+<div class="modal-content forgot-pwd forgot-pwd--js">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Glömt användarnamn eller lösenord?</h4>
+    </div>
+    <div class="modal-body">
+        <p>Fyll i din epostadress så skickar vi ett mail med instruktioner för att ändra lösenord</p>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Epostadress</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Epostadress">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a id="back-login-modal" type="button" class="btn btn-default">Tillbaka</a>
+        <button type="button" class="btn btn-primary">Skicka</button>
+    </div>
+</div>
+
+
+<script>
+	$(document).ready(function () {
+		$('#back-login-modal').click(function (event) {
+			event.preventDefault();
+			$('.login-modal--js').css('display', 'block');
+            $('.forgot-pwd--js').css('display', 'none');
+           
+
+		});
+	});
+</script>

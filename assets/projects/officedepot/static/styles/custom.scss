@@ -1,0 +1,326 @@
+/******************************************************************************
+    Overide browser user agent stylesheets
+*******************************************************************************/
+
+menu,
+ol,
+ul,
+dir {
+    padding: 0;
+    list-style: none;
+}
+dd {
+    margin: 0;
+}
+
+
+.full-width
+{
+	width:100%;
+}
+/******************************************************************************
+    Custom 
+*******************************************************************************/
+
+.nocursor {
+    cursor: default;
+}
+
+.fullWidth-dropdown{
+  width: 100%;
+  li{
+	  a{
+		  text-align: left;
+	  }
+  }
+}
+
+
+/*Override bootstrap padding */
+
+@mixin make-lr-padding($type, $value){
+
+	@if $type == 'xs'{
+	 padding-left:$value !important; padding-right: $value !important; 
+	}
+	@if $type == 'sm'{
+		@media (min-width: 768px) {
+	 		padding-left:$value !important; padding-right: $value !important; 
+		}
+	}
+	@if $type == 'md'{
+		@media (min-width: 992px) {
+	 		padding-left:$value !important; padding-right: $value !important; 
+		}
+	}
+	@if $type == 'lg'{
+		@media (min-width: 1200px) {
+	 		padding-left:$value !important; padding-right: $value !important; 
+		}
+	}
+}
+
+.btn-primary{
+	border: none;
+	background-color: #008BCB;
+
+	&:hover{
+		background-color: #61BFEA;
+	}
+	&:focus{
+		background-color: #0187c5;
+	}
+	&:active{
+		background-color: #0187c5;
+	}
+
+	&:active:hover{
+		background-color: #0187c5;
+	}
+}
+
+.form-control{
+	border-radius: 0px;
+}
+
+.row-10
+{
+	margin-left:-10px;
+	margin-right:-10px;
+}
+
+
+
+
+.padding-topbottom-5
+{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.padding-xs-30 {
+	padding: 20px;
+}
+.padding-xs-20 {
+	padding: 20px;
+}
+.padding-xs-10 {
+	padding: 10px;
+}
+.padding-xs-5 {
+	padding: 5px !important;
+}
+@media(min-width: 768px) {
+	.padding-sm-30 {
+		padding: 20px;
+	}
+	.padding-sm-20 {
+		padding: 20px;
+	}
+	.padding-sm-10 {
+		padding: 10px;
+	}
+	.padding-sm-5 {
+		padding: 5px;
+	}
+	.padding-sm-0 {
+		padding: 0px;
+	}
+}
+@media(min-width: 992px) {
+	.padding-md-30 {
+		padding: 20px;
+	}
+	.padding-md-20 {
+		padding: 20px;
+	}
+	.padding-md-10 {
+		padding: 10px;
+	}
+	.padding-md-5 {
+		padding: 5px;
+	}
+}
+@media(min-width: 1200px) {
+	.padding-lg-30 {
+		padding: 30px;
+	}
+	.padding-lg-20 {
+		padding: 20px;
+	}
+	.padding-lg-10 {
+		padding: 10px;
+	}
+	.padding-lg-5 {
+		padding: 20px;
+	}
+}
+.box-margin-20 {
+	margin: 20px;
+}
+.box-margin-10 {
+	margin: 10px;
+}
+.box-margin-5 {
+	margin: 5px;
+}
+.box-margin-top-20 {
+	margin-top: 20px;
+}
+.box-margin-top-10 {
+	margin-top: 10px;
+}
+.box-margin-top-5 {
+	margin-top: 5px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+/******************************************************************************
+    Custom typography
+*******************************************************************************/
+a {
+	color: $red;
+	text-decoration: none;
+	outline: 0;
+	cursor: pointer;
+	&:hover {
+		color: $red;
+		text-decoration: none !important;
+	}
+}
+
+.small-text-gray {
+    font-size: 12px;
+    color: $gray-darker;
+}
+
+.search-suggestion{
+	margin: 10px 0;
+
+	a{
+		color: #000;
+		font-weight: 700;
+		padding-right: 5px;
+	}
+}
+
+/******************************************************************************
+    Custom margin and paddings
+*******************************************************************************/
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.margin-top-10
+{
+	margin-top:10px;
+}
+
+/******************************************************************************
+    Thumbnails
+*******************************************************************************/
+
+
+.thumbnail-inner {
+	margin: 10px auto;
+	padding-bottom: 10px;
+	> img {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		max-width: 100%;
+	}
+	a > img {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		max-width: 100%;
+	}
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+}
+/*.thumbnail:hover {
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+	transition: all 0.20s ease-in-out;
+}*/
+.carousel-inner > .item {
+	> img {
+		display: block;
+		max-width: 100%;
+	}
+	> a > img {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+
+
+
+
+/******************************************************************************
+    Text responsive
+*******************************************************************************/
+	
+	
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: 768px) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: 992px) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: 1200px) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
+
+
+
+/******************************************************************************
+    Custom 5 col
+*******************************************************************************/
+
+
+
+
+// Generate the large columns
+@mixin make-lg-column-5th($gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-lg-min) {
+    float: left;
+    width: 20%;
+  }
+}
+
+
+
+/******************************************************************************
+    Remove button radius
+*******************************************************************************/
+.btn{
+	border-radius: 0px;
+}

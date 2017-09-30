@@ -1,0 +1,9 @@
+eye
+{
+	&.floating-select-box {
+		position: absolute;
+		outline: 3px solid $color1;
+		 pointer-events: none;
+		 z-index:( $maxZindex - 1 );
+	}
+}

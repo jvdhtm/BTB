@@ -1,0 +1,44 @@
+eye.floating-menu {
+	position: absolute;
+	display: none;
+	
+	top: 0px;
+	left: 50%;
+	color:$fontColor;
+	background: $formBgcolor;
+	z-index: $maxZindex;
+	width: 200px;
+	box-shadow: 0px -3px 20px 2px $color2;
+	.floating-menu-item {
+		display: block;
+		padding: 5px 10px;
+		position:relative;
+		word-wrap: break-word;
+		&:hover{
+			background:$color2;
+			
+			&>.menu-child{
+				display:block;
+			}
+		}
+	
+		.menu-child
+		{
+			display:none;
+			position: absolute;
+			left: 200px;
+			top:0px;
+			width: 200px;
+			background: $formBgcolor;
+			box-shadow: 0px -3px 20px 2px $color2;
+		}
+		.f-headerheader
+		{
+			.fa
+			{
+				position:absolute;
+					right: 10px;
+			}
+		}
+	}
+}

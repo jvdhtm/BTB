@@ -1,0 +1,30 @@
+#banner                                 { padding: 15px; background-color: #06b; color: white; font-size: large; border-bottom: 1px solid #ccc; background: url(bg.gif) repeat-x; text-align: center; }
+#banner a                               { color: white }
+div.googleMapLarge                      { border-top-width: 1px; border-right-width-value: 1px; border-right-width-ltr-source: physical; border-right-width-rtl-source: physical; border-bottom-width: 1px; border-left-width-value: 1px; border-left-width-ltr-source: physical; border-left-width-rtl-source: physical; border-top-style: solid; border-right-style-value: solid; border-right-style-ltr-source: physical; border-right-style-rtl-source: physical; border-bottom-style: solid; border-left-style-value: solid; border-left-style-ltr-source: physical; border-left-style-rtl-source: physical; border-top-color: #cccccc; border-right-color-value: #cccccc; border-right-color-ltr-source: physical; border-right-color-rtl-source: physical; border-bottom-color: #cccccc; border-left-color-value: #cccccc; border-left-color-ltr-source: physical; border-left-color-rtl-source: physical; }
+div.googleMapLarge img                  { max-width:256px;  }
+div.storeslistMain                      { float: left }
+#storeList                              {/* float: right; *//* width: 220px; */padding: 20px;background: none repeat scroll 0 0 #F9F9F9;border: 1px solid #E1E1E1;}
+div.storeslistRight ul.stores           { margin: 0pt; padding: 0pt; list-style-type: none; cursor: pointer; }
+div#butikListStores ul.stores li        {width: 100%;border-bottom: 1px dotted #ccc; margin: 10px 0;}
+div#butikListStores ul.stores li a      {background: url(/images/li-arrow.png) left no-repeat;padding: 8px 0 8px 20px;}
+div#butikListStores ul.stores li a:hover
+                                        { cursor: pointer; }
+div.storeslistRight ul.stores           { background-color: #f0f1f1; background-image: none; background-repeat: repeat; background-attachment: scroll; background-position: 0% 0%; padding-top: 10px; padding-right: 0pt; padding-bottom: 10px; padding-left: 0pt; }
+/***div.right                               { float: left; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 20px; width: 180px; }      **/
+.butikInfo                              { position: relative; width: 600px; margin-top: 10px; }
+#googleDirections                       { margin-top: 20px }
+.butikGenerellInfo                      { position: relative }
+.storeslistRight ul.stores li.hover,
+.storeslistRight ul.stores li.selected  li.hoverLight
+                                        { font-weight: bold }
+
+
+.get-store label{
+font-size: 30px;
+margin-top: 20px;
+margin-bottom: 10px;
+font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}

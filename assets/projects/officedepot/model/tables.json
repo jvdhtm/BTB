@@ -1,0 +1,152 @@
+[
+	{
+		"name":"products",
+		"fields":[
+			{
+				"name" :"title",
+				"prop":{
+					"type":"string",
+					"default":"0"
+				}
+			},
+			{
+				"name" :"ImgUrl",
+				"prop":{
+					"type":"string",
+					"default":"#"
+				}
+			},
+			{
+				"name" :"geo-lat",
+				"prop":{
+					"type":"int",
+					"default":"0"
+				}
+			},
+			{
+				"name" :"geo-lon",
+				"prop":{
+					"type":"int",
+					"default":"0"
+				}
+			}
+		]
+	},
+	{
+		"name":"categories",
+		"fields":[
+			{
+				"name" :"title",
+				"prop":{
+					"type":"string",
+					"default":"0"
+				}
+			},
+			{
+				"name" :"products"
+				{
+					"type":"json",
+					"default":"[]"
+				}
+			}
+			
+		]
+	},
+	{
+		"name":"individuals",
+		"fields":[
+			{
+				"name" :"name"
+				{
+					"type":"string",
+					"default":"0"
+				}
+			},
+			{
+				"name" :"email"
+				{
+					"type":"string",
+					"default":"0"
+				}
+			},
+			{
+				"name" :"phone"
+				{
+					"type":"int",
+					"default":"0"
+				}
+			},
+			{
+				"name" :"geo-lat"
+				{
+					"type":"int",
+					"nullable":false,
+					"default":"0"
+				}
+			},
+			{
+				"name" :"geo-lon"
+				{
+					"type":"int",
+					"default":"0"
+				}
+			},
+			{
+				"name" :"roles"
+				{
+					"type":"json",
+					"default":"[]"
+				}
+			}
+		]
+	},
+	{
+		"name":"roles",
+		"fields":[
+			{
+				"name" :"title",
+				{
+					"type":"string",
+					"default":"0"
+				}
+			},
+			{
+				"name" :"description",
+				{
+					"type":"text",
+					"default":"0"
+				}
+				
+			},
+			{
+				"name" :"permissions",
+				{
+					"type":"json",
+					"nullable":[],
+					"default":"0"
+				}
+				
+			}
+		]
+	},
+	{
+		"name":"permissions",
+		"fields":[
+			{
+				"name" :"type",
+				{
+					"type":"string",
+					"default":"Read/Write"
+				}
+			},
+			{
+				"name" :"module",
+				{
+					"type":"string",
+					"default":"0"
+				}
+			}
+		]
+	}
+]
+	
