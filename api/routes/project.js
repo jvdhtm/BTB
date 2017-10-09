@@ -89,36 +89,7 @@ var project = function(app,dblibrary,functions){
 
 		});
 
-		app.get('/projectApi/:project/CheckUsers', function(req, response, next) {
 
-
-		});
-
-
-		app.post('/projectApi/:project/AddUser', function(req, response, next) {
-			// get the add
-
-
-		});
-
-		app.post('/projectApi/:project/addRole', function(req, response, next) {
-
-
-		});
-
-
-		app.post('/projectApi/:project/Createtables', function(req, response, next) {
-
-				var projectname = req.params.project;
-				var path = request.body.path;
-
-
-		});
-
-		app.post('/projectApi/:project/addPermission', function(req, response, next) {
-
-
-		});
 
 
 }
