@@ -1,5 +1,5 @@
 
-var project = function(app,dblibrary,functions){
+var project = function(app,functions){
 
 
 		app.get('/projectApi/:project/*.scss', function(req, response, next) {
