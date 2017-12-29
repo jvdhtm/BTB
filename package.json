@@ -19,6 +19,7 @@
     "morgan": "~1.7.0",
     "node-sass": "^4.5.3",
     "sequelize": "^4.11.7",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "walk": "^2.3.9"
   }
 }
