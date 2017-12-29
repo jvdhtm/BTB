@@ -175,8 +175,8 @@ module.exports = {
 /*
 
 From humanity or gods or evolutions or classical music Iam listeing to, it really doesnt matter where it comes From,
-it really doesnt matter, one could realize the music of divinity is being played in his heart and then sacrifise the devine blod for the devine dancing spirits.
+it really doesnt matter, one could realize the music of divinity is being played in his heart and then sacrifise the divin blood for the divin dancing spirits.
 let them turture me let them burry me alife let them decapitate me. Iam here, the ultimate dragon of death, burn me burn me burn me....
-Without the realization I would fall into the hell of vertues.
+let me realized in every moment. Without the realization I would fall into the hell of vertues.
 
 */

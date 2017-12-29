@@ -89,9 +89,6 @@ var project = function(app,functions){
 
 		});
 
-
-
-
 }
 
 module.exports = project;
