@@ -1,0 +1,779 @@
+
+/////////////// Primary colors ///////
+.color-box {
+  padding: 30px;
+  display: inline-block;
+  color: #FFF;
+  text-align: center;
+
+  &.eye--red {
+	  background-color:  $eyeRed;
+  }
+  &.eye--orange {
+    background-color:  $eyeOrange;
+  }
+  &.eye--yellow {
+    background-color:  $eyeYellow;
+  }
+  &.eye--turquoise {
+    background-color:  $eyeTurquoise;
+  }
+  &.eye--lightBlue {
+    background-color:  $eyeLightBlue;
+  }
+  &.eye--darkBlue {
+    background-color:  $eyeDarkBlue;
+  }
+}
+
+compontent
+{
+  display:none;
+}
+routes
+{
+  display:none;
+}
+
+
+.fullwidth
+{
+  width: 100%;
+}
+
+page
+{
+  display: block;
+  transition: height 0.5s ease;
+}
+elink {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+/////////////// Primary colors ///////
+.row {
+
+  &.base--black {
+    background-color:  $black;
+  }
+  &.base--blackLight {
+    background-color:  $blackLight;
+  }
+  &.base--grey {
+    background-color:  $grey;
+  }
+  &.base--greyLight {
+    background-color:  $greyLight;
+  }
+  &.base--silver {
+    background-color:  $silver;
+  }
+  &.base--silverLight {
+    background-color:  $silverLight;
+  }
+  &.base--white {
+    background-color:  $white;
+  }
+}
+.box-wrapper
+{
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+}
+
+/////////////// general /////////////
+body {
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.image-box{
+  img{
+    width: 100%;
+  }
+}
+.site-wrapper {
+ background: $greyLight;
+}
+.home .site-wrapper {
+    display: block;
+    margin-top: -58px;
+}
+.standard_subpage .site-wrapper {
+    margin-top: 116px;
+}
+.standard_subpage.banner .site-wrapper {
+    margin-top: 0px;
+}
+
+.standard .top-image {
+
+}
+.standard.standard_subpage .top-image {
+    display: block;
+    margin-top: 0px;
+}
+
+.full-width {
+
+  &.eye--red {
+    background-color:  $eyeRed;
+  }
+  &.eye--orange {
+    background-color:  $eyeOrange;
+  }
+  &.eye--yellow {
+    background-color:  $eyeYellow;
+  }
+  &.eye--turquoise {
+    background-color:  $eyeTurquoise;
+  }
+  &.eye--lightBlue {
+    background-color:  $eyeLightBlue;
+  }
+  &.eye--darkBlue {
+    background-color:  $eyeDarkBlue;
+  }
+  &.eye--black {
+	   background-color:  $black;
+  }
+  &.eye--blackLight {
+    background-color:  $blackLight;
+  }
+  &.eye--grey {
+    background-color:  $grey;
+  }
+  &.eye--greyLight {
+    background-color:  $greyLight;
+  }
+  &.eye--silver {
+    background-color:  $silver;
+  }
+  &.eye--silverLight {
+    background-color:  $silverLight;
+  }
+  &.eye--white {
+    background-color:  $silverLight;
+  }
+
+}
+
+.container{
+
+  &.eye--red {
+    background-color:  $eyeRed;
+  }
+  &.eye--orange {
+    background-color:  $eyeOrange;
+  }
+  &.eye--yellow {
+    background-color:  $eyeYellow;
+  }
+  &.eye--turquoise {
+    background-color:  $eyeTurquoise;
+  }
+  &.eye--lightBlue {
+    background-color:  $eyeLightBlue;
+  }
+  &.eye--darkBlue {
+    background-color:  $eyeDarkBlue;
+  }
+  &.eye--black {
+	   background-color:  $black;
+  }
+  &.eye--blackLight {
+    background-color:  $blackLight;
+  }
+  &.eye--grey {
+    background-color:  $grey;
+  }
+  &.eye--greyLight {
+    background-color:  $greyLight;
+  }
+  &.eye--silver {
+    background-color:  $silver;
+  }
+  &.eye--silverLight {
+    background-color:  $silverLight;
+  }
+
+  &.eye--white {
+    background-color:  $white;
+  }
+
+}
+
+
+.img-box
+{
+	img{
+	width:100%;
+	}
+}
+
+.image-text {
+
+	&.eye--red {
+    background-color:  $eyeRed;
+  }
+  &.eye--orange {
+    background-color:  $eyeOrange;
+  }
+  &.eye--yellow {
+    background-color:  $eyeYellow;
+  }
+  &.eye--turquoise {
+    background-color:  $eyeTurquoise;
+  }
+  &.eye--lightBlue {
+    background-color:  $eyeLightBlue;
+  }
+  &.eye--darkBlue {
+    background-color:  $eyeDarkBlue;
+  }
+  &.eye--black {
+	   background-color:  $black;
+  }
+  &.eye--blackLight {
+    background-color:  $blackLight;
+  }
+  &.eye--grey {
+    background-color:  $grey;
+  }
+  &.eye--greyLight {
+    background-color:  $greyLight;
+  }
+  &.eye--silver {
+    background-color:  $silver;
+  }
+  &.eye--silverLight {
+    background-color:  $silverLight;
+  }
+
+}
+
+.full-width.padding-top-bottom-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box-text {
+
+	&.eye--red {
+    background-color:  $eyeRed;
+  }
+  &.eye--orange {
+    background-color:  $eyeOrange;
+  }
+  &.eye--yellow {
+    background-color:  $eyeYellow;
+  }
+  &.eye--turquoise {
+    background-color:  $eyeTurquoise;
+  }
+  &.eye--lightBlue {
+    background-color:  $eyeLightBlue;
+  }
+  &.eye--darkBlue {
+    background-color:  $eyeDarkBlue;
+  }
+  &.eye--black {
+	   background-color:  $black;
+  }
+  &.eye--blackLight {
+    background-color:  $blackLight;
+  }
+  &.eye--grey {
+    background-color:  $grey;
+  }
+  &.eye--greyLight {
+    background-color:  $greyLight;
+  }
+  &.eye--silver {
+    background-color:  $silver;
+  }
+  &.eye--silverLight {
+    background-color:  $silverLight;
+  }
+
+}
+
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: 768px) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: 992px) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: 1200px) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
+
+.nopadding
+{
+  padding:0px;
+}
+
+
+@mixin make-lg-column-5th($gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
+
+  @media (min-width: $screen-lg-min) {
+    float: left;
+    width: 20%;
+  }
+}
+
+/////////////// Buttons /////////////
+
+.btn{
+  text-transform: uppercase;
+  padding: 12px 24px;
+  font-weight: bold;
+  &.angle-right:after{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f105";
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+}
+
+.btn-eye--transparent {
+  border: 2px solid $black;
+  color: $black;
+}
+
+.btn-eye--white {
+  border: 2px solid $white;
+  color: $white;
+}
+
+.btn-eye--transparent--white {
+  border: 2px solid $white;
+  color: $white;
+  &:hover, &.active {
+    color: $white;
+  }
+}
+
+.btn-eye--red {
+  background-color: $eyeRed;
+  border: none;
+  &:hover {
+    background-color: $eyeRedLight;
+  }
+  &:active {
+    background-color: $eyeRedDark;
+  }
+}
+
+.btn-eye--orange {
+  background-color: $eyeOrange;
+  border: none;
+  &:hover {
+    background-color: $eyeOrangeLight;
+  }
+  &:active {
+    background-color: $eyeOrangeDark;
+  }
+}
+
+.btn-eye--yellow {
+  background-color: $eyeYellow;
+  border: none;
+  color: $black;
+  &:hover {
+    //background-color:
+  }
+}
+
+.btn-eye--turquoise {
+  background-color: $eyeTurquoise;
+  border: none;
+  &:hover {
+    background-color: $eyeTurquoiseLight;
+  }
+  &:active {
+    background-color: $eyeTurquoiseDark;
+  }
+}
+
+.btn-eye--lightBlue {
+  background-color: $eyeLightBlue;
+  border: none;
+  &:hover {
+    background-color: $eyeLightBlueLight;
+  }
+  &:active {
+    background-color: $eyeLightBlueDark;
+  }
+}
+
+.btn-eye--darkBlue {
+  background-color: $eyeDarkBlue;
+  border: none;
+  &:hover {
+    background-color: $eyeDarkBlueLight;
+  }
+  &:active {
+    background-color: $eyeDarkBlueDark;
+  }
+}
+
+.btn-eye--blackLight {
+  background-color: $blackLight;
+  color: $white;
+  border: none;
+  &:hover {
+    background-color: $blackLight;
+  }
+  &:active {
+    background-color: $blackLight;
+  }
+}
+
+
+
+
+//////////////// Fonts ////////////////////
+.font-box {
+  margin-right: 30px;
+  display: inline-block;
+  color: $black;
+  text-align: center;
+  font-size: 32px;
+  &.font--UniversBold
+  {
+    font-family:'UniversBold';
+  }
+  &.font--UniversLight
+  {
+    font-family:'UniversLight';
+  }
+
+  &.font--UniversUltra
+  {
+    font-family:'UniversUltra';
+  }
+  &.font--MinionPro
+  {
+    font-family:'MinionPro';
+  }
+  &.font--Arial
+  {
+    font-family:'Arial';
+  }
+  &.OpenSans
+  {
+    font-family:'Open Sans';
+  }
+}
+
+body {
+  font-family: 'UniversLight';
+}
+
+//////////////// Headings ////////////////////
+h1, h2, h3, h4 {
+  font-family: '';
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: 'UniversUltra';
+  margin-top: 0;
+  font-size: 3em;
+}
+
+@include media('>=desktop') {
+  h1 {
+    font-size: 5.063em;
+  }
+}
+
+h2 {font-size: 2.4em; font-family: 'UniversUltra';}
+
+@include media('>=desktop'){
+ h2 { font-size: 3.375em; }
+}
+
+h3 {font-size: 2.25em; font-family: 'UniversUltra';}
+
+h4 {font-size: 1.5em; font-family: 'UniversUltra';}
+
+small, .font_small {font-size: 0.667em;}
+
+.page-heading {
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+p{
+      font-weight: 100;
+      line-height: 25px;
+      font-family: 'Open Sans', sans-serif;
+  &.black {
+    color: $black;
+  }
+  &.white {
+    color: $white;
+  }
+}
+
+h1 {
+  &.black {
+    color: $black;
+  }
+  &.white {
+    color: $white;
+  }
+}
+h2 {
+  &.black {
+    color: $black;
+  }
+  &.white {
+    color: $white;
+  }
+}
+
+//////////////// Text feilds ////////////////////
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+  border-color: $black;
+  outline: 0;
+  outline: thin dotted \9;
+}
+
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  border: 1px solid  $greyLight;
+  padding: 10px ;
+}
+
+
+
+.input-control
+{
+  border: 1px solid  $greyLight;
+  padding-left: 5px ;
+  padding-right: 5px ;
+  input {
+    border: none;
+    background-color: $white;
+  }
+
+  .add-on {
+    border: none !important;
+    background-color: $white  !important;
+    &:first-child {
+      position: relative;
+      top: 5px;
+      font-size: 20px;
+    }
+    &:last-child {
+      position: relative;
+      top: 5px;
+      font-size: 20px;
+    }
+
+    &.fa-check{
+      color:$green;
+    }
+    &.fa-users{
+      color:$blackLight;
+    }
+    &.fa-times{
+      color:$red;
+    }
+  }
+  &.focus {
+    border-color: $black;
+    outline: 0;
+    outline: thin dotted \9;
+
+  }
+
+}
+
+///////////////// Text-fields //////////////
+
+//recreate local variables
+$input-height-base: 34px;
+$input-height-small: 30px;
+$input-height-large: 46px;
+$padding-base-horizontal: 12px;
+$grid-gutter-width: 30px;
+$screen-sm-min: 768px;
+
+.form-control{
+  height: 45px;
+}
+
+.has-feedback {
+  // Right Icon Input Padding improvements
+  // when the padding mirrors the input height, it makes the icon look like it
+  // occupies a square on the side of the control
+  .form-control{
+    padding-right: $input-height-base;
+  }
+  .form-control.input-sm,
+  &.form-group-sm .form-control{
+    padding-right: $input-height-small;
+  }
+  .form-control.input-lg,
+  &.form-group-lg .form-control {
+    padding-right: $input-height-large;
+  }
+}
+.has-feedback-left {
+  // Left Icon Input Padding
+  .form-control {
+    //reset changes to right
+    padding-right: $padding-base-horizontal;
+    padding-left: $input-height-base;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .form-control.input-sm,
+  &.form-group-sm .form-control{
+    padding-left: $input-height-small;
+  }
+  .form-control.input-lg,
+  &.form-group-lg .form-control {
+    padding-left: $input-height-large;
+  }
+}
+
+.has-feedback {
+  // Left Icon Input Padding
+  .form-control {
+    //reset changes to right
+    padding-right: $padding-base-horizontal;
+    padding-left: $input-height-base;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .form-control.input-sm,
+  &.form-group-sm .form-control{
+    padding-left: $input-height-small;
+  }
+  .form-control.input-lg,
+  &.form-group-lg .form-control {
+    padding-left: $input-height-large;
+  }
+}
+
+// Left Align Icon
+.has-feedback-left .form-control-feedback {
+  left: 0;
+}
+
+.has-feedback label ~ .form-control-feedback {
+  top: 30px;
+}
+
+//site wrapper
+.wrapper{
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
+//Modal changes
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+// thumbnails
+
+.thumbnail {
+  border: none;
+  .caption {
+    text-align: center;
+  }
+}
+
+.thumbnail-inner {
+	margin: 10px auto;
+	padding-bottom: 10px;
+	> img {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		max-width: 100%;
+	}
+	a > img {
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		max-width: 100%;
+	}
+}

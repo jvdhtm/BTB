@@ -1,0 +1,41 @@
+<div class="products-list" eyerepeat eye-bind="links" >
+
+  <div class="product col-lg-6">
+    <div class="thumbnail padding-xs-5 clearfix">
+        <div class="thumbnail-inner">
+          <img class="group list-group-image" src="<%image%>" alt="">
+        </div>
+        <div class="caption">
+            <div class="box-item-heading">
+                <h4 class="group inner list-group-item-heading thumbnail-heading" eyerepeat eye-bind="description">
+                    <div eyeif="lang == '<%lang%>'">
+                      <%text%>
+                    </div>
+                </h4>
+             </div>
+          <div class="group-box">
+            <div class="box-item-price">
+                <div  class="price" eyerepeat eye-bind="price">
+                    <div eyeif="currency =='<%parent.currency%>'">
+                          <span>
+                            <%amount%>
+                          </span>
+                          <span class="currency">
+                            <%currency%>
+                          </span>
+                          <span class="uom">
+                            <%amount%>
+                          </span>
+                    </div>
+                </div>
+            </div>
+            <div class="button-group">
+              <compontent src="inkbutton.html"  data='<%btn%>' ></compontent>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+</div>

@@ -1,7 +1,7 @@
 var path = require('path');
 var fs = require('fs');
 var glob = require("glob");
-var walk  = require('walk');
+//var walk  = require('walk');
 
 module.exports = {
 	renderSass :  function (src,done,err)
