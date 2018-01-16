@@ -11,6 +11,7 @@
           text-decoration: none;
           padding-top: 10px;
           width: 90%;
+          font-size: 15px;
         }
 
         ul.hs-menu-children-wrapper {
@@ -74,7 +75,7 @@
       @include media('>=tablet') {
         font-size: 20px;
         background: transparent;
-        width: 80%;
+        width: 70%;
         float: left;
           ul {
               display: flex;
@@ -86,10 +87,13 @@
                 content: "";
                 display: none;
               }
-
-              li.hs-menu-item:hover{
+              li.hs-menu-depth-1:hover{
                 background: $defTurquoise;
-                box-shadow: 0.5px 0 20px 0px $black;
+                box-shadow: -4.5px 0px 7px -2px $black;
+              }
+              li.hs-item-has-children:hover{
+                background: $defTurquoise;
+                box-shadow: -4.5px 10px 7px -2px $black;
                 a{
                   color:$defDarkBlueDark;
                 }
@@ -156,10 +160,57 @@
   }
 
   .language {
-      width: 20%;
-      float: left;
+
+      position: absolute;
+      top: 0px;
       ul
       {
         list-style: none;
+        margin: 0px;
+        padding: 0px;
+        a {
+              display: block;
+              padding: 10px 15px;
+              font-size: 15px;
+          }
+        a:hover{
+            color: $defFontColor;
+        }
       }
+
+      @include media('>=tablet') {
+        width: 20%;
+        float: left;
+        position: relative;
+        text-align: center;
+        ul
+        {
+          a {
+            padding: 10px 10px;
+            font-size: 15px;
+          }
+        }
+
+      }
+
+
+  }
+  .links {
+      width: 100%;
+      margin: auto;
+  }
+
+  .icon {
+    display: none;
+    @include media('>=tablet') {
+      width: 10%;
+      float: left;
+      display: block;
+      a{
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        background: #3e5f6b;
+      }
+    }
   }

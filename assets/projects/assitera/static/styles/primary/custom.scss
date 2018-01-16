@@ -14,11 +14,17 @@ routes
 body {
   font-family: 'UniversLight';
 }
-
 a{
   color:$defFontColor;
   display: block;
+  text-decoration: none;
 }
+a:hover{
+    color: $defFontColor;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .nopadding
 {
   padding:0px;
