@@ -85,7 +85,7 @@ function parseComponent(busy ,ob )
 
 		src = src.replace('.html','');
 		var flag = 0;
-		var datatarget =  'div';
+		var datatarget =  'module';
 		if (src.indexOf('trailing') > -1) {
 			src = src.replace('/trailing', path);
 		}

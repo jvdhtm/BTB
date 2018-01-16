@@ -1,8 +1,5 @@
-<compontent src="../modules/general/container.html"  data='{"backgroundColor":"base--white","backgroundImage":""}'>
-	<compontent src="row.html"  data='{"backgroundColor":"","backgroundImage":""}'>
-		<compontent src="../../../modules/global/header" ></compontent>
-	</compontent>
-</compontent>
+
+<compontent src="../modules/global/header" ></compontent>
 <div class="site-wrapper">
 	<compontent src="../modules/global/addons"></compontent>
 	<routes scope="{{project}}" savestate id="pages" trailing={{trailing}}>
@@ -14,9 +11,5 @@
 				{path:'/.*', render:'/components/templates/error404'}
 			]
 	</routes>
-	<compontent src="../modules/general/container-fluid.html"  data='{"backgroundColor":"base--white","backgroundImage":""}'>
-		<compontent src="row.html"  data='{"backgroundColor":"","backgroundImage":""}'>
-			<compontent src="../../../modules/global/footer"></compontent>
-		</compontent>
-	</compontent>
+	<compontent src="../modules/global/footer"></compontent>
 </div>

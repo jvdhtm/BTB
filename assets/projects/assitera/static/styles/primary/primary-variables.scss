@@ -1,21 +1,24 @@
 
 $maxZindex: 9999;
+/*Break points*/
+$input-height-base: 34px;
+$input-height-small: 30px;
+$input-height-large: 46px;
+$padding-base-horizontal: 12px;
+$grid-gutter-width: 30px;
 
 
+/*Break points*/
+$formBgcolor: #fff ;
+$defFontColor: #fff;
 
-$formBgcolor: #{$white} ;
-$fontColor:#{$black};
-
-
-$color1:#{$eyeTurquoise};
-
-$color2:#{$grayDark};
-$color3:#{$grayDarker};
-
-
-$color5:#{$green};
-$color6:#{$greenLight};
-
-
-$color7:#{$eyeTurquoise};
-$color8:#{$eyeTurquoiseLight};
+/*Break points*/
+$breakpoints: (
+  'phone': 320px,
+  'tablet': 768px,
+  'tablet-portrait': 992px,
+  'desktop': 1024px,
+  'desktop-big': 1086px,
+  'lgscreen': 1200px,
+  'xlscreen': 1600px
+) !default;

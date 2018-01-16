@@ -18,6 +18,95 @@
   @extend %clearfix;
 }
 
+@mixin transform-loader ($x, $y, $z) {
+    -moz-transform: rotateX($x) rotateY($y) rotateZ($z);
+	-o-transform: rotateX($x) rotateY($y) rotateZ($z);
+	-ms-transform: rotateX($x) rotateY($y) rotateZ($z);
+	-webkit-transform: rotateX($x) rotateY($y) rotateZ($z);
+    transform: rotateX($x) rotateY($y) rotateZ($z);
+}
+
+@mixin keyframes-ringRight ($v-ringRightRotate) {
+  @-webkit-keyframes #{$v-ringRightRotate} {
+        @content;
+    }
+    @-moz-keyframes #{$v-ringRightRotate} {
+        @content;
+    }
+    @keyframes #{$v-ringRightRotate} {
+        @content;
+    }
+}
+
+@mixin keyframes-ringLeft ($v-ringLeftRotate){
+  @-webkit-keyframes #{$v-ringLeftRotate} {
+        @content;
+    }
+    @-moz-keyframes #{$v-ringLeftRotate} {
+        @content;
+    }
+    @keyframes #{$v-ringLeftRotate} {
+        @content;
+    }
+}
+
+
+@mixin triangle-overlay ($ps1, $ps2, $ps3, $ps4, $color){
+    content: "";
+    position: absolute;
+    #{$ps1}: 0%;
+    #{$ps2}: 0%;
+    width: 0px;
+    height: 0px;
+    border-#{$ps3}: 115px solid $color;
+    border-#{$ps4}: 115px solid transparent;
+    z-index: 1;
+    @include media('>=desktop') {
+        border-#{$ps3}: 200px solid $color;
+        border-#{$ps4}: 200px solid transparent;
+    }
+}
+
+
+
+@mixin triangle-classes ($ps1, $ps2, $ps3, $ps4, $beforeOrafter, $colorClass , $color) {
+    .triangle-#{$ps1}-#{$ps2}--#{$colorClass}:#{$beforeOrafter} {
+        @include  triangle-overlay($ps1, $ps2, $ps3, $ps4, $color);
+    }
+}
+
+
+@mixin menu-hover($line-color: $white) {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+
+    &::after {
+        background-color: $line-color;
+        bottom: 0;
+        content: '';
+        height: 2px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        width: 0;
+    }
+
+
+    &:hover {
+        @include menu-active();
+    }
+}
+
+@mixin menu-active() {
+    color: $greyLight;
+
+    &::after {
+        opacity: 1;
+        width: 100%;
+    }
+}
 
 // transition
 %transition {
@@ -34,7 +123,45 @@
 }
 
 
+@mixin make-lg-column-5th($gutter: $grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gutter / 2);
+  padding-right: ($gutter / 2);
 
+  @media (min-width: $screen-lg-min) {
+    float: left;
+    width: 20%;
+  }
+}
+
+
+/* Text align helper */
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@include media('>=tablet') {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@include media('>=tablet-portrait') {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@include media('>=lgscreen') {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
 
 
 /// * Helper class to truncate and add ellipsis to a string too long for it to fit

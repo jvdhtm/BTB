@@ -1,48 +1,41 @@
-
-  <compontent src="../general/row.html"  data='{"backgroundColor":"","backgroundImage":""}'>
-    <nav class="header fullwidth">
+<header class="header full-width grad--darkerBlue-turquoise">
+  <div class="container">
+    <div class="row">
         <div class="col-lg-12 col-xs-12 nopadding">
-            <div class="top-bar clearfix">
-                <div class="col-xs-12 text-md-right text-xs-center text-sm-right nopadding">
-                    <a href="#">Contactus</a>
-                    <a href="#">Work with us</a>
-                    <a href="cart.html">
-
-                      <div class="image-box">
-                          <img esrc="/static/images/kundvagn.svg">
-                      </div>
-                        <div class="badge text-center ng-hide">
-                          <span>4</span>
-                      </div>
-                    </a>
-                </div>
-            </div>
             <div clas="clearfix" style="position:relative;">
-              <elink class="logo" href="/" target="#pages" >
-                <compontent src="../global/logo.html"></compontent>
-              </elink>
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div class="language">
+                  <ul id="new-language-picker">
+                    <li><a href="//www.sigmaitc.se/sv/">Svenska</a></li>
+                    <li><a href="//www.sigmaitc.se/en/">Engelska</a></li>
+                  </ul>
+              </div>
 
-
-
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="navigation">
-
-                <div id="navbar" class="navbar-collapse collapse " aria-expanded="true">
-                  <compontent src="../global/navigations.html"></compontent>
-                </div>
-            </div>
-            <div class="search">
-                <compontent src="../global/search.html"></compontent>
-            </div>
-
+              <div class="navigation">
+                  <div id="navbar" class="navbar-collapse collapse " aria-expanded="true">
+                    <compontent src="../global/navigations.html"></compontent>
+                  </div>
+              </div>
           </div>
         </div>
-    </nav>
-  </compontent>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    $('body').on('click','.hs-menu-depth-1',function(e){
+        $('.hs-menu-depth-1').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('body').on('click','.hs-menu-depth-1.active',function(e){
+      $(this).removeClass('active');
+    });
+  </script>
