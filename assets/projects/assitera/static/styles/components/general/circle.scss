@@ -1,0 +1,31 @@
+.circle {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: -1px 4px #656363;
+    position: absolute;
+    top: -120px;
+    right: -50px;
+    z-index: -1;
+    .circle--text {
+        float: left;
+        width: 92%;
+        padding-top: 50%;
+        line-height: 1em;
+        margin-top: 1.3em;
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .circle__register{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        button {
+            
+        }
+    }
+}
