@@ -11,6 +11,7 @@
           text-decoration: none;
           padding-top: 10px;
           width: 90%;
+          font-size: 15px;
         }
 
         ul.hs-menu-children-wrapper {
@@ -86,10 +87,13 @@
                 content: "";
                 display: none;
               }
-
-              li.hs-menu-item:hover{
+              li.hs-menu-depth-1:hover{
                 background: $defTurquoise;
-                box-shadow: 0.5px 0 20px 0px $black;
+                box-shadow: -4.5px 0px 7px -2px $black;
+              }
+              li.hs-item-has-children:hover{
+                background: $defTurquoise;
+                box-shadow: -4.5px 10px 7px -2px $black;
                 a{
                   color:$defDarkBlueDark;
                 }
@@ -168,7 +172,6 @@
               display: block;
               padding: 10px 15px;
               font-size: 15px;
-              margin-top: 5px;
           }
         a:hover{
             color: $defFontColor;
@@ -185,7 +188,6 @@
           a {
             padding: 10px 10px;
             font-size: 15px;
-            margin-top: 5px;
           }
         }
 
@@ -206,7 +208,7 @@
       display: block;
       a{
         padding: 10px 15px;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
         background: #3e5f6b;
       }
