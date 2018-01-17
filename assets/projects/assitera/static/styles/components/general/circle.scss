@@ -3,7 +3,7 @@
     width: 400px;
     border-radius: 50%;
     color: #fff;
-    box-shadow: -1px 4px #656363;
+    box-shadow: 0px 4px 14px 2px #656363;
     position: absolute;
     top: -120px;
     right: -50px;
@@ -29,3 +29,19 @@
         }
     }
 }
+@media (min-width: 992px) {
+    .circle-container {
+    margin-left: -485px;
+    }
+}
+@media (min-width: 1200px) {
+    .circle-container {
+    margin-left: -585px;
+    }
+}
+@media (min-width: 1601px) {
+    .circle-container {
+    margin-left: -785px;
+    }
+}   
+
