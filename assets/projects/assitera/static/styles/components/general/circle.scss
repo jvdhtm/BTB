@@ -29,6 +29,25 @@
         }
     }
 }
+
+.rectangle {
+    display: block;
+    height: 150px;
+    background: #65d1ae;
+    position: relative;
+    margin-top: 100px;
+    .circle-rect {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        border: 3px solid white;
+        margin-left: -85px;
+        top: -42px;
+        background: $defDarkBlueLight;
+        }
+}
+
 @media (min-width: 992px) {
     .circle-container {
     margin-left: -485px;
