@@ -44,7 +44,7 @@ var project = function(app,functions){
 		});
 
 
-		app.get('/projectApi/:project/*.(jpg|png|svg)', function(req, response, next) {
+		app.get('/projectApi/:project/*.(jpg|png|svg|jpeg)', function(req, response, next) {
 
 			var projectname = req.params.project;
 			var requesturl = req.url.replace('/projectApi/'+projectname+'/','');

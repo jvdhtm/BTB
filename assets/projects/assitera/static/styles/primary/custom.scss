@@ -259,3 +259,11 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 		max-width: 100%;
 	}
 }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  justify-content: center;
+  align-items: center;
+}
