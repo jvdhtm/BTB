@@ -37,13 +37,21 @@
         }
     }
 }
+.search-box
+{
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      width: 100%;
+      margin-left: -50%;
+
+}
 
 .rectangle {
     display: block;
     height: 150px;
     background: $black;
     position: relative;
-    margin-top: 100px;
     border-radius: 6px;
     opacity: .9;
     h3 {
@@ -132,12 +140,12 @@
     0%   { left: -100%; }
     100% { left: 0; }
   }
-  
+
   @-moz-keyframes somename {
     0%   { left: -100%; }
     100% { left: 0; }
   }
-  
+
   @keyframes somename {
     0%   { left: -100%; }
     100% { left: 0; }

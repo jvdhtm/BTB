@@ -4412,10 +4412,10 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   -ms-flex-align: center;
   align-items: center; }
 
-.soceity_logo {
+.society_logo {
   position: absolute;
   max-width: 150px;
-  margin-left: 50px;
+  margin-left: 50px !important;
   margin-top: 50px;
   height: auto; }
 
@@ -4750,12 +4750,18 @@ footer {
       -moz-border-radius: 28;
       margin: 0 auto; }
 
+.search-box {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 100%;
+  margin-left: -50%; }
+
 .rectangle {
   display: block;
   height: 150px;
   background: #373737;
   position: relative;
-  margin-top: 100px;
   border-radius: 6px;
   opacity: .9; }
   .rectangle h3 {
