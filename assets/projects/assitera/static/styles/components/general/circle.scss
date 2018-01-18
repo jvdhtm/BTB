@@ -19,48 +19,100 @@
         font-size: 28px;
         font-weight: 600;
     }
-    .circle__register{
+    .circle__register {
         display: inline-block;
         width: 100%;
         text-align: center;
         margin-top: 20px;
-        button {
-            
-        }
+        button {}
     }
 }
 
 .rectangle {
     display: block;
     height: 150px;
-    background: #65d1ae;
+    background: $black;
     position: relative;
     margin-top: 100px;
+    border-radius: 6px;
+    opacity: .9;
+    h3 {
+        color: $white;
+        text-align: center;
+        left: 50%;
+        position: absolute;
+        display: block;
+        font-size: 35px;
+        margin-left: -30px;
+    }
+    button {
+        display: block;
+        left: 50%;
+        bottom: 50px;
+        position: absolute;
+        padding: 5px 30px 5px 30px;
+        color: $defTurquoise;
+        border: solid $defTurquoise 2px;
+        background: transparent;
+        border-radius: 28px;
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+    }
     .circle-rect {
         position: absolute;
         height: 250px;
         width: 250px;
         border-radius: 50%;
-        border: 3px solid white;
+        box-shadow: 0px 4px 14px 2px #656363;
         margin-left: -85px;
         top: -42px;
         background: $defDarkBlueLight;
+        .circle-rect__consult, .circle-rect__company {
+            display: inline-block;
+            width: 100%;
+            b {
+                float: left;
+                width: 92%;
+                line-height: 1em;
+                margin-top: 1.3em;
+                text-align: center;
+                color: $white;
+                font-size: 44px;
+                font-weight: 600;
+            }
+            span {
+                float: left;
+                width: 70%;
+                line-height: 1em;
+                margin-top: .1em;
+                text-align: right;
+                color: $white;
+                font-weight: 600;
+                font-size: 18px;
+            }
         }
+        .circle-rect__company {
+            b {
+                margin-top: 0.4em;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
     .circle-container {
-    margin-left: -485px;
+        margin-left: -485px;
     }
 }
+
 @media (min-width: 1200px) {
     .circle-container {
-    margin-left: -585px;
+        margin-left: -585px;
     }
 }
+
 @media (min-width: 1601px) {
     .circle-container {
-    margin-left: -785px;
+        margin-left: -785px;
     }
-}   
-
+}
