@@ -158,18 +158,3 @@
         top: -42px;
     }
 }
-
-@-webkit-keyframes somename {
-    0%   { left: -100%; }
-    100% { left: 0; }
-  }
-  
-  @-moz-keyframes somename {
-    0%   { left: -100%; }
-    100% { left: 0; }
-  }
-  
-  @keyframes somename {
-    0%   { left: -100%; }
-    100% { left: 0; }
-  }
