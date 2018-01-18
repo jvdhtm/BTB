@@ -2,7 +2,7 @@
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    color: #fff;
+    color: $white;
     box-shadow: 0px 4px 14px 2px #656363;
     position: absolute;
     top: -120px;
@@ -13,9 +13,8 @@
         width: 92%;
         padding-top: 50%;
         line-height: 1em;
-        margin-top: 1.3em;
         text-align: center;
-        color: white;
+        color: $white;
         font-size: 28px;
         font-weight: 600;
     }
@@ -24,7 +23,18 @@
         width: 100%;
         text-align: center;
         margin-top: 20px;
-        button {}
+        button {
+            display: block;
+            bottom: 35px;
+            padding: 5px 30px 5px 30px;
+            color: $defTurquoise;
+            border: solid $defTurquoise 2px;
+            background: transparent;
+            border-radius: 28px;
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -117,3 +127,18 @@
         margin-left: -785px;
     }
 }
+
+@-webkit-keyframes somename {
+    0%   { left: -100%; }
+    100% { left: 0; }
+  }
+  
+  @-moz-keyframes somename {
+    0%   { left: -100%; }
+    100% { left: 0; }
+  }
+  
+  @keyframes somename {
+    0%   { left: -100%; }
+    100% { left: 0; }
+  }
