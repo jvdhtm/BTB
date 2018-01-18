@@ -4713,6 +4713,15 @@ footer {
     padding: 10px;
     display: block; }
 
+.circle-container {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  width: 365px;
+  height: 285px;
+  float: right;
+  margin-right: -15px; }
+
 .circle {
   height: 400px;
   width: 400px;
@@ -4767,17 +4776,11 @@ footer {
   .rectangle h3 {
     color: #fff;
     text-align: center;
-    left: 50%;
-    position: absolute;
     display: block;
     font-size: 35px;
-    margin-left: -30px;
-    margin-top: 30px; }
+    margin-left: -30px; }
   .rectangle button {
     display: block;
-    left: 50%;
-    bottom: 35px;
-    position: absolute;
     padding: 5px 30px 5px 30px;
     color: #6FECBE;
     border: solid #6FECBE 2px;
@@ -4792,13 +4795,13 @@ footer {
     border-radius: 50%;
     -webkit-box-shadow: 0px 4px 14px 2px #656363;
     box-shadow: 0px 4px 14px 2px #656363;
-    margin-left: -85px;
-    top: -42px;
     background: #507F8D; }
-    .rectangle .circle-rect .circle-rect__consult, .rectangle .circle-rect .circle-rect__company {
+    .rectangle .circle-rect .circle-rect__consult,
+    .rectangle .circle-rect .circle-rect__company {
       display: inline-block;
       width: 100%; }
-      .rectangle .circle-rect .circle-rect__consult b, .rectangle .circle-rect .circle-rect__company b {
+      .rectangle .circle-rect .circle-rect__consult b,
+      .rectangle .circle-rect .circle-rect__company b {
         float: left;
         width: 92%;
         line-height: 1em;
@@ -4807,7 +4810,8 @@ footer {
         color: #fff;
         font-size: 44px;
         font-weight: 600; }
-      .rectangle .circle-rect .circle-rect__consult span, .rectangle .circle-rect .circle-rect__company span {
+      .rectangle .circle-rect .circle-rect__consult span,
+      .rectangle .circle-rect .circle-rect__company span {
         float: left;
         width: 70%;
         line-height: 1em;
@@ -4819,17 +4823,32 @@ footer {
     .rectangle .circle-rect .circle-rect__company b {
       margin-top: 0.4em; }
 
-@media (min-width: 992px) {
-  .circle-container {
-    margin-left: -485px; } }
+@media (min-width: 320px) {
+  .rectangle h3 {
+    padding-top: 20px; }
+  .rectangle button {
+    margin: 0 auto;
+    margin-top: 25px; }
+  .circle-rect {
+    left: 0%;
+    top: -155px; } }
 
-@media (min-width: 1200px) {
-  .circle-container {
-    margin-left: -585px; } }
-
-@media (min-width: 1601px) {
-  .circle-container {
-    margin-left: -785px; } }
+@media (min-width: 768px) {
+  .rectangle {
+    position: relative; }
+    .rectangle h3 {
+      margin-left: -30px;
+      position: absolute;
+      left: 50%;
+      margin-top: 30px;
+      padding-top: 0px; }
+    .rectangle button {
+      left: 50%;
+      bottom: 35px;
+      position: absolute; }
+  .circle-rect {
+    left: -5%;
+    top: -42px; } }
 
 @-webkit-keyframes somename {
   0% {

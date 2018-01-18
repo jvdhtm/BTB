@@ -1,3 +1,13 @@
+.circle-container {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 365px;
+    height: 285px;
+    float: right;
+    margin-right: -15px;
+}
+
 .circle {
     height: 400px;
     width: 400px;
@@ -57,18 +67,12 @@
     h3 {
         color: $white;
         text-align: center;
-        left: 50%;
-        position: absolute;
         display: block;
         font-size: 35px;
         margin-left: -30px;
-        margin-top: 30px;
     }
     button {
         display: block;
-        left: 50%;
-        bottom: 35px;
-        position: absolute;
         padding: 5px 30px 5px 30px;
         color: $defTurquoise;
         border: solid $defTurquoise 2px;
@@ -83,10 +87,9 @@
         width: 250px;
         border-radius: 50%;
         box-shadow: 0px 4px 14px 2px #656363;
-        margin-left: -85px;
-        top: -42px;
         background: $defDarkBlueLight;
-        .circle-rect__consult, .circle-rect__company {
+        .circle-rect__consult,
+        .circle-rect__company {
             display: inline-block;
             width: 100%;
             b {
@@ -118,21 +121,41 @@
     }
 }
 
-@media (min-width: 992px) {
-    .circle-container {
-        margin-left: -485px;
+@include media('>=phone') {
+    .rectangle {
+        h3 {
+            padding-top: 20px;
+        }
+        button {
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+    }
+    .circle-rect {
+        left: 0%;
+        top: -155px;
     }
 }
 
-@media (min-width: 1200px) {
-    .circle-container {
-        margin-left: -585px;
+@include media('>=tablet') {
+    .rectangle {
+        position: relative;
+        h3 {
+            margin-left: -30px;
+            position: absolute;
+            left: 50%;
+            margin-top: 30px;
+            padding-top: 0px;
+        }
+        button {
+            left: 50%;
+            bottom: 35px;
+            position: absolute;
+        }
     }
-}
-
-@media (min-width: 1601px) {
-    .circle-container {
-        margin-left: -785px;
+    .circle-rect {
+        left: -5%;
+        top: -42px;
     }
 }
 
@@ -140,12 +163,12 @@
     0%   { left: -100%; }
     100% { left: 0; }
   }
-
+  
   @-moz-keyframes somename {
     0%   { left: -100%; }
     100% { left: 0; }
   }
-
+  
   @keyframes somename {
     0%   { left: -100%; }
     100% { left: 0; }
