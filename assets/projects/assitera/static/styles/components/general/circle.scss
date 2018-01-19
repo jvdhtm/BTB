@@ -1,11 +1,12 @@
 .circle-container {
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    width: 365px;
-    height: 285px;
-    float: right;
-    margin-right: -15px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 365px;
+  height: 285px;
+  float: right;
+  top: 0px;
+  right: 0px;
 }
 
 .circle {

@@ -4696,12 +4696,13 @@ footer {
 
 .circle-container {
   overflow: hidden;
-  position: relative;
+  position: absolute;
   z-index: 1;
   width: 365px;
   height: 285px;
   float: right;
-  margin-right: -15px; }
+  top: 0px;
+  right: 0px; }
 
 .circle {
   height: 400px;
@@ -4771,6 +4772,7 @@ footer {
     -moz-border-radius: 28; }
   .rectangle .circle-rect {
     position: absolute;
+    left: -200px;
     height: 250px;
     width: 250px;
     border-radius: 50%;
