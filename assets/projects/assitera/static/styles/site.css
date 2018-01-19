@@ -4400,6 +4400,10 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   height: auto;
   z-index: 9; }
 
+.banner {
+  height: 50vh;
+  overflow: hidden; }
+
 footer {
   width: 100%;
   clear: both;
