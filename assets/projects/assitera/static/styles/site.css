@@ -4656,7 +4656,7 @@ footer {
   background: -webkit-linear-gradient(rgba(255, 0, 0, 0), white);
   background: -o-linear-gradient(rgba(255, 0, 0, 0), white);
   background: linear-gradient(rgba(255, 0, 0, 0), white);
-  z-index: 9999;
+  z-index: 0;
   bottom: 0;
   left: 0; }
 
@@ -4677,6 +4677,9 @@ footer {
 .share-p {
   font-style: italic;
   font-size: 16px; }
+
+.hs_cos_wrapper_type_social_sharing a {
+  display: inline-block; }
 
 .share {
   border-radius: 50%;
