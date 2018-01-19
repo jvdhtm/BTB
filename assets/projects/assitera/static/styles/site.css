@@ -5,27 +5,7 @@
 /*Break points*/
 @font-face {
   font-family: 'UniversBold';
-  src: url("../fonts/UniversLTStd-BoldCn.woff") format("opentype"); }
-
-@font-face {
-  font-family: 'CommerceThis';
-  src: url("../fonts/font_384056_ovnfdzushziwwmi.woff") format("opentype"); }
-
-@font-face {
-  font-family: 'UniversLight';
-  src: url("../fonts/UniversLTStd-LightCn.otf") format("opentype"); }
-
-@font-face {
-  font-family: 'UniversUltra';
-  src: url("../fonts/UniversLTStd-UltraCn.woff2") format("opentype"); }
-
-@font-face {
-  font-family: 'MinionPro';
-  src: url("../fonts/Minion Pro Regular.woff2") format("opentype"); }
-
-@font-face {
-  font-family: 'Arial';
-  src: url("../fonts/Arial.ttf") format("opentype"); }
+  src: url("https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.woff") format("opentype"); }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -4189,7 +4169,7 @@ routes {
   width: 100%; }
 
 body {
-  font-family: 'UniversLight'; }
+  font-family: 'UniversBold'; }
 
 a {
   color: #fff;
@@ -4417,7 +4397,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   max-width: 150px;
   margin-left: 50px !important;
   margin-top: 50px;
-  height: auto; }
+  height: auto;
+  z-index: 9; }
 
 footer {
   width: 100%;
@@ -4740,7 +4721,7 @@ footer {
     line-height: 1em;
     text-align: center;
     color: #fff;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 600; }
   .circle .circle__register {
     display: inline-block;
@@ -4808,7 +4789,7 @@ footer {
         margin-top: 1.3em;
         text-align: center;
         color: #fff;
-        font-size: 44px;
+        font-size: 40px;
         font-weight: 600; }
       .rectangle .circle-rect .circle-rect__consult span,
       .rectangle .circle-rect .circle-rect__company span {
@@ -4849,24 +4830,6 @@ footer {
   .circle-rect {
     left: -5%;
     top: -42px; } }
-
-@-webkit-keyframes somename {
-  0% {
-    left: -100%; }
-  100% {
-    left: 0; } }
-
-@-moz-keyframes somename {
-  0% {
-    left: -100%; }
-  100% {
-    left: 0; } }
-
-@keyframes somename {
-  0% {
-    left: -100%; }
-  100% {
-    left: 0; } }
 
 /*********************
   Waves
