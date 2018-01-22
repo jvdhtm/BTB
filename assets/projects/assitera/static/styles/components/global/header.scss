@@ -7,6 +7,10 @@
     z-index: 9;
 }
 .banner {
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
+}
+
+@include media('>=tablet') {
+
 }

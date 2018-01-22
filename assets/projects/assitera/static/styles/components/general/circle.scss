@@ -51,7 +51,7 @@
 .search-box
 {
     position: relative;
-    bottom: -140px;
+    bottom: 0px;
     width: 100%;
 }
 
@@ -59,7 +59,7 @@
     display: block;
     height: 150px;
     background: $black;
-    position: absolute;
+    position: relative;
     border-radius: 6px;
     opacity: .9;
     width:100%;
@@ -70,6 +70,8 @@
         font-size: 28px;
         margin-left: 0px;
         margin-top:17px;
+        position: relative;
+        top: 20px;
     }
     button {
         display: block;
