@@ -10,30 +10,30 @@
 }
 
 .circle {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     color: $white;
     box-shadow: 0px 4px 14px 2px #656363;
     position: absolute;
     top: -120px;
-    right: -50px;
+    right: -35px;
     z-index: -1;
     .circle--text {
         float: left;
-        width: 92%;
+        width: 93%;
         padding-top: 50%;
         line-height: 1em;
         text-align: center;
         color: $white;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
     }
     .circle__register {
         display: inline-block;
         width: 100%;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 12px;
         button {
             display: block;
             bottom: 35px;
@@ -50,14 +50,9 @@
 }
 .search-box
 {
-  position: absolute;
-      bottom: 0px;
-      left: 50%;
-      width: 100%;
-      margin-left: -50%;
-      padding-left: 5%;
-      padding-right: 5%;
-
+    position: relative;
+    bottom: 0px;
+    width: 100%;
 }
 
 .rectangle {
@@ -67,12 +62,16 @@
     position: relative;
     border-radius: 6px;
     opacity: .9;
+    width:100%;
     h3 {
         color: $white;
         text-align: center;
         display: block;
-        font-size: 35px;
-        margin-left: -30px;
+        font-size: 28px;
+        margin-left: 0px;
+        margin-top:17px;
+        position: relative;
+        top: 20px;
     }
     button {
         display: block;
@@ -86,14 +85,14 @@
     }
     .circle-rect {
       position: absolute;
-      left: -200px;
-      height: 300px;
-      width: 300px;
+      height: 250px;
+      width: 250px;
       border-radius: 50%;
       box-shadow: 0px 4px 14px 2px $greyLight;
       background: $defDarkBlueLight;
-      top: -100px;
-      left:-100px;
+      top: -260px;
+      left:-125px;
+      margin-left:50%;
         .circle-rect__consult,
         .circle-rect__company {
             display: inline-block;
@@ -128,6 +127,21 @@
 }
 
 @include media('>=phone') {
+
+    
+}
+
+@include media('>=tablet') {
+    .circle{
+        height:300px;
+        width:300px;
+        .circle--text{
+            font-size:18px;
+        }
+        .circle__register button{
+        padding:10px 20px;
+    }
+    }
     .rectangle {
         h3 {
             padding-top: 20px;
@@ -136,14 +150,17 @@
             margin: 0 auto;
             margin-top: 25px;
         }
-    }
-    .circle-rect {
+        .circle-rect {
         left: 0%;
-        top: -155px;
+        top: -250px;
+        height:250px;
+        width:250px;
+        }
     }
-}
-
-@include media('>=tablet') {
+    .search-box{
+        position:relative;
+        top:110px;
+    }
     .rectangle {
         position: relative;
         h3 {
