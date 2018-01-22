@@ -4457,15 +4457,22 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 .society_logo {
   position: absolute;
-  max-width: 150px;
-  margin-left: 50px !important;
-  margin-top: 50px;
-  height: auto;
-  z-index: 9; }
+  max-width: 80px;
+  margin-left: 3px !important;
+  margin-top: 10px;
+  top: 45px;
+  z-index: 1; }
 
 .banner {
-  height: 50vh;
+  height: 60vh;
   overflow: hidden; }
+
+@media (min-width: 768px) {
+  .society_logo {
+    max-width: 150px;
+    margin-left: 50px !important;
+    margin-top: 50px;
+    height: auto; } }
 
 footer {
   width: 100%;
@@ -4689,16 +4696,6 @@ footer {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-left: none; }
-  .news--block .news--block__inner {
-    background: #373737;
-    color: #fff;
-    top: 60px;
-    border-radius: 10px;
-    padding: 0 5px 0 5px; }
-    .news--block .news--block__inner .news--block--header {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      text-align: center; }
 
 .news-image {
   background-position: 50%;
@@ -4729,12 +4726,40 @@ footer {
     -ms-transform: scale(1.1);
     transform: scale(1.1); } }
 
-.news--block__inner {
+.news--block__fadding {
   position: absolute;
   z-index: 1;
+  top: 0px;
+  background: #373737;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
+
+.news--block--header {
+  position: absolute;
   width: 80%;
+  left: 50%;
   margin-left: -40%;
-  left: 50%; }
+  color: #B3D5ED;
+  text-align: center;
+  top: 60px;
+  padding: 10px;
+  z-index: 2; }
+
+.news--block:hover .news--block--header {
+  position: absolute;
+  color: #373737; }
+
+.news--block:hover .news--block__fadding {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.1; }
 
 @media (min-width: 992px) {
   .block-12 img {
@@ -4823,31 +4848,33 @@ footer {
   right: 0px; }
 
 .circle {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   color: #fff;
   -webkit-box-shadow: 0px 4px 14px 2px #656363;
   box-shadow: 0px 4px 14px 2px #656363;
   position: absolute;
   top: -120px;
-  right: -50px;
+  right: -35px;
   z-index: -1; }
   .circle .circle--text {
     float: left;
-    width: 92%;
+    width: 93%;
     padding-top: 50%;
     line-height: 1em;
     text-align: center;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600; }
   .circle .circle__register {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin-top: 20px; }
-    .circle .circle__register button {
+    margin-top: 12px;
+    padding-left: 50px;
+    padding-right: 50px; }
+    .circle .circle__register .cta_button {
       display: block;
       bottom: 35px;
       padding: 5px 30px 5px 30px;
@@ -4860,13 +4887,9 @@ footer {
       margin: 0 auto; }
 
 .search-box {
-  position: absolute;
+  position: relative;
   bottom: 0px;
-  left: 50%;
-  width: 100%;
-  margin-left: -50%;
-  padding-left: 5%;
-  padding-right: 5%; }
+  width: 100%; }
 
 .rectangle {
   display: block;
@@ -4874,16 +4897,24 @@ footer {
   background: #373737;
   position: relative;
   border-radius: 6px;
-  opacity: .9; }
+  opacity: .9;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px; }
   .rectangle h3 {
     color: #fff;
     text-align: center;
     display: block;
-    font-size: 35px;
-    margin-left: -30px; }
-  .rectangle button {
+    font-size: 28px;
+    margin-left: 0px;
+    margin-top: 17px;
+    position: relative;
+    top: 20px; }
+  .rectangle .cta_button {
     display: block;
     padding: 5px 30px 5px 30px;
+    margin: 0 auto;
+    margin-top: 40px;
     color: #6FECBE;
     border: solid #6FECBE 2px;
     background: transparent;
@@ -4892,15 +4923,15 @@ footer {
     -moz-border-radius: 28; }
   .rectangle .circle-rect {
     position: absolute;
-    left: -200px;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     -webkit-box-shadow: 0px 4px 14px 2px #E5E5E5;
     box-shadow: 0px 4px 14px 2px #E5E5E5;
     background: #507F8D;
-    top: -100px;
-    left: -100px; }
+    top: -260px;
+    left: -125px;
+    margin-left: 50%; }
     .rectangle .circle-rect .circle-rect__consult,
     .rectangle .circle-rect .circle-rect__company {
       display: inline-block;
@@ -4908,17 +4939,17 @@ footer {
       .rectangle .circle-rect .circle-rect__consult b,
       .rectangle .circle-rect .circle-rect__company b {
         float: left;
-        width: 92%;
+        width: 95%;
         line-height: 1em;
         margin-top: 1.3em;
         text-align: center;
         color: #fff;
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 600; }
       .rectangle .circle-rect .circle-rect__consult span,
       .rectangle .circle-rect .circle-rect__company span {
         float: left;
-        width: 70%;
+        width: 75%;
         line-height: 1em;
         margin-top: .1em;
         text-align: right;
@@ -4928,32 +4959,43 @@ footer {
     .rectangle .circle-rect .circle-rect__company b {
       margin-top: 0.8em; }
 
-@media (min-width: 320px) {
-  .rectangle h3 {
-    padding-top: 20px; }
-  .rectangle button {
-    margin: 0 auto;
-    margin-top: 25px; }
-  .circle-rect {
-    left: 0%;
-    top: -155px; } }
-
 @media (min-width: 768px) {
+  .circle {
+    height: 400px;
+    width: 400px; }
+    .circle .circle--text {
+      font-size: 25px; }
+    .circle .circle__register {
+      padding-left: 40px;
+      padding-right: 40px; }
+    .circle .circle__register .cta_button {
+      padding: 10px 20px; }
   .rectangle {
-    position: relative; }
+    padding-left: 40px;
+    padding-right: 40px; }
     .rectangle h3 {
-      margin-left: -30px;
-      position: absolute;
+      top: 15px;
       left: 50%;
-      margin-top: 30px;
-      padding-top: 0px; }
-    .rectangle button {
-      left: 50%;
-      bottom: 35px;
       position: absolute; }
-  .circle-rect {
-    left: -5%;
-    top: -42px; } }
+    .rectangle .cta_button {
+      left: 52%;
+      margin-top: 90px;
+      position: absolute; }
+    .rectangle .circle-rect {
+      left: -53%;
+      top: -110px;
+      height: 350px;
+      width: 350px; }
+      .rectangle .circle-rect .circle-rect__consult b {
+        margin-top: 2.8em; }
+  .search-box {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
+    padding-left: 5%;
+    padding-right: 5%; } }
 
 /*********************
   Waves

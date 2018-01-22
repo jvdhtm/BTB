@@ -1,16 +1,68 @@
-.society_logo {
-    position: absolute;
-    max-width: 150px;
-    margin-left: 50px !important;
-    margin-top: 50px;
-    height: auto;
-    z-index: 9;
-}
+
+.society_logo{
+	position:absolute;
+	max-width:80px;
+	margin-left: 3px!important ;
+	margin-top: 10px;
+	top:45px;
+	z-index:1;
+	}
 .banner {
     height: 60vh;
     overflow: hidden;
 }
-
-@include media('>=tablet') {
-
+@include media ('>=tablet'){
+	.society_logo {
+    max-width: 150px;
+    margin-left: 50px !important;
+    margin-top: 50px;
+	height: auto;
+	width: 140px;
+    height: 110px;
+	}
 }
+
+.st8 {
+	fill: #FFF
+  }
+  svg {
+	max-width: 80%;
+	max-height: 80%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	path, polygon {
+	  fill-opacity: 0;
+	  fill: #91f5c4;
+	  stroke: #000;
+	  stroke-width: 2;
+	  stroke-dasharray: 3319;
+	  stroke-dashoffset: 3319;
+	  //animation: draw 5s infinite linear;
+	  animation-name: draw;
+	  animation-duration: 5s;
+	  animation-iteration-count: 1;
+	  animation-fill-mode: forwards;
+	  animation-timing-function: linear;
+	}
+	#Shadows__x28_positive_x29_ {
+	  path, polygon {
+		animation-delay: 4s;
+	  }
+	}
+  }
+  
+  @keyframes draw {
+	90% {
+	  stroke-dashoffset: 0;
+	  stroke-width: 2;
+	  fill-opacity: 0;
+	}
+	100% {
+	  stroke-width: 0;
+	  fill-opacity: 1;
+	}
+  }
