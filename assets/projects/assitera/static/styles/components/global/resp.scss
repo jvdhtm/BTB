@@ -1,0 +1,57 @@
+@media screen and (max-width: 767px) and (min-width: 320px) {
+
+     .circle{
+        height:300px!important;
+        width:300px!important;
+    }
+    .circle--text{
+        width:85%!important;
+        font-size:18px!important;
+    }
+    .circle__register button{
+        padding:10px 20px!important;
+    }
+    .society_logo {
+        position: absolute;
+        max-width: 80px;
+        margin-left: 3px!important ;
+        margin-top: 10px;
+        height: auto;
+        z-index: 9;
+    }
+    .image-box > img{
+        display:none;
+    }
+    .rectangle .circle-rect {
+        position: absolute!important;
+        left: 50px!important;
+        top:-240px;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 14px 2px #656363;
+        background: #507F8D;
+    }
+    .rectangle button {
+        margin: 0 auto;
+        margin-top: 40px!important;
+        padding:10px 20px!important;
+    }
+    .rectangle h3 {
+        text-align: center;
+        display: block;
+        font-size: 28px!important;
+        margin:0 auto!important;
+    }
+
+}//media
+
+
+//mobile
+
+
+   
+
+
+
+/*Not completed, will do tags for smaller screens to avoid important tags*/
