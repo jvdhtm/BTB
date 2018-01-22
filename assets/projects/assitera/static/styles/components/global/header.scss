@@ -1,16 +1,23 @@
-.society_logo {
-    position: absolute;
+
+.society_logo{
+	position:absolute;
+	max-width:80px;
+	margin-left: 3px!important ;
+	margin-top: 10px;
+	top:45px;
+	z-index:9999;
+	}
+.banner {
+    height: 60vh;
+    overflow: hidden;
+}
+@include media ('>=tablet'){
+	.society_logo {
     max-width: 150px;
     margin-left: 50px !important;
     margin-top: 50px;
     height: auto;
     z-index: 9;
-}
-.banner {
-    height: 60vh;
-    overflow: hidden;
+	}
 }
 
-@include media('>=tablet') {
-
-}

@@ -76,6 +76,8 @@
     button {
         display: block;
         padding: 5px 30px 5px 30px;
+        margin:0 auto;
+        margin-top:40px;
         color: $defTurquoise;
         border: solid $defTurquoise 2px;
         background: transparent;
@@ -99,17 +101,17 @@
             width: 100%;
             b {
                 float: left;
-                width: 92%;
+                width: 95%;
                 line-height: 1em;
                 margin-top: 1.3em;
                 text-align: center;
                 color: $white;
-                font-size: 40px;
+                font-size: 35px;
                 font-weight: 600;
             }
             span {
                 float: left;
-                width: 70%;
+                width: 75%;
                 line-height: 1em;
                 margin-top: .1em;
                 text-align: right;
@@ -132,36 +134,49 @@
 }
 
 @include media('>=tablet') {
+
+   
     .circle{
-        height:300px;
-        width:300px;
+        height:400px;
+        width:400px;
         .circle--text{
-            font-size:18px;
+            font-size:25px;
         }
         .circle__register button{
         padding:10px 20px;
-    }
+        }
     }
     .rectangle {
         h3 {
-            padding-top: 20px;
+            top:15px;
+            left:50%;
+            position:absolute;
         }
         button {
-            margin: 0 auto;
-            margin-top: 25px;
+            left:52%;
+            margin-top: 90px;
+            position:absolute;
         }
         .circle-rect {
-        left: 0%;
-        top: -250px;
-        height:250px;
-        width:250px;
+        left: -53%;
+        top: -110px;
+        height:350px;
+        width:350px;
+        .circle-rect__consult b{
+                margin-top:2.8em;
+            }
         }
     }
     .search-box{
-        position:relative;
-        top:110px;
+            position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
+    padding-left: 5%;
+    padding-right: 5%;
     }
-    .rectangle {
+    /*.rectangle {
         position: relative;
         h3 {
             margin-left: -30px;
@@ -177,7 +192,10 @@
         }
     }
     .circle-rect {
-        left: -5%;
-        top: -42px;
-    }
+        position:absolute;
+        left:-50%;
+        top: -100px;
+        height:350px;
+        width:350px;
+    }*/
 }
