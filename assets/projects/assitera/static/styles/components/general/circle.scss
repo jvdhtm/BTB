@@ -50,11 +50,13 @@
 }
 .search-box
 {
-      position: absolute;
+  position: absolute;
       bottom: 0px;
       left: 50%;
       width: 100%;
       margin-left: -50%;
+      padding-left: 5%;
+      padding-right: 5%;
 
 }
 
@@ -83,13 +85,15 @@
         -moz-border-radius: 28;
     }
     .circle-rect {
-        position: absolute;
-        left:-200px;
-        height: 250px;
-        width: 250px;
-        border-radius: 50%;
-        box-shadow: 0px 4px 14px 2px #656363;
-        background: $defDarkBlueLight;
+      position: absolute;
+      left: -200px;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 14px 2px $greyLight;
+      background: $defDarkBlueLight;
+      top: -100px;
+      left:-100px;
         .circle-rect__consult,
         .circle-rect__company {
             display: inline-block;
@@ -117,7 +121,7 @@
         }
         .circle-rect__company {
             b {
-                margin-top: 0.4em;
+                    margin-top: 0.8em;
             }
         }
     }
