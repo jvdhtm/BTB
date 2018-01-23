@@ -1,5 +1,4 @@
 .news--block {
-    min-height: 350px;
     border: 1px solid transparent;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +28,12 @@
     top: 0;
     z-index: 1;
 }
-
+@include media('>=tablet') {
+  .news--block
+  {
+    display: block;
+  }
+}
 @include media('>=tablet') {
   .news-image {
       -webkit-transform: scale(1);
@@ -94,4 +98,11 @@
 
   }
 
+}
+
+.news-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
 }
