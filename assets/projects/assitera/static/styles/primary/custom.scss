@@ -20,6 +20,7 @@ a.cta_button:hover {
 }
 body {
   font-family: 'UniversBold';
+   -webkit-overflow-scrolling: touch;
 }
 a{
   color:$defFontColor;
@@ -295,11 +296,11 @@ a.cta_button {
 	-moz-transition:    0.16s ease-in;
 	-webkit-transition: 0.16s ease-in;
   }
-  
+
   .cta_button:hover {
 	color: #FFF !important;
   }
-  
+
   .cta_button:after {
 	content: "";
 	position: absolute;
@@ -313,7 +314,7 @@ a.cta_button {
 	-webkit-transition: right 0.4s ease-in;
 	 transform: skewX(15deg);
   }
-  
+
   .cta_button:hover:after {
 	right: -15px;
   }

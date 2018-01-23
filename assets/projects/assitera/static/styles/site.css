@@ -4236,7 +4236,8 @@ a.cta_button:hover {
   color: #373737 !important; }
 
 body {
-  font-family: 'UniversBold'; }
+  font-family: 'UniversBold';
+  -webkit-overflow-scrolling: touch; }
 
 a {
   color: #fff;
@@ -4463,6 +4464,42 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   -ms-flex-align: center;
   align-items: center; }
 
+a.cta_button {
+  position: absolute;
+  font-size: 15px;
+  letter-spacing: 2px;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.16s ease-in;
+  -o-transition: 0.16s ease-in;
+  -ms-transition: 0.16s ease-in;
+  -moz-transition: 0.16s ease-in;
+  -webkit-transition: 0.16s ease-in; }
+
+.cta_button:hover {
+  color: #FFF !important; }
+
+.cta_button:after {
+  content: "";
+  position: absolute;
+  background: #6FECBE;
+  color: #FFF;
+  bottom: 0;
+  left: -15px;
+  right: 120%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.4s ease-in;
+  -webkit-transform: skewX(15deg);
+  -ms-transform: skewX(15deg);
+  transform: skewX(15deg); }
+
+.cta_button:hover:after {
+  right: -15px; }
+
 .society_logo {
   position: absolute;
   max-width: 80px;
@@ -4477,12 +4514,14 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 @media (min-width: 768px) {
   .society_logo {
-    max-width: 150px;
-    margin-left: 50px !important;
-    margin-top: 50px;
+    max-width: 250px;
+    margin-left: 20px !important;
+    margin-top: 15px;
     height: auto;
-    width: 140px;
-    height: 110px; } }
+    width: 205px;
+    height: 160px; }
+    .society_logo a {
+      height: 100%; } }
 
 .st8 {
   fill: #FFF; }
@@ -4496,7 +4535,8 @@ svg {
   right: 0;
   bottom: 0;
   margin: auto; }
-  svg path, svg polygon {
+  svg path,
+  svg polygon {
     fill-opacity: 0;
     fill: #91f5c4;
     stroke: #000;
@@ -4512,10 +4552,9 @@ svg {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-animation-timing-function: linear;
-    animation-timing-function: linear; }
-  svg #Shadows__x28_positive_x29_ path, svg #Shadows__x28_positive_x29_ polygon {
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s; }
+    animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s; }
 
 @-webkit-keyframes draw {
   90% {

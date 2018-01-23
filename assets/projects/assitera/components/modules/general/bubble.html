@@ -27,7 +27,7 @@ function bubbleit()
     var inittop = Math.floor(Math.random() * heightlimit);
     $('#bubble-container--js').append('<span class="bubble bubble-update--js '+rand1+'  '+rand2+'" style="left:'+initleft+'%;top:'+inittop+'px;" ></span>');
   }
-  
+
   $(window).bind('scroll',function(e){
     parallaxScroll();
    });
