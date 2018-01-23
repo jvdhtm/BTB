@@ -31,7 +31,7 @@
 @include media('>=tablet') {
   .news--block
   {
-    display: block;
+    padding: 0px;
   }
 }
 @include media('>=tablet') {

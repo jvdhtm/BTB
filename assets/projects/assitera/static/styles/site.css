@@ -4570,13 +4570,13 @@ svg {
     fill-opacity: 0;
     fill: #91f5c4;
     stroke: #000;
-    stroke-width: 2;
-    stroke-dasharray: 3319;
-    stroke-dashoffset: 3319;
+    stroke-width: 2px;
+    stroke-dasharray: 3319px;
+    stroke-dashoffset: 3319px;
     -webkit-animation-name: draw;
     animation-name: draw;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
@@ -4588,20 +4588,25 @@ svg {
 
 @-webkit-keyframes draw {
   90% {
-    stroke-dashoffset: 0;
-    stroke-width: 2;
+    stroke-dashoffset: 0px;
+    stroke-width: 2px;
     fill-opacity: 0; }
   100% {
-    stroke-width: 0;
+    stroke-width: 0px;
     fill-opacity: 1; } }
 
 @keyframes draw {
   90% {
-    stroke-dashoffset: 0;
-    stroke-width: 2;
+    stroke-dashoffset: 0px;
+    stroke-width: 2px;
     fill-opacity: 0; }
   100% {
-    stroke-width: 0;
+    stroke-width: 0px;
+    fill-opacity: 1; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  svg path,
+  svg polygon {
     fill-opacity: 1; } }
 
 footer {
@@ -4841,7 +4846,7 @@ footer {
 
 @media (min-width: 768px) {
   .news--block {
-    display: block; } }
+    padding: 0px; } }
 
 @media (min-width: 768px) {
   .news-image {
@@ -5206,9 +5211,9 @@ footer {
       left: 50%;
       position: absolute; }
     .rectangle .cta_button {
-      left: 49%;
-      margin-top: 90px;
-      margin-left: 0;
+      left: 49% !important;
+      margin-top: 90px !important;
+      margin-left: 0 !important;
       position: absolute; }
     .rectangle .circle-rect {
       left: -53%;
