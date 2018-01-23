@@ -1,12 +1,12 @@
 .circle-container {
-  overflow: hidden;
-  position: absolute;
-  z-index: 1;
-  width: 365px;
-  height: 285px;
-  float: right;
-  top: 0px;
-  right: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 365px;
+    height: 285px;
+    float: right;
+    top: 0px;
+    right: 0px;
 }
 
 .circle {
@@ -39,7 +39,7 @@
         .cta_button {
             display: block;
             bottom: 35px;
-            padding: 5px 30px 5px 30px;
+            padding: 5px 15px 5px 15px;
             color: $defTurquoise;
             border: solid $defTurquoise 2px;
             background: transparent;
@@ -50,8 +50,8 @@
         }
     }
 }
-.search-box
-{
+
+.search-box {
     position: relative;
     bottom: 0px;
     width: 100%;
@@ -64,7 +64,7 @@
     position: relative;
     border-radius: 6px;
     opacity: .9;
-    width:100%;
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     h3 {
@@ -73,15 +73,17 @@
         display: block;
         font-size: 28px;
         margin-left: 0px;
-        margin-top:17px;
+        margin-top: 17px;
         position: relative;
         top: 20px;
     }
     .cta_button {
         display: block;
         padding: 5px 30px 5px 30px;
-        margin:0 auto;
-        margin-top:40px;
+        margin: 0 auto;
+        margin-top: 40px;
+        left:-142px;
+        margin-left:50%;
         color: $defTurquoise;
         border: solid $defTurquoise 2px;
         background: transparent;
@@ -90,15 +92,15 @@
         -moz-border-radius: 28;
     }
     .circle-rect {
-      position: absolute;
-      height: 250px;
-      width: 250px;
-      border-radius: 50%;
-      box-shadow: 0px 4px 14px 2px $greyLight;
-      background: $defDarkBlueLight;
-      top: -260px;
-      left:-125px;
-      margin-left:50%;
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 14px 2px $greyLight;
+        background: $defDarkBlueLight;
+        top: -260px;
+        left: -125px;
+        margin-left: 50%;
         .circle-rect__consult,
         .circle-rect__company {
             display: inline-block;
@@ -126,64 +128,61 @@
         }
         .circle-rect__company {
             b {
-                    margin-top: 0.8em;
+                margin-top: 0.8em;
             }
         }
     }
 }
 
-
-
 @include media('>=tablet') {
-
-
-    .circle{
-        height:400px;
-        width:400px;
-        .circle--text{
-            font-size:25px;
+    .circle {
+        height: 400px;
+        width: 400px;
+        .circle--text {
+            font-size: 25px;
         }
         .circle__register {
-          padding-left: 40px;
-          padding-right: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
-        .circle__register .cta_button{
-        padding:10px 20px;
+        .circle__register .cta_button {
+            padding: 10px 40px;
             width: 70%;
+            bottom: 75px;
+            right: 60px;
         }
     }
     .rectangle {
-      padding-left: 40px;
-      padding-right: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
         h3 {
-            top:15px;
-            left:50%;
-            position:absolute;
+            top: 15px;
+            left: 50%;
+            position: absolute;
         }
         .cta_button {
-            left:52%;
+            left: 49%;
             margin-top: 90px;
-            position:absolute;
+            margin-left:0;
+            position: absolute;
         }
         .circle-rect {
-        left: -53%;
-        top: -110px;
-        height:350px;
-        width:350px;
-        .circle-rect__consult b{
-                margin-top:2.8em;
+            left: -53%;
+            top: -110px;
+            height: 350px;
+            width: 350px;
+            .circle-rect__consult b {
+                margin-top: 2.8em;
             }
         }
     }
-
-    .search-box{
-      position: absolute;
-      bottom: 0px;
-      left: 50%;
-      width: 100%;
-      margin-left: -50%;
-      padding-left: 5%;
-      padding-right: 5%;
+    .search-box {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 100%;
+        margin-left: -50%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
-
 }
