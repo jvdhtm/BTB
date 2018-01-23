@@ -28,7 +28,12 @@
     top: 0;
     z-index: 1;
 }
-
+@include media('>=tablet') {
+  .news--block
+  {
+    display: block;
+  }
+}
 @include media('>=tablet') {
   .news-image {
       -webkit-transform: scale(1);
