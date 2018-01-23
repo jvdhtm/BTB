@@ -1,5 +1,6 @@
-.form-heading {
+.form-title {
   color: #507f8d;
+  font-size: 30px;
 }
 
 textarea {
@@ -21,4 +22,14 @@ textarea {
   margin: 10px 10px 20px 0;
   box-shadow: 0px 2px 1px #ccc;
   width: 250px !important;
+}
+
+span.hs-form-required {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+
+.hs-form-field label {
+  position: relative;
 }
