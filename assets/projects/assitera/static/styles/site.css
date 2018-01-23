@@ -4232,8 +4232,7 @@ routes {
   width: 100%; }
 
 body {
-  font-family: 'UniversBold';
-  -webkit-overflow-scrolling: touch; }
+  font-family: 'UniversBold'; }
 
 a {
   color: #fff;
@@ -4315,12 +4314,42 @@ elink {
   background-color: #fff; }
 
 /* Text feilds */
-textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
   border-color: #373737;
   outline: 0;
   outline: thin dotted \9; }
 
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
   border: 1px solid #E5E5E5;
   padding: 10px; }
 
@@ -4448,16 +4477,16 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 .row-eq-height {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center; }
 
 a.cta_button {
@@ -4476,7 +4505,9 @@ a.cta_button {
   -webkit-transition: 0.16s ease-in; }
 
 .cta_button:hover {
-  color: #FFF !important; }
+  color: #FFF !important;
+  -webkit-box-shadow: 0px 3px 12px 1px #1d1b1b;
+  box-shadow: 0px 3px 12px 1px #1d1b1b; }
 
 .cta_button:after {
   content: "";
@@ -4498,11 +4529,15 @@ a.cta_button {
 
 .society_logo {
   position: absolute;
-  max-width: 80px;
+  max-width: 100px;
   margin-left: 3px !important;
   margin-top: 10px;
   top: 45px;
-  z-index: 1; }
+  z-index: 1;
+  height: 100px; }
+  .society_logo a {
+    height: 100%;
+    width: 110px; }
 
 .banner {
   height: 60vh;
@@ -4621,16 +4656,16 @@ footer {
       opacity: 0;
       padding: 0;
       /* fade out, then shrink */
-      -webkit-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s;
-      -o-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s;
-      transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s; }
+      -webkit-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s;
+      -o-transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s;
+      transition: opacity .25s, font-size .5s .25s, margin .5s .25s, padding .5s .25s; }
     .navigation ul a:hover {
       color: #fff; }
   .navigation li.hs-menu-item.active ul.hs-menu-children-wrapper a {
     position: relative;
-    -webkit-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
-    -o-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
-    transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
+    -webkit-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
+    -o-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
+    transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
     font-size: 15px;
     opacity: 1;
     padding: 10px 15px; }
@@ -4695,9 +4730,9 @@ footer {
           display: none; }
           .navigation ul ul.hs-menu-children-wrapper a {
             position: relative;
-            -webkit-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
-            -o-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
-            transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
+            -webkit-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
+            -o-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
+            transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
             font-size: 15px;
             opacity: 1;
             padding: 10px 15px; } }
@@ -4880,10 +4915,6 @@ footer {
   color: #6CBCC7;
   font-style: italic; }
 
-.input ::-moz-placeholder {
-  color: #6CBCC7;
-  font-style: italic; }
-
 .input :-ms-input-placeholder {
   color: #6CBCC7;
   font-style: italic; }
@@ -5053,7 +5084,7 @@ footer {
     padding-right: 50px; }
     .circle .circle__register .cta_button {
       display: block;
-      bottom: 35px;
+      bottom: 45px;
       padding: 5px 15px 5px 15px;
       color: #6FECBE;
       border: solid #6FECBE 2px;
@@ -5061,7 +5092,9 @@ footer {
       border-radius: 28px;
       -webkit-border-radius: 28;
       -moz-border-radius: 28;
-      margin: 0 auto; }
+      margin: 0 auto;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
 
 .search-box {
   position: relative;
@@ -5150,7 +5183,7 @@ footer {
     .circle .circle__register .cta_button {
       padding: 10px 40px;
       width: 70%;
-      bottom: 75px;
+      bottom: 75px !important;
       right: 60px; }
   .rectangle {
     padding-left: 40px;

@@ -1,10 +1,15 @@
 .society_logo {
 	position: absolute;
-	max-width: 80px;
+	max-width: 100px;
 	margin-left: 3px!important;
 	margin-top: 10px;
 	top: 45px;
 	z-index: 1;
+	height: 100px;
+	a {
+		height: 100%;
+		width: 110px;
+	}
 }
 
 .banner {

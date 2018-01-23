@@ -47,6 +47,7 @@
             -webkit-border-radius: 28;
             -moz-border-radius: 28;
             margin: 0 auto;
+            box-sizing: border-box;
         }
     }
 }
@@ -148,7 +149,7 @@
         .circle__register .cta_button {
             padding: 10px 40px;
             width: 70%;
-            bottom: 75px;
+            bottom: 75px !important;
             right: 60px;
         }
     }
@@ -178,7 +179,7 @@
     }
     .search-box {
         position: absolute;
-        bottom: -75px;
+        bottom: 0px;
         left: 50%;
         width: 100%;
         margin-left: -50%;
