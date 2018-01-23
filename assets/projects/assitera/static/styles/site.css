@@ -4638,7 +4638,9 @@ footer {
       top: -30px; } }
 
 .navigation {
-  background: #3A5464; }
+  background: #3A5464;
+  position: relative;
+  z-index: 3; }
   .navigation ul {
     list-style: none;
     display: block;
@@ -4812,7 +4814,6 @@ footer {
     height: 43px; }
 
 .news--block {
-  min-height: 350px;
   border: 1px solid transparent;
   background-position: center;
   background-repeat: no-repeat;
@@ -4891,6 +4892,12 @@ footer {
   zoom: 1;
   filter: alpha(opacity=50);
   opacity: 0.1; }
+
+.news-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  height: 100%; }
 
 .register-header {
   color: #507f8d;
@@ -4988,12 +4995,11 @@ footer {
   position: absolute;
   height: 300px;
   width: 100%;
-  background: black;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(white));
   background: -webkit-linear-gradient(rgba(255, 0, 0, 0), white);
   background: -o-linear-gradient(rgba(255, 0, 0, 0), white);
   background: linear-gradient(rgba(255, 0, 0, 0), white);
-  /*background: -webkit-linear-gradient(rgba(255,0,0,0,rgb(255,255,255)));*/
+  background-image: -webkit-linear-gradient(rgba(255, 0, 0, 0), rgba(255, 254, 251, 0) 0%, #fff 81.09%);
   z-index: 0;
   bottom: 0;
   left: 0; }

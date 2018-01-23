@@ -1,5 +1,4 @@
 .news--block {
-    min-height: 350px;
     border: 1px solid transparent;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,4 +93,11 @@
 
   }
 
+}
+
+.news-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
 }

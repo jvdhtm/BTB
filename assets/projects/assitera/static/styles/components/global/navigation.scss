@@ -1,6 +1,8 @@
 
   .navigation {
         background: $defDarkBlueDark;
+        position: relative;
+        z-index: 3;
       ul {
         list-style: none;
         display: block;
