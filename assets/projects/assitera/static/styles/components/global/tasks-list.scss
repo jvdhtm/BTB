@@ -6,7 +6,8 @@
     height: 300px;
     width: 100%;
     background: black;
-    background: linear-gradient(rgba(255,0,0,0), rgb(255, 255, 255));
+	background: linear-gradient(rgba(255,0,0,0), rgb(255, 255, 255));
+	/*background: -webkit-linear-gradient(rgba(255,0,0,0,rgb(255,255,255)));*/
     z-index: 0;
     bottom: 0;
     left: 0;

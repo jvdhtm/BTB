@@ -39,7 +39,7 @@
         .cta_button {
             display: block;
             bottom: 35px;
-            padding: 5px 30px 5px 30px;
+            padding: 5px 15px 5px 15px;
             color: $defTurquoise;
             border: solid $defTurquoise 2px;
             background: transparent;
@@ -82,6 +82,8 @@
         padding: 5px 30px 5px 30px;
         margin: 0 auto;
         margin-top: 40px;
+        left:-142px;
+        margin-left:50%;
         color: $defTurquoise;
         border: solid $defTurquoise 2px;
         background: transparent;
@@ -159,8 +161,9 @@
             position: absolute;
         }
         .cta_button {
-            left: 52%;
+            left: 49%;
             margin-top: 90px;
+            margin-left:0;
             position: absolute;
         }
         .circle-rect {
