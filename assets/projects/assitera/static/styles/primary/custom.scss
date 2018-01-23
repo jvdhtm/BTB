@@ -13,6 +13,11 @@ module {
   width: 100%;
 }
 
+a.cta_button:hover {
+    background: $defTurquoise !important;
+
+    color:$black !important;;
+}
 body {
   font-family: 'UniversBold';
 }
@@ -20,6 +25,7 @@ a{
   color:$defFontColor;
   display: block;
   text-decoration: none;
+  font-family: 'UniversBold' !important;
 }
 a:hover{
     color: $defFontColor;
@@ -58,6 +64,9 @@ elink{
 }
 .def--darkerBlue {
   background-color:  $defDarkBlueDark ;
+}
+.def--purple {
+  background-color:  $defDarkPurple;
 }
 .grad--darkerBlue-Blue {
   background: linear-gradient(to right, $defDarkBlueDark , $defLightBlueDark);

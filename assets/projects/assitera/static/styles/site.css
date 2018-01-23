@@ -4231,13 +4231,18 @@ routes {
 .fullwidth {
   width: 100%; }
 
+a.cta_button:hover {
+  background: #6FECBE !important;
+  color: #373737 !important; }
+
 body {
   font-family: 'UniversBold'; }
 
 a {
   color: #fff;
   display: block;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'UniversBold' !important; }
 
 a:hover {
   color: #fff;
@@ -4274,6 +4279,9 @@ elink {
 
 .def--darkerBlue {
   background-color: #3A5464; }
+
+.def--purple {
+  background-color: #BC90D1; }
 
 .grad--darkerBlue-Blue {
   background: -webkit-gradient(linear, left top, right top, from(#3A5464), to(#B3D5ED));
@@ -4969,7 +4977,8 @@ footer {
       padding-left: 40px;
       padding-right: 40px; }
     .circle .circle__register .cta_button {
-      padding: 10px 20px; }
+      padding: 10px 20px;
+      width: 70%; }
   .rectangle {
     padding-left: 40px;
     padding-right: 40px; }
@@ -4996,6 +5005,37 @@ footer {
     margin-left: -50%;
     padding-left: 5%;
     padding-right: 5%; } }
+
+.bubble-sm {
+  width: 20px;
+  height: 20px; }
+
+.bubble-md {
+  width: 33px;
+  height: 33px; }
+
+.bubble-lg {
+  width: 40px;
+  height: 40px; }
+
+.force-show {
+  display: block !important; }
+
+.bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: -2; }
+
+.bubble-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden; }
 
 /*********************
   Waves
