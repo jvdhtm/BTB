@@ -1,129 +1,179 @@
-compontent
-{
-  display:none;
+compontent {
+  display: none;
 }
-routes
-{
-  display:none;
+
+routes {
+  display: none;
 }
-module {
-}
-.fullwidth
-{
+
+module {}
+
+.fullwidth {
   width: 100%;
 }
 
 body {
   font-family: 'UniversBold';
-   -webkit-overflow-scrolling: touch;
 }
-a{
-  color:$defFontColor;
+
+a {
+  color: $defFontColor;
   display: block;
   text-decoration: none;
   font-family: 'UniversBold' !important;
 }
-a:hover{
-    color: $defFontColor;
-    text-decoration: none;
-    cursor: pointer;
+
+a:hover {
+  color: $defFontColor;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.nopadding
-{
-  padding:0px;
+.nopadding {
+  padding: 0px;
 }
-elink{
-  color:$defFontColor;
+
+elink {
+  color: $defFontColor;
   position: relative;
   display: block;
   padding: 10px 15px;
 }
+
+
 /* Primary colors */
+
 .def--red {
-  background-color:  $defRed;
+  background-color: $defRed;
 }
+
 .def--orange {
-  background-color:  $defOrange;
+  background-color: $defOrange;
 }
+
 .def--yellow {
-  background-color:  $defYellow;
+  background-color: $defYellow;
 }
+
 .def--turquoise {
-  background-color:  $defTurquoise;
+  background-color: $defTurquoise;
 }
+
 .def--lightBlue {
-  background-color:  $defLightBlue;
+  background-color: $defLightBlue;
 }
+
 .def--darkBlue {
-  background-color:  $defDarkBlue;
+  background-color: $defDarkBlue;
 }
+
 .def--darkerBlue {
-  background-color:  $defDarkBlueDark ;
+  background-color: $defDarkBlueDark;
 }
+
 .def--purple {
-  background-color:  $defDarkPurple;
+  background-color: $defDarkPurple;
 }
+
 .grad--darkerBlue-Blue {
-  background: linear-gradient(to right, $defDarkBlueDark , $defLightBlueDark);
+  background: -webkit-gradient(linear, left top, right top, from($defDarkBlueDark), to($defLightBlueDark));
+  background: linear-gradient(to right, $defDarkBlueDark, $defLightBlueDark);
 }
+
 .grad--darkerBlue-turquoise {
-  background: linear-gradient(to right, $defDarkBlueDark , $defTurquoise);
+  background: -webkit-gradient(linear, left top, right top, from($defDarkBlueDark), to($defTurquoise));
+  background: linear-gradient(to right, $defDarkBlueDark, $defTurquoise);
 }
+
+
 /* Base colors */
+
 .base--black {
-   background-color:  $black;
+  background-color: $black;
 }
+
 .base--blackLight {
-  background-color:  $blackLight;
+  background-color: $blackLight;
 }
+
 .base--grey {
-  background-color:  $grey;
+  background-color: $grey;
 }
+
 .base--greyLight {
-  background-color:  $greyLight;
+  background-color: $greyLight;
 }
+
 .base--silver {
-  background-color:  $silver;
+  background-color: $silver;
 }
+
 .base--silverLight {
-  background-color:  $silverLight;
+  background-color: $silverLight;
 }
+
 .base--white {
-  background-color:  $white;
+  background-color: $white;
 }
 
 
+/* Text feilds */
 
-
-  /* Text feilds */
-
-textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
   border-color: $black;
   outline: 0;
   outline: thin dotted \9;
 }
 
-
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-  border: 1px solid  $greyLight;
-  padding: 10px ;
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  border: 1px solid $greyLight;
+  padding: 10px;
 }
 
+
 /* Text feilds */
-.input-control
-{
-  border: 1px solid  $greyLight;
-  padding-left: 5px ;
-  padding-right: 5px ;
+
+.input-control {
+  border: 1px solid $greyLight;
+  padding-left: 5px;
+  padding-right: 5px;
   input {
     border: none;
     background-color: $white;
   }
-
   .add-on {
     border: none !important;
-    background-color: $white  !important;
+    background-color: $white !important;
     &:first-child {
       position: relative;
       top: 5px;
@@ -134,28 +184,28 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
       top: 5px;
       font-size: 20px;
     }
-
-    &.fa-check{
-      color:$green;
+    &.fa-check {
+      color: $green;
     }
-    &.fa-users{
-      color:$blackLight;
+    &.fa-users {
+      color: $blackLight;
     }
-    &.fa-times{
-      color:$red;
+    &.fa-times {
+      color: $red;
     }
   }
   &.focus {
     border-color: $black;
     outline: 0;
     outline: thin dotted \9;
-
   }
-
 }
+
+
 /*.
 /* form-control */
-.form-control{
+
+.form-control {
   height: 45px;
 }
 
@@ -163,11 +213,11 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   // Right Icon Input Padding improvements
   // when the padding mirrors the input height, it makes the icon look like it
   // occupies a square on the side of the control
-  .form-control{
+  .form-control {
     padding-right: $input-height-base;
   }
   .form-control.input-sm,
-  &.form-group-sm .form-control{
+  &.form-group-sm .form-control {
     padding-right: $input-height-small;
   }
   .form-control.input-lg,
@@ -175,6 +225,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     padding-right: $input-height-large;
   }
 }
+
 .has-feedback-left {
   // Left Icon Input Padding
   .form-control {
@@ -185,7 +236,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     padding-bottom: 20px;
   }
   .form-control.input-sm,
-  &.form-group-sm .form-control{
+  &.form-group-sm .form-control {
     padding-left: $input-height-small;
   }
   .form-control.input-lg,
@@ -204,7 +255,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     padding-bottom: 20px;
   }
   .form-control.input-sm,
-  &.form-group-sm .form-control{
+  &.form-group-sm .form-control {
     padding-left: $input-height-small;
   }
   .form-control.input-lg,
@@ -213,7 +264,9 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   }
 }
 
+
 /*Modal changes*/
+
 .modal-header {
   border-bottom: none;
 }
@@ -243,6 +296,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 
 /*Thumbnails changes*/
+
 .thumbnail {
   border: none;
   .caption {
@@ -251,65 +305,71 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 }
 
 .thumbnail-inner {
-	margin: 10px auto;
-	padding-bottom: 10px;
-	> img {
-		margin-right: auto;
-		margin-left: auto;
-		display: block;
-		max-width: 100%;
-	}
-	a > img {
-		margin-right: auto;
-		margin-left: auto;
-		display: block;
-		max-width: 100%;
-	}
+  margin: 10px auto;
+  padding-bottom: 10px;
+  >img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    max-width: 100%;
+  }
+  a>img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    max-width: 100%;
+  }
 }
+
 .row-eq-height {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a.cta_button {
-	position: absolute;
-	//display:block;
-	font-size: 15px;
-	letter-spacing: 2px;
-	outline: 0;
-	overflow:hidden;
-	background: none;
-	z-index: 1;
-	cursor: pointer;
-	transition:         0.16s ease-in;
-	-o-transition:      0.16s ease-in;
-	-ms-transition:     0.16s ease-in;
-	-moz-transition:    0.16s ease-in;
-	-webkit-transition: 0.16s ease-in;
-  }
+  position: absolute; //display:block;
+  font-size: 15px;
+  letter-spacing: 2px;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.16s ease-in;
+  -o-transition: 0.16s ease-in;
+  -ms-transition: 0.16s ease-in;
+  -moz-transition: 0.16s ease-in;
+  -webkit-transition: 0.16s ease-in;
+}
 
-  .cta_button:hover {
-	color: #FFF !important;
-  }
+.cta_button:hover {
+  color: #FFF !important;
+  -webkit-box-shadow: 0px 3px 12px 1px #1d1b1b;
+          box-shadow: 0px 3px 12px 1px #1d1b1b;
+}
 
-  .cta_button:after {
-	content: "";
-	position: absolute;
-	background: #6FECBE;
-	color: #FFF;
-	bottom: 0;
-	left: -15px;
-	right: 120%;
-	top: 0;
-	z-index: -1;
-	-webkit-transition: right 0.4s ease-in;
-	 transform: skewX(15deg);
-  }
+.cta_button:after {
+  content: "";
+  position: absolute;
+  background: #6FECBE;
+  color: #FFF;
+  bottom: 0;
+  left: -15px;
+  right: 120%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.4s ease-in;
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+}
 
-  .cta_button:hover:after {
-	right: -15px;
-  }
+.cta_button:hover:after {
+  right: -15px;
+}
