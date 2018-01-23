@@ -4231,10 +4231,6 @@ routes {
 .fullwidth {
   width: 100%; }
 
-a.cta_button:hover {
-  background: #6FECBE !important;
-  color: #373737 !important; }
-
 body {
   font-family: 'UniversBold';
   -webkit-overflow-scrolling: touch; }
@@ -4966,6 +4962,7 @@ footer {
   background: -webkit-linear-gradient(rgba(255, 0, 0, 0), white);
   background: -o-linear-gradient(rgba(255, 0, 0, 0), white);
   background: linear-gradient(rgba(255, 0, 0, 0), white);
+  /*background: -webkit-linear-gradient(rgba(255,0,0,0,rgb(255,255,255)));*/
   z-index: 0;
   bottom: 0;
   left: 0; }
@@ -5057,7 +5054,7 @@ footer {
     .circle .circle__register .cta_button {
       display: block;
       bottom: 35px;
-      padding: 5px 30px 5px 30px;
+      padding: 5px 15px 5px 15px;
       color: #6FECBE;
       border: solid #6FECBE 2px;
       background: transparent;
@@ -5095,6 +5092,8 @@ footer {
     padding: 5px 30px 5px 30px;
     margin: 0 auto;
     margin-top: 40px;
+    left: -142px;
+    margin-left: 50%;
     color: #6FECBE;
     border: solid #6FECBE 2px;
     background: transparent;
@@ -5149,8 +5148,10 @@ footer {
       padding-left: 40px;
       padding-right: 40px; }
     .circle .circle__register .cta_button {
-      padding: 10px 20px;
-      width: 70%; }
+      padding: 10px 40px;
+      width: 70%;
+      bottom: 75px;
+      right: 60px; }
   .rectangle {
     padding-left: 40px;
     padding-right: 40px; }
@@ -5159,8 +5160,9 @@ footer {
       left: 50%;
       position: absolute; }
     .rectangle .cta_button {
-      left: 52%;
+      left: 49%;
       margin-top: 90px;
+      margin-left: 0;
       position: absolute; }
     .rectangle .circle-rect {
       left: -53%;
