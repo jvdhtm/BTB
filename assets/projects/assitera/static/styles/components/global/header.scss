@@ -1,31 +1,36 @@
-
-.society_logo{
-	position:absolute;
-	max-width:80px;
-	margin-left: 3px!important ;
+.society_logo {
+	position: absolute;
+	max-width: 80px;
+	margin-left: 3px!important;
 	margin-top: 10px;
-	top:45px;
-	z-index:1;
-	}
-.banner {
-    height: 60vh;
-    overflow: hidden;
+	top: 45px;
+	z-index: 1;
 }
-@include media ('>=tablet'){
+
+.banner {
+	height: 60vh;
+	overflow: hidden;
+}
+
+@include media ('>=tablet') {
 	.society_logo {
-    max-width: 150px;
-    margin-left: 50px !important;
-    margin-top: 50px;
-	height: auto;
-	width: 140px;
-    height: 110px;
+		max-width: 250px;
+		margin-left: 20px !important;
+		margin-top: 15px;
+		height: auto;
+		width: 205px;
+		height: 160px;
+		a {
+			height: 100%;
+		}
 	}
 }
 
 .st8 {
 	fill: #FFF
-  }
-  svg {
+}
+
+svg {
 	max-width: 80%;
 	max-height: 80%;
 	position: absolute;
@@ -34,35 +39,32 @@
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	path, polygon {
-	  fill-opacity: 0;
-	  fill: #91f5c4;
-	  stroke: #000;
-	  stroke-width: 2;
-	  stroke-dasharray: 3319;
-	  stroke-dashoffset: 3319;
-	  //animation: draw 5s infinite linear;
-	  animation-name: draw;
-	  animation-duration: 5s;
-	  animation-iteration-count: 1;
-	  animation-fill-mode: forwards;
-	  animation-timing-function: linear;
+	path,
+	polygon {
+		fill-opacity: 0;
+		fill: #91f5c4;
+		stroke: #000;
+		stroke-width: 2;
+		stroke-dasharray: 3319;
+		stroke-dashoffset: 3319;
+		animation-name: draw;
+		animation-duration: 5s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+		animation-delay: 2s;
 	}
-	#Shadows__x28_positive_x29_ {
-	  path, polygon {
-		animation-delay: 4s;
-	  }
-	}
-  }
-  
-  @keyframes draw {
+}
+
+@keyframes draw {
 	90% {
-	  stroke-dashoffset: 0;
-	  stroke-width: 2;
-	  fill-opacity: 0;
+		stroke-dashoffset: 0;
+		stroke-width: 2;
+		fill-opacity: 0;
 	}
 	100% {
-	  stroke-width: 0;
-	  fill-opacity: 1;
+		stroke-width: 0;
+		fill-opacity: 1;
 	}
-  }
+}
+  
