@@ -3944,11 +3944,9 @@ button.close {
 @media (min-width: 768px) {
   .equalise-height {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch; } }
 
@@ -4478,15 +4476,12 @@ input[type="color"],
 .row-eq-height {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center; }
 
 a.cta_button {
@@ -4571,13 +4566,13 @@ svg {
     fill-opacity: 0;
     fill: #91f5c4;
     stroke: #000;
-    stroke-width: 2;
-    stroke-dasharray: 3319;
-    stroke-dashoffset: 3319;
+    stroke-width: 2px;
+    stroke-dasharray: 3319px;
+    stroke-dashoffset: 3319px;
     -webkit-animation-name: draw;
     animation-name: draw;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
@@ -4589,20 +4584,25 @@ svg {
 
 @-webkit-keyframes draw {
   90% {
-    stroke-dashoffset: 0;
-    stroke-width: 2;
+    stroke-dashoffset: 0px;
+    stroke-width: 2px;
     fill-opacity: 0; }
   100% {
-    stroke-width: 0;
+    stroke-width: 0px;
     fill-opacity: 1; } }
 
 @keyframes draw {
   90% {
-    stroke-dashoffset: 0;
-    stroke-width: 2;
+    stroke-dashoffset: 0px;
+    stroke-width: 2px;
     fill-opacity: 0; }
   100% {
-    stroke-width: 0;
+    stroke-width: 0px;
+    fill-opacity: 1; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  svg path,
+  svg polygon {
     fill-opacity: 1; } }
 
 footer {
@@ -4698,7 +4698,6 @@ footer {
       float: left; }
       .navigation ul {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
         .navigation ul a {
@@ -4926,11 +4925,11 @@ footer {
   color: #6CBCC7;
   font-style: italic; }
 
-.input ::-moz-placeholder {
+.input :-ms-input-placeholder {
   color: #6CBCC7;
   font-style: italic; }
 
-.input :-ms-input-placeholder {
+.input ::-ms-input-placeholder {
   color: #6CBCC7;
   font-style: italic; }
 
@@ -5207,9 +5206,9 @@ footer {
       left: 50%;
       position: absolute; }
     .rectangle .cta_button {
-      left: 49%;
-      margin-top: 90px;
-      margin-left: 0;
+      left: 49% !important;
+      margin-top: 90px !important;
+      margin-left: 0 !important;
       position: absolute; }
     .rectangle .circle-rect {
       left: -53%;
@@ -5258,8 +5257,9 @@ footer {
   z-index: -1;
   overflow: hidden; }
 
-.form-heading {
-  color: #507f8d; }
+.form-title {
+  color: #507f8d;
+  font-size: 30px; }
 
 textarea {
   height: 130px; }
@@ -5279,6 +5279,14 @@ textarea {
   -webkit-box-shadow: 0px 2px 1px #ccc;
   box-shadow: 0px 2px 1px #ccc;
   width: 250px !important; }
+
+span.hs-form-required {
+  position: absolute;
+  left: 0px;
+  top: 10px; }
+
+.hs-form-field label {
+  position: relative; }
 
 /*********************
   Waves
