@@ -1,0 +1,32 @@
+.bubble-sm{
+  width:20px;
+  height:20px;
+}
+.bubble-md{
+  width:33px;
+  height:33px;
+}
+.bubble-lg{
+  width:40px;
+  height:40px;
+}
+.force-show {
+	display: block !important;
+}
+.bubble{
+  position:absolute;
+  top: 0;
+  left: 0;
+  border-radius:50%;
+  opacity:0.4;
+  z-index:-2;
+}
+.bubble-container
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
