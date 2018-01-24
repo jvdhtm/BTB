@@ -5293,6 +5293,9 @@ span.hs-form-required {
 .hs-form-field label {
   position: relative; }
 
+.hs_cos_wrapper_type_rich_text .title {
+  color: #405F6E; }
+
 /*********************
   Waves
 **********************/
