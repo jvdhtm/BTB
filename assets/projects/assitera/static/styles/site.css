@@ -4535,7 +4535,6 @@ a.cta_button {
     width: 110px; }
 
 .banner {
-  height: 60vh;
   overflow: hidden; }
 
 @media (min-width: 768px) {
@@ -4841,7 +4840,7 @@ footer {
 
 @media (min-width: 768px) {
   .news--block {
-    display: block; } }
+    padding: 0px; } }
 
 @media (min-width: 768px) {
   .news-image {
@@ -5288,6 +5287,12 @@ span.hs-form-required {
 .hs-form-field label {
   position: relative; }
 
+<<<<<<< HEAD
+=======
+.hs_cos_wrapper_type_rich_text .title {
+  color: #405F6E; }
+
+>>>>>>> 8e09a9b847df5a39bfb05501d214252b84d96640
 /*********************
   Waves
 **********************/
