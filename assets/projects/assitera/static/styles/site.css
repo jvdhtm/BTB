@@ -5050,6 +5050,19 @@ footer {
   .tasks-list h4 {
     color: #373737; }
 
+.hs_cos_wrapper_type_rich_text {
+  margin-top: 1em; }
+  .hs_cos_wrapper_type_rich_text h1 {
+    color: #405F6E; }
+  .hs_cos_wrapper_type_rich_text h2 {
+    color: #68E5DB; }
+  .hs_cos_wrapper_type_rich_text h3,
+  .hs_cos_wrapper_type_rich_text h2 {
+    color: #507F8D;
+    font-style: italic; }
+  .hs_cos_wrapper_type_rich_text p {
+    color: #333; }
+
 .link-list ul {
   list-style: none;
   padding: 0px; }
@@ -5287,12 +5300,6 @@ span.hs-form-required {
 .hs-form-field label {
   position: relative; }
 
-<<<<<<< HEAD
-=======
-.hs_cos_wrapper_type_rich_text .title {
-  color: #405F6E; }
-
->>>>>>> 8e09a9b847df5a39bfb05501d214252b84d96640
 /*********************
   Waves
 **********************/
