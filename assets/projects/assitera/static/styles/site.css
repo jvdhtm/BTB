@@ -4936,6 +4936,10 @@ footer {
   color: #6CBCC7;
   font-style: italic; }
 
+.input ::-moz-placeholder {
+  color: #6CBCC7;
+  font-style: italic; }
+
 .input :-ms-input-placeholder {
   color: #6CBCC7;
   font-style: italic; }
@@ -5181,43 +5185,43 @@ footer {
     border-radius: 28px;
     -webkit-border-radius: 28;
     -moz-border-radius: 28; }
-  .rectangle .circle-rect {
-    position: absolute;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 4px 14px 2px #E5E5E5;
-    box-shadow: 0px 4px 14px 2px #E5E5E5;
-    background: #507F8D;
-    top: -260px;
-    left: -125px;
-    margin-left: 50%; }
-    .rectangle .circle-rect .circle-rect__consult,
-    .rectangle .circle-rect .circle-rect__company {
-      display: inline-block;
-      width: 100%; }
-      .rectangle .circle-rect .circle-rect__consult b,
-      .rectangle .circle-rect .circle-rect__company b {
-        float: left;
-        width: 95%;
-        line-height: 1em;
-        margin-top: 1.3em;
-        text-align: center;
-        color: #fff;
-        font-size: 35px;
-        font-weight: 600; }
-      .rectangle .circle-rect .circle-rect__consult span,
-      .rectangle .circle-rect .circle-rect__company span {
-        float: left;
-        width: 75%;
-        line-height: 1em;
-        margin-top: .1em;
-        text-align: right;
-        color: #fff;
-        font-weight: 600;
-        font-size: 18px; }
-    .rectangle .circle-rect .circle-rect__company b {
-      margin-top: 0.8em; }
+
+.circle-rect {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 4px 14px 2px #E5E5E5;
+  box-shadow: 0px 4px 14px 2px #E5E5E5;
+  background: #507F8D;
+  left: -125px;
+  margin-left: 50%; }
+  .circle-rect .circle-rect__consult,
+  .circle-rect .circle-rect__company {
+    display: inline-block;
+    width: 100%; }
+    .circle-rect .circle-rect__consult b,
+    .circle-rect .circle-rect__company b {
+      float: left;
+      width: 95%;
+      line-height: 1em;
+      margin-top: 1.3em;
+      text-align: center;
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600; }
+    .circle-rect .circle-rect__consult span,
+    .circle-rect .circle-rect__company span {
+      float: left;
+      width: 75%;
+      line-height: 1em;
+      margin-top: .1em;
+      text-align: right;
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px; }
+  .circle-rect .circle-rect__company b {
+    margin-top: 0.8em; }
 
 @media (min-width: 768px) {
   .circle {
@@ -5245,13 +5249,14 @@ footer {
       margin-top: 90px !important;
       margin-left: 0 !important;
       position: absolute; }
-    .rectangle .circle-rect {
-      left: -53%;
-      top: -110px;
-      height: 350px;
-      width: 350px; }
-      .rectangle .circle-rect .circle-rect__consult b {
-        margin-top: 2.8em; }
+  .circle-rect {
+    left: -50%;
+    top: -110px;
+    height: 350px;
+    width: 350px;
+    position: absolute; }
+    .circle-rect .circle-rect__consult b {
+      margin-top: 2.8em; }
   .search-box {
     position: absolute;
     bottom: 0px;
