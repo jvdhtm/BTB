@@ -4968,19 +4968,19 @@ footer {
 .file-upload {
   position: relative; }
 
-.file-upload-label {
+.hs_curriculum_vitae label {
   display: block;
   text-align: center;
   padding: 8px;
   color: #fff;
-  background: #6ABCC6;
+  background: #6CBCC7;
   border-radius: 20px;
   font-size: 16px;
   margin: 5px;
   width: 40%;
   min-width: 150px; }
 
-.file-upload-input {
+.hs_curriculum_vitae input {
   position: absolute;
   left: 0;
   top: 0;
@@ -4989,7 +4989,7 @@ footer {
   font-size: 16px;
   height: 100%;
   opacity: 0; }
-  .file-upload-input:hover {
+  .hs_curriculum_vitae input:hover {
     cursor: pointer;
     text-decoration: underline; }
 
@@ -5195,7 +5195,8 @@ footer {
   box-shadow: 0px 4px 14px 2px #E5E5E5;
   background: #507F8D;
   left: -125px;
-  margin-left: 50%; }
+  margin-left: 50%;
+  margin-top: 10px; }
   .circle-rect .circle-rect__consult,
   .circle-rect .circle-rect__company {
     display: inline-block;
@@ -5254,7 +5255,8 @@ footer {
     top: -110px;
     height: 350px;
     width: 350px;
-    position: absolute; }
+    position: absolute;
+    margin-top: 0px; }
     .circle-rect .circle-rect__consult b {
       margin-top: 2.8em; }
   .search-box {
@@ -5308,7 +5310,7 @@ textarea {
 textarea {
   border-radius: 20px;
   width: 100%;
-  border: 1px solid #6cbcc7; }
+  border: 1px solid #6CBCC7; }
 
 .hs-button {
   border-radius: 20px;
@@ -5323,7 +5325,8 @@ textarea {
 span.hs-form-required {
   position: absolute;
   left: 0px;
-  top: 10px; }
+  top: 10px;
+  color: #D0021B; }
 
 .hs-form-field label {
   position: relative; }
