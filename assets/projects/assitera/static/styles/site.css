@@ -4888,18 +4888,20 @@ footer {
   margin-left: -40%;
   color: #B3D5ED;
   text-align: center;
-  top: 60px;
+  top: 20px;
   padding: 10px;
   z-index: 2; }
 
 .news--block:hover .news--block--header {
   position: absolute;
-  color: #373737; }
+  color: #fff; }
 
 .news--block:hover .news--block__fadding {
   zoom: 1;
-  filter: alpha(opacity=50);
-  opacity: 0.1; }
+  background: -webkit-gradient(linear, left top, left bottom, from(#373737), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(#373737, rgba(255, 255, 255, 0));
+  background: -o-linear-gradient(#373737, rgba(255, 255, 255, 0));
+  background: linear-gradient(#373737, rgba(255, 255, 255, 0)); }
 
 .news-wrapper {
   position: relative;
@@ -5003,7 +5005,7 @@ footer {
 .relative {
   position: relative; }
 
-.overlay {
+.overlay-down {
   position: absolute;
   height: 300px;
   width: 100%;
@@ -5011,9 +5013,19 @@ footer {
   background: -webkit-linear-gradient(rgba(255, 0, 0, 0), white);
   background: -o-linear-gradient(rgba(255, 0, 0, 0), white);
   background: linear-gradient(rgba(255, 0, 0, 0), white);
-  background-image: -webkit-linear-gradient(rgba(255, 0, 0, 0), rgba(255, 254, 251, 0) 0%, #fff 81.09%);
   z-index: 0;
   bottom: 0;
+  left: 0; }
+
+.overlay-up {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 0, 0, 0)));
+  background: -webkit-linear-gradient(white, rgba(255, 0, 0, 0));
+  background: -o-linear-gradient(white, rgba(255, 0, 0, 0));
+  background: linear-gradient(white, rgba(255, 0, 0, 0));
+  z-index: 0;
   left: 0; }
 
 .image-col {
@@ -5305,6 +5317,10 @@ span.hs-form-required {
 
 .hs-form-field label {
   position: relative; }
+
+.text-logo {
+  position: absolute;
+  top: 200px; }
 
 /*********************
   Waves
