@@ -1,0 +1,37 @@
+<header class="header">
+  <div class="container full-width">
+    <div class="row">
+      <div class=" col-lg-12 col-xs-12">
+        <div clas="clearfix" style="position:relative; z-index: 2;">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="links clearfix">
+            <div class="navigation">
+
+              <div id="navbar" class="navbar-collapse collapse " aria-expanded="true">
+                <compontent src="../global/search.html"></compontent>
+                <compontent src="../global/navigations.html"></compontent>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  $('body').on('click', '.hs-menu-depth-1', function (e) {
+    $('.hs-menu-depth-1').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('body').on('click', '.hs-menu-depth-1.active', function (e) {
+    $(this).removeClass('active');
+  });
+</script>

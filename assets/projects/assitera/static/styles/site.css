@@ -4540,7 +4540,6 @@ a.cta_button {
     width: 110px; }
 
 .banner {
-  height: 60vh;
   overflow: hidden; }
 
 @media (min-width: 768px) {
@@ -4571,13 +4570,13 @@ svg {
     fill-opacity: 0;
     fill: #91f5c4;
     stroke: #000;
-    stroke-width: 2;
-    stroke-dasharray: 3319;
-    stroke-dashoffset: 3319;
+    stroke-width: 2px;
+    stroke-dasharray: 3319px;
+    stroke-dashoffset: 3319px;
     -webkit-animation-name: draw;
     animation-name: draw;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
@@ -4589,20 +4588,25 @@ svg {
 
 @-webkit-keyframes draw {
   90% {
-    stroke-dashoffset: 0;
-    stroke-width: 2;
+    stroke-dashoffset: 0px;
+    stroke-width: 2px;
     fill-opacity: 0; }
   100% {
-    stroke-width: 0;
+    stroke-width: 0px;
     fill-opacity: 1; } }
 
 @keyframes draw {
   90% {
-    stroke-dashoffset: 0;
-    stroke-width: 2;
+    stroke-dashoffset: 0px;
+    stroke-width: 2px;
     fill-opacity: 0; }
   100% {
-    stroke-width: 0;
+    stroke-width: 0px;
+    fill-opacity: 1; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  svg path,
+  svg polygon {
     fill-opacity: 1; } }
 
 footer {
@@ -4842,7 +4846,7 @@ footer {
 
 @media (min-width: 768px) {
   .news--block {
-    display: block; } }
+    padding: 0px; } }
 
 @media (min-width: 768px) {
   .news-image {
@@ -4884,18 +4888,20 @@ footer {
   margin-left: -40%;
   color: #B3D5ED;
   text-align: center;
-  top: 60px;
+  top: 20px;
   padding: 10px;
   z-index: 2; }
 
 .news--block:hover .news--block--header {
   position: absolute;
-  color: #373737; }
+  color: #fff; }
 
 .news--block:hover .news--block__fadding {
   zoom: 1;
-  filter: alpha(opacity=50);
-  opacity: 0.1; }
+  background: -webkit-gradient(linear, left top, left bottom, from(#373737), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(#373737, rgba(255, 255, 255, 0));
+  background: -o-linear-gradient(#373737, rgba(255, 255, 255, 0));
+  background: linear-gradient(#373737, rgba(255, 255, 255, 0)); }
 
 .news-wrapper {
   position: relative;
@@ -4908,7 +4914,11 @@ footer {
   margin-left: 5px; }
 
 .hs-input {
-  margin: 5px; }
+  margin: 5px;
+  font-size: 16px; }
+
+.hs_submit {
+  font-size: 16px; }
 
 .input select {
   width: 25%;
@@ -4958,18 +4968,19 @@ footer {
 .file-upload {
   position: relative; }
 
-.file-upload-label {
+.hs_curriculum_vitae label {
   display: block;
   text-align: center;
   padding: 8px;
   color: #fff;
-  background: #6ABCC6;
+  background: #6CBCC7;
   border-radius: 20px;
+  font-size: 16px;
   margin: 5px;
   width: 40%;
   min-width: 150px; }
 
-.file-upload-input {
+.hs_curriculum_vitae input {
   position: absolute;
   left: 0;
   top: 0;
@@ -4978,9 +4989,13 @@ footer {
   font-size: 16px;
   height: 100%;
   opacity: 0; }
-  .file-upload-input:hover {
+  .hs_curriculum_vitae input:hover {
     cursor: pointer;
     text-decoration: underline; }
+
+.file-name {
+  margin: 5px 0px 0px 10px;
+  font-size: 16px; }
 
 @media (min-width: 992px) {
   .block-12 img {
@@ -4999,7 +5014,7 @@ footer {
 .relative {
   position: relative; }
 
-.overlay {
+.overlay-down {
   position: absolute;
   height: 300px;
   width: 100%;
@@ -5007,9 +5022,19 @@ footer {
   background: -webkit-linear-gradient(rgba(255, 0, 0, 0), white);
   background: -o-linear-gradient(rgba(255, 0, 0, 0), white);
   background: linear-gradient(rgba(255, 0, 0, 0), white);
-  background-image: -webkit-linear-gradient(rgba(255, 0, 0, 0), rgba(255, 254, 251, 0) 0%, #fff 81.09%);
   z-index: 0;
   bottom: 0;
+  left: 0; }
+
+.overlay-up {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 0, 0, 0)));
+  background: -webkit-linear-gradient(white, rgba(255, 0, 0, 0));
+  background: -o-linear-gradient(white, rgba(255, 0, 0, 0));
+  background: linear-gradient(white, rgba(255, 0, 0, 0));
+  z-index: 0;
   left: 0; }
 
 .image-col {
@@ -5051,6 +5076,19 @@ footer {
     margin-top: 0px; }
   .tasks-list h4 {
     color: #373737; }
+
+.hs_cos_wrapper_type_rich_text {
+  margin-top: 1em; }
+  .hs_cos_wrapper_type_rich_text h1 {
+    color: #405F6E; }
+  .hs_cos_wrapper_type_rich_text h2 {
+    color: #68E5DB; }
+  .hs_cos_wrapper_type_rich_text h3,
+  .hs_cos_wrapper_type_rich_text h2 {
+    color: #507F8D;
+    font-style: italic; }
+  .hs_cos_wrapper_type_rich_text p {
+    color: #333; }
 
 .link-list ul {
   list-style: none;
@@ -5147,43 +5185,44 @@ footer {
     border-radius: 28px;
     -webkit-border-radius: 28;
     -moz-border-radius: 28; }
-  .rectangle .circle-rect {
-    position: absolute;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 4px 14px 2px #E5E5E5;
-    box-shadow: 0px 4px 14px 2px #E5E5E5;
-    background: #507F8D;
-    top: -260px;
-    left: -125px;
-    margin-left: 50%; }
-    .rectangle .circle-rect .circle-rect__consult,
-    .rectangle .circle-rect .circle-rect__company {
-      display: inline-block;
-      width: 100%; }
-      .rectangle .circle-rect .circle-rect__consult b,
-      .rectangle .circle-rect .circle-rect__company b {
-        float: left;
-        width: 95%;
-        line-height: 1em;
-        margin-top: 1.3em;
-        text-align: center;
-        color: #fff;
-        font-size: 35px;
-        font-weight: 600; }
-      .rectangle .circle-rect .circle-rect__consult span,
-      .rectangle .circle-rect .circle-rect__company span {
-        float: left;
-        width: 75%;
-        line-height: 1em;
-        margin-top: .1em;
-        text-align: right;
-        color: #fff;
-        font-weight: 600;
-        font-size: 18px; }
-    .rectangle .circle-rect .circle-rect__company b {
-      margin-top: 0.8em; }
+
+.circle-rect {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 4px 14px 2px #E5E5E5;
+  box-shadow: 0px 4px 14px 2px #E5E5E5;
+  background: #507F8D;
+  left: -125px;
+  margin-left: 50%;
+  margin-top: 10px; }
+  .circle-rect .circle-rect__consult,
+  .circle-rect .circle-rect__company {
+    display: inline-block;
+    width: 100%; }
+    .circle-rect .circle-rect__consult b,
+    .circle-rect .circle-rect__company b {
+      float: left;
+      width: 95%;
+      line-height: 1em;
+      margin-top: 1.3em;
+      text-align: center;
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600; }
+    .circle-rect .circle-rect__consult span,
+    .circle-rect .circle-rect__company span {
+      float: left;
+      width: 75%;
+      line-height: 1em;
+      margin-top: .1em;
+      text-align: right;
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px; }
+  .circle-rect .circle-rect__company b {
+    margin-top: 0.8em; }
 
 @media (min-width: 768px) {
   .circle {
@@ -5207,17 +5246,19 @@ footer {
       left: 50%;
       position: absolute; }
     .rectangle .cta_button {
-      left: 49%;
-      margin-top: 90px;
-      margin-left: 0;
+      left: 49% !important;
+      margin-top: 90px !important;
+      margin-left: 0 !important;
       position: absolute; }
-    .rectangle .circle-rect {
-      left: -53%;
-      top: -110px;
-      height: 350px;
-      width: 350px; }
-      .rectangle .circle-rect .circle-rect__consult b {
-        margin-top: 2.8em; }
+  .circle-rect {
+    left: -50%;
+    top: -110px;
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    margin-top: 0px; }
+    .circle-rect .circle-rect__consult b {
+      margin-top: 2.8em; }
   .search-box {
     position: absolute;
     bottom: 0px;
@@ -5258,8 +5299,9 @@ footer {
   z-index: -1;
   overflow: hidden; }
 
-.form-heading {
-  color: #507f8d; }
+.form-title {
+  color: #507f8d;
+  font-size: 30px; }
 
 textarea {
   height: 130px; }
@@ -5268,7 +5310,7 @@ textarea {
 textarea {
   border-radius: 20px;
   width: 100%;
-  border: 1px solid #6cbcc7; }
+  border: 1px solid #6CBCC7; }
 
 .hs-button {
   border-radius: 20px;
@@ -5279,6 +5321,19 @@ textarea {
   -webkit-box-shadow: 0px 2px 1px #ccc;
   box-shadow: 0px 2px 1px #ccc;
   width: 250px !important; }
+
+span.hs-form-required {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  color: #D0021B; }
+
+.hs-form-field label {
+  position: relative; }
+
+.text-logo {
+  position: absolute;
+  top: 200px; }
 
 /*********************
   Waves

@@ -1,0 +1,19 @@
+.block-12 {
+  @include media('>=tablet-portrait')
+   {
+     img {
+       position: absolute;
+       height: 100%;
+     }
+   }
+    .image-box {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        min-height: 400px;
+        margin: 0px !important;
+        background-position: 50%;
+        background-size: cover;
+
+    }
+}

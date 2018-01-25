@@ -1,0 +1,108 @@
+.news--block {
+    border: 1px solid transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+        overflow: hidden;
+    &:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-right: none;
+    }
+    &:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: none;
+    }
+}
+
+.news-image {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+@include media('>=tablet') {
+  .news--block
+  {
+    padding: 0px;
+  }
+}
+@include media('>=tablet') {
+  .news-image {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+      transition: -webkit-transform 0.5s ease-in-out;
+      -o-transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+
+  .news--block:hover .news-image {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+  }
+}
+
+.news--block__fadding {
+    position: absolute;
+    z-index: 1;
+    top:0px;
+    background:$black;
+    left:0px;
+    width: 100%;
+    height:100%;
+    opacity: .7;
+    -webkit-transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+     -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+
+}
+.news--block--header {
+    position: absolute;
+    width: 80%;
+    left:50%;
+    margin-left: -40%;
+    color:$defLightBlueDark;
+    text-align: center;
+    top:60px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.news--block:hover {
+
+
+  .news--block--header {
+      position: absolute;
+      color:$black;
+  }
+  .news--block__fadding {
+      zoom: 1;
+      filter: alpha(opacity=50);
+      opacity: 0.1;
+
+  }
+
+}
+
+.news-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
+}

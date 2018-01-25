@@ -1,14 +1,22 @@
 .relative{
 	position:relative;
 }
-.overlay{
+.overlay-down{
 	position: absolute;
     height: 300px;
     width: 100%;
 	background: linear-gradient(rgba(255,0,0,0), rgb(255, 255, 255));
-	background-image: -webkit-linear-gradient(rgba(255, 0, 0, 0), rgba(255, 254, 251, 0) 0%, #fff 81.09%);
     z-index: 0;
     bottom: 0;
+    left: 0;
+}
+
+.overlay-up{
+	position: absolute;
+    height: 300px;
+    width: 100%;
+	background: linear-gradient( rgb(255, 255, 255),rgba(255,0,0,0));
+    z-index: 0;
     left: 0;
 }
 .image-col{
