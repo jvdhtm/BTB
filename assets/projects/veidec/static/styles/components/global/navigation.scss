@@ -9,7 +9,7 @@
         margin: 0px;
         padding: 0px;
         a {
-          padding: 10px 15px;
+          padding: 15px 15px;
           text-decoration: none;
           padding-top: 10px;
           width: 90%;
@@ -52,6 +52,7 @@
 
       li.hs-menu-item {
           position: relative;
+          width: 100%;
       }
       .hs-item-has-children:before {
         content: "\f067";
@@ -77,8 +78,13 @@
       @include media('>=tablet') {
         font-size: 20px;
         background: transparent;
-        width: 70%;
+        width: 100%;
         float: left;
+
+          nav {
+              width: 90%;
+              float: left;
+          }
           ul {
               display: flex;
               a {
