@@ -103,6 +103,7 @@
     background: $defDarkBlueLight;
     left: -125px;
     margin-left: 50%;
+    margin-top: 10px;
     .circle-rect__consult,
     .circle-rect__company {
         display: inline-block;
@@ -175,6 +176,7 @@
         height: 350px;
         width: 350px;
         position: absolute;
+        margin-top: 0px;
         .circle-rect__consult b {
             margin-top: 2.8em;
         }

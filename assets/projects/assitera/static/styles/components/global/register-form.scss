@@ -13,8 +13,8 @@
 .input select{
     width:25%;
     min-width:150px;
-    border:2px solid #6CBCC7;
-    background:#6CBCC7;
+    border:2px solid $defLightBlue;
+    background:$defLightBlue;
     color:white;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -23,22 +23,22 @@
     border-radius:20px;
 }
 .input ::placeholder{
-    color:#6CBCC7;
+    color:$defLightBlue;
     font-style:italic;
 }
 .input input{
-    border:2px solid #6CBCC7;
+    border:2px solid $defLightBlue;
     width:100%;
     border-radius:20px;
 }
 .input input:focus{
-    border-color:#6CBCC7;
+    border-color:$defLightBlue;
 }
 .hs_submit [type='submit']{
     width: 20%;
     min-width:150px;
-    color:#405F6E;
-    background: #6FECBE;
+    color:$defDarkBlue;
+    background: $defTurquoise;
     border-radius: 20px;
     padding: 8px;
     margin:5px;
@@ -46,19 +46,19 @@
 .file-upload{
   position:relative;
 }
-.file-upload-label {
+.hs_curriculum_vitae label {
     display: block;
     text-align:center;
     padding: 8px;
-    color: #fff;
-    background:#6ABCC6;
+    color: $white;
+    background:$defLightBlue;
     border-radius: 20px;
     font-size:16px;
     margin:5px;
     width:40%;
     min-width:150px;
- }   
-.file-upload-input {
+ }
+.hs_curriculum_vitae input {
     position: absolute;
     left: 0;
     top: 0;
@@ -70,10 +70,9 @@
      &:hover{
       cursor: pointer;
       text-decoration:underline;
- } 
+ }
 }
 .file-name{
     margin:5px 0px 0px 10px;
     font-size:16px;
 }
-
