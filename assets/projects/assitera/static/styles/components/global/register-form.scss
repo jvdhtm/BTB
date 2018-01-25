@@ -5,6 +5,10 @@
 }
 .hs-input{
     margin:5px;
+    font-size:16px;
+}
+.hs_submit{
+    font-size:16px;
 }
 .input select{
     width:25%;
@@ -49,6 +53,7 @@
     color: #fff;
     background:#6ABCC6;
     border-radius: 20px;
+    font-size:16px;
     margin:5px;
     width:40%;
     min-width:150px;
@@ -66,5 +71,9 @@
       cursor: pointer;
       text-decoration:underline;
  } 
+}
+.file-name{
+    margin:5px 0px 0px 10px;
+    font-size:16px;
 }
 

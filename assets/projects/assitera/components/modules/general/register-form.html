@@ -87,19 +87,6 @@
                 </div>
             </div>
         </div>
-        <div data-reactid=".hbspt-forms-1.0:$8">
-            <div class="hs_country field hs-form-field" data-reactid=".hbspt-forms-1.0:$8.$country">
-                <label id="label-country-1116ae32-3b2c-4e3b-88cb-0982ed1ee6ef" class="" placeholder="Enter your Country" for="country-1116ae32-3b2c-4e3b-88cb-0982ed1ee6ef"
-                    data-reactid=".hbspt-forms-1.0:$8.$country.0">
-                    <span data-reactid=".hbspt-forms-1.0:$8.$country.0.0">Country</span>
-                </label>
-                <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-1.0:$8.$country.1"></legend>
-                <div class="input" data-reactid=".hbspt-forms-1.0:$8.$country.$country">
-                    <input id="country-1116ae32-3b2c-4e3b-88cb-0982ed1ee6ef" class="hs-input" type="text" name="country" value=""
-                        placeholder="" data-reactid=".hbspt-forms-1.0:$8.$country.$country.0">
-                </div>
-            </div>
-        </div>
         <div data-reactid=".hbspt-forms-1.0:$9">
             <div class="hs_lang field hs-form-field" data-reactid=".hbspt-forms-1.0:$9.$lang">
 
@@ -113,11 +100,39 @@
                 </div>
             </div>
         </div>
-
-        <div class="file-upload">
-            <label type="file" for="upload" class="file-upload-label">Ladda upp Curriculum Vitae</label>
-            <input class="file-upload-input" type="file" name="file-upload">
+        
+        <!--RESKIN UPLOAD--> 
+        <div data-reactid=".hbspt-forms-1.0:$10"> 
+            <div class="hs_curriculum_vitae field hs-form-field file-upload" data-reactid=".hbspt-forms-1.0:$10.$curriculum_vitae"> 
+                <label id="label-curriculum_vitae-1116ae32-3b2c-4e3b-88cb-0982ed1ee6ef" class="file-upload-label" placeholder="Enter your Curriculum Vitae" 
+                    for="curriculum_vitae-1116ae32-3b2c-4e3b-88cb-0982ed1ee6ef" data-reactid=".hbspt-forms-1.0:$10.$curriculum_vitae.0"> 
+                    <span data-reactid=".hbspt-forms-1.0:$10.$curriculum_vitae.0.0">Ladda upp Curriculum Vitae</span> 
+                </label> 
+                <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-1.0:$10.$curriculum_vitae.1"></legend> 
+                <div class="input" data-reactid=".hbspt-forms-1.0:$10.$curriculum_vitae.$curriculum_vitae"> 
+                    <input id="curriculum_vitae-1116ae32-3b2c-4e3b-88cb-0982ed1ee6ef" class="file-upload-input hs-input" type="file" name="curriculum_vitae" 
+                        size="30" placeholder="Ladda upp" data-reactid=".hbspt-forms-1.0:$10.$curriculum_vitae.$curriculum_vitae.0"> 
+                        <p class="file-name"> 
+                </div> 
+            </div> 
         </div>
+        <script> 
+            jQuery(function($) { 
+                $('input[type="file"]').change(function() { 
+                    if ($(this).val()) { 
+                        error = false; 
+                        var filename = $(this).val(); 
+                        $(this).closest('.file-upload').find('.file-name').html(filename); 
+ 
+                        if (error) { 
+                            parent.addClass('error').prepend.after('<div class="alert alert-error">' + error + '</div>'); 
+                        } 
+                    } 
+                }); 
+            }); 
+ 
+        </script> 
+        
         <!--<div data-reactid=".hbspt-forms-1.0:$10">
             <div class="hs_curriculum_vitae field hs-form-field" data-reactid=".hbspt-forms-1.0:$10.$curriculum_vitae">
                 <label id="label-curriculum_vitae-1116ae32-3b2c-4e3b-88cb-0982ed1ee6ef" class="" placeholder="Enter your Curriculum Vitae"
@@ -130,7 +145,7 @@
                         size="30" placeholder="Ladda upp" data-reactid=".hbspt-forms-1.0:$10.$curriculum_vitae.$curriculum_vitae.0">
                 </div>
             </div>
-        </div>-->
+        </div> ORIGINAL -->
 
         <div class="hs_submit" data-reactid=".hbspt-forms-1.3">
             <div class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-1.3.0"></div>

@@ -4914,7 +4914,11 @@ footer {
   margin-left: 5px; }
 
 .hs-input {
-  margin: 5px; }
+  margin: 5px;
+  font-size: 16px; }
+
+.hs_submit {
+  font-size: 16px; }
 
 .input select {
   width: 25%;
@@ -4929,10 +4933,6 @@ footer {
   border-radius: 20px; }
 
 .input ::-webkit-input-placeholder {
-  color: #6CBCC7;
-  font-style: italic; }
-
-.input ::-moz-placeholder {
   color: #6CBCC7;
   font-style: italic; }
 
@@ -4971,6 +4971,7 @@ footer {
   color: #fff;
   background: #6ABCC6;
   border-radius: 20px;
+  font-size: 16px;
   margin: 5px;
   width: 40%;
   min-width: 150px; }
@@ -4987,6 +4988,10 @@ footer {
   .file-upload-input:hover {
     cursor: pointer;
     text-decoration: underline; }
+
+.file-name {
+  margin: 5px 0px 0px 10px;
+  font-size: 16px; }
 
 @media (min-width: 992px) {
   .block-12 img {
