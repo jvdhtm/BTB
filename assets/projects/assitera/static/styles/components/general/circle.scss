@@ -2,9 +2,8 @@
     overflow: hidden;
     position: absolute;
     z-index: 1;
-    width: 365px;
+    width: 440px;
     height: 285px;
-    float: right;
     top: 0px;
     right: 0px;
 }
@@ -17,17 +16,19 @@
     box-shadow: 0px 4px 14px 2px #656363;
     position: absolute;
     top: -120px;
-    right: -35px;
+    right: 20px;
     z-index: -1;
     .circle--text {
         float: left;
-        width: 93%;
-        padding-top: 50%;
+        width: 100%;
+        padding-top: 44%;
         line-height: 1em;
         text-align: center;
         color: $white;
         font-size: 20px;
         font-weight: 600;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .circle__register {
         display: inline-block;
@@ -149,7 +150,7 @@
         .circle__register .cta_button {
             padding: 10px 40px;
             width: 70%;
-            bottom: 75px !important;
+            bottom: 90px !important;
             right: 60px;
         }
     }
