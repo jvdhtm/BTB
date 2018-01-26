@@ -4,7 +4,7 @@
       <div class=" col-lg-12 col-xs-12">
         <div class="row" style="position:relative; z-index: 2;">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" >
+            <button type="button" class="navbar-toggle navbar-toggle--js collapsed" >
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -13,11 +13,12 @@
           </div>
           <div class="links clearfix">
             <div class="navigation">
-              <div class="navbar-shift " aria-expanded="true">
-                <compontent src="../global/search.html"></compontent>
+              <div class="navbar-shift navbar-shift--js" aria-expanded="true">
+
                 <compontent src="../global/navigations.html"></compontent>
 
               </div>
+              <compontent src="../global/search.html"></compontent>
             </div>
 
           </div>
@@ -35,4 +36,10 @@
   $('body').on('click', '.hs-menu-depth-1.active', function (e) {
     $(this).removeClass('active');
   });
+
+  $('.navbar-toggle--js').click(function(){
+      $('.navbar-shift--js').toggleClass('expanded');
+  });
+
+
 </script>

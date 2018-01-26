@@ -4648,7 +4648,9 @@ header {
       text-decoration: none;
       padding-top: 10px;
       width: 90%;
-      font-size: 15px; }
+      font-size: 15px;
+      margin-left: 20px;
+      padding-left: 0px; }
     .navigation ul ul.hs-menu-children-wrapper a {
       font-size: 0;
       margin: 0;
@@ -4667,7 +4669,9 @@ header {
     transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
     font-size: 15px;
     opacity: 1;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    margin-left: 20px;
+    padding-left: 0px; }
   .navigation li.hs-menu-item {
     position: relative;
     width: 100%; }
@@ -4675,8 +4679,8 @@ header {
     content: "\f067";
     position: absolute;
     color: white;
-    top: 5px;
-    right: 0px;
+    top: 2px;
+    left: -10px;
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -4688,12 +4692,59 @@ header {
     content: "\f068"; }
   .navigation li.hs-menu-item.hs-menu-depth-2:hover a {
     background: #6ce2b8; }
+  .navigation .navbar-shift {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    right: 0px;
+    margin-right: -400px;
+    padding: 15px;
+    padding-top: 40px;
+    -webkit-transition: margin-right 0.5s ease-in-out;
+    -o-transition: margin-right 0.5s ease-in-out;
+    transition: margin-right 0.5s ease-in-out;
+    background: #707070;
+    height: 100vh; }
+  .navigation .navbar-shift.expanded {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    right: 0px;
+    margin-right: -150px;
+    -webkit-transition: margin-right 0.5s ease-in-out;
+    -o-transition: margin-right 0.5s ease-in-out;
+    transition: margin-right 0.5s ease-in-out;
+    z-index: 9; }
   @media (min-width: 768px) {
     .navigation {
       font-size: 20px;
       background: transparent;
       width: 100%;
       float: left; }
+      .navigation .navbar-shift {
+        position: initial;
+        top: -50px;
+        width: 100%;
+        right: 0px;
+        margin-right: 0px;
+        -webkit-transition: margin-right 0.5s ease-in-out;
+        -o-transition: margin-right 0.5s ease-in-out;
+        transition: margin-right 0.5s ease-in-out;
+        height: auto;
+        padding: 0px;
+        background: transparent; }
+      .navigation .navbar-shift.expanded {
+        position: initial;
+        top: -50px;
+        width: 100%;
+        right: 0px;
+        margin-right: 0px;
+        -webkit-transition: margin-right 0.5s ease-in-out;
+        -o-transition: margin-right 0.5s ease-in-out;
+        transition: margin-right 0.5s ease-in-out;
+        height: auto;
+        padding: 0px;
+        background: transparent; }
       .navigation nav {
         width: 90%;
         float: left; }
@@ -4744,6 +4795,7 @@ header {
   background-color: transparent; }
 
 .navbar-toggle {
+  z-index: 9;
   background-color: #3A5464; }
   .navbar-toggle .icon-bar {
     background-color: #fff; }
