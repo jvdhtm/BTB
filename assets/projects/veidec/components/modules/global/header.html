@@ -4,8 +4,7 @@
       <div class=" col-lg-12 col-xs-12">
         <div class="row" style="position:relative; z-index: 2;">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle navbar-toggle--js collapsed" >
-              <span class="sr-only">Toggle navigation</span>
+            <button type="button" class="navbar-toggle navbar-toggle--js " >
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -39,6 +38,7 @@
 
   $('.navbar-toggle--js').click(function(){
       $('.navbar-shift--js').toggleClass('expanded');
+      $(this).toggleClass('active');
   });
 
 
