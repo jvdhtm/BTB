@@ -1,4 +1,24 @@
 
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+  top: -6px;
+  transform: rotate(-45deg);
+}
+
+.navbar-toggle .icon-bar {
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+
   .navigation {
         background: transparent;
         position: relative;
@@ -14,7 +34,7 @@
           padding-top: 10px;
           width: 90%;
           font-size: 15px;
-          margin-left: 20px;
+          margin-left: 30px;
               padding-left: 0px;
         }
         ul.hs-menu-children-wrapper {
@@ -47,7 +67,7 @@
               font-size: 15px;
               opacity: 1;
                 padding: 10px 15px;
-                    margin-left: 20px;
+                    margin-left: 30px;
                         padding-left: 0px;
             }
           }
@@ -79,29 +99,31 @@
           background: $defLightBlueLighter;
       }
 
+
+
+
+
       .navbar-shift {
-          position: absolute;
-          top: -50px;
+          position: relative;
+          margin-top: -50px;
           width: 100%;
-          right: 0px;
-          margin-right: -400px;
+          right: -400px;
           padding: 15px;
           padding-top: 40px;
-          -webkit-transition: margin-right 0.5s ease-in-out;
-          -o-transition:  margin-right 0.5s ease-in-out;
-          transition:  margin-right 0.5s ease-in-out;
+          -webkit-transition: right 0.5s ease-in-out;
+          -o-transition:  right 0.5s ease-in-out;
+          transition:  right 0.5s ease-in-out;
           background: $grayDark;
               height: 100vh;
         }
         .navbar-shift.expanded {
-            position: absolute;
-            top: -50px;
+            position: relative;
+            margin-top: -50px;
             width: 100%;
-            right: 0px;
-            margin-right: -150px;
-            -webkit-transition: margin-right 0.5s ease-in-out;
-            -o-transition: margin-right 0.5s ease-in-out;
-            transition: margin-right 0.5s ease-in-out;
+            right:  -150px;
+            -webkit-transition: right 0.5s ease-in-out;
+            -o-transition: right 0.5s ease-in-out;
+            transition: right 0.5s ease-in-out;
             z-index: 9;
 
           }
@@ -112,26 +134,26 @@
         float: left;
         .navbar-shift {
             position: initial;
-            top: -50px;
+            margin-top : 0px;
             width: 100%;
             right: 0px;
             margin-right: 0px;
-            -webkit-transition: margin-right 0.5s ease-in-out;
-            -o-transition:  margin-right 0.5s ease-in-out;
-            transition:  margin-right 0.5s ease-in-out;
+            -webkit-transition: right 0.5s ease-in-out;
+            -o-transition:  right 0.5s ease-in-out;
+            transition:  right 0.5s ease-in-out;
             height: auto;
             padding: 0px;
             background: transparent;
           }
           .navbar-shift.expanded {
               position: initial;
-              top: -50px;
+              margin-top : 0px;
               width: 100%;
               right: 0px;
               margin-right: 0px;
-              -webkit-transition: margin-right 0.5s ease-in-out;
-              -o-transition:  margin-right 0.5s ease-in-out;
-              transition:  margin-right 0.5s ease-in-out;
+              -webkit-transition: right 0.5s ease-in-out;
+              -o-transition:  right 0.5s ease-in-out;
+              transition:  right 0.5s ease-in-out;
               height: auto;
               padding: 0px;
               background: transparent;
@@ -199,7 +221,6 @@
   .navbar-toggle
   {
         z-index: 9;
-        background-color: $defDarkBlueDark;
         .icon-bar
         {
             background-color: $white;
