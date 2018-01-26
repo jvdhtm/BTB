@@ -4936,10 +4936,6 @@ footer {
   color: #6CBCC7;
   font-style: italic; }
 
-.input ::-moz-placeholder {
-  color: #6CBCC7;
-  font-style: italic; }
-
 .input :-ms-input-placeholder {
   color: #6CBCC7;
   font-style: italic; }
@@ -4963,7 +4959,17 @@ footer {
   background: #6FECBE;
   border-radius: 20px;
   padding: 8px;
-  margin: 5px; }
+  margin: 5px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .hs_submit [type='submit']:hover {
+    background: #6CBCC7;
+    border-color: #6CBCC7;
+    color: #fff;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
 
 .file-upload {
   position: relative; }
