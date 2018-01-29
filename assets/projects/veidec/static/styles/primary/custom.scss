@@ -372,3 +372,22 @@ a.cta_button {
 .cta_button:hover:after {
   right: -15px;
 }
+
+
+/*HR with Gradient*/
+.long-underline{
+  padding:1px;
+  border:0px;
+  background-image: linear-gradient(to right,  #2986a2 , #00e262);
+}
+.short-underline{
+  padding:2px;
+  border:0px;
+  width:44%;
+  margin-left:0;
+  background-image: linear-gradient(to right,  #2986a2 , #00e262);
+  @include media('>=tablet') {
+    width:8%;
+    margin:24px 0px 24px 0px;
+  }
+}
