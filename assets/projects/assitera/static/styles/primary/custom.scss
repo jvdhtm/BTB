@@ -334,7 +334,7 @@ input[type="color"],
 }
 
 a.cta_button {
-  position: absolute; //display:block;
+   //display:block;
   font-size: 15px;
   letter-spacing: 2px;
   outline: 0;
@@ -348,6 +348,11 @@ a.cta_button {
   -moz-transition: 0.16s ease-in;
   -webkit-transition: 0.16s ease-in;
 }
+.image-box img
+{
+  width: 100%;
+}
+
 
 .cta_button:hover {
   color: #101010 !important;

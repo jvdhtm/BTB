@@ -4490,7 +4490,6 @@ input[type="color"],
   align-items: center; }
 
 a.cta_button {
-  position: absolute;
   font-size: 15px;
   letter-spacing: 2px;
   outline: 0;
@@ -4503,6 +4502,9 @@ a.cta_button {
   -ms-transition: 0.16s ease-in;
   -moz-transition: 0.16s ease-in;
   -webkit-transition: 0.16s ease-in; }
+
+.image-box img {
+  width: 100%; }
 
 .cta_button:hover {
   color: #101010 !important;
@@ -5157,7 +5159,8 @@ footer {
       -moz-border-radius: 28;
       margin: 0 auto;
       -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      position: absolute; }
 
 .search-box {
   position: relative;
@@ -5184,6 +5187,7 @@ footer {
     position: relative;
     top: 20px; }
   .rectangle .cta_button {
+    position: absolute;
     display: block;
     padding: 5px 30px 5px 30px;
     margin: 0 auto;
@@ -5204,7 +5208,6 @@ footer {
   border-radius: 50%;
   -webkit-box-shadow: 0px 4px 14px 2px #E5E5E5;
   box-shadow: 0px 4px 14px 2px #E5E5E5;
-  background: #BC90D1;
   left: -125px;
   margin-left: 50%;
   margin-top: 10px; }

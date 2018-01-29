@@ -1,24 +1,118 @@
-footer {
-    width: 100%;
-    clear: both;
-    /* to clear it */
-    
-    .footer--wrapper {
-        text-align: center;
-        padding: 11px 0;
-        p {
-            color: $white;
-            font-size: 20px;
-            display: inline-block;
-            margin: 0;
-            vertical-align: super;
-            
-        }
-        i {
-            color: $white;
-            font-size: 30px;
-            display: inline-block;
-            margin-left: 5px;
-        }
+.footer{
+    background:$grayLighter;
+    h3{
+        margin-left:5px;
     }
 }
+
+.input{
+    position:relative;
+    input,textarea{
+        font-size:16px;
+        width:100%;
+        padding-left:30px;
+        margin:0px;
+        border-radius:5px;
+        resize:none;
+        margin-bottom: 10px;
+    }
+}
+    .fa-envelope-o{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 150%;
+        opacity:0.8;
+    }
+    .fa-map-marker, .fa-phone, .fa-fax{
+        font-size:250%;
+        margin-top:5px;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $greenDark;
+    }
+    .hs_submit input{
+        width: 100%;
+        border-radius: 5px;
+        background:$greenDark;
+        border-color: $greenDark;
+        padding: 8px;
+        color:$white;
+        font-size:16px;
+        margin-bottom:40px;
+    }
+
+    .social{
+        text-align:center;
+        .fa{
+            font-size:250%;
+            padding: 0px 20px;
+            margin:20px 0px 10px 0px;
+        }
+    }
+    .footer-logo{
+        text-align:center;
+    }
+    .subscribe-input{
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        position: relative;
+    }
+    @include media('>=tablet') {
+        .input{
+            input,textarea{
+                width:80%;           
+                margin:10px 5px 5px 5px;
+            }
+        }
+        .contact{
+            order:1;
+        }
+        .news-letter{
+            order:2;
+}
+        .fa-envelope-o{
+            top: 20px;
+            right: 120px;
+        }
+        .fa-map-marker, .fa-phone, .fa-fax{
+            margin-top:10px;
+        }
+        .hs_submit input{
+            width: 40%;
+            margin-left:5px;
+        }
+        .social{
+            text-align:right;
+            .fa{
+                padding: 0px 0px 0px 50px;
+            }
+        }
+        .hs_submit .subscribe{
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            position: absolute;
+            padding: 10px;
+            width: 25%;
+            top: 66px;
+            right: 15px;
+            border-color: $greenDark;
+        }
+        .subscribe-input{
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 0px;
+            position: relative;
+        }
+        .footer-logo{
+            text-align:left;
+        }
+        .footer-icons{
+            p{
+                margin:0px 0px 5px;
+                padding:5px 0px;
+            }
+            .order-telefon{
+                margin-top:26px;
+            }
+        }
+    }

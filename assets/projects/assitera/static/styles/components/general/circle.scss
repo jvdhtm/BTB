@@ -49,6 +49,7 @@
             -moz-border-radius: 28;
             margin: 0 auto;
             box-sizing: border-box;
+              position: absolute;
         }
     }
 }
@@ -80,6 +81,7 @@
         top: 20px;
     }
     .cta_button {
+                position: absolute;
         display: block;
         padding: 5px 30px 5px 30px;
         margin: 0 auto;
@@ -101,7 +103,6 @@
     width: 250px;
     border-radius: 50%;
     box-shadow: 0px 4px 14px 2px $greyLight;
-    background: $defDarkPurple;
     left: -125px;
     margin-left: 50%;
     margin-top: 10px;
