@@ -5030,6 +5030,7 @@ footer {
   background: -webkit-linear-gradient(rgba(255, 0, 0, 0), white);
   background: -o-linear-gradient(rgba(255, 0, 0, 0), white);
   background: linear-gradient(rgba(255, 0, 0, 0), white);
+  background-image: -webkit-linear-gradient(rgba(255, 0, 0, 0), rgba(255, 254, 251, 0) 0%, #fff 85%);
   z-index: 0;
   bottom: 0;
   left: 0; }
@@ -5042,6 +5043,7 @@ footer {
   background: -webkit-linear-gradient(white, rgba(255, 0, 0, 0));
   background: -o-linear-gradient(white, rgba(255, 0, 0, 0));
   background: linear-gradient(white, rgba(255, 0, 0, 0));
+  background-image: -webkit-linear-gradient(rgba(255, 0, 0, 0), rgba(255, 254, 251, 0) 0%, #fff 85%);
   z-index: 0;
   left: 0; }
 
