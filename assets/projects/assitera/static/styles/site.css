@@ -4938,6 +4938,10 @@ footer {
   color: #6CBCC7;
   font-style: italic; }
 
+.input ::-moz-placeholder {
+  color: #6CBCC7;
+  font-style: italic; }
+
 .input :-ms-input-placeholder {
   color: #6CBCC7;
   font-style: italic; }
