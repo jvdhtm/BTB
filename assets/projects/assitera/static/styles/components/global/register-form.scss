@@ -42,6 +42,13 @@
     border-radius: 20px;
     padding: 8px;
     margin:5px;
+    transition:0.2s;
+    &:hover{
+        background:$defLightBlue;
+        border-color:$defLightBlue;
+        color:$white;
+        transition:0.2s;
+    }
 }
 .file-upload{
   position:relative;
