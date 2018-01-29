@@ -4490,7 +4490,6 @@ input[type="color"],
   align-items: center; }
 
 a.cta_button {
-  position: absolute;
   font-size: 15px;
   letter-spacing: 2px;
   outline: 0;
@@ -4504,10 +4503,13 @@ a.cta_button {
   -moz-transition: 0.16s ease-in;
   -webkit-transition: 0.16s ease-in; }
 
+.image-box img {
+  width: 100%; }
+
 .cta_button:hover {
-  color: #FFF !important;
-  -webkit-box-shadow: 0px 3px 12px 1px #1d1b1b;
-  box-shadow: 0px 3px 12px 1px #1d1b1b; }
+  color: #101010 !important;
+  -webkit-box-shadow: 0px 1px 18px 1px #333333;
+  box-shadow: 0px 1px 18px 1px #333333; }
 
 .cta_button:after {
   content: "";
@@ -5103,9 +5105,8 @@ footer {
   overflow: hidden;
   position: absolute;
   z-index: 1;
-  width: 365px;
+  width: 440px;
   height: 285px;
-  float: right;
   top: 0px;
   right: 0px; }
 
@@ -5118,17 +5119,19 @@ footer {
   box-shadow: 0px 4px 14px 2px #656363;
   position: absolute;
   top: -120px;
-  right: -35px;
+  right: 20px;
   z-index: -1; }
   .circle .circle--text {
     float: left;
-    width: 93%;
-    padding-top: 50%;
+    width: 100%;
+    padding-top: 44%;
     line-height: 1em;
     text-align: center;
     color: #fff;
     font-size: 20px;
-    font-weight: 600; }
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 30px; }
   .circle .circle__register {
     display: inline-block;
     width: 100%;
@@ -5148,7 +5151,8 @@ footer {
       -moz-border-radius: 28;
       margin: 0 auto;
       -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      position: absolute; }
 
 .search-box {
   position: relative;
@@ -5175,6 +5179,7 @@ footer {
     position: relative;
     top: 20px; }
   .rectangle .cta_button {
+    position: absolute;
     display: block;
     padding: 5px 30px 5px 30px;
     margin: 0 auto;
@@ -5195,7 +5200,6 @@ footer {
   border-radius: 50%;
   -webkit-box-shadow: 0px 4px 14px 2px #E5E5E5;
   box-shadow: 0px 4px 14px 2px #E5E5E5;
-  background: #BC90D1;
   left: -125px;
   margin-left: 50%;
   margin-top: 10px; }
@@ -5238,7 +5242,7 @@ footer {
     .circle .circle__register .cta_button {
       padding: 10px 40px;
       width: 70%;
-      bottom: 75px !important;
+      bottom: 90px !important;
       right: 60px; }
   .rectangle {
     padding-left: 40px;

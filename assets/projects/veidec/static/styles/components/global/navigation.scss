@@ -18,7 +18,13 @@
   transition: all 500ms ease-in-out;
 }
 
-
+.navigation-menu
+{
+ overflow: hidden;
+ @include media('>=tablet') {
+    overflow: initial;
+ }
+}
   .navigation {
         background: transparent;
         position: relative;
@@ -35,6 +41,10 @@
           width: 90%;
           font-size: 15px;
           margin-left: 30px;
+            @include media('>=tablet') {
+              margin-left: 0px;
+              padding: 10px 15px;
+            }
               padding-left: 0px;
         }
         ul.hs-menu-children-wrapper {
@@ -95,12 +105,16 @@
       .hs-item-has-children.active:before {
          content: "\f068";
       }
-      li.hs-menu-item.hs-menu-depth-2:hover a {
-          background: $defLightBlueLighter;
+
+
+      li.hs-menu-item.hs-menu-depth-1:hover {
+          background: #707070;
+          box-shadow: -4.5px 4px 7px -2px #484848;
       }
-
-
-
+      li.hs-menu-item.hs-menu-depth-1.hs-item-has-children:hover {
+          background: #707070;
+         box-shadow: -4.5px 10px 7px -2px #484848;
+      }
 
 
       .navbar-shift {
@@ -130,7 +144,7 @@
       @include media('>=tablet') {
         font-size: 20px;
         background: transparent;
-        width: 100%;
+        width:75%;
         float: left;
         .navbar-shift {
             position: initial;
@@ -163,30 +177,28 @@
           nav {
               width: 90%;
               float: left;
+                  padding-right: 110px;
           }
           ul {
               display: flex;
               a {
                 width: 100%;
-
+                    text-align: center;
               }
               .hs-item-has-children:before {
                 content: "";
                 display: none;
               }
               li.hs-menu-depth-1:hover{
-                background: $defTurquoise;
-                box-shadow: -4.5px 0px 7px -2px $black;
               }
               li.hs-item-has-children:hover{
-                background: $defTurquoise;
-                box-shadow: -4.5px 10px 7px -2px $black;
                 a{
-                  color:$defDarkBlueDark;
+                  color:$defFontColor;
                 }
                 ul.hs-menu-children-wrapper {
                     display: block;
-                  box-shadow: -4.5px 4px 7px -2px $black;
+                    box-shadow: -4.5px 4px 7px -2px $black;
+                    width: 100%;
                 }
                 li.hs-menu-item {
                       box-shadow: none !important;
@@ -195,8 +207,8 @@
               ul.hs-menu-children-wrapper {
                   position: absolute;
                   top: 41px;
-                  background: $defTurquoise;
-                  width: 200px;
+                  background: $grayDark;
+                  width: 100;
                   z-index: 10;
                   display: none;
                   a {
