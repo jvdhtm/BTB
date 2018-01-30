@@ -4633,12 +4633,34 @@ span.hs-form-required {
   background: #fafafa; }
   .footer h3 {
     margin-left: 5px; }
+<<<<<<< HEAD
   .footer .widget-type-logo {
     width: 200px !important;
     left: 15px;
     position: relative;
     top: 20px;
     position: relative; }
+=======
+  .footer img {
+    width: 36%;
+    margin: 20px 0px; }
+
+.footer-icons .col-md-4 {
+  display: none; }
+
+.footer-icons .col-xs-6 {
+  display: block; }
+  .footer-icons .col-xs-6 h4 {
+    margin-top: 30px; }
+  .footer-icons .col-xs-6 p:nth-child(7) {
+    margin-bottom: 40px; }
+
+@media (min-width: 768px) {
+  .footer-icons .col-md-4 {
+    display: block; }
+  .footer-icons .col-xs-6 {
+    display: none; } }
+>>>>>>> veidec
 
 .input {
   position: relative; }
@@ -4663,13 +4685,13 @@ span.hs-form-required {
   margin-top: 5px;
   color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #44ae55; }
+  -webkit-text-stroke-color: #27ae61; }
 
 .hs_submit input {
-  width: 100%;
+  width: 54%;
   border-radius: 5px;
-  background: #44ae55;
-  border-color: #44ae55;
+  background: #27ae61;
+  border-color: #27ae61;
   padding: 8px;
   color: #fff;
   font-size: 16px;
@@ -4684,6 +4706,15 @@ span.hs-form-required {
 
 .footer-logo {
   text-align: center; }
+
+.hs_submit .subscribe {
+  position: absolute;
+  top: 37px;
+  right: 15px;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  width: inherit; }
 
 .subscribe-input {
   border-bottom-right-radius: 0px;
@@ -4713,7 +4744,15 @@ span.hs-form-required {
     width: 40%;
     margin-left: 5px; }
   .social {
+<<<<<<< HEAD
     text-align: left; }
+=======
+    text-align: right;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2; }
+>>>>>>> veidec
     .social .fa {
       padding: 0px 0px 0px 50px; }
   .hs_submit .subscribe {
@@ -4724,13 +4763,17 @@ span.hs-form-required {
     width: 25%;
     top: 66px;
     right: 15px;
-    border-color: #44ae55; }
+    border-color: #27ae61; }
   .subscribe-input {
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     position: relative; }
   .footer-logo {
-    text-align: left; }
+    text-align: left;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
   .footer-icons p {
     margin: 0px 0px 5px;
     padding: 5px 0px; }
