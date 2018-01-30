@@ -5352,6 +5352,9 @@ span.hs-form-required {
 .text-logo {
   position: absolute;
   top: 200px; }
+  @media (min-width: 768px) {
+    .text-logo p {
+      color: #fff; } }
 
 /*********************
   Waves

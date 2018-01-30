@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container full-width">
     <div class="row">
-      <div class=" col-lg-12 col-xs-12 navigation-menu" s>
+      <div class=" col-lg-12 col-xs-12 navigation-menu" >
         <div class="row" style="position:relative; z-index: 2;">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle navbar-toggle--js " >
@@ -18,9 +18,7 @@
             </div>
             <div class="navigation">
               <div class="navbar-shift navbar-shift--js" aria-expanded="true">
-
                 <compontent src="../global/navigations.html"></compontent>
-
               </div>
               <compontent src="../global/search.html"></compontent>
             </div>
@@ -30,21 +28,48 @@
       </div>
     </div>
   </div>
+  <div class="container full-width">
+    <div class="row">
+      <div class="navigation-bottom-color" id="navigation-bottom-color" style="display:none;"></div>
+    </div>
+  </div>
 </header>
 <script>
-  $('body').on('click', '.hs-menu-depth-1', function (e) {
-    $('.hs-menu-depth-1').removeClass('active');
-    $(this).addClass('active');
+
+  $(document).ready(function(){
+
+    $('body').on('click', '.hs-menu-depth-1', function (e) {
+      $('.hs-menu-depth-1').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('body').on('click', '.hs-menu-depth-1.active', function (e) {
+      $(this).removeClass('active');
+    });
+
+
+    $('body').on('mousemove', '.navbar-shift--js', function (e) {
+
+      $('#navigation-bottom-color').hide();
+      if($(e.target).parents('.hs-item-has-children').length > 0)
+      {
+        $('#navigation-bottom-color').show();
+      }
+
+    });
+
+    $('body').on('mouseleave', '.navbar-shift--js', function (e) {
+
+      $('#navigation-bottom-color').hide();
+    });
+
+    $('.navbar-toggle--js').click(function(){
+        $('.navbar-shift--js').toggleClass('expanded');
+        $(this).toggleClass('active');
+    });
+
   });
 
-  $('body').on('click', '.hs-menu-depth-1.active', function (e) {
-    $(this).removeClass('active');
-  });
-
-  $('.navbar-toggle--js').click(function(){
-      $('.navbar-shift--js').toggleClass('expanded');
-      $(this).toggleClass('active');
-  });
 
 
 </script>
