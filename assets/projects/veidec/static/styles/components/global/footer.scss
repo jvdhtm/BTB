@@ -32,7 +32,7 @@
             display:none;
         }
     }
-}       
+}
 .input{
     position:relative;
     input,textarea{
@@ -68,7 +68,7 @@
     color:$white;
     font-size:16px;
     margin-bottom:40px;
-}   
+}
 .social{
     text-align:center;
     .fa{
@@ -86,7 +86,7 @@
         font-size:16px;
         margin-bottom:40px;
     }
-
+  }
     .social{
         text-align: left;
         .fa{
@@ -103,6 +103,7 @@
         border-top-right-radius: 0px;
         position: relative;
     }
+
     @include media('>=tablet') {
         .input{
             input,textarea{
@@ -162,4 +163,3 @@
             }
         }
     }
-    

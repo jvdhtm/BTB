@@ -4633,17 +4633,12 @@ span.hs-form-required {
   background: #fafafa; }
   .footer h3 {
     margin-left: 5px; }
-<<<<<<< HEAD
   .footer .widget-type-logo {
     width: 200px !important;
     left: 15px;
     position: relative;
     top: 20px;
     position: relative; }
-=======
-  .footer img {
-    width: 36%;
-    margin: 20px 0px; }
 
 .footer-icons .col-md-4 {
   display: none; }
@@ -4660,7 +4655,6 @@ span.hs-form-required {
     display: block; }
   .footer-icons .col-xs-6 {
     display: none; } }
->>>>>>> veidec
 
 .input {
   position: relative; }
@@ -4698,6 +4692,22 @@ span.hs-form-required {
   margin-bottom: 40px; }
 
 .social {
+  text-align: center; }
+  .social .fa {
+    font-size: 250%;
+    padding: 0px 20px;
+    margin: 20px 0px 10px 0px; }
+  .social .hs_submit input {
+    width: 100%;
+    border-radius: 5px;
+    background: #27ae61;
+    border-color: #27ae61;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 40px; }
+
+.social {
   text-align: left; }
   .social .fa {
     font-size: 250%;
@@ -4706,15 +4716,6 @@ span.hs-form-required {
 
 .footer-logo {
   text-align: center; }
-
-.hs_submit .subscribe {
-  position: absolute;
-  top: 37px;
-  right: 15px;
-  padding-bottom: 10px;
-  border-bottom-left-radius: 0px;
-  border-top-left-radius: 0px;
-  width: inherit; }
 
 .subscribe-input {
   border-bottom-right-radius: 0px;
@@ -4744,15 +4745,7 @@ span.hs-form-required {
     width: 40%;
     margin-left: 5px; }
   .social {
-<<<<<<< HEAD
     text-align: left; }
-=======
-    text-align: right;
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-    -ms-flex-order: 2;
-    order: 2; }
->>>>>>> veidec
     .social .fa {
       padding: 0px 0px 0px 50px; }
   .hs_submit .subscribe {
