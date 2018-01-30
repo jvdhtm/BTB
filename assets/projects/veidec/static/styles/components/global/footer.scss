@@ -11,7 +11,28 @@
       position: relative;
     }
 }
-
+.footer-icons{
+    .col-md-4{
+        display:none;
+    }
+    .col-xs-6{
+        display:block;
+        h4{
+            margin-top:30px;
+        }
+        p:nth-child(7){
+            margin-bottom:40px;
+        }
+    }
+    @include media('>=tablet') {
+        .col-md-4{
+            display:block;
+        }
+        .col-xs-6{
+            display:none;
+        }
+    }
+}       
 .input{
     position:relative;
     input,textarea{
@@ -24,19 +45,36 @@
         margin-bottom: 10px;
     }
 }
-    .fa-envelope-o{
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-size: 150%;
-        opacity:0.8;
-    }
-    .fa-map-marker, .fa-phone, .fa-fax{
+.fa-envelope-o{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 150%;
+    opacity:0.8;
+}
+.fa-map-marker, .fa-phone, .fa-fax{
+    font-size:250%;
+    margin-top:5px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: $greenDark;
+}
+.hs_submit input{
+    width: 54%;
+    border-radius: 5px;
+    background:$greenDark;
+    border-color: $greenDark;
+    padding: 8px;
+    color:$white;
+    font-size:16px;
+    margin-bottom:40px;
+}   
+.social{
+    text-align:center;
+    .fa{
         font-size:250%;
-        margin-top:5px;
-        color: transparent;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: $greenDark;
+        padding: 0px 20px;
+        margin:20px 0px 10px 0px;
     }
     .hs_submit input{
         width: 100%;
@@ -77,7 +115,7 @@
         }
         .news-letter{
             order:2;
-}
+        }
         .fa-envelope-o{
             top: 20px;
             right: 120px;
@@ -103,7 +141,7 @@
             width: 25%;
             top: 66px;
             right: 15px;
-            border-color: $greenDark;
+            border-color:$greenDark;
         }
         .subscribe-input{
             border-bottom-right-radius: 0px;
@@ -112,6 +150,7 @@
         }
         .footer-logo{
             text-align:left;
+            order:1;
         }
         .footer-icons{
             p{
@@ -123,3 +162,4 @@
             }
         }
     }
+    
