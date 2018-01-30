@@ -17,6 +17,32 @@
   position: relative;
   transition: all 500ms ease-in-out;
 }
+li.hs-menu-item.hs-menu-depth-2 {
+   @include media('>=tablet') {
+    width: 200px !important;
+        float: left;
+  }
+}
+.navigation li.hs-menu-item.hs-menu-depth-3 a {
+    color: $black !important;
+}
+li.hs-menu-item.hs-menu-depth-2 {
+    position: relative !important;
+}
+li.hs-menu-item.hs-menu-depth-3 {
+    position: relative !important;
+}
+.navigation-bottom-color
+{
+  background: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 100%;
+  height: 41px;
+
+
+}
 
 .navigation-menu
 {
@@ -84,13 +110,16 @@
       }
 
       li.hs-menu-item {
-          position: relative;
           width: 100%;
+          position: relative;
+          @include media('>=tablet') {
+            position: inherit;
+          }
       }
       .hs-item-has-children:before {
         content: "\f067";
         position: absolute;
-        color: white;
+        color: $white;
         top: 2px;
         left: -10px;
         display: inline-block;
@@ -108,12 +137,15 @@
 
 
       li.hs-menu-item.hs-menu-depth-1:hover {
-          background: #707070;
-          box-shadow: -4.5px 4px 7px -2px #484848;
+          a {
+            color: $green;
+          }
+
+
+
       }
       li.hs-menu-item.hs-menu-depth-1.hs-item-has-children:hover {
-          background: #707070;
-         box-shadow: -4.5px 10px 7px -2px #484848;
+
       }
 
 
@@ -196,8 +228,7 @@
                   color:$defFontColor;
                 }
                 ul.hs-menu-children-wrapper {
-                    display: block;
-                    box-shadow: -4.5px 4px 7px -2px $black;
+                    display: flex;
                     width: 100%;
                 }
                 li.hs-menu-item {
@@ -205,12 +236,13 @@
                 }
               }
               ul.hs-menu-children-wrapper {
-                  position: absolute;
-                  top: 41px;
-                  background: $grayDark;
-                  width: 100;
-                  z-index: 10;
-                  display: none;
+                position: absolute;
+                top: 40px;
+                background: #fff;
+                width: 100%;
+                z-index: 10;
+                display: none;
+                left: 0px;
                   a {
                     position: relative;
                     transition: font-size .25s,
@@ -219,7 +251,9 @@
                     opacity .5s .25s;
                     font-size: 15px;
                     opacity: 1;
-                    padding: 10px 15px;
+                    padding: 10px 20px;
+                    text-align: left;
+                    text-align: ceneter;
                   }
               }
             }

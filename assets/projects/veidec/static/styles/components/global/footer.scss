@@ -3,6 +3,13 @@
     h3{
         margin-left:5px;
     }
+    .widget-type-logo {
+      width: 200px !important;
+      left: 15px;
+      position: relative;
+      top: 20px;
+      position: relative;
+    }
 }
 
 .input{
@@ -43,7 +50,7 @@
     }
 
     .social{
-        text-align:center;
+        text-align: left;
         .fa{
             font-size:250%;
             padding: 0px 20px;
@@ -61,7 +68,7 @@
     @include media('>=tablet') {
         .input{
             input,textarea{
-                width:80%;           
+                width:80%;
                 margin:10px 5px 5px 5px;
             }
         }
@@ -83,7 +90,7 @@
             margin-left:5px;
         }
         .social{
-            text-align:right;
+            text-align:left;
             .fa{
                 padding: 0px 0px 0px 50px;
             }
