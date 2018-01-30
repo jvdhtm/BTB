@@ -4633,6 +4633,9 @@ span.hs-form-required {
   background: #fafafa; }
   .footer h3 {
     margin-left: 5px; }
+  .footer img {
+    width: 36%;
+    margin: 20px 0px; }
 
 .footer-icons .col-md-4 {
   display: none; }
