@@ -1,6 +1,5 @@
 .news-content-image{
 	background:coral;
-	padding:120px 0px;
 	text-align:center;
 }
 .fa-share-alt{
@@ -12,6 +11,10 @@
 		display:none;
 	}
 }
+
+.news-block {
+	padding: 15px;
+}
 .desktop-news-social-icons{
 	display:none;
 	@include media('>=tablet') {
@@ -21,17 +24,23 @@
 			font-size:150%;
 			padding:0px 6px;
 		}
-		.fa-facebook-official{
+		.fa{
 			font-size:150%;
 			padding:0px 6px 0px 0px;
 		}
+
+		a{
+			color:$black;
+		}
+
+	}
+	a{
+		color:$black;
 	}
 }
 .news-content{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	font-size:16px;
-	padding:0px 30px;
-	margin:-8px 0px 40px 0px;
 	.green{
 		color:green;
 		&:nth-child(1){
@@ -53,12 +62,10 @@
 @include media('>=tablet') {
 	.news-content-image{
 		order:2;
-		margin:20px 0px;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	}
 	.news-content{
 		order:1;
-		margin:20px 0px;
 	}
 }
 /*news-text .bold{
