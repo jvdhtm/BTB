@@ -1,14 +1,8 @@
-
-<compontent src="../modules/global/header" ></compontent>
-<div class="site-wrapper">
-	<compontent src="../modules/global/addons"></compontent>
-	<routes scope="{{project}}" savestate id="pages" trailing={{trailing}}>
-		[
-				{path:'/', render:'/components/templates/home'},
-				{path:'/produkter', render:'/components/templates/standard'},
-				{path:'/.*', render:'/components/templates/error404'}
-			]
-	</routes>
-	<compontent src="../modules/global/footer"></compontent>
-</div>
+<routes scope="{{project}}" savestate id="pages" trailing={{trailing}}>
+	[
+			{path:'/', render:'/components/templates/home'},
+			{path:'/produkter', render:'/components/templates/standard'},
+			{path:'/.*', render:'/components/templates/error404'}
+		]
+</routes>
 <!--<compontent src="../modules/general/bubble"></compontent> Removing bubbles for the moment-->

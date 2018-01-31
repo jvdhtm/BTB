@@ -25,12 +25,11 @@ z-index: 10;
 
 
 	.general_logo {
-	    width: 15%  !important;;
-	    float: left !important;;
-	    margin-top: 5px !important;;
-			position: relative;
-			top: 5px;
-     	max-width: 100px;
+    margin-top: 5px !important;
+    position: absolute;
+    top: 5px;
+    left: -80px;
+    max-width: 120px;
 
 	}
 

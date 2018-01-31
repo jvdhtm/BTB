@@ -44,6 +44,21 @@ li.hs-menu-item.hs-menu-depth-3 {
 
 }
 
+.sub-page{
+  .navigation {
+    a{
+      color:$black;
+    }
+    #breadcrumbs
+    {
+      a
+      {
+        color:$white;
+      }
+    }
+  }
+}
+
 .navigation-menu
 {
  overflow: hidden;
@@ -153,7 +168,7 @@ li.hs-menu-item.hs-menu-depth-3 {
           position: relative;
           margin-top: -50px;
           width: 100%;
-          right: -600px;
+          right: -100%;
           padding: 15px;
           padding-top: 40px;
           -webkit-transition: right 0.5s ease-in-out;
@@ -176,7 +191,7 @@ li.hs-menu-item.hs-menu-depth-3 {
       @include media('>=tablet') {
         font-size: 20px;
         background: transparent;
-        width:75%;
+        width: 100%;
         float: left;
         .navbar-shift {
             position: initial;
@@ -209,7 +224,8 @@ li.hs-menu-item.hs-menu-depth-3 {
           nav {
               width: 90%;
               float: left;
-                  padding-right: 110px;
+              padding-right: 80px;
+              padding-left: 80px;
           }
           ul {
               display: flex;

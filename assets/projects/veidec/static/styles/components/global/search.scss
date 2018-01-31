@@ -54,10 +54,12 @@ header {
         -webkit-transition: width 0.5s ease-in-out;
         -o-transition: width 0.5s ease-in-out;
         transition: width 0.5s ease-in-out;
+            margin-right: 40px;
     }
      .form-control.expanded {
         width: 300px !important;
         padding: 15px;
+          margin-right: 40px;
         -webkit-transition: width 0.5s ease-in-out;
         -o-transition: width 0.5s ease-in-out;
         transition: width 0.5s ease-in-out;
@@ -69,12 +71,20 @@ header {
   .search {
     border: none;
     background: transparent;
-    color: $white;
-    position: relative;
-    top: 0px;
+    color: #fff;
+    position: absolute;
+    top: 2px;
     font-size: 26px;
-    right: 4px;
+    right: 2px;
   }
 
 
+}
+
+.sub-page{
+  header {
+      .search {
+        color: $black;
+      }
+  }
 }
