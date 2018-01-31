@@ -24,7 +24,7 @@ a {
   color: $defFontColor;
   display: block;
   text-decoration: none;
-  font-family: 'UniversBold' !important;
+  font-family: 'UniversBold' ;
 }
 
 a:hover {
@@ -37,6 +37,16 @@ a:hover {
   padding: 0px;
 }
 
+
+.col-centered{
+      margin: 50px auto;
+    h1{
+    	text-align:center;
+    	margin:0px;
+    	font-weight:bold;
+    }
+
+}
 elink {
   color: $defFontColor;
   position: relative;
