@@ -4813,7 +4813,7 @@ header {
   z-index: 10; }
   header.sticky {
     position: fixed;
-    background: gray; }
+    background: #555555; }
   header .widget-type-logo img {
     width: 100% !important; }
   header .general_logo {
