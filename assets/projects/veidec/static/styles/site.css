@@ -4814,6 +4814,8 @@ header {
   header.sticky {
     position: fixed;
     background: #555555; }
+    header.sticky a {
+      color: #484848; }
   header .widget-type-logo img {
     width: 100% !important; }
   header .general_logo {
