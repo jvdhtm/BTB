@@ -1,7 +1,6 @@
 
 <compontent src="../modules/global/header" ></compontent>
 <div class="site-wrapper">
-	<compontent src="../modules/global/addons"></compontent>
 	<routes scope="{{project}}" savestate id="pages" trailing={{trailing}}>
 		[
 				{path:'/', render:'/components/templates/home'},
@@ -10,6 +9,8 @@
 				{path:'/.*', render:'/components/templates/error404'}
 			]
 	</routes>
-	<compontent src="../modules/global/footer"></compontent>
+
+	<!--<compontent src="../modules/global/footer"></compontent> footer -->
 </div>
 <!--<compontent src="../modules/general/bubble"></compontent> Removing bubbles for the moment-->
+
