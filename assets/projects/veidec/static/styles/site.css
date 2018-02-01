@@ -5186,8 +5186,8 @@ body.expanded {
         background: #3e5f6b; } }
 
 .news-content-image {
-  background: coral;
-  text-align: center; }
+  text-align: center;
+  min-height: 300px; }
 
 .fa-share-alt {
   position: absolute;
@@ -5215,8 +5215,8 @@ body.expanded {
       display: block;
       margin-bottom: 10px; }
       .desktop-news-social-icons .fa-twitter, .desktop-news-social-icons .fa-envelope, .desktop-news-social-icons .fa-link {
-        font-size: 150%;
-        padding: 0px 6px; }
+        font-size: 126%;
+        padding: 0px 4px; }
       .desktop-news-social-icons .fa {
         font-size: 150%;
         padding: 0px 6px 0px 0px; }
