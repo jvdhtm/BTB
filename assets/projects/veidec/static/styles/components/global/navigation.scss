@@ -44,10 +44,27 @@ li.hs-menu-item.hs-menu-depth-3 {
 
 }
 
+body.expanded
+{
+  overflow: hidden;
+  @include media('>=tablet') {
+    overflow: auto;
+  }
+}
+
 .sub-page{
   .navigation {
     a{
       color:$black;
+    }
+    .navbar-shift.expanded
+    {
+      a{
+        color:$white;
+        @include media('>=tablet') {
+          color:$black;
+        }
+      }
     }
     #breadcrumbs
     {
@@ -68,7 +85,7 @@ li.hs-menu-item.hs-menu-depth-3 {
 }
   .navigation {
         background: transparent;
-        position: relative;
+        position: fixed;
         z-index: 3;
       ul {
         list-style: none;
@@ -165,32 +182,42 @@ li.hs-menu-item.hs-menu-depth-3 {
 
 
       .navbar-shift {
-          position: relative;
-          margin-top: -50px;
+          position: fixed;
           width: 100%;
           right: -100%;
-          padding: 15px;
-          padding-top: 40px;
           -webkit-transition: right 0.5s ease-in-out;
-          -o-transition:  right 0.5s ease-in-out;
-          transition:  right 0.5s ease-in-out;
+          -o-transition: right 0.5s ease-in-out;
+          transition: right 0.5s ease-in-out;
+          z-index: 9;
+          top: 0px;
           background: $grayDark;
-              height: 100vh;
+          height: 100vh;
+          nav
+          {
+            margin-top: 30px;
+            margin-left: 30px;
+          }
         }
         .navbar-shift.expanded {
-            position: relative;
-            margin-top: -50px;
-            width: 100%;
-            right:  -150px;
-            -webkit-transition: right 0.5s ease-in-out;
-            -o-transition: right 0.5s ease-in-out;
-            transition: right 0.5s ease-in-out;
-            z-index: 9;
+                position: fixed;
+                width: 100%;
+                right: -150px;
+                -webkit-transition: right 0.5s ease-in-out;
+                -o-transition: right 0.5s ease-in-out;
+                transition: right 0.5s ease-in-out;
+                z-index: 9;
+                top:0px;
+                nav
+                {
+                  margin-top: 30px;
+                  margin-left: 30px;
+                }
 
           }
       @include media('>=tablet') {
         font-size: 20px;
         background: transparent;
+        position: relative;
         width: 100%;
         float: left;
         .navbar-shift {
@@ -205,6 +232,12 @@ li.hs-menu-item.hs-menu-depth-3 {
             height: auto;
             padding: 0px;
             background: transparent;
+
+            nav
+            {
+              margin-top: 0px;
+              margin-left: 0px;
+            }
           }
           .navbar-shift.expanded {
               position: initial;
@@ -218,6 +251,12 @@ li.hs-menu-item.hs-menu-depth-3 {
               height: auto;
               padding: 0px;
               background: transparent;
+
+              nav
+              {
+                margin-top: 0px;
+                margin-left: 0px;
+              }
             }
 
 
@@ -225,7 +264,7 @@ li.hs-menu-item.hs-menu-depth-3 {
               width: 90%;
               float: left;
               padding-right: 80px;
-              padding-left: 80px;
+              padding-left: 150px;
           }
           ul {
               display: flex;

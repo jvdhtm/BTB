@@ -64,6 +64,7 @@ $('body').on('mouseleave', '.navbar-shift--js', function (e) {
 $('.navbar-toggle--js').click(function(){
     $('.navbar-shift--js').toggleClass('expanded');
     $(this).toggleClass('active');
+    $('body').toggleClass('expanded');
 });
 
 

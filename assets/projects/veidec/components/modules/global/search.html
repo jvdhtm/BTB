@@ -1,19 +1,40 @@
 <div aria-expanded="true" id="SearchForm" >
+  <button class=" search search-expand--js " type="button" aria-expanded="false" class="" role="button">
+    <i class="fa fa-search"></i>
+  </button>
+
+
+
+    <div class="search-menu relative" id="search-field">
+      <button class="cross cross-expand--js " type="button" aria-expanded="false"  role="button">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
       <form id="searchform-form1" class="navbar-form global-search-frm" method="get" action="/sok">
   				<div class="form-group">
-  					<input id="search-field" type="text" name="q" class="form-control" placeholder="Search ">
+  					<input  type="text" name="q" class="form-control" placeholder="Search ">
 
-						<button class=" search search-expand--js hidden-xs" type="button" aria-expanded="false" class="" role="button">
-	 						<i class="fa fa-search"></i>
-						</button>
+            <button class="search-btn-menu" type="submit" aria-expanded="false" class="" role="button">
+              <i class="fa fa-search"></i>
+            </button>
   				</div>
   		</form>
+
+    </div>
 	</div>
 	<script>
 	(function () {
 	   $('.search-expand--js').click(function () {
 			 $('#search-field').toggleClass('expanded');
 
+       if(!$('body').hasClass('expanded'))
+       $('body').toggleClass('expanded');
 		 });
+
+
+     $('.cross-expand--js').click(function () {
+       $('#search-field').toggleClass('expanded');
+       if(!$('.navbar-shift--js').hasClass('expanded'))
+       $('body').toggleClass('expanded');
+     });
 	})();
 	</script>

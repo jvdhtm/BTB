@@ -33,6 +33,13 @@ a:hover {
   padding: 0px;
 }
 
+.home .block-12 {
+    margin-top: -269px;
+    @include media('>=tablet') {
+      margin-top: 0px;
+    }
+}
+
 elink {
   color: $defFontColor;
   position: relative;
