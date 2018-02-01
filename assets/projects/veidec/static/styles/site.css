@@ -4323,6 +4323,9 @@ elink {
 .base--white {
   background-color: #fff; }
 
+.navbar-toggle {
+  margin-right: 0px; }
+
 /* Text feilds */
 textarea:focus,
 input[type="text"]:focus,
