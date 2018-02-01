@@ -1,11 +1,16 @@
 .sub-page .sticky .navigation {
     a {
-      color:$white !important;
+      color:$white ;
     }
 
 }
 .sub-page .sticky  #SearchForm .search {
-  color:$white !important;
+  color:$white ;
+}
+
+.sub-page .sticky .navbar-toggle .icon-bar
+{
+  background:$white ;
 }
 
 
