@@ -5159,7 +5159,7 @@ body.expanded {
   margin: auto; }
 
 .news-block {
-  padding: 15px; }
+  margin-top: 15px; }
 
 .desktop-news-social-icons {
   display: none; }
