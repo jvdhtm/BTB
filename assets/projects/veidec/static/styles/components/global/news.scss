@@ -11,7 +11,14 @@
 		display:none;
 	}
 }
-
+.img-responsive
+{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	max-height: 300px;
+	margin: auto;
+}
 .news-block {
 	padding: 15px;
 }
@@ -39,7 +46,6 @@
 	}
 }
 .news-content{
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	font-size:16px;
 	.green{
 		color:green;
@@ -61,7 +67,6 @@
 @include media('>=tablet') {
 	.news-content-image{
 		order:2;
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	}
 	.news-content{
 		order:1;
