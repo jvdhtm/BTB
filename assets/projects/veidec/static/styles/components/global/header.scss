@@ -8,7 +8,10 @@ left:0px;
 width:100%;
 z-index: 10;
 
-
+&.sticky {
+    position: fixed;
+    background: gray;
+}
 
 .widget-type-logo img {
     width: 100% !important;

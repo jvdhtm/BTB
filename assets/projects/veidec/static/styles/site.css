@@ -4811,6 +4811,9 @@ header {
   left: 0px;
   width: 100%;
   z-index: 10; }
+  header.sticky {
+    position: fixed;
+    background: gray; }
   header .widget-type-logo img {
     width: 100% !important; }
   header .general_logo {
