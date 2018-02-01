@@ -4805,6 +4805,12 @@ span.hs-form-required {
   .footer-icons .order-telefon {
     margin-top: 26px; } }
 
+.sub-page .sticky .navigation a {
+  color: #fff !important; }
+
+.sub-page .sticky #SearchForm .search {
+  color: #fff !important; }
+
 header {
   position: absolute;
   top: 0px;
@@ -4813,9 +4819,8 @@ header {
   z-index: 10; }
   header.sticky {
     position: fixed;
-    background: #555555; }
-    header.sticky a {
-      color: #484848; }
+    background: #555555;
+    color: #fff !important; }
   header .widget-type-logo img {
     width: 100% !important; }
   header .general_logo {
@@ -5542,37 +5547,39 @@ header #SearchForm .search-menu.expanded {
 
 @media (min-width: 768px) {
   header #SearchForm .search-menu {
-    top: -60px;
+    top: -15px;
     max-height: 0px;
     height: auto;
     -webkit-transition: max-height 0.5s ease-in-out;
     -o-transition: max-height 0.5s ease-in-out;
     transition: max-height 0.5s ease-in-out;
-    left: 136px;
-    position: relative;
+    left: 50%;
+    position: absolute;
     width: 78%;
     background: #fff;
     text-align: center;
     overflow: hidden;
     z-index: 20;
     -webkit-box-shadow: 0px 0px 4px 1px #707070;
-    box-shadow: 0px 0px 4px 1px #707070; }
+    box-shadow: 0px 0px 4px 1px #707070;
+    margin-left: -38%; }
   header #SearchForm .search-menu.expanded {
-    top: -60px;
+    top: -15px;
     max-height: 400px;
     height: auto;
     -webkit-transition: max-height 0.5s ease-in-out;
     -o-transition: max-height 0.5s ease-in-out;
     transition: max-height 0.5s ease-in-out;
-    left: 136px;
-    position: relative;
+    left: 50%;
+    position: absolute;
     width: 78%;
     background: #fff;
     text-align: center;
     overflow: hidden;
     z-index: 20;
     -webkit-box-shadow: 0px 0px 4px 1px #707070;
-    box-shadow: 0px 0px 4px 1px #707070; } }
+    box-shadow: 0px 0px 4px 1px #707070;
+    margin-left: -38%; } }
 
 header #SearchForm .form-group {
   width: 100%;
@@ -5596,8 +5603,8 @@ header #SearchForm .form-group {
     top: 26px;
     left: 14px; }
 
-.sub-page header .search {
-  color: #484848 !important; }
+.sub-page header #SearchForm .search {
+  color: #484848; }
 
 .sub-page header .navbar-toggle .icon-bar {
   background: black; }

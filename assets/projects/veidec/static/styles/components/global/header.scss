@@ -1,3 +1,12 @@
+.sub-page .sticky .navigation {
+    a {
+      color:$white !important;
+    }
+
+}
+.sub-page .sticky  #SearchForm .search {
+  color:$white !important;
+}
 
 
 header {
@@ -12,9 +21,7 @@ z-index: 10;
     position: fixed;
     background: $gray;
 
-    a{
-      color:$black;
-    }
+    color:$white !important;
 }
 
 .widget-type-logo img {
@@ -28,17 +35,13 @@ z-index: 10;
     left: 10px;
 }
 
-@include media ('>=tablet') {
-
-
-	.general_logo {
-    margin-top: 5px !important;
-    position: absolute;
-    top: 5px;
-    left: 15px;
-    max-width: 120px;
-
-	}
-
-}
+  @include media ('>=tablet') {
+  	.general_logo {
+      margin-top: 5px !important;
+      position: absolute;
+      top: 5px;
+      left: 15px;
+      max-width: 120px;
+  	}
+  }
 }
