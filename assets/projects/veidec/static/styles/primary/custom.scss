@@ -36,10 +36,12 @@ a:hover {
 .nopadding {
   padding: 0px;
 }
-
+li.hs-breadcrumb-menu-item.last-crumb {
+    color: $gray;
+}
 
 .col-centered{
-      margin: 50px auto;
+    margin-top: 100px;
     h1{
     	text-align:center;
     	margin:0px;
