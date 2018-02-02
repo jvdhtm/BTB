@@ -4840,21 +4840,27 @@ header {
       max-width: 120px; } }
 
 .brands {
-  text-align: center; }
+  text-align: center;
+  margin: 42px auto; }
   .brands p {
     margin: 12px 0px; }
-  .brands .fa {
-    font-size: 300%;
-    padding: 12px 26px; }
+  .brands img {
+    width: 20%;
+    padding: 8px 12px; }
+    @media (min-width: 768px) {
+      .brands img {
+        width: 8%; } }
 
 .gray-background {
   text-align: center;
   background-color: #fafafa; }
 
-.ratings .fa-star {
-  color: #f1c40f;
-  font-size: 240%;
-  padding: 8px 8px 12px 8px; }
+.ratings {
+  margin-bottom: 50px; }
+  .ratings .fa-star {
+    color: #f1c40f;
+    font-size: 240%;
+    padding: 8px 8px 12px 8px; }
 
 .show-more-button {
   border: 2px solid #27ae61;
@@ -4869,13 +4875,72 @@ header {
 
 .product-use {
   text-align: center; }
-  .product-use .product-use-icon {
-    font-size: 250%;
-    color: #27ae61;
-    margin: 44px 0px 36px 0px; }
+  .product-use img {
+    width: 14%;
+    margin-top: 44px;
+    margin-bottom: 36px; }
   .product-use p {
     padding: 0px 30px;
     text-align: center; }
+
+.hs_cos_flex-slider {
+  position: relative; }
+  @media (min-width: 768px) {
+    .hs_cos_flex-slider {
+      display: none; } }
+
+.slide-prev {
+  color: black;
+  display: block !important;
+  position: absolute;
+  top: 46px;
+  left: 10px;
+  z-index: 10;
+  text-align: center; }
+
+.slide-prev:before {
+  content: "\f053";
+  font-size: 220%;
+  -webkit-text-stroke: 4px #d9d9d9;
+  background: #d9d9d9;
+  color: #95989a;
+  border-radius: 50%;
+  padding: 10px 14px 10px 10px; }
+
+.slide-next {
+  display: block !important;
+  text-align: center;
+  color: black;
+  position: absolute;
+  top: 46px;
+  right: 10px;
+  z-index: 10; }
+
+.slide-next:before {
+  content: "\f054";
+  font-size: 220%;
+  -webkit-text-stroke: 4px #d9d9d9;
+  background: #d9d9d9;
+  color: #95989a;
+  border-radius: 50%;
+  padding: 10px 10px 10px 14px; }
+
+.hs_cos_flex-active {
+  display: none; }
+
+.hs_cos_flex-direction-nav a {
+  display: none; }
+
+.hs_cos_flex-direction-nav li {
+  list-style-type: none; }
+
+.mobile-slider {
+  display: block; }
+  .mobile-slider ol {
+    display: none; }
+  @media (min-width: 768px) {
+    .mobile-slider {
+      display: none; } }
 
 .logo {
   display: block;
@@ -5463,6 +5528,16 @@ body.expanded {
   width: 100%;
   z-index: -1;
   overflow: hidden; }
+
+.avatar-image {
+  max-width: 100%;
+  position: relative;
+  left: 0px; }
+
+.img-box-circle {
+  overflow: hidden;
+  margin: auto;
+  border-radius: 100%; }
 
 header #SearchForm .navbar-form {
   border: none;
