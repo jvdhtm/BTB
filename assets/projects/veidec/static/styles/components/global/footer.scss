@@ -86,7 +86,7 @@ span.hs-form-required {
     margin-bottom:40px;
 }
 .social{
-    text-align:center;
+    text-align:left;
     .fa{
         font-size:250%;
         padding: 0px 20px;
@@ -104,7 +104,7 @@ span.hs-form-required {
     }
   }
     .social{
-        text-align: left;
+        text-align: center;
         .fa{
             font-size:250%;
             padding: 0px 20px;
@@ -113,6 +113,10 @@ span.hs-form-required {
     }
     .footer-logo{
         text-align:center;
+        img{
+            margin:22px 0px;
+            width:40%;
+        }
     }
     .subscribe-input{
         border-bottom-right-radius: 0px;
@@ -145,7 +149,8 @@ span.hs-form-required {
             margin-left:5px;
         }
         .social{
-            text-align:left;
+            text-align:right;
+            order:2;
             .fa{
                 padding: 0px 0px 0px 50px;
             }
@@ -170,6 +175,9 @@ span.hs-form-required {
             order:1;
         }
         .footer-icons{
+            .col-md-4{
+                text-align:left;
+            }
             p{
                 margin:0px 0px 5px;
                 padding:5px 0px;

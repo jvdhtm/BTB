@@ -1,6 +1,6 @@
 .news-content-image{
-	background:coral;
 	text-align:center;
+	min-height: 300px;
 }
 .fa-share-alt{
 	position:absolute;
@@ -11,7 +11,14 @@
 		display:none;
 	}
 }
-
+.img-responsive
+{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	max-height: 300px;
+	margin: auto;
+}
 .news-block {
 	padding: 15px;
 }
@@ -21,8 +28,8 @@
 		display:block;
 		margin-bottom:10px;
 		.fa-twitter, .fa-envelope, .fa-link{
-			font-size:150%;
-			padding:0px 6px;
+			font-size:126%;
+			padding:0px 4px;
 		}
 		.fa{
 			font-size:150%;
@@ -39,7 +46,6 @@
 	}
 }
 .news-content{
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	font-size:16px;
 	.green{
 		color:green;
@@ -47,7 +53,6 @@
 			padding-top:20px;
 			margin-bottom:-5px;
 			@include media('>=tablet') {
-				margin-top:30px;
 			}
 		}
 		&:nth-child(4){
@@ -62,7 +67,6 @@
 @include media('>=tablet') {
 	.news-content-image{
 		order:2;
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	}
 	.news-content{
 		order:1;

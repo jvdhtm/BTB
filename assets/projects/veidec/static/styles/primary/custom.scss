@@ -129,7 +129,9 @@ elink {
 .base--white {
   background-color: $white;
 }
-
+.navbar-toggle {
+    margin-right: 0px;
+}
 
 /* Text feilds */
 
@@ -253,7 +255,10 @@ input[type="color"],
     padding-left: $input-height-large;
   }
 }
-
+.box-shadow {
+    -webkit-box-shadow: 0 4px 13px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 13px 4px rgba(0,0,0,0.2);
+}
 .has-feedback {
   // Left Icon Input Padding
   .form-control {
