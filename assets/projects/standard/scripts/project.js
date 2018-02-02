@@ -135,7 +135,7 @@ function parseComponent(busy ,ob )
 
 				 var data = parsedata(data,scope,html,datajson);
 				 var comp = $(data);
-				 var comp = $('<'+datatarget+'  ></'+datatarget+'>').addClass('componet').addClass('clearfix').attr('scope',scope).attr('id',id).attr('path',realpath).append(comp);;
+				 var comp = $('<'+datatarget+'  ></'+datatarget+'>').attr('scope',scope).attr('id',id).attr('path',realpath).append(comp);;
 				 var newcom = self.replaceWith(comp);
 				busy = 0;
 			 }
