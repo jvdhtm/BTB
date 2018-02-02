@@ -34,7 +34,6 @@ a:hover {
 }
 
 .home .block-12 {
-    margin-top: -269px;
     @include media('>=tablet') {
       margin-top: 0px;
     }
@@ -45,6 +44,86 @@ elink {
   position: relative;
   display: block;
   padding: 10px 15px;
+}
+
+
+@include media('>=tablet') {
+  /* Primary colors */
+
+  .def-lg-red {
+    background-color: $defRed;
+  }
+
+  .def-lg-orange {
+    background-color: $defOrange;
+  }
+
+  .def-lg-yellow {
+    background-color: $defYellow;
+  }
+
+  .def-lg-turquoise {
+    background-color: $defTurquoise;
+  }
+
+  .def-lg-lightBlue {
+    background-color: $defLightBlue;
+  }
+
+  .def-lg-darkBlue {
+    background-color: $defDarkBlue;
+  }
+
+  .def-lg-darkerBlue {
+    background-color: $defDarkBlueDark;
+  }
+
+  .def-lg-purple {
+    background-color: $defDarkPurple;
+  }
+
+  .grad-lg-darkerBlue-Blue {
+    background: -webkit-gradient(linear, left top, right top, from($defDarkBlueDark), to($defLightBlueDark));
+    background: linear-gradient(to right, $defDarkBlueDark, $defLightBlueDark);
+  }
+
+  .grad-lg-darkerBlue-turquoise {
+    background: -webkit-gradient(linear, left top, right top, from($defDarkBlueDark), to($defTurquoise));
+    background: linear-gradient(to right, $defDarkBlueDark, $defTurquoise);
+  }
+
+
+  /* Base colors */
+
+  .base-lg-black {
+    background-color: $black;
+  }
+
+  .base-lg-blackLight {
+    background-color: $blackLight;
+  }
+
+  .base-lg-grey {
+    background-color: $grey;
+  }
+
+  .base-lg-greyLight {
+    background-color: $greyLight;
+  }
+
+  .base-lg-silver {
+    background-color: $silver;
+  }
+
+  .base-lg-silverLight {
+    background-color: $silverLight;
+  }
+
+  .base-lg-white {
+    background-color: $white;
+  }
+
+
 }
 
 

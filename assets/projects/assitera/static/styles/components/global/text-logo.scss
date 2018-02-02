@@ -1,7 +1,9 @@
 .text-logo {
-    position: absolute;
-    top: 200px;
+    margin-top: -150px;
     @include media('>=tablet') {
+      position: absolute;
+      top: 200px;
+          margin-top: 0px;
       p {
         color:#fff;
       }
