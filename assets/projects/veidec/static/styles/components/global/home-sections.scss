@@ -106,9 +106,6 @@
     ol{
       	display:none;
     }
-	@include media('>=tablet') {
-		
-	}
 }
 @include media('>=tablet') {
 	.hs_cos_flex-viewport {
@@ -117,11 +114,17 @@
 		}		
 	}
 }
-.slider-image-desc p{
-    width:78%;
-    margin-top:20px;
-    text-align:center;
-    font-size:16px;
+.slider-image-desc{
+	p{
+    	width:78%;
+    	margin-top:20px;
+    	text-align:center;
+    	font-size:16px;
+	}
+    h2{
+    	width:78%;
+    	text-align:center;
+    }
     @include media('>=tablet') {
     	margin:0 auto;
     }
