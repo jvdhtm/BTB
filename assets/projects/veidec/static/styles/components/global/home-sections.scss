@@ -12,6 +12,11 @@
 		}
 	}
 }
+.product-use img{
+	width:14%;
+	margin-top:44px;
+	margin-bottom:36px;
+}
 .gray-background{
 	text-align:center;
 	background-color:#fafafa;
@@ -102,7 +107,14 @@
       	display:none;
     }
 	@include media('>=tablet') {
-		display:none;
+		
+	}
+}
+@include media('>=tablet') {
+	.hs_cos_flex-viewport {
+	ul{
+		margin-left:-38px;
+		}		
 	}
 }
 .slider-image-desc p{
@@ -110,11 +122,18 @@
     margin-top:20px;
     text-align:center;
     font-size:16px;
+    @include media('>=tablet') {
+    	margin:0 auto;
+    }
 }
 .hs_cos_flex-viewport img{
     display:block;
     width:26%;
     margin-left:26%;
+    @include media('>=tablet') {
+    	width:5%;
+    	margin:40px auto;
+    }
 }
 
 
