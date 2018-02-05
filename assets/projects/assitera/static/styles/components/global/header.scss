@@ -15,6 +15,7 @@
 }
 .society_logo.sp {
     position: absolute;
+		top: 90px;
 }
 @include media ('>=tablet') {
 	.society_logo {
