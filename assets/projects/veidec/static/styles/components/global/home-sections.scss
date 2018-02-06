@@ -161,13 +161,21 @@ a.hs_cos_flex-next {
     	}
     }
 }
-.hs_cos_flex-viewport img{
-    display:block;
-    width:26%;
-    margin-left:26%;
-    @include media('>=tablet') {
-    	max-width:250px;
-    	min-height:150px;
-    	margin:40px auto;
-    }
+.hs_cos_flex-slide-main img {
+    max-height: 400px;
+    max-width: 95%;
+    margin: 0 auto;
+		height: auto !important;
+		@include media('<tablet') {
+			position: relative;
+			left:-40px;
+		}
+}
+.flex-slider-main
+{
+	text-align: center;
+}
+.hs_cos_flex-slide-main {
+    height: 400px;
+		    text-align: center;
 }

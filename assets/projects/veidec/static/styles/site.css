@@ -4834,7 +4834,7 @@ header {
     max-width: 80px;
     top: 8px;
     left: 10px;
-    z-index: 2; }
+    z-index: 20; }
   @media (min-width: 768px) {
     header .general_logo {
       margin-top: 5px !important;
@@ -4993,15 +4993,22 @@ a.hs_cos_flex-next {
     .slider-image-desc h2 {
       margin: 0 auto; } }
 
-.hs_cos_flex-viewport img {
-  display: block;
-  width: 26%;
-  margin-left: 26%; }
-  @media (min-width: 768px) {
-    .hs_cos_flex-viewport img {
-      max-width: 250px;
-      min-height: 150px;
-      margin: 40px auto; } }
+.hs_cos_flex-slide-main img {
+  max-height: 400px;
+  max-width: 95%;
+  margin: 0 auto;
+  height: auto !important; }
+  @media (max-width: 767px) {
+    .hs_cos_flex-slide-main img {
+      position: relative;
+      left: -40px; } }
+
+.flex-slider-main {
+  text-align: center; }
+
+.hs_cos_flex-slide-main {
+  height: 400px;
+  text-align: center; }
 
 .logo {
   display: block;
