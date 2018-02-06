@@ -114,14 +114,14 @@ text-rendering: auto;
 }
 a.hs_cos_flex-prev {
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     top: 50%;
     margin-top: -30px;
     left: 0px;
 }
 a.hs_cos_flex-next {
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     top: 50%;
     margin-top: -30px;
     right: 0px;
@@ -164,8 +164,7 @@ a.hs_cos_flex-next {
 .hs_cos_flex-slide-main img {
     max-height: 400px;
     max-width: 95%;
-    margin: 0 auto;
-		height: auto !important;
+
 		@include media('<tablet') {
 			position: relative;
 			left:-40px;
