@@ -23,11 +23,31 @@
   background: #ffffff;
   position: absolute;
   left: 0px;
-  top: 40px;
+  top: 38px;
   width: 100%;
   height: 41px;
+  @include media('<tablet') {
+    display: none !important;
+  }
 
+}
 
+.navbar-toggle.collapsed
+{
+  background-color: transparent;
+}
+
+.navbar-toggle
+{
+      z-index: 9;
+      .icon-bar
+      {
+          background-color: $white;
+      }
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+  background-color: transparent;
+  border-color: #337ab7;
 }
 
 body.expanded

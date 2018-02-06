@@ -51,6 +51,10 @@ $('body').on('mousemove', '.navbar-shift--js', function (e) {
   $('#navigation-bottom-color').hide();
   if($(e.target).parents('.hs-item-has-children').length > 0)
   {
+    var height = $('.hs-menu-depth-1 > .hs-menu-children-wrapper').outerHeight() + 20;
+
+    console.log(height);
+    $('#navigation-bottom-color').height(height);
     $('#navigation-bottom-color').show();
   }
 
