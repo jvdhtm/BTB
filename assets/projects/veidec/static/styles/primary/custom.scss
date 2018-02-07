@@ -60,6 +60,43 @@ elink {
 
 /* Primary colors */
 
+.font--red {
+  color: $defRed;
+}
+
+.font--orange {
+  color: $defOrange;
+}
+
+.font--yellow {
+  color: $defYellow;
+}
+
+.font--turquoise {
+  color: $defTurquoise;
+}
+
+.font--lightBlue {
+  color: $defLightBlue;
+}
+
+.font--darkBlue {
+  color: $defDarkBlue;
+}
+
+.font--darkerBlue {
+  color: $defDarkBlueDark;
+}
+
+.font--purple {
+  color: $defDarkPurple;
+}
+.font--green {
+  color: $green;
+}
+
+/* Primary colors */
+
 .def--red {
   background-color: $defRed;
 }
@@ -90,6 +127,9 @@ elink {
 
 .def--purple {
   background-color: $defDarkPurple;
+}
+.def--green {
+  background-color: $green;
 }
 
 .grad--darkerBlue-Blue {

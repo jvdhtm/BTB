@@ -4269,6 +4269,34 @@ elink {
   padding: 10px 15px; }
 
 /* Primary colors */
+.font--red {
+  color: #D0021B; }
+
+.font--orange {
+  color: #ECA876; }
+
+.font--yellow {
+  color: #FBEE88; }
+
+.font--turquoise {
+  color: #6FECBE; }
+
+.font--lightBlue {
+  color: #2986A2; }
+
+.font--darkBlue {
+  color: #405F6E; }
+
+.font--darkerBlue {
+  color: #3A5464; }
+
+.font--purple {
+  color: #BC90D1; }
+
+.font--green {
+  color: #27AE61; }
+
+/* Primary colors */
 .def--red {
   background-color: #D0021B; }
 
@@ -4292,6 +4320,9 @@ elink {
 
 .def--purple {
   background-color: #BC90D1; }
+
+.def--green {
+  background-color: #27AE61; }
 
 .grad--darkerBlue-Blue {
   background: -webkit-gradient(linear, left top, right top, from(#3A5464), to(#B3D5ED));
@@ -4585,10 +4616,9 @@ a.cta_button {
     -webkit-animation: intro-fade 1.5s linear;
     animation: intro-fade 1.5s linear;
     bottom: 0;
-    color: #fff;
     left: 50%;
     margin: 15% auto 0;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     position: absolute;
     text-transform: uppercase;
     -webkit-transform: translateX(-50%);
@@ -4886,7 +4916,8 @@ header {
   margin-bottom: -12px; }
 
 .product-use {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 15px; }
   .product-use img {
     width: 14%;
     margin-top: 44px;
