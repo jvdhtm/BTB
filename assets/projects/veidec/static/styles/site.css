@@ -4478,6 +4478,19 @@ input[type="color"],
   transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
 
+.cross-icon:before {
+  content: "X"; }
+
+.btn-showmore {
+  border: 2px solid #27AE61;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #27AE61;
+  padding: 10px 64px;
+  margin-bottom: 12px;
+  color: #fff; }
+
 .has-feedback .form-control {
   padding-right: 12px;
   padding-left: 34px;
@@ -4630,16 +4643,13 @@ a.cta_button {
     -webkit-animation: intro-fade 1.5s linear;
     animation: intro-fade 1.5s linear;
     bottom: 0;
-    left: 50%;
-    margin: 15% auto 0;
-    padding-bottom: 200px;
     position: absolute;
-    text-transform: uppercase;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
     width: 90%;
-    z-index: 5; }
+    z-index: 5;
+    top: 35%;
+    left: 50%;
+    margin-left: -40%;
+    width: 80%; }
 
 .banner-section-text {
   padding-top: 120px;
@@ -4876,15 +4886,6 @@ span.hs-form-required {
   .footer-icons .order-telefon {
     margin-top: 26px; } }
 
-.sub-page .sticky .navigation a {
-  color: #fff; }
-
-.sub-page .sticky #SearchForm .search {
-  color: #fff; }
-
-.sub-page .sticky .navbar-toggle .icon-bar {
-  background: #fff; }
-
 header {
   position: absolute;
   top: 0px;
@@ -4893,14 +4894,15 @@ header {
   z-index: 10; }
   header.sticky {
     position: fixed;
-    background: #555555;
-    color: #fff !important; }
+    background: #fff;
+    -webkit-box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2); }
   header .widget-type-logo img {
     width: 100% !important; }
   header .general_logo {
     position: absolute;
-    max-width: 80px;
-    top: 8px;
+    max-width: 90px;
+    top: 15px;
     left: 10px;
     z-index: 20; }
   @media (min-width: 768px) {
@@ -5157,13 +5159,11 @@ body.expanded {
 .sub-page .navigation .path a {
   color: #fff; }
 
-.sub-page .sticky .navbar-shift a {
-  color: #fff; }
-  @media (min-width: 768px) {
-    .sub-page .sticky .navbar-shift a {
-      color: #fff; } }
+@media (min-width: 768px) {
+  .sticky .navbar-shift a {
+    color: #484848; } }
 
-.sub-page .sticky .path a {
+.sticky .path a {
   color: #fff; }
 
 .navigation-menu {
@@ -5771,6 +5771,12 @@ header #SearchForm .form-group {
   color: #484848; }
 
 .sub-page header .navbar-toggle .icon-bar {
+  background: black; }
+
+header.sticky #SearchForm .search {
+  color: #484848; }
+
+header.sticky .navbar-toggle .icon-bar {
   background: black; }
 
 .big-vid-screen {

@@ -82,22 +82,23 @@ body.expanded
       }
     }
   }
-  .sticky{
-    .navbar-shift
-    {
-      a{
-        color:$white;
-        @include media('>=tablet') {
-          color:$white;
-        }
+
+}
+
+.sticky{
+  .navbar-shift
+  {
+    a{
+      @include media('>=tablet') {
+        color:$black;
       }
     }
-    .path
+  }
+  .path
+  {
+    a
     {
-      a
-      {
-        color:$white;
-      }
+      color:$white;
     }
   }
 }

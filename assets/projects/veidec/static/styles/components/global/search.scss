@@ -179,3 +179,12 @@ header {
       }
   }
 }
+header.sticky {
+    #SearchForm .search {
+      color: $black;
+    }
+    .navbar-toggle .icon-bar
+    {
+          background: black;
+    }
+}
