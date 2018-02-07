@@ -4634,7 +4634,7 @@ a.cta_button {
 .banner-section {
   position: relative;
   height: 400px;
-  background-image: url("http://www.4usky.com/data/out/46/164400022-imgur-wallpapers.jpg");
+  background-image: url("https://i.imgur.com/0r7qN8U.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 100%; }
@@ -5472,6 +5472,24 @@ body.expanded {
   width: 100%;
   min-height: 350px;
   height: 100%; }
+
+.recommended-products {
+  text-align: center; }
+  .recommended-products h1 {
+    margin: 60px 0px; }
+  .recommended-products p {
+    padding: 5px 8px; }
+  .recommended-products .product-underline {
+    display: block; }
+    @media (min-width: 768px) {
+      .recommended-products .product-underline {
+        display: none; } }
+  .recommended-products img {
+    height: 200px;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .recommended-products img {
+        height: 250px; } }
 
 /*
 .register-header{
