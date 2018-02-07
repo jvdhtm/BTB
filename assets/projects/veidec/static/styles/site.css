@@ -4641,10 +4641,6 @@ a.cta_button {
     width: 90%;
     z-index: 5; }
 
-.banner-section-text {
-  padding-top: 120px;
-  color: #fff; }
-
 .banner-section {
   position: relative;
   height: 400px;
@@ -4652,6 +4648,9 @@ a.cta_button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 100%; }
+  .banner-section .banner-section-text {
+    padding-top: 120px;
+    color: #fff; }
 
 .apply-button {
   border: 2px solid #27ae61;
