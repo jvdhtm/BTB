@@ -4462,7 +4462,21 @@ input[type="color"],
 
 .box-shadow {
   -webkit-box-shadow: 0 4px 13px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 13px 4px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 4px 13px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
+
+.box-shadow:hover {
+  -webkit-box-shadow: 0 4px 13px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 13px 7px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out; }
 
 .has-feedback .form-control {
   padding-right: 12px;
@@ -5170,9 +5184,10 @@ body.expanded {
     background: #707070;
     height: 100vh; }
     .navigation .navbar-shift a {
-      padding: 10px 15px; }
+      padding: 10px 15px;
+      margin-left: 10px; }
     .navigation .navbar-shift nav {
-      margin-top: 60px;
+      margin-top: 40px;
       margin-left: 30px; }
       .navigation .navbar-shift nav ul {
         list-style: none;
@@ -5195,14 +5210,15 @@ body.expanded {
         position: absolute;
         color: #fff;
         top: 1px;
-        left: -25px;
+        left: -30px;
         display: inline-block;
         font: normal normal normal 14px/1 FontAwesome;
         font-size: inherit;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         font-size: 15px;
-        padding: 10px; }
+        padding: 10px 20px;
+        z-index: 10; }
       .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.active .hs-menu-children-wrapper a {
         position: relative;
         -webkit-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
@@ -5212,9 +5228,11 @@ body.expanded {
         opacity: 1;
         padding: 10px 15px; }
       .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.active .hs-menu-children-wrapper .hs-menu-depth-2 a {
-        margin-left: 5px; }
-      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.active .hs-menu-children-wrapper .hs-menu-depth-3 a {
         margin-left: 15px; }
+      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.active .hs-menu-children-wrapper .hs-menu-depth-3 a {
+        margin-left: 20px; }
+      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.active:after {
+        content: "\f068"; }
     .navigation .navbar-shift.expanded {
       position: fixed;
       width: 100%;
