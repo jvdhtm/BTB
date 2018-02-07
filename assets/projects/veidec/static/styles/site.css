@@ -5491,7 +5491,9 @@ body.expanded {
   height: 100%; }
 
 .recommended-products {
-  text-align: center; }
+  text-align: center;
+  background-color: #fafafa;
+  margin: 38px 0; }
   .recommended-products h1 {
     margin: 60px 0px; }
   .recommended-products p {
