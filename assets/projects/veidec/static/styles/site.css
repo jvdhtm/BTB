@@ -4951,9 +4951,12 @@ header {
   padding: 10px 64px;
   margin-bottom: 12px; }
 
+.user-reviews {
+  padding: 20px; }
+
 .product-use {
   text-align: center;
-  padding-bottom: 15px; }
+  padding-bottom: 50px; }
   .product-use img {
     width: 14%;
     margin-top: 44px;
