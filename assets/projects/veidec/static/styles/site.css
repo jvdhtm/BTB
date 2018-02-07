@@ -4651,10 +4651,6 @@ a.cta_button {
     margin-left: -40%;
     width: 80%; }
 
-.banner-section-text {
-  padding-top: 120px;
-  color: #fff; }
-
 .banner-section {
   position: relative;
   height: 400px;
@@ -4662,6 +4658,9 @@ a.cta_button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 100%; }
+  .banner-section .banner-section-text {
+    padding-top: 120px;
+    color: #fff; }
 
 .apply-button {
   border: 2px solid #27ae61;
@@ -5508,7 +5507,7 @@ body.expanded {
         display: none; } }
   .recommended-products img {
     height: 200px;
-    width: 100%; }
+    width: auto; }
     @media (min-width: 768px) {
       .recommended-products img {
         height: 250px; } }

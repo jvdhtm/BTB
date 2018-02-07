@@ -16,7 +16,7 @@
 	}
 	img{
 		height:200px;
-		width:100%;
+		width:auto;
 		@include media('>=tablet') {
 			height:250px;
 		}
