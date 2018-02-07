@@ -31,17 +31,17 @@ header {
 
   .cross
   {
-    height: 60px;
+    height: 30px;
     overflow: hidden;
     position: absolute;
     z-index: 21;
     width: auto;
-    top: 7px;
+    top: 50px;
     font-size: 26px;
-    right: 15px;
-    color:$black;
+    right: 30px;
+    color: $black;
     background: transparent;
-    border: none;;
+    border: 0;
 
   }
  @include media('>=tablet') {

@@ -36,13 +36,23 @@ a:hover {
 .nopadding {
   padding: 0px;
 }
-li.hs-breadcrumb-menu-item.last-crumb {
+li.hs-breadcrumb-menu-item {
     color: $gray;
     padding: 15px;
+    margin-top: 15px;
+
+}
+a.hs-breadcrumb-label {
+    color: black;
+    display: inline-block;
+}
+
+li.hs-breadcrumb-menu-item.last-crumb.first-crumb {
+    display: none;
 }
 
 .col-centered{
-    margin-top: 42px;
+    margin-top: 41px;
     h1{
     	text-align:center;
     	margin:0px;

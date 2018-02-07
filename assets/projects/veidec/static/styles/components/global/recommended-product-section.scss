@@ -1,11 +1,10 @@
 .recommended-products{
 	text-align:center;
 	background-color:$grayLighter;
-	margin:38px 0;
 	h1{
 		margin:60px 0px;
 	}
-	p{
+	.text{
 		padding:5px 8px;
 	}
 	.product-underline{
@@ -20,5 +19,10 @@
 		@include media('>=tablet') {
 			height:250px;
 		}
+	}
+
+	.recommended-product {
+    padding-top: 20px;
+    padding-bottom: 20px;
 	}
 }
