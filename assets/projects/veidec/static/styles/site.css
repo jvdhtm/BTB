@@ -5102,7 +5102,8 @@ a.hs_cos_flex-next {
   margin-right: auto !important;
   margin-left: auto !important;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  display: block; }
 
 .span12 .hs_cos_wrapper_type_rich_text {
   margin-top: 15px; }
