@@ -4499,6 +4499,18 @@ input[type="color"],
   margin-bottom: 12px;
   color: #fff; }
 
+.site-search-btn {
+  border: 2px solid #27AE61;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #27AE61;
+  padding: 5px 50px;
+  margin-bottom: 12px;
+  color: #fff;
+  height: 36px;
+  left: -10px; }
+
 .has-feedback .form-control {
   padding-right: 12px;
   padding-left: 34px;
@@ -5820,6 +5832,9 @@ header.sticky #SearchForm .search {
 
 header.sticky .navbar-toggle .icon-bar {
   background: black; }
+
+.site-search-box {
+  height: 36px; }
 
 .big-vid-screen {
   margin: 0;
