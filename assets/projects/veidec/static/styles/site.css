@@ -5274,7 +5274,7 @@ body.expanded {
         font-size: 15px;
         padding: 10px 20px;
         z-index: 10; }
-      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.active .hs-menu-children-wrapper a {
+      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.activated .hs-menu-children-wrapper a {
         position: relative;
         -webkit-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
         -o-transition: font-size .25s, margin .25s, padding .25s, opacity .5s .25s;
@@ -5282,11 +5282,11 @@ body.expanded {
         font-size: 15px;
         opacity: 1;
         padding: 10px 15px; }
-      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.active .hs-menu-children-wrapper .hs-menu-depth-2 a {
+      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.activated .hs-menu-children-wrapper .hs-menu-depth-2 a {
         margin-left: 15px; }
-      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.active .hs-menu-children-wrapper .hs-menu-depth-3 a {
+      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.activated .hs-menu-children-wrapper .hs-menu-depth-3 a {
         margin-left: 20px; }
-      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.active:after {
+      .navigation .navbar-shift .hs-menu-depth-1.hs-item-has-children.activated:after {
         content: "\f068"; }
     .navigation .navbar-shift.expanded {
       position: fixed;
@@ -5835,6 +5835,17 @@ header.sticky .navbar-toggle .icon-bar {
 
 .site-search-box {
   height: 36px; }
+
+.search-list a {
+  color: green; }
+
+p.search-item-title {
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 10px; }
+
+.site-search-btn:hover {
+  z-index: 0; }
 
 .big-vid-screen {
   margin: 0;

@@ -192,3 +192,18 @@ header.sticky {
 .site-search-box {
     height: 36px;
 }
+
+
+.search-list a {
+    color: green;
+}
+
+p.search-item-title {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.site-search-btn:hover {
+  z-index: 0;
+}
