@@ -15,7 +15,7 @@ header {
   }
   .search
   {
-    height: 60px;
+    height: 50px;
     overflow: hidden;
     position: absolute;
     z-index: 20;
@@ -45,23 +45,42 @@ header {
 
   }
  @include media('>=tablet') {
-      .search
-      {
+        .search
+        {
           height: 60px;
-           overflow: hidden;
-           position: absolute;
-           z-index: 20;
-           width: auto;
-           top: -8px;
-           font-size: 26px;
-           right: 135px;
-           color: $white;
-           background: transparent;
-           border: none;
+          overflow: hidden;
+          position: absolute;
+          z-index: 20;
+          width: auto;
+          top: -8px;
+          font-size: 26px;
+          right: 80px;
+          color: $white;
+          background: transparent;
+          border: none;
 
-      }
+        }
 
     }
+
+    @include media('>=tablet-portrait') {
+           .search
+           {
+
+             right: 100px;
+
+           }
+
+       }
+       @include media('>=lgscreen') {
+              .search
+              {
+
+                right: 135px;
+
+              }
+
+          }
       .search-btn-menu
       {
            font-size: 26px;

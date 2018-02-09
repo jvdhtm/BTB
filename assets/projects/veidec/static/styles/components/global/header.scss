@@ -22,17 +22,37 @@ z-index: 10;
 .general_logo {
   position: absolute;
   max-width: 90px;
-  top: 15px;
+  top: 10px;
   left: 10px;
   z-index: 20;
 }
-@include media ('>=tablet') {
-  	.general_logo {
+
+
+  @include media ('>=tablet') {
+     .general_logo {
       margin-top: 5px !important;
       position: absolute;
-      top: 5px;
-      left: 15px;
-      max-width: 120px;
-  	}
+      top: 4px;
+      left: 0px;
+      max-width: 100px;
   }
+  }
+  @include media ('>=tablet-portrait') {
+    	.general_logo {
+        margin-top: 5px !important;
+        position: absolute;
+        top: 5px;
+        left: 0px;
+            max-width: 100px;
+    	}
+    }
+    @include media ('>=lgscreen') {
+        .general_logo {
+          margin-top: 5px !important;
+          position: absolute;
+          top: 5px;
+          left: 0px;
+              max-width: 120px;
+        }
+      }
 }

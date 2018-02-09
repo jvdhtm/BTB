@@ -12,12 +12,13 @@
         -o-transition: right 0.5s ease-in-out;
         transition: right 0.5s ease-in-out;
         z-index: 9;
-        top: 0px;
         background: $grayDark;
         height: 100vh;
+        bottom: 0px;
+            top: 0px;
         a{
           padding: 10px 15px;
-          margin-left: 10px;
+          margin-left: 30px;
         }
         nav
         {
@@ -63,7 +64,7 @@
             padding: 10px 20px;
             z-index: 10;
           }
-          &.activated {
+          &.active {
             .hs-menu-children-wrapper {
                   a {
                     position: relative;
@@ -78,13 +79,13 @@
                   .hs-menu-depth-2
                   {
                     a {
-                      margin-left: 15px;
+                      margin-left: 30px;
                     }
                   }
                   .hs-menu-depth-3
                   {
                     a {
-                      margin-left: 20px;
+                      margin-left: 35px;
                     }
                   }
               }
@@ -103,7 +104,6 @@
           -o-transition: right 0.5s ease-in-out;
           transition: right 0.5s ease-in-out;
           z-index: 9;
-          top:0px;
         }
 
         .login {
@@ -128,12 +128,14 @@
             nav{
               width: 90%;
               float: left;
-              padding-right: 80px;
-              padding-left: 150px;
+              padding-right: 0px;
+              padding-left: 75px;
               margin-top: 0px;
               margin-left: 0px;
                 ul {
                     display:flex;
+                    align-items: center;
+                    justify-content: center;
                     .hs-menu-depth-1 {
                       &.hs-item-has-children
                       {
@@ -143,13 +145,13 @@
                           display:  none !important;
                         }
                         display: block;
-                          width: 100%;
+                          max-width: 100%;
                           a{
                             padding:10px 15px !important;
                             text-align: center;
                             opacity: 1;
-                                font-size: 15px;
-                                margin:0px !important;
+                            font-size: 15px;
+                            margin:0px !important;
                           }
 
                           & > ul.hs-menu-children-wrapper {
@@ -204,13 +206,54 @@
                 float: left;
                 width: 10%;
                 margin-left: 0px;
+                position: relative;
                 a{
                   padding:10px 15px;
                   background: $defDarkBlue;
                   text-align: center;
                   color: $white;
+                  margin-left: 0px;
                 }
             }
       }
+  }
+}
+@include media('>=tablet-portrait') {
+  .navigation {
+    .navbar-shift , .navbar-shift.expanded
+    {
+      nav{
+        padding-right: 0px;
+        padding-left: 75px;
+        ul {
+          .hs-menu-depth-1 {
+            width: 100%;
+            a{
+              font-size: 15px !important;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+@include media('>=lgscreen') {
+  .navigation {
+    .navbar-shift , .navbar-shift.expanded
+    {
+      nav{
+        padding-right: 80px;
+        padding-left: 150px;
+        ul {
+          .hs-menu-depth-1 {
+            a{
+              font-size: 15px !important;
+            }
+          }
+        }
+      }
+
+    }
   }
 }
