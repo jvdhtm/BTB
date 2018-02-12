@@ -4,8 +4,20 @@
 /*Break points*/
 /*Break points*/
 @font-face {
-  font-family: 'UniversBold';
-  src: url("https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.woff") format("opentype"); }
+  font-family: 'GravityRegular';
+  src: url("https://cdn2.hubspot.net/hubfs/4011209/Graphics/Fonts/Gravity-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'GravityLightItalic';
+  src: url("https://cdn2.hubspot.net/hubfs/4011209/Graphics/Fonts/Gravity-LightItalic.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'GravityLight';
+  src: url("https://cdn2.hubspot.net/hubfs/4011209/Graphics/Fonts/Gravity-Light.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'GravityBold';
+  src: url("https://cdn2.hubspot.net/hubfs/4011209/Graphics/Fonts/Gravity-Bold.otf") format("opentype"); }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -4235,13 +4247,19 @@ routes {
   position: relative; }
 
 body {
-  font-family: 'UniversBold'; }
+  font-family: 'GravityRegular'; }
 
 a {
   color: #fff;
   display: block;
   text-decoration: none;
-  font-family: 'UniversBold'; }
+  font-family: 'GravityRegular'; }
+
+p {
+  font-family: 'GravityLight'; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'GravityBold'; }
 
 a:hover {
   color: #fff;
@@ -5366,7 +5384,15 @@ body.expanded {
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
-              display: flex; }
+              display: flex;
+              -webkit-box-align: start;
+              -webkit-align-items: start;
+              -ms-flex-align: start;
+              align-items: start;
+              -webkit-box-pack: start;
+              -webkit-justify-content: start;
+              -ms-flex-pack: start;
+              justify-content: start; }
               .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 {
                 width: 100%; }
                 .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 > a {
@@ -5894,6 +5920,12 @@ p.search-item-title {
 
 .site-search-btn:hover {
   z-index: 0; }
+
+.search-list.search-list--js {
+  min-height: 40vh; }
+
+.site-search {
+  margin-top: 60px; }
 
 .big-vid-screen {
   margin: 0;

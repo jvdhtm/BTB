@@ -17,16 +17,24 @@ module {}
 
 
 body {
-  font-family: 'UniversBold';
+  font-family: 'GravityRegular';
 }
 
 a {
   color: $defFontColor;
   display: block;
   text-decoration: none;
-  font-family: 'UniversBold' ;
+  font-family: 'GravityRegular' ;
 }
 
+p{
+  font-family: 'GravityLight' ;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'GravityBold' ;
+}
 a:hover {
   color: $defFontColor;
   text-decoration: none;

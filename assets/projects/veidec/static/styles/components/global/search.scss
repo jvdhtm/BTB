@@ -226,3 +226,10 @@ p.search-item-title {
 .site-search-btn:hover {
   z-index: 0;
 }
+
+.search-list.search-list--js {
+    min-height: 40vh;
+}
+.site-search {
+    margin-top: 60px;
+}
