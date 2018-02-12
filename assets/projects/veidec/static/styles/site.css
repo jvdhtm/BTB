@@ -4680,6 +4680,17 @@ a.cta_button {
 
 .banner {
   overflow: hidden; }
+  .banner .banner-section-text {
+    -webkit-animation: intro-fade 1.5s linear;
+    animation: intro-fade 1.5s linear;
+    bottom: 0;
+    position: absolute;
+    width: 90%;
+    z-index: 5;
+    bottom: 25%;
+    left: 50%;
+    margin-left: -40%;
+    width: 80%; }
   .banner .banner-title {
     -webkit-animation: intro-fade 1.5s linear;
     animation: intro-fade 1.5s linear;
