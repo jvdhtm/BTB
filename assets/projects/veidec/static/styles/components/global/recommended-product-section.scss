@@ -1,7 +1,7 @@
 .recommended-products-container{
 	margin: 36px 0;
 	@include media('>=tablet') {
-		margin: 60px 42px;
+		margin: 0 42px;
 	}
 
 	.recommended-products{
@@ -34,7 +34,6 @@
 		}
 	}
 }
-
 
 	.wrap-recommended-product{
 		margin: 36px -15px;

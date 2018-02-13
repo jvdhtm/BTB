@@ -5047,9 +5047,11 @@ header {
     margin-bottom: 36px; }
 
 .product-use-silver {
-  text-align: center;
   padding-bottom: 50px; }
-  .product-use-silver .img-bg {
+
+.product-use-silver, .base--silverLight {
+  text-align: center; }
+  .product-use-silver .img-bg, .base--silverLight .img-bg {
     background: #fff;
     border-radius: 50%;
     overflow: hidden;
@@ -5057,7 +5059,7 @@ header {
     width: 120px;
     margin: 0 auto;
     margin-bottom: 40px; }
-    .product-use-silver .img-bg img {
+    .product-use-silver .img-bg img, .base--silverLight .img-bg img {
       width: 40%;
       margin: 26px 0 0 0;
       height: auto; }
@@ -5656,7 +5658,7 @@ body.expanded {
   margin: 36px 0; }
   @media (min-width: 768px) {
     .recommended-products-container {
-      margin: 60px 42px; } }
+      margin: 0 42px; } }
   .recommended-products-container .recommended-products {
     text-align: center;
     background-color: #F6F6F6;

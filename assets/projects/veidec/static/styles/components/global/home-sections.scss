@@ -69,8 +69,10 @@
 	}
 }
 .product-use-silver{
+	padding-bottom:50px;
+}
+.product-use-silver, .base--silverLight{
 	text-align:center;
-	padding-bottom: 50px;
 
 	.img-bg{
 	    background: $white;
