@@ -1,35 +1,37 @@
 .brands{
 	text-align:center;
-	margin:42px auto;
+	margin:0 auto;
 	p{
-		margin:12px 0px;
+		margin:12px 0 0 0;
 	}
 	img{
 		width:30%;
 		padding:8px 12px;
 		@include media('>=tablet') {
-			width:10%;
+			width:12%;
 		}
 
 	}
 }
-.product-use img{
-	width:14%;
-	margin-top:44px;
-	margin-bottom:36px;
-}
+
 .gray-background{
 	text-align:center;
-	background-color:#fafafa;
+	background-color:$silverLight;
+}
+.product-use-header{
+    margin-top:10px;
+    margin-bottom:30px;
 }
 .ratings{
-
+	margin-bottom:34px;
+	text-align:center;
+	background:$silverLight;
 	h3{
 		margin-top:34px;
 	}
 	.fa-star{
 		color:$starYellow;
-		font-size:240%;
+		font-size:280%;
 		padding:8px 8px 12px 8px;
 	}
 }
@@ -40,25 +42,54 @@
 	text-transform:uppercase;
 	border-radius:5px;
 	background:transparent;
-	padding:10px 64px;
-	margin-bottom: 12px;
+	padding: 12px 0;
+    width:250px;
+	margin: 30px 0 -30px 0px;
 }
 .user-reviews {
-    padding: 20px;
+    padding: 20px 14px;
+    @include media('>=tablet') {
+    	padding:20px;
+    }
+    p{
+    	padding:0 18px;
+    }
+    h5{
+    	margin-top:24px;
+    	margin-bottom:0px;
+    }
 }
 .product-use{
-	text-align:center;
+		text-align:center;
 	    padding-bottom: 50px;
 	img{
 		width:14%;
 		margin-top:44px;
 		margin-bottom:36px;
 	}
-	p{
-		padding:0px 30px;
-		text-align:center;
+}
+.product-use-silver{
+	padding-bottom:50px;
+}
+.product-use-silver, .base--silverLight{
+	text-align:center;
+
+	.img-bg{
+	    background: $white;
+	    border-radius: 50%;
+	    overflow: hidden;
+	    height: 120px;
+	    width: 120px;
+	    margin: 0 auto;
+	    margin-bottom:40px;
+	    img{
+	        width:40%;
+	        margin:26px 0 0 0;
+	        height:auto;
+		}
 	}
 }
+
 .slide-prev{
     color:black;
     display:block!important;
@@ -186,7 +217,7 @@ a.hs_cos_flex-next {
 	    margin-left: auto !important;
 	    padding-left: 15px;
 	    padding-right: 15px;
-			display: block;
+		display: block;
 	}
 
 

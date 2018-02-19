@@ -6,7 +6,7 @@
     background-size: cover;
     background-position-y: 100%;
     .banner-section-text{
-        padding-top:120px;
+        padding-top:82px;
         color:$white;
     }
 }
@@ -17,7 +17,10 @@
     text-transform: uppercase;
     border-radius: 5px;
     background: $greenDark;
-    padding: 10px 64px;
-    margin-top: 12px;
-    margin-bottom: -12px;
+    padding: 12px 0;
+    width:250px;
+    margin:26px 0 0 0;
+}
+.light-font{
+        font-family: 'GravityLight';
 }
