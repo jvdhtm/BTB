@@ -98,6 +98,7 @@
 .ratings{
 	text-align:center;
 	background:$silverLight;
+	padding-bottom:72px;
 	h3{
 		margin-top:34px;
 	}
@@ -126,10 +127,7 @@
 	}
 }
 .user-reviews {
-    padding: 20px 14px;
-    @include media('>=tablet') {
-    	padding:20px;
-    }
+ 
     p{
     	padding:0 18px;
     }
@@ -140,7 +138,7 @@
 }
 .product-use{
 		text-align:center;
-	    padding-bottom: 50px;
+	    padding-bottom: 72px;
 	img{
 		width:14%;
 		margin-top:44px;
@@ -148,7 +146,7 @@
 	}
 }
 .product-use-silver{
-	padding-bottom:50px;
+	padding-bottom:72px;
 }
 .product-use-silver, .base--silverLight{
 	text-align:center;

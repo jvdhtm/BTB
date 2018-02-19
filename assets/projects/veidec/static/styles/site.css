@@ -5153,7 +5153,8 @@ header {
 
 .ratings {
   text-align: center;
-  background: #F6F6F6; }
+  background: #F6F6F6;
+  padding-bottom: 72px; }
   .ratings h3 {
     margin-top: 34px; }
   .ratings .fa-star {
@@ -5183,27 +5184,23 @@ header {
     -webkit-box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
     box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07); }
 
-.user-reviews {
-  padding: 20px 14px; }
-  @media (min-width: 768px) {
-    .user-reviews {
-      padding: 20px; } }
-  .user-reviews p {
-    padding: 0 18px; }
-  .user-reviews h5 {
-    margin-top: 24px;
-    margin-bottom: 0px; }
+.user-reviews p {
+  padding: 0 18px; }
+
+.user-reviews h5 {
+  margin-top: 24px;
+  margin-bottom: 0px; }
 
 .product-use {
   text-align: center;
-  padding-bottom: 50px; }
+  padding-bottom: 72px; }
   .product-use img {
     width: 14%;
     margin-top: 44px;
     margin-bottom: 36px; }
 
 .product-use-silver {
-  padding-bottom: 50px; }
+  padding-bottom: 72px; }
 
 .product-use-silver, .base--silverLight {
   text-align: center; }
