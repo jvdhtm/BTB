@@ -5836,8 +5836,10 @@ body.expanded {
         .recommended-products-container .recommended-products img {
           height: 250px; } }
     .recommended-products-container .recommended-products .recommended-product {
-      padding-top: 20px;
-      padding-bottom: 20px; }
+      padding: 20px 0; }
+      @media (min-width: 768px) {
+        .recommended-products-container .recommended-products .recommended-product {
+          padding: 20px 15px; } }
 
 .wrap-recommended-product {
   margin: 36px -15px;
