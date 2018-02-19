@@ -3,14 +3,20 @@
         margin-top: 20px;
     h3{
         margin-left:5px;
+        font-family: 'GravityRegular';
     }
     .widget-type-logo {
-      width: 200px !important;
-      left: 15px;
-      position: relative;
-      top: 20px;
-      position: relative;
-    }
+    width: 200px !important;
+    position: relative;
+    left: 50%;
+    margin-top:0;
+    transform: translateX(-50%);
+    @media (min-width: 768px) {
+        left:0%;
+        transform:translateX(0%);
+        margin-top:20px;
+        }
+    }    
 }
 .footer-icons{
     .col-md-4{
@@ -46,8 +52,23 @@
 span.hs-form-required {
     position: absolute;
     color: $red;
-    top: 30px;
-    left: -10px;
+    top:22px;
+    right:8px;
+    z-index:2;
+    @include media ('>=phone'){
+        right: 10px;
+    }
+    @include media ('>=tablet'){
+        top: 32px;
+        right: 146px;
+        z-index: 2;
+    }
+    @include media ('>=tablet-portrait'){
+        right:94px;
+    }
+    @include media ('>=lgscreen'){
+        right: 116px;
+    }
 }
 
 .input{
@@ -60,6 +81,9 @@ span.hs-form-required {
         border-radius:5px;
         resize:none;
         margin-bottom: 10px;
+    }
+    textarea{
+        height:160px;
     }
 }
 .fa-envelope-o{
@@ -81,10 +105,13 @@ span.hs-form-required {
     border-radius: 5px;
     background:$greenDark;
     border-color: $greenDark;
+    border:0;
     padding: 8px;
     color:$white;
     font-size:16px;
     margin-bottom:40px;
+    transition:0.3s;
+    cursor: pointer;
 }
 .social{
     text-align:left;
@@ -146,8 +173,10 @@ span.hs-form-required {
             margin-top:10px;
         }
         .hs_submit input{
-            width: 40%;
+            width: 34%;
             margin-left:5px;
+            border: 0px;
+            transition:0.3s;
         }
         .social{
             text-align:right;
@@ -160,7 +189,7 @@ span.hs-form-required {
             border-bottom-left-radius: 0px;
             border-top-left-radius: 0px;
             position: absolute;
-            padding: 10px;
+            padding: 11px;
             width: 25%;
             top: 66px;
             right: 15px;
@@ -187,4 +216,12 @@ span.hs-form-required {
                 margin-top:26px;
             }
         }
+    }
+
+    footer img.hs-image-widget {
+        width: 100%!important;
+        @include media('>=tablet') {
+            width:88%!important
+        }
+
     }

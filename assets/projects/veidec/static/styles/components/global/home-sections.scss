@@ -1,19 +1,93 @@
+.brands-row{
+	position:relative;
+	    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 .brands{
 	text-align:center;
+	min-height:124px;
+	padding-top:10px;
+	padding-bottom:10px;
+	transition:0.5s;
 	margin:0 auto;
 	p{
 		margin:12px 0 0 0;
+		font-family: 'GravityRegular';
+		color:$greyLight;
 	}
 	img{
 		width:30%;
 		padding:8px 12px;
 		@include media('>=tablet') {
-			width:12%;
+			width:10%;
 		}
 
 	}
 }
+.brands-overlay{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	min-height:120px;
+    transition: all 0.5s ease;
+}
+.brands-overlay button{
 
+  margin-top:30px;
+  padding:12px 70px;
+  background:$greenDark;
+  color:$white;
+  transform: translateY(20px);
+  transition:0.5s;
+  cursor:pointer;
+  border-radius:5px;
+  border:0px;
+  font-size:16px;
+}
+.brands-overlay:hover button{
+  transform: translateY(18px);
+  transition:0.5s;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+
+
+}
+.show{
+	display:block;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.blurred{  
+  opacity:0.3; 
+  transform: scale(0.9, 0.9);
+  img{
+  	 filter:blur(5px);
+  }
+}
+
+
+
+.btn-showmore{
+	transition:0.3s;
+
+	&:hover{
+        background:$white;
+        border: 2px solid $white;
+        color:$greenDark;
+        transform:translateY(-2px);
+        box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+        transform: scale(1.03, 1.03);
+    }
+}
 .gray-background{
 	text-align:center;
 	background-color:$silverLight;
@@ -44,6 +118,13 @@
 	padding: 12px 0;
     width:250px;
 	margin: 30px 0 -30px 0px;
+	transition:0.3s;
+	&:hover{
+		background:$greenDark;
+		color:#F6F6F6;
+		transform:translateY(-2px);
+		box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+	}
 }
 .user-reviews {
     padding: 20px 14px;

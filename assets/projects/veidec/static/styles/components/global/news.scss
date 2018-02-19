@@ -20,7 +20,10 @@
 	margin: auto;
 }
 .news-block {
-	padding: 15px;
+	padding: 15px 0;
+	@include media('>=tablet') {
+		padding:15px
+	}
 }
 .desktop-news-social-icons{
 	display:none;
