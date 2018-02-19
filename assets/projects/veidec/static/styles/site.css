@@ -4783,7 +4783,8 @@ span.hs-form-required {
 }
 */
 .footer {
-  background: #F6F6F6; }
+  background: #F6F6F6;
+  margin-top: 20px; }
   .footer h3 {
     margin-left: 5px; }
   .footer .widget-type-logo {
@@ -5006,7 +5007,6 @@ header {
   margin-bottom: 30px; }
 
 .ratings {
-  margin-bottom: 34px;
   text-align: center;
   background: #F6F6F6; }
   .ratings h3 {
@@ -5015,11 +5015,6 @@ header {
     color: #f1c40f;
     font-size: 280%;
     padding: 8px 8px 12px 8px; }
-
-.ratings .fa-star {
-  color: #f1c40f;
-  font-size: 240%;
-  padding: 8px 8px 12px 8px; }
 
 .show-more-button {
   border: 2px solid #27ae61;
