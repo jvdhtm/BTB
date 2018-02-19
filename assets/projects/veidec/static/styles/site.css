@@ -4256,7 +4256,8 @@ a {
   font-family: 'GravityRegular'; }
 
 p {
-  font-family: 'GravityLight'; }
+  font-family: 'GravityLight';
+  font-size: 17px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'GravityBold'; }
@@ -5819,8 +5820,8 @@ body.expanded {
     text-align: center;
     background-color: #F6F6F6;
     margin: 0px 16px; }
-    .recommended-products-container .recommended-products h1 {
-      margin: 60px 0px; }
+    .recommended-products-container .recommended-products h3 {
+      padding: 0 0 72px 0; }
     .recommended-products-container .recommended-products .text {
       padding: 5px 8px; }
     .recommended-products-container .recommended-products .product-underline {
