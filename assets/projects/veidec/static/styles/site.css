@@ -5834,7 +5834,7 @@ body.expanded {
     text-align: center;
     background-color: #F6F6F6;
     margin: 0px 16px; }
-    .recommended-products-container .recommended-products h3 {
+    .recommended-products-container .recommended-products h3:nth-child(1) {
       padding: 20px 0 100px 0; }
     .recommended-products-container .recommended-products .text {
       padding: 5px 8px; }
