@@ -98,16 +98,19 @@
     margin-bottom:30px;
 }
 .ratings{
-	text-align:center;
-	background:$silverLight;
-	padding-bottom:72px;
-	h3{
-		margin-top:34px;
-	}
 	.fa-star{
 		color:$starYellow;
 		font-size:280%;
 		padding:8px 8px 12px 8px;
+	}
+	.user-reviews
+	{
+		padding-bottom: 20px;
+		padding-top: 20px;
+		@include media('>=tablet') {
+	    padding-bottom: 40px;
+			padding-top: 40px;
+		}
 	}
 }
 .show-more-button{

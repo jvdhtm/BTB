@@ -127,6 +127,7 @@
     }
 }
 
+
 @include media('>=tablet') {
     .circle {
         height: 400px;
@@ -171,8 +172,8 @@
 
     }
     .circle-rect {
-      left: 0px;
-      top: -95px;
+      left: -27px;
+      top: -92px;
       height: 350px;
       width: 350px;
       position: absolute;
@@ -187,8 +188,8 @@
         position: absolute;
         bottom: 0px;
         left: 50%;
-        width: 100%;
-        margin-left: -50%;
+        width: 90%;
+            margin-left: -46%;
         padding-left: 5%;
         padding-right: 5%;
     }

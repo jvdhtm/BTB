@@ -5171,6 +5171,14 @@ header {
     font-size: 280%;
     padding: 8px 8px 12px 8px; }
 
+.ratings .user-reviews {
+  padding-bottom: 20px;
+  padding-top: 20px; }
+  @media (min-width: 768px) {
+    .ratings .user-reviews {
+      padding-bottom: 40px;
+      padding-top: 40px; } }
+
 .show-more-button {
   border: 2px solid #27ae61;
   color: #27ae61;
