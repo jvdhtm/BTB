@@ -1,15 +1,32 @@
 <div class="full-width">
 	<div class="container">
-		<div class="row">
-			<!--comp-->
+		<div class="row brands-row">
 			<div class="col-md-12 brands">
+
 				<p>Företag vi samarbetar med</p>
-				<!--<i class="fa fa-pied-piper" aria-hidden="true"></i>-->
-				<img src="https://imgur.userecho.com/s/attachments/2015/1/0/17.png" />
-				<img src="https://imgur.userecho.com/s/attachments/2015/1/0/17.png" />
-				<img src="https://imgur.userecho.com/s/attachments/2015/1/0/17.png" />
+				<img src="https://cdn2.hubspot.net/hubfs/4011209/Graphics/Images/Screen%20Shot%202017-12-08%20at%2011.14.22.png?t=1518101304442" />
+				<img src="https://cdn2.hubspot.net/hubfs/4011209/Graphics/Images/Screen%20Shot%202017-12-08%20at%2011.14.26.png?t=1518101304442" />
+				<img src="https://cdn2.hubspot.net/hubfs/4011209/Graphics/Images/Screen%20Shot%202017-12-08%20at%2011.14.36.png?t=1518101304442" />
 			</div>
+
+			<div class="brands-overlay">
+				<button>Visa alla Företag</button>
+			</div>
+
 		</div>
 	</div>
 </div>
+
+
+<script>
+	$('.brands-row').mouseover(function(){
+		$('.brands').addClass('blurred');
+		$('.brands-overlay').addClass('show');
+	});
+
+	$('.brands-row').mouseleave(function(){
+		$('.brands').removeClass('blurred');
+		$('.brands-overlay').removeClass('show');
+	});
+</script>
 

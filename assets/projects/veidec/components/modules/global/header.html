@@ -22,8 +22,8 @@
               </div>
 
             </div>
-            <compontent src="../global/search.html"></compontent>
           </div>
+          <compontent src="../global/search.html"></compontent>
         </div>
       </div>
     </div>
@@ -51,6 +51,13 @@ $('body').on('mousemove', '.navbar-shift--js', function (e) {
   $('#navigation-bottom-color').hide();
   if($(e.target).parents('.hs-item-has-children').length > 0)
   {
+    var height = 0;
+    $('.hs-menu-depth-1 > .hs-menu-children-wrapper').each(function(){
+      if($(this).outerHeight() >= height)
+      height = $(this).outerHeight();
+
+    });
+    $('#navigation-bottom-color').height(height+20);
     $('#navigation-bottom-color').show();
   }
 

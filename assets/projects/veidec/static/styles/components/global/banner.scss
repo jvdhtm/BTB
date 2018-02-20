@@ -12,20 +12,38 @@
 .banner {
 	overflow: hidden;
 
+	.banner-section-text {
+			-webkit-animation: intro-fade 1.5s linear;
+			animation: intro-fade 1.5s linear;
+			bottom: 0;
+			position: absolute;
+			width: 90%;
+			z-index: 5;
+			bottom: 25%;
+			left: 50%;
+			margin-left: -40%;
+			width: 80%;
+	}
 	.banner-title {
-	    -webkit-animation: intro-fade 1.5s linear;
-	    animation: intro-fade 1.5s linear;
-	    bottom: 0;
-	    color: #fff;
-	    left: 50%;
-	    margin: 15% auto 0;
-	    padding-bottom: 100px;
-	    position: absolute;
-	    text-transform: uppercase;
-	    -webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	    transform: translateX(-50%);
-	    width: 90%;
-	    z-index: 1;
+		-webkit-animation: intro-fade 1.5s linear;
+    animation: intro-fade 1.5s linear;
+    bottom: 0;
+    position: absolute;
+    width: 90%;
+    z-index: 5;
+    bottom: 25%;
+    left: 50%;
+    margin-left: -40%;
+    width: 80%;
+
+
+
+		h1
+		{
+			  font-size: 64px;
+		}
+	}
+	.banner-btn {
+    margin-top: 30px;
 	}
 }

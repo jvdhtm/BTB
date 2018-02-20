@@ -17,16 +17,25 @@ module {}
 
 
 body {
-  font-family: 'UniversBold';
+  font-family: 'GravityRegular';
 }
 
 a {
   color: $defFontColor;
   display: block;
   text-decoration: none;
-  font-family: 'UniversBold' ;
+  font-family: 'GravityRegular' ;
 }
 
+p{
+  font-family: 'GravityLight' ;
+  font-size:17px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'GravityBold' ;
+}
 a:hover {
   color: $defFontColor;
   text-decoration: none;
@@ -36,10 +45,23 @@ a:hover {
 .nopadding {
   padding: 0px;
 }
+li.hs-breadcrumb-menu-item {
+    color: $gray;
+    padding: 15px;
+    margin-top: 15px;
 
+}
+a.hs-breadcrumb-label {
+    color: black;
+    display: inline-block;
+}
+
+li.hs-breadcrumb-menu-item.last-crumb.first-crumb {
+    display: none;
+}
 
 .col-centered{
-      margin: 50px auto;
+    margin-top: 41px;
     h1{
     	text-align:center;
     	margin:0px;
@@ -54,6 +76,43 @@ elink {
   padding: 10px 15px;
 }
 
+
+/* Primary colors */
+
+.font--red {
+  color: $defRed;
+}
+
+.font--orange {
+  color: $defOrange;
+}
+
+.font--yellow {
+  color: $defYellow;
+}
+
+.font--turquoise {
+  color: $defTurquoise;
+}
+
+.font--lightBlue {
+  color: $defLightBlue;
+}
+
+.font--darkBlue {
+  color: $defDarkBlue;
+}
+
+.font--darkerBlue {
+  color: $defDarkBlueDark;
+}
+
+.font--purple {
+  color: $defDarkPurple;
+}
+.font--green {
+  color: $green;
+}
 
 /* Primary colors */
 
@@ -87,6 +146,9 @@ elink {
 
 .def--purple {
   background-color: $defDarkPurple;
+}
+.def--green {
+  background-color: $green;
 }
 
 .grad--darkerBlue-Blue {
@@ -258,6 +320,43 @@ input[type="color"],
 .box-shadow {
     -webkit-box-shadow: 0 4px 13px 4px rgba(0,0,0,0.2);
     box-shadow: 0 4px 13px 4px rgba(0,0,0,0.2);
+      transition: box-shadow 0.3s ease-in-out;
+}
+.box-shadow:hover {
+    -webkit-box-shadow: 0 4px 13px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 13px 7px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cross-icon:before
+{
+  content: "X";
+}
+.navbar-toggle {
+    margin-top: 4px;
+}
+
+.btn-showmore {
+    border: 2px solid $green;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: $green;
+    padding: 10px 64px;
+    margin-bottom: 12px;
+    color: $white;
+}
+.site-search-btn {
+  border: 2px solid #27AE61;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #27AE61;
+  padding: 5px 50px;
+  margin-bottom: 12px;
+  color: $white;
+  height: 36px;
+  left: -10px;
 }
 .has-feedback {
   // Left Icon Input Padding

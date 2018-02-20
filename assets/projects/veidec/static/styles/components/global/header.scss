@@ -1,17 +1,4 @@
-.sub-page .sticky .navigation {
-    a {
-      color:$white ;
-    }
 
-}
-.sub-page .sticky  #SearchForm .search {
-  color:$white ;
-}
-
-.sub-page .sticky .navbar-toggle .icon-bar
-{
-  background:$white ;
-}
 
 
 header {
@@ -24,9 +11,8 @@ z-index: 10;
 
 &.sticky {
     position: fixed;
-    background: $gray;
-
-    color:$white !important;
+    background: $white;
+        box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .widget-type-logo img {
@@ -34,19 +20,39 @@ z-index: 10;
 }
 
 .general_logo {
-    position: absolute;
-    max-width: 80px;
-    top: 8px;
-    left: 10px;
+  position: absolute;
+  max-width: 90px;
+  top: 10px;
+  left: 10px;
+  z-index: 20;
 }
 
+
   @include media ('>=tablet') {
-  	.general_logo {
+     .general_logo {
       margin-top: 5px !important;
       position: absolute;
-      top: 5px;
-      left: 15px;
-      max-width: 120px;
-  	}
+      top: 4px;
+      left: 0px;
+      max-width: 100px;
   }
+  }
+  @include media ('>=tablet-portrait') {
+    	.general_logo {
+        margin-top: 5px !important;
+        position: absolute;
+        top: 5px;
+        left: 0px;
+            max-width: 100px;
+    	}
+    }
+    @include media ('>=lgscreen') {
+        .general_logo {
+          margin-top: 5px !important;
+          position: absolute;
+          top: 5px;
+          left: 0px;
+              max-width: 120px;
+        }
+      }
 }
