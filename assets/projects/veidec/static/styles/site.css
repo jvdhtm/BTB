@@ -5160,22 +5160,16 @@ header {
   margin-top: 10px;
   margin-bottom: 30px; }
 
-.ratings {
-  text-align: center;
-  background: #F6F6F6;
-  padding-bottom: 72px; }
-  .ratings h3 {
-    margin-top: 34px; }
-  .ratings .fa-star {
-    color: #f1c40f;
-    font-size: 280%;
-    padding: 8px 8px 12px 8px; }
+.ratings .fa-star {
+  color: #f1c40f;
+  font-size: 280%;
+  padding: 8px 8px 12px 8px; }
 
-.ratings .user-reviews {
+.ratings .reviews {
   padding-bottom: 20px;
   padding-top: 20px; }
   @media (min-width: 768px) {
-    .ratings .user-reviews {
+    .ratings .reviews {
       padding-bottom: 40px;
       padding-top: 40px; } }
 
@@ -5205,10 +5199,10 @@ header {
     -webkit-box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
     box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07); }
 
-.user-reviews p {
+.reviews p {
   padding: 0 18px; }
 
-.user-reviews h5 {
+.reviews h5 {
   margin-top: 24px;
   margin-bottom: 0px; }
 
@@ -6139,41 +6133,37 @@ header #SearchForm .form-group {
     font-size: 18px;
     border-bottom: thin solid #95989A;
     border-radius: 0px; }
-  header #SearchForm .form-group .search-btn-menu {
-    position: absolute;
-    top: 26px;
-    left: 14px; }
 
-.sub-page header #SearchForm .search {
+header .sub-page header #SearchForm .search {
   color: #484848; }
 
-.sub-page header .navbar-toggle .icon-bar {
+header .sub-page header .navbar-toggle .icon-bar {
   background: black; }
 
-header.sticky #SearchForm .search {
+header header.sticky #SearchForm .search {
   color: #484848; }
 
-header.sticky .navbar-toggle .icon-bar {
+header header.sticky .navbar-toggle .icon-bar {
   background: black; }
 
-.site-search-box {
+header .site-search-box {
   height: 36px; }
 
-.search-list a {
+header .search-list a {
   color: green; }
 
-p.search-item-title {
+header p.search-item-title {
   font-weight: bold;
   margin-bottom: 0px;
   margin-top: 10px; }
 
-.site-search-btn:hover {
+header .site-search-btn:hover {
   z-index: 0; }
 
-.search-list.search-list--js {
+header .search-list.search-list--js {
   min-height: 40vh; }
 
-.site-search {
+header .site-search {
   margin-top: 60px; }
 
 .big-vid-screen {
