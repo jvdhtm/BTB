@@ -141,28 +141,28 @@ header {
     }
 }
 .form-group {
-    width: 100%;
-    padding: 20px;
-    border:none;
-        box-shadow: initial;
-    input{
-      border: none;
-      width: 100%;
-      box-shadow: initial;
-      padding: 10px 15px;
-      padding-left: 35px;
-      height: 45px;
-      font-size: 18px;
-      border-bottom: thin solid #95989A;
-      border-radius: 0px;
+        width: 100%;
+        padding: 20px;
+        border:none;
+            box-shadow: initial;
+        input{
+          border: none;
+          width: 100%;
+          box-shadow: initial;
+          padding: 10px 15px;
+          padding-left: 35px;
+          height: 45px;
+          font-size: 18px;
+          border-bottom: thin solid #95989A;
+          border-radius: 0px;
+        }
+        .search-btn-menu
+        {
+          position: absolute;
+          top: 26px;
+          left: 14px;
+        }
     }
-    .search-btn-menu
-    {
-      position: absolute;
-      top: 26px;
-      left: 14px;
-    }
-}
 
   }
 }
