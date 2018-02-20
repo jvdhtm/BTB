@@ -4902,24 +4902,24 @@ span.hs-form-required {
   transition: 0.3s;
   cursor: pointer; }
 
-.social {
-  text-align: left; }
-  .social .fa {
-    font-size: 250%;
-    padding: 0px 20px;
-    margin: 20px 0px 10px 0px; }
-  .social .hs_submit input {
-    width: 100%;
-    border-radius: 5px;
-    background: #27ae61;
-    border-color: #27ae61;
-    padding: 8px;
-    color: #fff;
-    font-size: 16px;
-    margin-bottom: 40px; }
+.social .fa {
+  font-size: 250%;
+  padding: 0px 20px;
+  margin: 20px 0px 10px 0px; }
+
+.social .hs_submit input {
+  width: 100%;
+  border-radius: 5px;
+  background: #27ae61;
+  border-color: #27ae61;
+  padding: 8px;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 40px; }
 
 .social {
-  text-align: center; }
+  text-align: center;
+  padding: 20px 0 10px 0; }
   .social .fa {
     font-size: 250%;
     padding: 0px 20px;
@@ -5001,7 +5001,12 @@ footer img.hs-image-widget {
   width: 100% !important; }
   @media (min-width: 768px) {
     footer img.hs-image-widget {
-      width: 88% !important; } }
+      width: 66% !important;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); } }
 
 header {
   position: absolute;
@@ -5155,7 +5160,7 @@ header {
 .ratings {
   text-align: center;
   background: #F6F6F6;
-  padding-bottom: 72px; }
+  padding-bottom: 100px; }
   .ratings h3 {
     margin-top: 34px; }
   .ratings .fa-star {
@@ -5194,14 +5199,14 @@ header {
 
 .product-use {
   text-align: center;
-  padding-bottom: 72px; }
+  padding-bottom: 100px; }
   .product-use img {
     width: 14%;
     margin-top: 44px;
     margin-bottom: 36px; }
 
 .product-use-silver {
-  padding-bottom: 72px; }
+  padding-bottom: 100px; }
 
 .product-use-silver, .base--silverLight {
   text-align: center; }
@@ -5821,7 +5826,7 @@ body.expanded {
     background-color: #F6F6F6;
     margin: 0px 16px; }
     .recommended-products-container .recommended-products h3 {
-      padding: 0 0 72px 0; }
+      padding: 20px 0 100px 0; }
     .recommended-products-container .recommended-products .text {
       padding: 5px 8px; }
     .recommended-products-container .recommended-products .product-underline {

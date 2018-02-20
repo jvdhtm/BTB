@@ -114,7 +114,6 @@ span.hs-form-required {
     cursor: pointer;
 }
 .social{
-    text-align:left;
     .fa{
         font-size:250%;
         padding: 0px 20px;
@@ -133,6 +132,7 @@ span.hs-form-required {
   }
     .social{
         text-align: center;
+        padding:20px 0 10px 0;
         .fa{
             font-size:250%;
             padding: 0px 20px;
@@ -221,7 +221,10 @@ span.hs-form-required {
     footer img.hs-image-widget {
         width: 100%!important;
         @include media('>=tablet') {
-            width:88%!important
+            width:66%!important;
+            position:relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
     }
