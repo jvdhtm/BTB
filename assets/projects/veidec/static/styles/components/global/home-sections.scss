@@ -74,7 +74,9 @@
 }
 
 
-
+.row h3{
+	padding-top:14px;
+}
 .btn-showmore{
 	transition:0.3s;
 
@@ -98,7 +100,7 @@
 .ratings{
 	text-align:center;
 	background:$silverLight;
-	padding-bottom:100px;
+	padding-bottom:72px;
 	h3{
 		margin-top:34px;
 	}
@@ -115,10 +117,14 @@
 	text-transform:uppercase;
 	border-radius:5px;
 	background:transparent;
-	padding: 12px 0;
-    width:250px;
+	padding: 16px 0;
+    width:300px;
 	margin: 30px 0 -30px 0px;
 	transition:0.3s;
+	@include media('>=tablet') {
+		padding: 12px 0;
+    	width:250px;
+	}
 	&:hover{
 		background:$greenDark;
 		color:#F6F6F6;
@@ -138,7 +144,7 @@
 }
 .product-use{
 		text-align:center;
-	    padding-bottom: 100px;
+	    padding-bottom: 72px;
 	img{
 		width:14%;
 		margin-top:44px;
@@ -146,7 +152,7 @@
 	}
 }
 .product-use-silver{
-	padding-bottom:100px;
+	padding-bottom:72px;
 }
 .product-use-silver, .base--silverLight{
 	text-align:center;

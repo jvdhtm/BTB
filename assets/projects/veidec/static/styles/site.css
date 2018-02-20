@@ -5132,6 +5132,9 @@ header {
     -webkit-filter: blur(5px);
     filter: blur(5px); }
 
+.row h3 {
+  padding-top: 14px; }
+
 .btn-showmore {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -5160,7 +5163,7 @@ header {
 .ratings {
   text-align: center;
   background: #F6F6F6;
-  padding-bottom: 100px; }
+  padding-bottom: 72px; }
   .ratings h3 {
     margin-top: 34px; }
   .ratings .fa-star {
@@ -5175,12 +5178,16 @@ header {
   text-transform: uppercase;
   border-radius: 5px;
   background: transparent;
-  padding: 12px 0;
-  width: 250px;
+  padding: 16px 0;
+  width: 300px;
   margin: 30px 0 -30px 0px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
+  @media (min-width: 768px) {
+    .show-more-button {
+      padding: 12px 0;
+      width: 250px; } }
   .show-more-button:hover {
     background: #27ae61;
     color: #F6F6F6;
@@ -5199,14 +5206,14 @@ header {
 
 .product-use {
   text-align: center;
-  padding-bottom: 100px; }
+  padding-bottom: 72px; }
   .product-use img {
     width: 14%;
     margin-top: 44px;
     margin-bottom: 36px; }
 
 .product-use-silver {
-  padding-bottom: 100px; }
+  padding-bottom: 72px; }
 
 .product-use-silver, .base--silverLight {
   text-align: center; }
