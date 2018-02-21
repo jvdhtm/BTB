@@ -19,6 +19,9 @@
 		height: 100%;
     width: 50px;
     margin: 0px;
+		@include media ('>=tablet') {
+			width: 170px;
+		}
 	}
 
 	@include media ('>=tablet') {

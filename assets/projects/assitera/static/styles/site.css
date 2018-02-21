@@ -4596,6 +4596,9 @@ a.cta_button {
     height: 100%;
     width: 50px;
     margin: 0px; }
+    @media (min-width: 768px) {
+      .society_logo.sp a {
+        width: 170px; } }
   @media (min-width: 768px) {
     .society_logo.sp {
       position: absolute;
