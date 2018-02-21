@@ -4582,8 +4582,8 @@ a.cta_button {
   position: relative; }
   .society_logo a {
     height: 100%;
-    width: 50px;
-    margin: 0px; }
+    width: 170px;
+    margin: auto; }
 
 .banner {
   overflow: hidden; }
@@ -4592,6 +4592,10 @@ a.cta_button {
   position: absolute;
   top: 5px;
   left: 10px; }
+  .society_logo.sp a {
+    height: 100%;
+    width: 50px;
+    margin: 0px; }
   @media (min-width: 768px) {
     .society_logo.sp {
       position: absolute;

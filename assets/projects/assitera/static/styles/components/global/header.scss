@@ -3,21 +3,23 @@
 	    position: relative;
 	a {
 		height: 100%;
-    width: 50px;
-    margin: 0px;
+    width: 170px;
+    margin: auto;
 	}
 }
 
 .banner {
-
 	overflow: hidden;
 }
 .society_logo.sp {
-
 	position: absolute;
 	top: 5px;
 	left: 10px;
-
+	a {
+		height: 100%;
+    width: 50px;
+    margin: 0px;
+	}
 
 	@include media ('>=tablet') {
     position: absolute;
