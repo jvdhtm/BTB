@@ -4275,7 +4275,8 @@ a:hover {
 li.hs-breadcrumb-menu-item {
   color: #555555;
   padding: 15px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  padding-left: 0px; }
 
 a.hs-breadcrumb-label {
   color: black;
