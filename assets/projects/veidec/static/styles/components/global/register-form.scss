@@ -4,15 +4,7 @@
     padding-right: 80px;
   }
 
-  @include media('>=lgscreen') {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
 
-  @include media('>=xlscreen') {
-    padding-left: 280px;
-    padding-right: 280px;
-  }
 }
 
 
