@@ -5828,6 +5828,14 @@ body.expanded {
   padding: 10px;
   z-index: 2; }
 
+.news-block .box-shadow {
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s; }
+  .news-block .box-shadow:hover {
+    padding: 6px 10px;
+    margin: -6px -10px; }
+
 .news--block:hover .news--block--header {
   position: absolute;
   color: #484848; }

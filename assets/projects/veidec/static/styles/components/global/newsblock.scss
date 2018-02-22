@@ -83,7 +83,15 @@
     padding: 10px;
     z-index: 2;
 }
-
+.news-block{
+  .box-shadow{
+    transition:0.15s;
+    &:hover{
+      padding: 6px 10px;
+      margin: -6px -10px;
+    }
+  }
+}
 .news--block:hover {
 
 
