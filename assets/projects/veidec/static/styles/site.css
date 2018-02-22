@@ -4999,10 +4999,12 @@ span.hs-form-required {
     margin-top: 26px; } }
 
 footer img.hs-image-widget {
-  width: 100% !important; }
+  width: 100% !important;
+  padding: 20px 28%; }
   @media (min-width: 768px) {
     footer img.hs-image-widget {
-      width: 66% !important;
+      /*width:66%!important;*/
+      padding: 30px;
       position: relative;
       left: 50%;
       -webkit-transform: translateX(-50%);
