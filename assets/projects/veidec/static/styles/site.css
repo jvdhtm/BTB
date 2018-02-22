@@ -4269,6 +4269,15 @@ a:hover {
   text-decoration: none;
   cursor: pointer; }
 
+.cross-remove {
+  position: absolute;
+  top: 37px;
+  right: 25px;
+  border-radius: 50%;
+  padding: 0px;
+  text-align: center;
+  width: 20px; }
+
 .nopadding {
   padding: 0px; }
 
@@ -5955,7 +5964,7 @@ header #SearchForm .search {
   width: auto;
   top: -2px;
   font-size: 26px;
-  right: 26px;
+  right: 45px;
   color: #fff;
   background: transparent;
   border: none; }
