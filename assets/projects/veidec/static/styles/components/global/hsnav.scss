@@ -18,7 +18,7 @@
             top: 0px;
         a{
           padding: 10px 15px;
-          margin-left: 30px;
+          margin-left: 0px;
         }
         nav
         {
@@ -50,7 +50,7 @@
               }
           }
           &:after{
-            content: "\f067";
+            content: "\f054";
             position: absolute;
             color: $white;
             top: 1px;
@@ -63,6 +63,7 @@
             font-size: 15px;
             padding: 10px 20px;
             z-index: 10;
+            width: 70px;
           }
           &.active {
             .hs-menu-children-wrapper {
@@ -79,13 +80,13 @@
                   .hs-menu-depth-2
                   {
                     a {
-                      margin-left: 30px;
+                      margin-left: 10px;
                     }
                   }
                   .hs-menu-depth-3
                   {
                     a {
-                      margin-left: 35px;
+                      margin-left: 15px;
                     }
                   }
               }

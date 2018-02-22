@@ -21,12 +21,15 @@ header {
     z-index: 20;
     width: auto;
     top: -5px;
-        font-size: 24px;
-        right: 57px;
+    font-size: 24px;
+    right: 57px;
+
     color:$white;
     background: transparent;
     border: none;;
-
+    @include media('>=tablet') {
+        color: $black;
+    }
   }
 
   .cross
@@ -36,12 +39,18 @@ header {
     position: absolute;
     z-index: 21;
     width: auto;
-    top: 20px;
+    top: 8px;
     font-size: 26px;
-    right: 30px;
-    color: $black;
+    right: 17px;
+    color: $white;
     background: transparent;
     border: 0;
+    @include media('>=tablet') {
+        color: $black;
+        top: 20px;
+        font-size: 26px;
+        right: 30px;
+    }
 
   }
  @include media('>=tablet') {
@@ -90,15 +99,26 @@ header {
 
         }
       }
+      path {
+          fill: $white;
+          @include media('>=tablet') {
+              fill: $black;
+          }
+      }
+
       .search-btn-menu
       {
            font-size: 26px;
            background: transparent;
            border: none;
-           color: $black;
+           color: $white;
            position: absolute;
           left: 18px;
           top: 23px;
+
+          @include media('>=tablet') {
+              color: $black;
+          }
       }
       .search-menu
       {
@@ -111,7 +131,7 @@ header {
         left: 0px;
         position: fixed;
         width: 100%;
-        background: $white;
+        background: $grayDark;
         text-align: center;
         overflow: hidden;
         z-index: 20;
@@ -128,7 +148,7 @@ header {
         left: 0px;
           position: fixed;
         width:  100%;
-        background: $white;
+        background: $grayDark;
         text-align: center;
         overflow: hidden;
           z-index: 20;
@@ -185,8 +205,14 @@ header {
       padding-left: 50px;
       height: 45px;
       font-size: 18px;
-      border-bottom: thin solid #95989A;
+      border-bottom: thin solid $white;
       border-radius: 0px;
+      background: transparent;
+      color:$white;
+      @include media('>=tablet') {
+        color:$black;
+        border-bottom: thin solid #95989A;
+      }
     }
 
   }
