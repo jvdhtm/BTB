@@ -67,7 +67,7 @@ header {
            .search
            {
 
-             right: 100px;
+             right: 106px;
 
            }
 
@@ -81,12 +81,24 @@ header {
               }
 
           }
+      @include media('>=xlscreen') {
+
+        .search
+        {
+
+            right: 166px;
+
+        }
+      }
       .search-btn-menu
       {
            font-size: 26px;
            background: transparent;
            border: none;
            color: $black;
+           position: absolute;
+          left: 18px;
+          top: 23px;
       }
       .search-menu
       {
@@ -179,7 +191,7 @@ header {
 
   }
 }
-
+}
 .sub-page{
   header {
       #SearchForm .search {
@@ -225,5 +237,4 @@ p.search-item-title {
 }
 .site-search {
     margin-top: 60px;
-}
 }
