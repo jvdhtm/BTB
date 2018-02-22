@@ -16,7 +16,7 @@
         transform:translateX(0%);
         margin-top:20px;
         }
-    }    
+    }
 }
 .footer-icons{
     .col-md-4{
@@ -52,23 +52,10 @@
 span.hs-form-required {
     position: absolute;
     color: $red;
-    top:22px;
+    top:35px;
     right:8px;
     z-index:2;
-    @include media ('>=phone'){
-        right: 10px;
-    }
-    @include media ('>=tablet'){
-        top: 32px;
-        right: 146px;
-        z-index: 2;
-    }
-    @include media ('>=tablet-portrait'){
-        right:94px;
-    }
-    @include media ('>=lgscreen'){
-        right: 116px;
-    }
+
 }
 
 .input{
@@ -155,7 +142,7 @@ span.hs-form-required {
     @include media('>=tablet') {
         .input{
             input,textarea{
-                width:80%;
+                width:100%;
                 margin:10px 5px 5px 5px;
             }
         }

@@ -4019,23 +4019,25 @@ button.close {
 *   CSS file with Bootstrap grid classes for screens bigger than 1600px. Just add this file after the Bootstrap CSS file and you will be able to juse col-xl, col-xl-push, hidden-xl, etc.
 *
 */
-@media (min-width: 1200px) and (max-width: 1599px) {
-  .hidden-lg {
-    display: none !important; } }
-
-.visible-xl-block {
-  display: none !important; }
-
-.visible-xl-inline {
-  display: none !important; }
-
-.visible-xl-inline-block {
-  display: none !important; }
-
-.visible-xl {
-  display: none !important; }
-
 /*
+@include media('>=lgscreen','<xlscreen')  {
+	.hidden-lg {
+		display: none !important;
+	}
+}
+.visible-xl-block {
+	display: none !important;
+	}
+.visible-xl-inline {
+	display: none !important;
+}
+.visible-xl-inline-block {
+	display: none !important;
+}
+.visible-xl {
+	display: none !important;
+}
+
 @include media('>xlscreen') {
 	.container {
 		width: 1570px;
@@ -4844,23 +4846,9 @@ span.hs-form-required {
 span.hs-form-required {
   position: absolute;
   color: #BC261A;
-  top: 22px;
+  top: 35px;
   right: 8px;
   z-index: 2; }
-  @media (min-width: 320px) {
-    span.hs-form-required {
-      right: 10px; } }
-  @media (min-width: 768px) {
-    span.hs-form-required {
-      top: 32px;
-      right: 146px;
-      z-index: 2; } }
-  @media (min-width: 992px) {
-    span.hs-form-required {
-      right: 94px; } }
-  @media (min-width: 1200px) {
-    span.hs-form-required {
-      right: 116px; } }
 
 .input {
   position: relative; }
@@ -4940,7 +4928,7 @@ span.hs-form-required {
 
 @media (min-width: 768px) {
   .input input, .input textarea {
-    width: 80%;
+    width: 100%;
     margin: 10px 5px 5px 5px; }
   .contact {
     -webkit-box-ordinal-group: 2;
@@ -5034,21 +5022,21 @@ header {
       margin-top: 5px !important;
       position: absolute;
       top: 4px;
-      left: 0px;
+      left: 15px;
       max-width: 100px; } }
   @media (min-width: 992px) {
     header .general_logo {
       margin-top: 5px !important;
       position: absolute;
       top: 5px;
-      left: 0px;
+      left: 15px;
       max-width: 100px; } }
   @media (min-width: 1200px) {
     header .general_logo {
       margin-top: 5px !important;
       position: absolute;
       top: 5px;
-      left: 0px;
+      left: 15px;
       max-width: 120px; } }
 
 .brands-row {
@@ -5076,7 +5064,7 @@ header {
     padding: 8px 12px; }
     @media (min-width: 768px) {
       .brands img {
-        width: 10%; } }
+        width: 6%; } }
 
 .brands-overlay {
   display: none;
@@ -5133,9 +5121,6 @@ header {
   .blurred img {
     -webkit-filter: blur(5px);
     filter: blur(5px); }
-
-.row h3 {
-  padding-top: 14px; }
 
 .btn-showmore {
   -webkit-transition: 0.3s;
@@ -5210,7 +5195,10 @@ header {
 
 .product-use {
   text-align: center;
-  padding-bottom: 72px; }
+  padding: 20px; }
+  @media (min-width: 768px) {
+    .product-use {
+      padding: 72px; } }
   .product-use img {
     width: 14%;
     margin-top: 44px;
@@ -5233,6 +5221,19 @@ header {
       width: 40%;
       margin: 26px 0 0 0;
       height: auto; }
+
+.image-box {
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+  .image-box img {
+    width: 40%;
+    margin: 26px 0 0 0;
+    height: auto; }
 
 .slide-prev {
   color: black;
@@ -5348,9 +5349,18 @@ a.hs_cos_flex-next {
 .span12 .hs_cos_wrapper_widget {
   margin-right: auto !important;
   margin-left: auto !important;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: block; }
+
+.span12 .reviews--bigger h4 {
+  margin-top: 20px; }
+
+.span12 .reviews--bigger p {
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'gravityBold';
+  color: gray; }
 
 @media (min-width: 768px) {
   .span12 .hs_cos_wrapper_widget {
@@ -5365,6 +5375,11 @@ a.hs_cos_flex-next {
     width: 1170px; } }
 
 .span12 .hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget {
+  width: auto !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
+.row .hs_cos_wrapper_widget {
   width: auto !important;
   padding-left: 0px !important;
   padding-right: 0px !important; }
@@ -5828,125 +5843,58 @@ body.expanded {
   height: 100%; }
 
 .recommended-products-container {
-  margin: 0px 0; }
-  @media (min-width: 768px) {
-    .recommended-products-container {
-      margin: 0 36px; } }
-  .recommended-products-container .recommended-products {
-    text-align: center;
-    background-color: #F6F6F6;
-    margin: 0px 16px; }
-    .recommended-products-container .recommended-products h3:nth-child(1) {
-      padding: 20px 0 100px 0; }
-    .recommended-products-container .recommended-products .text {
-      padding: 5px 8px; }
-    .recommended-products-container .recommended-products .product-underline {
-      display: block; }
-      @media (min-width: 768px) {
-        .recommended-products-container .recommended-products .product-underline {
-          display: none; } }
-    .recommended-products-container .recommended-products img {
-      height: 200px;
-      width: auto; }
-      @media (min-width: 768px) {
-        .recommended-products-container .recommended-products img {
-          height: 250px; } }
-    .recommended-products-container .recommended-products .recommended-product {
-      padding: 20px 0; }
-      @media (min-width: 768px) {
-        .recommended-products-container .recommended-products .recommended-product {
-          padding: 20px 15px; } }
+  margin-left: 30px;
+  margin-right: 30px; }
+
+.recommended-products {
+  text-align: center; }
+  .recommended-products .text {
+    padding: 5px 8px; }
+  .recommended-products .product-underline {
+    display: block; }
+    @media (min-width: 768px) {
+      .recommended-products .product-underline {
+        display: none; } }
+  .recommended-products img {
+    height: 200px;
+    width: auto; }
+    @media (min-width: 768px) {
+      .recommended-products img {
+        height: 250px; } }
+  .recommended-products .recommended-products {
+    min-height: 300px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .recommended-products .recommended-products {
+        min-height: 480px; } }
+
+.recommended-products {
+  padding-top: 40px;
+  padding-bottom: 40px; }
 
 .wrap-recommended-product {
-  margin: 36px -15px;
-  padding: 20px 32px;
-  min-height: 300px;
-  text-align: center;
-  background: #F6F6F6; }
-  @media (min-width: 768px) {
-    .wrap-recommended-product {
-      margin: 44px 19px;
-      padding: 120px 60px;
-      min-height: 480px; } }
-  .wrap-recommended-product img {
-    width: 100%;
-    height: 200px;
-    margin-top: 0; }
-    @media (min-width: 768px) {
-      .wrap-recommended-product img {
-        margin-top: -100px; } }
-  .wrap-recommended-product p {
-    margin-top: 22px; }
+  margin-bottom: 30px; }
 
-/*
-.register-header{
-    color: #507f8d;
-    margin-left:5px;
-}
-.hs-input{
-    margin:5px;
-}
-.input select{
-    width:25%;
-    min-width:150px;
-    border:2px solid #6CBCC7;
-    background:#6CBCC7;
-    color:white;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 8px;
-    border-radius:20px;
-}
-.input ::placeholder{
-    color:#6CBCC7;
-    font-style:italic;
-}
-.input input{
-    border:2px solid #6CBCC7;
-    width:100%;
-    border-radius:20px;
-}
-.input input:focus{
-    border-color:#6CBCC7;
-}
-.hs_submit [type='submit']{
-    width: 20%;
-    min-width:150px;
-    color:#405F6E;
-    background: #6FECBE;
-    border-radius: 20px;
-    padding: 8px;
-    margin:5px;
-}
-.file-upload{
-  position:relative;
-}
-.file-upload-label {
-    display: block;
-    text-align:center;
-    padding: 8px;
-    color: #fff;
-    background:#6ABCC6;
-    border-radius: 20px;
-    margin:5px;
-    width:40%;
-    min-width:150px;
- }   
-.file-upload-input {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    font-size: 16px;
-    height:100%;
-    opacity:0;
-     &:hover{
-      cursor: pointer;
-      text-decoration:underline;
- } 
-}*/
+@media (min-width: 1024px) {
+  #hs_cos_wrapper_widget_1519139217104 {
+    padding-left: 80px;
+    padding-right: 80px; } }
+
+@media (min-width: 1200px) {
+  #hs_cos_wrapper_widget_1519139217104 {
+    padding-left: 180px;
+    padding-right: 180px; } }
+
+@media (min-width: 1600px) {
+  #hs_cos_wrapper_widget_1519139217104 {
+    padding-left: 280px;
+    padding-right: 280px; } }
+
+@media (min-width: 1024px) {
+  .contact, .news-letter {
+    padding-left: 45px;
+    padding-right: 16px; } }
+
 .bubble-sm {
   width: 20px;
   height: 20px; }
@@ -6040,17 +5988,24 @@ header #SearchForm .cross {
 
 @media (min-width: 992px) {
   header #SearchForm .search {
-    right: 100px; } }
+    right: 106px; } }
 
 @media (min-width: 1200px) {
   header #SearchForm .search {
     right: 135px; } }
 
+@media (min-width: 1600px) {
+  header #SearchForm .search {
+    right: 166px; } }
+
 header #SearchForm .search-btn-menu {
   font-size: 26px;
   background: transparent;
   border: none;
-  color: #484848; }
+  color: #484848;
+  position: absolute;
+  left: 18px;
+  top: 23px; }
 
 header #SearchForm .search-menu {
   top: 0px;
@@ -6136,36 +6091,36 @@ header #SearchForm .form-group {
     border-bottom: thin solid #95989A;
     border-radius: 0px; }
 
-header .sub-page header #SearchForm .search {
+.sub-page header #SearchForm .search {
   color: #484848; }
 
-header .sub-page header .navbar-toggle .icon-bar {
+.sub-page header .navbar-toggle .icon-bar {
   background: black; }
 
-header header.sticky #SearchForm .search {
+header.sticky #SearchForm .search {
   color: #484848; }
 
-header header.sticky .navbar-toggle .icon-bar {
+header.sticky .navbar-toggle .icon-bar {
   background: black; }
 
-header .site-search-box {
+.site-search-box {
   height: 36px; }
 
-header .search-list a {
+.search-list a {
   color: green; }
 
-header p.search-item-title {
+p.search-item-title {
   font-weight: bold;
   margin-bottom: 0px;
   margin-top: 10px; }
 
-header .site-search-btn:hover {
+.site-search-btn:hover {
   z-index: 0; }
 
-header .search-list.search-list--js {
+.search-list.search-list--js {
   min-height: 40vh; }
 
-header .site-search {
+.site-search {
   margin-top: 60px; }
 
 .big-vid-screen {
