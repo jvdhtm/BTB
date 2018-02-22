@@ -4275,7 +4275,8 @@ a:hover {
 li.hs-breadcrumb-menu-item {
   color: #555555;
   padding: 15px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  padding-left: 0px; }
 
 a.hs-breadcrumb-label {
   color: black;
@@ -5363,8 +5364,6 @@ a.hs_cos_flex-next {
   .span12 .hs_cos_wrapper_widget {
     margin-right: auto !important;
     margin-left: auto !important;
-    padding-left: 30px;
-    padding-right: 30px;
     display: block; }
   .span12 .reviews--bigger h4 {
     margin-top: 20px; }

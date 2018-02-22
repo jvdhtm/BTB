@@ -27,6 +27,7 @@ a {
   font-family: 'GravityRegular' ;
 }
 
+
 p{
   font-family: 'GravityLight' ;
   font-size:17px;
@@ -49,7 +50,7 @@ li.hs-breadcrumb-menu-item {
     color: $gray;
     padding: 15px;
     margin-top: 15px;
-
+  padding-left: 0px;
 }
 a.hs-breadcrumb-label {
     color: black;
