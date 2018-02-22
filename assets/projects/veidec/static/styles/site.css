@@ -5962,9 +5962,9 @@ header #SearchForm .search {
   position: absolute;
   z-index: 20;
   width: auto;
-  top: -2px;
-  font-size: 26px;
-  right: 45px;
+  top: -5px;
+  font-size: 24px;
+  right: 57px;
   color: #fff;
   background: transparent;
   border: none; }
