@@ -4972,15 +4972,16 @@ span.hs-form-required {
     order: 2; }
     .social .fa {
       padding: 0px 0px 0px 50px; }
-  .hs_submit .subscribe {
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-    position: absolute;
-    padding: 11px;
-    width: 25%;
-    top: 66px;
-    right: 15px;
-    border-color: #27ae61; }
+  /*.hs_submit .subscribe{
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            position: absolute;
+            padding: 11px;
+            width: 25%;
+            top: 80px;
+            right: 15px;
+            border-color:$greenDark;
+        }*/
   .subscribe-input {
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;

@@ -177,6 +177,7 @@ span.hs-form-required {
             margin-left:5px;
             border: 0px;
             transition:0.3s;
+          
         }
         .social{
             text-align:right;
@@ -185,16 +186,17 @@ span.hs-form-required {
                 padding: 0px 0px 0px 50px;
             }
         }
-        .hs_submit .subscribe{
+
+        /*.hs_submit .subscribe{
             border-bottom-left-radius: 0px;
             border-top-left-radius: 0px;
             position: absolute;
             padding: 11px;
             width: 25%;
-            top: 66px;
+            top: 80px;
             right: 15px;
             border-color:$greenDark;
-        }
+        }*/
         .subscribe-input{
             border-bottom-right-radius: 0px;
             border-top-right-radius: 0px;
@@ -217,7 +219,6 @@ span.hs-form-required {
             }
         }
     }
-
     footer img.hs-image-widget {
         width: 100%!important;
         @include media('>=tablet') {
