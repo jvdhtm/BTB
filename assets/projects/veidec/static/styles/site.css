@@ -5004,7 +5004,10 @@ header {
   header .navbar-header {
     height: 60px; }
   header .fa-search {
-    -webkit-text-stroke: 3px white; }
+    -webkit-text-stroke: 0; }
+    @media (min-width: 768px) {
+      header .fa-search {
+        -webkit-text-stroke: 3px white; } }
   header.sticky {
     position: fixed;
     background: #fff;
