@@ -33,40 +33,42 @@ header {
     width: 100% !important;
 }
 
+.hs_cos_wrapper_type_logo {
+margin-top: 5px !important;
+
+}
 .general_logo {
-  position: absolute;
-  max-width: 90px;
-  top: 17px;
-  left: 10px;
-  z-index: 20;
+    width: 100%;
+}
+.wrap-logo
+{
+  width: 100px;
+    float: left;
+  .span1 {
+     width: 100%;
+  }
+}
+.links {
+    width: calc( 100% - 100px );
+    float: left;
 }
 
-
   @include media ('>=tablet') {
-     .general_logo {
+     .hs_cos_wrapper_type_logo {
       margin-top: 5px !important;
-      position: absolute;
-      top: 10px;
-          left: 15px;
-      max-width: 100px;
+
   }
   }
   @include media ('>=tablet-portrait') {
-    	.general_logo {
+    	.hs_cos_wrapper_type_logo {
         margin-top: 5px !important;
-        position: absolute;
-        top: 10px;
-            left: 15px;
-            max-width: 100px;
+
     	}
     }
     @include media ('>=lgscreen') {
-        .general_logo {
+        .hs_cos_wrapper_type_logo {
           margin-top: 5px !important;
-          position: absolute;
-          top: 10px;
-              left: 15px;
-              max-width: 120px;
+
         }
       }
 }
