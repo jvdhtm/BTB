@@ -11,11 +11,15 @@
 
 header {
 
-position: absolute;
-top:0px;
-left:0px;
-width:100%;
-z-index: 10;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  z-index: 10;
+  .fa-search{
+    -webkit-text-stroke: 3px white;
+  }
+
 
 &.sticky {
     position: fixed;
