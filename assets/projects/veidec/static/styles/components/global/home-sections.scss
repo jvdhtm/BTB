@@ -20,7 +20,7 @@
 	img{
 		width:18%;
 		padding:8px 12px;
-		@include media('>=tablet') {
+		@include media('>=desktop') {
 			width:5%;
 		}
 
