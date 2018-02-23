@@ -5015,6 +5015,10 @@ footer img.hs-image-widget {
       -ms-transform: translateX(-50%);
       transform: translateX(-50%); } }
 
+.sub-page header {
+  -webkit-box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2); }
+
 header {
   position: absolute;
   top: 0px;
