@@ -4884,21 +4884,6 @@ span.hs-form-required {
   transition: 0.3s;
   cursor: pointer; }
 
-.social .fa {
-  font-size: 250%;
-  padding: 0px 20px;
-  margin: 20px 0px 10px 0px; }
-
-.social .hs_submit input {
-  width: 100%;
-  border-radius: 5px;
-  background: #27ae61;
-  border-color: #27ae61;
-  padding: 8px;
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 40px; }
-
 .social {
   text-align: center;
   padding: 20px 0 10px 0; }
@@ -4906,6 +4891,19 @@ span.hs-form-required {
     font-size: 250%;
     padding: 0px 20px;
     margin: 20px 0px 10px 0px; }
+  .social .fab {
+    font-size: 250%;
+    padding: 0px 20px;
+    margin: 20px 0px 10px 0px; }
+  .social .hs_submit input {
+    width: 100%;
+    border-radius: 5px;
+    background: #27ae61;
+    border-color: #27ae61;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 40px; }
 
 .footer-logo {
   text-align: center; }
@@ -4951,6 +4949,8 @@ span.hs-form-required {
     -ms-flex-order: 2;
     order: 2; }
     .social .fa {
+      padding: 0px 0px 0px 50px; }
+    .social .fab {
       padding: 0px 0px 0px 50px; }
   /*.hs_submit .subscribe{
             border-bottom-left-radius: 0px;
