@@ -4286,7 +4286,7 @@ li.hs-breadcrumb-menu-item.last-crumb.first-crumb {
   display: none; }
 
 .col-centered {
-  margin-top: 46px; }
+  margin-top: 65px; }
   .col-centered h1 {
     text-align: center;
     font-weight: bold; }
@@ -4511,7 +4511,7 @@ input[type="color"],
   content: "X"; }
 
 .navbar-toggle {
-  margin-top: 4px; }
+  margin-top: 11px; }
 
 .btn-showmore {
   border: 2px solid #27AE61;
@@ -5001,6 +5001,8 @@ header {
   left: 0px;
   width: 100%;
   z-index: 10; }
+  header .navbar-header {
+    height: 60px; }
   header.sticky {
     position: fixed;
     background: #fff;
@@ -5011,28 +5013,28 @@ header {
   header .general_logo {
     position: absolute;
     max-width: 90px;
-    top: 10px;
+    top: 17px;
     left: 10px;
     z-index: 20; }
   @media (min-width: 768px) {
     header .general_logo {
       margin-top: 5px !important;
       position: absolute;
-      top: 4px;
+      top: 10px;
       left: 15px;
       max-width: 100px; } }
   @media (min-width: 992px) {
     header .general_logo {
       margin-top: 5px !important;
       position: absolute;
-      top: 5px;
+      top: 10px;
       left: 15px;
       max-width: 100px; } }
   @media (min-width: 1200px) {
     header .general_logo {
       margin-top: 5px !important;
       position: absolute;
-      top: 5px;
+      top: 10px;
       left: 15px;
       max-width: 120px; } }
 
@@ -5506,7 +5508,8 @@ body.expanded {
           width: 100%; } }
     .navigation .navbar-shift nav {
       margin-top: 60px;
-      margin-left: 30px; }
+      margin-left: 30px;
+      margin-bottom: 15px; }
       .navigation .navbar-shift nav ul {
         list-style: none;
         display: block;
@@ -5570,12 +5573,13 @@ body.expanded {
       height: auto;
       background: transparent; }
       .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
-        width: 90%;
+        width: calc( 100% - 100px);
         float: left;
         padding-right: 0px;
         padding-left: 75px;
         margin-top: 0px;
-        margin-left: 0px; }
+        margin-left: 0px;
+        padding-top: 5px; }
         .navigation .navbar-shift nav ul, .navigation .navbar-shift.expanded nav ul {
           display: -webkit-box;
           display: -webkit-flex;
@@ -5647,7 +5651,7 @@ body.expanded {
                       margin: 0px; }
       .navigation .navbar-shift .login, .navigation .navbar-shift.expanded .login {
         float: left;
-        width: 10%;
+        width: 100px;
         margin-left: 0px;
         position: relative; }
         .navigation .navbar-shift .login a, .navigation .navbar-shift.expanded .login a {
@@ -5657,12 +5661,15 @@ body.expanded {
           color: #fff;
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px;
-          margin-bottom: 15px; } }
+          height: 55px;
+          padding-top: 13px;
+          margin-left: 0px; } }
 
 @media (min-width: 992px) {
   .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
-    padding-right: 0px;
-    padding-left: 75px; }
+    padding-right: 30px;
+    padding-left: 75px;
+    padding-top: 7px; }
     .navigation .navbar-shift nav ul .hs-menu-depth-1, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 {
       width: 100%; }
       .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
@@ -5671,7 +5678,8 @@ body.expanded {
 @media (min-width: 1200px) {
   .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
     padding-right: 80px;
-    padding-left: 150px; }
+    padding-left: 150px;
+    padding-top: 7px; }
     .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
       /*font-size: 15px !important;*/
       font-size: 17px !important;
@@ -5963,8 +5971,11 @@ header #SearchForm .navbar-form {
   border: none;
   -webkit-box-shadow: initial;
   box-shadow: initial;
-  margin-top: 0px;
+  margin-top: 50px;
   position: relative; }
+  @media (min-width: 768px) {
+    header #SearchForm .navbar-form {
+      margin-top: 0px; } }
 
 header #SearchForm .search {
   height: 50px;
@@ -5972,7 +5983,7 @@ header #SearchForm .search {
   position: absolute;
   z-index: 20;
   width: auto;
-  top: -5px;
+  top: 3px;
   font-size: 24px;
   right: 57px;
   color: #fff;
@@ -5984,12 +5995,17 @@ header #SearchForm .search {
 
 header #SearchForm .cross-remove {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 13px;
+  right: 24px;
   border-radius: 50%;
   padding: 0px;
   text-align: center;
   width: 20px; }
+  @media (min-width: 768px) {
+    header #SearchForm .cross-remove {
+      top: 20px;
+      right: 15px;
+      display: none; } }
 
 header #SearchForm .cross {
   height: 30px;
@@ -6006,9 +6022,8 @@ header #SearchForm .cross {
   @media (min-width: 768px) {
     header #SearchForm .cross {
       color: #484848;
-      top: 20px;
-      font-size: 26px;
-      right: 30px; }
+      top: 0px;
+      font-size: 26px; }
       header #SearchForm .cross.navbar-toggle {
         display: block; }
       header #SearchForm .cross .icon-bar {
@@ -6023,24 +6038,14 @@ header #SearchForm .cross {
     position: absolute;
     z-index: 20;
     width: auto;
-    top: -8px;
+    top: -3px;
     font-size: 26px;
-    right: 80px;
+    right: 120px;
     color: #fff;
     background: transparent;
-    border: none; } }
-
-@media (min-width: 992px) {
-  header #SearchForm .search {
-    right: 106px; } }
-
-@media (min-width: 1200px) {
-  header #SearchForm .search {
-    right: 135px; } }
-
-@media (min-width: 1600px) {
-  header #SearchForm .search {
-    right: 166px; } }
+    border: none; }
+  header #SearchForm .cross {
+    right: 20px; } }
 
 header #SearchForm path {
   fill: #484848; }
@@ -6054,7 +6059,7 @@ header #SearchForm .search-btn-menu {
   border: none;
   color: #484848;
   position: absolute;
-  left: 30px;
+  left: 20px;
   top: 6px; }
   @media (min-width: 768px) {
     header #SearchForm .search-btn-menu {
@@ -6080,7 +6085,7 @@ header #SearchForm .search-menu {
     left: 50%;
     position: absolute;
     height: auto;
-    width: 78%;
+    width: 76%;
     background: #fff;
     text-align: center;
     overflow: hidden;
@@ -6094,11 +6099,23 @@ header #SearchForm .form-group {
   width: 100%;
   padding-bottom: 5px;
   padding-top: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: none;
   -webkit-box-shadow: initial;
   box-shadow: initial; }
+  @media (min-width: 768px) {
+    header #SearchForm .form-group {
+      padding-left: 0px;
+      padding-right: 0px; } }
+  @media (min-width: 1600px) {
+    header #SearchForm .form-group {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (min-width: 1200px) {
+    header #SearchForm .form-group {
+      padding-left: 30px;
+      padding-right: 30px; } }
   header #SearchForm .form-group input {
     border: none;
     width: 100%;

@@ -16,7 +16,9 @@ top:0px;
 left:0px;
 width:100%;
 z-index: 10;
-
+.navbar-header {
+    height: 60px;
+}
 &.sticky {
     position: fixed;
     background: $white;
@@ -30,7 +32,7 @@ z-index: 10;
 .general_logo {
   position: absolute;
   max-width: 90px;
-  top: 10px;
+  top: 17px;
   left: 10px;
   z-index: 20;
 }
@@ -40,7 +42,7 @@ z-index: 10;
      .general_logo {
       margin-top: 5px !important;
       position: absolute;
-      top: 4px;
+      top: 10px;
           left: 15px;
       max-width: 100px;
   }
@@ -49,7 +51,7 @@ z-index: 10;
     	.general_logo {
         margin-top: 5px !important;
         position: absolute;
-        top: 5px;
+        top: 10px;
             left: 15px;
             max-width: 100px;
     	}
@@ -58,7 +60,7 @@ z-index: 10;
         .general_logo {
           margin-top: 5px !important;
           position: absolute;
-          top: 5px;
+          top: 10px;
               left: 15px;
               max-width: 120px;
         }
