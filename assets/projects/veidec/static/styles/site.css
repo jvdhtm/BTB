@@ -5513,6 +5513,9 @@ body.expanded {
       margin-left: 30px;
       font-size: 18px;
       width: 240px; }
+      @media (min-width: 768px) {
+        .navigation .navbar-shift a {
+          width: 100%; } }
     .navigation .navbar-shift nav {
       margin-top: 60px;
       margin-left: 30px; }
