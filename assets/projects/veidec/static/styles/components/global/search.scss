@@ -42,7 +42,7 @@ header {
 
 
     top: 13px;
-    right: 24px;
+    right: 27px;
 
     @include media('>=tablet') {
       top: 20px;
@@ -128,7 +128,7 @@ header {
            color: $black;
            position: absolute;
            left: 20px;
-           top: 6px;
+           top: 3px;
 
           @include media('>=tablet') {
               color: $black;
