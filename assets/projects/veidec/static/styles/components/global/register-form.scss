@@ -7,11 +7,12 @@
   	}
   	.hs-button{
   		margin-top:5px;
-  		&:hover{
   		border:2px solid $greenDark;
+  		&:hover{
   		color:$greenDark;
   		background:$white;
-  		transform: translateY(-5px);
+  		transform: translateY(-2px);
+  		box-shadow: 0 18px 35px rgba(50,50,93,0.1), 0 8px 15px rgba(0,0,0,0.07);
   		}
 	}
 }

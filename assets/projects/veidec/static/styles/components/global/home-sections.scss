@@ -21,7 +21,7 @@
 		width:18%;
 		padding:8px 12px;
 		@include media('>=tablet') {
-			width:6%;
+			width:5%;
 		}
 
 	}
@@ -133,7 +133,10 @@
 		box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
 	}
 }
-
+#hs_cos_wrapper_widget_1517991083175_Rating_column1{
+	font-style:italic;
+	padding:10px 18px 30px 18px;
+}
 .user-reviews {
     p{
     	font-style:italic;
