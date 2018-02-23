@@ -4269,15 +4269,6 @@ a:hover {
   text-decoration: none;
   cursor: pointer; }
 
-.cross-remove {
-  position: absolute;
-  top: 37px;
-  right: 25px;
-  border-radius: 50%;
-  padding: 0px;
-  text-align: center;
-  width: 20px; }
-
 .nopadding {
   padding: 0px; }
 
@@ -5575,7 +5566,8 @@ body.expanded {
       -webkit-transition: right 0.5s ease-in-out;
       -o-transition: right 0.5s ease-in-out;
       transition: right 0.5s ease-in-out;
-      z-index: 9; }
+      z-index: 9;
+      overflow-y: auto; }
     .navigation .navbar-shift .login {
       margin-left: 30px; }
 
@@ -6129,7 +6121,8 @@ header #SearchForm .search-menu.expanded {
     z-index: 20;
     -webkit-box-shadow: 0px 0px 4px 1px #707070;
     box-shadow: 0px 0px 4px 1px #707070;
-    margin-left: -38%; } }
+    margin-left: -38%;
+    overflow-y: hidden; } }
 
 header #SearchForm .form-group {
   width: 100%;
@@ -6148,12 +6141,13 @@ header #SearchForm .form-group {
     font-size: 18px;
     border-bottom: none;
     border-radius: 0px;
-    background: transparent;
+    background: #fff;
     color: #484848; }
     @media (min-width: 768px) {
       header #SearchForm .form-group input {
         color: #484848;
-        border-bottom: thin solid #95989A; } }
+        border-bottom: thin solid #95989A;
+        background: #fff; } }
 
 .sub-page header #SearchForm .search {
   color: #484848; }
