@@ -4707,13 +4707,14 @@ a.cta_button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 100%; }
-  .banner-section .banner-section-text {
-    padding-top: 82px;
-    color: #fff; }
-    .banner-section .banner-section-text h1 {
-      font-family: 'GravityBold'; }
-    .banner-section .banner-section-text h3 {
-      font-family: 'GravityLight'; }
+
+.banner-section-text {
+  padding-top: 82px;
+  color: #fff; }
+  .banner-section-text h1 {
+    font-family: 'GravityBold'; }
+  .banner-section-text h3 {
+    font-family: 'GravityLight'; }
 
 .apply-button {
   border: 2px solid #27ae61;
@@ -4740,9 +4741,6 @@ a.cta_button {
     -webkit-transform: scale(1.03, 1.03);
     -ms-transform: scale(1.03, 1.03);
     transform: scale(1.03, 1.03); }
-
-.light-font {
-  font-family: 'GravityLight'; }
 
 @media (min-width: 992px) {
   .block-12 img {
