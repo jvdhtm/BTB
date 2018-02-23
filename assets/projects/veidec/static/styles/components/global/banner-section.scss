@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
-    .banner-section-text{
+}
+ .banner-section-text{
         padding-top:82px;
         color:$white;
         h1{
@@ -15,7 +16,6 @@
             font-family:'GravityLight';
         }
     }
-}
 .apply-button{
     border: 2px solid $greenDark;
    	color: $white;
@@ -35,7 +35,4 @@
         box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
         transform: scale(1.03, 1.03);
     }
-}
-.light-font{
-        font-family: 'GravityLight';
 }
