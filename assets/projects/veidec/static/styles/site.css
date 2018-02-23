@@ -5993,6 +5993,15 @@ header #SearchForm .search {
     header #SearchForm .search {
       color: #484848; } }
 
+header #SearchForm .cross-remove {
+  position: absolute;
+  top: 33px;
+  right: 25px;
+  border-radius: 50%;
+  padding: 0px;
+  text-align: center;
+  width: 20px; }
+
 header #SearchForm .cross {
   height: 30px;
   overflow: hidden;
@@ -6039,7 +6048,7 @@ header #SearchForm .cross {
     right: 166px; } }
 
 header #SearchForm path {
-  fill: #fff; }
+  fill: #484848; }
   @media (min-width: 768px) {
     header #SearchForm path {
       fill: #484848; } }
@@ -6048,7 +6057,7 @@ header #SearchForm .search-btn-menu {
   font-size: 26px;
   background: transparent;
   border: none;
-  color: #fff;
+  color: #484848;
   position: absolute;
   left: 18px;
   top: 23px; }
@@ -6137,10 +6146,10 @@ header #SearchForm .form-group {
     padding-left: 50px;
     height: 45px;
     font-size: 18px;
-    border-bottom: thin solid #fff;
+    border-bottom: none;
     border-radius: 0px;
     background: transparent;
-    color: #fff; }
+    color: #484848; }
     @media (min-width: 768px) {
       header #SearchForm .form-group input {
         color: #484848;
