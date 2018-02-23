@@ -4295,7 +4295,7 @@ li.hs-breadcrumb-menu-item.last-crumb.first-crumb {
   display: none; }
 
 .col-centered {
-  margin-top: 41px; }
+  margin-top: 46px; }
   .col-centered h1 {
     text-align: center;
     margin: 0px;
@@ -5663,10 +5663,12 @@ body.expanded {
         position: relative; }
         .navigation .navbar-shift .login a, .navigation .navbar-shift.expanded .login a {
           padding: 10px 15px;
-          background: #405F6E;
+          background: #27AE61;
           text-align: center;
           color: #fff;
-          margin-left: 0px; } }
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          margin-bottom: 5px; } }
 
 @media (min-width: 992px) {
   .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
