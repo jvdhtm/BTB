@@ -5081,7 +5081,7 @@ header {
     padding: 8px 12px; }
     @media (min-width: 768px) {
       .brands img {
-        width: 6%; } }
+        width: 18%; } }
 
 .brands-overlay {
   display: none;
