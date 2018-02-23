@@ -50,14 +50,28 @@ header {
     top: 8px;
     font-size: 26px;
     right: 17px;
-    color: $white;
+    color: $black;
     background: transparent;
     border: 0;
+
     @include media('>=tablet') {
         color: $black;
         top: 20px;
         font-size: 26px;
         right: 30px;
+        &.navbar-toggle
+        {
+          display: block;
+        }
+          .icon-bar {
+            background-color: $black;
+          }
+
+          .icon-bar:nth-of-type(2)
+          {
+                background-color: transparent;
+          }
+
     }
 
   }
@@ -131,11 +145,7 @@ header {
       .search-menu
       {
         top: 0px;
-        max-height: 0px;
         height: 100vh;
-        -webkit-transition: max-height 0.5s ease-in-out;
-        -o-transition: max-height 0.5s ease-in-out;
-        transition: max-height 0.5s ease-in-out;
         left: 0px;
         position: fixed;
         width: 100%;
@@ -143,63 +153,30 @@ header {
         text-align: center;
         overflow: hidden;
         z-index: 20;
+        opacity: 1;
+        top: 0px;
+        display: none;
     }
 
-      .search-menu.expanded
-      {
-        top: 0px;
-        max-height: 100vh;
-        height: 100vh;
-        -webkit-transition: max-height 0.5s ease-in-out;
-        -o-transition: max-height 0.5s ease-in-out;
-        transition: max-height 0.5s ease-in-out;
-        left: 0px;
-          position: fixed;
-        width:  100%;
-        background: $grayDark;
-        text-align: center;
-        overflow: hidden;
-          z-index: 20;
-      }
+
 @include media('>=tablet') {
     .search-menu
     {
-      top: -15px;
-      max-height: 0px;
-      height: auto;
-      -webkit-transition: max-height 0.5s ease-in-out;
-      -o-transition: max-height 0.5s ease-in-out;
-      transition: max-height 0.5s ease-in-out;
+      top: 0px;
       left: 50%;
       position: absolute;
+      height: auto;
       width: 78%;
       background:$white;
       text-align: center;
       overflow: hidden;
       z-index: 20;
         box-shadow: 0px 0px 4px 1px $grayDark;
-            margin-left: -38%;
+      margin-left: -38%;
+      max-height: 400px;
   }
 
-    .search-menu.expanded
-    {
-      top: -15px;
-      max-height: 400px;
-      height: auto;
-      -webkit-transition: max-height 0.5s ease-in-out;
-      -o-transition: max-height 0.5s ease-in-out;
-      transition: max-height 0.5s ease-in-out;
-      left: 50%;
-      position: absolute;
-      width: 78%;
-      background: $white;
-      text-align: center;
-      overflow: hidden;
-      z-index: 20;
-      box-shadow: 0px 0px 4px 1px $grayDark;
-      margin-left: -38%;
-      overflow-y: hidden;
-    }
+
 }
 .form-group {
     width: 100%;
@@ -266,7 +243,7 @@ p.search-item-title {
 }
 
 .site-search-categories {
-    padding: 25px 0px;
+    padding-top: 10px;
     color: $gray;
     border-bottom: thin solid $gray;
     h1
@@ -276,7 +253,7 @@ p.search-item-title {
       margin-right: 30px;
     }
     .site-search-amounts {
-    font-size: 30px;
+    font-size: 25px;
     display: inline-block;
   }
 

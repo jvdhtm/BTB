@@ -67,7 +67,6 @@ li.hs-breadcrumb-menu-item.last-crumb.first-crumb {
     margin-top: 46px;
     h1{
     	text-align:center;
-    	margin:0px;
     	font-weight:bold;
     }
 
@@ -349,18 +348,7 @@ input[type="color"],
     margin-bottom: 12px;
     color: $white;
 }
-.site-search-btn {
-  border: 2px solid #27AE61;
-  font-size: 16px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background: #27AE61;
-  padding: 5px 50px;
-  margin-bottom: 12px;
-  color: $white;
-  height: 36px;
-  left: -10px;
-}
+
 .has-feedback {
   // Left Icon Input Padding
   .form-control {
@@ -493,7 +481,7 @@ a.cta_button {
 
 /*HR with Gradient*/
 .long-underline{
-  padding:2px;
+  padding:1px;
   border:0px;
   background-image: linear-gradient(to right,  #2986a2 , #00e262);
 }
