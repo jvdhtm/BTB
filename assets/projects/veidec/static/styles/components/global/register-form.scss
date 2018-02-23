@@ -1,12 +1,20 @@
 #hs_cos_wrapper_widget_1519139217104 {
-  @include media('>=desktop') {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-
+	padding-left:20px;
+	padding-right:20px;
+  	@include media('>=desktop') {
+    	padding-left: 100px;
+    	padding-right: 100px;
+  	}
+  	.hs-button{
+  		margin-top:5px;
+  		&:hover{
+  		border:2px solid $greenDark;
+  		color:$greenDark;
+  		background:$white;
+  		transform: translateY(-5px);
+  		}
+	}
 }
-
 
 .contact,.news-letter {
 
@@ -17,3 +25,4 @@
   }
 
 }
+

@@ -5894,10 +5894,22 @@ body.expanded {
 .wrap-recommended-product {
   margin-bottom: 30px; }
 
-@media (min-width: 1024px) {
-  #hs_cos_wrapper_widget_1519139217104 {
-    padding-left: 80px;
-    padding-right: 80px; } }
+#hs_cos_wrapper_widget_1519139217104 {
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (min-width: 1024px) {
+    #hs_cos_wrapper_widget_1519139217104 {
+      padding-left: 100px;
+      padding-right: 100px; } }
+  #hs_cos_wrapper_widget_1519139217104 .hs-button {
+    margin-top: 5px; }
+    #hs_cos_wrapper_widget_1519139217104 .hs-button:hover {
+      border: 2px solid #27ae61;
+      color: #27ae61;
+      background: #fff;
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px); }
 
 @media (min-width: 1024px) {
   .contact, .news-letter {
