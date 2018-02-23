@@ -18,10 +18,10 @@
 		color:$greyLight;
 	}
 	img{
-		width:30%;
+		width:18%;
 		padding:8px 12px;
 		@include media('>=tablet') {
-			width:18%;
+			width:6%;
 		}
 
 	}
