@@ -9,8 +9,9 @@ header {
   .navbar-form
   {
     border: none;
+    -webkit-box-shadow: initial;
     box-shadow: initial;
-    margin-top: 20px;
+    margin-top: 0px;
     position: relative;
   }
   .search
@@ -33,8 +34,9 @@ header {
   }
 .cross-remove {
     position: absolute;
-    top: 32px;
-    right: 25px;
+    top: 20px;
+    right: 30px;
+
     border-radius: 50%;
     padding: 0px;
     text-align: center;
@@ -47,10 +49,10 @@ header {
     position: absolute;
     z-index: 21;
     width: auto;
-    top: 8px;
+    top: 1px;
     font-size: 26px;
-    right: 17px;
-    color: $black;
+    right: 16px;
+    color: #484848;
     background: transparent;
     border: 0;
 
@@ -135,8 +137,8 @@ header {
            border: none;
            color: $black;
            position: absolute;
-          left: 18px;
-          top: 23px;
+          left: 30px;
+           top: 6px;
 
           @include media('>=tablet') {
               color: $black;
@@ -180,9 +182,13 @@ header {
 }
 .form-group {
     width: 100%;
-    padding: 20px;
-    border:none;
-        box-shadow: initial;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    -webkit-box-shadow: initial;
+    box-shadow: initial;
     input{
       border: none;
       width: 100%;
