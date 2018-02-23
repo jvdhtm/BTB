@@ -4648,7 +4648,7 @@ a.cta_button {
 
 /*HR with Gradient*/
 .long-underline {
-  padding: 1px;
+  padding: 2px;
   border: 0px;
   background-image: -webkit-gradient(linear, left top, right top, from(#2986a2), to(#00e262));
   background-image: -webkit-linear-gradient(left, #2986a2, #00e262);
