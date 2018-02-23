@@ -4732,6 +4732,10 @@ a.cta_button {
   .banner-section .banner-section-text {
     padding-top: 82px;
     color: #fff; }
+    .banner-section .banner-section-text h1 {
+      font-family: 'GravityBold'; }
+    .banner-section .banner-section-text h3 {
+      font-family: 'GravityLight'; }
 
 .apply-button {
   border: 2px solid #27ae61;
