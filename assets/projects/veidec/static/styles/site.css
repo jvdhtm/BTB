@@ -5081,11 +5081,11 @@ header {
     font-family: 'GravityRegular';
     color: #767676; }
   .brands img {
-    width: 30%;
+    width: 18%;
     padding: 8px 12px; }
     @media (min-width: 768px) {
       .brands img {
-        width: 18%; } }
+        width: 6%; } }
 
 .brands-overlay {
   display: none;
