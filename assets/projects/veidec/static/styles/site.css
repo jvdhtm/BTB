@@ -5987,7 +5987,7 @@ header #SearchForm .search {
 
 header #SearchForm .cross-remove {
   position: absolute;
-  top: 33px;
+  top: 32px;
   right: 25px;
   border-radius: 50%;
   padding: 0px;
