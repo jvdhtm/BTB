@@ -5001,6 +5001,8 @@ header {
   left: 0px;
   width: 100%;
   z-index: 10; }
+  header .navbar-header {
+    height: 60px; }
   header .fa-search {
     -webkit-text-stroke: 3px white; }
   header.sticky {

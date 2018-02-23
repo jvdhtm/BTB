@@ -11,27 +11,18 @@
 
 header {
 
-<<<<<<< HEAD
-position: absolute;
-top:0px;
-left:0px;
-width:100%;
-z-index: 10;
-.navbar-header {
-    height: 60px;
-}
-=======
   position: absolute;
   top:0px;
   left:0px;
   width:100%;
   z-index: 10;
+  .navbar-header {
+      height: 60px;
+  }
   .fa-search{
     -webkit-text-stroke: 3px white;
   }
 
-
->>>>>>> veidec
 &.sticky {
     position: fixed;
     background: $white;
