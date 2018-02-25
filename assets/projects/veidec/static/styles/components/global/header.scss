@@ -20,10 +20,7 @@ header {
       height: 60px;
   }
   .fa-search{
-    -webkit-text-stroke: 0;
-      @include media ('>=tablet') {
-      -webkit-text-stroke: 3px white;
-    }
+    -webkit-text-stroke: 3px white;
   }
 
 &.sticky {
@@ -36,42 +33,40 @@ header {
     width: 100% !important;
 }
 
-.hs_cos_wrapper_type_logo {
-margin-top: 5px !important;
-
-}
 .general_logo {
-    width: 100%;
+  position: absolute;
+  max-width: 90px;
+  top: 17px;
+  left: 10px;
+  z-index: 20;
 }
-.wrap-logo
-{
-  width: 100px;
-    float: left;
-  .span1 {
-     width: 100%;
-  }
-}
-.links {
-    width: calc( 100% - 100px );
-    float: left;
-}
+
 
   @include media ('>=tablet') {
-     .hs_cos_wrapper_type_logo {
+     .general_logo {
       margin-top: 5px !important;
-
+      position: absolute;
+      top: 10px;
+          left: -10px;
+      max-width: 100px;
   }
   }
   @include media ('>=tablet-portrait') {
-    	.hs_cos_wrapper_type_logo {
+    	.general_logo {
         margin-top: 5px !important;
-
+        position: absolute;
+        top: 10px;
+            left: 15px;
+            max-width: 100px;
     	}
     }
     @include media ('>=lgscreen') {
-        .hs_cos_wrapper_type_logo {
+        .general_logo {
           margin-top: 5px !important;
-
+          position: absolute;
+          top: 10px;
+              left: 15px;
+              max-width: 120px;
         }
       }
 }

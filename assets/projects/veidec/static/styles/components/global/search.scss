@@ -42,7 +42,7 @@ header {
 
 
     top: 13px;
-    right: 27px;
+    right: 24px;
 
     @include media('>=tablet') {
       top: 20px;
@@ -99,7 +99,7 @@ header {
           width: auto;
           top: -3px;
           font-size: 26px;
-          right: 120px;
+          right: 100px;
           color: $white;
           background: transparent;
           border: none;
@@ -107,11 +107,10 @@ header {
         }
         .cross
         {
-              right: 20px;
+              right: 9px;
         }
 
     }
-
 
       path {
           fill: $black;
@@ -128,7 +127,7 @@ header {
            color: $black;
            position: absolute;
            left: 20px;
-           top: 3px;
+           top: 6px;
 
           @include media('>=tablet') {
               color: $black;
@@ -158,7 +157,7 @@ header {
       left: 50%;
       position: absolute;
       height: auto;
-      width: 77%;
+      width: 79%;
       background:$white;
       text-align: center;
       overflow: hidden;
@@ -167,8 +166,6 @@ header {
       margin-left: -37%;
       max-height: 400px;
   }
-
-
 }
 .form-group {
   width: 100%;
@@ -180,9 +177,13 @@ header {
     padding-left: 0px;
     padding-right: 0px;
   }
+  @include media('>=xlscreen') {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
    @include media('>=lgscreen') {
-     padding-left: 10px;
-     padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   border: none;
   -webkit-box-shadow: initial;
