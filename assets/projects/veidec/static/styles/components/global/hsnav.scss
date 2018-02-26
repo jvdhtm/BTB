@@ -155,7 +155,8 @@
                             padding:10px 15px !important;
                             text-align: center;
                             opacity: 1;
-                            font-size: 15px;
+                            font-size:15px;
+                            font-family:'GravityLight';
                             margin:0px !important;
                           }
 
@@ -243,7 +244,7 @@
           .hs-menu-depth-1 {
             width: 100%;
             a{
-              font-size: 15px !important;
+              font-size: 17px !important;
             }
           }
         }
@@ -263,9 +264,7 @@
         ul {
           .hs-menu-depth-1 {
             a{
-              /*font-size: 15px !important;*/
-              font-size:17px !important;
-              font-family:'GravityLight';
+              font-size: 17px !important;
             }
           }
         }
