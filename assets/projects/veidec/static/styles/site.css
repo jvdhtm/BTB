@@ -5578,6 +5578,7 @@ body.expanded {
       .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
         width: calc( 100% - 75px);
         float: left;
+        padding-left: 36px;
         padding-top: 6px;
         margin: 0px; }
         .navigation .navbar-shift nav ul, .navigation .navbar-shift.expanded nav ul {
@@ -5604,7 +5605,7 @@ body.expanded {
               padding: 10px 15px !important;
               text-align: center;
               opacity: 1;
-              font-size: 15px;
+              font-size: 17px;
               font-family: 'GravityLight';
               margin: 0px !important; }
             .navigation .navbar-shift nav ul .hs-menu-depth-1 > ul.hs-menu-children-wrapper, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 > ul.hs-menu-children-wrapper {
