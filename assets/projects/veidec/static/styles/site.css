@@ -4816,7 +4816,7 @@ span.hs-form-required {
 
 .footer-icons {
   text-align: center; }
-  .footer-icons .col-md-4 {
+  .footer-icons .col-sm-4 {
     display: none; }
   .footer-icons .col-xs-6 {
     display: block; }
@@ -4825,7 +4825,7 @@ span.hs-form-required {
     .footer-icons .col-xs-6 p:nth-child(7) {
       margin-bottom: 40px; }
   @media (min-width: 768px) {
-    .footer-icons .col-md-4 {
+    .footer-icons .col-sm-4 {
       display: block; }
     .footer-icons .col-xs-6 {
       display: none; } }

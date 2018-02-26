@@ -19,7 +19,7 @@
     }
 }
 .footer-icons{
-    .col-md-4{
+    .col-sm-4{
         display:none;
     }
       text-align: center;
@@ -33,7 +33,7 @@
         }
     }
     @include media('>=tablet') {
-        .col-md-4{
+        .col-sm-4{
             display:block;
         }
         .col-xs-6{
