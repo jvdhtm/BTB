@@ -20,7 +20,10 @@ header {
       height: 65px;
   }
   .fa-search{
+    -webkit-text-stroke: 0;
+    @include media ('>=tablet') {
     -webkit-text-stroke: 3px white;
+    }
   }
 
 &.sticky {

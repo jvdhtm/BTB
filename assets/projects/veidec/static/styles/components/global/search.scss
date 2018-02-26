@@ -38,11 +38,8 @@ header {
   }
 .cross-remove {
     position: absolute;
-
-
-
-    top: 13px;
-    right: 24px;
+    top: 12px;
+    right: 27px;
 
     @include media('>=tablet') {
       top: 20px;
@@ -99,7 +96,7 @@ header {
           width: auto;
           top: -3px;
           font-size: 26px;
-          right: 100px;
+          right: 134px;
           color: $white;
           background: transparent;
           border: none;
@@ -127,7 +124,7 @@ header {
            color: $black;
            position: absolute;
            left: 20px;
-           top: 6px;
+           top: 3px;
 
           @include media('>=tablet') {
               color: $black;

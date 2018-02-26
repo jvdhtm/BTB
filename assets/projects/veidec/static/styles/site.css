@@ -5009,7 +5009,10 @@ header {
   header .navbar-header {
     height: 65px; }
   header .fa-search {
-    -webkit-text-stroke: 3px white; }
+    -webkit-text-stroke: 0; }
+    @media (min-width: 768px) {
+      header .fa-search {
+        -webkit-text-stroke: 3px white; } }
   header.sticky {
     position: fixed;
     background: #fff;
@@ -5233,8 +5236,8 @@ header {
   background: transparent;
   border-radius: 50%;
   overflow: hidden;
-  height: 120px;
-  width: 120px;
+  height: 160px;
+  width: 160px;
   margin: 0 auto;
   margin-bottom: 40px; }
   .image-box img {
@@ -5581,7 +5584,7 @@ body.expanded {
       height: auto;
       background: transparent; }
       .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
-        width: calc( 100% - 75px);
+        width: calc( 100% - 115px);
         float: left;
         padding-left: 36px;
         padding-top: 6px;
@@ -5607,7 +5610,7 @@ body.expanded {
             .navigation .navbar-shift nav ul .hs-menu-depth-1:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:after {
               display: none !important; }
             .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
-              padding: 10px 15px !important;
+              padding: 10px 10px !important;
               text-align: center;
               opacity: 1;
               font-size: 17px;
@@ -5662,7 +5665,7 @@ body.expanded {
         margin-left: 0px;
         position: relative; }
         .navigation .navbar-shift .login a, .navigation .navbar-shift.expanded .login a {
-          padding: 10px 15px;
+          padding: 10px 20px;
           background: #27AE61;
           text-align: center;
           color: #fff;
@@ -5867,10 +5870,6 @@ body.expanded {
   min-height: 350px;
   height: 100%; }
 
-.recommended-products-container {
-  margin-left: 5%;
-  margin-right: 5%; }
-
 .recommended-products {
   text-align: center; }
   .recommended-products .text {
@@ -6000,8 +5999,8 @@ header #SearchForm .search {
 
 header #SearchForm .cross-remove {
   position: absolute;
-  top: 13px;
-  right: 24px;
+  top: 12px;
+  right: 27px;
   border-radius: 50%;
   padding: 0px;
   text-align: center;
@@ -6045,7 +6044,7 @@ header #SearchForm .cross {
     width: auto;
     top: -3px;
     font-size: 26px;
-    right: 100px;
+    right: 134px;
     color: #fff;
     background: transparent;
     border: none; }
@@ -6065,7 +6064,7 @@ header #SearchForm .search-btn-menu {
   color: #484848;
   position: absolute;
   left: 20px;
-  top: 6px; }
+  top: 3px; }
   @media (min-width: 768px) {
     header #SearchForm .search-btn-menu {
       color: #484848; } }
