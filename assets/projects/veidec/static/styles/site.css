@@ -4695,6 +4695,11 @@ a.cta_button {
     width: 80%; }
     .banner .banner-title h1 {
       font-size: 64px; }
+    .banner .banner-title h3 {
+      font-family: 'GravityLight'; }
+      @media (min-width: 768px) {
+        .banner .banner-title h3 {
+          font-family: 'Gravityregular'; } }
     .banner .banner-title span {
       padding-left: 10px; }
   .banner .banner-btn {
