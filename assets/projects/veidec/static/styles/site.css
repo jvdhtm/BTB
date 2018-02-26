@@ -5014,8 +5014,8 @@ header {
     width: 100% !important; }
   header .general_logo {
     position: absolute;
-    max-width: 90px;
-    top: 17px;
+    max-width: 120px;
+    top: 20px;
     left: 10px;
     z-index: 20; }
   @media (min-width: 768px) {
@@ -5446,7 +5446,8 @@ footer .hs_cos_wrapper_widget {
   background-color: transparent; }
 
 .navbar-toggle {
-  z-index: 9; }
+  z-index: 9;
+  margin-top: 12px; }
   .navbar-toggle .icon-bar {
     background-color: #fff; }
 
@@ -5982,7 +5983,7 @@ header #SearchForm .search {
   position: absolute;
   z-index: 20;
   width: auto;
-  top: 3px;
+  top: 5px;
   font-size: 24px;
   right: 57px;
   color: #fff;
