@@ -6004,7 +6004,7 @@ header #SearchForm .cross-remove {
     header #SearchForm .cross-remove {
       top: 20px;
       right: 15px;
-      display: none; } }
+      display: none !important; } }
 
 header #SearchForm .cross {
   height: 30px;
