@@ -5687,7 +5687,7 @@ body.expanded {
 
 @media (min-width: 1200px) {
   .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
-    padding-right: 80px;
+    padding-right: 50px;
     padding-left: 150px;
     padding-top: 7px; }
     .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
