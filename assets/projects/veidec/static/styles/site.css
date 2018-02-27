@@ -5162,8 +5162,8 @@ header {
   padding: 8px 8px 12px 8px; }
 
 .ratings .reviews {
-  padding-bottom: 20px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-bottom: 44px; }
   @media (min-width: 768px) {
     .ratings .reviews {
       padding-bottom: 72px;
@@ -5205,7 +5205,7 @@ header {
 
 .product-use {
   text-align: center;
-  padding: 20px; }
+  padding: 20px 20px 44px 20px; }
   @media (min-width: 768px) {
     .product-use {
       padding: 72px; } }
@@ -5216,6 +5216,10 @@ header {
 
 .product-use-silver {
   padding-bottom: 72px; }
+
+.img-bg {
+  height: 160px;
+  width: 160px; }
 
 .product-use-silver, .base--silverLight {
   text-align: center; }
@@ -5870,6 +5874,9 @@ body.expanded {
   min-height: 350px;
   height: 100%; }
 
+.recommended-products-container {
+  /*margin:0 44px;*/ }
+
 .recommended-products {
   text-align: center; }
   .recommended-products .text {
@@ -5979,7 +5986,7 @@ header #SearchForm .navbar-form {
   position: relative; }
   @media (min-width: 768px) {
     header #SearchForm .navbar-form {
-      margin-top: 0px; } }
+      margin-top: 7px; } }
 
 header #SearchForm .search {
   height: 50px;
@@ -6089,7 +6096,7 @@ header #SearchForm .search-menu {
     left: 50%;
     position: absolute;
     height: auto;
-    width: 79%;
+    width: 75%;
     background: #fff;
     text-align: center;
     overflow: hidden;

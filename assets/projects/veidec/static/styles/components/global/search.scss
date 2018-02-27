@@ -14,7 +14,7 @@ header {
     margin-top: 50px;
     position: relative;
     @include media('>=tablet') {
-      margin-top: 0px;
+      margin-top: 7px;
     }
 
   }
@@ -154,7 +154,7 @@ header {
       left: 50%;
       position: absolute;
       height: auto;
-      width: 79%;
+      width: 75%;
       background:$white;
       text-align: center;
       overflow: hidden;
