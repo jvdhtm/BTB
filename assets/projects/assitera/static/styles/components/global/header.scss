@@ -1,13 +1,16 @@
 .society_logo {
 	z-index: 1;
 	    position: relative;
+			    margin-top: 15px;
+					@media screen and (orientation: landscape) {
+						 margin-top: 30px;
+					}
 	a {
 		height: 100%;
-    width: 170px;
+  	    width: 170px;
     margin: auto;
 	}
 }
-
 .banner {
 	overflow: hidden;
 }
@@ -15,6 +18,7 @@
 	position: absolute;
 	top: 5px;
 	left: 10px;
+	  margin-top: 0px;
 	a {
 		height: 100%;
     width: 50px;
@@ -33,19 +37,29 @@
 @include media ('>=tablet') {
 	.society_logo {
 		max-width: 250px;
-    margin-left: 20px !important;
-    margin-top: 15px;
+    margin-left: 130px !important;
+    margin-top: 40px;
     height: auto;
     width: 205px;
     height: 160px;
     position: absolute;
-    top: 40px;
+    top: 90px;
 		a {
 			height: 100%;
-			width: 130px;
+			width: 170px;
 		}
 	}
 }
+
+@include media ('>=desktop') {
+	.society_logo {
+		a {
+			height: 100%;
+			width: 243px;
+		}
+	}
+}
+
 
 .st8 {
 	fill: #FFF
@@ -56,7 +70,7 @@ svg {
 	path,
 	polygon {
 		fill-opacity: 0;
-		fill: #91f5c4;
+		fill: $defCyan;
 		stroke: #000;
 		stroke-width: 2px;
 		stroke-dasharray: 3319px;

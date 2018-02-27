@@ -13,14 +13,14 @@ module {}
 }
 
 body {
-  font-family: 'UniversBold';
+  font-family: 'FilsonSoftRegular';
 }
 
 a {
   color: $defFontColor;
   display: block;
   text-decoration: none;
-  font-family: 'UniversBold' !important;
+  font-family: 'FilsonSoftRegular' !important;
 }
 
 a:hover {
@@ -32,7 +32,11 @@ a:hover {
 .nopadding {
   padding: 0px;
 }
-
+@include media('<=tablet') {
+  .banner {
+      height: 50vh !important;
+  }
+}
 .home .block-12 {
     @include media('>=tablet') {
       margin-top: 0px;
@@ -126,6 +130,101 @@ elink {
 
 }
 
+@include media('>=tablet-portrait') {
+  /* Primary colors */
+
+  .def-md-red {
+    background-color: $defRed;
+  }
+
+  .def-md-orange {
+    background-color: $defOrange;
+  }
+
+  .def-md-yellow {
+    background-color: $defYellow;
+  }
+
+  .def-md-turquoise {
+    background-color: $defTurquoise;
+  }
+
+  .def-md-lightBlue {
+    background-color: $defLightBlue;
+  }
+
+  .def-md-darkBlue {
+    background-color: $defDarkBlue;
+  }
+
+  .def-md-darkerBlue {
+    background-color: $defDarkBlueDark;
+  }
+
+  .def-md-purple {
+    background-color: $defDarkPurple;
+  }
+
+  .grad-md-darkerBlue-Blue {
+    background: -webkit-gradient(linear, left top, right top, from($defDarkBlueDark), to($defLightBlueDark));
+    background: linear-gradient(to right, $defDarkBlueDark, $defLightBlueDark);
+  }
+
+  .grad-md-darkerBlue-turquoise {
+    background: -webkit-gradient(linear, left top, right top, from($defDarkBlueDark), to($defTurquoise));
+    background: linear-gradient(to right, $defDarkBlueDark, $defTurquoise);
+  }
+
+
+  /* Base colors */
+
+  .base-md-black {
+    background-color: $black;
+  }
+
+  .base-md-blackLight {
+    background-color: $blackLight;
+  }
+
+  .base-md-grey {
+    background-color: $grey;
+  }
+
+  .base-md-greyLight {
+    background-color: $greyLight;
+  }
+
+  .base-md-silver {
+    background-color: $silver;
+  }
+
+  .base-md-silverLight {
+    background-color: $silverLight;
+  }
+
+  .base-md-white {
+    background-color: $white;
+  }
+
+
+}
+
+
+
+.relative{
+	position:relative;
+}
+.overlay-yellow{
+	position: absolute;
+    height: 300px;
+    width: 100%;
+		background: linear-gradient(rgba(255,0,0,0), $defYellow);
+		background-image: -webkit-linear-gradient(rgba(255, 0, 0, 0), rgba(255, 254, 251, 0) 0%, $defYellow 98%);
+    z-index: 0;
+    bottom: 10px;
+    left: 0;
+}
+
 
 /* Primary colors */
 
@@ -162,13 +261,19 @@ elink {
 }
 
 .grad--darkerBlue-Blue {
-  background: -webkit-gradient(linear, left top, right top, from($defDarkBlueDark), to($defLightBlueDark));
-  background: linear-gradient(to right, $defDarkBlueDark, $defLightBlueDark);
+  background: -webkit-gradient(linear, left top, right top, from($defDarkBlueDark), to($defLightBlueLightMed));
+  background: linear-gradient(to right, $defDarkBlueDark, $defLightBlueLightMed);
 }
 
 .grad--darkerBlue-turquoise {
   background: -webkit-gradient(linear, left top, right top, from($defDarkBlueDark), to($defTurquoise));
   background: linear-gradient(to right, $defDarkBlueDark, $defTurquoise);
+}
+
+
+.grad--darkerCyan-Cyan {
+  background: -webkit-gradient(linear, left top, right top, from($defCyandarker), to($defCyan));
+  background: linear-gradient(to right, $defCyandarker, $defCyan);
 }
 
 
@@ -439,6 +544,20 @@ a.cta_button {
   width: 100%;
 }
 
+
+.container-max
+{
+  width: 100%;
+  margin-right: auto;
+margin-left: auto;
+}
+@include media('>=lgscreen') {
+
+  .container-max
+  {
+      width: 1170px;
+  }
+}
 
 .cta_button:hover {
   color: #101010 !important;

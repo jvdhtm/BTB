@@ -9,11 +9,14 @@
         margin: 0px;
         padding: 0px;
         a {
+          width: 90%;
           padding: 10px 15px;
           text-decoration: none;
-          padding-top: 10px;
-          width: 90%;
           font-size: 15px;
+          @include media('>=tablet') {
+                    padding: 20px 30px;
+                    font-size: 20px;
+          }
         }
 
         ul.hs-menu-children-wrapper {
@@ -79,6 +82,7 @@
         background: transparent;
         width: 70%;
         float: left;
+        padding-left: 100px;
           ul {
               display: flex;
               a {
@@ -109,7 +113,7 @@
               }
               ul.hs-menu-children-wrapper {
                   position: absolute;
-                  top: 41px;
+                  top: 65px;
                   background: $defTurquoise;
                   width: 200px;
                   z-index: 10;
@@ -120,9 +124,9 @@
                     margin .25s,
                     padding .25s,
                     opacity .5s .25s;
-                    font-size: 15px;
+                    font-size: 20px;
                     opacity: 1;
-                    padding: 10px 15px;
+                    padding: 20px 30px;
                   }
               }
             }
@@ -172,7 +176,7 @@
         padding: 0px;
         a {
               display: block;
-              padding: 10px 15px;
+                  padding: 15px 15px;
               font-size: 15px;
           }
         a:hover{
@@ -188,8 +192,8 @@
         ul
         {
           a {
-            padding: 10px 10px;
-            font-size: 15px;
+            padding: 20px 30px;
+            font-size: 20px;
           }
         }
 
@@ -205,14 +209,16 @@
   .path {
     display: none;
     @include media('>=tablet') {
-      width: 10%;
-      float: left;
       display: block;
+      position: absolute;
+      right: 0px;
+          top: 0px;
       a{
-        padding: 10px 15px;
-        font-size: 15px;
+        padding: 20px 30px;
+        font-size: 20px;
         text-align: center;
         background: #3e5f6b;
       }
     }
+
   }
