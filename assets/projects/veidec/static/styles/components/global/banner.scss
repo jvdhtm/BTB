@@ -19,10 +19,13 @@
 			position: absolute;
 			width: 90%;
 			z-index: 5;
-			bottom: 25%;
+			bottom: 10%;
 			left: 50%;
 			margin-left: -40%;
 			width: 80%;
+			@include media('>=tablet') {
+	    	 bottom: 25%;
+	    }
 	}
 	.banner-title {
 		-webkit-animation: intro-fade 1.5s linear;
@@ -35,6 +38,7 @@
 	    left: 50%;
 	    margin-left: -40%;
 	    width: 80%;
+	  
 		h1
 		{
 		  font-size: 64px;

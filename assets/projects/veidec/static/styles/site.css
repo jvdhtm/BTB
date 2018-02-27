@@ -4678,10 +4678,13 @@ a.cta_button {
     position: absolute;
     width: 90%;
     z-index: 5;
-    bottom: 25%;
+    bottom: 10%;
     left: 50%;
     margin-left: -40%;
     width: 80%; }
+    @media (min-width: 768px) {
+      .banner .banner-section-text {
+        bottom: 25%; } }
   .banner .banner-title {
     -webkit-animation: intro-fade 1.5s linear;
     animation: intro-fade 1.5s linear;
@@ -5728,11 +5731,17 @@ body.expanded {
   @media (min-width: 768px) {
     .desktop-news-social-icons {
       display: block;
-      margin-bottom: 10px; }
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 10px;
+      /*.fa{
+			font-size:150%;
+			padding:0px 6px 0px 0px;
+		}*/ }
       .desktop-news-social-icons .fa-twitter, .desktop-news-social-icons .fa-envelope, .desktop-news-social-icons .fa-link {
         font-size: 126%;
         padding: 0px 4px; }
-      .desktop-news-social-icons .fa {
+      .desktop-news-social-icons .fab {
         font-size: 150%;
         padding: 0px 6px 0px 0px; }
       .desktop-news-social-icons a {

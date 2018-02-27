@@ -29,12 +29,18 @@
 	display:none;
 	@include media('>=tablet') {
 		display:block;
+		position:absolute;
+		bottom:0;
 		margin-bottom:10px;
 		.fa-twitter, .fa-envelope, .fa-link{
 			font-size:126%;
 			padding:0px 4px;
 		}
-		.fa{
+		/*.fa{
+			font-size:150%;
+			padding:0px 6px 0px 0px;
+		}*/
+		.fab{
 			font-size:150%;
 			padding:0px 6px 0px 0px;
 		}
