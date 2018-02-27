@@ -4844,9 +4844,12 @@ span.hs-form-required {
 span.hs-form-required {
   position: absolute;
   color: #BC261A;
-  top: 35px;
-  right: 8px;
+  top: 20px;
+  right: 5px;
   z-index: 2; }
+  @media (min-width: 768px) {
+    span.hs-form-required {
+      top: 32px; } }
 
 .input {
   position: relative; }
