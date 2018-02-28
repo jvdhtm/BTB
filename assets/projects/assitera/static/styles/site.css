@@ -4627,7 +4627,7 @@ a.cta_button {
 @media (min-width: 1024px) {
   .society_logo a {
     height: 100%;
-    width: 243px; } }
+    width: 190px; } }
 
 svg path,
 svg polygon {
@@ -5441,11 +5441,11 @@ span.hs-form-required {
         text-shadow: 1px 1px 4px #373737; } }
   @media (min-width: 1200px) {
     .text-logo {
-      width: 600px;
+      width: 500px;
       margin-top: 140px;
       margin-left: 100px; }
       .text-logo p {
-        font-size: 25px; } }
+        font-size: 20px; } }
 
 /*********************
   Waves
