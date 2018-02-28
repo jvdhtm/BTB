@@ -1,22 +1,49 @@
 .block-12 {
+
+    padding-left: 50px;
+    padding-right: 50px;
   @include media('>=tablet-portrait')
    {
+     padding-left: 20px;
+     padding-right: 20px;
      img {
        position: absolute;
        height: 100%;
      }
      .text {
           padding: 90px;
+          padding-left: 140px;
       }
-   }
+
     .image-box {
         position: relative;
         height: 100%;
         width: 100%;
-        min-height: 400px;
+        min-height: 512px;
+        min-width: 413px;
         margin: 0px !important;
         background-position: 50%;
         background-size: cover;
+        img {
+          position: absolute;
+          width: 100%;
+        }
+    }
+  }
 
+  @include media('>=lgscreen')
+  {
+    .text {
+         padding: 90px;
+     }
+  }
+
+    h2 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 18px;
+    	font-weight: 300;
+      line-height: 27px;
     }
 }

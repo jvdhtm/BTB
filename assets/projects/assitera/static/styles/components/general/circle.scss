@@ -71,6 +71,7 @@
     position: relative;
     bottom: 0px;
     width: 100%;
+
 background: $black;
 opacity: .9;
     padding-bottom: 20px;
@@ -78,14 +79,29 @@ opacity: .9;
     display: inline-block;
     }
 border-radius: 20px;
+
 @include media('>=tablet-portrait') {
-    left: 50%;
-    width: 100%;
-    margin-left: -50%;
-    padding-left: 5%;
-    padding-left: 12%;
-    min-height: 300px;
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  padding-left: 5%;
+  padding-left: 12%;
+  min-height: 400px;
+  margin-top: -70px;
   }
+@include media('>=lgscreen') {
+  left: 50%;
+  width: 80%;
+  margin-left: -40%;
+  padding-left: 5%;
+  padding-left: 12%;
+  min-height: 400px;
+  margin-top: -70px;
+  }
+
+
+
+
 }
 
 .rectangle {
@@ -193,9 +209,9 @@ padding-top: 20px;
         padding-right: 40px;
         h3 {
           top: 15px;
-          left: 38%;
+          left: 41%;
           position: absolute;
-              font-size: 48px;
+              font-size: 40px;
         }
         .cta_button {
 
@@ -207,9 +223,16 @@ padding-top: 20px;
         }
 
     }
+
+      .rectangle.small {
+        display: block;
+        top: 70px;
+        height: 200px;
+      }
+
     .circle-rect {
-      height: 433px;
-      width: 433px;
+      height: 400px;
+width: 400px;
       border-radius: 50%;
       border-radius: 50%;
       -webkit-box-shadow: 0 4px 14px 2px #e5e5e5;
@@ -226,6 +249,22 @@ padding-top: 20px;
     }
 
 }
+
+@include media('>=lgscreen') {
+  .rectangle {
+    h3 {
+      top: 15px;
+      left: 38%;
+      position: absolute;
+          font-size: 48px;
+    }
+  }
+  .circle-rect {
+    height: 433px;
+    width: 433px;
+  }
+}
+
 @include media('>=tablet-portrait') {
   .circle {
     height: 545px;

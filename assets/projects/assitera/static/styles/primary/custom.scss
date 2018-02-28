@@ -51,6 +51,10 @@ elink {
 }
 
 
+
+
+
+
 @include media('>=tablet') {
   /* Primary colors */
 
@@ -128,6 +132,22 @@ elink {
   }
 
 
+}
+
+.wrapper {
+  @include media('>=tablet-portrait') {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+}
+
+
+.title {
+  font-size: 64px;
+  text-align: center;
+  color:$defDarkBlue;
 }
 
 @include media('>=tablet-portrait') {
@@ -209,7 +229,22 @@ elink {
 
 }
 
-
+.show-more-button {
+    border: 2px solid $green;
+    color: $white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: transparent;
+    padding: 10px 10px;
+    margin-top: 30px;
+    background: $green;
+    left: 50%;
+    width: 200px;
+    position: relative;
+    margin-left: -100px;
+    margin-bottom: 30px;
+}
 
 .relative{
 	position:relative;
@@ -223,7 +258,48 @@ elink {
     z-index: 0;
     bottom: 10px;
     left: 0;
+    display: inline-block;
 }
+
+
+
+.def-overlay--red {
+  background: linear-gradient($defRedLight,  rgba(255, 255, 255, 0));
+}
+
+.def-overlay--orange {
+    background: linear-gradient($defOrange,  rgba(255, 255, 255, 0));
+}
+
+.def-overlay--yellow {
+  background: linear-gradient($defYellow,  rgba(255, 255, 255, 0));
+
+}
+
+.def-overlay--turquoise {
+  background: linear-gradient($defTurquoise,  rgba(255, 255, 255, 0));
+
+}
+
+.def-overlay--lightBlue {
+    background: linear-gradient($defLightBlue,  rgba(255, 255, 255, 0));
+}
+
+.def-overlay--darkBlue {
+
+  background: linear-gradient($defDarkBlue,  rgba(255, 255, 255, 0));
+}
+
+.def-overlay--darkerBlue {
+
+  background: linear-gradient($defDarkBlueDark,  rgba(255, 255, 255, 0));
+}
+
+.def-overlay--purple {
+
+  background: linear-gradient($defDarkPurple,  rgba(255, 255, 255, 0));
+}
+
 
 
 /* Primary colors */
