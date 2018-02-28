@@ -96,35 +96,35 @@
 .circle-rect {
 
     .circle-rect__consult,
-    .circle-rect__company {
-        display: inline-block;
-        width: 100%;
-        b {
-            float: left;
-            width: 95%;
-            line-height: 1em;
-            margin-top: 0px;
-            text-align: center;
-            color: $white;
-            font-size: 35px;
-            font-weight: 600;
+
+
+
+    .circle-texts {
+
+        padding-left: 40px;
+        @include media('>=tablet') {
+
+              padding-left: 109px;
+            padding-top: 88px;
         }
-        span {
-            float: left;
-            width: 75%;
-            line-height: 1em;
-            margin-top: .1em;
-            text-align: right;
-            color: $white;
-            font-weight: 600;
-            font-size: 18px;
+        .each {
+            text-align: left;
         }
+
+        .each.numbers {
+          color: #fff;
+          font-size: 35px;
+          font-weight: 600;
+      }
+
+      .each.text {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+            margin-left: 20px;
+      }
     }
-    .circle-rect__company {
-        b {
-            margin-top: 0.8em;
-        }
-    }
+
 }
 
 

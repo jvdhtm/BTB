@@ -5263,32 +5263,27 @@ footer {
     -moz-border-radius: 28; }
 
 .circle-rect .circle-rect__consult,
-.circle-rect .circle-rect__company {
-  display: inline-block;
-  width: 100%; }
-  .circle-rect .circle-rect__consult b,
-  .circle-rect .circle-rect__company b {
-    float: left;
-    width: 95%;
-    line-height: 1em;
-    margin-top: 0px;
-    text-align: center;
+.circle-rect .circle-texts {
+  padding-left: 40px; }
+  @media (min-width: 768px) {
+    .circle-rect .circle-rect__consult,
+    .circle-rect .circle-texts {
+      padding-left: 109px;
+      padding-top: 88px; } }
+  .circle-rect .circle-rect__consult .each,
+  .circle-rect .circle-texts .each {
+    text-align: left; }
+  .circle-rect .circle-rect__consult .each.numbers,
+  .circle-rect .circle-texts .each.numbers {
     color: #fff;
     font-size: 35px;
     font-weight: 600; }
-  .circle-rect .circle-rect__consult span,
-  .circle-rect .circle-rect__company span {
-    float: left;
-    width: 75%;
-    line-height: 1em;
-    margin-top: .1em;
-    text-align: right;
+  .circle-rect .circle-rect__consult .each.text,
+  .circle-rect .circle-texts .each.text {
     color: #fff;
+    font-size: 20px;
     font-weight: 600;
-    font-size: 18px; }
-
-.circle-rect .circle-rect__company b {
-  margin-top: 0.8em; }
+    margin-left: 20px; }
 
 @media (min-width: 768px) {
   .circle {
