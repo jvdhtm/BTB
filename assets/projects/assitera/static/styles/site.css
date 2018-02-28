@@ -5412,24 +5412,33 @@ span.hs-form-required {
   width: auto !important; }
 
 .text-logo {
-  margin-top: -150px;
+  margin-top: -20vh;
   width: 100%;
   padding-left: 20px;
-  position: absolute; }
+  position: absolute;
+  padding-right: 20px; }
+  @media screen and (orientation: landscape) {
+    .text-logo {
+      margin-top: -10vh; } }
+  .text-logo p {
+    font-size: 15px; }
   @media (min-width: 768px) {
     .text-logo {
       position: absolute;
       top: 200px;
       width: 500px;
-      margin-top: 0px; }
+      margin-left: 130px;
+      margin-top: 80px; }
       .text-logo p {
-        color: #fff; } }
+        color: #fff;
+        text-shadow: 1px 1px 4px #373737; } }
   @media (min-width: 1200px) {
     .text-logo {
-      width: 500px; } }
-  @media (min-width: 1600px) {
-    .text-logo {
-      width: 300px; } }
+      width: 600px;
+      margin-top: 140px;
+      margin-left: 100px; }
+      .text-logo p {
+        font-size: 25px; } }
 
 /*********************
   Waves
