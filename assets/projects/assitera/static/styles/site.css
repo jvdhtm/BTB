@@ -4579,7 +4579,11 @@ a.cta_button {
 
 .society_logo {
   z-index: 1;
-  position: relative; }
+  position: relative;
+  margin-top: 15px; }
+  @media screen and (orientation: landscape) {
+    .society_logo {
+      margin-top: 30px; } }
   .society_logo a {
     height: 100%;
     width: 170px;
@@ -4591,7 +4595,8 @@ a.cta_button {
 .society_logo.sp {
   position: absolute;
   top: 5px;
-  left: 10px; }
+  left: 10px;
+  margin-top: 0px; }
   .society_logo.sp a {
     height: 100%;
     width: 50px;
@@ -4608,19 +4613,21 @@ a.cta_button {
 @media (min-width: 768px) {
   .society_logo {
     max-width: 250px;
-    margin-left: 20px !important;
-    margin-top: 15px;
+    margin-left: 130px !important;
+    margin-top: 40px;
     height: auto;
     width: 205px;
     height: 160px;
     position: absolute;
-    top: 40px; }
+    top: 90px; }
     .society_logo a {
       height: 100%;
-      width: 130px; } }
+      width: 170px; } }
 
-.st8 {
-  fill: #FFF; }
+@media (min-width: 1024px) {
+  .society_logo a {
+    height: 100%;
+    width: 243px; } }
 
 svg path,
 svg polygon {
