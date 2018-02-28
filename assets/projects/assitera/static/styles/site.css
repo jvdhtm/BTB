@@ -4858,9 +4858,11 @@ footer {
   display: none; }
   @media (min-width: 768px) {
     .path {
-      width: 10%;
-      float: left;
-      display: block; }
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 10%; }
       .path a {
         padding: 10px 15px;
         font-size: 15px;

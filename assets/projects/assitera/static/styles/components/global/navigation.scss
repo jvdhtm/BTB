@@ -205,9 +205,11 @@
   .path {
     display: none;
     @include media('>=tablet') {
-      width: 10%;
-      float: left;
       display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 10%;
       a{
         padding: 10px 15px;
         font-size: 15px;
