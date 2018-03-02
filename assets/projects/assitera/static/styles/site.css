@@ -5629,6 +5629,54 @@ span.hs-form-required {
       .text-logo p {
         font-size: 25px; } }
 
+.carousel {
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 90%; }
+  .carousel .item {
+    display: block;
+    position: relative;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px black;
+    width: 40%;
+    z-index: 0;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    display: none; }
+    .carousel .item img {
+      width: 100%; }
+  .carousel .item.active {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    z-index: 1;
+    display: block;
+    left: 50%;
+    margin-left: -20%; }
+  .carousel .item.next {
+    position: absolute;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    z-index: 0;
+    display: block;
+    top: 0px;
+    right: -10%; }
+  .carousel .item.pre {
+    position: absolute;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    z-index: 0;
+    display: block;
+    top: 0px;
+    left: -10%; }
+
 /*********************
   Waves
 **********************/

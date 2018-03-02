@@ -1,0 +1,52 @@
+.carousel
+{
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 90%;
+ .item {
+  	display: block;
+  	position: relative;
+  	transform: scale(0.9);
+    box-shadow: 0 0 20px black;
+    width: 40%;
+    z-index: 0;
+    transition: all 0.1s ease;
+    display: none;
+    img{
+      width: 100%;
+    }
+
+  }
+
+    .item.active {
+    	transform: scale(1);
+      z-index: 1;
+      display: block;
+      left: 50%;
+      margin-left: -20%;
+    }
+
+    .item.next {
+      position: absolute;
+      transform: scale(0.9);
+      z-index:0;
+      display: block;
+      top: 0px;
+      right: -10%;
+    }
+
+    .item.pre {
+      position: absolute;
+      transform: scale(0.9);
+      z-index: 0;
+      display: block;
+      top: 0px;
+      left: -10%;
+    }
+    .item.transition {
+
+
+    }
+
+}

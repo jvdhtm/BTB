@@ -1,21 +1,120 @@
-
-
-
-
 <div class="row">
-  <div class="col-xs-12">
-    <div id="carousel">
 
-    </div>
-  </div>
+  <div class="events col-xs-12">
+    <ul class="carousel">
+
+      <li class="item pre" >
+        <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
+      </li>
+      <li class="item active" >
+        <img src="https://www.asociety.se/hubfs/Milj%C3%B6_m%C3%A4nniskor-1.jpg?t=1519305630030" />
+      </li>
+      <li class="item next" >
+        <img src="https://www.asociety.se/hubfs/Per-Anders%20och%20Jennie%20omgivning.jpg?t=1519305630030" />
+      </li>
+      <li class="item" >
+        <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
+      </li>
+      <li class="item" >
+        <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
+      </li>
+      <li class="item" >
+        <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
+      </li>
+    </ul>
+
+
+
 </div>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("#carousel").waterwheelCarousel({
-      // include options like this:
-      // (use quotes only for string values, and no trailing comma after last option)<img src="https://cdn2.hubspot.net/hubfs/4226853/Assistera/Images/Default/136871-IBSweb_JSwYuMn.jpg">
-      // option: value,
-      // option: value
-    });
-  });
+</div>
+<script>
+
+//next button click function
+$('.pre--js').click(function() {
+
+
+
+});
+
+//prev button click function
+$('.item').on('click', function (e) {
+  if($(this).hasClass('next'))
+  {
+      swipleft();
+  }
+  if($(this).hasClass('pre'))
+  {
+    swipRight();
+  }
+
+
+});
+
+
+function swipleft()
+{
+  if($('.item.next').next().length > 0)
+  {
+    $('.item.next').removeClass('next').next().addClass('next');
+  }
+  else {
+    $('.item.next').removeClass('next')
+    $('.carousel').children().first().addClass('next');
+  }
+
+  if($('.item.active').next().length > 0)
+  {
+    $('.item.active').removeClass('active').next().addClass('active');
+  }
+  else {
+    $('.item.active').removeClass('active')
+    $('.carousel').children().first().addClass('active');
+  }
+
+
+  if($('.item.pre').next().length > 0)
+  {
+    $('.item.pre').removeClass('pre').next().addClass('pre');
+  }
+  else {
+    $('.item.pre').removeClass('pre')
+    $('.carousel').children().first().addClass('pre');
+  }
+
+}
+
+
+function swipRight()
+{
+  if($('.item.next').prev().length > 0)
+  {
+    $('.item.next').removeClass('next').prev().addClass('next');
+  }
+  else {
+    $('.item.next').removeClass('next')
+    $('.carousel').children().last().addClass('next');
+  }
+
+  if($('.item.active').prev().length > 0)
+  {
+    $('.item.active').removeClass('active').prev().addClass('active');
+  }
+  else {
+    $('.item.active').removeClass('active')
+    $('.carousel').children().last().addClass('active');
+  }
+
+
+  if($('.item.pre').prev().length > 0)
+  {
+    $('.item.pre').removeClass('pre').prev().addClass('pre');
+  }
+  else {
+    $('.item.pre').removeClass('pre')
+    $('.carousel').children().last().addClass('pre');
+  }
+
+}
+
+
 </script>
