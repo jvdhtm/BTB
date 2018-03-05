@@ -5075,12 +5075,7 @@ footer {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out; }
+  height: 100%; }
 
 .news--block--header {
   position: absolute;
@@ -5360,20 +5355,20 @@ footer {
     padding-left: 30px;
     padding-right: 30px; }
   .circle .circle__register .cta_button {
-    color: #3A5464;
-    border: solid #3A5464 2px;
-    background: transparent;
-    border-radius: 28px;
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    position: absolute;
-    width: 60%;
-    left: 50%;
-    margin-left: -30%;
-    font-size: 13px;
-    bottom: 40px;
-    text-align: center;
-    padding: 5px 30px 5px 30px; }
+    color: #3A5464 !important;
+    border: solid #3A5464 2px !important;
+    background: transparent  !important;
+    border-radius: 28px  !important;
+    -webkit-border-radius: 28  !important;
+    -moz-border-radius: 28  !important;
+    position: absolute  !important;
+    width: 60%  !important;
+    left: 50%  !important;
+    margin-left: -30%  !important;
+    font-size: 13px  !important;
+    bottom: 40px   !important;
+    text-align: center  !important;
+    padding: 5px 30px 5px 30px  !important; }
 
 @media (min-width: 768px) {
   .circle {
@@ -5423,19 +5418,19 @@ footer {
     position: relative;
     top: 20px; }
   .rectangle .cta_button {
-    display: inline-block;
-    color: #35F6C2;
-    border: solid #35F6C2 2px;
-    background: transparent;
-    border-radius: 28px;
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    position: relative;
-    size: 13px;
-    bottom: -40px;
+    display: inline-block  !important;
+    color: #35F6C2 !important;
+    border: solid #35F6C2 2px !important;
+    background: transparent  !important;
+    border-radius: 28px  !important;
+    -webkit-border-radius: 28  !important;
+    -moz-border-radius: 28  !important;
+    position: relative  !important;
+    size: 13px  !important;
+    bottom: -40px  !important;
     text-align: center;
-    padding: 5px 30px 5px 30px;
-    min-width: 20%; }
+    padding: 5px 30px 5px 30px  !important;
+    min-width: 20%  !important; }
 
 .circle-rect > div {
   padding-left: 25px;
@@ -5497,10 +5492,10 @@ footer {
       position: absolute;
       font-size: 40px; }
     .rectangle .cta_button {
-      font-size: 24px;
-      display: inline-block;
-      bottom: 35px;
-      position: absolute; }
+      font-size: 24px  !important;
+      display: inline-block  !important;
+      bottom: 35px  !important;
+      position: absolute  !important; }
   .rectangle.small {
     display: block;
     top: 70px;
@@ -5537,8 +5532,8 @@ footer {
     .circle .circle--text {
       font-size: 36px; }
     .circle .circle__register .cta_button {
-      bottom: 100px;
-      font-size: 24px; } }
+      bottom: 100px  !important;
+      font-size: 24px  !important; } }
 
 .bubble-sm {
   width: 30px;
@@ -5638,6 +5633,14 @@ span.hs-form-required {
       margin-left: 100px; }
       .text-logo p {
         font-size: 25px; } }
+
+.events .event-fadding {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
 
 .events p {
   font-size: 24px;
@@ -5789,6 +5792,9 @@ span.hs-form-required {
     top: 40px;
     right: -7%;
     opacity: 1; }
+    .events .item.next .event-fadding {
+      background: #fff;
+      opacity: 0.3; }
   .events .item.pre {
     position: absolute;
     -webkit-transform: scale(0.8);
@@ -5798,7 +5804,10 @@ span.hs-form-required {
     display: block;
     top: 40px;
     left: -7%;
-    opacity: 1; } }
+    opacity: 1; }
+    .events .item.pre .event-fadding {
+      background: #fff;
+      opacity: 0.3; } }
 
 /*********************
   Waves

@@ -40,20 +40,20 @@
 
         .cta_button {
 
-            color: $defDarkBlueDark;
-            border: solid $defDarkBlueDark 2px;
-            background: transparent;
-            border-radius: 28px;
-            -webkit-border-radius: 28;
-            -moz-border-radius: 28;
-            position: absolute;
-            width: 60%;
-            left: 50%;
-            margin-left: -30%;
-            font-size: 13px;
-            bottom: 40px ;
-            text-align: center;
-                padding: 5px 30px 5px 30px;
+            color: $defDarkBlueDark !important;
+            border: solid $defDarkBlueDark 2px  !important;;
+            background: transparent  !important;;
+            border-radius: 28px  !important;;
+            -webkit-border-radius: 28  !important;;
+            -moz-border-radius: 28  !important;;
+            position: absolute  !important;;
+            width: 60%  !important;;
+            left: 50%  !important;;
+            margin-left: -30%  !important;;
+            font-size: 13px  !important;;
+            bottom: 40px   !important;;
+            text-align: center  !important;;
+                padding: 5px 30px 5px 30px  !important;;
         }
 
 
@@ -120,19 +120,19 @@ border-radius: 20px;
     }
     .cta_button {
 
-      display: inline-block;
-      color: $defCyan;
-      border: solid $defCyan 2px;
-      background: transparent;
-      border-radius: 28px;
-      -webkit-border-radius: 28;
-      -moz-border-radius: 28;
-      position: relative;
-      size: 13px;
-      bottom: -40px;
+      display: inline-block  !important;;
+      color: $defCyan  !important;;
+      border: solid $defCyan 2px  !important;;
+      background: transparent  !important;;
+      border-radius: 28px  !important;;
+      -webkit-border-radius: 28  !important;;
+      -moz-border-radius: 28  !important;;
+      position: relative  !important;;
+      size: 13px  !important;;
+      bottom: -40px  !important;;
       text-align: center;
-      padding: 5px 30px 5px 30px;
-      min-width: 20%;
+      padding: 5px 30px 5px 30px  !important;;
+      min-width: 20%  !important;;
     }
 
 }
@@ -215,10 +215,10 @@ padding-top: 20px;
         }
         .cta_button {
 
-          font-size: 24px;
-          display: inline-block;
-          bottom: 35px;
-          position: absolute;
+          font-size: 24px  !important;;
+          display: inline-block  !important;;
+          bottom: 35px  !important;;
+          position: absolute  !important;;
 
         }
 
@@ -276,8 +276,8 @@ width: 400px;
     {
 
 
-          bottom: 100px ;
-          font-size: 24px;
+          bottom: 100px  !important;;
+          font-size: 24px  !important;;
     }
   }
 
