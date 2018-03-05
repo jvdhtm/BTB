@@ -64,62 +64,66 @@
 .st8 {
 	fill: #FFF
 }
+.society_logo
 
-svg {
-
-	path,
-	polygon {
-		fill-opacity: 0;
-		fill: $defCyan;
-		stroke: #000;
-		stroke-width: 2px;
-		stroke-dasharray: 3319px;
-		stroke-dashoffset: 3319px;
-		-webkit-animation-name: draw;
-		animation-name: draw;
-		-webkit-animation-duration: 3s;
-		animation-duration: 3s;
-		-webkit-animation-iteration-count: 1;
-		animation-iteration-count: 1;
-		-webkit-animation-fill-mode: forwards;
-		animation-fill-mode: forwards;
-		-webkit-animation-timing-function: linear;
-		animation-timing-function: linear;
-		-webkit-animation-delay: 2s;
-		animation-delay: 2s;
-	}
-}
-
-@-webkit-keyframes draw {
-	90% {
-		stroke-dashoffset: 0px;
-		stroke-width: 2px;
-		fill-opacity: 0;
-	}
-	100% {
-		stroke-width: 0px;
-		fill-opacity: 1;
-	}
-}
-
-@keyframes draw {
-	90% {
-		stroke-dashoffset: 0px;
-		stroke-width: 2px;
-		fill-opacity: 0;
-	}
-	100% {
-		stroke-width: 0px;
-		fill-opacity: 1;
-	}
-}
-
-@media screen and (-ms-high-contrast: active),
-(-ms-high-contrast: none) {
+{
 	svg {
+
 		path,
 		polygon {
+			fill-opacity: 0;
+			fill: $defCyan;
+			stroke: #000;
+			stroke-width: 2px;
+			stroke-dasharray: 3319px;
+			stroke-dashoffset: 3319px;
+			-webkit-animation-name: draw;
+			animation-name: draw;
+			-webkit-animation-duration: 3s;
+			animation-duration: 3s;
+			-webkit-animation-iteration-count: 1;
+			animation-iteration-count: 1;
+			-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+			-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+		}
+	}
+
+	@-webkit-keyframes draw {
+		90% {
+			stroke-dashoffset: 0px;
+			stroke-width: 2px;
+			fill-opacity: 0;
+		}
+		100% {
+			stroke-width: 0px;
 			fill-opacity: 1;
 		}
 	}
+
+	@keyframes draw {
+		90% {
+			stroke-dashoffset: 0px;
+			stroke-width: 2px;
+			fill-opacity: 0;
+		}
+		100% {
+			stroke-width: 0px;
+			fill-opacity: 1;
+		}
+	}
+
+	@media screen and (-ms-high-contrast: active),
+	(-ms-high-contrast: none) {
+		svg {
+			path,
+			polygon {
+				fill-opacity: 1;
+			}
+		}
+	}
+
 }

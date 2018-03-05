@@ -303,6 +303,11 @@ elink {
   background: linear-gradient($defDarkPurple,  rgba(255, 255, 255, 0));
 }
 
+  #ismobile { display: none; }
+
+@media only screen and (max-width: 760px) {
+  #ismobile { display: block; }
+}
 
 
 /* Primary colors */
