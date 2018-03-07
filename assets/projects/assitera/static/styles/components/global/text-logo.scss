@@ -28,7 +28,11 @@
 
     @include media('>=tablet-portrait') {
 
-
+      margin-left: 100px ;
+      margin-top: 180px;
+      p {
+        font-size: 20px;
+      }
 
     }
     @include media('>=lgscreen') {

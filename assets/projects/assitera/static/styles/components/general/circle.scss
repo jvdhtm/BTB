@@ -55,8 +55,6 @@
             text-align: center  !important;;
                 padding: 5px 30px 5px 30px  !important;;
         }
-
-
     }
 }
 @include media('>=tablet') {
@@ -232,7 +230,7 @@ padding-top: 20px;
 
     .circle-rect {
       height: 400px;
-width: 400px;
+      width: 400px;
       border-radius: 50%;
       border-radius: 50%;
       -webkit-box-shadow: 0 4px 14px 2px #e5e5e5;
