@@ -21,7 +21,7 @@ textarea {
   color: #507f8d;
   margin: 10px 10px 20px 0;
   box-shadow: 0px 2px 1px #ccc;
-  width: 250px !important;
+  width: 250px;
 }
 
 span.hs-form-required {
@@ -47,4 +47,106 @@ span.hs-form-required {
   min-width: initial !important;
 
   width: auto !important;;
+}
+
+.contact-form {
+    p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  select {
+    width: 100%;
+    font-size: 20px;
+  }
+  textarea {
+    height: 141px;
+  }
+  .hs_submit {
+    font-size: 20px;
+    margin-bottom: 30px;
+    .hs-button {
+      width: 100%;
+    }
+  }
+  .hs-input:disabled {
+    opacity: .6;
+  }
+}
+.contact-header {
+  color: #507F8D;
+  font-size: 64px;
+  text-transform: capitalize;
+}
+.contact-person {
+  margin-bottom: 110px;
+  .contact-person__portrait {
+  }
+  .contact-person__info {
+    h3 {
+      color: $defLightBlue;
+    }
+    h5 {
+      color: $defDarkBlue;
+    }
+  }
+  .contact-person__presentation {
+    margin-bottom: 20px;
+    p {
+      line-height: 27px;
+      
+    }
+  }
+  .contact-person__contactInfo {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: $defDarkBlue;
+    }
+  }
+}
+.contact-information {
+  margin-bottom: 30px;
+  &__map{
+    background-color: $white; 
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-bottom: 50px;
+    .map__info {
+      text-align: center;
+      //padding-top: 20px;
+      padding-bottom: 30px;
+      h3 {
+        color: $defLightBlue;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    li {
+      font-size: 20px;
+      color: $defLightBlue;
+      margin-bottom: 20px;
+    }
+  }
+  
+}
+
+@include media('>=tablet') {
+  .border-right {
+    border-right: 3px solid rgba(151, 151, 151, 0.5);;
+  }
+  .contact-form select {
+    width: 75%;
+  }
+  .hs-button {
+    width: 75% !important;
+  }
+  .contact-person .contact-person__portrait img {
+    max-width: 264px;;
+  }
+}
+.border-bottom {
+  border-bottom: 3px solid rgba(151, 151, 151, 0.5);;
 }
