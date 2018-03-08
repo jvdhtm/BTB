@@ -3945,9 +3945,11 @@ button.close {
 @media (min-width: 768px) {
   .equalise-height {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch; } }
 
@@ -4619,12 +4621,15 @@ input[type="color"],
 .row-eq-height {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center; }
 
 a.cta_button {
@@ -4872,6 +4877,7 @@ footer {
       padding-left: 100px; }
       .navigation ul {
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
         .navigation ul a {
@@ -5125,11 +5131,11 @@ footer {
   color: #6CBCC7;
   font-style: italic; }
 
-.input :-ms-input-placeholder {
+.input ::-moz-placeholder {
   color: #6CBCC7;
   font-style: italic; }
 
-.input ::-ms-input-placeholder {
+.input :-ms-input-placeholder {
   color: #6CBCC7;
   font-style: italic; }
 
@@ -5637,15 +5643,18 @@ span.hs-form-required {
       line-height: 27px; }
   .contact-person .contact-person__contactInfo {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
     .contact-person .contact-person__contactInfo a {
       color: #405F6E; }
 
 .contact-information {
+  display: none;
   margin-bottom: 30px; }
   .contact-information__map {
     background-color: #fff;
@@ -6132,33 +6141,101 @@ span.hs-form-required {
       background: #fff;
       opacity: 0.3; } }
 
-.vidoe {
-  padding-left: 30px;
-  padding-right: 30px; }
-  .vidoe h2 {
-    font-size: 48px; }
-  .vidoe p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 27px; }
-  .vidoe .vidoe-text {
-    width: 60%;
-    background: #fff;
-    padding: 40px;
-    margin-left: -15px;
-    height: 600px;
-    float: left; }
-  .vidoe .vidoe-iframe {
-    width: 40%;
-    float: left;
-    overflow: hidden;
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 40px; }
-    .vidoe .vidoe-iframe iframe {
-      width: 100%;
-      height: 600px;
+.video h2 {
+  font-size: 48px; }
+
+.video p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  opacity: 1;
+  -webkit-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease; }
+
+.video .video-iframe {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  -webkit-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  transition: all 0.45s ease; }
+  .video .video-iframe iframe {
+    width: 100% !important;
+    height: 785px !important;
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    transition: all 0.45s ease; }
+
+.video .video-button {
+  width: 100%;
+  height: 785px;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+  .video .video-button .play-button {
+    border: 2px solid #6FECBE;
+    color: #fff;
+    font-size: 30px;
+    background: #6FECBE;
+    margin: auto;
+    display: block;
+    width: 75px;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    margin-left: -34px;
+    margin-top: -24px;
+    position: absolute; }
+    .video .video-button .play-button .fa {
+      margin-top: 10px;
+      margin-left: 8px; }
+    .video .video-button .play-button:hover {
+      color: #373737; }
+
+@media (min-width: 768px) {
+  .video {
+    padding-left: 30px;
+    padding-right: 30px; }
+    .video h2 {
+      margin-top: 300px; }
+    .video .video-text {
+      width: 63%;
+      padding: 40px;
+      margin-left: -15px;
+      height: 785px;
+      float: left;
+      -webkit-transition: all 0.45s ease;
+      -o-transition: all 0.45s ease;
+      transition: all 0.45s ease; }
+    .video .video-iframe {
+      margin-top: 0px;
+      width: 40%;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      overflow: hidden;
       border-bottom-right-radius: 40px;
-      border-top-right-radius: 40px; }
+      border-top-right-radius: 40px;
+      -webkit-transition: all 0.45s ease;
+      -o-transition: all 0.45s ease;
+      transition: all 0.45s ease; }
+      .video .video-iframe iframe {
+        width: 100% !important;
+        height: 785px !important;
+        border-bottom-right-radius: 40px;
+        border-top-right-radius: 40px;
+        -webkit-transition: all 0.45s ease;
+        -o-transition: all 0.45s ease;
+        transition: all 0.45s ease; }
+    .video.expanded .video-iframe {
+      width: 100%;
+      position: absolute;
+      border-bottom-right-radius: 0px;
+      border-top-right-radius: 0px; }
+      .video.expanded .video-iframe iframe {
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px; } }
 
 /*********************
   Waves
