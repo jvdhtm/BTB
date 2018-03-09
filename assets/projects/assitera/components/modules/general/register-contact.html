@@ -193,7 +193,7 @@
       </div>
     </div>
   </div>
-  <div class="row border-top" style="overflow: hidden;">
+  <div class="row line-seperator" style="overflow: hidden;">
     <div class="col-lg-9 col-lg-push-2 border-bottom" style="margin: 30px 20px;"></div>
   </div>
   <div class="row">
@@ -348,7 +348,7 @@
 <script>
   $(document).ready(function () {
     $('.filterContact').hide();
-    $('.border-top').hide();
+    $('.line-seperator').hide();
   });
   $('#citySort').change(function () {
     if ($("#citySort").val() == 'empty') {
@@ -381,7 +381,7 @@
     var selectedOption = $("#citySort option:selected").text();
     if (value == 'empty') {
       $(".officeHeader").text('Kontor');
-      $('.border-top').hide();
+      $('.line-seperator').hide();
     }
     else {
       $(".officeHeader").text(selectedOption);
@@ -391,7 +391,7 @@
     var list = $(".filterOffice");
     $(list).hide();
     if (value == "empty") {
-      $('.border-top').hide();
+      $('.line-seperator').hide();
       $(".filterOffice").each(function (i) {
         $(this).show();
         $(".contact-information").hide();
@@ -400,7 +400,7 @@
       $(".filterOffice[data-office*=" + value + "]").each(function (i) {
         $(this).show();
         $(".contact-information").show();
-        $('.border-top').show();
+        $('.line-seperator').show();
       });
     }
   }
