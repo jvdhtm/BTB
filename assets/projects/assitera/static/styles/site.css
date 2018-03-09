@@ -5697,7 +5697,7 @@ span.hs-form-required {
   @media screen and (orientation: landscape) {
     .text-logo {
       margin-top: -10vh; } }
-  .text-logo p {
+  .text-logo .p {
     font-size: 15px; }
   @media (min-width: 768px) {
     .text-logo {
@@ -5706,21 +5706,21 @@ span.hs-form-required {
       width: 500px;
       margin-left: 130px;
       margin-top: 80px; }
-      .text-logo p {
+      .text-logo .p {
         color: #fff;
         text-shadow: 1px 1px 4px #373737; } }
   @media (min-width: 992px) {
     .text-logo {
       margin-left: 100px;
       margin-top: 180px; }
-      .text-logo p {
+      .text-logo .p {
         font-size: 20px; } }
   @media (min-width: 1200px) {
     .text-logo {
       width: 600px;
       margin-top: 140px;
       margin-left: 100px; }
-      .text-logo p {
+      .text-logo .p {
         font-size: 25px; } }
 
 .events .event-fadding {
