@@ -309,21 +309,21 @@
             <div class="hs_firstname field hs-form-field" data-reactid=".hbspt-forms-0.0:$0">
               <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1"></legend>
               <div class="input" data-reactid=".hbspt-forms-0.0:$0.$firstname">
-                <input id="firstname-661f7761-e0d9-4e9e-b4c9-d6d87c983e2b_9298" class="hs-input" type="text" name="firstname" value="" placeholder="Name"
+                <input name="testddddd" id="firstname-661f7761-e0d9-4e9e-b4c9-d6d87c983e2b_9298" class="hs-input" type="text" value="" placeholder="Name"
                   data-reactid=".hbspt-forms-0.0:$0.$firstname.0">
               </div>
             </div>
             <div class="hs_email field hs-form-field" data-reactid=".hbspt-forms-0.0:$2">
               <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$2.1"></legend>
               <div class="input" data-reactid=".hbspt-forms-0.0:$2.$email">
-                <input id="email-661f7761-e0d9-4e9e-b4c9-d6d87c983e2b_9298" class="hs-input" type="email" name="email" required="" placeholder="Email"
+                <input id="email-661f7761-e0d9-4e9e-b4c9-d6d87c983e2b_9298" class="hs-input" type="email" name="emaidasdasfl" required="" placeholder="Email"
                   value="" data-reactid=".hbspt-forms-0.0:$2.$email.0">
               </div>
             </div>
             <div class="hs_message field hs-form-field" data-reactid=".hbspt-forms-0.0:$3">
               <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$3.1"></legend>
               <div class="input" data-reactid=".hbspt-forms-0.0:$3.$message">
-                <textarea id="message-661f7761-e0d9-4e9e-b4c9-d6d87c983e2b_9298" class="hs-input" name="message" placeholder="Message" data-reactid=".hbspt-forms-0.0:$3.$message.0"></textarea>
+                <textarea id="message-661f7761-e0d9-4e9e-b4c9-d6d87c983e2b_9298" class="hs-input" name="messagesdfsdf" placeholder="Message" data-reactid=".hbspt-forms-0.0:$3.$message.0"></textarea>
               </div>
             </div>
             <div class="hs_submit" data-reactid=".hbspt-forms-0.3">
@@ -346,10 +346,44 @@
 </div>
 
 <script>
+
+
+
+
+
   $(document).ready(function () {
     $('.filterContact').hide();
     $('.line-seperator').hide();
+
+    /*var formData = {
+      firstName: sessionStorage.getItem('firstname'),
+      email: sessionStorage.getItem('email')
+     };
+
+
+    function init() {
+        if (sessionStorage["firstname"]) {
+            $('#firstname-661f7761-e0d9-4e9e-b4c9-d6d87c983e2b_9298').val(sessionStorage["firstname"]);
+          }
+        if (sessionStorage["email"]) {
+            $('#email-661f7761-e0d9-4e9e-b4c9-d6d87c983e2b_9298').val(sessionStorage["email"]);
+          }
+
+          var contactFormData = JSON.stringify(formData);
+          console.log(formData);
+          sessionStorage.setItem('contactForm', contactFormData);
+
+        }
+    init();
+    //console.log(formData);*/
+
   });
+  
+  /*$('.hs-input').keyup(function() {
+    sessionStorage[$(this).attr('name')] = $(this).val();
+  });*/
+  
+
   $('#citySort').change(function () {
     if ($("#citySort").val() == 'empty') {
       $("#professionSort").prop('disabled', 'disabled');
@@ -433,4 +467,39 @@
       });
     }
   }
+  var formData = {
+      set : function (){
+        // (Re)create the myForm valiable
+        var myForm = [];
+        // Delete old data from localstorage
+        sessionStorage.removeItem('myForm');
+        // Take each input's name and value and add it to the array we already created.
+        $('form input, textarea').each(function(){
+          // Push each input's value into the temporary variable
+          myForm.push({ name: this.name, value: this.value});
+        });
+        
+        // Add the array to localStorage
+        sessionStorage.myForm = JSON.stringify(myForm);
+      },
+      get : function (){
+        // Is the form already stored within localStorage? If so, get it and copy it's contents over our myform array variable.
+        if(sessionStorage.myForm != undefined){
+          // Get the existing values out of localStorage
+          myForm = JSON.parse(sessionStorage.myForm);
+          // Loop through myForm
+          for (var i = 0; i < myForm.length; i++) {
+            // Populate the form with what data you have for it
+            $('[name="'+myForm[i].name+'"]').val(myForm[i].value);
+          }
+        }
+      }
+    }
+    // Populate the form with whatever data already exists for it
+    formData.get();
+    // Watch for a change in a change in an input field. If there is a change, resave the form values.
+    $(".hs-input").keyup( function() {
+      // If a change is detected, save the values.
+      formData.set();
+    });
 </script>
