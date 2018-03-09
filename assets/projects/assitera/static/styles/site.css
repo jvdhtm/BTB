@@ -5627,23 +5627,25 @@ span.hs-form-required {
 
 .contact-person {
   margin-bottom: 110px; }
-  .contact-person .contact-person__info h3 {
-    color: #6CBCC7; }
-  .contact-person .contact-person__info h5 {
-    color: #405F6E; }
-  .contact-person .contact-person__presentation {
-    margin-bottom: 20px; }
-    .contact-person .contact-person__presentation p {
-      line-height: 27px; }
-  .contact-person .contact-person__contactInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .contact-person .contact-person__contactInfo a {
+  .contact-person .contact-person--information__wrapper {
+    max-width: 376px; }
+    .contact-person .contact-person--information__wrapper .contact-person__info h3 {
+      color: #6CBCC7; }
+    .contact-person .contact-person--information__wrapper .contact-person__info h5 {
       color: #405F6E; }
+    .contact-person .contact-person--information__wrapper .contact-person__presentation {
+      margin-bottom: 20px; }
+      .contact-person .contact-person--information__wrapper .contact-person__presentation p {
+        line-height: 27px; }
+    .contact-person .contact-person--information__wrapper .contact-person__contactInfo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .contact-person .contact-person--information__wrapper .contact-person__contactInfo a {
+        color: #405F6E; }
 
 .contact-information {
   display: none;
@@ -5679,6 +5681,10 @@ span.hs-form-required {
 
 .border-bottom {
   border-bottom: 3px solid rgba(151, 151, 151, 0.5); }
+
+@media only screen and (min-width: 1600px) {
+  .contact-person--information__wrapper {
+    max-width: 506px !important; } }
 
 .text-logo {
   margin-top: -20vh;

@@ -81,26 +81,29 @@ span.hs-form-required {
   margin-bottom: 110px;
   .contact-person__portrait {
   }
-  .contact-person__info {
-    h3 {
-      color: $defLightBlue;
+  .contact-person--information__wrapper {
+    max-width: 376px;
+    .contact-person__info {
+      h3 {
+        color: $defLightBlue;
+      }
+      h5 {
+        color: $defDarkBlue;
+      }
     }
-    h5 {
-      color: $defDarkBlue;
+    .contact-person__presentation {
+      margin-bottom: 20px;
+      p {
+        line-height: 27px;
+        
+      }
     }
-  }
-  .contact-person__presentation {
-    margin-bottom: 20px;
-    p {
-      line-height: 27px;
-      
-    }
-  }
-  .contact-person__contactInfo {
-    display: flex;
-    justify-content: space-between;
-    a {
-      color: $defDarkBlue;
+    .contact-person__contactInfo {
+      display: flex;
+      justify-content: space-between;
+      a {
+        color: $defDarkBlue;
+      }
     }
   }
 }
@@ -150,4 +153,9 @@ span.hs-form-required {
 }
 .border-bottom {
   border-bottom: 3px solid rgba(151, 151, 151, 0.5);;
+}
+@media only screen and (min-width: 1600px) {
+  .contact-person--information__wrapper {
+    max-width: 506px !important;
+  }
 }
