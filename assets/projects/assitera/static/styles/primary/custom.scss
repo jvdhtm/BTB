@@ -34,7 +34,7 @@ a:hover {
 }
 @include media('<=tablet') {
   .banner {
-      height: 50vh !important;
+      height: 35vh !important;
   }
 }
 .home .block-12 {
@@ -49,8 +49,6 @@ elink {
   display: block;
   padding: 10px 15px;
 }
-
-
 
 
 

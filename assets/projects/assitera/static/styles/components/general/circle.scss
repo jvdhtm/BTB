@@ -74,12 +74,14 @@
     .count {
     display: inline-block;
     }
-border-radius: 20px;
 
 @include media('>=tablet') {
-padding-bottom: 5px;
-}
+    top: -17px;
+    height: 200px;
+    }
+
 @include media('>=tablet-portrait') {
+
   left: 50%;
   width: 90%;
   margin-left: -45%;
@@ -88,6 +90,9 @@ padding-bottom: 5px;
   min-height: 400px;
   margin-top: -70px;
   }
+@include media('>=desktop') {
+  border-radius: 20px;
+}
 @include media('>=lgscreen') {
   left: 50%;
   width: 80%;
