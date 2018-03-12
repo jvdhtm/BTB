@@ -1,12 +1,20 @@
 .block-12 {
   padding-left: 20px;
   padding-right: 20px;
-
+  @include media('>=tablet')
+   {
+      .image-box {
+          padding-left: 100px;
+          padding-right: 100px;
+      }
+  }
   @include media('>=tablet-portrait')
    {
-     padding-left: 50px;
-     padding-right: 50px;
 
+     .image-box {
+         padding-left: 0px;
+         padding-right: 0px;
+     }
      img {
        position: absolute;
        height: 100%;
@@ -25,6 +33,7 @@
         margin: 0px !important;
         background-position: 50%;
         background-size: cover;
+        top: 90px;
         img {
           position: absolute;
           width: 100%;

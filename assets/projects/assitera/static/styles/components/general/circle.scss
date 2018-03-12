@@ -110,7 +110,8 @@
 
 .rectangle {
   display: block;
-  height: 150px;
+  height: 200px;
+
   text-align: center;
     h3 {
         color: $white;
@@ -120,7 +121,10 @@
         margin-left: 0px;
         margin-top: 17px;
         position: relative;
-        top: 20px;
+        top: 25px;
+        @include media('>=tablet') {
+          top: 60px;
+        }
     }
     .cta_button {
 
@@ -133,10 +137,13 @@
       -moz-border-radius: 28  !important;;
       position: relative  !important;;
       size: 13px  !important;;
-      bottom: -40px  !important;;
+      bottom: -45px  !important;;
       text-align: center;
       padding: 5px 30px 5px 30px  !important;;
       min-width: 20%  !important;;
+      @include media('>=tablet') {
+          bottom: -88px  !important;
+      }
     }
 
 }
