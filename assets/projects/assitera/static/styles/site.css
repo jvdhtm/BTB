@@ -5719,7 +5719,10 @@ span.hs-form-required {
   padding-left: 30px;
   padding-right: 30px; }
   .text-logo .p {
-    font-size: 15px; }
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px; }
   @media (min-width: 1024px) {
     .text-logo {
       position: absolute;
