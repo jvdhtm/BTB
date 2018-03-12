@@ -156,11 +156,15 @@ span.hs-form-required {
   .filterOffice__contact-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
   &.showing {
+    flex-basis: 100%;
+    max-width: 100%;
     .filterOffice__contact-wrapper {
       .contact-information__map {
-        max-width: 300px;
+        max-width: 320px;
+        margin: 0 auto 30px auto;
       }
     }
   }
@@ -189,6 +193,10 @@ span.hs-form-required {
     &.showing {
       flex-basis: 100%;
       max-width: 100%;
+    }
+    .filterOffice__contact-wrapper { 
+      flex-direction: row;
+      margin-bottom: 30px;
     }
   }
   .sort--input {
@@ -227,8 +235,13 @@ span.hs-form-required {
     margin-left: 16%;
   }
   .filterOffice {
-    flex-basis: 33.3333%;
-    max-width: 33.33333%;
+    flex-basis: 33%;
+    max-width: 33%;
+    &.showing {
+    .filterOffice__contact-wrapper {
+      max-width: initial;
+      }
+    }
   }
   .sort--input { 
     display: block;
@@ -269,11 +282,17 @@ span.hs-form-required {
   } 
 }
 
-@media only screen 
-and (min-device-width : 415px) 
-and (max-device-width : 767px) {
+@media only screen and (min-device-width : 415px) and (max-device-width : 767px) {
   .filterOffice {
     flex-basis: 50%;
     max-width: 50%;
+  }
+  .filterOffice .filterOffice__contact-wrapper {
+  }
+}
+
+@include media('>=desktop') { 
+  .filterOffice.showing .filterOffice__contact-wrapper .contact-information__map {
+    margin: initial;
   }
 }
