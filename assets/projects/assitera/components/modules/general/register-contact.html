@@ -203,7 +203,7 @@
       </div>
     </div>
   </div>
-  <div class="row border-top" style="overflow: hidden;">
+  <div class="row line-seperator" style="overflow: hidden;">
     <div class="col-lg-9 col-lg-push-2 border-bottom" style="margin: 30px 20px;"></div>
   </div>
   <div class="row flex">
@@ -365,9 +365,6 @@
     </div>
   </div>
 
-
-
-
   <div class="row" style="overflow: hidden">
     <div class="col-lg-9 col-lg-push-2 hidden-md hidden-sm hidden-xs border-bottom" style="margin: 30px 20px;"></div>
   </div>
@@ -376,7 +373,7 @@
 <script>
   $(document).ready(function () {
     $('.filterContact').hide();
-    $('.border-top').hide();
+    $('.line-seperator').hide();
   });
 
   $('#citySort').change(function () {
@@ -410,7 +407,7 @@
     var selectedOption = $("#citySort option:selected").text();
     if (value == 'empty') {
       $(".officeHeader").text('');
-      $('.border-top').hide();
+      $('.line-seperator').hide();
     }
     else {
       $(".officeHeader").text(selectedOption);
@@ -419,10 +416,9 @@
   function filterOffice(value) {
     var list = $(".filterOffice");
     $(list).hide();
-    console.log("test");
     $(".filterOffice").removeClass("showing");
     if (value == 'empty') {
-      $('.border-top').hide();
+      $('.line-seperator').show();
       $(".filterOffice").each(function (i) {
         $(this).show();
         $(".contact-information").hide();
@@ -431,7 +427,7 @@
       $(".filterOffice[data-office*=" + value + "]").each(function (i) {
         $(this).show();
         $(".contact-information").show();
-        $('.border-top').show();
+        $('.line-seperator').show();
         $(".filterOffice[data-office*=" + value + "]").addClass("showing");
       });
     }

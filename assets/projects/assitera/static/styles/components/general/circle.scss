@@ -68,16 +68,20 @@
     position: relative;
     bottom: 0px;
     width: 100%;
-
-background: $black;
-opacity: .9;
-    padding-bottom: 20px;
+    background: $black;
+    opacity: .9;
+    padding-bottom: 0px;
     .count {
     display: inline-block;
     }
-border-radius: 20px;
+
+@include media('>=tablet') {
+    top: -17px;
+    height: 200px;
+    }
 
 @include media('>=tablet-portrait') {
+
   left: 50%;
   width: 90%;
   margin-left: -45%;
@@ -86,6 +90,9 @@ border-radius: 20px;
   min-height: 400px;
   margin-top: -70px;
   }
+@include media('>=desktop') {
+  border-radius: 20px;
+}
 @include media('>=lgscreen') {
   left: 50%;
   width: 80%;
@@ -283,6 +290,39 @@ padding-top: 20px;
           font-size: 24px  !important;;
 
     }
+  }
+
+}
+
+
+.mobile-circle {
+
+  .circle-container {
+      position: relative;
+      height: auto;
+      width: 100%;
+  }
+  .circle
+  {
+      position: relative;
+      top:auto;
+      left:auto;
+      height: 200px;
+      width: 100%;
+       border-radius: 0;
+       box-shadow: none;
+       right:auto;
+  }
+  .circle .circle--text {
+    width: 100%;
+    padding-top: 60px;
+    line-height: 1em;
+    text-align: center;
+    color: #3A5464;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
 }
