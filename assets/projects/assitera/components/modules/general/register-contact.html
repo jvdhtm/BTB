@@ -94,7 +94,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-5 col-lg-push-2 col-sm-6 col-xs-12 contact-person filterContact" data-personId="2" data-office="stockholm"
+    <div class="col-lg-5 col-lg-push-2 col-sm-6 col-xs-12 contact-person filterContact" data-name="eric" data-personId="2" data-office="stockholm"
       data-profession="boss">
       <div class="contact-person__portrait">
         <img class="img-responsive" src="https://www.asociety.se/hubfs/Adam_Ramberg_h.png" />
@@ -121,7 +121,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-5 col-lg-push-2 col-sm-6 col-xs-12 contact-person filterContact" data-personId="2" data-office="stockholm"
+    <div class="col-lg-5 col-lg-push-2 col-sm-6 col-xs-12 contact-person filterContact" data-name="adam" data-personId="2" data-office="stockholm"
       data-profession="boss">
       <div class="contact-person__portrait">
         <img class="img-responsive" src="https://www.asociety.se/hubfs/Adam_Ramberg_h.png" />
@@ -148,7 +148,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-5 col-lg-push-2 col-sm-6 col-xs-12 contact-person filterContact" data-personId="1" data-office="stockholm"
+    <div class="col-lg-5 col-lg-push-2 col-sm-6 col-xs-12 contact-person filterContact" data-name="adam" data-personId="1" data-office="stockholm"
       data-profession="frontend">
       <div class="contact-person__portrait">
         <img class="img-responsive" src="https://www.asociety.se/hubfs/Adam_Ramberg_h.png" />
@@ -175,7 +175,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-5 col-lg-push-2 col-sm-6 col-xs-12 contact-person filterContact" data-personId="3" data-office="gothenburg"
+    <div class="col-lg-5 col-lg-push-2 col-sm-6 col-xs-12 contact-person filterContact" data-name="adam" data-personId="3" data-office="gothenburg"
       data-profession="frontend">
       <div class="contact-person__portrait">
         <img class="img-responsive" src="https://www.asociety.se/hubfs/Adam_Ramberg_h.png" />
@@ -390,6 +390,11 @@
     }
   });
 
+  $('select#nameSort').change(function(){
+    var filter = $(this).val();
+    filterName(filter);
+  });
+
   $('select#professionSort').change(function () {
     var filter = $(this).val();
     filterProfession(filter);
@@ -397,10 +402,13 @@
   $('select#citySort').change(function () {
     var filter = $(this).val();
     var selectedProfession = $("#professionSort option:selected").val();
+    var selectedName = $('#nameSort option:selected').val();
     filterOffice(filter);
     filterContact(filter);
     officeHeader(filter);
     filterProfession(selectedProfession);
+    filterName(selectedName);
+
   });
 
   function officeHeader(value) {
@@ -462,13 +470,30 @@
     }
   }
 
+/*---*/
+  function filterName(value){
+    var list = $(".filterContact");
+    var selectedCityValue = $("#citySort option:selected").val();
+    var selectedName = $('#nameSort option:selected').val();
+    $(list).hide();
+     if (value == 'empty') {
+      $(".filterContact[data-office*=" + selectedCityValue + "]").each(function (i) {
+        $(this).show();
+      });
+    }
+    else {
+      $(".filterContact[data-name*=" + selectedName + "][data-office*=" + selectedCityValue + "]").each(function (i) {
+        $(this).show();
+      });
+    }
+  }
+
+
+
+
 $('.hidden-xs form input, textarea').each(function(index) {
     this.name = this.name + (index + 1);
 });
-
-
-
-
 
   var formData = {
     set: function () {
