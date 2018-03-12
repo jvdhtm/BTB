@@ -6,39 +6,41 @@
   </div>
   <div class="row">
     <div class="equalise-height contact-form" style="margin-bottom: -30px;">
-      <div class="col-lg-4 col-lg-push-2 col-sm-6 col-xs-12 border-right">
+      <div class="col-lg-4 col-lg-push-2 col-sm-12 col-xs-12 border-right">
         <p>Kontakt oss via formuläret eller sök en specifik medarbetare via sökfuntionen (klicka
           <b>Sök</b> direkt för att se alla).</p>
-        <div class="input">
-          <select class="hs-input" name="citySort°" id="citySort">
-            <option value="empty" selected="">Stad ▾</option>
-            <option value="stockholm">Stockholm</option>
-            <option value="malmo">Malmö</option>
-            <option value="gothenburg">Göteborg</option>
-            <option value="linkoping">Linköping</option>
-          </select>
-        </div>
-        <div class="input">
-          <select id="professionSort" class="hs-input" name="professionSort" disabled>
-            <option value="empty" disabled="" selected="">Yrkesroll ▾</option>
-            <option value="boss">Chef</option>
-            <option value="frontend">Frontend</option>
-          </select>
-        </div>
-        <div class="input">
-          <select id="nameSort" class="hs-input" name="nameSort" disabled>
-            <option value="empty" disabled="" selected="">Namn ▾</option>
-            <option value="adam">Adam</option>
-            <option value="eric">Eric</option>
-          </select>
-        </div>
-        <!--<div class="hs_submit">
+        <div class="sort--input">
+          <div class="input">
+            <select class="hs-input" name="citySort°" id="citySort">
+              <option value="empty" selected="">Stad ▾</option>
+              <option value="stockholm">Stockholm</option>
+              <option value="malmo">Malmö</option>
+              <option value="gothenburg">Göteborg</option>
+              <option value="linkoping">Linköping</option>
+            </select>
+          </div>
+          <div class="input">
+            <select id="professionSort" class="hs-input" name="professionSort" disabled>
+              <option value="empty" disabled="" selected="">Yrkesroll ▾</option>
+              <option value="boss">Chef</option>
+              <option value="frontend">Frontend</option>
+            </select>
+          </div>
+          <div class="input">
+            <select id="nameSort" class="hs-input" name="nameSort" disabled>
+              <option value="empty" disabled="" selected="">Namn ▾</option>
+              <option value="adam">Adam</option>
+              <option value="eric">Eric</option>
+            </select>
+          </div>
+          <!--<div class="hs_submit">
             <div class="actions">
               <input type="submit" value="Skicka" class="hs-button primary large">
             </div>
           </div>-->
+        </div>
       </div>
-      <div class="col-lg-4 col-lg-push-3 col-sm-6 hidden-xs">
+      <div class="col-lg-4 col-lg-push-3 col-sm-12 hidden-xs">
         <div id="hs_cos_wrapper_widget_1516708059674" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style=""
           data-hs-cos-general-type="widget" data-hs-cos-type="form">
           <div id="hs_form_target_widget_1516708059674">
@@ -82,12 +84,12 @@
     </div>
   </div>
   <div class="row" style="overflow: hidden">
-    <div class="col-lg-9 col-lg-push-2 border-bottom" style="margin: 50px 20px 30px 20px;">
+    <div class="col-lg-9 col-lg-push-2 border-bottom hidden-sm hidden-md" style="margin: 30px 20px 30px 20px;">
     </div>
   </div>
   <div class="row">
     <div class="col-lg-10 col-lg-push-2 ">
-      <h1 class="contact-header officeHeader">Kontor</h1>
+      <h1 class="contact-header officeHeader"></h1>
       <!--Header title-->
     </div>
   </div>
@@ -206,7 +208,7 @@
   </div>
   <div class="row flex">
     <div class="filterOffice" data-office="malmo">
-      <div class="">
+      <div class="filterOffice__contact-wrapper">
         <div class="contact-information__map">
           <img class="img-responsive" src="https://www.jqueryscript.net/images/Show-Nearby-Places-jQuery-Google-Maps-WhatsNearby.jpg"
           />
@@ -215,17 +217,17 @@
             <h5>Adress</h5>
           </div>
         </div>
-      </div>
-      <div class="contact-information">
-        <ul>
-          <li>Adress: Lorem ipsum 14B, Malmö</li>
-          <li>Telefon: 070-123456</li>
-          <li>E-mail: Loremipsum@lorem.se</li>
-        </ul>
+        <div class="contact-information">
+          <ul>
+            <li>Adress: Lorem ipsum 14B, Malmö</li>
+            <li>Telefon: 070-123456</li>
+            <li>E-mail: Loremipsum@lorem.se</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="filterOffice" data-office="stockholm">
-      <div class="">
+      <div class="filterOffice__contact-wrapper">
         <div class="contact-information__map">
           <img class="img-responsive" src="https://www.jqueryscript.net/images/Show-Nearby-Places-jQuery-Google-Maps-WhatsNearby.jpg"
           />
@@ -234,17 +236,17 @@
             <h5>Adress</h5>
           </div>
         </div>
-      </div>
-      <div class="contact-information">
-        <ul>
-          <li>Adress: Lorem ipsum 14B, Stockholm</li>
-          <li>Telefon: 070-123456</li>
-          <li>E-mail: Loremipsum@lorem.se</li>
-        </ul>
+        <div class="contact-information">
+          <ul>
+            <li>Adress: Lorem ipsum 14B, Stockholm</li>
+            <li>Telefon: 070-123456</li>
+            <li>E-mail: Loremipsum@lorem.se</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="filterOffice" data-office="linkoping">
-      <div class="">
+      <div class="filterOffice__contact-wrapper">
         <div class="contact-information__map">
           <img class="img-responsive" src="https://www.jqueryscript.net/images/Show-Nearby-Places-jQuery-Google-Maps-WhatsNearby.jpg"
           />
@@ -253,17 +255,17 @@
             <h5>Adress</h5>
           </div>
         </div>
-      </div>
-      <div class="contact-information">
-        <ul>
-          <li>Adress: Lorem ipsum 14B, Linköping</li>
-          <li>Telefon: 070-123456</li>
-          <li>E-mail: Loremipsum@lorem.se</li>
-        </ul>
+        <div class="contact-information">
+          <ul>
+            <li>Adress: Lorem ipsum 14B, Linköping</li>
+            <li>Telefon: 070-123456</li>
+            <li>E-mail: Loremipsum@lorem.se</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="filterOffice" data-office="gothenburg">
-      <div class="">
+      <div class="filterOffice__contact-wrapper">
         <div class="contact-information__map">
           <img class="img-responsive" src="https://www.jqueryscript.net/images/Show-Nearby-Places-jQuery-Google-Maps-WhatsNearby.jpg"
           />
@@ -272,17 +274,17 @@
             <h5>Adress</h5>
           </div>
         </div>
-      </div>
-      <div class="contact-information">
-        <ul>
-          <li>Adress: Lorem ipsum 14B, Göteborg</li>
-          <li>Telefon: 070-123456</li>
-          <li>E-mail: Loremipsum@lorem.se</li>
-        </ul>
+        <div class="contact-information">
+          <ul>
+            <li>Adress: Lorem ipsum 14B, Göteborg</li>
+            <li>Telefon: 070-123456</li>
+            <li>E-mail: Loremipsum@lorem.se</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="filterOffice" data-office="PaloAlto">
-      <div class="">
+      <div class="filterOffice__contact-wrapper">
         <div class="contact-information__map">
           <img class="img-responsive" src="https://www.jqueryscript.net/images/Show-Nearby-Places-jQuery-Google-Maps-WhatsNearby.jpg"
           />
@@ -291,17 +293,17 @@
             <h5>Adress</h5>
           </div>
         </div>
-      </div>
-      <div class="contact-information">
-        <ul>
-          <li>Adress: Lorem ipsum 14B, Göteborg</li>
-          <li>Telefon: 070-123456</li>
-          <li>E-mail: Loremipsum@lorem.se</li>
-        </ul>
+        <div class="contact-information">
+          <ul>
+            <li>Adress: Lorem ipsum 14B, Göteborg</li>
+            <li>Telefon: 070-123456</li>
+            <li>E-mail: Loremipsum@lorem.se</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="filterOffice" data-office="denmark">
-      <div class="">
+      <div class="filterOffice__contact-wrapper">
         <div class="contact-information__map">
           <img class="img-responsive" src="https://www.jqueryscript.net/images/Show-Nearby-Places-jQuery-Google-Maps-WhatsNearby.jpg"
           />
@@ -310,13 +312,13 @@
             <h5>Adress</h5>
           </div>
         </div>
-      </div>
-      <div class="contact-information">
-        <ul>
-          <li>Adress: Lorem ipsum 14B, Göteborg</li>
-          <li>Telefon: 070-123456</li>
-          <li>E-mail: Loremipsum@lorem.se</li>
-        </ul>
+        <div class="contact-information">
+          <ul>
+            <li>Adress: Lorem ipsum 14B, Göteborg</li>
+            <li>Telefon: 070-123456</li>
+            <li>E-mail: Loremipsum@lorem.se</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="order: -1; margin-bottom: 30px;">
@@ -362,12 +364,9 @@
       </div>
     </div>
   </div>
-  
-
-
 
   <div class="row" style="overflow: hidden">
-    <div class="col-lg-9 col-lg-push-2 border-bottom" style="margin: 30px 20px;"></div>
+    <div class="col-lg-9 col-lg-push-2 hidden-md hidden-sm hidden-xs border-bottom" style="margin: 30px 20px;"></div>
   </div>
 </div>
 
@@ -407,7 +406,7 @@
   function officeHeader(value) {
     var selectedOption = $("#citySort option:selected").text();
     if (value == 'empty') {
-      $(".officeHeader").text('Kontor');
+      $(".officeHeader").text('');
       $('.line-seperator').hide();
     }
     else {
@@ -417,8 +416,9 @@
   function filterOffice(value) {
     var list = $(".filterOffice");
     $(list).hide();
-    if (value == "empty") {
-      $('.line-seperator').hide();
+    $(".filterOffice").removeClass("showing");
+    if (value == 'empty') {
+      $('.line-seperator').show();
       $(".filterOffice").each(function (i) {
         $(this).show();
         $(".contact-information").hide();
@@ -428,6 +428,7 @@
         $(this).show();
         $(".contact-information").show();
         $('.line-seperator').show();
+        $(".filterOffice[data-office*=" + value + "]").addClass("showing");
       });
     }
   }
@@ -460,6 +461,15 @@
       });
     }
   }
+
+$('.hidden-xs form input, textarea').each(function(index) {
+    this.name = this.name + (index + 1);
+});
+
+
+
+
+
   var formData = {
     set: function () {
       // (Re)create the myForm valiable
@@ -467,10 +477,11 @@
       // Delete old data from sessionStorage
       sessionStorage.removeItem('myForm');
       // Take each input's name and value and add it to the array we already created.
-      $('form input, textarea').each(function () {
+      $('.hs-form input, textarea').each(function () {
         // Push each input's value into the temporary variable
         myForm.push({ name: this.name, value: this.value });
       });
+
 
       // Add the array to sessionStorage
       sessionStorage.myForm = JSON.stringify(myForm);
@@ -494,5 +505,7 @@
   $(".hs-input").keyup(function () {
     // If a change is detected, save the values.
     formData.set();
+
   });
+  
 </script>
