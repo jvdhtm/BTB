@@ -137,6 +137,23 @@ span.hs-form-required {
   
 }
 
+.row.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1200px;
+}
+
+.filterOffice {
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  &:first-child {
+    margin-top: 50px;
+  }
+}
+
 @include media('>=tablet') {
   .border-right {
     border-right: 3px solid rgba(151, 151, 151, 0.5);;
@@ -149,6 +166,20 @@ span.hs-form-required {
   }
   .contact-person .contact-person__portrait img {
     max-width: 264px;;
+  }
+  .row.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin-left: 16%;
+  }
+
+  .filterOffice {
+    flex-basis: 33.3333%;
+    max-width: 33.33333%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 .border-bottom {
