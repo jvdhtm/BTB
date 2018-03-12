@@ -4,7 +4,10 @@
   <section >
       <div class="container-fluid" style="position:relative;">
         <compontent src="../modules/general/video-banner"></compontent>
-        <compontent src="../modules/general/circle"></compontent>
+
+        <div class="hidden-xs">
+          <compontent src="../modules/general/circle"></compontent>
+        </div>
       </div>
 
       <compontent src="../modules/general/text-logo"></compontent>
@@ -15,8 +18,15 @@
   </section>
   <section>
     <div class="container" >
-      <compontent src="../modules/general/circle-rectangle-small"></compontent>
+      <div class="col-xs-12 col-sm-6 " style="position:relative;">
+        <compontent src="../modules/general/circle-rectangle-small"></compontent>
+      </div>
+      <div class="col-xs-12 col-sm-6 visible-xs visible-sm" style="position:relative;">
+          <compontent src="../modules/general/circle"></compontent>
+      </div>
+
     </div>
+
     <div class="container"  >
       <compontent src="../modules/general/video"></compontent>
       <compontent src="../modules/global/block-12"></compontent>
