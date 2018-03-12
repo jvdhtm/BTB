@@ -216,9 +216,9 @@ padding-top: 20px;
           display: inline-block  !important;;
           bottom: 35px  !important;;
           position: absolute  !important;;
-          margin-left: -125px !important;
+          margin-left: -95px !important;
           left: 50%;
-          width:390px;
+          //width:390px;
 
         }
 
@@ -228,6 +228,9 @@ padding-top: 20px;
         display: block;
         top: 70px;
         height: 200px;
+        .cta_button:hover {
+          color: #FFF !important;
+        }
       }
 
     .circle-rect {

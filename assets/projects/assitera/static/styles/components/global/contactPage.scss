@@ -149,9 +149,7 @@ span.hs-form-required {
   max-width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  &:first-child {
-    margin-top: 50px;
-  }
+  
 }
 
 @include media('>=tablet') {
@@ -167,19 +165,14 @@ span.hs-form-required {
   .contact-person .contact-person__portrait img {
     max-width: 264px;;
   }
-  .row.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    max-width: 1200px;
-    margin-left: 16%;
-  }
-
   .filterOffice {
     flex-basis: 33.3333%;
     max-width: 33.33333%;
     padding-right: 15px;
     padding-left: 15px;
+    &:first-child {
+      margin-top: 0px;
+    }
   }
 }
 .border-bottom {
@@ -188,5 +181,11 @@ span.hs-form-required {
 @media only screen and (min-width: 1600px) {
   .contact-person--information__wrapper {
     max-width: 506px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .row.flex {
+    margin-left: 16%;
   }
 }
