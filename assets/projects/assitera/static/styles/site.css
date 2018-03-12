@@ -3945,9 +3945,11 @@ button.close {
 @media (min-width: 768px) {
   .equalise-height {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch; } }
 
@@ -4169,8 +4171,7 @@ routes {
   width: 100%; }
 
 body {
-  font-family: 'FilsonSoftRegular';
-  background-color: #f7f7f7; }
+  font-family: 'FilsonSoftRegular'; }
 
 a {
   color: #fff;
@@ -4619,12 +4620,15 @@ input[type="color"],
 .row-eq-height {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center; }
 
 a.cta_button {
@@ -4872,6 +4876,7 @@ footer {
       padding-left: 100px; }
       .navigation ul {
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
         .navigation ul a {
@@ -5118,11 +5123,11 @@ footer {
   color: #6CBCC7;
   font-style: italic; }
 
-.input :-ms-input-placeholder {
+.input ::-moz-placeholder {
   color: #6CBCC7;
   font-style: italic; }
 
-.input ::-ms-input-placeholder {
+.input :-ms-input-placeholder {
   color: #6CBCC7;
   font-style: italic; }
 
@@ -5431,12 +5436,11 @@ footer {
   padding-left: 25px;
   padding-top: 20px; }
 
-.circle-rect .circle-rect__consult,
-.circle-rect .circle-rect__company {
+.circle-rect .texts {
   display: inline-block;
-  width: 100%; }
-  .circle-rect .circle-rect__consult b,
-  .circle-rect .circle-rect__company b {
+  width: 100%;
+  padding-top: 30px; }
+  .circle-rect .texts .each.numbers {
     margin-top: 0px;
     text-align: left;
     color: #fff;
@@ -5446,11 +5450,9 @@ footer {
     color: #fff;
     font-size: 50px; }
     @media (min-width: 992px) {
-      .circle-rect .circle-rect__consult b,
-      .circle-rect .circle-rect__company b {
+      .circle-rect .texts .each.numbers {
         font-size: 65px; } }
-  .circle-rect .circle-rect__consult span,
-  .circle-rect .circle-rect__company span {
+  .circle-rect .texts .each.text {
     width: 100%;
     line-height: 1em;
     margin-top: .5em;
@@ -5490,11 +5492,15 @@ footer {
       font-size: 24px  !important;
       display: inline-block  !important;
       bottom: 35px  !important;
-      position: absolute  !important; }
+      position: absolute  !important;
+      margin-left: -95px !important;
+      left: 50%; }
   .rectangle.small {
     display: block;
     top: 70px;
     height: 200px; }
+    .rectangle.small .cta_button:hover {
+      color: #FFF !important; }
   .circle-rect {
     height: 400px;
     width: 400px;
@@ -5507,8 +5513,8 @@ footer {
     left: -38px;
     padding-top: 90px; }
   .circle-rect > div {
-    padding-left: 85px;
-    padding-top: 50px; } }
+    padding-left: 80px;
+    padding-top: 25px; } }
 
 @media (min-width: 1200px) {
   .rectangle h3 {
@@ -5666,9 +5672,11 @@ span.hs-form-required {
         line-height: 27px; }
     .contact-person .contact-person--information__wrapper .contact-person__contactInfo {
       display: -webkit-box;
+      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between; }
       .contact-person .contact-person--information__wrapper .contact-person__contactInfo a {
@@ -5696,6 +5704,28 @@ span.hs-form-required {
       color: #6CBCC7;
       margin-bottom: 20px; }
 
+.row.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  max-width: 1200px; }
+
+.filterOffice {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
 @media (min-width: 768px) {
   .border-right {
     border-right: 3px solid rgba(151, 151, 151, 0.5); }
@@ -5704,7 +5734,16 @@ span.hs-form-required {
   .hs-button {
     width: 75% !important; }
   .contact-person .contact-person__portrait img {
-    max-width: 264px; } }
+    max-width: 264px; }
+  .filterOffice {
+    -webkit-flex-basis: 33.3333%;
+    -ms-flex-preferred-size: 33.3333%;
+    flex-basis: 33.3333%;
+    max-width: 33.33333%;
+    padding-right: 15px;
+    padding-left: 15px; }
+    .filterOffice:first-child {
+      margin-top: 0px; } }
 
 .border-bottom {
   border-bottom: 3px solid rgba(151, 151, 151, 0.5); }
@@ -5712,6 +5751,10 @@ span.hs-form-required {
 @media only screen and (min-width: 1600px) {
   .contact-person--information__wrapper {
     max-width: 506px !important; } }
+
+@media only screen and (min-width: 1200px) {
+  .row.flex {
+    margin-left: 16%; } }
 
 .text-logo {
   width: 100%;
@@ -5729,21 +5772,22 @@ span.hs-form-required {
       width: 500px;
       margin-left: 130px;
       margin-top: 80px; }
-      .text-logo p {
+      .text-logo .p {
         color: #fff;
-        text-shadow: 1px 1px 4px #373737; } }
+        text-shadow: 1px 1px 4px #373737;
+        text-align: left; } }
   @media (min-width: 1024px) {
     .text-logo {
       margin-left: 100px;
       margin-top: 180px; }
-      .text-logo p {
+      .text-logo .p {
         font-size: 20px; } }
   @media (min-width: 1200px) {
     .text-logo {
       width: 600px;
       margin-top: 140px;
       margin-left: 100px; }
-      .text-logo p {
+      .text-logo .p {
         font-size: 25px; } }
 
 .events .event-fadding {
@@ -6185,17 +6229,20 @@ span.hs-form-required {
   transition: all 0.45s ease; }
   .video .video-iframe iframe {
     width: 100% !important;
-    height: 785px !important;
+    height: 350px !important;
     -webkit-transition: all 0.45s ease;
     -o-transition: all 0.45s ease;
     transition: all 0.45s ease; }
 
 .video .video-button {
   width: 100%;
-  height: 562px;
+  height: 250px;
   position: absolute;
   top: 0px;
   left: 0px; }
+  @media (min-width: 992px) {
+    .video .video-button {
+      height: 560px; } }
   .video .video-button .play-button {
     border: 2px solid #6FECBE;
     color: #fff;
