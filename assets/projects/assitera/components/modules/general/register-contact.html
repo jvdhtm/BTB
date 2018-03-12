@@ -461,6 +461,15 @@
       });
     }
   }
+
+$('.hidden-xs form input, textarea').each(function(index) {
+    this.name = this.name + (index + 1);
+});
+
+
+
+
+
   var formData = {
     set: function () {
       // (Re)create the myForm valiable
@@ -468,10 +477,11 @@
       // Delete old data from sessionStorage
       sessionStorage.removeItem('myForm');
       // Take each input's name and value and add it to the array we already created.
-      $('form input, textarea').each(function () {
+      $('.hs-form input, textarea').each(function () {
         // Push each input's value into the temporary variable
         myForm.push({ name: this.name, value: this.value });
       });
+
 
       // Add the array to sessionStorage
       sessionStorage.myForm = JSON.stringify(myForm);
@@ -495,5 +505,7 @@
   $(".hs-input").keyup(function () {
     // If a change is detected, save the values.
     formData.set();
+
   });
+  
 </script>
