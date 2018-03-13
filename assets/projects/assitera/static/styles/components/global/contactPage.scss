@@ -82,6 +82,7 @@ span.hs-form-required {
   .contact-person__portrait {
     img {
       max-width: 264px;
+      min-height: 264px;
       margin: 0 auto;
     }
   }
@@ -119,6 +120,8 @@ span.hs-form-required {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     margin-bottom: 50px;
+    width: 350px;
+    height: 350px;
     .map__info {
       text-align: center;
       //padding-top: 20px;
@@ -187,7 +190,7 @@ span.hs-form-required {
   .filterOffice {
     flex-basis: 40%;
     max-width: 40%;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
     /*&:first-child {
       margin-top: 0px;
     }*/
