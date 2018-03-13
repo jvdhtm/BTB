@@ -54,7 +54,7 @@ elink {
 
 
 
-@include media('>=desktop') {
+@include media('>=tablet-portrait') {
   /* Primary colors */
 
   .def-lg-red {

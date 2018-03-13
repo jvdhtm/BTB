@@ -2811,8 +2811,8 @@ tbody.collapse.in {
       -webkit-box-shadow: none;
       box-shadow: none; }
       .navbar-collapse.collapse {
-        display: block;
-        height: auto;
+        display: block !important;
+        height: auto !important;
         padding-bottom: 0;
         overflow: visible; }
       .navbar-collapse.in {
@@ -4202,7 +4202,7 @@ elink {
   display: block;
   padding: 10px 15px; }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   /* Primary colors */
   .def-lg-red {
     background-color: #D0021B; }
@@ -4700,7 +4700,7 @@ a.cta_button {
       top: 90px;
       left: initial; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .society_logo {
     max-width: 250px;
     margin-left: 130px !important;
@@ -4714,7 +4714,7 @@ a.cta_button {
       height: 100%;
       width: 170px; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .society_logo a {
     height: 100%;
     width: 243px; } }
@@ -5198,20 +5198,11 @@ footer {
 .block-12 {
   padding-left: 20px;
   padding-right: 20px; }
-  @media (min-width: 768px) {
-    .block-12 .image-box {
-      padding-left: 100px;
-      padding-right: 100px; } }
   @media (min-width: 992px) {
-    .block-12 .image-box {
-      padding-left: 0px;
-      padding-right: 0px; }
-    .block-12 img {
-      position: absolute;
-      height: 100%; }
     .block-12 .text {
       padding: 90px;
-      padding-left: 140px; }
+      padding-left: 140px;
+      right: 0px; }
     .block-12 .image-box {
       position: relative;
       height: 100%;
@@ -5221,7 +5212,7 @@ footer {
       margin: 0px !important;
       background-position: 50%;
       background-size: cover;
-      top: 90px; }
+      top: 40px; }
       .block-12 .image-box img {
         position: absolute;
         width: 100%; } }
@@ -5394,7 +5385,7 @@ footer {
     text-align: center  !important;
     padding: 5px 30px 5px 30px  !important; }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .circle {
     height: 400px;
     width: 400px; } }
@@ -5447,7 +5438,7 @@ footer {
     margin-top: 17px;
     position: relative;
     top: 25px; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .rectangle h3 {
         top: 60px; } }
   .rectangle .cta_button {
@@ -5733,7 +5724,8 @@ span.hs-form-required {
       text-align: center;
       padding-bottom: 30px; }
       .contact-information__map .map__info h3 {
-        color: #6CBCC7; }
+        color: #6CBCC7;
+        text-transform: capitalize; }
   .contact-information ul {
     list-style: none;
     text-decoration: none;
@@ -5902,7 +5894,7 @@ span.hs-form-required {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px; }
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     .text-logo {
       position: absolute;
       top: 200px;
@@ -5913,7 +5905,7 @@ span.hs-form-required {
         color: #fff;
         text-shadow: 1px 1px 4px #373737;
         text-align: left; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     .text-logo {
       margin-left: 100px;
       margin-top: 180px; }

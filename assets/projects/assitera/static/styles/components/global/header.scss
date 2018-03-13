@@ -34,7 +34,7 @@
     left: initial;
 	}
 }
-@include media ('>=desktop') {
+@include media ('>=tablet-portrait') {
 	.society_logo {
 		max-width: 250px;
     margin-left: 130px !important;
@@ -51,7 +51,7 @@
 	}
 }
 
-@include media ('>=desktop') {
+@include media ('>=tablet-portrait') {
 	.society_logo {
 		a {
 			height: 100%;
