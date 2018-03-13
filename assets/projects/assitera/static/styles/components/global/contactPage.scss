@@ -120,15 +120,19 @@ span.hs-form-required {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     margin-bottom: 50px;
-    width: 350px;
-    height: 350px;
+    width: 364px;
+    height: 364px;
     .map__info {
       text-align: center;
-      //padding-top: 20px;
       padding-bottom: 30px;
+      padding-top: 30px;
+      background-color: #FFF;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
       h3 {
         color: $defLightBlue;
         text-transform: capitalize;
+        margin-top: 0;
       }
     }
   }
@@ -200,7 +204,7 @@ span.hs-form-required {
     }
     .filterOffice__contact-wrapper { 
       flex-direction: row;
-      margin-bottom: 70px;
+      margin-bottom: 90px;
     }
   }
   .sort--input {
