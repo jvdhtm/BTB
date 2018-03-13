@@ -391,7 +391,6 @@
 
       $("#professionSort").prop('disabled', false);
       $("#nameSort").prop('disabled', false);
-
     }
   });
 
@@ -403,6 +402,7 @@
   $('select#professionSort').change(function () {
     var filter = $(this).val();
     filterProfession(filter);
+    $("#nameSort")[0].selectedIndex = 0;
   });
   $('select#citySort').change(function () {
     var filter = $(this).val();
