@@ -5882,7 +5882,7 @@ span.hs-form-required {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  .contact-form .hs_firstname, .contact-form .hs_email {
+  .contact-form .hs_firstname, .contact-form .hs_email, .contact-form .hs_lastname, .contact-form .hs-phone {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px; }
@@ -6130,10 +6130,10 @@ span.hs-form-required {
       background: #f7f7f7;
       opacity: 0.3; } }
 
-#hsForm_b694c1db-2452-431d-b88c-23021d2de0e7_2087 {
+.events form {
   width: 100%; }
   @media (min-width: 768px) {
-    #hsForm_b694c1db-2452-431d-b88c-23021d2de0e7_2087 {
+    .events form {
       width: 50%; } }
 
 @media (min-width: 768px) {
