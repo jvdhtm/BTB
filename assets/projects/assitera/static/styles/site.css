@@ -5688,7 +5688,7 @@ span.hs-form-required {
   text-transform: capitalize; }
 
 .contact-person {
-  margin-bottom: 110px; }
+  margin-bottom: 50px; }
   .contact-person .contact-person__portrait img {
     max-width: 264px;
     min-height: 264px;
@@ -5723,8 +5723,11 @@ span.hs-form-required {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     margin-bottom: 50px;
-    width: 364px;
-    height: 364px; }
+    width: 100%;
+    height: 470px; }
+    .contact-information__map .map-canvas {
+      width: 100%;
+      height: 364px; }
     .contact-information__map .map__info {
       text-align: center;
       padding-bottom: 30px;
@@ -5786,7 +5789,7 @@ span.hs-form-required {
     flex-basis: 100%;
     max-width: 100%; }
     .filterOffice.showing .filterOffice__contact-wrapper .contact-information__map {
-      max-width: 364px;
+      width: 100%;
       margin: 0 auto 30px auto; }
 
 @media (min-width: 768px) {
@@ -5800,10 +5803,10 @@ span.hs-form-required {
   .contact-person .contact-person__portrait img {
     margin: initial; }
   .filterOffice {
-    -webkit-flex-basis: 40%;
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    max-width: 40%;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
     margin: 50px auto 0 auto;
     /*&:first-child {
       margin-top: 0px;
@@ -5850,13 +5853,17 @@ span.hs-form-required {
 
 @media only screen and (min-width: 1200px) {
   .row.flex {
-    margin-left: 16%; }
+    margin-left: 16%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 920px; }
   .filterOffice {
     -webkit-flex-basis: 33%;
     -ms-flex-preferred-size: 33%;
     flex-basis: 33%;
     max-width: 33%;
-    margin: initial; }
+    margin: initial;
+    margin-bottom: 30px; }
     .filterOffice.showing .filterOffice__contact-wrapper {
       max-width: initial; }
   .sort--input {
@@ -5879,11 +5886,16 @@ span.hs-form-required {
   .contact-form select {
     width: 75%; }
   .filterOffice .filterOffice__contact-wrapper {
-    max-width: 230px; } }
+    max-width: 290px; }
+  .contact-information__map {
+    margin-bottom: 0px; } }
 
 @media only screen and (min-width: 1601px) {
   .filterOffice .filterOffice__contact-wrapper {
-    max-width: initial; } }
+    max-width: initial; }
+  .row.flex {
+    width: 100%;
+    margin-left: 17%; } }
 
 @media only screen and (min-device-width: 415px) and (max-device-width: 767px) {
   .filterOffice {
@@ -6107,6 +6119,12 @@ span.hs-form-required {
     .events .item.pre .event-fadding {
       background: #f7f7f7;
       opacity: 0.3; } }
+
+#hs_form_target_widget_1521030152961 {
+  width: 100%; }
+  @media (min-width: 768px) {
+    #hs_form_target_widget_1521030152961 {
+      width: 50%; } }
 
 @media (min-width: 768px) {
   .news-archive-container {

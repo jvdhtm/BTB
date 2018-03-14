@@ -262,3 +262,10 @@
 
 
 }
+#hs_form_target_widget_1521030152961 {
+  width: 100%;
+  @include media('>=tablet')
+  {
+    width: 50%;
+  }
+}
