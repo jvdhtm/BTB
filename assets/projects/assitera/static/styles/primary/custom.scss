@@ -232,7 +232,12 @@ elink {
 
 
 }
-
+h1{
+  color: $defDarkBlueLight;
+}
+h2{
+  color: $defLightBlue;
+}
 .show-more-button {
     border: 2px solid $green;
     color: $defDarkBlueLight;

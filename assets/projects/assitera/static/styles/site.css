@@ -4302,6 +4302,12 @@ elink {
   .base-md-white {
     background-color: #f7f7f7; } }
 
+h1 {
+  color: #507F8D; }
+
+h2 {
+  color: #6CBCC7; }
+
 .show-more-button {
   border: 2px solid #6FECBE;
   color: #507F8D;
@@ -5789,7 +5795,6 @@ span.hs-form-required {
     flex-basis: 100%;
     max-width: 100%; }
     .filterOffice.showing .filterOffice__contact-wrapper .contact-information__map {
-      width: 100%;
       margin: 0 auto 30px auto; }
 
 @media (min-width: 768px) {
@@ -5816,6 +5821,10 @@ span.hs-form-required {
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
       max-width: 100%; }
+      .filterOffice.showing .contact-information__map .map-canvas {
+        width: 53%; }
+      .filterOffice.showing .contact-information__map .map__info {
+        width: 53%; }
     .filterOffice .filterOffice__contact-wrapper {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -5906,7 +5915,8 @@ span.hs-form-required {
 
 @media (min-width: 1024px) {
   .filterOffice.showing .filterOffice__contact-wrapper .contact-information__map {
-    margin: initial; } }
+    margin: initial;
+    width: 70%; } }
 
 .text-logo {
   width: 100%;
