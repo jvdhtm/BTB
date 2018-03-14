@@ -105,8 +105,10 @@ span.hs-form-required {
     .contact-person__contactInfo {
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
       a {
         color: $defDarkBlue;
+        margin-bottom: 10px;
       }
     }
   }
@@ -181,6 +183,17 @@ span.hs-form-required {
 }
 
 @include media('>=tablet') {
+  .contact-person{ 
+    .contact-person--information__wrapper {
+      .contact-person__contactInfo {
+        justify-content: initial;
+        flex-direction: row;
+        a {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
   .border-right {
     border-right: none;
   }
