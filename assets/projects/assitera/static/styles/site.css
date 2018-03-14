@@ -4304,8 +4304,8 @@ elink {
 
 .show-more-button {
   border: 2px solid #6FECBE;
-  color: #f7f7f7;
-  font-size: 15px;
+  color: #507F8D;
+  font-size: 17px;
   text-transform: uppercase;
   border-radius: 5px;
   background: transparent;
@@ -4313,10 +4313,11 @@ elink {
   margin-top: 30px;
   background: #6FECBE;
   left: 50%;
-  width: 200px;
+  width: 250px;
   position: relative;
   margin-left: -100px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border-radius: 20px; }
 
 .relative {
   position: relative; }
@@ -5317,8 +5318,6 @@ footer {
 
 .tasks-list {
   color: #373737; }
-  .tasks-list h1 {
-    margin-top: 0px; }
   .tasks-list h4 {
     color: #373737; }
 
@@ -6080,8 +6079,8 @@ span.hs-form-required {
     margin-left: -20%;
     opacity: 1; }
     .events .item.active .event-box {
-      -webkit-box-shadow: 0 0 2px #373737;
-      box-shadow: 0 0 2px #373737; }
+      -webkit-box-shadow: 0 0 10px #373737;
+      box-shadow: 0 0 10px #373737; }
   .events .item.next {
     position: absolute;
     -webkit-transform: scale(0.8);

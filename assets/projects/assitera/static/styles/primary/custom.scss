@@ -235,8 +235,8 @@ elink {
 
 .show-more-button {
     border: 2px solid $green;
-    color: $white;
-    font-size: 15px;
+    color: $defDarkBlueLight;
+    font-size: 17px;
     text-transform: uppercase;
     border-radius: 5px;
     background: transparent;
@@ -244,10 +244,11 @@ elink {
     margin-top: 30px;
     background: $green;
     left: 50%;
-    width: 200px;
+    width: 250px;
     position: relative;
     margin-left: -100px;
     margin-bottom: 30px;
+    border-radius: 20px;
 }
 
 .relative{
