@@ -78,7 +78,7 @@ span.hs-form-required {
   text-transform: capitalize;
 }
 .contact-person {
-  margin-bottom: 110px;
+  margin-bottom: 50px;
   .contact-person__portrait {
     img {
       max-width: 264px;
@@ -241,11 +241,14 @@ span.hs-form-required {
 @media only screen and (min-width: 1200px) {
   .row.flex {
     margin-left: 16%;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
   .filterOffice {
     flex-basis: 33%;
     max-width: 33%;
     margin: initial;
+    margin-bottom: 30px;
     &.showing {
     .filterOffice__contact-wrapper {
       max-width: initial;
