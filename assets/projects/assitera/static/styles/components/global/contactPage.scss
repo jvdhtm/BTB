@@ -11,7 +11,7 @@ textarea {
 textarea {
   border-radius: 20px;
   width: 100%;
-  border: 1px solid $defLightBlue;
+  border: 2px solid $defLightBlue;
 }
 
 .hs-button {
@@ -20,7 +20,6 @@ textarea {
   background-color: #6fecbe;
   color: #507f8d;
   margin: 10px 10px 20px 0;
-  box-shadow: 0px 2px 1px #ccc;
   width: 250px;
 }
 
@@ -105,9 +104,9 @@ span.hs-form-required {
     }
     .contact-person__contactInfo {
       display: flex;
-      justify-content: space-between;
       a {
         color: $defDarkBlue;
+        margin-right: 30px;
       }
     }
   }
@@ -115,6 +114,7 @@ span.hs-form-required {
 .contact-information {
   display: none;
   margin-bottom: 30px;
+  margin-left: 20px;
   &__map{
     background-color: $white; 
     border-bottom-right-radius: 30px;
@@ -206,10 +206,10 @@ span.hs-form-required {
       max-width: 100%;
       .contact-information__map{
         .map-canvas {
-          width: 53%;
+          width: 100%;
         }
         .map__info {
-          width: 53%;
+          width: 100%;
         }
       }
     }
@@ -325,6 +325,6 @@ span.hs-form-required {
 @include media('>=desktop') { 
   .filterOffice.showing .filterOffice__contact-wrapper .contact-information__map {
     margin: initial;
-    width: 70%;
+    width: 40%;
   }
 }
