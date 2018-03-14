@@ -29,7 +29,7 @@
     height: 250px;
     @include media('>=tablet-portrait')
     {
-      height: 560px;
+      height: 500px;
     }
     position: absolute;
     top:0px;
@@ -64,13 +64,13 @@
     padding-left: 30px;
     padding-right: 30px;
     h2 {
-        margin-top: 300px;
+      margin-top: 200px;
     }
   .video-text {
     width: 63%;
     padding: 40px;
     margin-left: -15px;
-    height: 785px;
+    height: 700px;
     float: left;
     transition: all 0.45s ease;
   }
@@ -86,7 +86,7 @@
     transition: all 0.45s ease;
     iframe{
       width: 100% !important;
-      height: 785px !important;
+      height: 700px !important;
       border-bottom-right-radius: 40px;
       border-top-right-radius: 40px;
       transition: all 0.45s ease;
