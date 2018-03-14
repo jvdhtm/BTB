@@ -5424,7 +5424,7 @@ footer {
       padding-left: 5%;
       padding-left: 12%;
       min-height: 400px;
-      margin-top: -70px; } }
+      margin-top: -140px; } }
 
 .rectangle {
   display: block;
@@ -5505,7 +5505,7 @@ footer {
     height: 344px;
     background: #373737;
     position: relative;
-    border-radius: 6px;
+    border-radius: 20px;
     opacity: .9;
     width: 100%;
     top: 0px;
