@@ -80,8 +80,8 @@ span.hs-form-required {
   margin-bottom: 50px;
   .contact-person__portrait {
     img {
-      max-width: 264px;
-      min-height: 264px;
+      max-width: 315px;
+      min-height: 315px;
       margin: 0 auto;
     }
   }
@@ -104,9 +104,9 @@ span.hs-form-required {
     }
     .contact-person__contactInfo {
       display: flex;
+      justify-content: space-between;
       a {
         color: $defDarkBlue;
-        margin-right: 30px;
       }
     }
   }
@@ -167,7 +167,6 @@ span.hs-form-required {
   padding-left: 15px;
   .filterOffice__contact-wrapper {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
   }
   &.showing {
@@ -191,9 +190,14 @@ span.hs-form-required {
   .hs-button {
     width: 75% !important;
   }
-  .contact-person .contact-person__portrait img {
-    margin: initial;
-  }
+
+  .contact-person {
+    .contact-person__portrait {
+      img {
+          margin: initial;
+         }
+      }
+  }  
   .filterOffice {
     flex-basis: 50%;
     max-width: 50%;
@@ -247,11 +251,20 @@ span.hs-form-required {
   .contact-person--information__wrapper {
     max-width: 506px !important;
   }
+  .contact-person{ 
+    .contact-person--information__wrapper {
+      .contact-person__contactInfo {
+        justify-content: initial;
+        a {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .row.flex {
-    margin-left: 16%;
     margin-top: 50px;
     margin-bottom: 20px;
     width: 920px;
@@ -309,7 +322,6 @@ span.hs-form-required {
   } 
   .row.flex {
     width: 100%;
-    margin-left: 17%;
   }
 }
 

@@ -1,14 +1,13 @@
 <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-push-2 ">
+      <div class="col-lg-10">
         <h1 class="contact-header">Kontakt</h1>
       </div>
     </div>
     <div class="row">
       <div class="equalise-height contact-form" style="margin-bottom: -30px;">
-        <div class="col-lg-4 col-lg-push-2 col-sm-12 col-xs-12 border-right">
-          <p>Kontakt oss via formuläret eller sök en specifik medarbetare via sökfuntionen (klicka
-            <b>Sök</b> direkt för att se alla).</p>
+        <div class="col-lg-4 col-sm-12 col-xs-12 border-right">
+            {{ widget.search_text }}
           <div class="sort--input">
             <div class="input">
               <select class="hs-input" name="citySort°" id="citySort">
@@ -44,24 +43,24 @@
             </div>-->
           </div>
         </div>
-        <div class="col-lg-4 col-lg-push-3 col-sm-12 hidden-xs">
+        <div class="col-lg-4 col-sm-12 col-lg-offset-1 hidden-xs" style="margin-top: -40px;">
           {% form "Contact-form-sv" form_to_use='661f7761-e0d9-4e9e-b4c9-d6d87c983e2b' %}
         </div>
       </div>
     </div>
     <div class="row" style="overflow: hidden">
-      <div class="col-lg-9 col-lg-push-2 border-bottom hidden-sm hidden-md" style="margin: 30px 20px 30px 20px;">
+      <div class="col-lg-9 border-bottom hidden-sm hidden-md" style="margin: 30px auto;">
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-10 col-lg-push-2 ">
+      <div class="col-lg-10 ">
         <h1 class="contact-header officeHeader"></h1>
         <!--Header title-->
       </div>
     </div>
     <div class="row">
       {% for row in hubdb_table_rows(677656) %}
-          <div class="col-lg-5 col-lg-push-2 col-sm-6 col-xs-12 contact-person filterContact" data-personId="2" data-office="{{ row.office.name }}" data-profession="{{ row.professioncategory.name }}" data-name="{{ row.namesort }}">
+          <div class="col-lg-5 col-sm-6 col-xs-12 contact-person filterContact" data-personId="2" data-office="{{ row.office.name }}" data-profession="{{ row.professioncategory.name }}" data-name="{{ row.namesort }}">
               <div class="contact-person__portrait">
                   <img class="img-responsive" src="{{ row.image.url }}" />
               </div>
@@ -97,7 +96,7 @@
       
       
       <div class="row line-seperator" style="overflow: hidden;">
-          <div class="col-lg-9 col-lg-push-2 border-bottom" style="margin: 30px 20px;"></div>
+          <div class="col-lg-9 border-bottom" style="margin: 30px 20px;"></div>
       </div>
       
       
@@ -109,14 +108,19 @@
                 <div class="map-canvas" lat="{{ row.address.lat }}" lon="{{ row.address.lon }}"></div>
                 <div class="map__info">
                   <h3>{{ row.visiblecity }}</h3>
+                  {% if row.addressname %}
                   <h5 lat="{{ row.address.lat }}" lon="{{ row.address.lon }}">{{ row.addressname }}</h5>
+                  {% else %}
+                  <h5 style="color: #fff">address</h5>
+                  {% endif %}
                 </div>
               </div>
               <div class="contact-information">
                 <ul>
-                  <li>Adress: <span lat="{{ row.address.lat }}" lon="{{ row.address.lon }}">{{ row.addressname }}</span>, {{ row.office }}</li>
+                  <li>Adress: <span lat="{{ row.address.lat }}" lon="{{ row.address.lon }}">{{ row.addressname }}</span> {{ row.office }}</li>
+                  {% if row.phonenumber%}
                   <li>Telefon: 070-123456</li>
-                  <li>E-mail: Loremipsum@lorem.se</li>
+                  {% endif %}
                 </ul>
               </div>
           </div>
@@ -125,7 +129,7 @@
   </div>
   
       <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="order: -1; margin-bottom: 30px;">
-        {% form "Contact-form-sv" form_to_use='661f7761-e0d9-4e9e-b4c9-d6d87c983e2b' %}
+        {% form "Contact-form-sv2" form_to_use='661f7761-e0d9-4e9e-b4c9-d6d87c983e2b' %}
       </div>
     </div>
   </div>
