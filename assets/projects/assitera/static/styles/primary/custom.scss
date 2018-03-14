@@ -150,6 +150,8 @@ elink {
   font-size: 64px;
   text-align: center;
   color:$defDarkBlue;
+  margin-top: 40px;
+  margin-bottom: 70px;
 }
 
 @include media('>=tablet-portrait') {

@@ -170,9 +170,7 @@
 
       }
 
-      .item {
-        border: 1px solid transparent;
-      }
+
 
   }
 
@@ -198,7 +196,7 @@
 
        .event-box
        {
-           box-shadow: 0 0 2px $black;
+
            border-radius: 20px;
            min-height: 353px;
            overflow: hidden;
@@ -216,7 +214,10 @@
         margin-left: -20%;
           opacity: 1;
 
-
+          .event-box
+          {
+              box-shadow: 0 0 2px $black;
+          }
       }
 
       .item.next {
