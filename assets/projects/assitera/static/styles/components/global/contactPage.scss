@@ -120,8 +120,12 @@ span.hs-form-required {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     margin-bottom: 50px;
-    width: 364px;
-    height: 364px;
+    width: 100%;
+    height: 470px;
+    .map-canvas {
+      width: 100%;
+      height: 364px;
+      }
     .map__info {
       text-align: center;
       padding-bottom: 30px;
@@ -171,7 +175,7 @@ span.hs-form-required {
     max-width: 100%;
     .filterOffice__contact-wrapper {
       .contact-information__map {
-        max-width: 364px;
+        width: 100%;
         margin: 0 auto 30px auto;
       }
     }
@@ -192,8 +196,8 @@ span.hs-form-required {
     margin: initial;
   }
   .filterOffice {
-    flex-basis: 40%;
-    max-width: 40%;
+    flex-basis: 50%;
+    max-width: 50%;
     margin: 50px auto 0 auto;
     /*&:first-child {
       margin-top: 0px;
@@ -243,6 +247,7 @@ span.hs-form-required {
     margin-left: 16%;
     margin-top: 50px;
     margin-bottom: 20px;
+    width: 920px;
   }
   .filterOffice {
     flex-basis: 33%;
@@ -251,7 +256,7 @@ span.hs-form-required {
     margin-bottom: 30px;
     &.showing {
     .filterOffice__contact-wrapper {
-      max-width: initial;
+       max-width: initial;
       }
     }
   }
@@ -282,9 +287,12 @@ span.hs-form-required {
   }
   .filterOffice {
     .filterOffice__contact-wrapper {
-      max-width: 230px;
+      max-width: 290px;
     }
   } 
+  .contact-information__map {
+    margin-bottom: 0px;
+  }
 }
 @media only screen and (min-width: 1601px) {
   .filterOffice {
@@ -292,6 +300,10 @@ span.hs-form-required {
       max-width: initial;
     }
   } 
+  .row.flex {
+    width: 100%;
+    margin-left: 17%;
+  }
 }
 
 @media only screen and (min-device-width : 415px) and (max-device-width : 767px) {
