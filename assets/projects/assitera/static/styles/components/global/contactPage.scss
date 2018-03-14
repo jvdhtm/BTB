@@ -175,7 +175,6 @@ span.hs-form-required {
     max-width: 100%;
     .filterOffice__contact-wrapper {
       .contact-information__map {
-        width: 100%;
         margin: 0 auto 30px auto;
       }
     }
@@ -205,6 +204,14 @@ span.hs-form-required {
     &.showing {
       flex-basis: 100%;
       max-width: 100%;
+      .contact-information__map{
+        .map-canvas {
+          width: 53%;
+        }
+        .map__info {
+          width: 53%;
+        }
+      }
     }
     .filterOffice__contact-wrapper { 
       flex-direction: row;
@@ -318,5 +325,6 @@ span.hs-form-required {
 @include media('>=desktop') { 
   .filterOffice.showing .filterOffice__contact-wrapper .contact-information__map {
     margin: initial;
+    width: 70%;
   }
 }
