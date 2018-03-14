@@ -5400,7 +5400,7 @@ footer {
     position: absolute !important;
     width: 50% !important;
     left: 50% !important;
-    margin-left: -30% !important;
+    margin-left: -32% !important;
     font-size: 13px !important;
     bottom: 40px !important;
     text-align: center !important;
@@ -5459,7 +5459,7 @@ footer {
     margin-left: 0px;
     margin-top: 17px;
     position: relative;
-    top: 25px; }
+    top: 60px; }
     @media (min-width: 992px) {
       .rectangle h3 {
         top: 60px; } }
@@ -5473,7 +5473,7 @@ footer {
     -moz-border-radius: 28  !important;
     position: relative  !important;
     size: 13px  !important;
-    bottom: -45px  !important;
+    bottom: -88px  !important;
     text-align: center;
     padding: 5px 30px 5px 30px  !important;
     min-width: 20%  !important; }
