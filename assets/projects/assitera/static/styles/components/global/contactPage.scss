@@ -81,7 +81,7 @@ span.hs-form-required {
   .contact-person__portrait {
     img {
       max-width: 315px;
-      min-height: 315px;
+      min-height: auto;
       margin: 0 auto;
     }
   }
@@ -150,9 +150,14 @@ span.hs-form-required {
       font-size: 20px;
       color: $defLightBlue;
       margin-bottom: 20px;
+      a {
+        color: $defLightBlue;
+        &:hover {
+          color: $defLightBlue;
+        }
+      }
     }
   }
-  
 }
 
 .row.flex {
@@ -208,6 +213,7 @@ span.hs-form-required {
     .contact-person__portrait {
       img {
           margin: initial;
+          min-height: 315px;
          }
       }
   }  
