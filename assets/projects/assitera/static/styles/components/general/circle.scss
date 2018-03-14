@@ -39,20 +39,23 @@
 
         .cta_button {
 
-            color: $defDarkBlueDark !important;
-            border: solid $defDarkBlueDark 2px  !important;;
-            background: transparent  !important;;
-            border-radius: 28px  !important;;
-            -webkit-border-radius: 28  !important;;
-            -moz-border-radius: 28  !important;;
-            position: absolute  !important;;
-            width: 60%  !important;;
-            left: 50%  !important;;
-            margin-left: -30%  !important;;
-            font-size: 13px  !important;;
-            bottom: 40px   !important;;
-            text-align: center  !important;;
-                padding: 5px 30px 5px 30px  !important;;
+
+
+                color: $defDarkBlueDark !important;
+                border: solid $defDarkBlueDark 2px !important;
+                background: transparent !important;
+                border-radius: 28px !important;
+                -webkit-border-radius: 28 !important;
+                -moz-border-radius: 28 !important;
+                position: absolute !important;
+                width: 50% !important;
+                left: 50% !important;
+                margin-left: -30% !important;
+                font-size: 13px !important;
+                bottom: 40px !important;
+                text-align: center !important;
+                padding: 5px 30px 5px 30px !important;
+                display: block;
         }
     }
 }
@@ -131,7 +134,7 @@
       display: inline-block  !important;;
       color: $defCyan  !important;;
       border: solid $defCyan 2px  !important;;
-      background: transparent  !important;;
+      background: transparent ;;
       border-radius: 28px  !important;;
       -webkit-border-radius: 28  !important;;
       -moz-border-radius: 28  !important;;

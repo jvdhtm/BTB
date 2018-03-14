@@ -23,19 +23,16 @@
     padding-top: 20px;
     @include media('>=tablet')
     {
-      padding-left: 40px;
-      padding-right: 40px;
+
     }
     @include media('>=lgscreen')
     {
-      padding-left: 150px;
-      padding-right: 150px;
+
     }
 
     @include media('>=xlscreen')
     {
-      padding-left: 320px;
-      padding-right: 320px;
+
     }
   }
 
