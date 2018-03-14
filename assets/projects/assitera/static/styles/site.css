@@ -4657,7 +4657,14 @@ a.cta_button {
   color: #101010 !important;
   -webkit-box-shadow: 0px 1px 18px 1px #000000;
   box-shadow: 0px 1px 2px 1px #000000;
-  background: #6FECBE; }
+  background: #6FECBE !important; }
+
+.show-more-button:hover {
+  -webkit-box-shadow: 0px 1px 18px 1px #ababab;
+  box-shadow: 0px 1px 2px 1px #ababab;
+  background: #6cbcc7;
+  border-color: #6cbcc7;
+  color: #fff; }
 
 .cta_button_anime_that_eric_like:after {
   content: "";
@@ -5381,18 +5388,19 @@ footer {
   .circle .circle__register .cta_button {
     color: #3A5464 !important;
     border: solid #3A5464 2px !important;
-    background: transparent  !important;
-    border-radius: 28px  !important;
-    -webkit-border-radius: 28  !important;
-    -moz-border-radius: 28  !important;
-    position: absolute  !important;
-    width: 60%  !important;
-    left: 50%  !important;
-    margin-left: -30%  !important;
-    font-size: 13px  !important;
-    bottom: 40px   !important;
-    text-align: center  !important;
-    padding: 5px 30px 5px 30px  !important; }
+    background: transparent !important;
+    border-radius: 28px !important;
+    -webkit-border-radius: 28 !important;
+    -moz-border-radius: 28 !important;
+    position: absolute !important;
+    width: 50% !important;
+    left: 50% !important;
+    margin-left: -30% !important;
+    font-size: 13px !important;
+    bottom: 40px !important;
+    text-align: center !important;
+    padding: 5px 30px 5px 30px !important;
+    display: block; }
 
 @media (min-width: 992px) {
   .circle {
@@ -5454,7 +5462,7 @@ footer {
     display: inline-block  !important;
     color: #35F6C2 !important;
     border: solid #35F6C2 2px !important;
-    background: transparent  !important;
+    background: transparent;
     border-radius: 28px  !important;
     -webkit-border-radius: 28  !important;
     -moz-border-radius: 28  !important;
@@ -5641,7 +5649,7 @@ textarea {
 textarea {
   border-radius: 20px;
   width: 100%;
-  border: 1px solid #6CBCC7; }
+  border: 2px solid #6CBCC7; }
 
 .hs-button {
   border-radius: 20px;
@@ -5649,8 +5657,6 @@ textarea {
   background-color: #6fecbe;
   color: #507f8d;
   margin: 10px 10px 20px 0;
-  -webkit-box-shadow: 0px 2px 1px #ccc;
-  box-shadow: 0px 2px 1px #ccc;
   width: 250px; }
 
 span.hs-form-required {
@@ -5714,17 +5720,15 @@ span.hs-form-required {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
+      display: flex; }
       .contact-person .contact-person--information__wrapper .contact-person__contactInfo a {
-        color: #405F6E; }
+        color: #405F6E;
+        margin-right: 30px; }
 
 .contact-information {
   display: none;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-left: 20px; }
   .contact-information__map {
     background-color: #f7f7f7;
     border-bottom-right-radius: 30px;
@@ -5823,9 +5827,9 @@ span.hs-form-required {
       flex-basis: 100%;
       max-width: 100%; }
       .filterOffice.showing .contact-information__map .map-canvas {
-        width: 53%; }
+        width: 100%; }
       .filterOffice.showing .contact-information__map .map__info {
-        width: 53%; }
+        width: 100%; }
     .filterOffice .filterOffice__contact-wrapper {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -5917,7 +5921,7 @@ span.hs-form-required {
 @media (min-width: 1024px) {
   .filterOffice.showing .filterOffice__contact-wrapper .contact-information__map {
     margin: initial;
-    width: 70%; } }
+    width: 40%; } }
 
 .text-logo {
   width: 100%;
@@ -5970,18 +5974,6 @@ span.hs-form-required {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px; }
-  @media (min-width: 768px) {
-    .events p {
-      padding-left: 40px;
-      padding-right: 40px; } }
-  @media (min-width: 1200px) {
-    .events p {
-      padding-left: 150px;
-      padding-right: 150px; } }
-  @media (min-width: 1600px) {
-    .events p {
-      padding-left: 320px;
-      padding-right: 320px; } }
 
 .events .arrows {
   width: 55%;
@@ -6136,21 +6128,6 @@ span.hs-form-required {
   @media (min-width: 768px) {
     .events form {
       width: 50%; } }
-
-@media (min-width: 768px) {
-  .news-archive-container {
-    padding-left: 40px;
-    padding-right: 40px; } }
-
-@media (min-width: 1200px) {
-  .news-archive-container {
-    padding-left: 150px;
-    padding-right: 150px; } }
-
-@media (min-width: 1600px) {
-  .news-archive-container {
-    padding-left: 320px;
-    padding-right: 320px; } }
 
 .news-archive {
   margin-bottom: 20px; }

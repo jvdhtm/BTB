@@ -649,7 +649,16 @@ margin-left: auto;
   color: #101010 !important;
   -webkit-box-shadow: 0px 1px 18px 1px #000000;
       box-shadow: 0px 1px 2px 1px #000000;
-        background: #6FECBE;
+        background: #6FECBE !important;
+}
+
+.show-more-button:hover {
+  -webkit-box-shadow: 0px 1px 18px 1px #ababab;
+      box-shadow: 0px 1px 2px 1px #ababab;
+
+      background: #6cbcc7;
+      border-color: #6cbcc7;
+      color: #fff;
 }
 
 .cta_button_anime_that_eric_like:after {
