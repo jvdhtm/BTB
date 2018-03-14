@@ -5064,6 +5064,9 @@ footer {
     transition: all 0.5s ease-in-out;
   }
 }*/
+h1.news--block--header__title {
+  color: #f7f7f7; }
+
 .news--block__fadding {
   position: absolute;
   z-index: 1;
