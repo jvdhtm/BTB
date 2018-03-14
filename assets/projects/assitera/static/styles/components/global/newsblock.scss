@@ -84,7 +84,11 @@
     transition: all 0.5s ease-in-out;
   }
 }*/
-h1.news--block--header__title {
+
+.news--block--header__date {
+    color: $white;
+}
+.news--block--header__title {
     color: $white;
 }
 .news--block__fadding {
