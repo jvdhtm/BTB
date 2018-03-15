@@ -6105,9 +6105,9 @@ span.hs-form-required {
     transform: scale(0.3);
     width: 40%;
     z-index: 0;
-    -webkit-transition: all 0.45s ease;
-    -o-transition: all 0.45s ease;
-    transition: all 0.45s ease;
+    -webkit-transition: right 0.45s ease;
+    -o-transition: right 0.45s ease;
+    transition: right 0.45s ease;
     padding: 20px;
     z-index: -1;
     opacity: 0.3; }
@@ -6124,7 +6124,12 @@ span.hs-form-required {
     display: block;
     left: 50%;
     margin-left: -20%;
-    opacity: 1; }
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.45s ease;
+    transition: -webkit-transform 0.45s ease;
+    -o-transition: transform 0.45s ease;
+    transition: transform 0.45s ease;
+    transition: transform 0.45s ease, -webkit-transform 0.45s ease; }
     .events .item.active .event-box {
       -webkit-box-shadow: 0 0 10px #373737;
       box-shadow: 0 0 10px #373737; }
@@ -6137,6 +6142,9 @@ span.hs-form-required {
     display: block;
     top: 40px;
     right: -7%;
+    -webkit-transition: right 0.45s ease;
+    -o-transition: right 0.45s ease;
+    transition: right 0.45s ease;
     opacity: 1; }
     .events .item.next .event-fadding {
       background: #f7f7f7;
@@ -6150,6 +6158,9 @@ span.hs-form-required {
     display: block;
     top: 40px;
     left: -7%;
+    -webkit-transition: left 0.45s ease;
+    -o-transition: left 0.45s ease;
+    transition: left 0.45s ease;
     opacity: 1; }
     .events .item.pre .event-fadding {
       background: #f7f7f7;
