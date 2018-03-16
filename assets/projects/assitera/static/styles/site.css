@@ -5490,7 +5490,7 @@ footer {
 .circle-rect .texts {
   display: inline-block;
   width: 100%;
-  padding-top: 30px; }
+  padding-top: 40px; }
   .circle-rect .texts .each.numbers {
     margin-top: 0px;
     text-align: left;
@@ -5565,7 +5565,7 @@ footer {
     padding-top: 90px; }
   .circle-rect > div {
     padding-left: 80px;
-    padding-top: 25px; } }
+    padding-top: 10px; } }
 
 @media (min-width: 1200px) {
   .rectangle h3 {
