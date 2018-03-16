@@ -4878,7 +4878,8 @@ footer {
       background: transparent;
       width: 70%;
       float: left;
-      padding-left: 100px; }
+      padding-left: 100px;
+      position: initial; }
       .navigation ul {
         display: -webkit-box;
         display: -webkit-flex;
@@ -4975,19 +4976,20 @@ footer {
   width: 100%;
   margin: auto; }
 
-.path {
-  display: none; }
-  @media (min-width: 1024px) {
-    .path {
-      display: block;
-      position: absolute;
-      right: 0px;
-      top: 0px; }
-      .path a {
-        padding: 20px 30px;
-        font-size: 20px;
-        text-align: center;
-        background: #3e5f6b; } }
+.path a {
+  padding: 10px 15px; }
+
+@media (min-width: 1024px) {
+  .path {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+    .path a {
+      padding: 20px 30px;
+      font-size: 20px;
+      text-align: center;
+      background: #3e5f6b; } }
 
 .search {
   width: 100%;
