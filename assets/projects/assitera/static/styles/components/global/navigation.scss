@@ -83,6 +83,7 @@
         width: 70%;
         float: left;
         padding-left: 100px;
+            position: initial;
           ul {
               display: flex;
               a {
@@ -206,7 +207,9 @@
   }
 
   .path {
-    display: none;
+    a{
+          padding: 10px 15px;
+    }
     @include media('>=desktop') {
       display: block;
       position: absolute;

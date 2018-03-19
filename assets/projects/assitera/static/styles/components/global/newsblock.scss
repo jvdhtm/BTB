@@ -85,6 +85,12 @@
   }
 }*/
 
+.news--block--header__date {
+    color: $white;
+}
+.news--block--header__title {
+    color: $white;
+}
 .news--block__fadding {
     position: absolute;
     z-index: 1;
@@ -101,7 +107,7 @@
     margin-left: -40%;
     color:$defLightBlueDark;
     text-align: center;
-    top:20px;
+    top:40px;
     padding: 10px;
     z-index: 2;
     pointer-events: none;

@@ -184,7 +184,7 @@
        transform: scale(0.3);
        width: 40%;
        z-index: 0;
-       transition: all 0.45s ease;
+       transition: right 0.45s ease;
        padding: 20px;
        z-index: -1;
        opacity: 0.3;
@@ -210,7 +210,7 @@
         left: 50%;
         margin-left: -20%;
           opacity: 1;
-
+          transition: transform 0.45s ease;
           .event-box
           {
               box-shadow: 0 0 10px $black;
@@ -224,6 +224,7 @@
         display: block;
         top: 40px;
         right: -7%;
+        transition: right 0.45s ease;
           opacity: 1;
           .event-fadding
           {
@@ -240,6 +241,7 @@
         display: block;
         top: 40px;
         left: -7%;
+        transition: left 0.45s ease;
         opacity: 1;
         .event-fadding
         {
