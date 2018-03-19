@@ -63,32 +63,25 @@
   {
     padding-left: 30px;
     padding-right: 30px;
-    h2 {
-      margin-top: 200px;
-    }
   .video-text {
-    width: 63%;
+    width: 100%;
     padding: 40px;
     margin-left: -15px;
-    height: 700px;
     float: left;
+    text-align: center;
     transition: all 0.45s ease;
   }
   .video-iframe {
     margin-top: 0px;
-    width: 40%;
-    position: absolute;
+    width: 100%;
+    position: relative;
     right: 0px;
     top:0px;
     overflow: hidden;
-    border-bottom-right-radius: 40px;
-    border-top-right-radius: 40px;
     transition: all 0.45s ease;
     iframe{
       width: 100% !important;
       height: 700px !important;
-      border-bottom-right-radius: 40px;
-      border-top-right-radius: 40px;
       transition: all 0.45s ease;
     }
   }
