@@ -5224,26 +5224,15 @@ footer {
   padding-left: 20px;
   padding-right: 20px; }
   @media (min-width: 992px) {
-    .block-12 .text {
-      padding: 90px;
-      padding-left: 140px;
-      right: 0px; }
     .block-12 .image-box {
       position: relative;
       height: 100%;
       width: 100%;
-      min-height: 512px;
-      min-width: 413px;
       margin: 0px !important;
       background-position: 50%;
-      background-size: cover;
-      top: 40px; }
+      background-size: cover; }
       .block-12 .image-box img {
-        position: absolute;
         width: 100%; } }
-  @media (min-width: 1200px) {
-    .block-12 .text {
-      padding: 90px; } }
   .block-12 h2 {
     font-size: 48px;
     word-wrap: break-word; }
@@ -5615,26 +5604,30 @@ footer {
   padding-right: 30px; }
 
 .bubble-sm {
-  width: 30px;
-  height: 30px; }
+  width: 80px;
+  height: 80px;
+  top: 180px;
+  left: 130px; }
 
 .bubble-md {
-  width: 60px;
-  height: 60px; }
+  width: 100px;
+  height: 100px;
+  top: 290px;
+  left: -70px; }
 
 .bubble-lg {
-  width: 80px;
-  height: 80px; }
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: -100px; }
 
 .force-show {
   display: block !important; }
 
 .bubble {
   position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 50%;
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: -2; }
 
 .bubble-container {
@@ -5742,24 +5735,10 @@ span.hs-form-required {
       margin-bottom: 20px; }
       .contact-person .contact-person--information__wrapper .contact-person__presentation p {
         line-height: 27px; }
-    .contact-person .contact-person--information__wrapper .contact-person__contactInfo {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      .contact-person .contact-person--information__wrapper .contact-person__contactInfo a {
-        color: #405F6E;
-        margin-bottom: 10px;
-        margin-right: 15px; }
+    .contact-person .contact-person--information__wrapper .contact-person__contactInfo a {
+      color: #405F6E;
+      margin-bottom: 10px;
+      margin-right: 15px; }
 
 .contact-information {
   display: none;
@@ -6500,7 +6479,7 @@ span.hs-form-required {
         transition: all 0.45s ease; }
     .video.expanded .video-iframe {
       width: 100%;
-      position: absolute;
+      position: relative;
       border-bottom-right-radius: 0px;
       border-top-right-radius: 0px; }
       .video.expanded .video-iframe iframe {
