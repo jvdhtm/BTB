@@ -5224,26 +5224,15 @@ footer {
   padding-left: 20px;
   padding-right: 20px; }
   @media (min-width: 992px) {
-    .block-12 .text {
-      padding: 90px;
-      padding-left: 140px;
-      right: 0px; }
     .block-12 .image-box {
       position: relative;
       height: 100%;
       width: 100%;
-      min-height: 512px;
-      min-width: 413px;
       margin: 0px !important;
       background-position: 50%;
-      background-size: cover;
-      top: 40px; }
+      background-size: cover; }
       .block-12 .image-box img {
-        position: absolute;
         width: 100%; } }
-  @media (min-width: 1200px) {
-    .block-12 .text {
-      padding: 90px; } }
   .block-12 h2 {
     font-size: 48px;
     word-wrap: break-word; }
@@ -5490,7 +5479,7 @@ footer {
 .circle-rect .texts {
   display: inline-block;
   width: 100%;
-  padding-top: 30px; }
+  padding-top: 40px; }
   .circle-rect .texts .each.numbers {
     margin-top: 0px;
     text-align: left;
@@ -5565,7 +5554,7 @@ footer {
     padding-top: 90px; }
   .circle-rect > div {
     padding-left: 80px;
-    padding-top: 25px; } }
+    padding-top: 10px; } }
 
 @media (min-width: 1200px) {
   .rectangle h3 {
@@ -5615,26 +5604,30 @@ footer {
   padding-right: 30px; }
 
 .bubble-sm {
-  width: 30px;
-  height: 30px; }
+  width: 80px;
+  height: 80px;
+  top: 180px;
+  left: 130px; }
 
 .bubble-md {
-  width: 60px;
-  height: 60px; }
+  width: 100px;
+  height: 100px;
+  top: 290px;
+  left: -70px; }
 
 .bubble-lg {
-  width: 80px;
-  height: 80px; }
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: -100px; }
 
 .force-show {
   display: block !important; }
 
 .bubble {
   position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 50%;
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: -2; }
 
 .bubble-container {
@@ -5714,32 +5707,38 @@ span.hs-form-required {
     min-height: auto;
     margin: 0 auto; }
   .contact-person .contact-person--information__wrapper {
-    max-width: 376px; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
     .contact-person .contact-person--information__wrapper .contact-person__info h3 {
       color: #6CBCC7; }
     .contact-person .contact-person--information__wrapper .contact-person__info h5 {
       color: #405F6E; }
+    .contact-person .contact-person--information__wrapper .contact-person__info a {
+      color: #405F6E;
+      margin-bottom: 10px; }
     .contact-person .contact-person--information__wrapper .contact-person__presentation {
       margin-bottom: 20px; }
       .contact-person .contact-person--information__wrapper .contact-person__presentation p {
         line-height: 27px; }
-    .contact-person .contact-person--information__wrapper .contact-person__contactInfo {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      .contact-person .contact-person--information__wrapper .contact-person__contactInfo a {
-        color: #405F6E;
-        margin-bottom: 10px; }
+    .contact-person .contact-person--information__wrapper .contact-person__contactInfo a {
+      color: #405F6E;
+      margin-bottom: 10px;
+      margin-right: 15px; }
 
 .contact-information {
   display: none;
@@ -5819,18 +5818,6 @@ span.hs-form-required {
       margin: 0 auto 30px auto; }
 
 @media (min-width: 768px) {
-  .contact-person .contact-person--information__wrapper .contact-person__contactInfo {
-    -webkit-box-pack: initial;
-    -webkit-justify-content: initial;
-    -ms-flex-pack: initial;
-    justify-content: initial;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-    .contact-person .contact-person--information__wrapper .contact-person__contactInfo a {
-      margin-right: 30px; }
   .border-right {
     border-right: none; }
   /*.contact-form select {
@@ -5878,7 +5865,10 @@ span.hs-form-required {
     margin-bottom: 50px; }
   .equalise-height.contact-form {
     display: block; }
-  .contact-form .hs_firstname, .contact-form .hs_email, .contact-form .hs_lastname, .contact-form .hs-phone {
+  .contact-form .hs_firstname,
+  .contact-form .hs_email,
+  .contact-form .hs_lastname,
+  .contact-form .hs-phone {
     display: inline-block;
     width: 49%;
     margin-bottom: 20px; }
@@ -5892,14 +5882,7 @@ span.hs-form-required {
 
 @media only screen and (min-width: 1600px) {
   .contact-person--information__wrapper {
-    max-width: 506px !important; }
-  .contact-person .contact-person--information__wrapper .contact-person__contactInfo {
-    -webkit-box-pack: initial;
-    -webkit-justify-content: initial;
-    -ms-flex-pack: initial;
-    justify-content: initial; }
-    .contact-person .contact-person--information__wrapper .contact-person__contactInfo a {
-      margin-right: 30px; } }
+    max-width: 506px !important; } }
 
 @media only screen and (min-width: 1200px) {
   .row.flex {
@@ -5922,7 +5905,10 @@ span.hs-form-required {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  .contact-form .hs_firstname, .contact-form .hs_email, .contact-form .hs_lastname, .contact-form .hs-phone {
+  .contact-form .hs_firstname,
+  .contact-form .hs_email,
+  .contact-form .hs_lastname,
+  .contact-form .hs-phone {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px; }
@@ -5937,7 +5923,9 @@ span.hs-form-required {
   .filterOffice .filterOffice__contact-wrapper {
     max-width: 290px; }
   .contact-information__map {
-    margin-bottom: 0px; } }
+    margin-bottom: 0px; }
+  .contact-person {
+    margin-left: 7%; } }
 
 @media only screen and (min-width: 1601px) {
   .filterOffice .filterOffice__contact-wrapper {
@@ -5955,7 +5943,14 @@ span.hs-form-required {
 @media (min-width: 1024px) {
   .filterOffice.showing .filterOffice__contact-wrapper .contact-information__map {
     margin: initial;
-    width: 40%; } }
+    width: 40%; }
+  .contact-person .contact-person--information__wrapper .contact-person__contactInfo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: 50px; } }
 
 .text-logo {
   width: 100%;
@@ -6457,40 +6452,34 @@ span.hs-form-required {
   .video {
     padding-left: 30px;
     padding-right: 30px; }
-    .video h2 {
-      margin-top: 200px; }
     .video .video-text {
-      width: 63%;
+      width: 100%;
       padding: 40px;
       margin-left: -15px;
-      height: 700px;
       float: left;
+      text-align: center;
       -webkit-transition: all 0.45s ease;
       -o-transition: all 0.45s ease;
       transition: all 0.45s ease; }
     .video .video-iframe {
       margin-top: 0px;
-      width: 40%;
-      position: absolute;
+      width: 100%;
+      position: relative;
       right: 0px;
       top: 0px;
       overflow: hidden;
-      border-bottom-right-radius: 40px;
-      border-top-right-radius: 40px;
       -webkit-transition: all 0.45s ease;
       -o-transition: all 0.45s ease;
       transition: all 0.45s ease; }
       .video .video-iframe iframe {
         width: 100% !important;
         height: 700px !important;
-        border-bottom-right-radius: 40px;
-        border-top-right-radius: 40px;
         -webkit-transition: all 0.45s ease;
         -o-transition: all 0.45s ease;
         transition: all 0.45s ease; }
     .video.expanded .video-iframe {
       width: 100%;
-      position: absolute;
+      position: relative;
       border-bottom-right-radius: 0px;
       border-top-right-radius: 0px; }
       .video.expanded .video-iframe iframe {
