@@ -60,7 +60,7 @@
 </div>
 <div class="row">
   {% for row in hubdb_table_rows(677656) %}
-  <div class="col-lg-5 col-lg-offset-1 col-sm-6 col-xs-12 contact-person filterContact" data-office="{{ row.office.name }}" data-profession="{{ row.professioncategory.name }}" data-name="{{ row.namesort }}">
+  <div class="col-lg-6 col-sm-6 col-xs-12 contact-person filterContact" data-office="{{ row.office.name }}" data-profession="{{ row.professioncategory.name }}" data-name="{{ row.namesort }}">
     <div class="contact-person__portrait">
       <img class="img-responsive" src="{{ row.image.url }}" />
     </div>
