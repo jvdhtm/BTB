@@ -129,17 +129,24 @@
 .news-wrapper {
     position: relative;
     width: 100%;
-    min-height: 563px;
+    min-height: 325px;
     height: 100%;
+    @include media('>=tablet') {
+      
+      min-height: 563px;
+    }
     h1 {
       margin-top: 0px;
       word-wrap: break-word;
     }
     img {
-      height: 563px;
+      height: 325px;
       object-fit: cover;
       transition: transform 0.5s ease-in-out;
       transform: scale3d(1,1,1);
+      @include media('>=tablet') {
+        height: 563px;
+      }
       &:hover {
         transform: scale3d(1.1, 1.1, 1.1);
       }
