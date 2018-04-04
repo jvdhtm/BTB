@@ -78,7 +78,7 @@ span.hs-form-required {
   margin-bottom: 50px;
   .contact-person__portrait {
     img {
-      max-width: 315px;
+      max-width: 400px;
       min-height: auto;
       margin: 0 auto;
     }
@@ -205,7 +205,7 @@ span.hs-form-required {
     .contact-person__portrait {
       img {
         margin: initial;
-        min-height: 315px;
+        min-height: 400px;
       }
     }
   }
@@ -313,7 +313,7 @@ span.hs-form-required {
     ;
   }
   .contact-form select {
-    width: 75%;
+    width: 82%;
   }
   .filterOffice {
     .filterOffice__contact-wrapper {
@@ -322,9 +322,6 @@ span.hs-form-required {
   }
   .contact-information__map {
     margin-bottom: 0px;
-  }
-  .contact-person {
-    margin-left: 7%;
   }
 }
 

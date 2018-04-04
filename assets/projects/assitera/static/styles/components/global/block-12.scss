@@ -28,8 +28,11 @@
   }
 
     h2 {
-    font-size: 48px;
+    font-size: 36px;
     word-wrap: break-word;
+     @include media('>=tablet'){
+      font-size: 48px;
+     }
   }
   p {
     font-size: 18px;

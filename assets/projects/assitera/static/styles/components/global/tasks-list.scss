@@ -61,6 +61,13 @@
 	font-style:italic;
 	font-size:16px;
 	margin:30px 0px 40px 0px;
+	i{
+		font-size:110%;
+		background:black;
+		color:white;
+		padding:6px;
+		border-radius:50%;
+	}
 	}
 .hs_cos_wrapper_type_social_sharing
 {
@@ -75,7 +82,7 @@
     border: 1px solid black;
     padding: 5px;
     text-align: center;
-    width: 30px;
+    width: 36px;
 }
 .task-desc{
 	padding-bottom:20px;

@@ -18,7 +18,7 @@
           </select>
         </div>
         <div class="input">
-          <select id="professionSort" class="hs-input" name="professionSort" disabled>
+          <select id="professionSort" class="hs-input" name="professionSort" >
             <option value="empty" data-profession = "empty" disabled="" selected="">Yrkesroll ▾</option>
             <option value="Management" data-profession = "Management">Management</option>
             <option value="Finance" data-profession = "Finance">Finance</option>
@@ -29,7 +29,7 @@
           </select>
         </div>
         <div class="input">
-          <select id="nameSort" class="hs-input" name="nameSort" disabled>
+          <select id="nameSort" class="hs-input" name="nameSort" >
             <option value="empty" disabled="" selected="">Namn ▾</option>
             {% for row in hubdb_table_rows(677656) %}
             <option value="{{ row.namesort }}" data-office="{{ row.office.name }}" data-profession="{{ row.professioncategory.name }}">{{ row.name }}</option>
@@ -60,7 +60,7 @@
 </div>
 <div class="row">
   {% for row in hubdb_table_rows(677656) %}
-  <div class="col-lg-5 col-lg-offset-1 col-sm-6 col-xs-12 contact-person filterContact" data-office="{{ row.office.name }}" data-profession="{{ row.professioncategory.name }}" data-name="{{ row.namesort }}">
+  <div class="col-lg-6 col-sm-6 col-xs-12 contact-person filterContact" data-office="{{ row.office.name }}" data-profession="{{ row.professioncategory.name }}" data-name="{{ row.namesort }}">
     <div class="contact-person__portrait">
       <img class="img-responsive" src="{{ row.image.url }}" />
     </div>
