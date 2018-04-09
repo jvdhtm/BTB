@@ -349,6 +349,18 @@ input[type="color"],
     color: $white;
 }
 
+
+.btn-added {
+    border: 2px solid $defDarkBlue;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: $defDarkBlue;
+    padding: 10px 64px;
+    margin-bottom: 12px;
+    color: $white;
+}
+
 .has-feedback {
   // Left Icon Input Padding
   .form-control {
