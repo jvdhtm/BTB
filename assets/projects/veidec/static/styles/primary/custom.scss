@@ -43,7 +43,13 @@ a:hover {
   cursor: pointer;
 }
 
-
+.hs-cta-placeholder-image
+{
+  float: left;
+  margin-right: 20px;
+  display: inline-block !important;
+  width: auto !important;;
+}
 
 .nopadding {
   padding: 0px;
