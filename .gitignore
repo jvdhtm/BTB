@@ -1,6 +1,9 @@
 
 node_modules
 .DS_Store
+.vscode
 
-package-lock\.json
+yarn.lock
+package-lock.json
+
 prepros-6.config
