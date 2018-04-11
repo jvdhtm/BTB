@@ -1,13 +1,12 @@
 
-<compontent src="../modules/global/header" ></compontent>
+<compontent src="../modules/header" ></compontent>
 <div class="site-wrapper">
-	<compontent src="../modules/global/addons"></compontent>
 	<routes scope="{{project}}" savestate id="pages" trailing={{trailing}}>
 		[
 				{path:'/', render:'/components/templates/home'},
 				{path:'/tasks',    render:'/components/templates/standard'},
 				{path:'/register', render:'/components/templates/standard'},
-			  	{path:'/index', render:'/components/templates/standard'},
+			  {path:'/index', render:'/components/templates/standard'},
 				{path:'/about', render:'/components/templates/standard'},
 				{path:'/cart', render:'/components/templates/standard'},
 				{path:'/contactpage', render:'/components/templates/standard'},
@@ -15,7 +14,5 @@
 				{path:'/.*', render:'/components/templates/error404'}
 			]
 	</routes>
-	<compontent src="../modules/global/footer"></compontent>
-</div>
-<div id="ismobile">
+	<compontent src="../modules/footer"></compontent>
 </div>
