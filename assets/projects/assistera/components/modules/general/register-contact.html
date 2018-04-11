@@ -1,0 +1,346 @@
+
+<div class="row">
+  <div class="col-lg-10">
+    <h1 class="contact-header">Kontakt</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="equalise-height contact-form" style="margin-bottom: -30px;">
+    <div class="col-lg-5 col-sm-12 col-xs-12 border-right">
+      {{ widget.search_text }}
+      <div class="sort--input">
+        <div class="input">
+          <select class="hs-input" name="citySort°" id="citySort">
+            <option value="empty" selected="">Stad ▾</option>
+            {% for row in hubdb_table_rows(678898) %}
+            <option value="{{ row.city }}">{{ row.visibleCity }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="input">
+          <select id="professionSort" class="hs-input" name="professionSort" >
+            <option value="empty" data-profession = "empty" disabled="" selected="">Yrkesroll ▾</option>
+            <option value="Management" data-profession = "Management">Management</option>
+            <option value="Finance" data-profession = "Finance">Finance</option>
+            <option value="Businessmanagement" data-profession = "Businessmanagement">Business Management</option>
+            <option value="Marcom" data-profession = "Marcom">Marcom</option>
+            <option value="Talentengagement" data-profession = "Talentengagement">Talent Engagement</option>
+            <option value="Partnermanagement" data-profession = "Partnermanagement">Partner Management</option>
+          </select>
+        </div>
+        <div class="input">
+          <select id="nameSort" class="hs-input" name="nameSort" >
+            <option value="empty" disabled="" selected="">Namn ▾</option>
+            {% for row in hubdb_table_rows(677656) %}
+            <option value="{{ row.namesort }}" data-office="{{ row.office.name }}" data-profession="{{ row.professioncategory.name }}">{{ row.name }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <!--<div class="hs_submit">
+<div class="actions">
+<input type="submit" value="Skicka" class="hs-button primary large">
+</div>
+</div>-->
+      </div>
+    </div>
+    <div class="col-lg-7 col-sm-12 col-lg-offset-1 hidden-xs" style="margin-top: -40px;">
+      {% form "Contact-form-sv" form_to_use='661f7761-e0d9-4e9e-b4c9-d6d87c983e2b' %}
+    </div>
+  </div>
+</div>
+<div class="row" style="overflow: hidden">
+  <div class="col-lg-12 border-bottom hidden-sm hidden-md" style="margin: 30px auto;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-10 ">
+    <h1 class="contact-header officeHeader"></h1>
+    <!--Header title-->
+  </div>
+</div>
+<div class="row">
+  {% for row in hubdb_table_rows(677656) %}
+  <div class="col-lg-6 col-sm-6 col-xs-12 contact-person filterContact" data-office="{{ row.office.name }}" data-profession="{{ row.professioncategory.name }}" data-name="{{ row.namesort }}">
+    <div class="contact-person__portrait">
+      <img class="img-responsive" src="{{ row.image.url }}" />
+    </div>
+    <div class="contact-person--information__wrapper">
+      <div class="contact-person__info">
+        <h3>{{ row.name }}</h3>
+        <h5>{{ row.visibleprofession }} {{ row.city }}</h5>
+        <div class="contact-person__contactInfo">
+          {% if row.phone_number %}
+          <a href="tel:{{ row.phone_number }}">{{ row.phone_number }}</a>
+          {% endif %}
+          <a href="mailto:{{ row.email }}" target="_top">{{ row.email }}</a>
+          {% if row.linkedin %}
+          <a href="{{ row.linkedin }}">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      <!--<div class="contact-person__presentation">
+<p>Sami Bask Regionchef Stockholm Sami har jobbat med ledarskap och försäljning i närmare 17 år och är en person som
+drivs av det personliga mötet. Att vara i hetluften och träffar kunder för att diskutera fram lösningar som kommer
+till nytta för både Assistera som leverantör och Assisteras kunder är något Sami trivs med. Förutom Stockholmsmarknaden
+där Sami varit verksam sedan 1998 har han också jobbat med outsourcingprojekt i och till framförallt Ryssland,
+Estland och Indien.
+</p>
+</div>-->
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="row line-seperator" style="overflow: hidden;">
+    <div class="col-lg-12 border-bottom" style="margin: 30px 20px;"></div>
+</div>
+<div class="row flex">
+      {% for row in hubdb_table_rows(678898) %}
+      <div class="filterOffice" data-office="{{ row.city }}">
+          <div class="filterOffice__contact-wrapper">
+              <div class="contact-information__map">
+                <div class="map-canvas" lat="{{ row.address.lat }}" lon="{{ row.address.lon }}"></div>
+                <div class="map__info">
+                  <h3>{{ row.visiblecity }}</h3>
+                  {% if row.addressname %}
+                  <h5 lat="{{ row.address.lat }}" lon="{{ row.address.lon }}">{{ row.addressname }}</h5>
+                  {% else %}
+                  <h5 style="color: #fff">address</h5>
+                  {% endif %}
+                </div>
+                {{ row.location }}
+              </div>
+              <div class="contact-information">
+                <ul>
+                  <li>Adress: <span lat="{{ row.address.lat }}" lon="{{ row.address.lon }}">{{ row.addressname }}</span> {{ row.office }}</li>
+                  {% if row.phonenumber%}
+                  <li><a href="tel:{{ row.phonenumber }}">Telefon: {{ row.phonenumber }}</a></li>
+                  {% endif %}
+                </ul>
+              </div>
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+<div class="row">
+  <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="order: -1; margin-bottom: 30px;">
+    {% form "Contact-form-sv2" form_to_use='661f7761-e0d9-4e9e-b4c9-d6d87c983e2b' %}
+  </div>
+</div>
+  <script>
+    $(document).ready(function () {
+      $('.filterContact').hide();
+      $('.line-seperator').hide();
+    });
+    $('#citySort').change(function () {
+      if ($("#citySort").val() == 'empty') {
+        $("#professionSort").prop('disabled', 'disabled');
+        $("#nameSort").prop('disabled', 'disabled');
+        $("#professionSort")[0].selectedIndex = 0;
+        $("#nameSort")[0].selectedIndex = 0;
+      }
+      else {
+        //Reset selects
+        $('#nameSort').prop('selectedIndex',0);
+        $('#professionSort').prop('selectedIndex',0);
+        $("#professionSort").prop('disabled', false);
+        $("#nameSort").prop('disabled', false);
+      }
+    });
+    $('select#nameSort').change(function(){
+      var filter = $(this).val();
+      filterName(filter);
+    });
+    $('select#professionSort').change(function () {
+      var filter = $(this).val();
+      $("#nameSort").children('option').hide();
+      filterProfession(filter);
+      $("#nameSort")[0].selectedIndex = 0;
+    });
+    $('select#citySort').change(function () {
+      var filter = $(this).val();
+      $("#nameSort").children('option').hide();
+      //$("#professionSort").children('option').hide();
+      var selectedProfession = $("#professionSort option:selected").val();
+      var selectedName = $('#nameSort option:selected').val();
+      filterOffice(filter);
+      filterContact(filter);
+      officeHeader(filter);
+      filterProfession(selectedProfession);
+      filterName(selectedName);
+    });
+    function officeHeader(value) {
+      var selectedOption = $("#citySort option:selected").text();
+      if (value == 'empty') {
+        $(".officeHeader").text('');
+        $('.line-seperator').hide();
+      }
+      else {
+        $(".officeHeader").text(selectedOption);
+      }
+    }
+    function filterOffice(value) {
+      var list = $(".filterOffice");
+      var selectedCityValue = $("#citySort option:selected").val();
+      var selectedName = $('#nameSort option:selected').val();
+      var professions = $(".filterContact").attr("profession");
+      var profession = $(".filterContact").each(function(){
+          $(".filterContact").attr("data-profession");
+      });
+      console.log(profession);
+      $(list).hide();
+      $(".filterOffice").removeClass("showing");
+      if (value == 'empty') {
+        $('.line-seperator').show();
+        $(".filterOffice").each(function (i) {
+          $(this).show();
+          $(".contact-information").hide();
+        });
+      } else {
+        $(".filterOffice[data-office*=" + value + "]").each(function (i) {
+          $(this).show();
+          $(".contact-information").show();
+          $('.line-seperator').show();
+          $(".filterOffice[data-office*=" + value + "]").addClass("showing");
+        });
+        var shownprofession = [];
+        $("#nameSort").children("option[data-office*=" + selectedCityValue + "]").each(function () {
+            var profession = $(this).attr('data-profession');
+            shownprofession[profession] = [];
+            shownprofession[profession]['key'] = profession;
+        });
+
+        $('#professionSort').children().hide();
+        for(var i in shownprofession) {
+                            console.log(shownprofession);
+
+            if(shownprofession[i]['key']){
+                var professions = shownprofession[i]['key'];
+                $('#professionSort').children("option[data-profession=" + professions + "]").show()
+            }
+        }
+
+        $(".filterContact[data-profession*=" + professions + "][data-office*=" + selectedCityValue + "]").each(function (i) {
+            console.log("test12");
+          /*$("#professionSort").children("option[data-office*=" + selectedCityValue + "][data-profession*=" + selectedProfession + "]").each(function () {
+              console.log("test");
+            $(this).show();
+            });*/
+        });
+        /*porfession show the related */
+        $("#nameSort").children("option[data-office*=" + selectedCityValue + "]").each(function () {
+            $(this).show();
+        });
+      }
+    }
+    function filterContact(value) {
+      var list = $(".filterContact");
+      $(list).hide();
+      if (value == "empty") {
+        $(".filterContact").each(function (i) {
+          $(this).hide();
+        });
+      } else {
+        $(".filterContact[data-office*=" + value + "]").each(function (i) {
+          $(this).show();
+        });
+      }
+    }
+    function filterProfession(value) {
+      var list = $(".filterContact");
+      var selectedCityValue = $("#citySort option:selected").val();
+      var selectedProfession = $("#professionSort option:selected").val();
+      $(list).hide();
+      if (value == 'empty') {
+        $(".filterContact[data-office*=" + selectedCityValue + "]").each(function (i) {
+          $(this).show();
+        });
+      }
+      else {
+        $(".filterContact[data-profession*=" + selectedProfession + "][data-office*=" + selectedCityValue + "]").each(function (i) {
+          $(this).show();
+        });
+        $("#nameSort").children("option[data-office*=" + selectedCityValue + "][data-profession*=" + selectedProfession + "]").each(function () {
+            $(this).show();
+        });
+      }
+    }
+  /*---*/
+    function filterName(value){
+      var list = $(".filterContact");
+      var selectedCityValue = $("#citySort option:selected").val();
+      var selectedName = $('#nameSort option:selected').val();
+      var selectedProfession = $("#professionSort option:selected").val();
+      $(list).hide();
+       if (value == 'empty') {
+        $(".filterContact[data-office*=" + selectedCityValue + "]").each(function (i) {
+          $(this).show();
+        });
+      }
+      else {
+          $(".filterContact[data-name*=" + selectedName + "][data-office*=" + selectedCityValue + "]").each(function (i) {
+          $(this).show();
+        });
+        $(".filterContact[data-name*=" + selectedName + "][data-office*=" + selectedCityValue + "][data-profession*=" + selectedProfession + "]").each(function (i) {
+          $(this).show();
+        });
+      }
+    }
+  </script>
+
+  <!--
+  <script>
+      function initaddress(){
+      var count = 0;
+       $(".locations--js").each(function(i){
+           count++;
+         var lat  = $(this).attr('lat');
+         var lon  = $(this).attr('lon');
+         var id = 'location_'+count
+         $(this).attr('id',id);
+         var callback = function (address){
+             $('#'+id).html(address.formatted_address)
+         }
+         displayLocation(lat,lon, callback);
+       });
+  }
+  function displayLocation(latitude,longitude,callback){
+      var geocoder;
+      geocoder = new google.maps.Geocoder();
+      var latlng = new google.maps.LatLng(latitude, longitude);
+      geocoder.geocode(
+          {'latLng': latlng},
+          function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK) {
+                  if (results[0]) {
+                      var add = results[0] ;
+                      callback(add);
+                  }
+              }
+              else {
+              }
+          }
+      );
+  }
+  </script>
+  -->
+  <script>
+  function initMap() {
+    elems = document.getElementsByClassName('map-canvas');
+    for (var i = 0; i < elems.length; i++) {
+         var lat  = elems[i].getAttribute("lat");
+         var lon  = elems[i].getAttribute("lon");
+      var map = new google.maps.Map(elems[i],{
+        zoom: 14,
+        center: new google.maps.LatLng(lat, lon),
+      });
+      new google.maps.Marker( {
+          map: map,
+          position: new google.maps.LatLng(lat, lon),
+        } );
+    }
+  }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ widget.google_api_key }}&callback=initMap" type="text/javascript"></script>

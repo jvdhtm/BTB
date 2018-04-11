@@ -1,0 +1,45 @@
+.text-logo {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    .p {
+      font-size: 15px;
+      text-align: center;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+
+
+    @include media('>=tablet-portrait') {
+      position: absolute;
+      top: 200px;
+      width: 500px;
+      margin-left: 130px ;
+      margin-top: 80px;
+      .p {
+        color:#fff;
+        text-shadow: 1px 1px 4px $black;
+        text-align: left;
+        }
+    }
+
+    @include media('>=tablet-portrait') {
+
+      margin-left: 100px ;
+      margin-top: 180px;
+      .p {
+        font-size: 20px;
+      }
+
+    }
+    @include media('>=lgscreen') {
+        width: 600px;
+        margin-top: 140px;
+        margin-left: 100px;
+        .p {
+          font-size: 25px;
+        }
+    }
+
+}

@@ -1,0 +1,130 @@
+.society_logo {
+	z-index: 1;
+	    position: relative;
+		margin-top: -40px;
+					@media screen and (orientation: landscape) {
+						 margin-top: 30px;
+					}
+	a {
+		height: 100%;
+  	width: 140px;
+    margin: auto;
+	}
+}
+.banner {
+	overflow: hidden;
+	background-position-y: 40%!important;
+}
+.society_logo.sp {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	  margin-top: 0px;
+	a {
+		height: 100%;
+    width: 50px;
+    margin: 0px;
+		@include media ('>=desktop') {
+			width: 170px;
+		}
+	}
+
+	@include media ('>=desktop') {
+    position: absolute;
+		top: 90px;
+    left: initial;
+	}
+}
+@include media ('>=tablet-portrait') {
+	.society_logo {
+		max-width: 250px;
+    margin-left: 130px !important;
+    margin-top: 40px;
+    height: auto;
+    width: 205px;
+    height: 160px;
+    position: absolute;
+    top: 90px;
+		a {
+			height: 100%;
+			width: 170px;
+		}
+	}
+}
+
+@include media ('>=tablet-portrait') {
+	.society_logo {
+		a {
+			height: 100%;
+			width: 243px;
+		}
+	}
+}
+
+
+.st8 {
+	fill: #FFF
+}
+.society_logo
+
+{
+	svg {
+
+		path,
+		polygon {
+			fill-opacity: 0;
+			fill: $defCyan;
+			stroke: #000;
+			stroke-width: 2px;
+			stroke-dasharray: 3319px;
+			stroke-dashoffset: 3319px;
+			-webkit-animation-name: draw;
+			animation-name: draw;
+			-webkit-animation-duration: 3s;
+			animation-duration: 3s;
+			-webkit-animation-iteration-count: 1;
+			animation-iteration-count: 1;
+			-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+			-webkit-animation-delay: 2s;
+			animation-delay: 2s;
+		}
+	}
+
+	@-webkit-keyframes draw {
+		90% {
+			stroke-dashoffset: 0px;
+			stroke-width: 2px;
+			fill-opacity: 0;
+		}
+		100% {
+			stroke-width: 0px;
+			fill-opacity: 1;
+		}
+	}
+
+	@keyframes draw {
+		90% {
+			stroke-dashoffset: 0px;
+			stroke-width: 2px;
+			fill-opacity: 0;
+		}
+		100% {
+			stroke-width: 0px;
+			fill-opacity: 1;
+		}
+	}
+
+	@media screen and (-ms-high-contrast: active),
+	(-ms-high-contrast: none) {
+		svg {
+			path,
+			polygon {
+				fill-opacity: 1;
+			}
+		}
+	}
+
+}

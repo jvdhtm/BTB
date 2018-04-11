@@ -1,0 +1,337 @@
+.circle-container {
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 600px;
+    top: 0px;
+    right: 0px;
+}
+
+
+
+
+.circle {
+  height: 360px;
+  width: 360px;
+
+
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 0px 4px 3px 2px #656363;
+  position: absolute;
+  top: -200px;
+  right: -30px;
+  z-index: -1;
+
+    .circle--text {
+          width: 100%;
+          padding-top: 240px;
+          line-height: 1em;
+          text-align: center;
+          color: $defDarkBlueDark;
+          font-size: 20px;
+          font-weight: 600;
+          padding-left: 30px;
+          padding-right: 30px;
+    }
+    .circle__register {
+
+        .cta_button {
+
+
+
+                color: $defDarkBlueDark !important;
+                border: solid $defDarkBlueDark 2px !important;
+                background: transparent !important;
+                border-radius: 28px !important;
+                -webkit-border-radius: 28 !important;
+                -moz-border-radius: 28 !important;
+                position: absolute !important;
+                width: 50% !important;
+                left: 50% !important;
+                margin-left: -32% !important;
+                font-size: 13px !important;
+                bottom: 40px !important;
+                text-align: center !important;
+                padding: 5px 30px 5px 30px !important;
+                display: block;
+        }
+    }
+}
+@include media('>=tablet-portrait') {
+
+  .circle {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.search-box {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: $black;
+    opacity: .9;
+    padding-bottom: 0px;
+    .count {
+    display: inline-block;
+    }
+
+@include media('>=tablet') {
+    top: -17px;
+    height: 200px;
+    }
+
+@include media('>=tablet-portrait') {
+
+  left: 50%;
+  width: 90%;
+  margin-left: -45%;
+  padding-left: 5%;
+  padding-left: 12%;
+  min-height: 400px;
+  margin-top: -70px;
+  }
+@include media('>=desktop') {
+  border-radius: 20px;
+}
+@include media('>=lgscreen') {
+  left: 50%;
+  width: 80%;
+  margin-left: -40%;
+  padding-left: 5%;
+  padding-left: 12%;
+  min-height: 400px;
+  margin-top: -140px;
+  }
+
+
+
+
+}
+
+.rectangle {
+  display: block;
+  height: 200px;
+
+  text-align: center;
+    h3 {
+        color: $white;
+        text-align: center;
+        display: block;
+        font-size: 28px;
+        margin-left: 0px;
+        margin-top: 17px;
+        position: relative;
+        top: 60px;
+        @include media('>=tablet-portrait') {
+          top: 60px;
+        }
+    }
+    .cta_button {
+
+      display: inline-block  !important;;
+      color: $defCyan  !important;;
+      border: solid $defCyan 2px  !important;;
+      background: transparent ;;
+      border-radius: 28px  !important;;
+      -webkit-border-radius: 28  !important;;
+      -moz-border-radius: 28  !important;;
+      position: relative  !important;;
+      size: 13px  !important;;
+      bottom: -88px  !important;;
+      text-align: center;
+      padding: 5px 30px 5px 30px  !important;;
+      min-width: 20%  !important;;
+      @include media('>=tablet') {
+          bottom: -88px  !important;
+      }
+    }
+
+}
+.circle-rect>div {
+padding-left: 25px;
+padding-top: 20px;
+
+}
+.circle-rect {
+
+    .texts {
+        display: inline-block;
+        width: 100%;
+        padding-top: 40px;
+        .each.numbers {
+          margin-top: 0px;
+          text-align: left;
+          color: #fff;
+          font-weight: 600;
+          display: block;
+
+          line-height: 25px;
+          color: $white;
+          font-size: 50px;
+            @include media('>=tablet-portrait') {
+              font-size: 65px;
+          }
+        }
+        .each.text {
+
+
+                width: 100%;
+                    line-height: 1em;
+                    margin-top: 1em;
+                    text-align: right;
+                    color: $white;
+                    font-weight: 600;
+                    font-size: 24px;
+                    display: block;
+                    text-align: left;
+
+
+        }
+    }
+
+}
+
+@include media('>=tablet-portrait') {
+  .search-box {
+    background: transparent;
+  }
+    .circle {
+      height: 400px;
+      width: 400px;
+        .circle--text {
+          font-size: 20px;
+                    padding-top: 260px;
+        }
+
+
+    }
+
+    .rectangle {
+
+      display: block;
+      height: 344px;
+      background: $black;
+      position: relative;
+      border-radius: 20px;
+      opacity: .9;
+      width: 100%;
+          top: 0px;
+        padding-left: 40px;
+        padding-right: 40px;
+        h3 {
+          top: 15px;
+          left: 41%;
+          position: absolute;
+              font-size: 40px;
+        }
+        .cta_button {
+
+          font-size: 24px  !important;;
+          display: inline-block  !important;;
+          bottom: 35px  !important;;
+          position: absolute  !important;;
+          margin-left: -95px !important;
+          left: 50%;
+          //width:390px;
+
+        }
+
+    }
+
+      .rectangle.small {
+        display: block;
+        top: 70px;
+        height: 200px;
+        .cta_button:hover {
+          color: #FFF !important;
+        }
+      }
+
+    .circle-rect {
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      border-radius: 50%;
+      box-shadow: 0px 4px 3px 2px #656363;
+      position: absolute;
+      top: -50px;
+      left: -38px;
+      padding-top: 90px;
+    }
+
+    .circle-rect>div {
+      padding-left: 80px;
+      padding-top: 10px;
+    }
+
+}
+
+@include media('>=lgscreen') {
+  .rectangle {
+    h3 {
+      top: 15px;
+      left: 38%;
+      position: absolute;
+          font-size: 48px;
+    }
+  }
+  .circle-rect {
+    height: 433px;
+    width: 433px;
+  }
+}
+
+@include media('>=tablet-portrait') {
+  .circle {
+    height: 545px;
+    width: 545px;
+    .circle--text {
+      font-size: 36px;
+    }
+    .circle__register .cta_button
+    {
+
+
+          bottom: 100px  !important;;
+          font-size: 24px  !important;;
+
+    }
+  }
+
+}
+
+
+.mobile-circle {
+
+  .circle-container {
+      position: relative;
+      height: auto;
+      width: 100%;
+  }
+  .circle
+  {
+      position: relative;
+      top:auto;
+      left:auto;
+      height: 200px;
+      width: 100%;
+       border-radius: 0;
+       box-shadow: none;
+       right:auto;
+  }
+  .circle .circle--text {
+    width: 100%;
+    padding-top: 60px;
+    line-height: 1em;
+    text-align: center;
+    color: #3A5464;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+}
