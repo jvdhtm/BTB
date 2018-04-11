@@ -1,0 +1,40 @@
+<div id="bubble-container--js" class="bubble-container" >
+
+</div>
+
+
+
+<script>
+setTimeout(function(){
+
+  bubbleit();
+
+}, 1000);
+function bubbleit()
+{
+  var numbers = 20;
+  var colors = ['def--red','def--orange','def--purple','def--yellow','def--turquoise','def--lightBlue','def--darkerBlue'];
+  var sizes = ['bubble-sm','bubble-sm','bubble-md','bubble-lg'];
+  var heightlimit = $('body').height();
+  $('#bubble-container--js').css('height',heightlimit);
+  for(i=0; i < 20; i++)
+  {
+    var randn1 = Math.floor(Math.random() * colors.length);
+    var randn2 = Math.floor(Math.random() * sizes.length);
+    var rand1 = colors[randn1];
+    var rand2 = sizes[randn2];
+    var initleft = Math.floor(Math.random() * 100);
+    var inittop = Math.floor(Math.random() * heightlimit);
+    $('#bubble-container--js').append('<span class="bubble bubble-update--js '+rand1+'  '+rand2+'" style="left:'+initleft+'%;top:'+inittop+'px;" ></span>');
+  }
+
+  $(window).bind('scroll',function(e){
+    parallaxScroll();
+   });
+
+  function parallaxScroll(){
+  	var scrolled = $(window).scrollTop();
+    $('#bubble-container--js').css('top',(0-(scrolled*.6))+'px');
+  }
+}
+</script>

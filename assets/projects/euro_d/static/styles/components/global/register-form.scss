@@ -1,0 +1,85 @@
+
+.register-header{
+    color: #507f8d;
+    margin-left:5px;
+}
+.hs-input{
+    margin:5px;
+    font-size:16px;
+}
+.hs_submit{
+    font-size:16px;
+}
+.input select{
+    width:25%;
+    min-width:150px;
+    border:2px solid $defLightBlue;
+    background:$defLightBlue;
+    color:white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 8px;
+    border-radius:20px;
+}
+.input ::placeholder{
+    color:$defLightBlue;
+    font-style:italic;
+}
+.input input{
+    border:2px solid $defLightBlue;
+    width:100%;
+    border-radius:20px;
+}
+.input input:focus{
+    border-color:$defLightBlue;
+}
+.hs_submit [type='submit']{
+    width: 20%;
+    min-width:150px;
+    color:$defDarkBlue;
+    background: $defTurquoise;
+    border-radius: 20px;
+    padding: 8px;
+    margin:5px;
+    transition:0.2s;
+    &:hover{
+        background:$defLightBlue;
+        border-color:$defLightBlue;
+        color:$white;
+        transition:0.2s;
+    }
+}
+.file-upload{
+  position:relative;
+}
+.hs_curriculum_vitae label {
+    display: block;
+    text-align:center;
+    padding: 8px;
+    color: $white;
+    background:$defLightBlue;
+    border-radius: 20px;
+    font-size:16px;
+    margin:5px;
+    width:40%;
+    min-width:150px;
+ }
+.hs_curriculum_vitae input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 16px;
+    height:100%;
+    opacity:0;
+     &:hover{
+      cursor: pointer;
+      text-decoration:underline;
+ }
+}
+.file-name{
+    margin:5px 0px 0px 10px;
+    font-size:16px;
+}

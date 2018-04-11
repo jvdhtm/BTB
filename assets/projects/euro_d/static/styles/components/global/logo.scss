@@ -1,0 +1,13 @@
+.logo {
+    display: block;
+    display: block;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    @include media('>=tablet') {
+      position: absolute;
+      width: 80px;
+      top: -30px;
+    }
+}
