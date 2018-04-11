@@ -41,7 +41,6 @@ span.hs-form-required {
 .hs-form-field .input select {
   min-width: initial !important;
   width: auto !important;
-  ;
 }
 
 .contact-form {
@@ -64,12 +63,12 @@ span.hs-form-required {
     }
   }
   .hs-input:disabled {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
 
 .contact-header {
-  color: #507F8D;
+  color: #507f8d;
   font-size: 64px;
   text-transform: capitalize;
 }
@@ -107,7 +106,6 @@ span.hs-form-required {
       }
     }
     .contact-person__contactInfo {
-
       a {
         color: $defDarkBlue;
         margin-bottom: 10px;
@@ -136,7 +134,7 @@ span.hs-form-required {
       text-align: center;
       padding-bottom: 30px;
       padding-top: 30px;
-      background-color: #FFF;
+      background-color: #fff;
       border-bottom-right-radius: 30px;
       border-bottom-left-radius: 30px;
       h3 {
@@ -192,6 +190,11 @@ span.hs-form-required {
 }
 
 @include media('>=tablet') {
+  .sort--input .input:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   .border-right {
     border-right: none;
   }
@@ -249,6 +252,22 @@ span.hs-form-required {
       display: inline-block;
       width: 49%;
       margin-bottom: 20px;
+
+      &:nth-of-type(1) {
+        margin-right: 1%;
+      }
+
+      &:nth-of-type(3) {
+        margin-right: 1%;
+      }
+
+      &:nth-of-type(2) {
+        margin-left: 1%;
+      }
+
+      &:nth-of-type(4) {
+        margin-left: 1%;
+      }
     }
     .hs_message {
       margin-bottom: 20px;
@@ -310,7 +329,6 @@ span.hs-form-required {
   }
   .border-right {
     border-right: 3px solid rgba(151, 151, 151, 0.5);
-    ;
   }
   .contact-form select {
     width: 82%;
@@ -341,11 +359,14 @@ span.hs-form-required {
     flex-basis: 50%;
     max-width: 50%;
   }
-  .filterOffice .filterOffice__contact-wrapper {}
+  .filterOffice .filterOffice__contact-wrapper {
+  }
 }
 
 @include media('>=desktop') {
-  .filterOffice.showing .filterOffice__contact-wrapper .contact-information__map {
+  .filterOffice.showing
+    .filterOffice__contact-wrapper
+    .contact-information__map {
     margin: initial;
     width: 40%;
   }
