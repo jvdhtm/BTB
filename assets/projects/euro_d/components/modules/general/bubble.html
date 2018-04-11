@@ -14,7 +14,7 @@ function bubbleit()
 {
   var numbers = 20;
   var colors = ['def--red','def--orange','def--purple','def--yellow','def--turquoise','def--lightBlue','def--darkerBlue'];
-  var sizes = ['bubble-sm','bubble-sm','bubble-md','bubble-lg'];
+  var sizes = ['bubble-sm','bubble-md','bubble-lg'];
   var heightlimit = $('body').height();
   $('#bubble-container--js').css('height',heightlimit);
   for(i=0; i < 20; i++)
@@ -29,7 +29,7 @@ function bubbleit()
   }
 
   $(window).bind('scroll',function(e){
-    parallaxScroll();
+    //parallaxScroll();
    });
 
   function parallaxScroll(){

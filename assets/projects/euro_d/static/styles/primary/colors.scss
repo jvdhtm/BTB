@@ -1,66 +1,82 @@
 
+:root {
+  /* Screen Colors */
+  --scolor1: #FFFFFF;
+  --scolor2: #0087CC;
+  --scolor3: #4A4A4A;
+  --scolor4: #F5F3F0;
+  --scolor5: #BEB2A1;
+  --scolor6: #749588;
+  --scolor7: #E6E2DB;
+  --scolor8: #000000;
+  --scolor8: #EF7C00;
+  --scolor8: #D8D8D8;
+  --scolor8: #979797;
 
-/* base Colors */
+  /* Document Colors */
+  --dcolor1: #0087CC;
+  --dcolor2: #AECC52;
+  --dcolor3: #EF7C00;
+  --dcolor4: #8F95CA;
+  --dcolor5: #EA5197;
+  --dcolor6: #FFD500;
+  --dcolor7: #749588;
+  --dcolor8: #BEB2A1;
+  --dcolor9: #FCE8E2;
+  --dcolor10: #FFF6D9;
+  --dcolor11: #009BA4;
+  --dcolor12: #80CDD2;
+  --dcolor13: #D6E5A8;
+  --dcolor14: #F7BD7F;
+  --dcolor15: #C7CAE4;
+  --dcolor16: #E6E2DB;
+  --dcolor17: #F5F3F0;
+}
+
+/* Screen Colors */
+$scolor__white: #FFFFFF;
+$scolor__blue: #0087CC;
+$scolor__gray--dark: #4A4A4A;
+$scolor__silver: #F5F3F0;
+$scolor__brown: #BEB2A1;
+$scolor__green: #749588;
+$scolor__gray--light: #E6E2DB;
+$scolor__black: #000000;
+$scolor__orange: #EF7C00;
+$scolor__sliver: #D8D8D8;
+$scolor__sliver--light: #979797;
+
+/* Document Colors */
+$dcolor__blue: #0087CC;
+$dcolor__green--light: #AECC52;
+$dcolor__orange: #EF7C00;
+$dcolor__purple: #8F95CA;
+$dcolor__lila: #EA5197;
+$dcolor__yellow: #FFD500;
+$dcolor__green: #749588;
+$dcolor__brown: #BEB2A1;
+$dcolor__lila--light: #FCE8E2;
+$dcolor__yellow--light: #FFF6D9;
+$dcolor__turquoise: #009BA4;
+$dcolor__turquoise--light: #80CDD2;
+$sdcolor__green--lighter: #D6E5A8;
+$dcolor__blue: #F7BD7F;
+$sdcolor__purple: #C7CAE4;
+$sdcolor__brown--light: #E6E2DB;
+$sdcolor__milky: #F5F3F0;
 
 
-//---- white ----//
-$white: #fff;
-$black:#0D0D0D;
-
-//---- green ----//
-$green:#00b100;
-$greenLight:#00f900;
-
-//---- green ----//
-$red: #D0021B;
 
 
-//---- Black ----//
-$black: #373737;
-$blackLight: #646464;
+/* Primary colors*/
+$bgcolor__main--1 : var(--scolor2);
+$bgcolor__main--2 : var(--scolor3);
+$bgcolor__main--3 : var(--scolor8);
 
-//---- grey ----//
-$grey: #979797;
-$greyLight: #E5E5E5;
-$grayDark: #CCCCCC;
-$grayDarker: #808080;
+/* Primary colors*/
+$linkcolor : var(--scolor__white);
+$pcolor : var(--scolor__white);
 
-//---- silver ---- //
-
-$silver: #F2F2F2;
-$silverLight: #F6F6F6;
-
-/* Primary Colors */
-
-//---- def red ----//
-$defRed: #D0021B;
-$defRedLight: #DD9B90;
-$defRedDark: #BA000B;
-
-//---- def orange ----//
-$defOrange: #ECA876;
-$defOrangeLight: #EF8149;
-$defOrangeDark: #D05314;
-
-//---- def yellow ----//
-$defYellow: #FBEE88;
-
-
-//---- def light-blue ----//
-$defLightBlue: #6CBCC7;
-$defLightBlueLight: #68E5DB;
-$defLightBlueLighter:#6ce2b8;
-$defLightBlueDark: #B3D5ED;
-
-
-
-//---- def dark-blue ----//
-$defDarkBlue: #405F6E;
-$defDarkBlueLight: #507F8D;
-$defDarkBlueDark: #3A5464;
-
-//---- def purple ----//
-$defDarkPurple: #BC90D1;
-
-//---- def turquoise - ----//
-$defTurquoise: #6FECBE;
+/* Primary colors*/
+$linkcolor : var(--scolor__white);
+$pcolor : var(--scolor__white);
