@@ -4273,14 +4273,14 @@ routes {
   width: 100%; }
 
 body {
-  font-family: 'FilsonSoftRegular';
-  background-color: #f7f7f7; }
+  font-family: 'Helvetica Neue';
+  background-color: var(--scolor1); }
 
 a {
   color: var(--scolor1);
   display: block;
   text-decoration: none;
-  font-family: 'FilsonSoftRegular' !important; }
+  font-family: 'Helvetica Neue' !important; }
 
 a:hover {
   color: var(--scolor1);
@@ -4517,7 +4517,7 @@ header {
                   .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 > .hs-menu-children-wrapper .hs-menu-depth-3, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 > .hs-menu-children-wrapper .hs-menu-depth-3 {
                     width: 100%; }
                     .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 > .hs-menu-children-wrapper .hs-menu-depth-3 > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 > .hs-menu-children-wrapper .hs-menu-depth-3 > a {
-                      color: var(--scolor5);
+                      color: var(--scolor3);
                       text-align: left;
                       opacity: 1;
                       font-size: 15px;
@@ -4608,20 +4608,20 @@ body.expanded {
       overflow: auto; } }
 
 .sub-page .navigation a {
-  color: var(--scolor5); }
+  color: var(--scolor3); }
 
 .sub-page .navigation .navbar-shift a {
   color: var(--scolor1); }
   @media (min-width: 768px) {
     .sub-page .navigation .navbar-shift a {
-      color: var(--scolor5); } }
+      color: var(--scolor3); } }
 
 .sub-page .navigation .path a {
   color: var(--scolor1); }
 
 @media (min-width: 768px) {
   .sticky .navbar-shift a {
-    color: var(--scolor5); } }
+    color: var(--scolor3); } }
 
 .sticky .path a {
   color: var(--scolor1); }
@@ -4656,7 +4656,7 @@ header #SearchForm .search {
   border: none; }
   @media (min-width: 768px) {
     header #SearchForm .search {
-      color: var(--scolor5); } }
+      color: var(--scolor3); } }
 
 header #SearchForm .cross-remove {
   position: absolute;
@@ -4686,13 +4686,13 @@ header #SearchForm .cross {
   border: 0; }
   @media (min-width: 768px) {
     header #SearchForm .cross {
-      color: var(--scolor5);
+      color: var(--scolor3);
       top: 0px;
       font-size: 26px; }
       header #SearchForm .cross.navbar-toggle {
         display: block; }
       header #SearchForm .cross .icon-bar {
-        background-color: var(--scolor5); }
+        background-color: var(--scolor3); }
       header #SearchForm .cross .icon-bar:nth-of-type(2) {
         background-color: transparent; } }
 
@@ -4713,22 +4713,22 @@ header #SearchForm .cross {
     right: 9px; } }
 
 header #SearchForm path {
-  fill: var(--scolor5); }
+  fill: var(--scolor3); }
   @media (min-width: 768px) {
     header #SearchForm path {
-      fill: var(--scolor5); } }
+      fill: var(--scolor3); } }
 
 header #SearchForm .search-btn-menu {
   font-size: 26px;
   background: transparent;
   border: none;
-  color: var(--scolor5);
+  color: var(--scolor3);
   position: absolute;
   left: 20px;
   top: 3px; }
   @media (min-width: 768px) {
     header #SearchForm .search-btn-menu {
-      color: var(--scolor5); } }
+      color: var(--scolor3); } }
 
 header #SearchForm .search-menu {
   top: 0px;
@@ -4793,21 +4793,21 @@ header #SearchForm .form-group {
     border-bottom: none;
     border-radius: 0px;
     background: var(--scolor1);
-    color: var(--scolor5); }
+    color: var(--scolor3); }
     @media (min-width: 768px) {
       header #SearchForm .form-group input {
-        color: var(--scolor5);
+        color: var(--scolor3);
         border-bottom: thin solid #95989A;
         background: var(--scolor1); } }
 
 .sub-page header #SearchForm .search {
-  color: var(--scolor5); }
+  color: var(--scolor3); }
 
 .sub-page header .navbar-toggle .icon-bar {
   background: black; }
 
 header.sticky #SearchForm .search {
-  color: var(--scolor5); }
+  color: var(--scolor3); }
 
 header.sticky .navbar-toggle .icon-bar {
   background: black; }
@@ -4829,7 +4829,7 @@ p.search-item-title {
   color: #555555;
   border-bottom: thin solid #555555; }
   .site-search-categories h1 {
-    color: var(--scolor5);
+    color: var(--scolor3);
     display: inline-block;
     margin-right: 30px; }
   .site-search-categories .site-search-amounts {
@@ -5234,7 +5234,77 @@ ul.bxslider {
 
 .pharma-blocks {
   border: 2px solid var(--dcolor8);
-  padding: 40px; }
+  margin-top: 72px; }
+  .pharma-blocks p {
+    padding: 40px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: var(--scolor3); }
+  .pharma-blocks h3 {
+    background: var(--scolor2);
+    margin: 0px;
+    padding: 10px 40px;
+    color: var(--scolor1);
+    text-align: center; }
+  .pharma-blocks .icons {
+    background: gray;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    margin: auto;
+    margin-top: -72px;
+    border-radius: 50%;
+    background: var(--scolor8); }
+
+.links-blocks {
+  background: var(--scolor7);
+  margin-top: 10px; }
+  .links-blocks p {
+    padding: 40px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: var(--scolor3); }
+  .links-blocks h3 {
+    background: var(--scolor2);
+    margin: 0px;
+    padding: 10px 40px;
+    color: var(--scolor1);
+    text-align: center; }
+  .links-blocks .icons {
+    background: gray;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    margin: auto;
+    top: 22px;
+    border-radius: 50%;
+    background: var(--scolor1); }
+
+.archive-blocks {
+  margin-top: 10px; }
+  .archive-blocks p {
+    padding: 40px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: var(--scolor3); }
+  .archive-blocks .small__image {
+    width: 100%;
+    height: 222px; }
+  .archive-blocks h3 {
+    background: var(--scolor2);
+    margin: 0px;
+    padding: 10px 40px;
+    color: var(--scolor1);
+    text-align: center; }
+  .archive-blocks .icons {
+    background: gray;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    margin: auto;
+    top: 22px;
+    border-radius: 50%;
+    background: var(--scolor1); }
 
 /*********************
   Waves
