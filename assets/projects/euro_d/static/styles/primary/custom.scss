@@ -6,6 +6,11 @@ routes {
   display: none;
 }
 
+.hs-tools-menu
+{
+  display: none;
+}
+
 module {}
 
 .fullwidth {
@@ -18,18 +23,24 @@ body {
 }
 
 a {
-  color: $defFontColor;
+  color: $linkcolor;
   display: block;
   text-decoration: none;
   font-family: 'FilsonSoftRegular' !important;
 }
 
 a:hover {
-  color: $defFontColor;
+  color: $linkcolor;
   text-decoration: none;
   cursor: pointer;
 }
-
+p{
+  color:$pcolor;
+}
+h1,h2,h3,h4,h5,h6
+{
+  color:$pcolor;
+}
 .nopadding {
   padding: 0px;
 }

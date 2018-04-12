@@ -74,9 +74,13 @@ $bgcolor__main--2 : var(--scolor3);
 $bgcolor__main--3 : var(--scolor8);
 
 /* Primary colors*/
-$linkcolor : var(--scolor__white);
-$pcolor : var(--scolor__white);
+$linkcolor : var(--scolor1);
+$pcolor : var(--scolor3);
 
 /* Primary colors*/
-$linkcolor : var(--scolor__white);
-$pcolor : var(--scolor__brown);
+$linkcolor : var(--scolor1);
+$pcolor : var(--scolor5);
+$bordercolor : var(--dcolor8);
+
+$black : var(--scolor5);
+$white : var(--scolor1);

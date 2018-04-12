@@ -1,0 +1,113 @@
+
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+  background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+  top: -6px;
+  transform: rotate(-45deg);
+}
+
+.navbar-toggle .icon-bar {
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.navigation-bottom-color
+{
+  background: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 38px;
+  width: 100%;
+  height: 41px;
+  z-index: -1;
+  border-bottom: thin solid #555553;
+  @include media('<tablet') {
+    display: none !important;
+  }
+
+}
+
+.navbar-toggle.collapsed
+{
+  background-color: transparent;
+}
+
+.navbar-toggle
+{
+      z-index: 9;
+      margin-top:12px;
+      .icon-bar
+      {
+          background-color: $white;
+      }
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+  background-color: transparent;
+  border-color: #337ab7;
+}
+
+body.expanded
+{
+  overflow: hidden;
+  @include media('>=tablet') {
+    overflow: auto;
+  }
+}
+
+.sub-page{
+  .navigation {
+    a{
+      color:$black;
+    }
+    .navbar-shift
+    {
+      a{
+        color:$white;
+        @include media('>=tablet') {
+          color:$black;
+        }
+      }
+    }
+    .path
+    {
+      a
+      {
+        color:$white;
+      }
+    }
+  }
+
+}
+
+.sticky{
+  .navbar-shift
+  {
+    a{
+      @include media('>=tablet') {
+        color:$black;
+      }
+    }
+  }
+  .path
+  {
+    a
+    {
+      color:$white;
+    }
+  }
+}
+
+.navigation-menu
+{
+ overflow: hidden;
+ @include media('>=tablet') {
+    overflow: initial;
+ }
+}

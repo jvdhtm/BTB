@@ -5693,11 +5693,8 @@ body.expanded {
                       margin: 0px; }
       .navigation .navbar-shift .login, .navigation .navbar-shift.expanded .login {
         float: right;
-<<<<<<< HEAD
         width: auto;
-=======
-        width: 10%;
->>>>>>> assistera
+        width: 6%;
         margin-left: 0px;
         position: relative; }
         .navigation .navbar-shift .login a, .navigation .navbar-shift.expanded .login a {
