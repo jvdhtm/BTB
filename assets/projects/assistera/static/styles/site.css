@@ -5011,14 +5011,14 @@ footer {
   @media (min-width: 768px) {
     .news--block {
       border: 1px solid transparent; }
-      .news--block:nth-child(2n+1) {
+      .news--block:nth-child(2n + 1) {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px; }
       .news--block:nth-child(2n) {
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px; } }
   @media (min-width: 992px) {
-    .news--block:nth-child(2n+1) {
+    .news--block:nth-child(2n + 1) {
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -5028,7 +5028,7 @@ footer {
       border-bottom-right-radius: 0px;
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px; }
-    .news--block:nth-child(3n+1) {
+    .news--block:nth-child(3n + 1) {
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px; }
     .news--block:nth-child(3n) {
@@ -5067,6 +5067,12 @@ footer {
 
 .news--block--header__title {
   color: #f7f7f7; }
+  @media (max-width: 768px) {
+    .news--block--header__title {
+      font-size: 20px; } }
+  @media (min-width: 769px) {
+    .news--block--header__title {
+      font-size: 36px; } }
 
 .news--block__fadding {
   position: absolute;
@@ -5105,8 +5111,7 @@ footer {
     .news-wrapper {
       min-height: 563px; } }
   .news-wrapper h1 {
-    margin-top: 0px;
-    word-wrap: break-word; }
+    margin-top: 0px; }
   .news-wrapper img {
     height: 325px;
     -o-object-fit: cover;
@@ -5735,13 +5740,16 @@ span.hs-form-required {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .contact-person .contact-person--information__wrapper .contact-person__info h3 {
-      color: #6CBCC7; }
-    .contact-person .contact-person--information__wrapper .contact-person__info h5 {
-      color: #405F6E; }
-    .contact-person .contact-person--information__wrapper .contact-person__info a {
-      color: #405F6E;
-      margin-bottom: 10px; }
+    .contact-person .contact-person--information__wrapper .contact-person__info {
+      width: 80%;
+      height: 168px; }
+      .contact-person .contact-person--information__wrapper .contact-person__info h3 {
+        color: #6CBCC7; }
+      .contact-person .contact-person--information__wrapper .contact-person__info h5 {
+        color: #405F6E; }
+      .contact-person .contact-person--information__wrapper .contact-person__info a {
+        color: #405F6E;
+        margin-bottom: 10px; }
     .contact-person .contact-person--information__wrapper .contact-person__presentation {
       margin-bottom: 20px; }
       .contact-person .contact-person--information__wrapper .contact-person__presentation p {
@@ -5865,6 +5873,10 @@ span.hs-form-required {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 50px; }
+  .sort--input .input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
   .equalise-height.contact-form {
     display: block; }
   .contact-form .hs_firstname,
@@ -5907,6 +5919,29 @@ span.hs-form-required {
     max-width: 506px !important; } }
 
 @media only screen and (min-width: 1200px) {
+  .contact-form .hs_firstname:nth-of-type(1),
+  .contact-form .hs_email:nth-of-type(1),
+  .contact-form .hs_lastname:nth-of-type(1),
+  .contact-form .hs-phone:nth-of-type(1) {
+    margin-right: 0; }
+  .contact-form .hs_firstname:nth-of-type(3),
+  .contact-form .hs_email:nth-of-type(3),
+  .contact-form .hs_lastname:nth-of-type(3),
+  .contact-form .hs-phone:nth-of-type(3) {
+    margin-right: 0; }
+  .contact-form .hs_firstname:nth-of-type(2),
+  .contact-form .hs_email:nth-of-type(2),
+  .contact-form .hs_lastname:nth-of-type(2),
+  .contact-form .hs-phone:nth-of-type(2) {
+    margin-left: 0; }
+  .contact-form .hs_firstname:nth-of-type(4),
+  .contact-form .hs_email:nth-of-type(4),
+  .contact-form .hs_lastname:nth-of-type(4),
+  .contact-form .hs-phone:nth-of-type(4) {
+    margin-left: 0; }
+  .sort--input .input:nth-child(2) {
+    margin-left: 0px;
+    margin-right: 0px; }
   .row.flex {
     margin-top: 50px;
     margin-bottom: 20px;

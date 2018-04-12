@@ -1,8 +1,24 @@
 @font-face {
   font-family: 'FilsonSoftRegular';
   src: url('https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.eot');
-  src: url('https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.eot?#iefix') format('embedded-opentype'),url('https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.woff2') format('woff2'),url('https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.woff') format('woff'),url('https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.ttf') format('truetype');
-
-
-
+  src: url('https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.woff2')
+      format('woff2'),
+    url('https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.woff')
+      format('woff'),
+    url('https://cdn2.hubspot.net/hubfs/4226853/Assistera/Fonts/359889_0_0.ttf')
+      format('truetype');
 }
+
+// computer
+$font-size-h1-c: 48px;
+$font-size-h2-c: 36px;
+$font-size-h3-c: 24px;
+$font-size-p-c: 20px;
+
+// tablet + phone
+$font-size-h1-t: 24px;
+$font-size-h2-t: 20px;
+$font-size-h3-t: 18px;
+$font-size-p-t: 12px;
