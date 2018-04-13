@@ -9,9 +9,9 @@
   --scolor6: #749588;
   --scolor7: #E6E2DB;
   --scolor8: #000000;
-  --scolor8: #EF7C00;
-  --scolor8: #D8D8D8;
-  --scolor8: #979797;
+  --scolor9: #EF7C00;
+  --scolor10: #D8D8D8;
+  --scolor11: #979797;
 
   /* Document Colors */
   --dcolor1: #0087CC;
@@ -34,36 +34,36 @@
 }
 
 /* Screen Colors */
-$scolor__white: #FFFFFF;
-$scolor__blue: #0087CC;
-$scolor__gray--dark: #4A4A4A;
-$scolor__silver: #F5F3F0;
-$scolor__brown: #BEB2A1;
-$scolor__green: #749588;
-$scolor__gray--light: #E6E2DB;
-$scolor__black: #000000;
-$scolor__orange: #EF7C00;
-$scolor__sliver: #D8D8D8;
-$scolor__sliver--light: #979797;
+$scolor__white:  var(--scolor1);
+$scolor__blue:  var(--scolor2);
+$scolor__gray--dark: var(--scolor3);
+$scolor__silver:  var(--scolor4);
+$scolor__brown: var(--scolor5);
+$scolor__green: var(--scolor6);
+$scolor__gray--light:var(--scolor7);
+$scolor__black: var(--scolor8);
+$scolor__orange: var(--scolor9);
+$scolor__sliver: var(--scolor10);
+$scolor__sliver--light:var(--scolor11);
 
 /* Document Colors */
-$dcolor__blue: #0087CC;
-$dcolor__green--light: #AECC52;
-$dcolor__orange: #EF7C00;
-$dcolor__purple: #8F95CA;
-$dcolor__lila: #EA5197;
-$dcolor__yellow: #FFD500;
-$dcolor__green: #749588;
-$dcolor__brown: #BEB2A1;
-$dcolor__lila--light: #FCE8E2;
-$dcolor__yellow--light: #FFF6D9;
-$dcolor__turquoise: #009BA4;
-$dcolor__turquoise--light: #80CDD2;
-$sdcolor__green--lighter: #D6E5A8;
-$dcolor__blue: #F7BD7F;
-$sdcolor__purple: #C7CAE4;
-$sdcolor__brown--light: #E6E2DB;
-$sdcolor__milky: #F5F3F0;
+$dcolor__blue:var(--dcolor1);
+$dcolor__green--light:var(--dcolor1);
+$dcolor__orange: var(--dcolor1);
+$dcolor__purple: var(--dcolor1);
+$dcolor__lila:var(--dcolor1);
+$dcolor__yellow:var(--dcolor1);
+$dcolor__green: var(--dcolor1);
+$dcolor__brown:var(--dcolor1);
+$dcolor__lila--light: var(--dcolor1);
+$dcolor__yellow--light: var(--dcolor1);
+$dcolor__turquoise:var(--dcolor1);
+$dcolor__turquoise--light: var(--dcolor1);
+$sdcolor__green--lighter: var(--dcolor1);
+$dcolor__blue:var(--dcolor1);
+$sdcolor__purple: var(--dcolor1);
+$sdcolor__brown--light: var(--dcolor1);
+$sdcolor__milky: var(--dcolor1);
 
 
 
@@ -71,7 +71,7 @@ $sdcolor__milky: #F5F3F0;
 /* Primary colors*/
 $bgcolor__main--1 : var(--scolor2);
 $bgcolor__main--2 : var(--scolor3);
-$bgcolor__main--3 : var(--scolor8);
+$bgcolor__main--3 : var(--scolor11);
 $bgcolor__main--4 : var(--scolor7);
 
 
