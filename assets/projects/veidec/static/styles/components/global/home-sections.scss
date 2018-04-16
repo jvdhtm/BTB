@@ -76,15 +76,13 @@
 
 
 .btn-showmore{
-	transition:0.3s;
+
 
 	&:hover{
-        background:$white;
-        border: 2px solid $white;
-        color:$greenDark;
-        transform:translateY(-2px);
+        background:$greenLighter;
+        border: 2px solid $greenLighter;
+        color:$white;
         box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
-        transform: scale(1.03, 1.03);
     }
 }
 .gray-background{
@@ -339,7 +337,7 @@ a.hs_cos_flex-next {
 
 	@media (min-width: 768px)
 	{
-		.hs_cos_wrapper_widget {
+		.hs_cos_wrapper_type_rich_text,.hs_cos_wrapper_type_form {
 		    width: 750px;
 		}
 	}
