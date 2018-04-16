@@ -135,7 +135,6 @@
             nav{
               width: calc( 100% - 115px);
               float: left;
-              padding-left:36px;
               padding-top: 6px;
               margin: 0px;
                 ul {
@@ -153,8 +152,8 @@
                         display: block;
                           max-width: 100%;
                           a{
-                            padding:10px 10px !important;
-                            text-align: center;
+                            padding:10px 20px !important;
+                            text-align: left;
                             opacity: 1;
                             font-size:17px;
                             font-family:'GravityLight';
@@ -235,8 +234,7 @@
     .navbar-shift , .navbar-shift.expanded
     {
       nav{
-        padding-right: 30px;
-        padding-left: 75px;
+
         padding-top: 7px;
 
         ul {
@@ -257,8 +255,6 @@
     .navbar-shift , .navbar-shift.expanded
     {
       nav{
-        padding-right: 50px;
-        padding-left: 150px;
         padding-top: 7px;
         ul {
           .hs-menu-depth-1 {

@@ -6,7 +6,7 @@ routes {
   display: none;
 }
 
-.hs-tools-menu
+.gr__localhost .hs-tools-menu
 {
   display: none;
 }
@@ -49,8 +49,11 @@ h1,h2,h3,h4,h5,h6
       height: 27vh !important;
   }
 }
-.home .block-12 {
-    @include media('>=tablet') {
-      margin-top: 0px;
-    }
+
+.site-wrapper {
+    margin-top: 78px;
+}
+.relative
+{
+  position: relative;
 }
