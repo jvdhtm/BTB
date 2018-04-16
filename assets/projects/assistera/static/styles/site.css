@@ -5779,7 +5779,8 @@ span.hs-form-required {
       padding-top: 30px;
       background-color: #fff;
       border-bottom-right-radius: 30px;
-      border-bottom-left-radius: 30px; }
+      border-bottom-left-radius: 30px;
+      cursor: pointer; }
       .contact-information__map .map__info h3 {
         color: #6cbcc7;
         text-transform: capitalize;
