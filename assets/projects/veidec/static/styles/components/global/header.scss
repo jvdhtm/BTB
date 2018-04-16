@@ -10,7 +10,9 @@
 
 
 header {
-
+  @include media ('>=tablet') {
+    max-height: 64px;
+  }
   position: absolute;
   top:0px;
   left:0px;

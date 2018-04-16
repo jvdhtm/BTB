@@ -5029,6 +5029,9 @@ header {
   left: 0px;
   width: 100%;
   z-index: 10; }
+  @media (min-width: 768px) {
+    header {
+      max-height: 64px; } }
   header .navbar-header {
     height: 65px; }
   header .fa-search {
