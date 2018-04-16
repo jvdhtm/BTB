@@ -4295,7 +4295,8 @@ li.hs-breadcrumb-menu-item.last-crumb.first-crumb {
   margin-top: 65px; }
   .col-centered h1 {
     text-align: center;
-    font-weight: bold; }
+    font-weight: bold;
+    word-break: break-word; }
 
 elink {
   color: #fff;
@@ -5203,7 +5204,7 @@ header {
   border-radius: 5px;
   background: transparent;
   padding: 16px 0;
-  width: 300px;
+  width: 250px;
   margin-top: 30px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
