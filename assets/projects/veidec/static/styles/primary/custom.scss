@@ -356,7 +356,16 @@ input[type="color"],
     color: $white;
 }
 
-
+.btn-order {
+    border: 2px solid $green;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: $green;
+    padding: 10px 0px;
+    margin-bottom: 12px;
+    color: $white;
+}
 .btn-added {
     border: 2px solid $defDarkBlue;
     font-size: 16px;

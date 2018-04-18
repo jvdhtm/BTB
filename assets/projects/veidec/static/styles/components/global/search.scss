@@ -27,7 +27,7 @@ header {
     width: auto;
     top: 5px;
     font-size: 24px;
-    right: 57px;
+    right: 50px;
 
     color:$white;
     background: transparent;
@@ -86,7 +86,29 @@ header {
     }
 
   }
- @include media('>=tablet') {
+  @include media('>=tablet') {
+         .search
+         {
+           height: 60px;
+           overflow: hidden;
+           position: absolute;
+           z-index: 20;
+           width: auto;
+           top: 4px;
+           font-size: 22px;
+           right: 69px;
+           color: $white;
+           background: transparent;
+           border: none;
+
+         }
+         .cross
+         {
+               right: 9px;
+         }
+
+     }
+ @include media('>=tablet-portrait') {
         .search
         {
           height: 60px;
@@ -94,9 +116,9 @@ header {
           position: absolute;
           z-index: 20;
           width: auto;
-          top: -3px;
+          top: 1px;
           font-size: 26px;
-          right: 134px;
+          right: 80px;
           color: $white;
           background: transparent;
           border: none;
@@ -154,7 +176,7 @@ header {
       left: 50%;
       position: absolute;
       height: auto;
-      width: 75%;
+      width: 80%;
       background:$white;
       text-align: center;
       overflow: hidden;
