@@ -4292,7 +4292,8 @@ li.hs-breadcrumb-menu-item.last-crumb.first-crumb {
   display: none; }
 
 .col-centered {
-  margin-top: 65px; }
+  margin-top: 65px;
+  min-height: 43.4vh; }
   .col-centered h1 {
     text-align: center;
     font-weight: bold;
