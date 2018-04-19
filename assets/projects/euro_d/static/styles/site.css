@@ -5621,6 +5621,21 @@ form > * {
         padding-top: 5px;
         padding-left: 20px; }
 
+.employee .image-box {
+  height: 300px;
+  background: var(--scolor1);
+  overflow: hidden; }
+  .employee .image-box img {
+    height: 100%;
+    margin: auto; }
+
+.employee a {
+  color: var(--scolor3); }
+
+.employee .description {
+  padding-bottom: 6px;
+  padding-left: 15px; }
+
 /*********************
   Waves
 **********************/
