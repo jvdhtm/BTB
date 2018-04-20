@@ -8,37 +8,76 @@
     }
 
     &__item {
+        position: relative;
+
         &__body {
             padding: 8px 12px;
             background-color: $bgcolor__main--5;
             display: flex;
             align-items: center;
 
+            @include media('<=tablet') {
+                padding: 0;
+            }
+
             &__text {
                 flex: 1;
+
+                @include media('<=tablet') {
+                    background-color: rgba(#0087CC, 0.8);
+                    padding: 8px 12px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+
+                    h5, p {
+                        color: $white;
+                    }
+                }
+            }
+
+            &__action {
+                @include media('<=tablet') {
+                    background-color: rgba(#D8D8D8, 0.8);
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    top: 0;
+                    right: 0;
+                    bottom: 80px;
+                    padding: 8px 12px;
+                }
             }
         }
     }
-}
 
-.btn-circle {
-    width: 40px;
-    height: 40px;
-    background-color: $bgcolor__main--2;
-    color: $white;
-    border-radius: 50%;
-    border: none;
-    padding: 0;
-    line-height: 40px;
-    text-align: center;
-    font-size: 15px;
-
-    &:first-of-type {
-        margin-right: 7px;
-    }
-
-    &:hover,
-    &:focus {
+    .btn-circle {
+        width: 40px;
+        height: 40px;
+        background-color: $bgcolor__main--2;
         color: $white;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+        line-height: 40px;
+        text-align: center;
+        font-size: 15px;
+
+        &:first-of-type {
+            @include media('>=tablet') {
+                margin-right: 7px;
+            }
+            @include media('<tablet') {
+                margin-bottom: 15px;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            color: $white;
+        }
     }
 }
