@@ -1,0 +1,46 @@
+.colored-blocks-row{
+    display: flex;
+    align-items: stretch;
+}
+.colored-blocks-form {
+    padding: 32px;
+    height: 100%;
+
+    h3{
+        font-weight: 100;
+        color:$white;
+        margin-top: 0;
+    }
+    p{
+        font-size: 14px;
+        color:$white;
+    }
+
+    .form-group{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+
+        .form-control{
+            flex: 1;
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+        }
+    }
+    .btn-circle{
+        color: $scolor__orange;
+        border-radius: 100px;
+        width: 65px;
+        height: 65px;
+        font-size: 18px;
+        padding: 0;
+        font-weight: 600;
+        margin-left: 32px;
+
+        @include media('<=tablet') {
+            margin-left: 16px;
+        }
+    }
+}
+
