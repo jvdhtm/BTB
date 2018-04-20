@@ -1,11 +1,8 @@
-.send-box{
-    padding: 16px;
+.send-box-report{
+    padding: 32px;
 
     @include media('<=tablet') {
         padding: 16px;
-    }
-    h3{
-        margin: 0;
     }
     .row{
         align-items: center;
@@ -22,18 +19,20 @@
             box-shadow: none;
             border: none;
             border-radius: 0;
-            background-color: $sdcolor__brown--light;
         }
     }
-    .btn-square{
-        color: $white;
-        background-color: $scolor__blue;
-        width: 150px;
-        height: 34px;
+    .btn-circle{
+        color: $scolor__orange;
+        border-radius: 100px;
+        width: 65px;
+        height: 65px;
         font-size: 18px;
         padding: 0;
         font-weight: 600;
-        margin-left: 16px;
-        border-radius: 0;
+        margin-left: 32px;
+
+        @include media('<=tablet') {
+            margin-left: 16px;
+        }
     }
 }
