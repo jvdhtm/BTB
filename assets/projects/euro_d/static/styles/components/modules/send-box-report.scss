@@ -27,8 +27,9 @@
         }
     }
     .btn-circle{
+        background-color: $white;
         color: $scolor__orange;
-        border-radius: 100px;
+        border-radius: 50%;
         width: 65px;
         height: 65px;
         font-size: 18px;
