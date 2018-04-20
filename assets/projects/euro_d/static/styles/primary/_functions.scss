@@ -13,3 +13,18 @@ $global-elements: (
     @error 'z-index `#{$element}` in `#{$context}` not found.';
   }
 }
+
+@function placeholder(){
+    &::-webkit-input-placeholder{
+        @content;
+    }
+    &:-moz-placeholder{
+        @content;
+    }
+    &::-moz-placeholder{
+        @content;
+    }
+    &:-ms-input-placeholder{
+        @content;
+    }
+}
