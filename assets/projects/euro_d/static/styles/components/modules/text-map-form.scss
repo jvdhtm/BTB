@@ -1,0 +1,69 @@
+.text-map-form{
+    .col-md-6{
+        @include media('<992px') {
+            margin-bottom: 16px;
+        }
+    }
+    .form-wrapper{
+        background-color: $bgcolor__main--5;
+        padding: 32px;
+    }
+    select.form-control{
+        background-color: $scolor__orange;
+        color: $white;
+    }
+    .form-control{
+        background-color: $dcolor__brown;
+        
+        @include placeholder {
+            color: $white;
+        }
+    }
+    .form-group{
+        &:last-of-type{
+            margin-bottom: 0px;
+        }
+    }
+    textarea.form-control{
+        margin-bottom: 0px;
+        background-color: $white;
+    }
+    .form-control, .btn{
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+    }
+    .btn-attach, .btn-full{
+        background-color: $bgcolor__main--1;
+        color: $white;
+    }
+    .btn-attach{
+        width: 180px;
+        padding: 10px;
+    }
+    .btn-full{
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        height: 50px;
+        font-size: 18px;
+    }
+    .map-info{
+        .row{
+            display: flex;
+            align-items: stretch;
+        }
+        .map{
+            background-size: cover;
+            height: 100%;
+        }
+        .info{
+            padding: 16px;
+            background-color: $bgcolor__main--5;
+
+            a{
+                color: $black;
+            }
+        }
+    }
+}
