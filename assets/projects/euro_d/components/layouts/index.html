@@ -5,9 +5,18 @@
 	<routes scope="{{project}}" savestate id="pages" trailing={{trailing}}>
 		[
 				{path:'/', render:'/components/templates/home'},
-				{path:'/investor',    render:'/components/templates/standard'},
 				{path:'/register', render:'/components/templates/standard'},
                 {path:'/about-us', render:'/components/templates/standard'},
+                {path:'/investors', render:'/components/templates/standard'}, <!-- About us-->
+                {path:'/csr', render:'/components/templates/standard'}, <!-- About us-->
+                {path:'/contact-us', render:'/components/templates/standard'}, <!-- About us-->
+                {path:'/news-archive', render:'/components/templates/standard'}, <!-- About us-->
+                {path:'/news-detail', render:'/components/templates/standard'}, <!-- About us-->
+                {path:'/management', render:'/components/templates/standard'}, <!-- About us-->
+                {path:'/management-profile', render:'/components/templates/standard'}, <!-- About us-->
+                {path:'/corporate-info-open-positions', render:'/components/templates/standard'}, <!-- About us-->
+                {path:'/open-positions', render:'/components/templates/standard'}, <!-- About us-->
+                {path:'/search-result', render:'/components/templates/standard'}, <!-- About us-->
 				{path:'/.*', render:'/components/templates/error404'}
 			]
 	</routes>
