@@ -3,9 +3,9 @@
 <div class="site-wrapper">
 
 	<routes scope="{{project}}" savestate id="pages" trailing={{trailing}}>
-		[
-				{path:'/', render:'/components/templates/home'},
-				{path:'/register', render:'/components/templates/standard'},
+	[
+        	{path:'/', render:'/components/templates/home'},
+        	{path:'/register', render:'/components/templates/standard'},
                 {path:'/about-us', render:'/components/templates/standard'},
                 {path:'/investors', render:'/components/templates/standard'}, <!-- About us-->
                 {path:'/csr', render:'/components/templates/standard'}, <!-- About us-->
@@ -16,9 +16,9 @@
                 {path:'/management-profile', render:'/components/templates/standard'}, <!-- About us-->
                 {path:'/corporate-info-open-positions', render:'/components/templates/standard'}, <!-- About us-->
                 {path:'/open-positions', render:'/components/templates/standard'}, <!-- About us-->
-                {path:'/search-result', render:'/components/templates/standard'}, <!-- About us-->
-				{path:'/.*', render:'/components/templates/error404'}
-			]
+                {path:'/search-results', render:'/components/templates/standard'}, <!-- About us-->
+		{path:'/.*', render:'/components/templates/error404'}
+	]
 	</routes>
 	<compontent src="../modules/footer"></compontent>
 </div>
