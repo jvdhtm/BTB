@@ -12,16 +12,16 @@ routes {
 }
 
 module{
-  .section {
+  > .section {
     padding: 20px 0;
   }
   &:first-of-type {
-    .section{
+    > .section{
       padding-top: 0;
     }
   }
   &:last-of-type {
-    .section{
+    > .section{
       padding-bottom: 0;
     }
   }
@@ -34,7 +34,7 @@ module{
 
 body {
   font-family: 'Helvetica Neue';
-  background-color: $white;
+  background-color: $scolor__silver;
 }
 
 a {
@@ -71,4 +71,21 @@ h1,h2,h3,h4,h5,h6
 .relative
 {
   position: relative;
+}
+
+.cnt-spacing {
+  > * {
+    margin: {
+      top: 16px;
+      bottom: 16px;
+    };
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
