@@ -9,6 +9,11 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .text{
+        h3{
+            margin: 0px;
+        }
+    }
     .form-group{
         display: flex;
         align-items: center;
