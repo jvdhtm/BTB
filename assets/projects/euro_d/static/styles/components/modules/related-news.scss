@@ -1,0 +1,62 @@
+.related-news {
+    &__title {
+        background: $bgcolor__main--2;
+        color: $white;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    &__row {
+        margin: {
+            left: -7.5px;
+            right: -7.5px;
+        }
+    }
+
+    &__column {
+        padding: 0 7.5px;
+
+        @include media('<=400px') {
+            width: 100%;
+        }
+
+        @include media('<=tablet') {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__item {
+        &__header {
+            position: relative;
+
+            &__title {
+                margin: 0;
+                padding: 10px 25px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $bgcolor__main--3;
+                color: $white;
+            }
+        }
+
+        &__body {
+
+        }
+    }
+}
+
+.btn-full {
+    background-color: $bgcolor__main--1;
+    color: $white;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+
+    &:hover,
+    &:focus {
+        color: $white;
+    }
+}
