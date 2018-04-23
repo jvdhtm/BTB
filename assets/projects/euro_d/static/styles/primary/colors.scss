@@ -31,6 +31,7 @@
   --dcolor15: #C7CAE4;
   --dcolor16: #E6E2DB;
   --dcolor17: #F5F3F0;
+  --dcolor18: #BED7E4;
 }
 
 /* Screen Colors */
@@ -61,6 +62,7 @@ $dcolor__turquoise:var(--dcolor11);
 $dcolor__turquoise--light: var(--dcolor12);
 $sdcolor__green--lighter: var(--dcolor13);
 $dcolor__blue:var(--dcolor14);
+$sdcolor__blue_turquoise: var(--dcolor18);
 $sdcolor__purple: var(--dcolor15);
 $sdcolor__brown--light: var(--dcolor16);
 $sdcolor__milky: var(--dcolor17);

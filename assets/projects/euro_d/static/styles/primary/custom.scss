@@ -59,6 +59,13 @@ h1,h2,h3,h4,h5,h6
 .nopadding {
   padding: 0px;
 }
+
+@include media('<=tablet') {
+  .no-padding-xs {
+    padding: 0;
+  }
+}
+
 @include media('<=tablet') {
   .banner {
       height: 27vh !important;
@@ -66,7 +73,7 @@ h1,h2,h3,h4,h5,h6
 }
 
 .site-wrapper {
-    margin-top: 78px;
+    margin-top: 65px;
 }
 .relative
 {

@@ -66,6 +66,13 @@
         text-align: center;
         font-size: 15px;
 
+        @include media('<tablet') {
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 18px;
+        }
+
         &:first-of-type {
             @include media('>=tablet') {
                 margin-right: 7px;

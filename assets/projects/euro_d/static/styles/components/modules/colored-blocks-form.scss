@@ -1,10 +1,43 @@
 .colored-blocks-row{
-    display: flex;
-    align-items: stretch;
+
+    @include media('>=tablet') {
+        display: flex;
+        align-items: stretch;
+    }
 }
 .colored-blocks-form {
     padding: 32px;
     height: 100%;
+
+    .colored-blocks-form-header {
+        display: flex;
+
+        h3{
+            flex: 1;
+        }
+
+        .btn {
+            color: $white;
+            outline: 0;
+
+            .fa-plus {
+                display: none;
+            }
+
+            &.collapsed {
+                .fa-plus {
+                    display: inline-block;
+                }
+                .fa-minus {
+                    display: none;
+                }
+            }
+            
+            &:hover, &:focus, &:active {
+                box-shadow: none;
+            }
+        }
+    }
 
     h3{
         font-weight: 100;
@@ -44,3 +77,9 @@
     }
 }
 
+.form-colored-blocks-text {
+
+    @include media('<=tablet') {
+        padding: 32px;
+    }
+}

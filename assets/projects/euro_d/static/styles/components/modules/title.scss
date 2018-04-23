@@ -1,0 +1,9 @@
+.title {
+    @include media('<tablet') {
+        background-color: $bgcolor__main--1;
+        padding: 7px 15px;
+        margin: 0;
+        color: $white;
+        font-size: 25px;
+    }
+}

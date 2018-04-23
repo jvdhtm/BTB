@@ -17,6 +17,7 @@
             height: 400px;
             background-repeat: no-repeat;
             background-position: center;
+            margin-bottom: 16px;
         }
         @include media('<401px') {
             height: 250px;

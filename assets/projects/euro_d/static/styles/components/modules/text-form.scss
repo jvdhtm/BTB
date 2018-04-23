@@ -43,4 +43,9 @@
         height: 50px;
         font-size: 18px;
     }
+    @include media('<tablet') {
+        .form{
+            padding: 0;
+        }
+    }
 }

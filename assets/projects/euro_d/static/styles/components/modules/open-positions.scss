@@ -19,6 +19,9 @@
             @include media('>tablet') {
                  float: right;
             }
+            @include media('<tablet') {
+                width: 100%;
+            }
         }
         h3{
             margin-top: 0;

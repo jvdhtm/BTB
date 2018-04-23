@@ -1,11 +1,17 @@
 .pharma-blocks {
-    border: 2px solid $bordercolor;
+    border: 2px solid transparent;
     margin-top: 72px;
+    text-align: center;
+    background: var(--dcolor16);
     p{
           padding: 40px;
           font-size: 18px;
           padding-bottom: 5px;
-          color:$black ;
+          color: $black;
+
+          @include media('<tablet') {
+            display: none;
+          }
     }
     h3{
       background: $bgcolor__main--1;
@@ -13,6 +19,13 @@
       padding: 10px 40px;
       color:$white;
       text-align: center;
+
+      @include media('<tablet') {
+        background-color: unset;
+        font-size: 15px;
+        color: $black;
+        padding: 10px 0;
+      }
     }
     .icons {
       background: gray;
@@ -23,9 +36,21 @@
       margin-top: -72px;
       border-radius: 50%;
       background:$bgcolor__main--3;
-      img 
-      {
+      border: 6px var(--scolor4) solid;
+
+      @include media('<tablet') {
+        width: 100px;
+        height: 100px; 
+        border: none;
+      }
+      img {
         width: 100%;
       }
+  }
+
+  @include media('<tablet') {
+        border: 0;
+        margin-bottom: 16px;
+        background-color: unset;
   }
 }
