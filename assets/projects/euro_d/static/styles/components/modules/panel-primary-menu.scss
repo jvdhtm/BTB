@@ -1,0 +1,46 @@
+.panel-menu {
+    .panel {
+        margin-bottom: 20px;
+    }
+}
+
+.collapsable-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin: 7px 0;
+        a {
+            padding: 8px 12px;
+            background-color: $sdcolor__brown--light;
+            color: $black;
+        }
+
+        &.dropdown {
+            .dropdown-toggle {
+                position: relative;
+                &:after {
+                    font-family: FontAwesome;
+                    content: '\f068';
+                    font-size: 12px;
+                    position: absolute;
+                    right: 15px;
+                    top: 10px;
+                    height: 10px;
+                    width: 10px;
+                    color: $black;
+                }
+                &.collapsed {
+                    &:after{
+                        content: '\f067';
+                    }
+                }
+            }
+            .dropdown-collapse {
+                list-style: none;
+            }
+        }
+        
+    }
+}

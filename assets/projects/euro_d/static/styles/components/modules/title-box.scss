@@ -1,0 +1,12 @@
+.title-box {
+    background: $bgcolor__main--2;
+    color: $white;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 25px;
+
+    @include media('<=tablet') {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

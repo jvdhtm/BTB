@@ -1,14 +1,32 @@
-.employee
-{
-  .image-box
-  {
+.employee{
+  margin-bottom: 16px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+
+  .employee-box {
+    position: relative;
+  }
+
+  .image-box {
     height: 300px;
     background: $white;
     overflow: hidden;
-    img {
+    background-size: cover;
 
+    @include media('>=tablet') {
+      background-image: none;
+    }
+    @include media('<=tablet') {
+      height: 120px;
+    }
+    img {
         height: 100%;
         margin: auto;
+
+        @include media('<=tablet') {
+          display: none;
+        }
     }
   }
   a{
@@ -17,5 +35,22 @@
   .description {
     padding-bottom: 6px;
     padding-left: 15px;
+
+      @include media('<=tablet') {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(#0087CC, 0.8);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 10px 15px;
+
+          h4, p, a {
+            color: $white;
+          }
+      }
   }
 }

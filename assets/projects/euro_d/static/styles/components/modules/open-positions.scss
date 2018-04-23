@@ -1,0 +1,43 @@
+.open-positions{
+
+    .position-block{
+        border-bottom: 7px solid $scolor__blue;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        display: inline-block;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+        .btn-readmore{
+            padding: 7px 30px;
+            background-color: $dcolor__brown;
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+
+            @include media('>tablet') {
+                 float: right;
+            }
+            @include media('<tablet') {
+                width: 100%;
+            }
+        }
+        h3{
+            margin-top: 0;
+        }
+        .wrapper{
+
+            @include media('>tablet') {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+            .text{
+                @include media('>tablet') {
+                    padding-right: 180px;
+                }
+            }
+        }
+    }
+}

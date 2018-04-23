@@ -4,8 +4,13 @@
   padding: 10px 0px;
   color: var(--scolor1);
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 50px;
+
+  @include media('<=1665px') {
+    display: none;
+  }
+
   .widget-span .hs_cos_wrapper_widget
   {
     width: auto !important;

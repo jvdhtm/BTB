@@ -1,6 +1,16 @@
 
   .image__text
   {
+
+    @include media('<tablet') {
+      display: flex;
+      flex-direction: column;
+
+      .text {
+        order: 1;
+      }
+    }
+
     &{
       .image-box {
         img {

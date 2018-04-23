@@ -1,0 +1,85 @@
+.searchform-form{
+    .searchform{
+        select.form-control{
+            background-color: $bgcolor__main--5;
+            color: $black;
+        } 
+        .form-wrapper{
+            background-color: $scolor__orange;
+            padding: 32px;
+        }
+        .searchform-results{
+            background-color: $bgcolor__main--5;
+            padding: 32px;
+            .searchform-results-list {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 16px;
+
+                @include media('<500px') {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+            .citys {
+                text-align: right;
+            }
+            h3,h4{
+                margin: 0;
+            }
+        }
+    }
+    .form-wrapper{
+        background-color: $bgcolor__main--5;
+        padding: 32px;
+    }
+    select.form-control{
+        background-color: $scolor__orange;
+        color: $white;
+    }
+    .form-control{
+        background-color: $dcolor__brown;
+        
+        @include placeholder {
+            color: $white;
+        }
+    }
+    .form-group{
+        &:last-of-type{
+            margin-bottom: 0px;
+        }
+    }
+    textarea.form-control{
+        margin-bottom: 0px;
+        background-color: $white;
+    }
+    .form-control, .btn{
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+    }
+    .btn-attach, .btn-full{
+        background-color: $bgcolor__main--1;
+        color: $white;
+    }
+    .btn-attach{
+        width: 180px;
+        padding: 10px;
+    }
+    .btn-full{
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        height: 50px;
+        font-size: 18px;
+    }
+    @include media('<tablet') {
+        .form{
+            padding: 0;
+        }
+    }
+}

@@ -1,11 +1,22 @@
 .send-box{
+    background-color: $dcolor__brown;
     padding: 16px;
 
     @include media('<=tablet') {
+        background-color: $scolor__orange;
         padding: 16px;
     }
+
     h3{
         margin: 0;
+
+        @include media('<=tablet') {
+            color: $white;
+        }
+
+        @include media('<=1199px') {
+            margin-bottom: 20px;
+        }
     }
     .row{
         align-items: center;
@@ -23,6 +34,11 @@
             border: none;
             border-radius: 0;
             background-color: $sdcolor__brown--light;
+
+            @include media('<=tablet') {
+                background-color: $white;
+                border-radius: 25px;
+            }
         }
     }
     .btn-square{
@@ -35,5 +51,21 @@
         font-weight: 600;
         margin-left: 16px;
         border-radius: 0;
+    }
+
+    @include media('<=tablet') {
+        .btn-blue-mobile {
+            text-align: center;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 0;
+            font-size: 13px;
+            padding: 0;
+            background-color: $bgcolor__main--1;
+            border-radius: 50%;
+            color: $white;
+            margin-left: -30px;
+            outline: 0;
+        }
     }
 }
