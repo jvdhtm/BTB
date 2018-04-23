@@ -25,8 +25,38 @@ module{
       padding-bottom: 0;
     }
   }
+
+  @include media('<tablet') {
+    .pt-xs-0 {
+      padding-top: 0;
+    }
+  }
 }
 
+.cnt-spacing {
+  > * {
+    margin: 12px 0;
+
+    &:first-child {
+       margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media('<=tablet-portrait') {
+  .row, .row-flex {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+  .container, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12,
+  .col-flex-xs-1, .col-flex-sm-1, .col-flex-md-1, .col-flex-lg-1, .col-flex-xs-2, .col-flex-sm-2, .col-flex-md-2, .col-flex-lg-2, .col-flex-xs-3, .col-flex-sm-3, .col-flex-md-3, .col-flex-lg-3, .col-flex-xs-4, .col-flex-sm-4, .col-flex-md-4, .col-flex-lg-4, .col-flex-xs-5, .col-flex-sm-5, .col-flex-md-5, .col-flex-lg-5, .col-flex-xs-6, .col-flex-sm-6, .col-flex-md-6, .col-flex-lg-6, .col-flex-xs-7, .col-flex-sm-7, .col-flex-md-7, .col-flex-lg-7, .col-flex-xs-8, .col-flex-sm-8, .col-flex-md-8, .col-flex-lg-8, .col-flex-xs-9, .col-flex-sm-9, .col-flex-md-9, .col-flex-lg-9, .col-flex-xs-10, .col-flex-sm-10, .col-flex-md-10, .col-flex-lg-10, .col-flex-xs-11, .col-flex-sm-11, .col-flex-md-11, .col-flex-lg-11, .col-flex-xs-12, .col-flex-sm-12, .col-flex-md-12, .col-flex-lg-12 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
 
 .fullwidth {
   width: 100%;
@@ -60,9 +90,22 @@ h1,h2,h3,h4,h5,h6
   padding: 0px;
 }
 
-@include media('<=tablet') {
-  .no-padding-xs {
+@include media('<tablet') {
+  .no-padding-xs,
+  module > .no-padding-xs {
     padding: 0;
+  }
+}
+
+@include media('<tablet') {
+  .no-margin-xs {
+    margin: 0;
+  }
+}
+
+@include media('<tablet') {
+  .justify-content-xs-center {
+    justify-content: center;
   }
 }
 

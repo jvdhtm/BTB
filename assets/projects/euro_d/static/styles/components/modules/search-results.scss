@@ -6,6 +6,10 @@
         padding-bottom: 16px;
         display: inline-block;
 
+        @include media('<tablet') {
+            padding: 0 32px 20px 32px;
+        }
+
         &:last-of-type{
             margin-bottom: 0;
         }
@@ -16,6 +20,9 @@
             border: none;
             border-radius: 0;
 
+            @include media('<tablet') {
+                width: 100%;
+            }
             @include media('>tablet') {
                  float: right;
             }

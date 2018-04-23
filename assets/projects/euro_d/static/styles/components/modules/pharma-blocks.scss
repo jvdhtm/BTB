@@ -39,8 +39,9 @@
       border: 6px var(--scolor4) solid;
 
       @include media('<tablet') {
-        width: 100px;
-        height: 100px; 
+        width: 100%;
+        height: auto;
+        padding-bottom: 100%; 
         border: none;
       }
       img {

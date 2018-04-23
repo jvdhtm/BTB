@@ -2,12 +2,24 @@
     .panel {
         margin-bottom: 20px;
     }
+
+    @include media('<=tablet-portrait') {
+        &:last-of-type {
+            .panel:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 .collapsable-menu {
     list-style: none;
     padding: 0;
     margin: 0;
+
+    @include media('<tablet') {
+        padding: 0 32px;
+    }
 
     li {
         margin: 7px 0;

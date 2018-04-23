@@ -176,7 +176,7 @@
         }
     }
 
-    &.row{
+    &.row-custom{
         
         @include media('>tablet') {
             justify-content: flex-start;
@@ -192,16 +192,16 @@
             }
 
             .checkbox{
-                margin-left: 15px;
-                margin-right: 0;    
+                margin-right: 15px;
+                margin-left: 0;    
             }
         }
 
         &.reverse{
             @include media('>tablet') {
                 .checkbox{
-                    margin-left: 0;
-                    margin-right: 15px;    
+                    margin-right: 0;
+                    margin-left: 15px;    
                 }
             }
         }

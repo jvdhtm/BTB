@@ -38,6 +38,9 @@
             border: none;
             border-radius: 0;
 
+            @include media('<tablet') {
+                width: 100%;
+            }
             @include media('>tablet') {
                  float: right;
             }
