@@ -1,5 +1,9 @@
-
-  .image__text
+module>.text-image-section {
+  @include media('<tablet-portrait') {
+    padding-top: 0;
+  }
+}
+  .text__image
   {
 
     @include media('<tablet') {
@@ -11,23 +15,20 @@
         padding-right: 32px;
       }
     }
-
-    @include media('<=tablet-portrait') {
-      .column {
-        margin-bottom: 20px;
-
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-    }
-
-    @include media('<tablet') {
+    @include media('<tablet-portrait') {
       display: flex;
       flex-direction: column;
 
       .text {
         order: 1;
+      }
+
+      .column {
+        margin-bottom: 20px;
+
+        &:first-of-type {
+          margin-bottom: 0;
+        }
       }
     }
 
