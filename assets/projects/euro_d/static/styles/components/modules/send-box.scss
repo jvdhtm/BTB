@@ -4,9 +4,15 @@
 
     @include media('<=tablet') {
         background-color: $scolor__orange;
-        padding: 16px;
+        padding: 16px 0;
     }
 
+    p {
+        @include media('<=tablet') {
+            color: $white;
+        }
+    }
+    
     h3{
         margin: 0;
 

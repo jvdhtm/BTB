@@ -13,6 +13,7 @@
     background: $white;
     overflow: hidden;
     background-size: cover;
+    background-position: center;
 
     @include media('>=tablet') {
       background-image: none;

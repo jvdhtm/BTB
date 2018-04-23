@@ -67,7 +67,7 @@
     }
     .three-col-list {
         @include media('<tablet') {
-            padding: 0 15px;
+            padding: 0 32px;
         }
         .list-items{
             display: flex;
@@ -105,6 +105,9 @@
         }
     }
     .tertiary-list {
+        @include media('<tablet') {
+            padding: 0 32px;
+        }
         .list-items{
             display: flex;
             justify-content: space-between;

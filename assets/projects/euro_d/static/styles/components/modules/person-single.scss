@@ -8,10 +8,20 @@
 
         @include media('<=tablet-portrait') {
             margin-bottom: 30px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
         }
 
         &--text {
             padding-right: 15px;
+        }
+    }
+
+    @include media('<tablet') {
+        .padding-xs {
+            padding: 0 32px;
         }
     }
 

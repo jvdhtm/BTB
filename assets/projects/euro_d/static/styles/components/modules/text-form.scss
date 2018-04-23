@@ -1,4 +1,21 @@
 .text-form{
+    .col-md-6{
+        @include media('<tablet') {
+            margin-bottom: 16px;
+        }
+
+        @include media('<tablet') {
+            &.form{
+                background-color: $bgcolor__main--5;
+            }
+        }
+    }
+    @include media('<tablet') {
+        .text{
+            padding: 0 32px;
+        }
+    }
+
     .form-wrapper{
         background-color: $bgcolor__main--5;
         padding: 32px;
@@ -22,6 +39,9 @@
     textarea.form-control{
         margin-bottom: 0px;
         background-color: $white;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 145px;
     }
     .form-control, .btn{
         box-shadow: none;
@@ -42,10 +62,5 @@
         border: none;
         height: 50px;
         font-size: 18px;
-    }
-    @include media('<tablet') {
-        .form{
-            padding: 0;
-        }
     }
 }

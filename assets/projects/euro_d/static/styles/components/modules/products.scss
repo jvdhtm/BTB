@@ -1,6 +1,16 @@
 .products {
     .column {
         margin-bottom: 30px;
+
+        &:nth-last-of-type(1), &:nth-last-of-type(2) {
+            margin-bottom: 0;
+        }
+
+        @include media('<tablet') {
+            &:nth-last-of-type(2) {
+                margin-bottom: 30px;
+            }
+        }
     }
     .product {
         height: 100%;
@@ -11,7 +21,7 @@
         .product-header {
             display: flex;
             align-items: center;
-            padding: 10px 15px;
+            padding: 10px 32px;
             background-color: $bgcolor__main--1;
 
             .product-title {
