@@ -12,7 +12,7 @@
             color: $white;
         }
     }
-    
+
     h3{
         margin: 0;
 
@@ -34,7 +34,7 @@
         align-items: center;
         margin-bottom: 0;
 
-        .form-control{
+        .form-control,.hs-input{
             flex: 1;
             box-shadow: none;
             border: none;
@@ -47,7 +47,46 @@
             }
         }
     }
-    .btn-square{
+
+
+    .hs_submit {
+      @include media('>=tablet') {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+    }
+
+
+    .hs_email {
+    display: block;
+
+        width: 100%;
+        @include media('>=tablet') {
+          width: 75%;
+          float: left;
+              margin-top: -13px;
+        }
+    }
+    .hs-input{
+
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      background-color: $sdcolor__brown--light;
+
+      @include media('<=tablet') {
+          background-color: $white;
+          border-radius: 25px;
+      }
+    }
+    .hs-form-required {
+        position: absolute;
+        color: red;
+        top: 16px;
+        left: 2px;
+      }
+    .btn-square,.hs-button{
         color: $white;
         background-color: $scolor__blue;
         width: 150px;
@@ -57,6 +96,7 @@
         font-weight: 600;
         margin-left: 16px;
         border-radius: 0;
+        border: none;    
     }
 
     @include media('<=tablet') {
