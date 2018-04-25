@@ -1,0 +1,255 @@
+@mixin wheel-rotation-degrees($items-to-show) {
+    @for $i from 1 through ($items-to-show * 4) {
+        &:nth-of-type(#{$i}) {
+            @if ($i != 1) {
+                $deg: ($i - 1) * (90 / $items-to-show);
+                transform: rotate(#{$deg}deg);
+            }
+            z-index: ($items-to-show * 4) - ($i - 1);
+        }
+    }
+}
+
+@mixin wheel-size($size, $items-to-show, $diff-to-wheel-in-front, $degree-offset: 10) {
+    width: $size;
+    height: $size;
+    bottom: ($size / 2) * -1;
+    right: ($size / 2) * -1;
+
+    ul {
+        width: $size;
+        height: $size;
+
+        li {
+            width: ($size / 2);
+            height: ($size / 2);
+
+            a {
+                width: ($diff-to-wheel-in-front / 2) + 5;
+                height: (($size*3.14) / 4) / $items-to-show;
+                transform: rotate(#{$degree-offset * -1}deg);
+
+                .inner {
+                    $deg: (((90 / $items-to-show) / 2) - $degree-offset) * -1;
+                    display: block;
+                    transform-origin: top left;
+                    transform: rotate(#{$deg}deg);
+                    width: ($diff-to-wheel-in-front / 2) + 5;
+                }
+            }
+        }
+    }
+}
+
+.wheel-menu {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    height: 1px;
+    width: 1px;
+
+    @include media('>tablet') {
+        display: none;
+    }
+
+    .wheel {
+        position: absolute;
+        margin: 0 0 0 auto;
+        overflow: hidden;
+        box-shadow: -2px -2px 4px rgba(53, 53, 53, 0.62);
+        border-radius: 50%;
+        transition: 0.3s ease;
+        transform-origin: center;
+        transform: scale(0);
+        opacity: 0;
+
+        &.open {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        ul {
+            position: relative;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 50%;
+            overflow: hidden;
+
+            li {
+                position: absolute;
+                top: 50%;
+                display: block;
+                transform-origin: top right;
+                overflow: hidden;
+                box-shadow: -2px -2px 4px rgba(53, 53, 53, 0.62);
+                transition: 0.3s ease;
+                pointer-events: none;
+
+                a {
+                    box-sizing: border-box;
+                    transform-origin: top left;
+                    text-align: center;
+                    font-size: 12px;
+                    margin-left: -3px;
+                    pointer-events: auto;
+                    display: flex;
+                    align-items: center;
+
+                    .inner {
+                        padding: 0 15px 0 10px;
+                    }
+
+                    &:hover, &:focus {
+                        text-decoration: none;
+                    }
+
+                    &.active {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        &.wheel-lg {
+            @include wheel-size(650px, 5, 250px, 7);
+
+            background-color: #8ec2e2;
+            z-index: 200;
+
+            ul {
+                li {
+                    @include wheel-rotation-degrees(5);
+
+                    background-color: #8ec2e2;
+
+                    &:not(.active):nth-of-type(even) {
+                        a {
+                            background-color: #c5e0f0;
+
+                            &:hover, &:focus {
+                                background-color: darken(#c5e0f0, 5%);
+                            }
+                        }
+                    }
+
+                    a {
+                        background-color: #8ec2e2;
+                        color: $black;
+
+                        &:hover, &:focus {
+                            background-color: darken(#8ec2e2, 10%);
+                        }
+
+                        &.active {
+                            background-color: $scolor__orange;
+                            color: $white;
+
+                            &:hover, &:focus {
+                                background-color: $scolor__orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.wheel-sm {
+            @include wheel-size(400px, 4, 220px, 10);
+
+            z-index: 300;
+            background-color: #5ba4d4;
+
+            ul {
+                li {
+                    @include wheel-rotation-degrees(4);
+
+                    background-color: #5ba4d4;
+
+                    a {
+                        background-color: #5ba4d4;
+                        color: $white;
+
+                        &:hover, &:focus {
+                            background-color: darken(#5ba4d4, 10%);
+                            color: $white;
+                        }
+
+                        &.active {
+                            background-color: $scolor__orange;
+                            color: $white;
+                        }
+                    }
+
+                    &:nth-of-type(even) {
+                        a {
+                            &:not(.active) {
+                                background-color: #3886c6;
+
+                                &:hover, &:focus {
+                                    background-color: darken(#3886c6, 10%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .toggle {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 400;
+        background: $bgcolor__main--1;
+        box-shadow: 0 2px 7px 2px rgba(51, 51, 51, 0.4);
+        overflow: hidden;
+        transition: 0.3s ease;
+        transform-origin: center;
+
+        a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+
+            &::after{
+                font-family: FontAwesome;
+                content: '\f0c9';
+                font-size: 20px;
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
+        }
+
+        &.open {
+            width: 180px;
+            height: 180px;
+            bottom: -90px;
+            right: -90px;
+            box-shadow: inset 2px 2px 4px rgba(51, 51, 51, 0.28);
+            
+            a {
+                width: 50%;
+                height: 50%;
+                padding: 15px 0 0 15px;
+
+                &::after {
+                    content: '\f00d';
+                }
+            }
+        }
+    }
+}

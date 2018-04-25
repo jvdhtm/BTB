@@ -19,21 +19,39 @@
         font-weight: 500;
         letter-spacing: 1px;
 
-
         @include media('<tablet') {
+            width: 100%;
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            padding: 0 32px;
         }
+
+        span, a {
+            display: inline-block;
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
+
         .active{
             background: $white;
             color: $scolor__blue;
             padding: 3px 7px;
             border-radius: 100%;
+            line-height: 1.2;
 
             @include media('<tablet') {
                 padding: 0px 6px;
                 font-size: 18px;
                 margin: 0 3px;
+            }
+
+            &:hover,
+            &:focus {
+                color: $scolor__blue;
             }
         }
 
