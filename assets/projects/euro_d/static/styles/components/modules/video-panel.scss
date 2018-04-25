@@ -1,0 +1,15 @@
+.video-panel {
+  .video {
+    min-height: 300px;
+    margin-bottom: 10px;
+
+    @include media('<tablet') {
+      min-height: 100px;
+    }
+  }
+
+  .video-panel-list {
+    height: 400px;
+    overflow-y: scroll;
+  }
+}
