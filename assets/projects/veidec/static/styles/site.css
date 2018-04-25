@@ -5632,9 +5632,11 @@ body.expanded {
     z-index: 3;
     position: initial; }
     .navigation .navbar-shift, .navigation .navbar-shift.expanded {
-      position: initial;
+      position: relative;
       height: auto;
-      background: transparent; }
+      background: transparent;
+      right: 0px;
+      top: 0px; }
       .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
         width: calc( 100% - 62px);
         float: left;
