@@ -5126,17 +5126,17 @@ routes {
 .gr__localhost .hs-tools-menu {
   display: none; }
 
-module > .section {
+.site-wrapper .section {
   padding: 20px 0; }
 
-module:first-of-type > .section {
+.site-wrapper:first-of-type > .section {
   padding-top: 0; }
 
-module:last-of-type > .section {
+.site-wrapper:last-of-type > .section {
   padding-bottom: 0; }
 
 @media (max-width: 767px) {
-  module .pt-xs-0 {
+  .site-wrapper .pt-xs-0 {
     padding-top: 0; } }
 
 .cnt-spacing > * {
@@ -6348,23 +6348,24 @@ ul.bxslider {
 .news-blocks {
   margin-top: 10px; }
   .news-blocks p {
-    padding-right: 20px;
+    padding-right: 10px;
     font-size: 18px;
     padding-bottom: 5px;
     color: var(--scolor3);
     width: 60%;
-    float: left; }
+    float: left;
+    padding-top: 80px; }
   .news-blocks .small__image {
     width: 100%;
     height: 222px; }
   .news-blocks h3 {
     background: var(--scolor2);
     margin: 0px;
-    padding: 10px 40px;
+    padding: 10px 0px;
     color: var(--scolor1);
     text-align: center; }
   .news-blocks a {
-    top: 25%;
+    top: 50%;
     position: absolute;
     left: 70%;
     margin-left: -32px; }

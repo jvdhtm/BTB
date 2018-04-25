@@ -1,12 +1,13 @@
 .news-blocks {
     margin-top:10px;
     p{
-          padding-right: 20px;
-          font-size: 18px;
-          padding-bottom: 5px;
-          color:$black ;
-          width: 60%;
-          float: left;
+      padding-right: 10px;
+      font-size: 18px;
+      padding-bottom: 5px;
+      color: var(--scolor3);
+      width: 60%;
+      float: left;
+      padding-top: 80px;
     }
     .small__image
     {
@@ -16,12 +17,12 @@
     h3{
       background: $bgcolor__main--1;
       margin: 0px;
-      padding: 10px 40px;
-      color:$white;
-      text-align: center;
+      padding: 10px 0px;
+      color: var(--scolor1);
+      text-align: center
     }
     a{
-      top: 25%;
+      top: 50%;
       position: absolute;
       left: 70%;
       margin-left: -32px;

@@ -11,8 +11,8 @@ routes {
   display: none;
 }
 
-module{
-  > .section {
+.site-wrapper{
+   .section {
     padding: 20px 0;
   }
   &:first-of-type {
