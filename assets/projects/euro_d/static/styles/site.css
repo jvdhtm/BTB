@@ -6376,7 +6376,7 @@ ul.bxslider {
     color: var(--scolor1);
     text-align: center; }
   .news-blocks a {
-    top: 50%;
+    top: 75px;
     position: absolute;
     left: 70%;
     margin-left: -32px; }
@@ -8767,6 +8767,7 @@ form > * {
     -ms-transform-origin: center;
     transform-origin: center; }
     .wheel-menu .toggle a {
+      position: relative;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -8784,10 +8785,12 @@ form > * {
       -ms-flex-pack: center;
       justify-content: center;
       color: var(--scolor1); }
-      .wheel-menu .toggle a::after {
-        font-family: FontAwesome;
-        content: '\f0c9';
+      .wheel-menu .toggle a .fas {
         font-size: 20px; }
+      .wheel-menu .toggle a .fa-bars {
+        display: block; }
+      .wheel-menu .toggle a .fa-times {
+        display: none; }
       .wheel-menu .toggle a:hover, .wheel-menu .toggle a:focus {
         text-decoration: none; }
     .wheel-menu .toggle.open {
@@ -8799,10 +8802,14 @@ form > * {
       box-shadow: inset 2px 2px 4px rgba(51, 51, 51, 0.28); }
       .wheel-menu .toggle.open a {
         width: 50%;
-        height: 50%;
-        padding: 15px 0 0 15px; }
-        .wheel-menu .toggle.open a::after {
-          content: '\f00d'; }
+        height: 50%; }
+        .wheel-menu .toggle.open a .fa-bars {
+          display: none; }
+        .wheel-menu .toggle.open a .fa-times {
+          position: absolute;
+          top: 45px;
+          right: 30px;
+          display: block; }
 
 /*********************
   Waves
