@@ -5117,23 +5117,15 @@ button.close {
 	}
 }
 /**/
-compontent {
-  display: none; }
-
-routes {
-  display: none; }
-
 .gr__localhost .hs-tools-menu {
   display: none; }
 
 .site-wrapper .section {
   padding: 20px 0; }
-
-.site-wrapper:first-of-type > .section {
-  padding-top: 0; }
-
-.site-wrapper:last-of-type > .section {
-  padding-bottom: 0; }
+  .site-wrapper .section:first-child {
+    padding-top: 0; }
+  .site-wrapper .section:last-child {
+    padding-bottom: 0; }
 
 @media (max-width: 767px) {
   .site-wrapper .pt-xs-0 {
