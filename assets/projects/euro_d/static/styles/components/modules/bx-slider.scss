@@ -28,20 +28,35 @@ ul.bxslider {
   -webkit-transform: translateZ(0);
 }
 
-.captions {
-    position: absolute;
-    z-index: 10;
-    width: 41%;
-    display: block;
-    height: 100%;
-    padding: 20px;
-    top: 0px;
-    background: $bgcolor__main--1 ;
-    opacity: 0.7;
-     p{
-        color:$white;
-     }
+  .captions {
+      a{
+        color:$black;
+      }
+  }
+
+@include media('>tablet-portrait') {
+  .captions {
+
+
+      position: absolute;
+      z-index: 10;
+      width: 30%;
+
+      display: block;
+      height: 100%;
+      padding: 20px;
+      top: 0px;
+
+      opacity: 0.7;
+      background: $bgcolor__main--1 ;
+      p{
+         color:$white;
+      }
+
+
+  }
 }
+
 /** THEME
 ===================================*/
 .bx-wrapper {
@@ -60,7 +75,7 @@ ul.bxslider {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url('images/bx_loader.gif') center center no-repeat #ffffff;
+  background: url('https://cdn2.hubspot.net/hubfs/2441243/default/bx_loader.gif') center center no-repeat #ffffff;
   height: 100%;
   width: 100%;
   position: absolute;

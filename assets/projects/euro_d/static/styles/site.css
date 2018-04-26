@@ -5169,6 +5169,11 @@ button.close {
 .fullwidth {
   width: 100%; }
 
+@media (max-width: 768px) {
+  .padding__xs-10 {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
 body {
   font-family: 'Helvetica Neue';
   background-color: var(--scolor4); }
@@ -6107,18 +6112,22 @@ ul.bxslider {
   /* fix other elements on the page moving (in Chrome) */
   -webkit-transform: translateZ(0); }
 
-.captions {
-  position: absolute;
-  z-index: 10;
-  width: 41%;
-  display: block;
-  height: 100%;
-  padding: 20px;
-  top: 0px;
-  background: var(--scolor2);
-  opacity: 0.7; }
-  .captions p {
-    color: var(--scolor1); }
+.captions a {
+  color: var(--scolor3); }
+
+@media (min-width: 993px) {
+  .captions {
+    position: absolute;
+    z-index: 10;
+    width: 30%;
+    display: block;
+    height: 100%;
+    padding: 20px;
+    top: 0px;
+    opacity: 0.7;
+    background: var(--scolor2); }
+    .captions p {
+      color: var(--scolor1); } }
 
 /** THEME
 ===================================*/
@@ -6138,7 +6147,7 @@ ul.bxslider {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url("images/bx_loader.gif") center center no-repeat #ffffff;
+  background: url("https://cdn2.hubspot.net/hubfs/2441243/default/bx_loader.gif") center center no-repeat #ffffff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -6296,21 +6305,21 @@ ul.bxslider {
         color: var(--scolor3);
         padding: 10px 0; } }
   .pharma-blocks .icons {
-    background: gray;
-    width: 140px;
-    height: 140px;
+    padding: 0px;
     position: relative;
     margin: auto;
     margin-top: -72px;
     border-radius: 50%;
-    background: var(--scolor11);
-    border: 6px var(--scolor4) solid; }
+    border: 6px var(--scolor4) solid;
+    max-width: 200px; }
     @media (max-width: 767px) {
       .pharma-blocks .icons {
         width: 100%;
         height: auto;
         padding-bottom: 100%;
-        border: none; } }
+        border: none;
+        padding: 0px;
+        max-width: 100%; } }
     .pharma-blocks .icons img {
       width: 100%; }
   @media (max-width: 767px) {
@@ -6348,6 +6357,15 @@ ul.bxslider {
 .colored-blocks {
   padding: 32px;
   height: 100%; }
+  .colored-blocks .hs-button {
+    font-size: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: auto;
+    color: var(--scolor3);
+    padding: 18px;
+    text-align: center;
+    background: var(--scolor1); }
   .colored-blocks h3 {
     font-weight: 100;
     color: var(--scolor1);
@@ -6356,9 +6374,13 @@ ul.bxslider {
     font-size: 14px;
     color: var(--scolor1); }
 
-.news-blocks {
-  margin-top: 10px; }
-  .news-blocks p {
+.news-blocks, .news-blocks-large {
+  margin-top: 10px;
+  height: 245px; }
+  .news-blocks .small-img, .news-blocks-large .small-img {
+    width: 100%;
+    height: calc(100% - 50px); }
+  .news-blocks p, .news-blocks-large p {
     padding-right: 10px;
     font-size: 18px;
     padding-bottom: 5px;
@@ -6366,21 +6388,19 @@ ul.bxslider {
     width: 60%;
     float: left;
     padding-top: 80px; }
-  .news-blocks .small__image {
-    width: 100%;
-    height: 222px; }
-  .news-blocks h3 {
+  .news-blocks h4, .news-blocks-large h4 {
     background: var(--scolor2);
     margin: 0px;
-    padding: 10px 0px;
+    padding: 13px 0px;
     color: var(--scolor1);
-    text-align: center; }
-  .news-blocks a {
+    text-align: center;
+    height: 50px; }
+  .news-blocks a, .news-blocks-large a {
     top: 75px;
     position: absolute;
     left: 70%;
     margin-left: -32px; }
-  .news-blocks .btn-archive {
+  .news-blocks .btn-archive, .news-blocks-large .btn-archive {
     width: 100px;
     height: 100px;
     background: var(--scolor6);
@@ -6388,6 +6408,14 @@ ul.bxslider {
     font-size: 18px;
     border-radius: 50%;
     padding-top: 35px; }
+
+.news-blocks-large {
+  height: 500px; }
+  .news-blocks-large .large-img {
+    width: 100%;
+    height: calc(100% - 50px); }
+  .news-blocks-large h4 {
+    height: 50px; }
 
 .send-box {
   background-color: var(--dcolor8);
@@ -6443,11 +6471,14 @@ ul.bxslider {
         .send-box .form-group .form-control, .send-box .form-group .hs-input {
           background-color: var(--scolor1);
           border-radius: 25px; } }
-  @media (min-width: 768px) {
-    .send-box .hs_submit {
-      float: left;
-      width: 25%;
-      margin-top: 6px; } }
+  .send-box .hs_submit {
+    margin-top: 10px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .send-box .hs_submit {
+        float: left;
+        width: 25%;
+        margin-top: 6px; } }
   .send-box .hs_email {
     display: block;
     width: 100%; }
@@ -6482,6 +6513,15 @@ ul.bxslider {
     margin-left: 16px;
     border-radius: 0;
     border: none; }
+    @media (max-width: 768px) {
+      .send-box .btn-square, .send-box .hs-button {
+        position: absolute;
+        top: -50px;
+        right: 0px;
+        font-size: 10px;
+        width: 44px;
+        border-radius: 100%;
+        height: 45px; } }
   @media (max-width: 768px) {
     .send-box .btn-blue-mobile {
       text-align: center;

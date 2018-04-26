@@ -28,21 +28,21 @@
       }
     }
     .icons {
-      background: gray;
-      width: 140px;
-      height: 140px;
+      padding: 0px;
       position: relative;
       margin: auto;
       margin-top: -72px;
       border-radius: 50%;
-      background:$bgcolor__main--3;
       border: 6px var(--scolor4) solid;
-
+      max-width: 200px;
       @include media('<tablet') {
         width: 100%;
         height: auto;
-        padding-bottom: 100%; 
+        padding-bottom: 100%;
         border: none;
+            padding: 0px;
+            max-width: 100%;
+
       }
       img {
         width: 100%;
