@@ -155,12 +155,16 @@
               float: left;
               padding-top: 10px;
               margin: 0px;
-                  padding-left: 50px;
+
                 ul {
                     display:flex;
                     align-items: center;
                     justify-content: center;
+
                     .hs-menu-depth-1 {
+                      width: 146px;
+                      height: 44px;
+                      overflow: hidden;
                       &.hs-item-has-children
                       {
                         position: initial;
@@ -190,7 +194,42 @@
                             display: flex;
                             align-items: start;
                             justify-content: start;
+
+
                             .hs-menu-depth-2
+                            {
+
+                              width:100%;
+                              & >a{
+                                color:$black;
+                                text-align: left;
+                                opacity: 1;
+                                font-size: 15px;
+                                margin:0px;
+
+                              }
+
+                              &:hover{
+                                width:100%;
+                                & >a{
+                                  color:$green;
+                                  text-align: left;
+                                  opacity: 1;
+                                      font-size: 15px;
+                                        margin:0px;
+                                  &:after{
+                                    content: " ";
+                                    height :2px;
+                                    background:$green;
+                                    width: 100%;
+                                    display: block;
+                                  }
+                                }
+                              }
+
+                            }
+
+                            .hs-menu-depth-2.hs-item-has-children
                             {
                                 width:100%;
                                 & >a{

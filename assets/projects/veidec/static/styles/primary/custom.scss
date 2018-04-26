@@ -26,6 +26,23 @@ a {
   text-decoration: none;
   font-family: 'GravityRegular' ;
 }
+.container-dynamic {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+    width:100%;
+    @include media('>=desktop') {
+
+        width: 970px;
+    }
+    @include media('>=lgscreen') {
+            width: 1170px;
+    }
+}
+
 
 
 p{
