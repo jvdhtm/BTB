@@ -28,6 +28,9 @@
       }
     }
     .icons {
+      background: gray;
+      width: 140px;
+      height: 140px;
       padding: 0px;
       position: relative;
       margin: auto;
@@ -40,9 +43,6 @@
         height: auto;
         padding-bottom: 100%;
         border: none;
-            padding: 0px;
-            max-width: 100%;
-
       }
       img {
         width: 100%;
