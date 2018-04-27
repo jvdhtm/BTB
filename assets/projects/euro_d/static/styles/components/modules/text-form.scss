@@ -20,15 +20,51 @@
         background-color: $bgcolor__main--5;
         padding: 32px;
     }
-    select.form-control{
-        background-color: $scolor__orange;
-        color: $white;
+    .bootstrap-select {
+        font-size: $font-size-base;
+        @media (max-width: 767px) {
+            .text {
+                padding: 0;
+            }
+        }
+        .btn {
+            padding-left: 25px;
+            &, &:focus, &:hover {
+                background-color: $scolor__orange;
+                outline: 0 !important;
+            }
+        }
+        .dropdown-menu {
+            background-color: $scolor__orange;
+            border-radius: 0;
+            border: 0;
+            margin-top: 0;
+
+            .dropdown-menu li {
+                a {
+                    color: $scolor__white;
+                    border-top: 1px solid $scolor__white;
+                    padding-left: 25px;
+                    &:focus, &:hover {
+                        background-color: $scolor__orange;
+                        outline: 0 !important;
+                    }
+                }
+            }
+        }
     }
     .form-control{
         background-color: $dcolor__brown;
         
         @include placeholder {
             color: $white;
+        }
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="text"] {
+         &:focus {
+            background-color: $scolor__white;
         }
     }
     .form-group{
@@ -48,13 +84,32 @@
         border: none;
         border-radius: 0;
     }
-    .btn-attach, .btn-full{
+    .btn-full{
         background-color: $bgcolor__main--1;
         color: $white;
     }
-    .btn-attach{
-        width: 180px;
-        padding: 10px;
+    .attach-file {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+        & + label {
+            font-size: 1.25em;
+            font-weight: 700;
+            color: $scolor__white;
+            background-color: $bgcolor__main--1;
+            padding: 10px 20px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        &:focus + label,
+        & + label:hover {
+            background-color: darken(#0087cc, 10%);
+        }
     }
     .btn-full{
         width: 100%;
@@ -62,5 +117,12 @@
         border: none;
         height: 50px;
         font-size: 18px;
+
+        &:focus {
+            -webkit-box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.61);
+            -moz-box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.61);
+            box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.61);
+            outline: 0;
+        }
     }
 }

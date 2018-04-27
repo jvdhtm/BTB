@@ -103,6 +103,31 @@ h1,h2,h3,h4,h5,h6
 {
   color:$pcolor;
 }
+
+@include media('<desktop') {
+  h1 {
+    font-size: floor(($font-size-base * 2));
+  }
+  h2 {
+    font-size: floor(($font-size-base * 1.6666666667));
+  }
+  h3 {
+    font-size: floor(($font-size-base * 1.1666666667));
+  }
+}
+
+@include media('<tablet') {
+  h1 {
+    font-size: floor(($font-size-base * 1.6666666667));
+  }
+  h2 {
+    font-size: ceil(($font-size-base * 1.5));
+  }
+  h3 {
+    font-size: floor(($font-size-base * 1.1666666667));
+  }
+}
+
 .nopadding {
   padding: 0px;
 }
