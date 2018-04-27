@@ -1,5 +1,11 @@
 .search-results{
 
+    @include media('<tablet') {
+        .container {
+            padding-top: 20px;
+        }
+    }
+
     .result-block{
         border-bottom: 7px solid $scolor__blue;
         margin-bottom: 16px;
