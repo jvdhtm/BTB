@@ -151,20 +151,75 @@
             right:0px;
             top:0px;
             nav{
-              width: calc( 100% - 62px);
+              width: calc( 100% - 73px);
               float: left;
               padding-top: 10px;
               margin: 0px;
-
+                  padding-left: 10px;
                 ul {
                     display:flex;
                     align-items: center;
                     justify-content: center;
 
+                    .hs-menu-depth-1.active,.hs-menu-depth-1.active-branch
+                    {
+                      & >a{
+                        color:$green;
+
+                        opacity: 1;
+                            font-size: 15px;
+                              margin:0px;
+                        &:after{
+                          content: " ";
+                          height :2px;
+                          background:$green;
+                          width: 100%;
+                          display: block;
+                        }
+                        }
+                      }
+                      .hs-menu-depth-2.active
+                      {
+                        & >a{
+                          color:$green;
+
+                          opacity: 1;
+                              font-size: 15px;
+                                margin:0px;
+                          &:after{
+                            content: " ";
+                            height :2px;
+                            background:$green;
+                            width: 100%;
+                            display: block;
+                          }
+                      }
+                    }
+
+
+
                     .hs-menu-depth-1 {
-                      width: 146px;
+                      width: 135px;
                       height: 44px;
                       overflow: hidden;
+
+                      &:hover{
+                        width:100%;
+                        & >a{
+                          color:$green;
+
+                          opacity: 1;
+                              font-size: 15px;
+                                margin:0px;
+                          &:after{
+                            content: " ";
+                            height :2px;
+                            background:$green;
+                            width: 100%;
+                            display: block;
+                          }
+                        }
+                      }
                       &.hs-item-has-children
                       {
                         position: initial;
@@ -191,6 +246,7 @@
                             background: #fff;
                             width: 100%;
                             left: 0px;
+                                top: 50px;
                             display: flex;
                             align-items: start;
                             justify-content: start;

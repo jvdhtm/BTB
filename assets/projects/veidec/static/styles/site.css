@@ -5050,8 +5050,8 @@ body.shift {
 .small-logo {
   width: 25px;
   position: absolute;
-  top: 20px;
-  left: 20px; }
+  top: 21px;
+  left: 15px; }
   .small-logo img {
     width: 100%; }
 
@@ -5659,10 +5659,11 @@ body.expanded {
       right: 0px;
       top: 0px; }
       .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
-        width: calc( 100% - 62px);
+        width: calc( 100% - 73px);
         float: left;
         padding-top: 10px;
-        margin: 0px; }
+        margin: 0px;
+        padding-left: 10px; }
         .navigation .navbar-shift nav ul, .navigation .navbar-shift.expanded nav ul {
           display: -webkit-box;
           display: -webkit-flex;
@@ -5676,12 +5677,47 @@ body.expanded {
           -webkit-justify-content: center;
           -ms-flex-pack: center;
           justify-content: center; }
+          .navigation .navbar-shift nav ul .hs-menu-depth-1.active > a, .navigation .navbar-shift nav ul .hs-menu-depth-1.active-branch > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1.active > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1.active-branch > a {
+            color: #27AE61;
+            opacity: 1;
+            font-size: 15px;
+            margin: 0px; }
+            .navigation .navbar-shift nav ul .hs-menu-depth-1.active > a:after, .navigation .navbar-shift nav ul .hs-menu-depth-1.active-branch > a:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1.active > a:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1.active-branch > a:after {
+              content: " ";
+              height: 2px;
+              background: #27AE61;
+              width: 100%;
+              display: block; }
+          .navigation .navbar-shift nav ul .hs-menu-depth-2.active > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-2.active > a {
+            color: #27AE61;
+            opacity: 1;
+            font-size: 15px;
+            margin: 0px; }
+            .navigation .navbar-shift nav ul .hs-menu-depth-2.active > a:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-2.active > a:after {
+              content: " ";
+              height: 2px;
+              background: #27AE61;
+              width: 100%;
+              display: block; }
           .navigation .navbar-shift nav ul .hs-menu-depth-1, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 {
-            width: 146px;
+            width: 135px;
             height: 44px;
             overflow: hidden;
             display: block;
             max-width: 100%; }
+            .navigation .navbar-shift nav ul .hs-menu-depth-1:hover, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover {
+              width: 100%; }
+              .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > a {
+                color: #27AE61;
+                opacity: 1;
+                font-size: 15px;
+                margin: 0px; }
+                .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > a:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > a:after {
+                  content: " ";
+                  height: 2px;
+                  background: #27AE61;
+                  width: 100%;
+                  display: block; }
             .navigation .navbar-shift nav ul .hs-menu-depth-1.hs-item-has-children, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1.hs-item-has-children {
               position: initial; }
             .navigation .navbar-shift nav ul .hs-menu-depth-1:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:after {
@@ -5700,6 +5736,7 @@ body.expanded {
               background: #fff;
               width: 100%;
               left: 0px;
+              top: 50px;
               display: -webkit-box;
               display: -webkit-flex;
               display: -ms-flexbox;
@@ -6157,7 +6194,7 @@ header #SearchForm .cross {
     width: auto;
     top: 4px;
     font-size: 22px;
-    right: 69px;
+    right: 82px;
     color: #fff;
     background: transparent;
     border: none; }
@@ -6171,9 +6208,9 @@ header #SearchForm .cross {
     position: absolute;
     z-index: 20;
     width: auto;
-    top: 1px;
+    top: 3px;
     font-size: 26px;
-    right: 80px;
+    right: 100px;
     color: #fff;
     background: transparent;
     border: none; }
