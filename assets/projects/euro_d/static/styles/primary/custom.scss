@@ -71,7 +71,13 @@
 .fullwidth {
   width: 100%;
 }
-
+@include media('<=tablet') {
+  .padding__xs-10
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 body {
   font-family: 'Helvetica Neue';
   background-color: $scolor__silver;
