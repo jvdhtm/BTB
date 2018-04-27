@@ -2,7 +2,7 @@
 
     > p {
         @include media('<tablet') {
-            padding: 20px 0;
+            padding-bottom: 20px;
         }
     }
     &__column {

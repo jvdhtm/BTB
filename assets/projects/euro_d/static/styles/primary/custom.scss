@@ -21,19 +21,20 @@
     -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
     transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
 }
-.site-wrapper{
-   .section {
+
+module{
+  > .section {
     padding: 20px 0;
-    &:first-child {
-        padding-top: 0;
-    }
-
-
-
   }
-
+  &:first-of-type {
+    > .section{
+      padding-top: 0;
+    }
+  }
   &:last-of-type {
-
+    > .section{
+      padding-bottom: 0;
+    }
   }
 
   @include media('<tablet') {
