@@ -23,6 +23,11 @@ $font-size-h4:            ceil(($font-size-base * 1.25));
 $font-size-h5:            $font-size-base;
 $font-size-h6:            ceil(($font-size-base * 0.85));
 
+/* Navbar */
+$navbar-inverse-bg:         transparent;
+$navbar-inverse-link-color: $scolor__white;
+$navbar-margin-bottom:      0;
+
 /*Break points*/
 $breakpoints: (
   'phone': 320px,
