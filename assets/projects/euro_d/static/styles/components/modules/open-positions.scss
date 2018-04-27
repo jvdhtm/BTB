@@ -1,4 +1,9 @@
 .open-positions{
+    .container {
+        @include media('<tablet') {
+            padding-top: 20px;
+        }
+    }
 
     .position-block{
         border-bottom: 7px solid $scolor__blue;

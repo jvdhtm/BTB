@@ -1,4 +1,10 @@
 .persons {
+
+    > p {
+        @include media('<tablet') {
+            padding: 20px 0;
+        }
+    }
     &__column {
         margin-bottom: 30px;
 
