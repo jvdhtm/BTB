@@ -5722,8 +5722,10 @@ span.hs-form-required {
 
 .contact-person {
   margin-bottom: 50px; }
+  @media (min-width: 321px) {
+    .contact-person .contact-person__portrait img {
+      max-width: 400px; } }
   .contact-person .contact-person__portrait img {
-    max-width: 400px;
     min-height: auto;
     margin: 0 auto; }
   .contact-person .contact-person--information__wrapper {

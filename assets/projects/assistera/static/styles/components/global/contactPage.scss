@@ -76,8 +76,12 @@ span.hs-form-required {
 .contact-person {
   margin-bottom: 50px;
   .contact-person__portrait {
+    @include media('>phone') {
+      img {
+        max-width: 400px;
+      }
+    }
     img {
-      max-width: 400px;
       min-height: auto;
       margin: 0 auto;
     }
