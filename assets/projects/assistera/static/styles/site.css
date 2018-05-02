@@ -5485,7 +5485,7 @@ footer {
         top: 60px; } }
   .rectangle .cta_button {
     display: inline-block !important;
-    color: #35f6c2 !important;
+    color: #35f6c2;
     border: solid #35f6c2 2px !important;
     background: transparent;
     border-radius: 28px !important;
