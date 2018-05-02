@@ -31,9 +31,16 @@
 
             input{
                 background-color: $sdcolor__brown--light;
-                border: none;
+                border-color: transparent;
+                border-width: 1px 1px 1px 0;
+                border-style: solid;
                 outline: none;
                 padding-left: 10px;
+
+                &:focus {
+                    background-color: $scolor__silver;
+                    border-color: $sdcolor__brown--light;
+                }
 
                 @include media('<tablet') {
                     flex: 1;
@@ -150,6 +157,7 @@
             input:checked ~ .checkmark {
                 background-color: $scolor__orange;
             }
+
             .checkmark{
                 position: absolute;
                 top: 0;
@@ -172,6 +180,10 @@
                     position: absolute;
                     visibility: hidden;
                 }
+            }
+
+            .disabled {
+                border-color: $scolor__sliver--light;
             }
         }
     }
