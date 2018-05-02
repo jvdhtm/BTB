@@ -1,0 +1,181 @@
+.diseases {
+    .column {
+        margin-bottom: 30px;
+
+        &:nth-last-of-type(1), &:nth-last-of-type(2) {
+            margin-bottom: 0;
+        }
+
+        @include media('<tablet') {
+            &:nth-last-of-type(2) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .disease {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 0;
+
+        .disease-header {
+            display: flex;
+            align-items: center;
+            padding: 10px 32px;
+            background-color: $bgcolor__main--1;
+
+            .disease-title {
+                flex: 3;
+
+                h6,h5 {
+                    margin: 0;
+                    color: $white;
+                }
+            }
+            .disease-tabs {
+                flex: 4;
+
+                @include media('<tablet') {
+                    flex: 0 1 140px;
+                }
+
+                .nav-tabs {
+                    border: 0;
+
+                    li {
+                        a{
+                            position: relative;
+                            border: 0;
+                            font-weight: bold;
+
+                            &:focus {
+                                background-color: transparent;
+                                color: $white;
+                            }
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                height: 2px;
+                                background-color: $white;
+                                bottom: 0;
+                                left: 15px;
+                                right: 15px;
+                                display: none;
+                            }
+                        }
+
+                        &:hover, &:focus, &:active, &.active {
+                            a {
+                                border: 0;
+                                background-color: transparent;
+                                color: $white;
+                            }
+                        }
+
+                        &.active {
+                            a {
+                                border: 0;
+                                &::after {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .disease-toggle {
+                flex: 0 1 33px;
+
+                .btn {
+                    color: $white;
+                    outline: 0;
+
+                    .fa-plus {
+                        display: none;
+                    }
+
+                    &.collapsed {
+                        .fa-plus {
+                            display: inline-block;
+                        }
+                        .fa-minus {
+                            display: none;
+                        }
+                    }
+
+                    &:hover, &:focus, &:active {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .disease-body {
+            display: flex;
+            align-items: stretch;
+            flex: 1;
+
+            .disease-image {
+                background-size: cover;
+                background-position: center;
+                flex: 3;
+
+                @include media('<tablet') {
+                    display: none;
+                }
+            }
+            .disease-text {
+                background-color: $sdcolor__brown--light;
+                flex: 4;
+                .preamble
+                {
+                  height: 200px;
+                }
+                .tab-content {
+                    padding: 25px;
+                }
+
+                .btn-disease {
+                    background-color: $scolor__orange;
+                    padding: 8px 12px;
+                    border-radius: 0;
+                    margin-right: 7px;
+                    margin-bottom: 7px;
+                    font-size: 13px;
+
+                    &:hover, &:focus {
+                        color: $white;
+                    }
+                    &.full{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &.image-full{
+        .disease-body {
+            display: flex;
+            flex-direction: column;
+
+            .disease-image-full {
+                width: 100%;
+                height: auto;
+            }
+            .content {
+                padding: 25px;
+            }
+            .btn-wrapper{
+                display: flex;
+                padding-top: 10px;
+
+            }
+            .disease-text {
+
+                .btn-disease {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
