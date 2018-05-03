@@ -215,7 +215,8 @@
                                   color:$green;
                                   text-align: left;
                                   opacity: 1;
-                                      font-size: 15px;
+                                  font-size: 15px;
+                                  font-family:'gravitybold';
                                         margin:0px;
                                   &:after{
                                     content: " ";
@@ -304,6 +305,9 @@
             width: 100%;
             a{
               font-size: 17px !important;
+              &:hover{
+                font-family:'Gravitybold';
+              }
             }
           }
         }

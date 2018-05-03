@@ -11,6 +11,10 @@
 
 .banner {
 	overflow: hidden;
+	height:400px;
+	@include media('>=tablet') {
+		height:600px;
+	}
 
 	.banner-section-text {
 			-webkit-animation: intro-fade 1.5s linear;
@@ -41,12 +45,17 @@
 	  
 		h1
 		{
-		  font-size: 64px;
+		  font-size:30px;
+		  @include media('>=tablet') {
+			font-size: 64px;
+		  }
 		}
 		h3{
 			font-family:'GravityLight';
+			font-size:17px;
 			 @include media('>=tablet') {
-			 	font-family:'Gravityregular';
+				 font-family:'Gravityregular';
+				 font-size:24px;
 			 }
 		}
 		span{
