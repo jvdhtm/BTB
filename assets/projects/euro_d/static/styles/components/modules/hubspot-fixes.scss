@@ -328,6 +328,11 @@ form >*{
 		padding-right: 0px !important;
 	}
 }
+
+
+
+
+
 .row-number-1 .span10.widget-span.widget-type-widget_container {
     margin: 0px !important;
 }
@@ -335,4 +340,16 @@ form >*{
 	width:auto !important;
 	padding-left: 0px !important;
 	padding-right: 0px !important;
+}
+
+
+.span10 >.hs_cos_wrapper> .hs_cos_wrapper_type_custom_widget {
+  width:auto !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.span10 >.hs_cos_wrapper> .hs_cos_wrapper_type_module {
+  width:auto !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }

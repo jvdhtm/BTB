@@ -1,37 +1,43 @@
+
+@mixin  makecolors($colors,$varname){
+
+  @for $i from 0 to length($colors) {
+      $thisColor: unquote(nth($colors, $i+1));
+      --#{$varname}#{$i}: $thisColor;
+
+  }
+
+
+
+
+}
+
+
+@mixin  makeBgcolors($colors,$varname){
+  @for $i from 0 to length($colors) {
+      $thisColor: unquote(nth($colors, $i+1));
+      .Bgcolor--#{$varname}#{$i}{
+
+          background-color:var(--#{$varname}#{$i});
+
+      }
+
+  }
+}
+$dcolor-collection: (transparent,#0087cc, #aecc52, #ef7c00, #8f95ca,#ea5197,#ffd500,#749588,#beb2a1,#fce8e2,#fff6d9,#009ba4,#80cdd2,#d6e5a8,#f7bd7f,#c7cae4,#e6e2db,#f5f3f0,#bed7e4);
+$scolor-collection: (transparent,#ffffff, #0087cc, #4a4a4a, #f5f3f0,#222222,#749588,#e6e2db,#000000,#ef7c00,#d8d8d8,#979797);
 :root {
   /* Screen Colors */
-  --scolor1: #ffffff;
-  --scolor2: #0087cc;
-  --scolor3: #4a4a4a;
-  --scolor4: #f5f3f0;
-  --scolor5: #222222;
-  --scolor6: #749588;
-  --scolor7: #e6e2db;
-  --scolor8: #000000;
-  --scolor9: #ef7c00;
-  --scolor10: #d8d8d8;
-  --scolor11: #979797;
-
+@include makecolors($scolor-collection,'scolor');
   /* Document Colors */
-  --dcolor1: #0087cc;
-  --dcolor2: #aecc52;
-  --dcolor3: #ef7c00;
-  --dcolor4: #8f95ca;
-  --dcolor5: #ea5197;
-  --dcolor6: #ffd500;
-  --dcolor7: #749588;
-  --dcolor8: #beb2a1;
-  --dcolor9: #fce8e2;
-  --dcolor10: #fff6d9;
-  --dcolor11: #009ba4;
-  --dcolor12: #80cdd2;
-  --dcolor13: #d6e5a8;
-  --dcolor14: #f7bd7f;
-  --dcolor15: #c7cae4;
-  --dcolor16: #e6e2db;
-  --dcolor17: #f5f3f0;
-  --dcolor18: #bed7e4;
+@include makecolors($dcolor-collection,'dcolor');
+
+
 }
+@include makeBgcolors($scolor-collection,'scolor');
+  /* Document Colors */
+@include makeBgcolors($dcolor-collection,'dcolor');
+
 
 /* Screen Colors */
 $scolor__white: var(--scolor1);
