@@ -6690,7 +6690,8 @@ ul.bxslider {
     margin-top: -72px;
     border-radius: 50%;
     border: 6px var(--scolor4) solid;
-    max-width: 200px; }
+    max-width: 200px;
+    overflow: hidden; }
     @media (max-width: 767px) {
       .pharma-blocks .icons {
         width: 100%;
@@ -6726,9 +6727,13 @@ ul.bxslider {
     margin: auto;
     top: 22px;
     border-radius: 50%;
-    background: var(--scolor1); }
+    background: var(--scolor1);
+    overflow: hidden;
+    position: relative; }
     .links-blocks .icons img {
-      width: 100%; }
+      width: 100%;
+      position: absolute;
+      height: 100%; }
 
 .colored-blocks {
   padding: 32px;

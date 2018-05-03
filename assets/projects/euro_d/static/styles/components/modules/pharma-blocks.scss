@@ -37,6 +37,7 @@
       border-radius: 50%;
       border: 6px var(--scolor4) solid;
       max-width: 200px;
+          overflow: hidden;
       @include media('<tablet') {
         width: 100%;
         height: auto;

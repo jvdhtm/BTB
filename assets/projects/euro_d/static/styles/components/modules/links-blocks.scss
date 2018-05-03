@@ -22,9 +22,13 @@
       top: 22px;
       border-radius: 50%;
       background:$white;
-      img 
+      overflow: hidden;
+      position: relative;
+      img
       {
         width: 100%;
+        position: absolute;
+        height: 100%;
       }
   }
 }
