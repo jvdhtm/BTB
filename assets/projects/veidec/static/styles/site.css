@@ -5854,6 +5854,8 @@ body.expanded {
 
 .news-content {
   font-size: 16px; }
+  .news-content p {
+    font-family: 'Gravityregular'; }
   .news-content .green {
     color: green; }
     .news-content .green:nth-child(1) {
@@ -5863,7 +5865,8 @@ body.expanded {
       padding-bottom: 42px; }
   .news-content .bold {
     font-weight: bold;
-    font-size: 18px; }
+    font-size: 18px;
+    padding-bottom: 12px; }
 
 @media (min-width: 768px) {
   .news-content-image {

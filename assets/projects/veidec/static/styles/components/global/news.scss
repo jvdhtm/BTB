@@ -56,6 +56,9 @@
 }
 .news-content{
 	font-size:16px;
+	p{
+		font-family:'Gravityregular';	
+	}
 	.green{
 		color:green;
 		&:nth-child(1){
@@ -70,7 +73,8 @@
 	}
 	.bold{
 		font-weight: bold;
-	 	font-size:18px;
+		 font-size:18px;
+		 padding-bottom: 12px;
 	}
 }
 @include media('>=tablet') {
