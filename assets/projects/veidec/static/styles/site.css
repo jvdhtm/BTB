@@ -5686,7 +5686,7 @@ body.expanded {
           -ms-flex-pack: center;
           justify-content: center; }
           .navigation .navbar-shift nav ul .hs-menu-depth-1, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 {
-            width: 146px;
+            /*width: 146px;*/
             height: 44px;
             overflow: hidden;
             display: block;
@@ -5696,7 +5696,7 @@ body.expanded {
             .navigation .navbar-shift nav ul .hs-menu-depth-1:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:after {
               display: none !important; }
             .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
-              padding: 10px 10px !important;
+              padding: 10px 15px !important;
               text-align: center;
               opacity: 1;
               font-size: 16px;
@@ -6170,9 +6170,9 @@ header #SearchForm .cross {
     position: absolute;
     z-index: 20;
     width: auto;
-    top: 4px;
+    top: 1px;
     font-size: 22px;
-    right: 69px;
+    right: 80px;
     color: #fff;
     background: transparent;
     border: none; }

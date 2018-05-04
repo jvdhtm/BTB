@@ -162,7 +162,7 @@
                     justify-content: center;
 
                     .hs-menu-depth-1 {
-                      width: 146px;
+                      /*width: 146px;*/
                       height: 44px;
                       overflow: hidden;
                       &.hs-item-has-children
@@ -175,7 +175,7 @@
                         display: block;
                           max-width: 100%;
                           a{
-                            padding:10px 10px !important;
+                            padding:10px 15px !important;
                             text-align: center;
                             opacity: 1;
                             font-size:16px;
