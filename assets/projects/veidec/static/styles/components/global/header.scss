@@ -58,7 +58,10 @@ header {
   max-width: 120px;
   top: 20px;
   left: 10px;
-  z-index: 20;
+  z-index: 0;
+  @include media ('>=tablet') {
+    z-index:20;
+  }
 }
 
 

@@ -23,7 +23,7 @@ header {
     height: 50px;
     overflow: hidden;
     position: absolute;
-    z-index: 20;
+    z-index: 1;
     width: auto;
     top: 5px;
     font-size: 24px;
@@ -159,7 +159,7 @@ header {
         left: 0px;
         position: fixed;
         width: 100%;
-        background: $grayDark;
+        background: $blackMedium;
         text-align: center;
         overflow: hidden;
         z-index: 20;
