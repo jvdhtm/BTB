@@ -252,6 +252,8 @@ header.sticky {
 
 .site-search-box {
     height: 50px;
+    border-bottom-right-radius:4px!important;
+    border-top-right-radius:4px!important;
     border: 1px solid $green  !important  ;
 }
 

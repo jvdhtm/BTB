@@ -6300,6 +6300,8 @@ header.sticky .navbar-toggle .icon-bar {
 
 .site-search-box {
   height: 50px;
+  border-bottom-right-radius: 4px !important;
+  border-top-right-radius: 4px !important;
   border: 1px solid #27AE61 !important; }
 
 .search-list a {
