@@ -60,7 +60,7 @@
 		font-family:'Gravityregular';	
 	}
 	.green{
-		color:green;
+		color: $greenDark;
 		&:nth-child(1){
 			padding-top:20px;
 			margin-bottom:-5px;

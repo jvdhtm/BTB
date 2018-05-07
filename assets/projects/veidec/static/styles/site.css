@@ -5871,7 +5871,7 @@ body.expanded {
   .news-content p {
     font-family: 'Gravityregular'; }
   .news-content .green {
-    color: green; }
+    color: #27ae61; }
     .news-content .green:nth-child(1) {
       padding-top: 20px;
       margin-bottom: -5px; }
