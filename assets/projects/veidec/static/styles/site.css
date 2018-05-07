@@ -6312,6 +6312,9 @@ header.sticky #SearchForm .search {
 header.sticky .navbar-toggle .icon-bar {
   background: black; }
 
+.white {
+  color: white !important; }
+
 .site-search-box {
   height: 50px;
   border-bottom-right-radius: 4px !important;
