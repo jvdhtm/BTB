@@ -43,6 +43,24 @@ module{
     }
   }
 }
+.full-height
+{
+  position: relative;
+  height: 100%;
+  padding:15px;
+}
+.mobile-header
+{    @include media('<tablet') {
+        background-color:$scolor__blue;
+    }
+  h1
+  {
+    padding: 15px;
+    margin-top: 0px;
+    margin-left: -20px;
+  }
+}
+
 
 .cnt-spacing {
   > * {
@@ -85,14 +103,12 @@ body {
 }
 
 a {
-  color: $linkcolor;
   display: block;
   text-decoration: none;
   font-family: 'Helvetica Neue' !important;
 }
 
 a:hover {
-  color: $linkcolor;
   text-decoration: none;
   cursor: pointer;
 }

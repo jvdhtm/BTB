@@ -2,6 +2,7 @@
     border: 2px solid transparent;
     margin-top: 72px;
     text-align: center;
+        position: relative;
     background: var(--dcolor16);
     p{
           padding: 40px;
@@ -18,6 +19,10 @@
       padding: 10px 40px;
       color:$white;
       text-align: center;
+
+      position: relative;
+      bottom: 0px;
+      width: 100%;
 
       @include media('<tablet') {
         background-color: unset;
@@ -39,9 +44,8 @@
       max-width: 200px;
           overflow: hidden;
       @include media('<tablet') {
-        width: 100%;
+        width: 70%;
         height: auto;
-        padding-bottom: 100%;
         border: none;
       }
       img {

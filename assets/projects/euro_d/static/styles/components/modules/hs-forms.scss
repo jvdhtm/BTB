@@ -1,0 +1,42 @@
+.hs-form
+{
+   width: 100%;
+ }
+ .hs_cos_wrapper_type_form
+ {
+       padding: 0px !important;
+ }
+ [data-form-id="2ff05c4d-4106-4a9d-80b3-246781ab6f87"]
+ {
+   position: relative;
+   bottom: -30px;
+   .hs-form-field{
+     padding-left: 34px;
+     padding-right: 34px;
+
+     input,textarea
+     {
+       background: $scolor__gray--light;
+
+     }
+     select
+     {
+       background: $scolor__orange;
+     }
+
+   }
+   .hs-button {
+     width: 100%;
+     padding: 10px;
+     background: $scolor__blue;
+     color: $white;
+    }
+ }
+
+
+ .form-inline {
+   @include media('<tablet') {
+     position: relative;
+     top: -20px;
+   }
+ }

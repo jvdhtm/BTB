@@ -296,60 +296,57 @@ form >*{
 		}
 	}
 
-  .hs_cos_wrapper_widget {
+  span.hs_cos_wrapper_widget,.hs_cos_wrapper_type_header,.hs_cos_wrapper_type_rich_text
+  {
+      padding-left: 20px;
+      padding-right: 20px;
+    @media (min-width: 768px)
+    {
+          width: 750px;
+    }
+    /**/
+    @media (min-width: 992px)
+    {
+          width: 970px;
+    }
+    @media (min-width: 1200px)
+    {
+          width: 1170px;
+    }
+  }
 
+  .container span.hs_cos_wrapper_widget
+  {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: block;
+    width: auto !important;
+  }
+}
+
+span.hs_cos_wrapper_widget,.hs_cos_wrapper_type_header,.hs_cos_wrapper_type_rich_text,.mce-content-body
+{
     padding-left: 20px;
     padding-right: 20px;
+  @media (min-width: 768px)
+  {
+        width: 750px !important;
   }
-	@media (min-width: 768px)
-	{
-		.hs_cos_wrapper_widget {
-		    width: 750px;
-		}
-	}
-	/**/
-	@media (min-width: 992px)
-	{
-		.hs_cos_wrapper_widget {
-				width: 970px;
-		}
-	}
-	@media (min-width: 1200px)
-	{
-		.hs_cos_wrapper_widget {
-		    width: 1170px;
-		}
-	}
-
-
-	.hs_cos_wrapper_widget.hs_cos_wrapper_type_custom_widget {
-		width:auto !important;
-		padding-left: 0px !important;
-		padding-right: 0px !important;
-	}
+  /**/
+  @media (min-width: 992px)
+  {
+        width: 970px !important;
+  }
+  @media (min-width: 1200px)
+  {
+        width: 1170px !important;
+  }
 }
 
-
-
-
-
-.row-number-1 .span10.widget-span.widget-type-widget_container {
-    margin: 0px !important;
-}
-.row  .hs_cos_wrapper_widget {
-	width:auto !important;
-	padding-left: 0px !important;
-	padding-right: 0px !important;
-}
-
-
-.span10 >.hs_cos_wrapper> .hs_cos_wrapper_type_custom_widget {
-  width:auto !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-.span10 >.hs_cos_wrapper> .hs_cos_wrapper_type_module {
-  width:auto !important;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+.container span.hs_cos_wrapper_widget,.container .mce-content-body
+{
+  margin-right: auto !important;
+  margin-left: auto !important;
+  display: block;
+  width: auto !important;
 }

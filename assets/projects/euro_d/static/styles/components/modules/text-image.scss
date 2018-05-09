@@ -3,6 +3,24 @@ module>.text-image-section {
     padding-top: 0;
   }
 }
+
+.imagefirst{
+  @include media('>tablet') {
+  .image-box {
+      margin-right: -15px;
+  }
+}
+}
+.imagesecond
+{
+  .image-box {
+    @include media('>tablet') {
+      margin-left: -15px;
+    }
+  }
+}
+
+
   .text__image
   {
 

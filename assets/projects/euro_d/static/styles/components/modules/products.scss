@@ -1,4 +1,10 @@
 .products {
+  a{
+      color: $linkcolor;
+  }
+  a:hover{
+      color: $linkcolor;
+  }
     .column {
         margin-bottom: 30px;
 

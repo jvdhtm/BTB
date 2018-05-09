@@ -1,8 +1,16 @@
 .colored-blocks-form {
-    padding: 32px;
     height: 100%;
-
+    .colored-blocks-child
+    {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .colored-blocks-child:last-child
+    {
+      padding-bottom: 32px;
+    }
     .colored-blocks-form-header {
+      padding-top: 15px;
         display: flex;
 
         h3{
@@ -25,16 +33,17 @@
                     display: none;
                 }
             }
-            
+
             &:hover, &:focus, &:active {
                 box-shadow: none;
             }
         }
     }
 
-    h3{
-        color:$white;
+    h3,h2,h1{
+        color: $white;
         margin-top: 0;
+        font-weight: bold;
     }
     p{
         color:$white;

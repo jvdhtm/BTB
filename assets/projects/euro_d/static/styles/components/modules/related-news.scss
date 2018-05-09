@@ -1,4 +1,10 @@
 .related-news {
+    a{
+        color: $linkcolor;
+    }
+    a:hover{
+        color: $linkcolor;
+    }
     &__title {
         background: $bgcolor__main--2;
         color: $white;

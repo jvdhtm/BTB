@@ -7,11 +7,16 @@
     align-items: center;
     justify-content: center;
 
+
+    a{
+        color: $scolor__gray--light;
+    }
+
     &.primary{
         background-color: $scolor__blue;
         bottom: 15px;
         margin-top: 20px;
-        
+
     }
     &.secondary{
         background-color: $black;

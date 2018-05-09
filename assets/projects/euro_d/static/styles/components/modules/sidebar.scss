@@ -6,7 +6,12 @@
   width: 100%;
   position: absolute;
   top: 50px;
-
+  a{
+      color: $linkcolor;
+  }
+  a:hover{
+      color: $linkcolor;
+  }
   @include media('<=1665px') {
     display: none;
   }

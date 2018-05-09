@@ -1,6 +1,11 @@
 
 .navigation {
-
+    a{
+        color: $linkcolor;
+    }
+    a:hover{
+        color: $linkcolor;
+    }
     background: transparent;
     position: fixed;
     .navbar-shift

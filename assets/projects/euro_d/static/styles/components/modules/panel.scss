@@ -1,4 +1,10 @@
 .panel{
+  a{
+      color: $linkcolor;
+  }
+  a:hover{
+      color: $linkcolor;
+  }
     &:last-of-type{
         margin-bottom: 0;
     }
@@ -8,15 +14,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         .panel-title{
             margin: 0;
             color: $white;
+            @include media('<tablet') {
+                margin-left: 25px;
+              }
         }
         .btn {
             color: $white;
             outline: 0;
-
+            @include media('<tablet') {
+                margin-right: 20px;
+              }
             .fa-plus {
                 display: none;
             }
@@ -72,7 +83,7 @@
         .list-items{
             display: flex;
             justify-content: space-between;
-            
+
             @include media('>tablet') {
                 margin-top: 16px;
             }
@@ -90,7 +101,7 @@
                 &:first-child{
                     @include media('>tablet') {
                         margin-right: 20px;
-                    } 
+                    }
                 }
                 &:last-child{
                     @include media('>tablet') {
@@ -139,7 +150,7 @@
                 &:last-child{
                     flex: 4;
                 }
-            }  
+            }
         }
     }
 
@@ -151,13 +162,13 @@
     &.panel-secondary{
         .panel-heading{
             background-color: $black;
-        } 
+        }
     }
 
     &.panel-tertiary{
         .panel-heading{
             background-color: $scolor__orange;
-        } 
+        }
     }
 }
 .panel-block{

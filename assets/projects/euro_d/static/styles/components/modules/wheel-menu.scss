@@ -48,7 +48,12 @@
     z-index: 1000;
     height: 1px;
     width: 1px;
-
+    a{
+        color: $linkcolor;
+    }
+    a:hover{
+        color: $linkcolor;
+    }
     @include media('>tablet') {
         display: none;
     }
