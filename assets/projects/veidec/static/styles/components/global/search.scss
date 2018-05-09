@@ -23,7 +23,7 @@ header {
     height: 50px;
     overflow: hidden;
     position: absolute;
-    z-index: 20;
+    z-index: 1;
     width: auto;
     top: 5px;
     font-size: 24px;
@@ -94,9 +94,9 @@ header {
            position: absolute;
            z-index: 20;
            width: auto;
-           top: 4px;
+           top: 1px;
            font-size: 22px;
-           right: 82px;
+           right: 80px;
            color: $white;
            background: transparent;
            border: none;
@@ -159,7 +159,7 @@ header {
         left: 0px;
         position: fixed;
         width: 100%;
-        background: $grayDark;
+        background: $blackMedium;
         text-align: center;
         overflow: hidden;
         z-index: 20;
@@ -249,9 +249,13 @@ header.sticky {
           background: black;
     }
 }
-
+.white{
+  color:white!important;
+}
 .site-search-box {
     height: 50px;
+    border-bottom-right-radius:4px!important;
+    border-top-right-radius:4px!important;
     border: 1px solid $green  !important  ;
 }
 
