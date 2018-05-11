@@ -257,6 +257,10 @@ header.sticky {
     border-bottom-right-radius:4px!important;
     border-top-right-radius:4px!important;
     border: 1px solid $green  !important  ;
+
+
+
+
 }
 
 
@@ -274,6 +278,7 @@ p.search-item-title {
     padding-top: 10px;
     color: $gray;
     border-bottom: thin solid $gray;
+    position: relative;
     h1
     {
       color: $black;
@@ -283,6 +288,32 @@ p.search-item-title {
     .site-search-amounts {
     font-size: 25px;
     display: inline-block;
+  }
+
+  i.fas.fa-angle-down {
+      position: absolute;
+      top: 46px;
+      font-size: 22px;
+      right: 10px;
+  }
+    i.fas.fa-minus
+    {
+      display: none;
+    }
+  &.opened
+  {
+    i.fas.fa-angle-down {
+      display: none;
+    }
+
+    i.fas.fa-minus
+    {
+      position: absolute;
+      top: 46px;
+      font-size: 15px;
+      right: 10px;
+      display: block;
+    }
   }
 
 }

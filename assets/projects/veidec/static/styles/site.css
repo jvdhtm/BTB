@@ -6369,7 +6369,8 @@ p.search-item-title {
 .site-search-categories {
   padding-top: 10px;
   color: #555555;
-  border-bottom: thin solid #555555; }
+  border-bottom: thin solid #555555;
+  position: relative; }
   .site-search-categories h1 {
     color: #484848;
     display: inline-block;
@@ -6377,6 +6378,21 @@ p.search-item-title {
   .site-search-categories .site-search-amounts {
     font-size: 25px;
     display: inline-block; }
+  .site-search-categories i.fas.fa-angle-down {
+    position: absolute;
+    top: 46px;
+    font-size: 22px;
+    right: 10px; }
+  .site-search-categories i.fas.fa-minus {
+    display: none; }
+  .site-search-categories.opened i.fas.fa-angle-down {
+    display: none; }
+  .site-search-categories.opened i.fas.fa-minus {
+    position: absolute;
+    top: 46px;
+    font-size: 15px;
+    right: 10px;
+    display: block; }
 
 .site-search-btn:hover {
   z-index: 0; }
@@ -6611,6 +6627,45 @@ iframe {
   max-height: 150px !important;
   margin-top: -10px;
   border: 5px solid #f5f5f5; }
+
+panel, tab {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  background-color: #777;
+  border-bottom: thin solid #555555; }
+
+tab {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer; }
+
+panel {
+  padding: 20px 20px;
+  display: none;
+  background-color: #fff; }
+  panel h4 {
+    text-align: left; }
+  panel ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    max-height: 153px;
+    overflow: hidden; }
+    panel ul li {
+      text-align: left;
+      padding: 10px 0px;
+      padding: 10px 0px;
+      cursor: pointer; }
+      panel ul li.active {
+        color: #27AE61; }
+  panel span {
+    text-align: left;
+    display: block;
+    padding: 10px 0px;
+    color: #27AE61;
+    cursor: pointer; }
 
 /*********************
   Waves
