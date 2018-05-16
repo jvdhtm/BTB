@@ -4270,6 +4270,46 @@ a {
     .container-dynamic {
       width: 1170px; } }
 
+.modal-header .close {
+  margin-top: -20px; }
+
+.modal-footer {
+  position: absolute;
+  bottom: 0px;
+  padding-left: 56%; }
+  @media (min-width: 768px) {
+    .modal-footer {
+      padding-left: 36%; } }
+
+.btn-register {
+  width: 54%;
+  border-radius: 5px;
+  background: #27ae61;
+  border-color: #27ae61;
+  border: 0;
+  padding: 8px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.btn-cancel {
+  border-radius: 5px;
+  background: #D0021B;
+  border-color: #D0021B;
+  border: 0;
+  padding: 8px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
 p {
   font-family: 'GravityLight';
   font-size: 17px; }
