@@ -22,7 +22,7 @@
       background: $bgcolor__main--1;
       margin: 0px;
       padding: 13px 0px;
-      color: var(--scolor1);
+      color: $white;
       text-align: center;
       height: 50px;
     }
@@ -32,6 +32,12 @@
       left: 70%;
       margin-left: -32px;
     }
+    a{
+      color: $linkcolor;
+  }
+  a:hover{
+      color: $linkcolor;
+  }
     .btn-archive {
       width: 100px;
       height: 100px;
