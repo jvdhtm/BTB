@@ -17,8 +17,8 @@
   @for $i from 0 to length($colors) {
       $thisColor: unquote(nth($colors, $i+1));
       .Bgcolor--#{$varname}#{$i}{
-
-          background-color:var(--#{$varname}#{$i});
+          $thisColor: unquote(nth($colors, $i+1));
+          background-color:$thisColor;
 
       }
 
@@ -28,9 +28,9 @@ $dcolor-collection: (transparent,#0087cc, #aecc52, #ef7c00, #8f95ca,#ea5197,#ffd
 $scolor-collection: (transparent,#ffffff, #0087cc, #4a4a4a, #f5f3f0,#222222,#749588,#e6e2db,#000000,#ef7c00,#d8d8d8,#979797);
 :root {
   /* Screen Colors */
-@include makecolors($scolor-collection,'scolor');
+  //@include makecolors($scolor-collection,'scolor');
   /* Document Colors */
-@include makecolors($dcolor-collection,'dcolor');
+  //@include makecolors($dcolor-collection,'dcolor');
 
 
 }
@@ -40,54 +40,54 @@ $scolor-collection: (transparent,#ffffff, #0087cc, #4a4a4a, #f5f3f0,#222222,#749
 
 
 /* Screen Colors */
-$scolor__white: var(--scolor1);
-$scolor__blue: var(--scolor2);
-$scolor__gray--dark: var(--scolor3);
-$scolor__silver: var(--scolor4);
-$scolor__brown: var(--scolor5);
-$scolor__green: var(--scolor6);
-$scolor__gray--light: var(--scolor7);
-$scolor__black: var(--scolor8);
-$scolor__orange: var(--scolor9);
-$scolor__sliver: var(--scolor10);
-$scolor__sliver--light: var(--scolor11);
+$scolor__white: #ffffff;
+$scolor__blue:  #0087cc;
+$scolor__gray--dark: #4a4a4a;
+$scolor__silver: #f5f3f0;
+$scolor__brown: #222222;
+$scolor__green: #749588;
+$scolor__gray--light: #e6e2db;
+$scolor__black: #000000;
+$scolor__orange: #ef7c0;
+$scolor__sliver: #d8d8d8;
+$scolor__sliver--light: #979797;
 
 /* Document Colors */
-$dcolor__blue: var(--dcolor1);
-$dcolor__green--light: var(--dcolor2);
-$dcolor__orange: var(--dcolor3);
-$dcolor__purple: var(--dcolor4);
-$dcolor__lila: var(--dcolor5);
-$dcolor__yellow: var(--dcolor6);
-$dcolor__green: var(--dcolor7);
-$dcolor__brown: var(--dcolor8);
-$dcolor__lila--light: var(--dcolor9);
-$dcolor__yellow--light: var(--dcolor10);
-$dcolor__turquoise: var(--dcolor11);
-$dcolor__turquoise--light: var(--dcolor12);
-$sdcolor__green--lighter: var(--dcolor13);
-$dcolor__orange--light: var(--dcolor14);
-$sdcolor__purple: var(--dcolor15);
-$sdcolor__brown--light: var(--dcolor16);
-$sdcolor__milky: var(--dcolor17);
-$sdcolor__blue_turquoise: var(--dcolor18);
+$dcolor__blue: #0087cc;
+$dcolor__green--light: #aecc52;
+$dcolor__orange: #ef7c00;
+$dcolor__purple: #8f95ca;
+$dcolor__lila: #ea5197;
+$dcolor__yellow: #ffd500;
+$dcolor__green: #749588;
+$dcolor__brown: #beb2a1;
+$dcolor__lila--light: #fce8e2;
+$dcolor__yellow--light: #fff6d9;
+$dcolor__turquoise: #009ba4;
+$dcolor__turquoise--light: #009ba4;
+$sdcolor__green--lighter: #80cdd2;
+$dcolor__orange--light: #f7bd7f;
+$sdcolor__purple: #c7cae4;
+$sdcolor__brown--light: #e6e2db;
+$sdcolor__milky: #f5f3f0;
+$sdcolor__blue_turquoise: #bed7e4;
 
 /* Primary colors*/
-$bgcolor__main--1: var(--scolor2);
-$bgcolor__main--2: var(--scolor3);
-$bgcolor__main--3: var(--scolor11);
-$bgcolor__main--4: var(--scolor7);
-$bgcolor__main--5: var(--dcolor16);
+$bgcolor__main--1: #0087cc;
+$bgcolor__main--2: #4a4a4a;
+$bgcolor__main--3: #979797;
+$bgcolor__main--4: #e6e2db;
+$bgcolor__main--5: #e6e2db;
 
 /* Primary colors*/
-$linkcolor: var(--scolor1);
-$pcolor: var(--scolor3);
+$linkcolor: #ffffff;
+$pcolor: #4a4a4a;
 
 /* Primary colors*/
-$linkcolor: var(--scolor1);
-$linkcolor1: var(--scolor3);
-$pcolor: var(--scolor5);
-$bordercolor: var(--dcolor8);
+$linkcolor: #ffffff;
+$linkcolor1: #4a4a4a;
+$pcolor: #222222;
+$bordercolor: #beb2a1;
 
-$black: var(--scolor3);
-$white: var(--scolor1);
+$black: #4a4a4a;
+$white: #ffffff;

@@ -1,6 +1,6 @@
 .arrow-nav {
     overflow-x: auto;
-    
+
     .arrow-nav-list {
         list-style: none;
         display: flex;
@@ -11,7 +11,7 @@
 
         .arrow-nav-list-item {
             flex: 1 0;
-            padding: 30px 0 30px 50px;
+            padding: 38px;
             background-color: $dcolor__brown;
             position: relative;
             display: inline-block;
@@ -29,23 +29,23 @@
             }
 
             &::before {
-                content: "";  
+                content: "";
                 border-top: 49px solid transparent;
                 border-bottom: 49px solid transparent;
                 border-left: 35px solid $scolor__silver;
-                position: absolute; 
-                left: 0; 
+                position: absolute;
+                left: 0;
                 top: 0;
                 z-index: 3;
             }
 
             &::after {
-                content: "";  
+                content: "";
                 border-top: 49px solid transparent;
                 border-bottom: 49px solid transparent;
                 border-left: 35px solid $dcolor__brown;
-                position: absolute; 
-                right: -35px; 
+                position: absolute;
+                right: -35px;
                 top: 0;
                 z-index: 5;
             }

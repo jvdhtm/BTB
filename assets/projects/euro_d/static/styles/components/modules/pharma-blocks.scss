@@ -8,10 +8,18 @@
           padding: 40px;
           padding-bottom: 5px;
           color: $black;
-
+          padding-bottom: 50px;
           @include media('<tablet') {
             display: none;
           }
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        font-family: 'Helvetica Neue' !important;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
     }
     h3{
       background: $bgcolor__main--1;

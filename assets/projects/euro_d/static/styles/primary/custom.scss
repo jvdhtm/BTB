@@ -177,7 +177,7 @@ h1,h2,h3,h4,h5,h6
     margin-top: 83px;
     min-height: 882px;
     overflow-x: hidden;
-
+    overflow-y: hidden;
     @include media('<tablet') {
       margin-top: 0;
     }
