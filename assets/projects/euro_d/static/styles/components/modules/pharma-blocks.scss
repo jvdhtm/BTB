@@ -3,7 +3,7 @@
     margin-top: 72px;
     text-align: center;
         position: relative;
-    background: var(--dcolor16);
+    background: $scolor__gray--light;
     p{
           padding: 40px;
           padding-bottom: 5px;
@@ -48,7 +48,7 @@
       margin: auto;
       margin-top: -72px;
       border-radius: 50%;
-      border: 6px var(--scolor4) solid;
+      border: 6px $scolor__silver solid;
       max-width: 200px;
           overflow: hidden;
       @include media('<tablet') {

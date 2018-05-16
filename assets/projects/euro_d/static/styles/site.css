@@ -6651,7 +6651,7 @@ ul.bxslider {
   margin-top: 72px;
   text-align: center;
   position: relative;
-  background: var(--dcolor16); }
+  background: #e6e2db; }
   .pharma-blocks p {
     padding: 40px;
     padding-bottom: 5px;
@@ -6691,7 +6691,7 @@ ul.bxslider {
     margin: auto;
     margin-top: -72px;
     border-radius: 50%;
-    border: 6px var(--scolor4) solid;
+    border: 6px #f5f3f0 solid;
     max-width: 200px;
     overflow: hidden; }
     @media (max-width: 767px) {
@@ -6815,7 +6815,7 @@ ul.bxslider {
   padding: 16px; }
   @media (max-width: 768px) {
     .send-box {
-      background-color: #ef7c0;
+      background-color: #ef7c00;
       padding: 16px 0; } }
   @media (max-width: 768px) {
     .send-box p {
@@ -7351,7 +7351,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
       border-radius: 0; }
   .send-box-report .btn-circle {
     background-color: #ffffff;
-    color: #ef7c0;
+    color: #ef7c00;
     border-radius: 50%;
     width: 65px;
     height: 65px;
@@ -7424,7 +7424,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
       border: none;
       border-radius: 0; }
   .colored-blocks-form .btn-circle {
-    color: #ef7c0;
+    color: #ef7c00;
     border-radius: 100px;
     width: 65px;
     height: 65px;
@@ -7469,10 +7469,10 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
   .text-form .bootstrap-select .btn {
     padding-left: 25px; }
     .text-form .bootstrap-select .btn, .text-form .bootstrap-select .btn:focus, .text-form .bootstrap-select .btn:hover {
-      background-color: #ef7c0;
+      background-color: #ef7c00;
       outline: 0 !important; }
   .text-form .bootstrap-select .dropdown-menu {
-    background-color: #ef7c0;
+    background-color: #ef7c00;
     border-radius: 0;
     border: 0;
     margin-top: 0; }
@@ -7481,7 +7481,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
       border-top: 1px solid #ffffff;
       padding-left: 25px; }
       .text-form .bootstrap-select .dropdown-menu .dropdown-menu li a:focus, .text-form .bootstrap-select .dropdown-menu .dropdown-menu li a:hover {
-        background-color: #ef7c0;
+        background-color: #ef7c00;
         outline: 0 !important; }
 
 .text-form .form-control {
@@ -7994,7 +7994,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
   padding: 32px; }
 
 .text-map-form select.form-control {
-  background-color: #ef7c0;
+  background-color: #ef7c00;
   color: #ffffff; }
 
 .text-map-form .form-control {
@@ -8189,16 +8189,16 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
         .arrow-nav .arrow-nav-list .arrow-nav-list-item:hover::after, .arrow-nav .arrow-nav-list .arrow-nav-list-item:focus::after, .arrow-nav .arrow-nav-list .arrow-nav-list-item:active::after {
           border-left-color: #b4a692; }
       .arrow-nav .arrow-nav-list .arrow-nav-list-item.active {
-        background-color: #ef7c0; }
+        background-color: #ef7c00; }
         .arrow-nav .arrow-nav-list .arrow-nav-list-item.active::after {
-          border-left: 35px solid #ef7c0; }
+          border-left: 35px solid #ef7c00; }
 
 .searchform-form .searchform select.form-control {
   background-color: #e6e2db;
   color: #4a4a4a; }
 
 .searchform-form .searchform .form-wrapper {
-  background-color: #ef7c0;
+  background-color: #ef7c00;
   padding: 32px; }
 
 .searchform-form .searchform .searchform-results {
@@ -8237,7 +8237,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
   padding: 32px; }
 
 .searchform-form select.form-control {
-  background-color: #ef7c0;
+  background-color: #ef7c00;
   color: #ffffff; }
 
 .searchform-form .form-control {
@@ -8420,7 +8420,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
       .products .product .product-body .product-text .tab-content {
         padding: 25px; }
       .products .product .product-body .product-text .btn-product {
-        background-color: #ef7c0;
+        background-color: #ef7c00;
         padding: 8px 12px;
         border-radius: 0;
         margin-right: 7px;
@@ -8625,7 +8625,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
   background-color: #4a4a4a; }
 
 .panel.panel-tertiary .panel-heading {
-  background-color: #ef7c0; }
+  background-color: #ef7c00; }
 
 .panel-block .panel {
   margin-bottom: 40px; }
@@ -8696,7 +8696,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
         color: #ffffff; }
     .alphabet-filter .alphabet .active {
       background: #ffffff;
-      color: #ef7c0;
+      color: #ef7c00;
       padding: 3px 7px;
       border-radius: 100%;
       line-height: 1.2; }
@@ -8773,7 +8773,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
         -ms-flex: 0 0 93px;
         flex: 0 0 93px; }
       .product-filters .custom-values .custom-value .label.tertiary {
-        background-color: #ef7c0; }
+        background-color: #ef7c00; }
     .product-filters .custom-values .custom-value input {
       background-color: #e6e2db;
       border-color: transparent;
@@ -8832,7 +8832,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
       .product-filters .switches .switch .slider.primary:before {
         background-color: #0087cc; }
       .product-filters .switches .switch .slider.secondary:before {
-        background-color: #ef7c0; }
+        background-color: #ef7c00; }
     .product-filters .switches .switch input:checked + .slider:before {
       -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -8877,14 +8877,14 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
     .filter-wrapper .filter-checkboxes .checkbox input:checked ~ .checkmark:after {
       visibility: visible !important; }
     .filter-wrapper .filter-checkboxes .checkbox input:checked ~ .checkmark {
-      background-color: #ef7c0; }
+      background-color: #ef7c00; }
     .filter-wrapper .filter-checkboxes .checkbox .checkmark {
       position: absolute;
       top: 0;
       left: 0;
       height: 18px;
       width: 18px;
-      border: 1px solid #ef7c0; }
+      border: 1px solid #ef7c00; }
       .filter-wrapper .filter-checkboxes .checkbox .checkmark:after {
         left: 5px;
         top: 2px;
@@ -9198,10 +9198,10 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
           .wheel-menu .wheel.wheel-lg ul li a:hover, .wheel-menu .wheel.wheel-lg ul li a:focus {
             background-color: #65acd8; }
           .wheel-menu .wheel.wheel-lg ul li a.active {
-            background-color: #ef7c0;
+            background-color: #ef7c00;
             color: #ffffff; }
             .wheel-menu .wheel.wheel-lg ul li a.active:hover, .wheel-menu .wheel.wheel-lg ul li a.active:focus {
-              background-color: #ef7c0; }
+              background-color: #ef7c00; }
     .wheel-menu .wheel.wheel-sm {
       width: 400px;
       height: 400px;
@@ -9316,7 +9316,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
             background-color: #348dc8;
             color: #ffffff; }
           .wheel-menu .wheel.wheel-sm ul li a.active {
-            background-color: #ef7c0;
+            background-color: #ef7c00;
             color: #ffffff; }
         .wheel-menu .wheel.wheel-sm ul li:nth-of-type(even) a:not(.active) {
           background-color: #3886c6; }
@@ -9522,7 +9522,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
       .diseases .disease .disease-body .disease-text .tab-content {
         padding: 25px; }
       .diseases .disease .disease-body .disease-text .btn-disease {
-        background-color: #ef7c0;
+        background-color: #ef7c00;
         padding: 8px 12px;
         border-radius: 0;
         margin-right: 7px;
@@ -9575,7 +9575,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
     [data-form-id="2ff05c4d-4106-4a9d-80b3-246781ab6f87"] .hs-form-field input, [data-form-id="2ff05c4d-4106-4a9d-80b3-246781ab6f87"] .hs-form-field textarea {
       background: #e6e2db; }
     [data-form-id="2ff05c4d-4106-4a9d-80b3-246781ab6f87"] .hs-form-field select {
-      background: #ef7c0; }
+      background: #ef7c00; }
   [data-form-id="2ff05c4d-4106-4a9d-80b3-246781ab6f87"] .hs-button {
     width: 100%;
     padding: 10px;
