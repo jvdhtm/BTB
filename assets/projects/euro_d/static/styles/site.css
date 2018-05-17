@@ -5567,6 +5567,9 @@ h1, h2, h3, h4, h5, h6 {
     .container-dynamic {
       width: 1170px; } }
 
+p {
+  font-size: 18px; }
+
 .nopadding {
   padding: 0px; }
 
@@ -6145,6 +6148,10 @@ footer {
 .text__image p {
   color: #4a4a4a; }
 
+.text__image-circle .text {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
 .text__image-circle .image-box {
   width: 100%;
   border-radius: 50%;
@@ -6426,7 +6433,7 @@ ul.bxslider {
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   top: 50%;
-  margin-top: -16px;
+  margin-top: 150px;
   outline: 0;
   width: 32px;
   height: 32px;
@@ -6498,12 +6505,12 @@ ul.bxslider {
   margin-top: 72px;
   text-align: center;
   position: relative;
+  border: 2px solid #BEB2A1;
   background: #e6e2db; }
   .pharma-blocks p {
-    padding: 40px;
+    padding: 30px;
     padding-bottom: 5px;
-    color: #4a4a4a;
-    padding-bottom: 50px; }
+    color: #4a4a4a; }
     @media (max-width: 767px) {
       .pharma-blocks p {
         display: none; } }
@@ -6558,12 +6565,15 @@ ul.bxslider {
   background: #e6e2db;
   margin-top: 10px;
   position: relative;
-  min-height: 160px; }
+  min-height: 160px;
+  border: 2px solid #BEB2A1; }
   .links-blocks p {
-    padding: 40px;
+    padding: 30px;
     padding-bottom: 5px;
-    color: #4a4a4a;
-    padding-bottom: 50px; }
+    color: #4a4a4a; }
+    @media (max-width: 767px) {
+      .links-blocks p {
+        display: none; } }
   .links-blocks a {
     display: block;
     text-decoration: none;
@@ -7464,6 +7474,10 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
 .news-archive img {
   width: 100%; }
 
+.news-archive p {
+  font-size: 14px;
+  line-height: 18px; }
+
 .related-news a {
   color: #ffffff; }
 
@@ -7845,7 +7859,10 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
     margin-bottom: 8.5px; }
   .hs-search-results li .hs-search-results__description {
     float: left;
-    width: calc(1005 - 118px); }
+    width: calc(100% - 118px); }
+  .hs-search-results li p {
+    font-size: 14px;
+    line-height: 18px; }
   .hs-search-results li .btn-readmore {
     padding: 7px 30px;
     background-color: #beb2a1;

@@ -3,11 +3,14 @@
     margin-top:10px;
     position: relative;
     min-height: 160px;
+    border: 2px solid #BEB2A1;
     p{
-          padding: 40px;
+        padding: 30px;
           padding-bottom: 5px;
           color:$black ;
-              padding-bottom: 50px;
+              @include media('<tablet') {
+                display: none;
+              }
     }
 
     a {

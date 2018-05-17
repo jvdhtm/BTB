@@ -3,12 +3,12 @@
     margin-top: 72px;
     text-align: center;
         position: relative;
+        border: 2px solid #BEB2A1;
     background: $scolor__gray--light;
     p{
-          padding: 40px;
-          padding-bottom: 5px;
-          color: $black;
-          padding-bottom: 50px;
+      padding: 30px;
+      padding-bottom: 5px;
+      color:$black ;
           @include media('<tablet') {
             display: none;
           }

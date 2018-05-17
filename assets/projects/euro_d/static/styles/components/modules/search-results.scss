@@ -66,9 +66,12 @@
 
         .hs-search-results__description {
             float: left;
-            width: calc(1005 - 118px );
+            width: calc(100% - 118px );
         }
-
+        p{
+            font-size: 14px;
+            	line-height: 18px;
+        }
         .btn-readmore{
             padding: 7px 30px;
             background-color: $dcolor__brown;
@@ -108,6 +111,8 @@
         margin-bottom: 10px;
     }
 
-    
+
     
 }
+
+

@@ -48,6 +48,7 @@
         .text p{
             max-height: 60px;
             overflow: hidden;
+            
         }
         h3{
             margin-top: 0;
@@ -55,5 +56,10 @@
     }
     img{
         width: 100%;
+    }
+
+    p{
+        font-size: 14px;
+            line-height: 18px;
     }
 }

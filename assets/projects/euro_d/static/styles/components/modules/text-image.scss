@@ -62,6 +62,17 @@ module>.text-image-section {
     }
     &-circle
     {
+
+      .text
+      {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+
+      
+
+
       .image-box {
         width: 100%;
         border-radius: 50%;
