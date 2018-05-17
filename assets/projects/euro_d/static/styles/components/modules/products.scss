@@ -133,6 +133,10 @@
             .product-text {
                 background-color: $sdcolor__brown--light;
                 flex: 4;
+                
+                img{
+                    width: 100%;
+                }
 
                 .tab-content {
                     padding: 25px;

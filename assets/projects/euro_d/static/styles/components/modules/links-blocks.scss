@@ -2,7 +2,7 @@
     background:$bgcolor__main--4;
     margin-top:10px;
     position: relative;
-
+    min-height: 160px;
     p{
           padding: 40px;
           padding-bottom: 5px;
@@ -40,11 +40,15 @@
       background:$white;
       overflow: hidden;
       position: relative;
-      img
-      {
+
+      @include media('<tablet') {
+        width: 70%;
+        height: auto;
+        border: none;
+      }
+
+      img {
         width: 100%;
-        position: absolute;
-        height: 100%;
       }
   }
 }

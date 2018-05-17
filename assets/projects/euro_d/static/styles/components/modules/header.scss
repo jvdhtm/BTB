@@ -18,7 +18,10 @@ header {
             display: none;
         }
 
+        
+
         .navbar-nav {
+            width: 80%;
             > li {
                 float: none;
                 display: inline-block;
@@ -34,6 +37,36 @@ header {
                     }
                 }
             }
+            ul{
+                padding: 0px;
+            }
+
+
+            .hs-menu-item {
+                float: none;
+                display: inline-block;
+                
+                a {
+                    font-size: 17px;
+                    font-weight: 200;
+                    padding: 16.5px;
+                }
+
+                a{
+                    color: $linkcolor;
+                }
+                a:hover{
+                    color: $linkcolor;
+                }
+                &:first-child {
+                    a {
+                        padding-left: 0;
+                        @include media('<tablet-portrait') {
+                            padding-left: 16.5px;
+                        }
+                    }
+                }
+            }
         }
 
         .navbar-form {
@@ -42,16 +75,23 @@ header {
             margin-left: 0;
             margin-right: 0;
             box-shadow: none;
-
+            width: 20%;
+            position: relative;
+            text-align: center;
+            margin-top: 15px;
+            @include media('<tablet-portrait') {
+            margin-top: 20px;
+            }
             .form-group {
                 margin-bottom: 0;
                 position: relative;
+
             }
             .form-control {
                 margin-bottom: 0;
                 border-radius: 25px;
                 padding: 4px 20px;
-                width: 200px;
+                width: 100%;
             }
             .btn {
                 border-radius: 50%;

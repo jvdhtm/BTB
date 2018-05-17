@@ -144,6 +144,28 @@ h1,h2,h3,h4,h5,h6
     font-size: floor(($font-size-base * 1.1666666667));
   }
 }
+.container-dynamic
+{
+  margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    @include media('>tablet-portrait') {
+      width: 970px;
+      }
+    @include media('>desktop-big') {
+      width: 1170px;
+    }
+
+
+}
+
+
+
+
+
+
 
 .nopadding {
   padding: 0px;

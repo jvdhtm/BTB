@@ -8,11 +8,19 @@
  }
  [data-form-id="2ff05c4d-4106-4a9d-80b3-246781ab6f87"]
  {
-   position: relative;
-   bottom: -30px;
+    padding-left: 34px;
+    padding-right: 34px;
+
+    position: relative;
+    margin-top: 40px;
+    .hs_submit.hs-submit {
+      margin-left: -34px;
+      margin-right: -34px;
+      max-width: initial !important;
+    }
+
    .hs-form-field{
-     padding-left: 34px;
-     padding-right: 34px;
+
 
      input,textarea
      {
