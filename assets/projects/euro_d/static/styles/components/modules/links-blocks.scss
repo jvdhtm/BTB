@@ -4,22 +4,25 @@
     position: relative;
     min-height: 160px;
     border: 2px solid #BEB2A1;
+    height: 100%;
+
     p{
-        padding: 30px;
-          padding-bottom: 5px;
+      padding: 10px;
           color:$black ;
+          font-size: 18px;
               @include media('<tablet') {
                 display: none;
               }
     }
-
+    .text-field {
+    }
     a {
-        display: block;
-        text-decoration: none;
-        font-family: 'Helvetica Neue' !important;
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
+      display: block;
+      text-decoration: none;
+      font-family: 'Helvetica Neue' !important;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
     }
     h3{
       background: $bgcolor__main--1;
@@ -27,18 +30,23 @@
       padding: 10px 40px;
       color:$white;
       text-align: center;
-
-      position: relative;
-      bottom: 0px;
       width: 100%;
+
+
+      @include media('<tablet') {
+        background-color: unset;
+        font-size: 15px;
+        color: $black;
+        padding: 10px 0;
+      }
     }
     .icons {
       background: gray;
-      width: 140px;
-      height: 140px;
+      width: 160px;
+      height: 160px;
       position: relative;
       margin: auto;
-      top: 22px;
+      margin-top: 22px;
       border-radius: 50%;
       background:$white;
       overflow: hidden;

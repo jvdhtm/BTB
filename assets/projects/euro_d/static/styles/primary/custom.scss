@@ -60,12 +60,17 @@ module{
 .mobile-header
 {    @include media('<tablet') {
         background-color:$scolor__blue;
+        h1
+        {
+          color:$white;
+        }
     }
   h1
   {
     padding: 15px;
     margin-top: 0px;
     margin-left: -20px;
+   
   }
 }
 
@@ -164,7 +169,7 @@ h1,h2,h3,h4,h5,h6
 
 
 p{
-  font-size: 18px;
+  font-size: 14px;
 }
 
 
@@ -196,6 +201,13 @@ p{
   .banner {
       height: 27vh !important;
   }
+}
+
+.text{
+  p{
+    font-size: 14px;
+  }
+  
 }
 
 .site-wrapper {

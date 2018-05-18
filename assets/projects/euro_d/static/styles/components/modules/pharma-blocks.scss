@@ -1,14 +1,15 @@
 .pharma-blocks {
     border: 2px solid transparent;
-    margin-top: 72px;
     text-align: center;
         position: relative;
         border: 2px solid #BEB2A1;
     background: $scolor__gray--light;
+    height: 100%;
     p{
       padding: 30px;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
       color:$black ;
+      font-size: 18px;
           @include media('<tablet') {
             display: none;
           }
@@ -17,7 +18,7 @@
         display: block;
         text-decoration: none;
         font-family: 'Helvetica Neue' !important;
-        position: relative;
+        position: absolute;
         bottom: 0px;
         width: 100%;
     }
@@ -27,9 +28,6 @@
       padding: 10px 40px;
       color:$white;
       text-align: center;
-
-      position: relative;
-      bottom: 0px;
       width: 100%;
 
       @include media('<tablet') {
@@ -39,22 +37,32 @@
         padding: 10px 0;
       }
     }
+    .text-field {
+      padding-top: 72px;
+    }
     .icons {
       background: gray;
-      width: 140px;
-      height: 140px;
+      width: 160px;
+      height: 160px;
       padding: 0px;
-      position: relative;
+      position: absolute;
       margin: auto;
       margin-top: -72px;
       border-radius: 50%;
       border: 6px $scolor__silver solid;
       max-width: 200px;
           overflow: hidden;
+
+          margin-left: -80px;
+          left: 50%;
+
       @include media('<tablet') {
         width: 70%;
         height: auto;
         border: none;
+
+        margin-left: 0px;
+        left:0px;
       }
       img {
         width: 100%;

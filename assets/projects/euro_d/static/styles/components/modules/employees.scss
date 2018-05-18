@@ -44,6 +44,9 @@
     padding-bottom: 6px;
     padding-left: 15px;
 
+      p{
+        font-size: 14px;
+      };
       @include media('<=tablet') {
           position: absolute;
           top: 0;

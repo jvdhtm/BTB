@@ -32,6 +32,9 @@ ul.bxslider {
       a{
         color:$black;
       }
+      p{
+        font-size: 18px;
+      }
   }
 
 @include media('>tablet-portrait') {
