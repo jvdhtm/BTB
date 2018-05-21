@@ -7101,8 +7101,9 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
     width: auto !important;
     padding: 0px !important; }
   .sidebar .sidebar-menu {
-    position: absolute;
-    margin-left: -240px; }
+    position: relative;
+    margin-left: -240px;
+    width: 225px; }
     .sidebar .sidebar-menu .previous-page {
       background: #e6e2db;
       padding: 10px;

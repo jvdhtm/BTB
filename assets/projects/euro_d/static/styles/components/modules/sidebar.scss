@@ -22,8 +22,9 @@
     padding: 0px !important;
   }
   .sidebar-menu {
-    position: absolute;
+    position: relative;
     margin-left: -240px;
+    width: 225px;
 
   .previous-page {
     background: $bgcolor__main--5;
