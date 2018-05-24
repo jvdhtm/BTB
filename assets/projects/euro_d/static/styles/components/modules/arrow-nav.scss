@@ -11,7 +11,10 @@
 
         .arrow-nav-list-item {
             flex: 1 0;
-            padding: 38px;
+            padding: 24px;
+            height: 98px;
+            padding-left: 50px;
+
             background-color: $dcolor__brown;
             position: relative;
             display: inline-block;

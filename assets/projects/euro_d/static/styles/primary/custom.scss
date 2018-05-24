@@ -104,14 +104,14 @@ p{
   }
 }
 body {
-  font-family: 'Helvetica Neue';
+  font-family: 'sans-serif';
   background-color: $scolor__silver;
 }
 
 a {
   display: block;
   text-decoration: none;
-  font-family: 'Helvetica Neue' !important;
+  font-family: 'sans-serif' !important;
 }
 
 a:hover {
@@ -211,8 +211,8 @@ p{
 }
 
 .site-wrapper {
-    margin-top: 115px;
-    min-height: 882px;
+    margin-top: 68px;
+    min-height: 930px;
     overflow-x: hidden;
     overflow-y: hidden;
     @include media('<tablet') {

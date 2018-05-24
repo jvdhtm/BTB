@@ -5522,13 +5522,13 @@ p {
     padding-right: 10px; } }
 
 body {
-  font-family: 'Helvetica Neue';
+  font-family: 'sans-serif';
   background-color: #f5f3f0; }
 
 a {
   display: block;
   text-decoration: none;
-  font-family: 'Helvetica Neue' !important; }
+  font-family: 'sans-serif' !important; }
 
 a:hover {
   text-decoration: none;
@@ -5599,8 +5599,8 @@ p {
   font-size: 14px; }
 
 .site-wrapper {
-  margin-top: 115px;
-  min-height: 882px;
+  margin-top: 68px;
+  min-height: 930px;
   overflow-x: hidden;
   overflow-y: hidden; }
   @media (max-width: 767px) {
@@ -6572,11 +6572,11 @@ ul.bxslider {
     left: 50%; }
     @media (max-width: 767px) {
       .pharma-blocks .icons {
-        width: 70%;
+        width: 80%;
         height: auto;
-        border: none;
-        margin-left: 0px;
-        left: 0px; } }
+        border: 0;
+        margin-left: -40%;
+        left: 50%; } }
     .pharma-blocks .icons img {
       width: 100%; }
   @media (max-width: 767px) {
@@ -7101,7 +7101,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
     width: auto !important;
     padding: 0px !important; }
   .sidebar .sidebar-menu {
-    position: relative;
+    position: absolute;
     margin-left: -240px;
     width: 225px; }
     .sidebar .sidebar-menu .previous-page {
@@ -8095,7 +8095,9 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
       -webkit-flex: 1 0;
       -ms-flex: 1 0;
       flex: 1 0;
-      padding: 38px;
+      padding: 24px;
+      height: 98px;
+      padding-left: 50px;
       background-color: #beb2a1;
       position: relative;
       display: inline-block;
@@ -9338,7 +9340,7 @@ span.hs_cos_wrapper_widget, .hs_cos_wrapper_type_header, .hs_cos_wrapper_type_ri
         .wheel-menu .toggle.open a .fa-times {
           position: absolute;
           top: 45px;
-          right: 30px;
+          right: 25px;
           display: block; }
 
 .diseases a {
