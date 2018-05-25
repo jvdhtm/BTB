@@ -18,14 +18,14 @@ header {
             display: none;
         }
 
-        
+
 
         .navbar-nav {
-            width: 80%;
+              width: 100%;
             > li {
                 float: none;
                 display: inline-block;
-                
+
                 a {
                     font-size: 17px;
                     font-weight: 200;
@@ -39,13 +39,14 @@ header {
             }
             ul{
                 padding: 0px;
+                    padding-left: 92px;
             }
 
 
             .hs-menu-item {
                 float: none;
                 display: inline-block;
-                
+
                 a {
                     font-size: 17px;
                     font-weight: 200;

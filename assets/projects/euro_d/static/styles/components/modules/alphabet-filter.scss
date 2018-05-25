@@ -29,7 +29,7 @@
 
         @include media('<tablet') {
             width: 100%;
-            display: flex;
+            display: block;
             align-items: center;
             justify-content: space-between;
             padding: 0 32px;
@@ -37,7 +37,7 @@
 
         span, a {
             display: inline-block;
-
+            font-size: 18px;
             &:hover,
             &:focus {
                 color: $white;
@@ -53,7 +53,7 @@
 
             @include media('<tablet') {
                 padding: 0px 6px;
-                font-size: 18px;
+                font-size: 25px;
                 margin: 0 3px;
             }
 

@@ -20,6 +20,45 @@
 
 
 
+@mixin gridsystem () {
+
+  width: 100%;
+float: none;
+  @include media('>tablet')
+  {
+    width: calc( 100% - 190px);
+    margin: 0px;
+    float: right;
+  }
+  @include media('>tablet-portrait')
+  {
+    float: none;
+    margin: auto;
+        width: 577px;
+  }
+  @include media('>desktop')
+  {
+        width: 600px;
+  }
+  @include media('>desktop-big')
+  {
+        width: 740px;
+  }
+  @include media('>lgscreen')
+  {
+        width: 830px;
+  }
+
+  @include media('>mdlgscreen') {
+      width: 970px;
+  }
+  @include media('>xlscreen') {
+
+      width: 1170px;
+  }
+
+}
+
 
 @mixin transform-loader ($x, $y, $z) {
     -moz-transform: rotateX($x) rotateY($y) rotateZ($z);

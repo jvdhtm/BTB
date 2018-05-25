@@ -1,7 +1,7 @@
 .news-blocks,.news-blocks-large {
     margin-top:10px;
         height: 245px;
-
+    position: relative;
 
     .small-img{
       width:100%;
@@ -24,17 +24,21 @@
       padding: 13px 0px;
       color: $white;
       text-align: center;
-      height: 50px;
-    }
-    a{
-      top: 75px;
       position: absolute;
-      left: 70%;
-      margin-left: -32px;
+      bottom: 0px;
+      width: 100%;
+      height: auto;
     }
+
     a{
       color: $linkcolor;
+      display: block;
+height: 100%;
   }
+
+
+
+
   a:hover{
       color: $linkcolor;
   }

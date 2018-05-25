@@ -2,19 +2,31 @@
 
   margin: 0px;
   padding: 10px 0px;
-  color: var(--scolor1);
+  color: $scolor__white;
   width: 100%;
   position: absolute;
-  top: 50px;
+  top: 76px;
+
+@include media('>desktop') {
+  top: 58px;
+}
+
   a{
       color: $linkcolor;
   }
   a:hover{
       color: $linkcolor;
   }
-  @include media('<=1665px') {
+  @include media('<=tablet') {
     display: none;
   }
+
+.hs_cos_wrapper_type_raw_html
+{
+  width: auto !important;
+  float: none !important;;
+}
+
 
   .widget-span .hs_cos_wrapper_widget
   {
@@ -25,7 +37,10 @@
     position: absolute;
     margin-left: -240px;
     width: 225px;
-
+    @include media('<=1665px') {
+      margin-left: -195px;
+      width: 180px;
+    }
   .previous-page {
     background: $bgcolor__main--5;
     padding: 10px;
@@ -75,7 +90,6 @@
     .hs-menu-children-wrapper {
       padding-bottom: 20px;
       padding-top: 5px;
-      padding-left: 20px;
     }
   }
 

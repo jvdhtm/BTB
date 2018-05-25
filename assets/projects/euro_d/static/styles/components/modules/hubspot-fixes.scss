@@ -300,19 +300,8 @@ form >*{
   {
       padding-left: 20px;
       padding-right: 20px;
-    @media (min-width: 768px)
-    {
-          width: 750px;
-    }
-    /**/
-    @media (min-width: 992px)
-    {
-          width: 970px;
-    }
-    @media (min-width: 1200px)
-    {
-          width: 1170px;
-    }
+      @include gridsystem();
+
   }
 
   .container span.hs_cos_wrapper_widget
@@ -321,6 +310,7 @@ form >*{
     margin-left: auto !important;
     display: block;
     width: auto !important;
+    float: none !important;;
   }
 }
 
@@ -328,19 +318,9 @@ span.hs_cos_wrapper_widget,.hs_cos_wrapper_type_header,.hs_cos_wrapper_type_rich
 {
     padding-left: 20px;
     padding-right: 20px;
-  @media (min-width: 768px)
-  {
-        width: 750px !important;
-  }
-  /**/
-  @media (min-width: 992px)
-  {
-        width: 970px !important;
-  }
-  @media (min-width: 1200px)
-  {
-        width: 1170px !important;
-  }
+
+    @include gridsystem();
+
 }
 
 .container span.hs_cos_wrapper_widget,.container .mce-content-body
@@ -349,4 +329,24 @@ span.hs_cos_wrapper_widget,.hs_cos_wrapper_type_header,.hs_cos_wrapper_type_rich
   margin-left: auto !important;
   display: block;
   width: auto !important;
+  float: none !important;;
+}
+
+.header .hs_cos_wrapper_type_logo {
+
+  width: 60px !important;
+  position: absolute;
+  top: 26px;
+      left: 10px;
+  @include media('>desktop') {
+        top: 18px;
+            left: 3px;
+    }
+
+
+
+    img{
+      width: 60px !important;
+      display: block;
+    }
 }

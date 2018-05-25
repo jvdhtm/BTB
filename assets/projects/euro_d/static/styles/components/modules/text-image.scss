@@ -80,7 +80,7 @@ module>.text-image-section {
         p{
           font-size: 18px;
         }
-        
+
       }
 
       .image-box {
@@ -93,6 +93,16 @@ module>.text-image-section {
         }
         p {
           color: $black;
+        }
+
+        @include media('<tablet') {
+            width: 100%;
+            overflow: hidden;
+                border-radius: inherit;
+            max-height: 100vw;
+            border-bottom-right-radius: 50%;
+            border-top-right-radius: 50%;
+            margin-left: -15px;
         }
         @include media('>desktop') {
           width: 400px;
