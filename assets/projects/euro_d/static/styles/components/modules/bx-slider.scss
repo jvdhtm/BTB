@@ -36,6 +36,13 @@ ul.bxslider {
         font-size: 18px;
       }
   }
+  .captions {
+  background: $bgcolor__main--1 ;
+  padding: 20px;
+  p{
+     color:$white;
+  }
+}
 
 @include media('>tablet-portrait') {
   .captions {
@@ -52,9 +59,7 @@ ul.bxslider {
 
       opacity: 0.7;
       background: $bgcolor__main--1 ;
-      p{
-         color:$white;
-      }
+
 
 
   }

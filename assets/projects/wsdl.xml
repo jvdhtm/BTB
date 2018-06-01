@@ -1,0 +1,192 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:typens="urn:{{var wsdl.name}}" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/"
+    name="{{var wsdl.name}}" targetNamespace="urn:{{var wsdl.name}}">
+    <types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:Magento">
+            <import namespace="http://schemas.xmlsoap.org/soap/encoding/" schemaLocation="http://schemas.xmlsoap.org/soap/encoding/" />
+             <complexType name="ProductsListComplete">
+                <all>
+                    <element name="productid" type="xsd:string"/>
+                    <element name="sku" type="xsd:string"/>
+                    <element name="name" tye="xsd:string"/>
+                    <element name="set" type="xsd:string"/>
+                    <element name="short_desc" type="xsd:string"  />
+                    <element name="image_url" type="xsd:string" />
+                    <element name="price" type="xsd:string" />
+                    <element name="weight" type="xsd:string" />
+                    <element name="type" type="xsd:string"/>
+                    <element name="category_ids" type="typens:ArrayOfString"/>
+                    <element name="website_ids" type="typens:ArrayOfString"/>
+                </all>
+            </complexType>
+           <complexType name="ProductsListCompleteArray">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="typens:ProductsListComplete[]" />
+                    </restriction>
+                </complexContent>
+            </complexType>
+        </schema>
+    </types>
+    <message name="ProductsAssignedListCompleteRequest">
+        <part name="sessionId" type="xsd:string" />
+        <part name="storeView" type="xsd:string" />
+        <part name="filters" type="typens:filters" />
+    </message>
+    <message name="ProductsAssignedListCompleteResponse">
+        <part name="result" type="typens:ProductsListCompleteArray" />
+    </message>
+    <portType name="{{var wsdl.handler}}PortType">
+        <operation name="ProductsAssginedListComplete">
+            <documentation>Retrieve detailed list of products</documentation>
+            <input message="typens:ProductsAssignedListCompleteRequest" />
+            <output message="typens:ProductsAssignedListCompleteResponse" />
+        </operation>
+    </portType>
+    <binding name="{{var wsdl.handler}}Binding" type="typens:{{var wsdl.handler}}PortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+        <operation name="ProductsAssginedListComplete">
+            <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+            <input>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+    </binding>
+    <service name="{{var wsdl.name}}Service">
+        <port name="{{var wsdl.handler}}Port" binding="typens:{{var wsdl.handler}}Binding">
+            <soap:address location="{{var wsdl.url}}" />
+        </port>
+    </service>
+</definitions>
+
+
+<wsdl:definitions xmlns:typens="urn:{{var wsdl.name}}"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+             name="{{var wsdl.name}}"
+             targetNamespace="urn:{{var wsdl.name}}">
+            <wsdl:types>
+                <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:{{var wsdl.name}}">
+                    <xsd:complexType name="ProductsListComplete">
+                      <xsd:sequence>
+                         <xsd:element name="product_id" type="xsd:string" />
+                         <xsd:element name="sku" type="xsd:string" />
+                         <xsd:element name="name" type="xsd:string" />
+                         <xsd:element name="short_desc" type="xsd:string"  />
+                         <xsd:element name="image_url" type="xsd:string" />
+                         <xsd:element name="price" type="xsd:string" />
+                         <xsd:element name="weight" type="xsd:string" />
+                         <xsd:element name="set" type="xsd:string" />
+                         <xsd:element name="type" type="xsd:string" />
+                         <xsd:element name="category_ids" type="typens:ArrayOfString" />
+                         <xsd:element name="website_ids" type="typens:ArrayOfString" />
+
+                      </xsd:sequence>
+                    </xsd:complexType>
+
+                    <xsd:complexType name="ProductsListCompleteArray">
+                        <xsd:sequence>
+                            <xsd:element minOccurs="0" maxOccurs="unbounded" name="complexObjectArray" type="typens:ProductsListComplete" />
+                        </xsd:sequence>
+                    </xsd:complexType>
+
+                    <xsd:element name="ProductsListCompleteParam">
+                      <xsd:complexType>
+                      <xsd:sequence>
+                      <xsd:element minOccurs="1" maxOccurs="1" name="sessionId" type="xsd:string"></xsd:element>
+                      <xsd:element minOccurs="1" maxOccurs="1" name="filters" type="typens:filters"></xsd:element>
+                      <xsd:element minOccurs="0" maxOccurs="1" name="store" type="xsd:string"></xsd:element>
+                      </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+
+                    <xsd:element name="ProductsListCompleteResponseParam">
+                        <xsd:complexType>
+                          <xsd:sequence>
+                            <xsd:element minOccurs="1" maxOccurs="1" name="result" type="typens:ProductsListCompleteArray"></xsd:element>
+                          </xsd:sequence>
+                        </xsd:complexType>
+                    </xsd:element>
+
+                  </xsd:schema>
+                </wsdl:types>
+                <wsdl:message name="ProductsListCompleteRequest">
+                    <wsdl:part name="parameters" element="typens:ProductsListCompleteParam" />
+                </wsdl:message>
+                <wsdl:message name="ProductsListCompleteResponse">
+                    <wsdl:part name="parameters" element="typens:ProductsListCompleteResponseParam" />
+                </wsdl:message>
+                <wsdl:portType name="{{var wsdl.handler}}PortType">
+                  <wsdl:operation name="ProductsAssginedListComplete">
+                      <wsdl:documentation>Retrieve products list by filters</wsdl:documentation>
+                      <wsdl:input message="typens:ProductsListCompleteRequest"></wsdl:input>
+                      <wsdl:output message="typens:ProductsListCompleteResponse"></wsdl:output>
+                  </wsdl:operation>
+                </wsdl:portType>
+
+                <wsdl:binding name="{{var wsdl.handler}}Binding" type="typens:{{var wsdl.handler}}PortType">
+                    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+                    <wsdl:operation name="ProductsAssginedListComplete">
+                        <soap:operation soapAction="urn:{{var wsdl.handler}}Action" />
+                        <wsdl:input>
+                            <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+                        </wsdl:input>
+                        <wsdl:output>
+                            <soap:body namespace="urn:{{var wsdl.name}}" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+                        </wsdl:output>
+                    </wsdl:operation>
+                </wsdl:binding>
+                <wsdl:service name="{{var wsdl.name}}Service">
+                    <port name="{{var wsdl.handler}}Port" binding="typens:{{var wsdl.handler}}Binding">
+                        <soap:address location="{{var wsdl.url}}" />
+                    </port>
+                </wsdl:service>
+</wsdl:definitions>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <api>
+        <resources>
+            <xyz translate="title" module="Mage_ProductsAPiMaverick">
+                <model>Mage_ProductsAPiMaverick/product_api</model>
+                <title>API</title>
+                <acl>Mage_ProductsAPiMaverick/api</acl>
+                <methods>
+                    <list translate="title" module="Mage_ProductsAPiMaverick">
+                        <title>List of products</title>
+                        <method>ProductsListComplete</method>
+                    </list>
+                </methods>
+            </xyz>
+        </resources>
+        <resources_alias>
+            <all_product>xyz</all_product>
+        </resources_alias>
+        <v2>
+            <resources_function_prefix>
+                <xyz>ProductsListComplete</xyz>
+            </resources_function_prefix>
+        </v2>
+        <acl>
+          <resources>
+              <data translate="title" module="Mage_ProductsAPiMaverick">
+                  <title>ProductsListComplete</title>
+                  <sort_order>5</sort_order>
+                  <api translate="title" module="Mage_ProductsAPiMaverick">
+                      <title>ProductsListComplete</title>
+                  </api>
+              </data>
+          </resources>
+        </acl>
+
+    </api>
+</config>

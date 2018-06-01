@@ -17,6 +17,13 @@
     width:auto !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
+    li.hs-menu-item.hs-menu-depth-1 {
+      a{
+        font-weight: 800;
+        font-size: 12px;
+        padding-left: 25px;
+      }
+    }
   }
   .collapsable-menu,ul {
       list-style: none;
