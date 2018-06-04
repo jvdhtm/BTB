@@ -4935,7 +4935,7 @@ span.hs-form-required {
   position: absolute;
   color: #BC261A;
   top: 20px;
-  right: 5px;
+  right: 14px;
   z-index: 2; }
   @media (min-width: 768px) {
     span.hs-form-required {
