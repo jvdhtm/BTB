@@ -118,7 +118,7 @@
         }
 
         &.wheel-lg {
-            @include wheel-size(650px, 5, 250px, 7);
+            @include wheel-size(660px, 5, 250px, 7);
 
             background-color: #8ec2e2;
             z-index: 200;
@@ -161,7 +161,7 @@
         }
 
         &.wheel-sm {
-            @include wheel-size(400px, 4, 220px, 10);
+            @include wheel-size(420px, 4, 240px, 10);
 
             z-index: 300;
             background-color: #5ba4d4;

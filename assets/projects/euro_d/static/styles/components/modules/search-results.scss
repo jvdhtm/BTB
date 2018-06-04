@@ -65,8 +65,10 @@
         }
 
         .hs-search-results__description {
+            @include media('>tablet') {
             float: left;
             width: calc(100% - 118px );
+          }
         }
         p{
             font-size: 14px;
@@ -78,7 +80,7 @@
             box-shadow: none;
             border: none;
             border-radius: 0;
-
+                font-size: 14px;
             width: 118px;
             @include media('<tablet') {
                 width: 100%;
@@ -88,15 +90,13 @@
             }
         }
 
-        @include media('<tablet') {
-            padding: 0 32px 20px 32px;
-        }
+
 
         &:last-of-type{
             margin-bottom: 0;
         }
     }
-        
+
     .hs-search-results__prev-page
     {
         float: left;
@@ -112,7 +112,5 @@
     }
 
 
-    
+
 }
-
-

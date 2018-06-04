@@ -1,10 +1,10 @@
 .news-archive{
-    .row{    
+    .row{
         @include media('>tablet') {
             display: flex;
             align-items: stretch;
         }
-        
+
     }
     .image-box{
         background-size: cover;
@@ -37,7 +37,7 @@
             box-shadow: none;
             border: none;
             border-radius: 0;
-
+                font-size: 14px;
             @include media('<tablet') {
                 width: 100%;
             }
@@ -46,9 +46,8 @@
             }
         }
         .text p{
-            max-height: 60px;
-            overflow: hidden;
-            
+
+
         }
         h3{
             margin-top: 0;

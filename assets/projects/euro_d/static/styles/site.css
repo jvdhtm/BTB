@@ -6629,7 +6629,6 @@ ul.bxslider {
   .pharma-blocks .text-field {
     padding-top: 72px; }
   .pharma-blocks .icons {
-    background: gray;
     width: 160px;
     height: 160px;
     padding: 0px;
@@ -6692,7 +6691,6 @@ ul.bxslider {
         color: #4a4a4a;
         padding: 10px 0; } }
   .links-blocks .icons {
-    background: gray;
     width: 160px;
     height: 160px;
     position: relative;
@@ -7627,16 +7625,14 @@ form > * {
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;
-    border-radius: 0; }
+    border-radius: 0;
+    font-size: 14px; }
     @media (max-width: 768px) {
       .news-archive .news-item .btn-readmore {
         width: 100%; } }
     @media (min-width: 770px) {
       .news-archive .news-item .btn-readmore {
         float: right; } }
-  .news-archive .news-item .text p {
-    max-height: 60px;
-    overflow: hidden; }
   .news-archive .news-item h3 {
     margin-top: 0; }
 
@@ -8027,9 +8023,10 @@ form > * {
     font-weight: 300;
     line-height: 1.1;
     margin-bottom: 8.5px; }
-  .hs-search-results li .hs-search-results__description {
-    float: left;
-    width: calc(100% - 118px); }
+  @media (min-width: 770px) {
+    .hs-search-results li .hs-search-results__description {
+      float: left;
+      width: calc(100% - 118px); } }
   .hs-search-results li p {
     font-size: 14px;
     line-height: 18px; }
@@ -8040,6 +8037,7 @@ form > * {
     box-shadow: none;
     border: none;
     border-radius: 0;
+    font-size: 14px;
     width: 118px; }
     @media (max-width: 768px) {
       .hs-search-results li .btn-readmore {
@@ -8047,9 +8045,6 @@ form > * {
     @media (min-width: 770px) {
       .hs-search-results li .btn-readmore {
         float: right; } }
-  @media (max-width: 768px) {
-    .hs-search-results li {
-      padding: 0 32px 20px 32px; } }
   .hs-search-results li:last-of-type {
     margin-bottom: 0; }
 
@@ -9156,21 +9151,21 @@ form > * {
           .wheel-menu .wheel ul li a.active {
             font-weight: bold; }
     .wheel-menu .wheel.wheel-lg {
-      width: 650px;
-      height: 650px;
-      bottom: -325px;
-      right: -325px;
+      width: 660px;
+      height: 660px;
+      bottom: -330px;
+      right: -330px;
       background-color: #8ec2e2;
       z-index: 200; }
       .wheel-menu .wheel.wheel-lg ul {
-        width: 650px;
-        height: 650px; }
+        width: 660px;
+        height: 660px; }
         .wheel-menu .wheel.wheel-lg ul li {
-          width: 325px;
-          height: 325px; }
+          width: 330px;
+          height: 330px; }
           .wheel-menu .wheel.wheel-lg ul li a {
             width: 130px;
-            height: 102.05px;
+            height: 103.62px;
             -webkit-transform: rotate(-7deg);
             -ms-transform: rotate(-7deg);
             transform: rotate(-7deg); }
@@ -9297,21 +9292,21 @@ form > * {
             .wheel-menu .wheel.wheel-lg ul li a.active:hover, .wheel-menu .wheel.wheel-lg ul li a.active:focus {
               background-color: #ef7c00; }
     .wheel-menu .wheel.wheel-sm {
-      width: 400px;
-      height: 400px;
-      bottom: -200px;
-      right: -200px;
+      width: 420px;
+      height: 420px;
+      bottom: -210px;
+      right: -210px;
       z-index: 300;
       background-color: #5ba4d4; }
       .wheel-menu .wheel.wheel-sm ul {
-        width: 400px;
-        height: 400px; }
+        width: 420px;
+        height: 420px; }
         .wheel-menu .wheel.wheel-sm ul li {
-          width: 200px;
-          height: 200px; }
+          width: 210px;
+          height: 210px; }
           .wheel-menu .wheel.wheel-sm ul li a {
-            width: 115px;
-            height: 78.5px;
+            width: 125px;
+            height: 82.425px;
             -webkit-transform: rotate(-10deg);
             -ms-transform: rotate(-10deg);
             transform: rotate(-10deg); }
@@ -9323,7 +9318,7 @@ form > * {
               -webkit-transform: rotate(-1.25deg);
               -ms-transform: rotate(-1.25deg);
               transform: rotate(-1.25deg);
-              width: 115px; }
+              width: 125px; }
       .wheel-menu .wheel.wheel-sm ul li {
         background-color: #5ba4d4; }
         .wheel-menu .wheel.wheel-sm ul li:nth-of-type(1) {
