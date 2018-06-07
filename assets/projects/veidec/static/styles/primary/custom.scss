@@ -26,6 +26,14 @@ a {
   text-decoration: none;
   font-family: 'GravityRegular' ;
 }
+
+p a {
+  color: $defLightBlue;
+  display: block;
+  text-decoration: none;
+  font-family: 'GravityRegular' ;
+}
+
 .container-dynamic {
     margin-right: auto;
     margin-left: auto;
