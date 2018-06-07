@@ -44,6 +44,9 @@
           @include media('>=tablet') {
             width: 100%;
           }
+
+
+
         }
         nav
         {
@@ -211,6 +214,18 @@
                       /*width: 146px;*/
                       height: 44px;
                       overflow: hidden;
+
+                      .hs-menu-depth-2
+                      {
+                        & >a {
+                          &:after{
+                            content: " ";
+                            height :2px;
+                            width: 100%;
+                            display: block;
+                          }
+                        }
+                      }
 
                       &:hover{
                         width:100%;
@@ -387,7 +402,7 @@
     {
       nav{
         padding-right: 50px;
-        padding-left: 150px;
+        padding-left: 130px;
         ul {
           .hs-menu-depth-1 {
             a{
