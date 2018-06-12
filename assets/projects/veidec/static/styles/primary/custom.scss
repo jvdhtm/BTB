@@ -17,21 +17,21 @@ module {}
 
 
 body {
-  font-family: 'GravityRegular';
+  font-family: 'PT Sans', sans-serif;
 }
 
 a {
   color: $defFontColor;
   display: block;
   text-decoration: none;
-  font-family: 'GravityRegular' ;
+font-family: 'PT Sans', sans-serif;
 }
 
 p a {
   color: $defLightBlue;
   display: block;
   text-decoration: none;
-  font-family: 'GravityRegular' ;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .container-dynamic {
@@ -96,13 +96,90 @@ transition: .3s;
 }
 
 p{
-  font-family: 'GravityLight' ;
   font-size:17px;
+}
+
+form .hs_submit.hs-submit {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+form .hs-richtext {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.checkout,footer
+{
+  form .hs-form-field {
+    margin-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+  }
+
+  form .hs_submit.hs-submit {
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+  form .hs-richtext {
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+}
+
+[data-form-id="df00b753-8313-430b-8e94-3c549199d47d"]{
+
+ h4 {
+    border-bottom: thin solid #bbb8b8;
+    padding-bottom: 15px;
+    font-weight: bold;
+    span{
+      margin-left: 10px;
+      font-weight:400;
+    }
+    }
+    .hs-fieldtype-file .input:after {
+        content: "Välj fil";
+        position: relative;
+        color: white;
+        top: -35px;
+    }
+
+
+    .hs-fieldtype-file .input {
+        background: #27AE61;
+        height: 40px;
+        display: inline-block;
+        width: 100px;
+        border-radius: 5px;
+        background: #27ae61;
+        border-color: #27ae61;
+        border: 0;
+        padding: 8px;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 40px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer;
+        text-align: center;
+        cursor: pointer;
+        input{
+
+            opacity: 0;
+            position: relative;
+            z-index: 3;
+        }
+    }
+
+
+
 }
 
 h1,h2,h3,h4,h5,h6
 {
-    font-family: 'GravityBold' ;
 }
 a:hover {
   color: $defFontColor;

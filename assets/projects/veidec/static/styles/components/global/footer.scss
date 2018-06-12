@@ -46,7 +46,15 @@
         display: block;
     }
 }
-
+footer
+{
+  form .hs-form-field {
+    margin-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+  }
+}
 
 
 span.hs-form-required {

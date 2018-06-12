@@ -40,7 +40,6 @@
           margin-left: 30px;
           font-size: 18px;
           width: auto;
-          font-family: 'gravitylight';
           @include media('>=tablet') {
             width: 100%;
           }
@@ -167,14 +166,14 @@
               float: left;
               padding-top: 10px;
               margin: 0px;
-                  padding-left: 10px;
                 ul {
-                    display:flex !important;
-                    align-items: center;
-                    justify-content: center;
 
+                    text-align: center;
                     .hs-menu-depth-1.active,.hs-menu-depth-1.active-branch
                     {
+
+
+
                       & >a{
                         color:$green;
 
@@ -214,7 +213,8 @@
                       /*width: 146px;*/
                       height: 44px;
                       overflow: hidden;
-
+                      display: inline-block;
+                      width: 129px;
                       .hs-menu-depth-2
                       {
                         & >a {
@@ -228,7 +228,7 @@
                       }
 
                       &:hover{
-                        width:100%;
+
                         & >a{
                           color:$green;
 
@@ -251,14 +251,12 @@
                         &:after{
                           display:  none !important;
                         }
-                        display: block;
-                          max-width: 100%;
+
                           a{
                             padding:10px 15px !important;
                             text-align: center;
                             opacity: 1;
                             font-size:16px;
-                            font-family:'GravityLight';
                             margin:0px !important;
                           }
 
@@ -271,7 +269,6 @@
                             width: 100%;
                             left: 0px;
                                 top: 50px;
-                            display: flex;
                             align-items: start;
                             justify-content: start;
 
@@ -296,7 +293,6 @@
                                   text-align: left;
                                   opacity: 1;
                                   font-size: 15px;
-                                  font-family:'gravitybold';
                                         margin:0px;
                                   &:after{
                                     content: " ";
@@ -382,17 +378,29 @@
 
         ul {
           .hs-menu-depth-1 {
-            width: 100%;
+            display: inline-block;
+            ul{
+              display: flex !important;
+            }
             a{
               font-size: 17px !important;
               &:hover{
-                font-family:'Gravitybold';
               }
             }
           }
         }
       }
 
+    }
+    .navbar-shift
+    {
+      nav{
+        ul {
+          .hs-menu-depth-1 {
+                width: 148px;
+          }
+        }
+      }
     }
   }
 }
@@ -413,5 +421,17 @@
       }
 
     }
+
+    .navbar-shift
+    {
+      nav{
+        ul {
+          .hs-menu-depth-1 {
+                width: 153px;
+          }
+        }
+      }
+    }
+
   }
 }

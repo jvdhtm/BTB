@@ -11,9 +11,12 @@
 
 .banner {
 	overflow: hidden;
-	height:400px;
+	position:relative;
+
+
+
 	@include media('>=tablet') {
-		height:600px;
+
 	}
 
 	.banner-section-text {
@@ -42,7 +45,7 @@
 	    left: 50%;
 	    margin-left: -40%;
 	    width: 80%;
-	  
+
 		h1
 		{
 		  font-size:30px;
