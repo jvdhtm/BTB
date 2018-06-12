@@ -101,13 +101,11 @@
 }
 .news--block--header {
   position: absolute;
-  width: 80%;
-  left: 50%;
-  margin-left: -40%;
+  width: 90%;
+  margin-left: 5%;
   color: $defLightBlueDark;
   text-align: center;
   top: 40px;
-  padding: 10px;
   z-index: 2;
   pointer-events: none;
 }
@@ -151,8 +149,8 @@
 
 @include media('>=tablet') {
   .news-wrapper {
-    height: calc(50vw - 15px);
-    width: calc(50vw - 15px);
+    height: calc(38vw - 15px);
+    width: calc(38vw - 15px);
   }
 }
 
