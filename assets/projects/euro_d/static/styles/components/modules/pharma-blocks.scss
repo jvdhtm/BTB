@@ -21,10 +21,17 @@
         position: absolute;
       @include media('<tablet') {
              position: relative;
+                 top: 10px;
       }
 
         bottom: 0px;
         width: 100%;
+    }
+    .temp-url
+    { 
+      @include media('<tablet') {
+             display:none;
+      }
     }
     h3{
       background: $bgcolor__main--1;

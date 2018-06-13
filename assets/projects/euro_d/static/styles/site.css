@@ -6179,8 +6179,8 @@ footer {
     margin-right: 0;
     margin-left: 0; }
     .text__image .text {
-      padding-left: 32px;
-      padding-right: 32px; } }
+      padding-left: 0px;
+      padding-right: 0px; } }
 
 @media (max-width: 991px) {
   .text__image {
@@ -6612,7 +6612,11 @@ ul.bxslider {
     width: 100%; }
     @media (max-width: 768px) {
       .pharma-blocks a {
-        position: relative; } }
+        position: relative;
+        top: 10px; } }
+  @media (max-width: 768px) {
+    .pharma-blocks .temp-url {
+      display: none; } }
   .pharma-blocks h3 {
     background: #0087cc;
     margin: 0px;
