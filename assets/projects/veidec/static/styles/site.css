@@ -4342,6 +4342,9 @@ form .hs-richtext {
   padding-left: 0px;
   padding-right: 0px; }
 
+a.topic-link {
+  display: inline-block; }
+
 [data-form-id="df00b753-8313-430b-8e94-3c549199d47d"] h4 {
   border-bottom: thin solid #bbb8b8;
   padding-bottom: 15px;
@@ -5793,6 +5796,7 @@ body.expanded {
         padding-top: 10px;
         margin: 0px; }
         .navigation .navbar-shift nav ul, .navigation .navbar-shift.expanded nav ul {
+          word-break: break-word;
           text-align: center; }
           .navigation .navbar-shift nav ul .hs-menu-depth-1.active > a, .navigation .navbar-shift nav ul .hs-menu-depth-1.active-branch > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1.active > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1.active-branch > a {
             color: #27AE61;
@@ -5843,13 +5847,11 @@ body.expanded {
             .navigation .navbar-shift nav ul .hs-menu-depth-1:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:after {
               display: none !important; }
             .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
-              padding: 10px 15px !important;
+              padding: 10px 0px !important;
               text-align: center;
               opacity: 1;
               font-size: 16px;
               margin: 0px !important; }
-            .navigation .navbar-shift nav ul .hs-menu-depth-1 > ul.hs-menu-children-wrapper, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 > ul.hs-menu-children-wrapper {
-              display: none; }
             .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper {
               position: absolute;
               background: #fff;
@@ -5865,27 +5867,29 @@ body.expanded {
               -ms-flex-pack: start;
               justify-content: start; }
               .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 {
-                width: 100%; }
+                display: inline-block;
+                min-width: 153px; }
                 .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2 > a {
                   color: #484848;
                   text-align: left;
                   opacity: 1;
                   font-size: 15px;
+                  margin: 0px;
+                  -webkit-transition: initial;
+                  -o-transition: initial;
+                  transition: initial; }
+                .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover > a {
+                  color: #27AE61;
+                  text-align: left;
+                  opacity: 1;
+                  font-size: 15px;
                   margin: 0px; }
-                .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover {
-                  width: 100%; }
-                  .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover > a {
-                    color: #27AE61;
-                    text-align: left;
-                    opacity: 1;
-                    font-size: 15px;
-                    margin: 0px; }
-                    .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover > a:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover > a:after {
-                      content: " ";
-                      height: 2px;
-                      background: #27AE61;
-                      width: 100%;
-                      display: block; }
+                  .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover > a:after, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2:hover > a:after {
+                    content: " ";
+                    height: 2px;
+                    background: #27AE61;
+                    width: 100%;
+                    display: block; }
               .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2.hs-item-has-children, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2.hs-item-has-children {
                 width: 100%; }
                 .navigation .navbar-shift nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2.hs-item-has-children > a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1:hover > ul.hs-menu-children-wrapper .hs-menu-depth-2.hs-item-has-children > a {
@@ -5933,11 +5937,6 @@ body.expanded {
     padding-top: 10px; }
     .navigation .navbar-shift nav ul .hs-menu-depth-1, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 {
       display: inline-block; }
-      .navigation .navbar-shift nav ul .hs-menu-depth-1 ul, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 ul {
-        display: -webkit-box !important;
-        display: -webkit-flex !important;
-        display: -ms-flexbox !important;
-        display: flex !important; }
       .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
         font-size: 17px !important; }
   .navigation .navbar-shift nav ul .hs-menu-depth-1 {
@@ -5950,7 +5949,7 @@ body.expanded {
     .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
       font-size: 17px !important; }
   .navigation .navbar-shift nav ul .hs-menu-depth-1 {
-    width: 153px; } }
+    width: 156px; } }
 
 .news-content-image {
   text-align: center;

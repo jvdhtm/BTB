@@ -167,7 +167,7 @@
               padding-top: 10px;
               margin: 0px;
                 ul {
-
+                    word-break: break-word;
                     text-align: center;
                     .hs-menu-depth-1.active,.hs-menu-depth-1.active-branch
                     {
@@ -253,7 +253,7 @@
                         }
 
                           a{
-                            padding:10px 15px !important;
+                            padding:10px 0px !important;
                             text-align: center;
                             opacity: 1;
                             font-size:16px;
@@ -261,7 +261,7 @@
                           }
 
                           & > ul.hs-menu-children-wrapper {
-                            display: none;
+
                           }
                           &:hover > ul.hs-menu-children-wrapper {
                             position: absolute;
@@ -276,18 +276,19 @@
                             .hs-menu-depth-2
                             {
 
-                              width:100%;
+                              display: inline-block;
+                              min-width: 153px;
                               & >a{
                                 color:$black;
                                 text-align: left;
                                 opacity: 1;
                                 font-size: 15px;
                                 margin:0px;
-
+                                    transition: initial; 
                               }
 
                               &:hover{
-                                width:100%;
+
                                 & >a{
                                   color:$green;
                                   text-align: left;
@@ -380,7 +381,7 @@
           .hs-menu-depth-1 {
             display: inline-block;
             ul{
-              display: flex !important;
+
             }
             a{
               font-size: 17px !important;
@@ -427,7 +428,7 @@
       nav{
         ul {
           .hs-menu-depth-1 {
-                width: 153px;
+                width: 156px;
           }
         }
       }
