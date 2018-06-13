@@ -178,8 +178,7 @@
                         color:$green;
 
                         opacity: 1;
-                            font-size: 15px;
-                              margin:0px;
+                        margin:0px;
                         &:after{
                           content: " ";
                           height :2px;
@@ -195,8 +194,7 @@
                           color:$green;
 
                           opacity: 1;
-                              font-size: 15px;
-                                margin:0px;
+                          margin:0px;
                           &:after{
                             content: " ";
                             height :2px;
@@ -214,10 +212,11 @@
                       height: 44px;
                       overflow: hidden;
                       display: inline-block;
-                      width: 129px;
+                      width: 120px;
                       .hs-menu-depth-2
                       {
                         & >a {
+                          text-align: center !important;
                           &:after{
                             content: " ";
                             height :2px;
@@ -233,7 +232,6 @@
                           color:$green;
 
                           opacity: 1;
-                              font-size: 15px;
                                 margin:0px;
                           &:after{
                             content: " ";
@@ -256,7 +254,7 @@
                             padding:10px 0px !important;
                             text-align: center;
                             opacity: 1;
-                            font-size:16px;
+                            font-size:12px;
                             margin:0px !important;
                           }
 
@@ -282,9 +280,9 @@
                                 color:$black;
                                 text-align: left;
                                 opacity: 1;
-                                font-size: 15px;
                                 margin:0px;
-                                    transition: initial; 
+                                    transition: initial;
+                                        font-size: 12px;
                               }
 
                               &:hover{
@@ -293,7 +291,6 @@
                                   color:$green;
                                   text-align: left;
                                   opacity: 1;
-                                  font-size: 15px;
                                         margin:0px;
                                   &:after{
                                     content: " ";

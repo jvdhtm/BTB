@@ -42,10 +42,7 @@ p a {
 
 
     width:100%;
-    @include media('>=desktop') {
 
-        width: 970px;
-    }
     @include media('>=lgscreen') {
             width: 1170px;
     }
