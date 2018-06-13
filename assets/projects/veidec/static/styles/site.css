@@ -4644,7 +4644,7 @@ input[type="color"],
   text-transform: uppercase;
   border-radius: 5px;
   background: #27AE61;
-  padding: 10px 64px;
+  padding: 10px 10px;
   margin-bottom: 12px;
   color: #fff; }
 
@@ -4664,9 +4664,13 @@ input[type="color"],
   text-transform: uppercase;
   border-radius: 5px;
   background: #405F6E;
-  padding: 10px 64px;
+  padding: 10px 10px;
   margin-bottom: 12px;
   color: #fff; }
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 64px; } }
 
 .has-feedback .form-control {
   padding-right: 12px;
@@ -4848,11 +4852,11 @@ a.cta_button {
         .banner .banner-title h1 {
           font-size: 64px; } }
     .banner .banner-title h3 {
-      font-family: 'GravityLight';
-      font-size: 17px; }
+      font-size: 17px;
+      padding-left: 10px;
+      padding-right: 10px; }
       @media (min-width: 768px) {
         .banner .banner-title h3 {
-          font-family: 'Gravityregular';
           font-size: 24px; } }
     .banner .banner-title span {
       padding-left: 10px; }

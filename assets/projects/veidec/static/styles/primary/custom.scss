@@ -496,7 +496,7 @@ input[type="color"],
     text-transform: uppercase;
     border-radius: 5px;
     background: $green;
-    padding: 10px 64px;
+    padding: 10px 10px;
     margin-bottom: 12px;
     color: $white;
 }
@@ -517,11 +517,16 @@ input[type="color"],
     text-transform: uppercase;
     border-radius: 5px;
     background: $defDarkBlue;
-    padding: 10px 64px;
+    padding: 10px 10px;
     margin-bottom: 12px;
     color: $white;
 }
 
+.btn{
+  @include media('>=tablet') {
+    padding: 10px 64px;
+  }
+}
 .has-feedback {
   // Left Icon Input Padding
   .form-control {
