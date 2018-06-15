@@ -4,8 +4,29 @@
   top: -45px;
 
   @include media('>=tablet') {
-    right: -10px;
-    top: -42px;
+    right: 50px;
+    top: -46px;
+    z-index: 9;
+  }
+  @include media('>=tablet-portrait') {
+    right: 90px;
+    top: -46px;
+    z-index: 9;
+  }
+  @include media('>=desktop') {
+    right: 124px;
+    top: -46px;
+    z-index: 9;
+  }
+  @include media('>=desktop-big') {
+    right: 100px;
+    top: -46px;
+    z-index: 9;
+  }
+  @include media('>=lgscreen') {
+    right: 150px;
+    top: -46px;
+    z-index: 9;
   }
 
   width: 20px !important;
@@ -162,10 +183,10 @@
             right:0px;
             top:0px;
             nav{
-              width: calc( 100% - 73px);
-              float: left;
+              width: 100%;
               padding-top: 10px;
               margin: 0px;
+              display: block;
                 ul {
                     word-break: break-word;
                     text-align: center;
@@ -183,8 +204,9 @@
                           content: " ";
                           height :2px;
                           background:$green;
-                          width: 100%;
+                          width: 90%;
                           display: block;
+                          margin: auto;
                         }
                         }
                       }
@@ -199,8 +221,9 @@
                             content: " ";
                             height :2px;
                             background:$green;
-                            width: 100%;
+                            width: 90%;
                             display: block;
+                            margin: auto;
                           }
                       }
                     }
@@ -208,11 +231,11 @@
 
 
                     .hs-menu-depth-1 {
-                      /*width: 146px;*/
+                      width: 136px;
+                      display: block;
+                      float: left;
                       height: 44px;
                       overflow: hidden;
-                      display: inline-block;
-                      width: 120px;
                       .hs-menu-depth-2
                       {
                         & >a {
@@ -220,8 +243,9 @@
                           &:after{
                             content: " ";
                             height :2px;
-                            width: 100%;
+                            width: 90%;
                             display: block;
+                            margin: auto;
                           }
                         }
                       }
@@ -237,8 +261,9 @@
                             content: " ";
                             height :2px;
                             background:$green;
-                            width: 100%;
+                            width: 90%;
                             display: block;
+                            margin: auto;
                           }
                         }
                       }
@@ -254,7 +279,7 @@
                             padding:10px 0px !important;
                             text-align: center;
                             opacity: 1;
-                            font-size:12px;
+                            font-size:15px;
                             margin:0px !important;
                           }
 
@@ -282,7 +307,7 @@
                                 opacity: 1;
                                 margin:0px;
                                     transition: initial;
-                                        font-size: 12px;
+                                        font-size: 15px;
                               }
 
                               &:hover{
@@ -296,8 +321,9 @@
                                     content: " ";
                                     height :2px;
                                     background:$green;
-                                    width: 100%;
+                                    width: 90%;
                                     display: block;
+                                    margin: auto;
                                   }
                                 }
                               }
@@ -317,8 +343,9 @@
                                     content: " ";
                                     height :2px;
                                     background:$green;
-                                    width: 100%;
+                                    width: 90%;
                                     display: block;
+                                    margin: auto;
                                   }
                                 }
 
@@ -344,12 +371,15 @@
             }
 
             .login {
-                float: right;
-                width: auto;
-                margin-left: 0px;
-                position: relative;
+              float: none;
+                  width: auto;
+                  margin-left: 0px;
+                  position: absolute;
+                  right: -15px;
+                  top: 0px;
+                      min-width: 60px;
                 a{
-                  padding:10px 20px;
+                  padding:10px 10px;
                   background: $green;
                   text-align: center;
                   color: $white;
@@ -376,7 +406,6 @@
 
         ul {
           .hs-menu-depth-1 {
-            display: inline-block;
             ul{
 
             }
@@ -409,6 +438,7 @@
       nav{
         padding-right: 50px;
         padding-left: 130px;
+        padding-top: 10px;
         ul {
           .hs-menu-depth-1 {
             a{
