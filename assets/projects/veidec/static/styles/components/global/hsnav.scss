@@ -2,36 +2,11 @@
   position: absolute;
   right: 120px;
   top: -45px;
-
+    width: auto !important;
   @include media('>=tablet') {
-    right: 50px;
+    right: 66px;
     top: -46px;
     z-index: 9;
-  }
-  @include media('>=tablet-portrait') {
-    right: 90px;
-    top: -46px;
-    z-index: 9;
-  }
-  @include media('>=desktop') {
-    right: 124px;
-    top: -46px;
-    z-index: 9;
-  }
-  @include media('>=desktop-big') {
-    right: 100px;
-    top: -46px;
-    z-index: 9;
-  }
-  @include media('>=lgscreen') {
-    right: 150px;
-    top: -46px;
-    z-index: 9;
-  }
-
-  width: 20px !important;
-  .lang_list_class{
-    width: 200px;
   }
 }
 .navigation {
@@ -184,12 +159,15 @@
             top:0px;
             nav{
               width: 100%;
-              padding-top: 10px;
+              padding-top: 14px;
+                  padding-left: 10px;
               margin: 0px;
               display: block;
                 ul {
                     word-break: break-word;
                     text-align: center;
+                    display: flex;
+                        width: 85%;
                     .hs-menu-depth-1.active,.hs-menu-depth-1.active-branch
                     {
 
@@ -231,11 +209,13 @@
 
 
                     .hs-menu-depth-1 {
-                      width: 136px;
+                      width: 100%;
                       display: block;
-                      float: left;
                       height: 44px;
                       overflow: hidden;
+                      ul{
+                        display: block;
+                      }
                       .hs-menu-depth-2
                       {
                         & >a {
@@ -279,7 +259,7 @@
                             padding:10px 0px !important;
                             text-align: center;
                             opacity: 1;
-                            font-size:15px;
+                            font-size:12px;
                             margin:0px !important;
                           }
 
@@ -307,7 +287,7 @@
                                 opacity: 1;
                                 margin:0px;
                                     transition: initial;
-                                        font-size: 15px;
+                                        font-size: 12px;
                               }
 
                               &:hover{
@@ -337,7 +317,7 @@
                                   color:$green;
                                   text-align: left;
                                   opacity: 1;
-                                      font-size: 15px;
+                                      font-size: 12px;
                                         margin:0px;
                                   &:after{
                                     content: " ";
@@ -357,7 +337,7 @@
                                           color:$black;
                                             text-align: left;
                                             opacity: 1;
-                                                font-size: 15px;
+                                                font-size: 12px;
                                                   margin:0px;
                                         }
 
@@ -401,11 +381,15 @@
     {
       nav{
         padding-right: 30px;
-        padding-left: 75px;
+        padding-left: 0px;
         padding-top: 10px;
 
         ul {
+          align-items: center;
+          justify-content: center;
+          width: 100%;
           .hs-menu-depth-1 {
+            width: 136px;
             ul{
 
             }
@@ -437,7 +421,7 @@
     {
       nav{
         padding-right: 50px;
-        padding-left: 130px;
+        padding-left: 0px;
         padding-top: 10px;
         ul {
           .hs-menu-depth-1 {
