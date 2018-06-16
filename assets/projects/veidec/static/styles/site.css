@@ -4819,8 +4819,7 @@ a.cta_button {
   left: 0; }
 
 .banner {
-  overflow: hidden;
-  position: relative; }
+  overflow: hidden; }
   .banner .banner-section-text {
     -webkit-animation: intro-fade 1.5s linear;
     animation: intro-fade 1.5s linear;
@@ -4838,21 +4837,34 @@ a.cta_button {
   .banner .banner-title {
     -webkit-animation: intro-fade 1.5s linear;
     animation: intro-fade 1.5s linear;
-    bottom: 0;
     position: absolute;
     width: 90%;
     z-index: 5;
-    bottom: 25%;
+    top: 4px;
     left: 50%;
     margin-left: -40%;
     width: 80%; }
+    @media (min-width: 768px) {
+      .banner .banner-title {
+        top: 4%; } }
+    @media (min-width: 1024px) {
+      .banner .banner-title {
+        top: 15%; } }
+    @media (min-width: 1086px) {
+      .banner .banner-title {
+        top: 24%; } }
+    .banner .banner-title .btn-showmore {
+      font-size: 12px; }
+      @media (min-width: 768px) {
+        .banner .banner-title .btn-showmore {
+          font-size: 16px; } }
     .banner .banner-title h1 {
-      font-size: 30px; }
+      font-size: 15px; }
       @media (min-width: 768px) {
         .banner .banner-title h1 {
           font-size: 64px; } }
     .banner .banner-title h3 {
-      font-size: 17px;
+      font-size: 12px;
       padding-left: 10px;
       padding-right: 10px; }
       @media (min-width: 768px) {

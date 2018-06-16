@@ -11,7 +11,7 @@
 
 .banner {
 	overflow: hidden;
-	position:relative;
+
 
 
 
@@ -37,24 +37,38 @@
 	.banner-title {
 		-webkit-animation: intro-fade 1.5s linear;
 	    animation: intro-fade 1.5s linear;
-	    bottom: 0;
 	    position: absolute;
 	    width: 90%;
 	    z-index: 5;
-	    bottom: 25%;
+	    top: 4px;
 	    left: 50%;
 	    margin-left: -40%;
 	    width: 80%;
-
+			@include media('>=tablet') {
+				 top: 4%;
+	    }
+			@include media('>=desktop') {
+				 top: 15%;
+			}
+			@include media('>=desktop-big') {
+				 top: 24%;
+			}
+		.btn-showmore
+		{
+			font-size: 12px;
+			@include media('>=tablet') {
+				font-size: 16px;
+			}
+		}
 		h1
 		{
-		  font-size:30px;
+		  font-size: 15px;
 		  @include media('>=tablet') {
 			font-size: 64px;
 		  }
 		}
 		h3{
-			font-size:17px;
+			font-size:12px;
 			padding-left: 10px;
 			padding-right: 10px;
 			 @include media('>=tablet') {
