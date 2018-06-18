@@ -20,12 +20,6 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
-a {
-  color: $defFontColor;
-  display: block;
-  text-decoration: none;
-font-family: 'PT Sans', sans-serif;
-}
 
 p a {
   color: $defLightBlue;
@@ -39,10 +33,7 @@ p a {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-
-
     width:100%;
-
     @include media('>=lgscreen') {
             width: 1170px;
     }

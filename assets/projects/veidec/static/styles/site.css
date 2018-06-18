@@ -4636,6 +4636,8 @@ header {
       max-height: 64px; }
       header a, header button {
         color: #484848; } }
+  header a {
+    display: block; }
   header .navbar-header {
     height: 65px; }
   header .fa-search {
@@ -5386,7 +5388,6 @@ body.expanded {
 
 @media (min-width: 992px) {
   .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
-    padding-right: 30px;
     padding-left: 0px;
     padding-top: 10px; }
     .navigation .navbar-shift nav ul, .navigation .navbar-shift.expanded nav ul {
@@ -5408,11 +5409,12 @@ body.expanded {
 
 @media (min-width: 1200px) {
   .navigation .navbar-shift nav, .navigation .navbar-shift.expanded nav {
-    padding-right: 50px;
     padding-left: 0px;
     padding-top: 10px; }
-    .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
-      font-size: 17px !important; }
+    .navigation .navbar-shift nav ul, .navigation .navbar-shift.expanded nav ul {
+      width: 100%; }
+      .navigation .navbar-shift nav ul .hs-menu-depth-1 a, .navigation .navbar-shift.expanded nav ul .hs-menu-depth-1 a {
+        font-size: 17px !important; }
   .navigation .navbar-shift nav ul .hs-menu-depth-1 {
     width: 156px; } }
 
@@ -6366,12 +6368,6 @@ routes {
   position: relative; }
 
 body {
-  font-family: 'PT Sans', sans-serif; }
-
-a {
-  color: #fff;
-  display: block;
-  text-decoration: none;
   font-family: 'PT Sans', sans-serif; }
 
 p a {

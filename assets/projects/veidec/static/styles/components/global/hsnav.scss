@@ -375,12 +375,13 @@
       }
   }
 }
+
+
 @include media('>=tablet-portrait') {
   .navigation {
     .navbar-shift , .navbar-shift.expanded
     {
       nav{
-        padding-right: 30px;
         padding-left: 0px;
         padding-top: 10px;
 
@@ -420,10 +421,10 @@
     .navbar-shift , .navbar-shift.expanded
     {
       nav{
-        padding-right: 50px;
         padding-left: 0px;
         padding-top: 10px;
         ul {
+          width: 100%;
           .hs-menu-depth-1 {
             a{
               font-size: 17px !important;
