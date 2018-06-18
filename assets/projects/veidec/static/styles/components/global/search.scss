@@ -5,7 +5,12 @@ header {
 
 #SearchForm
 {
-
+  .form-group .input-icon{
+      position: absolute;
+    bottom: 14px;
+    font-size: 24px;
+    left: 30px;
+  }
   .navbar-form
   {
     border: none;
@@ -28,13 +33,12 @@ header {
     top: 5px;
     font-size: 24px;
     right: 50px;
-
-    color:$white;
     background: transparent;
     border: none;;
     @include media('>=tablet') {
         color: $black;
     }
+
   }
 .cross-remove {
     position: absolute;
@@ -96,7 +100,6 @@ header {
            width: auto;
            top: 4px;
            font-size: 24px;
-           color: $white;
            background: transparent;
            border: none;
                right: 90px;
@@ -118,7 +121,6 @@ header {
           top: 3px;
           font-size: 26px;
           right: 100px;
-          color: $white;
           background: transparent;
           border: none;
 

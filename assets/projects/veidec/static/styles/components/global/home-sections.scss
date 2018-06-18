@@ -148,9 +148,8 @@
 	    padding: 72px;
 		}
 	img{
-		width:14%;
-		margin-top:44px;
-		margin-bottom:36px;
+		width: auto;
+    height: 100%;
 	}
 }
 .product-use-silver{
@@ -187,11 +186,7 @@
 		width: 160px;
 		margin: 0 auto;
 		margin-bottom:40px;
-		img{
-				width:40%;
-				margin:26px 0 0 0;
-				height:auto;
-	}
+
 }
 .slide-prev{
     color:black;

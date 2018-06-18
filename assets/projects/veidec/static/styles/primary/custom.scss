@@ -616,59 +616,45 @@ input[type="color"],
 }
 
 a.cta_button {
-  position: absolute; //display:block;
-  font-size: 15px;
-  letter-spacing: 2px;
-  outline: 0;
-  overflow: hidden;
-  background: none;
-  z-index: 1;
-  cursor: pointer;
-  transition: 0.16s ease-in;
-  -o-transition: 0.16s ease-in;
-  -ms-transition: 0.16s ease-in;
-  -moz-transition: 0.16s ease-in;
-  -webkit-transition: 0.16s ease-in;
+  position: relative;
+      display: inline-block;
+      font-size: 15px;
+      letter-spacing: 2px;
+      outline: 0;
+      overflow: hidden;
+      background: none;
+      z-index: 1;
+      cursor: pointer;
 }
 
 .cta_button:hover {
   color: #FFF !important;
-  -webkit-box-shadow: 0px 3px 12px 1px #1d1b1b;
-          box-shadow: 0px 3px 12px 1px #1d1b1b;
 }
 
-.cta_button:after {
-  content: "";
-  position: absolute;
-  background: #6FECBE;
-  color: #FFF;
-  bottom: 0;
-  left: -15px;
-  right: 120%;
-  top: 0;
-  z-index: -1;
-  -webkit-transition: right 0.4s ease-in;
-  -webkit-transform: skewX(15deg);
-          transform: skewX(15deg);
-}
+
 
 .cta_button:hover:after {
   right: -15px;
 }
-
+.navbar-toggle .icon-bar {
+    background-color: $black ;
+    }
+    .navbar-toggle .icon-bar .active {
+        background-color: $white ;
+        }
 
 /*HR with Gradient*/
 .long-underline{
   padding:2px;
   border:0px;
-  background-image: linear-gradient(to right,  #2986a2 , #00e262);
+  background: $green;
 }
 .short-underline{
   padding:2px;
   border:0px;
   width:44%;
   margin-left:0;
-  background-image: linear-gradient(to right,  #2986a2 , #00e262);
+  background: $green;
   @include media('>=tablet') {
     width:8%;
     margin:24px 0px 24px 0px;

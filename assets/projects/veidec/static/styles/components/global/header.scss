@@ -16,18 +16,18 @@
         width: 100%;
       }
   }
-.sub-page
-{
-  header {
-    box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2);
-  }
-}
+
 
 
 header {
+    box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2);
   @include media ('>=tablet') {
     max-height: 64px;
+    a,button{
+      color:$black;
+    }
   }
+
   position: absolute;
   top:0px;
   left:0px;
@@ -38,9 +38,6 @@ header {
   }
   .fa-search{
     -webkit-text-stroke: 0;
-    @include media ('>=tablet') {
-    -webkit-text-stroke: 3px white;
-    }
   }
 
 &.sticky {
