@@ -36,6 +36,7 @@
           margin-left: 30px;
           font-size: 18px;
           width: auto;
+              color: $white;
           @include media('>=tablet') {
             width: 100%;
           }
@@ -149,7 +150,7 @@
       background: transparent;
       z-index: 3;
       position: initial;
-
+    height: 64px;
       .navbar-shift , .navbar-shift.expanded
       {
             position: relative;
@@ -158,12 +159,16 @@
             right:0px;
             top:0px;
             nav{
+
               width: 100%;
               padding-top: 14px;
                   padding-left: 10px;
               margin: 0px;
               display: block;
                 ul {
+                  a{
+                      color: $black;
+                      }
                     word-break: break-word;
                     text-align: center;
                     display: flex;
@@ -212,13 +217,13 @@
                       width: 100%;
                       display: block;
                       height: 44px;
-                      overflow: hidden;
                       ul{
-                        display: block;
+                        display: none;
                       }
                       .hs-menu-depth-2
                       {
                         & >a {
+                          transition: initial !important;
                           text-align: center !important;
                           &:after{
                             content: " ";
@@ -231,7 +236,9 @@
                       }
 
                       &:hover{
-
+                        ul{
+                          display: block;
+                        }
                         & >a{
                           color:$green;
 
@@ -249,7 +256,7 @@
                       }
                       &.hs-item-has-children
                       {
-                        position: initial;
+                        position: relative;
                       }
                         &:after{
                           display:  none !important;
@@ -271,16 +278,15 @@
                             background: #fff;
                             width: 100%;
                             left: 0px;
-                                top: 50px;
+                            top: 40px;
                             align-items: start;
                             justify-content: start;
-
-
+                            box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2);
+                            padding: 10px;
                             .hs-menu-depth-2
                             {
 
-                              display: inline-block;
-                              min-width: 153px;
+                              display: block;
                               & >a{
                                 color:$black;
                                 text-align: left;

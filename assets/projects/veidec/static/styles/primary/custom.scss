@@ -490,6 +490,9 @@ input[type="color"],
     padding: 10px 10px;
     margin-bottom: 12px;
     color: $white;
+    @include media('>=tablet') {
+      padding: 10px 64px;
+    }
 }
 
 .btn-order {
@@ -501,6 +504,9 @@ input[type="color"],
     padding: 10px 0px;
     margin-bottom: 12px;
     color: $white;
+    @include media('>=tablet') {
+      padding: 10px 64px;
+    }
 }
 .btn-added {
     border: 2px solid $defDarkBlue;
@@ -511,12 +517,13 @@ input[type="color"],
     padding: 10px 10px;
     margin-bottom: 12px;
     color: $white;
+    @include media('>=tablet') {
+      padding: 10px 64px;
+    }
 }
 
 .btn{
-  @include media('>=tablet') {
-    padding: 10px 64px;
-  }
+
 }
 .has-feedback {
   // Left Icon Input Padding
