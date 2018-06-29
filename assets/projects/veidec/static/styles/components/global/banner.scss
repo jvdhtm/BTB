@@ -40,19 +40,9 @@
 	    position: absolute;
 	    width: 90%;
 	    z-index: 5;
-	    top: 4px;
 	    left: 50%;
 	    margin-left: -40%;
 	    width: 80%;
-			@include media('>=tablet') {
-				 top: 4%;
-	    }
-			@include media('>=desktop') {
-				 top: 15%;
-			}
-			@include media('>=desktop-big') {
-				 top: 24%;
-			}
 		.btn-showmore
 		{
 			font-size: 12px;

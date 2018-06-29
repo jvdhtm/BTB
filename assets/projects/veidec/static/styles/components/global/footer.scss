@@ -48,6 +48,13 @@
 }
 footer
 {
+  .fas,.fa{
+      font-size:250%;
+      margin-top:5px;
+      color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: $greenDark;
+  }
   form .hs-form-field {
     margin-bottom: 15px;
     padding-left: 0px;
@@ -81,7 +88,7 @@ span.hs-form-required {
     input,textarea{
         font-size:16px;
         width:100%;
-        padding-left:30px;
+        padding-left:10px;
         margin:0px;
         border-radius:5px;
         resize:none;
@@ -98,13 +105,7 @@ span.hs-form-required {
     font-size: 150%;
     opacity:0.8;
 }
-.fa-map-marker, .fa-phone, .fa-fax{
-    font-size:250%;
-    margin-top:5px;
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: $greenDark;
-}
+
 .hs_submit input{
     width: 54%;
     border-radius: 5px;
@@ -120,7 +121,9 @@ span.hs-form-required {
     cursor: pointer;
 }
 .social{
-    text-align: center;
+    @include media('>=tablet') {
+      text-align: center;
+    }
     padding:20px 0 10px 0;
     .fa{
         font-size:250%;

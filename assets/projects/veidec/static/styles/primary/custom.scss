@@ -38,9 +38,6 @@ p a {
             width: 1170px;
     }
 }
-.modal-header .close {
-  margin-top: -20px;
-}
 
 
 .modal-footer {
@@ -173,7 +170,7 @@ h1,h2,h3,h4,h5,h6
 {
 }
 a:hover {
-  color: $defFontColor;
+  color: $greenLighter;
   text-decoration: none;
   cursor: pointer;
 }
@@ -521,7 +518,10 @@ input[type="color"],
       padding: 10px 64px;
     }
 }
-
+.hs-cta-wrapper
+{
+  display: inherit;
+}
 .btn{
 
 }
