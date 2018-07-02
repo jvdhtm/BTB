@@ -4430,6 +4430,17 @@ span.hs-form-required {
     font-size: 30px;
     display: block; }
 
+span.hs-form-required {
+  position: absolute;
+  color: #bc261a;
+  top: 26px;
+  right: 8px;
+  z-index: 2; }
+
+@media (min-width: 768px) {
+  span.hs-form-required {
+    top: 27px; } }
+
 footer .fas, footer .fa {
   font-size: 250%;
   margin-top: 5px;
@@ -4447,14 +4458,14 @@ footer .social a {
   color: black;
   display: inline-block; }
 
-span.hs-form-required {
+footer span.hs-form-required {
   position: absolute;
   color: #BC261A;
-  top: 20px;
+  top: 26px;
   right: 14px;
   z-index: 2; }
   @media (min-width: 768px) {
-    span.hs-form-required {
+    footer span.hs-form-required {
       top: 32px; } }
 
 .input {
@@ -6111,8 +6122,8 @@ iframe {
   .products-container .description {
     padding-top: 26px;
     padding-left: 10px;
-    max-width: 60%;
-    min-width: 40%; }
+    max-width: 50%;
+    min-width: 50%; }
   .products-container .description span {
     display: block;
     font-size: 14px;
@@ -6132,7 +6143,7 @@ iframe {
     -webkit-appearance: none;
     border: none;
     text-align: center;
-    width: 32px;
+    width: 100px;
     font-size: 16px;
     color: #43484D;
     font-weight: 300; }
@@ -6419,10 +6430,10 @@ p a {
 .modal-footer {
   position: absolute;
   bottom: 0px;
-  padding-left: 56%; }
+  margin-left: 56%; }
   @media (min-width: 768px) {
     .modal-footer {
-      padding-left: 36%; } }
+      margin-left: 36%; } }
 
 .btn-register {
   width: 54%;
@@ -6448,7 +6459,6 @@ p a {
   color: #fff;
   font-size: 16px;
   margin-top: 5px;
-  margin-bottom: 40px;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }

@@ -46,6 +46,22 @@
         display: block;
     }
 }
+
+span.hs-form-required {
+    position: absolute;
+    color: #bc261a;
+    top: 26px;
+    right: 8px;
+    z-index: 2;
+}
+
+@media(min-width: 768px) {
+    span.hs-form-required {
+        top: 27px;
+    }
+}
+
+
 footer
 {
   .fas,.fa{
@@ -66,22 +82,24 @@ footer
       color: black;
       display: inline-block;
   }
-}
 
-
-
-
-span.hs-form-required {
+  span.hs-form-required {
     position: absolute;
     color: $red;
-    top:20px;
+    top:26px;
     right:14px;
     z-index:2;
     @include media('>=tablet') {
         top:32px;
     }
 
+    }
 }
+
+
+
+
+
 
 .input{
     position:relative;

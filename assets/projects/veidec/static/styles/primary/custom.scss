@@ -43,9 +43,9 @@ p a {
 .modal-footer {
   position: absolute;
   bottom: 0px;
-  padding-left: 56%;
+  margin-left: 56%;
   @include media('>=tablet') {
-  padding-left: 36%;
+    margin-left: 36%;
   }
 }
 .btn-register
@@ -74,7 +74,7 @@ padding: 8px;
 color: #fff;
 font-size: 16px;
 margin-top: 5px;
-margin-bottom: 40px;
+
 -webkit-transition: .3s;
 -o-transition: .3s;
 transition: .3s;
