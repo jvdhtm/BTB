@@ -117,6 +117,7 @@ iframe{
   padding-top: 26px;
 	padding-left: 10px;
 	max-width: 60%;
+	min-width: 40%;
 }
 
 .description span {
@@ -172,12 +173,13 @@ input:focus {
 
 /* Total Price */
 .total-price {
-  width: 83px;
-  padding-top: 60px;
-  text-align: center;
-  font-size: 16px;
-  color: #43484D;
-  font-weight: 300;
+	width: 200px;
+	padding-top: 60px;
+	text-align: center;
+	font-size: 16px;
+	color: #43484D;
+	font-weight: 300;
+	word-break: break-all;
 }
 .delete-btn-xs
 {

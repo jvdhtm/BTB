@@ -6111,7 +6111,8 @@ iframe {
   .products-container .description {
     padding-top: 26px;
     padding-left: 10px;
-    max-width: 60%; }
+    max-width: 60%;
+    min-width: 40%; }
   .products-container .description span {
     display: block;
     font-size: 14px;
@@ -6150,12 +6151,13 @@ iframe {
   .products-container input:focus {
     outline: 0; }
   .products-container .total-price {
-    width: 83px;
+    width: 200px;
     padding-top: 60px;
     text-align: center;
     font-size: 16px;
     color: #43484D;
-    font-weight: 300; }
+    font-weight: 300;
+    word-break: break-all; }
   .products-container .delete-btn-xs {
     width: 100%;
     color: #BC261A;
