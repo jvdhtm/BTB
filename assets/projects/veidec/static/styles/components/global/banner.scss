@@ -11,12 +11,21 @@
 
 .banner {
 	overflow: hidden;
+	position: relative;
 
-
-
-
-	@include media('>=tablet') {
-
+	.background-img
+	{
+		position:absolute;
+		height: 100%;
+		img {
+			width:100%;
+			min-height:100%;
+			object-fit: cover;
+			@include media('>=desktop') {
+				object-fit: contain;
+				object-position: top;
+			}
+		}
 	}
 
 	.banner-section-text {
@@ -37,12 +46,15 @@
 	.banner-title {
 		-webkit-animation: intro-fade 1.5s linear;
 	    animation: intro-fade 1.5s linear;
-	    position: absolute;
+	    position: relative;
 	    width: 90%;
 	    z-index: 5;
 	    left: 50%;
 	    margin-left: -40%;
-	    width: 80%;
+		width: 80%;
+		padding-top: 10px;
+		margin-bottom: 10%;
+		margin-top: 10%;
 		.btn-showmore
 		{
 			font-size: 12px;

@@ -5,7 +5,7 @@
     width: auto !important;
   @include media('>=tablet') {
     right: 66px;
-    top: -46px;
+    top: -43px;
     z-index: 9;
   }
 }
@@ -149,7 +149,7 @@
 .navigation {
       background: transparent;
       z-index: 3;
-      position: initial;
+      position: static;
     height: 64px;
       .navbar-shift , .navbar-shift.expanded
       {
@@ -372,7 +372,7 @@
                   border-bottom-left-radius: 10px;
                   border-bottom-right-radius: 10px;
                   height: 60px;
-                  padding-top: 18px;
+                  padding-top: 21px;
 
                   margin-left: 0px;
 

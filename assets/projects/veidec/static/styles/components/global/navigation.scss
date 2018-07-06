@@ -58,7 +58,7 @@
 
 body.expanded
 {
-  overflow: hidden;
+  
   @include media('>=tablet') {
     overflow: auto;
   }
