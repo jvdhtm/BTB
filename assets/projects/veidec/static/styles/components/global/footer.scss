@@ -139,9 +139,7 @@ footer
     padding: 10px 40px;
 }
 .social{
-    @include media('>=tablet') {
-      text-align: center;
-    }
+    text-align: center;
     padding:20px 0 10px 0;
     .fa{
         font-size:250%;

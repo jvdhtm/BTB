@@ -4523,10 +4523,8 @@ footer span.hs-form-required {
   padding: 10px 40px; }
 
 .social {
+  text-align: center;
   padding: 20px 0 10px 0; }
-  @media (min-width: 768px) {
-    .social {
-      text-align: center; } }
   .social .fa {
     font-size: 250%;
     padding: 0px 20px;
@@ -5691,8 +5689,8 @@ footer .hs_cos_wrapper_widget {
 
 @media (min-width: 1024px) {
   .contact, .news-letter {
-    padding-left: 45px;
-    padding-right: 16px; } }
+    /*padding-left: 45px;
+    padding-right: 16px;*/ } }
 
 #hs_form_target_widget_1523018319691 span {
   font-family: gravityregular !important; }
