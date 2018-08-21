@@ -4304,7 +4304,7 @@ button.close {
         .banner .banner-title h1 {
           font-size: 64px; } }
     .banner .banner-title h3 {
-      font-size: 12px;
+      font-size: 16px;
       padding-left: 10px;
       padding-right: 10px; }
       @media (min-width: 768px) {
@@ -4524,7 +4524,7 @@ footer span.hs-form-required {
 
 .social {
   text-align: center;
-  padding: 20px 0 10px 0; }
+  padding: 0 0 10px 0; }
   .social .fa {
     font-size: 250%;
     padding: 0px 20px;
@@ -4581,6 +4581,7 @@ footer span.hs-form-required {
     transition: 0.3s; }
   .social {
     text-align: right;
+    padding: 20px 0 10px 0;
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -4629,6 +4630,15 @@ footer img.hs-image-widget {
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%); } }
+
+.footer-contact-information {
+  min-height: 200px;
+  margin-top: 30px; }
+  .footer-contact-information-inner {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .footer-contact-information-inner {
+        text-align: left; } }
 
 body.shift {
   overflow: hidden; }
