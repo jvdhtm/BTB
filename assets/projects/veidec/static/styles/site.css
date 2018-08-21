@@ -4652,6 +4652,7 @@ body.shift {
     width: 100%; }
 
 header {
+  height: 64px;
   -webkit-box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2);
   position: absolute;

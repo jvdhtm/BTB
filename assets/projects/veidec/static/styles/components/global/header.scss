@@ -20,6 +20,7 @@
 
 
 header {
+  height:64px;
     box-shadow: 0 1px 6px 0px rgba(0, 0, 0, 0.2);
   @include media ('>=tablet') {
     max-height: 64px;
