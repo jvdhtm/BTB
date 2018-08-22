@@ -5161,7 +5161,7 @@ select.selectpicker {
   display: block;
   clear: both; }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) and (orientation: portrait) {
   .equalise-height {
     display: -webkit-box;
     display: -webkit-flex;
@@ -7235,8 +7235,8 @@ form > * {
     padding: 0px !important; }
   .sidebar .sidebar-menu {
     position: absolute;
-    margin-left: -21%;
-    width: 20%; }
+    margin-left: -22%;
+    width: 21%; }
     @media (min-width: 993px) {
       .sidebar .sidebar-menu {
         margin-left: -20%;

@@ -155,7 +155,7 @@ float: none;
 // Equalise heights content heights with Flexbox
 
 .equalise-height {
-  @include media('>=tablet')  {
+  @media (min-width: 993px) and (orientation: portrait)   {
     display: flex;
     align-items: stretch;
   }
