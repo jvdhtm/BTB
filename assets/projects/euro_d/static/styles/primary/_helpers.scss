@@ -30,14 +30,11 @@ float: none;
     margin: 0px;
     float: right;
   }
-  @include media('>tablet-portrait')
+
+  @include media('>desktop')
   {
     float: none;
     margin: auto;
-        width: 577px;
-  }
-  @include media('>desktop')
-  {
         width: 600px;
   }
   @include media('>desktop-big')
